@@ -1,0 +1,8 @@
+{
+  "module": "solar-system-image-sources",
+  "export": "solarSystemImageFor",
+  "cases": [
+    { "id": "earth-image-metadata", "args": ["solar-system-earth"] },
+    { "id": "venus-image-declares-its-crop", "args": ["solar-system-venus"] }
+  ]
+}

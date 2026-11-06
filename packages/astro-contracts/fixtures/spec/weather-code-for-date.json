@@ -1,0 +1,27 @@
+{
+  "module": "weather-code-for-date",
+  "package": "portal",
+  "file": "astronomy-forecast",
+  "export": "weatherCodeForDate",
+  "cases": [
+    {
+      "id": "matches-an-iso-day-string",
+      "args": [
+        { "time": ["2026-09-15", "2026-09-16"], "weather_code": [3, 61] },
+        "2026-09-16"
+      ]
+    },
+    {
+      "id": "matches-a-unix-day-stamp",
+      "args": [
+        { "time": [1789430400, 1789516800], "weather_code": [0, 45] },
+        "2026-09-16"
+      ]
+    },
+    {
+      "id": "an-absent-day-has-no-code",
+      "args": [{ "time": ["2026-09-15"], "weather_code": [3] }, "2026-09-20"]
+    },
+    { "id": "an-absent-series-has-no-code", "args": [null, "2026-09-15"] }
+  ]
+}

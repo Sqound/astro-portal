@@ -1,0 +1,109 @@
+{
+  "cases": [
+    { "args": ["Galaxie"], "id": "galaxy", "result": "galaxy" },
+    {
+      "args": ["Amas globulaire"],
+      "id": "globular-cluster",
+      "result": "globular-cluster"
+    },
+    { "args": ["Amas ouvert"], "id": "open-cluster", "result": "open-cluster" },
+    {
+      "args": ["Nébuleuse en émission"],
+      "id": "emission-nebula",
+      "result": "emission-nebula"
+    },
+    {
+      "args": ["Nébuleuse en réflexion"],
+      "id": "reflection-nebula",
+      "result": "emission-nebula"
+    },
+    {
+      "args": ["Nébuleuse planétaire"],
+      "id": "planetary-nebula",
+      "result": "planetary-nebula"
+    },
+    {
+      "args": ["Rémanent de supernova"],
+      "id": "supernova-remnant",
+      "result": "emission-nebula"
+    },
+    {
+      "args": ["Nébuleuse sombre"],
+      "id": "dark-nebula",
+      "result": "dark-nebula"
+    },
+    { "args": ["Étoile"], "id": "star", "result": "star" },
+    { "args": ["Soleil"], "id": "sun", "result": "star" },
+    { "args": ["Lune"], "id": "moon", "result": "moon" },
+    { "args": ["Planète"], "id": "planet", "result": "planet" },
+    { "args": ["Planète naine"], "id": "dwarf-planet", "result": "planet" },
+    { "args": ["Système solaire"], "id": "solar-system", "result": "planet" },
+    { "args": ["Comète"], "id": "comet", "result": "comet" },
+    {
+      "args": ["Complexe de nébuleuses en émission"],
+      "id": "alias-emission-complex",
+      "result": "emission-nebula"
+    },
+    {
+      "args": ["Région H II / nébuleuse en émission"],
+      "id": "alias-hii-region",
+      "result": "emission-nebula"
+    },
+    {
+      "args": ["Région HII / nébuleuse en émission"],
+      "id": "alias-hii-region-compact",
+      "result": "emission-nebula"
+    },
+    { "args": ["Quasar"], "id": "unknown-type", "result": "star" },
+    {
+      "args": ["Spiral galaxy"],
+      "id": "unknown-english-label",
+      "result": "star"
+    },
+    { "args": [""], "id": "empty-string", "result": "star" },
+    { "args": ["   "], "id": "whitespace-only", "result": "star" },
+    { "args": [null], "id": "no-type", "result": "star" },
+    { "args": [{}], "id": "empty-target", "result": "star" },
+    {
+      "args": [{ "skyTarget": { "type": "Galaxy", "typeKey": "Galaxie" } }],
+      "id": "target-sky-type-key",
+      "result": "galaxy"
+    },
+    {
+      "args": [
+        { "skyTarget": { "typeKey": "Amas ouvert" }, "typeKey": "Lune" }
+      ],
+      "id": "target-sky-type-key-wins-over-key",
+      "result": "open-cluster"
+    },
+    {
+      "args": [{ "skyTarget": {}, "typeKey": "Amas globulaire" }],
+      "id": "target-type-key",
+      "result": "globular-cluster"
+    },
+    {
+      "args": [{ "skyTarget": { "type": "Nébuleuse planétaire" } }],
+      "id": "target-sky-type-only",
+      "result": "planetary-nebula"
+    },
+    {
+      "args": [{ "skyTarget": { "type": "Galaxie spirale" } }],
+      "id": "target-localized-type-only",
+      "result": "star"
+    },
+    {
+      "args": [
+        { "skyTarget": { "typeKey": "Région H II / nébuleuse en émission" } }
+      ],
+      "id": "target-alias",
+      "result": "emission-nebula"
+    },
+    {
+      "args": [{ "typeKey": 12 }],
+      "id": "target-non-string-type",
+      "result": "star"
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "object-pictogram"
+}

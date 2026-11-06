@@ -1,0 +1,92 @@
+{
+  "cases": [
+    {
+      "args": [
+        [
+          {
+            "heading": null,
+            "paragraphs": [
+              "M31 est la galaxie spirale la plus proche de la nôtre.",
+              "On la trouve à l’aide de la constellation de Cassiopée."
+            ]
+          },
+          {
+            "heading": "Comment l’observer",
+            "paragraphs": ["Une nuit sans lune, loin des lumières."]
+          },
+          {
+            "heading": "En bref",
+            "paragraphs": ["Un grand classique de l’automne."]
+          }
+        ]
+      ],
+      "id": "the-paragraphs-of-every-section-in-order-the-intertitles-left-out",
+      "result": {
+        "story": "M31 est la galaxie spirale la plus proche de la nôtre. On la trouve à l’aide de la constellation de Cassiopée. Une nuit sans lune, loin des lumières. Un grand classique de l’automne.",
+        "storyParagraphs": [
+          "M31 est la galaxie spirale la plus proche de la nôtre.",
+          "On la trouve à l’aide de la constellation de Cassiopée.",
+          "Une nuit sans lune, loin des lumières.",
+          "Un grand classique de l’automne."
+        ]
+      }
+    },
+    {
+      "args": [[{ "heading": null, "paragraphs": ["One paragraph only."] }]],
+      "id": "a-page-of-one-section",
+      "result": {
+        "story": "One paragraph only.",
+        "storyParagraphs": ["One paragraph only."]
+      }
+    },
+    {
+      "args": [
+        [
+          {
+            "heading": null,
+            "paragraphs": [
+              "月は地球の唯一の天然の衛星です。",
+              "満ち欠けします。"
+            ]
+          },
+          { "heading": "観察", "paragraphs": ["双眼鏡で十分です。"] }
+        ]
+      ],
+      "id": "the-story-is-joined-by-a-space-in-every-language",
+      "result": {
+        "story": "月は地球の唯一の天然の衛星です。 満ち欠けします。 双眼鏡で十分です。",
+        "storyParagraphs": [
+          "月は地球の唯一の天然の衛星です。",
+          "満ち欠けします。",
+          "双眼鏡で十分です。"
+        ]
+      }
+    },
+    {
+      "args": [
+        [
+          { "heading": null, "paragraphs": ["First.", "", "Second."] },
+          { "heading": "Empty", "paragraphs": [] },
+          { "heading": "Last", "paragraphs": ["Third."] }
+        ]
+      ],
+      "id": "a-section-without-paragraphs-and-an-empty-paragraph-are-skipped",
+      "result": {
+        "story": "First. Second. Third.",
+        "storyParagraphs": ["First.", "Second.", "Third."]
+      }
+    },
+    {
+      "args": [[]],
+      "id": "no-section-gives-no-text",
+      "result": { "story": "", "storyParagraphs": [] }
+    },
+    {
+      "args": [null],
+      "id": "a-value-that-is-not-a-list-gives-no-text",
+      "result": { "story": "", "storyParagraphs": [] }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "target-page-story"
+}

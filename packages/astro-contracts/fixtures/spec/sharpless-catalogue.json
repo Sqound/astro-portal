@@ -1,0 +1,22 @@
+{
+  "module": "sharpless-catalogue",
+  "export": "sharplessDesignation",
+  "cases": [
+    {
+      "id": "spaced-catalogue",
+      "args": ["Sh 2-155"]
+    },
+    {
+      "id": "zero-padded-upper",
+      "args": ["SH2-0155"]
+    },
+    {
+      "id": "space-for-hyphen",
+      "args": ["sh2 155"]
+    },
+    {
+      "id": "foreign-designation",
+      "args": ["NGC 7000"]
+    }
+  ]
+}

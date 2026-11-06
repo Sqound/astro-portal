@@ -1,0 +1,301 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "now": 1792017000000,
+          "place": {
+            "id": "est",
+            "latitude": "45",
+            "longitude": "135",
+            "name": "Pré des Brumes",
+            "timeZone": "Asia/Tokyo"
+          },
+          "plans": []
+        }
+      ],
+      "id": "same-instant-east-place",
+      "result": { "date": "2026-10-15", "planIds": [] }
+    },
+    {
+      "args": [
+        {
+          "now": 1792017000000,
+          "place": {
+            "id": "ouest",
+            "latitude": "45",
+            "longitude": "2",
+            "name": "Lande du Vent",
+            "timeZone": "Europe/Paris"
+          },
+          "plans": []
+        }
+      ],
+      "id": "same-instant-west-place",
+      "result": { "date": "2026-10-14", "planIds": [] }
+    },
+    {
+      "args": [
+        {
+          "now": 1792017000000,
+          "place": {
+            "id": "est",
+            "latitude": "45",
+            "longitude": "135",
+            "name": "Pré des Brumes"
+          },
+          "plans": []
+        }
+      ],
+      "id": "same-instant-east-place-without-zone",
+      "result": { "date": "2026-10-15", "planIds": [] }
+    },
+    {
+      "args": [
+        {
+          "now": 1792017000000,
+          "place": {
+            "id": "ouest",
+            "latitude": "45",
+            "longitude": "2",
+            "name": "Lande du Vent"
+          },
+          "plans": []
+        }
+      ],
+      "id": "same-instant-west-place-without-zone",
+      "result": { "date": "2026-10-14", "planIds": [] }
+    },
+    {
+      "args": [
+        {
+          "now": 1792017000000,
+          "place": {
+            "id": "ouest",
+            "latitude": "45",
+            "longitude": "2",
+            "name": "Lande du Vent",
+            "timeZone": "Europe/Paris"
+          },
+          "plans": [
+            {
+              "date": "2026-10-15",
+              "id": "e15",
+              "location": {
+                "id": "est",
+                "latitude": "45",
+                "longitude": "135",
+                "name": "Pré des Brumes",
+                "timeZone": "Asia/Tokyo"
+              }
+            }
+          ]
+        }
+      ],
+      "id": "west-place-chosen-for-a-plan-of-the-east-place",
+      "result": { "date": "2026-10-14", "planIds": [] }
+    },
+    {
+      "args": [
+        {
+          "now": 1792017000000,
+          "place": {
+            "id": "est",
+            "latitude": "45",
+            "longitude": "135",
+            "name": "Pré des Brumes",
+            "timeZone": "Asia/Tokyo"
+          },
+          "plans": [
+            {
+              "date": "2026-10-15",
+              "id": "e15",
+              "location": {
+                "id": "est",
+                "latitude": "45",
+                "longitude": "135",
+                "name": "Pré des Brumes",
+                "timeZone": "Asia/Tokyo"
+              }
+            }
+          ]
+        }
+      ],
+      "id": "plan-of-the-east-place-at-the-east-place",
+      "result": { "date": "2026-10-15", "planIds": ["e15"] }
+    },
+    {
+      "args": [
+        {
+          "now": 1792017000000,
+          "place": {
+            "id": "ouest",
+            "latitude": "45",
+            "longitude": "2",
+            "name": "Lande du Vent",
+            "timeZone": "Europe/Paris"
+          },
+          "plans": [
+            {
+              "date": "2026-10-15",
+              "id": "w15",
+              "location": {
+                "id": "ouest",
+                "latitude": "45",
+                "longitude": "2",
+                "name": "Lande du Vent",
+                "timeZone": "Europe/Paris"
+              }
+            }
+          ]
+        }
+      ],
+      "id": "plan-moved-west-keeps-its-date-and-is-not-tonights",
+      "result": { "date": "2026-10-14", "planIds": [] }
+    },
+    {
+      "args": [
+        {
+          "now": 1792017000000,
+          "place": {
+            "id": "ouest",
+            "latitude": "45",
+            "longitude": "2",
+            "name": "Lande du Vent",
+            "timeZone": "Europe/Paris"
+          },
+          "plans": [
+            {
+              "date": "2026-10-14",
+              "id": "w14",
+              "location": {
+                "id": "ouest",
+                "latitude": "45",
+                "longitude": "2",
+                "name": "Lande du Vent",
+                "timeZone": "Europe/Paris"
+              }
+            },
+            {
+              "date": "2026-10-15",
+              "id": "w15",
+              "location": {
+                "id": "ouest",
+                "latitude": "45",
+                "longitude": "2",
+                "name": "Lande du Vent",
+                "timeZone": "Europe/Paris"
+              }
+            }
+          ]
+        }
+      ],
+      "id": "plan-of-the-night-lived-at-the-west-place",
+      "result": { "date": "2026-10-14", "planIds": ["w14"] }
+    },
+    {
+      "args": [
+        {
+          "now": 1792017000000,
+          "place": {
+            "id": "est",
+            "latitude": "45",
+            "longitude": "135",
+            "name": "Pré des Brumes",
+            "timeZone": "Asia/Tokyo"
+          },
+          "plans": [
+            {
+              "date": "2026-10-14",
+              "id": "e14",
+              "location": {
+                "id": "est",
+                "latitude": "45",
+                "longitude": "135",
+                "name": "Pré des Brumes",
+                "timeZone": "Asia/Tokyo"
+              }
+            },
+            {
+              "date": "2026-10-15",
+              "id": "e15",
+              "location": {
+                "id": "est",
+                "latitude": "45",
+                "longitude": "135",
+                "name": "Pré des Brumes",
+                "timeZone": "Asia/Tokyo"
+              }
+            }
+          ]
+        }
+      ],
+      "id": "both-nights-planned-east-place",
+      "result": { "date": "2026-10-15", "planIds": ["e15"] }
+    },
+    {
+      "args": [
+        {
+          "now": 1791963000000,
+          "place": {
+            "id": "ouest",
+            "latitude": "45",
+            "longitude": "2",
+            "name": "Lande du Vent",
+            "timeZone": "Europe/Paris"
+          },
+          "plans": []
+        }
+      ],
+      "id": "after-the-dawn-at-both-places-west",
+      "result": { "date": "2026-10-14", "planIds": [] }
+    },
+    {
+      "args": [
+        {
+          "now": 1791963000000,
+          "place": {
+            "id": "est",
+            "latitude": "45",
+            "longitude": "135",
+            "name": "Pré des Brumes",
+            "timeZone": "Asia/Tokyo"
+          },
+          "plans": []
+        }
+      ],
+      "id": "after-the-dawn-at-both-places-east",
+      "result": { "date": "2026-10-14", "planIds": [] }
+    },
+    {
+      "args": [
+        {
+          "now": 1792017000000,
+          "place": null,
+          "plans": [
+            {
+              "date": "2026-10-14",
+              "id": "w14",
+              "location": {
+                "id": "ouest",
+                "latitude": "45",
+                "longitude": "2",
+                "name": "Lande du Vent",
+                "timeZone": "Europe/Paris"
+              }
+            }
+          ]
+        }
+      ],
+      "id": "no-place-yet-first-plan-date",
+      "result": { "date": "2026-10-14", "planIds": ["w14"] }
+    },
+    {
+      "args": [{ "now": 1792017000000, "place": null, "plans": [] }],
+      "id": "no-place-no-plan-utc-date",
+      "result": { "date": "2026-10-14", "planIds": [] }
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "tonight-subject-night"
+}

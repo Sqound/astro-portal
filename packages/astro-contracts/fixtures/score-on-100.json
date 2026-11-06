@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "args": [{ "max": 90, "total": 74 }],
+      "id": "one-criterion-unrated",
+      "result": 82
+    },
+    { "args": [{ "max": 100, "total": 81 }], "id": "all-rated", "result": 81 },
+    {
+      "args": [{ "max": 0, "total": 0 }],
+      "id": "nothing-rated",
+      "result": null
+    },
+    {
+      "args": [{ "max": 8, "total": 1 }],
+      "id": "half-rounds-up",
+      "result": 13
+    },
+    {
+      "args": [{ "max": 80, "total": 62 }],
+      "id": "below-half-rounds-down",
+      "result": 78
+    },
+    {
+      "args": [{ "max": 70, "total": 70 }],
+      "id": "full-marks-reduced",
+      "result": 100
+    },
+    { "args": [null], "id": "no-score", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "score-on-100"
+}

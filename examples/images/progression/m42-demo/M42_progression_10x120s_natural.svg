@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs><radialGradient id="n"><stop stop-color="#d7e7ff"/><stop offset=".25" stop-color="#8d6489" stop-opacity=".7"/><stop offset="1" stop-opacity="0"/></radialGradient><pattern id="s" width="145" height="112" patternUnits="userSpaceOnUse"><circle cx="22" cy="25" r="2" fill="#fff"/><circle cx="100" cy="79" r="1.4" fill="#d9e8ff"/></pattern></defs>
+  <rect width="1600" height="1000" fill="#03070c"/><rect width="1600" height="1000" fill="url(#s)"/><ellipse cx="800" cy="500" rx="500" ry="370" fill="url(#n)"/><circle cx="800" cy="500" r="8" fill="white"/>
+  <text x="40" y="950" fill="#9ca7b1" font-family="system-ui" font-size="24">Palier 2 — 10 × 120 s — illustration synthétique</text>
+</svg>

@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "args": ["   13152 1903472 2021552480-2550001555492-255843 150323 1"],
+      "id": "negative-declination",
+      "result": {
+        "apparentSizeArcmin": [150, 150],
+        "coordinate": { "dec": -26.120488180128103, "ra": 15.980890651797598 },
+        "designation": "Sh2-1"
+      }
+    },
+    {
+      "args": [" 155 778  261102  262252480+6205002254455+622101  60322 9"],
+      "id": "cave-nebula",
+      "result": {
+        "apparentSizeArcmin": [60, 60],
+        "coordinate": { "dec": 62.61765491948061, "ra": 22.94549889430578 },
+        "designation": "Sh2-155"
+      }
+    },
+    { "args": ["    "], "id": "not-a-record", "result": null }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "sharpless-record"
+}

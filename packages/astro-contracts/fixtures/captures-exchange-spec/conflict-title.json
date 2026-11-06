@@ -1,0 +1,44 @@
+{
+  "exchange": "conflict-title",
+  "handler": "captures/[captureId]",
+  "as": "phone",
+  "status": 409,
+  "phase": "write",
+  "capture": "capture:conflicts",
+  "params": {
+    "captureId": "{capture:conflicts}"
+  },
+  "before": [
+    {
+      "as": "web",
+      "handler": "manage/captures/[captureId]",
+      "params": {
+        "captureId": "{capture:conflicts}"
+      },
+      "request": {
+        "method": "PATCH",
+        "path": "/api/v1/manage/captures/{capture:conflicts}",
+        "body": {
+          "metadata": {
+            "title": "Titre du web"
+          }
+        }
+      }
+    }
+  ],
+  "request": {
+    "method": "PATCH",
+    "path": "/api/v1/captures/{capture:conflicts}",
+    "headers": {
+      "if-match": "\"{revision}\""
+    },
+    "body": {
+      "metadata": {
+        "title": "Titre du téléphone"
+      }
+    }
+  },
+  "schema": "manage-captures.schema.json#/$defs/refusal",
+  "description": "The phone renames at the revision it read; the web renamed first: 409 capture_conflict, field title, and the capture as it stands (the web's title, the new revision). Nothing is written.",
+  "given": "Two hands on the same capture: the web wrote the title after the revision the phone read."
+}

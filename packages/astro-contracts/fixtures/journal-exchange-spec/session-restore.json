@@ -1,0 +1,28 @@
+{
+  "exchange": "session-restore",
+  "description": "`POST /v1/sessions/{id}/restore`: a deleted session comes back, without `deletedAt`, in the Journal with its events.",
+  "given": "The free observation of 10 August of `list`, deleted just before.",
+  "handler": "route:sessions/[id]/restore",
+  "phase": "write",
+  "order": 16,
+  "params": {
+    "id": "{session:no-plan}"
+  },
+  "setup": [
+    {
+      "handler": "route:sessions/[id]",
+      "params": {
+        "id": "{session:no-plan}"
+      },
+      "request": {
+        "method": "DELETE",
+        "path": "/api/v1/sessions/{session:no-plan}"
+      }
+    }
+  ],
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/sessions/{session:no-plan}/restore"
+  },
+  "schema": "session.schema.json#/$defs/restoreResponse"
+}

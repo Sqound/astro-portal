@@ -1,0 +1,96 @@
+{
+  "cases": [
+    {
+      "args": [
+        { "magnitudeMargin": 2.4, "sizeShare": 0, "status": "suitable" }
+      ],
+      "id": "suitable-right-size-pays-nothing",
+      "result": { "difficult": 0, "malus": 0, "size": 0 }
+    },
+    {
+      "args": [
+        { "magnitudeMargin": 1.2, "sizeShare": 0, "status": "difficult" }
+      ],
+      "id": "difficult-exit-pupil-only",
+      "result": { "difficult": 10, "malus": 10, "size": 0 }
+    },
+    {
+      "args": [
+        { "magnitudeMargin": -0.92, "sizeShare": 0, "status": "difficult" }
+      ],
+      "id": "difficult-under-the-limit",
+      "result": { "difficult": 14.6, "malus": 14.6, "size": 0 }
+    },
+    {
+      "args": [
+        { "magnitudeMargin": -1.99, "sizeShare": 0, "status": "difficult" }
+      ],
+      "id": "difficult-deficit-capped-at-two",
+      "result": { "difficult": 20, "malus": 20, "size": 0 }
+    },
+    {
+      "args": [
+        { "magnitudeMargin": 3.4, "sizeShare": 0.4437, "status": "suitable" }
+      ],
+      "id": "small-target",
+      "result": { "difficult": 0, "malus": 6.7, "size": 6.7 }
+    },
+    {
+      "args": [
+        { "magnitudeMargin": 1.7, "sizeShare": 0.3218, "status": "suitable" }
+      ],
+      "id": "large-target",
+      "result": { "difficult": 0, "malus": 4.8, "size": 4.8 }
+    },
+    {
+      "args": [
+        { "magnitudeMargin": -0.5, "sizeShare": 1, "status": "difficult" }
+      ],
+      "id": "difficult-and-small",
+      "result": { "difficult": 12.5, "malus": 27.5, "size": 15 }
+    },
+    {
+      "args": [
+        { "magnitudeMargin": null, "sizeShare": 0.5, "status": "unknown" }
+      ],
+      "id": "unknown-small",
+      "result": { "difficult": 0, "malus": 7.5, "size": 7.5 }
+    },
+    {
+      "args": [{ "status": "not-applicable", "visible": true }],
+      "id": "not-applicable",
+      "result": { "difficult": 0, "malus": 0, "size": 0 }
+    },
+    {
+      "args": [null],
+      "id": "no-visual",
+      "result": { "difficult": 0, "malus": 0, "size": 0 }
+    },
+    {
+      "args": [
+        {
+          "magnitudeMargin": 2.1,
+          "pair": { "generic": true, "status": "suitable" },
+          "sizeShare": 0,
+          "status": "suitable"
+        }
+      ],
+      "id": "generic-pair-pays-eight",
+      "result": { "difficult": 0, "malus": 8, "size": 0 }
+    },
+    {
+      "args": [
+        {
+          "magnitudeMargin": -0.5,
+          "pair": { "generic": true, "status": "difficult" },
+          "sizeShare": 0.2,
+          "status": "difficult"
+        }
+      ],
+      "id": "difficult-generic-pair-pays-both",
+      "result": { "difficult": 12.5, "malus": 23.5, "size": 3 }
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "visual-suggestion-malus"
+}

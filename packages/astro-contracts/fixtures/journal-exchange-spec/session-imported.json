@@ -1,0 +1,26 @@
+{
+  "exchange": "session-imported",
+  "description": "A night of the operator's catalogue on a private server, read as a session: read only, of origin `import`, with its target and nothing else. Every write to it answers `409 session_read_only`.",
+  "given": "A catalogue night of `list-private-server`.",
+  "handler": "compose:catalogue-session",
+  "phase": "read",
+  "request": {
+    "sessionId": "catalogue:2025-07-12:m57",
+    "catalogueNights": [
+      {
+        "date": "2025-07-12",
+        "targets": [
+          {
+            "id": "m57",
+            "title": "M 57",
+            "totalSeconds": 2400,
+            "imageUrl": "/gallery/m57-nuit.jpg",
+            "captureStartedAt": 1752354000000,
+            "captureEndedAt": 1752362400000
+          }
+        ]
+      }
+    ]
+  },
+  "schema": "session.schema.json#/$defs/detail"
+}

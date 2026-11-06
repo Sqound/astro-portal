@@ -1,0 +1,104 @@
+{
+  "module": "catalogue-designation",
+  "package": "astro-core",
+  "file": "catalogue-designation",
+  "export": "catalogueDesignation",
+  "cases": [
+    {
+      "id": "messier-spaced",
+      "args": ["M 31"]
+    },
+    {
+      "id": "messier-lowercase",
+      "args": ["m31"]
+    },
+    {
+      "id": "messier-padded",
+      "args": ["M031"]
+    },
+    {
+      "id": "ngc-joined",
+      "args": ["NGC7000"]
+    },
+    {
+      "id": "ngc-spaced",
+      "args": ["NGC 7000"]
+    },
+    {
+      "id": "ngc-letter",
+      "args": ["NGC0061A"]
+    },
+    {
+      "id": "ic-extra-suffix",
+      "args": ["IC0080 NED01"]
+    },
+    {
+      "id": "ic-lowercase",
+      "args": ["ic 80"]
+    },
+    {
+      "id": "barnard-spaced",
+      "args": ["B 033"]
+    },
+    {
+      "id": "barnard-letter",
+      "args": ["B33a"]
+    },
+    {
+      "id": "caldwell",
+      "args": ["C14"]
+    },
+    {
+      "id": "sharpless",
+      "args": ["Sh2-155"]
+    },
+    {
+      "id": "ldn",
+      "args": ["LDN 1622"]
+    },
+    {
+      "id": "common-name",
+      "args": ["Andromeda Galaxy"]
+    },
+    {
+      "id": "ngc-query-separators",
+      "args": ["NGC-007000"]
+    },
+    {
+      "id": "ic-whitespace",
+      "args": ["IC 0080   NED01"]
+    },
+    {
+      "id": "barnard-uppercase-letter",
+      "args": ["b033A"]
+    },
+    {
+      "id": "unknown-id",
+      "args": ["unknown-target"]
+    },
+    {
+      "id": "unchanged-other-spacing",
+      "args": [" vdB 14 "]
+    },
+    {
+      "id": "sharpless-spaced",
+      "args": ["Sh 2-0155"]
+    },
+    {
+      "id": "ldn-joined",
+      "args": ["LDN1622"]
+    },
+    {
+      "id": "lbn-padded",
+      "args": ["LBN 0437"]
+    },
+    {
+      "id": "abell-padded",
+      "args": ["Abell 039"]
+    },
+    {
+      "id": "abell-unchanged-spacing-trimmed",
+      "args": [" Abell 39 "]
+    }
+  ]
+}

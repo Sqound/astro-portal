@@ -1,0 +1,13 @@
+{
+  "cases": [
+    { "args": ["LBN 0437"], "id": "zero-padded", "result": "LBN 437" },
+    { "args": ["lbn437"], "id": "lower-joined", "result": "LBN 437" },
+    {
+      "args": ["LBN 085.75-01.48"],
+      "id": "galactic-form-left-alone",
+      "result": null
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "lbn-catalogue"
+}

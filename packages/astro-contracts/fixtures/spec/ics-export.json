@@ -1,0 +1,466 @@
+{
+  "module": "ics-export",
+  "package": "portal",
+  "file": "planner/export",
+  "export": "planCalendarIcs",
+  "cases": [
+    {
+      "id": "night-event-with-default-alarm",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Autumn nebulae",
+            "items": [
+              {
+                "id": "m31",
+                "filter": "L"
+              },
+              {
+                "id": "ngc7000"
+              }
+            ]
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [
+            {
+              "target": {
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy",
+                "designation": "M31"
+              },
+              "filter": "L"
+            },
+            {
+              "target": {
+                "id": "ngc7000",
+                "designation": "NGC 7000",
+                "objects": ["NGC 7000"]
+              },
+              "filter": "Ha"
+            }
+          ],
+          "now": "2026-09-15T18:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-reminder-minutes",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Autumn nebulae",
+            "items": [
+              {
+                "id": "m31",
+                "filter": "L"
+              },
+              {
+                "id": "ngc7000"
+              }
+            ]
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [
+            {
+              "target": {
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy",
+                "designation": "M31"
+              },
+              "filter": "L"
+            },
+            {
+              "target": {
+                "id": "ngc7000",
+                "designation": "NGC 7000",
+                "objects": ["NGC 7000"]
+              },
+              "filter": "Ha"
+            }
+          ],
+          "reminderMinutes": 45,
+          "now": "2026-09-15T18:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "escapes-separators-in-the-plan-name",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-4",
+            "date": "2026-09-15",
+            "name": "Ha; Oiii, Sii",
+            "items": []
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [],
+          "now": "2026-09-15T18:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "no-night-window",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Autumn nebulae",
+            "items": [
+              {
+                "id": "m31",
+                "filter": "L"
+              },
+              {
+                "id": "ngc7000"
+              }
+            ]
+          },
+          "night": null,
+          "targets": [
+            {
+              "target": {
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy",
+                "designation": "M31"
+              },
+              "filter": "L"
+            },
+            {
+              "target": {
+                "id": "ngc7000",
+                "designation": "NGC 7000",
+                "objects": ["NGC 7000"]
+              },
+              "filter": "Ha"
+            }
+          ],
+          "now": "2026-09-15T18:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-fr",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [],
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "fr"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-ja",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [],
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "ja"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-de",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [],
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "de"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-es",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [],
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "es"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-it",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [],
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "it"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-pt-br",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [],
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "pt-BR"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-ru",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [],
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "ru"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-zh-hans",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [],
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "zh-Hans"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-zh-hant",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [],
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-en-xa",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [],
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "en-XA"
+        }
+      ]
+    },
+    {
+      "id": "named-plan-in-de-keeps-its-own-words",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Herbstnebel",
+            "items": [
+              {
+                "id": "m31",
+                "filter": "L"
+              }
+            ]
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [
+            {
+              "target": {
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy",
+                "designation": "M31"
+              },
+              "filter": "L"
+            }
+          ],
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "de"
+        }
+      ]
+    },
+    {
+      "id": "shooting-lines-in-the-description",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Autumn nebulae",
+            "items": [
+              {
+                "id": "m31",
+                "filter": "L"
+              },
+              {
+                "id": "ngc7000"
+              }
+            ]
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [
+            {
+              "target": {
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy",
+                "designation": "M31"
+              },
+              "filter": "L"
+            },
+            {
+              "target": {
+                "id": "ngc7000",
+                "designation": "NGC 7000",
+                "objects": ["NGC 7000"]
+              },
+              "filter": "Ha"
+            }
+          ],
+          "now": "2026-09-15T18:00:00.000Z",
+          "acquisitionText": {
+            "m31": "120 s · gain 100 · UV/IR-cut · ≈ 28 poses · suggéré",
+            "ngc7000": "300 s · gain 100 · Duo-band · 16 poses"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a-target-without-a-line-keeps-its-filter",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Autumn nebulae",
+            "items": [
+              {
+                "id": "m31",
+                "filter": "L"
+              },
+              {
+                "id": "ngc7000"
+              }
+            ]
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "targets": [
+            {
+              "target": {
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy",
+                "designation": "M31"
+              },
+              "filter": "L"
+            },
+            {
+              "target": {
+                "id": "ngc7000",
+                "designation": "NGC 7000",
+                "objects": ["NGC 7000"]
+              },
+              "filter": "Ha"
+            }
+          ],
+          "now": "2026-09-15T18:00:00.000Z",
+          "acquisitionText": {
+            "m31": "60 s · 99 poses"
+          }
+        }
+      ]
+    }
+  ]
+}

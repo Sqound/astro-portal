@@ -1,0 +1,40 @@
+{
+  "module": "healpix-ancestor",
+  "package": "portal",
+  "file": "sky-tiles/geometry",
+  "export": "healpixGeometryFixtureCase",
+  "cases": [
+    {
+      "id": "ancestor-order-3-shift",
+      "args": [{ "order": 5, "pix": 4000, "ancestorOrder": 3 }]
+    },
+    {
+      "id": "ancestor-identity-at-own-order",
+      "args": [{ "order": 5, "pix": 4000, "ancestorOrder": 5 }]
+    },
+    {
+      "id": "ancestor-deep-shift-to-order-zero",
+      "args": [{ "order": 9, "pix": 3000000, "ancestorOrder": 0 }]
+    },
+    {
+      "id": "dir-bucket-below-ten-thousand",
+      "args": [{ "order": 3, "pix": 17 }]
+    },
+    {
+      "id": "dir-bucket-above-ten-thousand",
+      "args": [{ "order": 6, "pix": 12345 }]
+    },
+    {
+      "id": "chunk-descendants-order-5-under-order-1",
+      "args": [{ "chunkOrder": 1, "chunkPix": 2, "order": 5 }]
+    },
+    {
+      "id": "chunk-descendants-single-pixel-at-its-own-order",
+      "args": [{ "chunkOrder": 0, "chunkPix": 0, "order": 0 }]
+    },
+    {
+      "id": "chunk-descendants-large-delta",
+      "args": [{ "chunkOrder": 3, "chunkPix": 0, "order": 9 }]
+    }
+  ]
+}

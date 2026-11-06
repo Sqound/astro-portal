@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "args": ["Sharpless", "fr"],
+      "id": "sharpless-fr",
+      "result": "Sharpless — S. Sharpless, Catalogue of H II Regions (1959), ApJS 4, 257 · CDS/VizieR VII/20 · aucune licence explicite n’est publiée pour cette version ; positions et désignations publiées en 1959"
+    },
+    {
+      "args": ["Abell", "en"],
+      "id": "abell-en",
+      "result": "Abell — G. O. Abell, Properties of Some Old Planetary Nebulae (1966), ApJ 144, 259; Acker et al. 1992, Strasbourg-ESO Catalogue; Kerber et al. 2003, A&A 408, 1029 · CDS/VizieR V/84, J/A+A/408/1029 · no explicit licence is published for this version; positions and designations published in 1966, 1992 and 2003"
+    },
+    {
+      "args": ["Abell", "ja"],
+      "id": "abell-ja",
+      "result": "Abell — G. O. Abell, Properties of Some Old Planetary Nebulae (1966), ApJ 144, 259; Acker et al. 1992, Strasbourg-ESO Catalogue; Kerber et al. 2003, A&A 408, 1029 · CDS/VizieR V/84, J/A+A/408/1029 · この版には明示的なライセンスが公開されていません。位置と名称は1966、1992、2003年に公表されたものです"
+    },
+    {
+      "args": ["LDN", "zh-Hant"],
+      "id": "ldn-zh-hant",
+      "result": "LDN — B. T. Lynds, Catalogue of Dark Nebulae (1962), ApJS 7, 1 · CDS/VizieR VII/7A · 此版本未發布明確的授權；位置與名稱發表於1962年"
+    },
+    {
+      "args": ["LBN", "pt"],
+      "id": "lbn-portuguese-language",
+      "result": "LBN — B. T. Lynds, Catalogue of Bright Nebulae (1965), ApJS 12, 163 · CDS/VizieR VII/9 · nenhuma licença explícita foi publicada para esta versão; posições e designações publicadas em 1965"
+    },
+    { "args": ["NGC", "fr"], "id": "uncredited", "result": null }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "catalogue-sources"
+}

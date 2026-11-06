@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/export/data-export-readme.schema.json",
+  "title": "Data export — README.md front lines",
+  "description": "The first lines of the README.md of planastro-export-<AAAA-MM-JJ>.zip, one `key: value` each up to the first blank line, read as an object: `formatVersion` (1), the instant of the export, and the boxes present in the order of the screen (`parts: plans, places, …`). A reader that only understands version 1 refuses a later one. The rest of the README is for the person who opens it and names the line « Les images de la galerie privée restent dans l’espace : elles ne sont pas dans le fichier. »",
+  "type": "object",
+  "required": ["formatVersion", "exportedAt", "parts"],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "parts": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "plans",
+          "places",
+          "equipment",
+          "framings",
+          "journal",
+          "sky-measurements"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}

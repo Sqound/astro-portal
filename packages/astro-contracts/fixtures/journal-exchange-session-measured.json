@@ -1,0 +1,233 @@
+{
+  "description": "A night Astro Sync created and analysed: no plan, its steps and its analysis give the figures, the main exposure of the target and the number of exposure families, and a capture gives the thumbnail.",
+  "exchange": "session-measured",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The 9 October night of `list`.",
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/sessions/00000000-0000-4000-8000-00000000001a"
+  },
+  "response": {
+    "body": {
+      "debrief": null,
+      "debriefSummary": {
+        "acquiredMinutes": 0,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": true,
+        "lostByCause": [],
+        "lostMinutes": 0,
+        "perTarget": [],
+        "plannedMinutes": 0,
+        "segments": null
+      },
+      "events": {
+        "events": [],
+        "hasMore": false,
+        "nextSince": null,
+        "sessionId": "00000000-0000-4000-8000-00000000001a"
+      },
+      "guidingLosses": [],
+      "guidingLossesReason": null,
+      "guidingSeries": [],
+      "guidingSummary": null,
+      "guidingTrace": null,
+      "night": {
+        "equipment": { "source": "night", "value": null },
+        "finishedAt": {
+          "source": "night",
+          "value": "2026-10-09T23:00:00.000Z"
+        },
+        "notes": { "source": "night", "value": null },
+        "place": { "source": "night", "value": null },
+        "startedAt": { "source": "night", "value": "2026-10-09T19:00:00.000Z" },
+        "targetIds": { "source": "night", "value": null },
+        "title": { "source": "night", "value": null }
+      },
+      "plan": null,
+      "posesSummary": {
+        "byFilter": [
+          {
+            "filter": null,
+            "kept": 2,
+            "keptSeconds": 0,
+            "rejected": 0,
+            "total": 2
+          }
+        ],
+        "byReason": {},
+        "kept": 2,
+        "keptSeconds": 0,
+        "rejected": 0,
+        "rejectedKnown": false,
+        "total": 2,
+        "totalSeconds": 0
+      },
+      "qualitySummary": {
+        "byStep": [
+          {
+            "eccentricity": 0.4,
+            "exposureSeconds": 60,
+            "filter": "L",
+            "fwhmArcsec": 4,
+            "fwhmPixels": 2,
+            "measuredFrames": 1,
+            "skyBackgroundAdu": 300,
+            "skyBackgroundNoiseAdu": null,
+            "starCount": null,
+            "stepId": "00000000-0000-4000-8000-00000000001b",
+            "stepKey": "k1"
+          },
+          {
+            "eccentricity": 0.42,
+            "exposureSeconds": 180,
+            "filter": "R",
+            "fwhmArcsec": 4.4,
+            "fwhmPixels": 2.2,
+            "measuredFrames": 1,
+            "skyBackgroundAdu": 310,
+            "skyBackgroundNoiseAdu": null,
+            "starCount": null,
+            "stepId": "00000000-0000-4000-8000-00000000001c",
+            "stepKey": "k2"
+          }
+        ],
+        "night": {
+          "eccentricity": 0.41,
+          "fwhmArcsec": 4.2,
+          "fwhmPixels": 2.1,
+          "measuredFrames": 2,
+          "skyBackgroundAdu": 305,
+          "skyBackgroundNoiseAdu": null,
+          "starCount": null
+        },
+        "pixelScaleArcsec": 2
+      },
+      "readOnly": false,
+      "session": {
+        "clientSessionId": "01J8Z3K9QZ6N3S6R3E6G8H0024",
+        "createdAt": "2026-10-14T02:00:00.000Z",
+        "eveningDate": "2026-10-09",
+        "eventCount": 0,
+        "finishedAt": "2026-10-09T23:00:00.000Z",
+        "id": "00000000-0000-4000-8000-00000000001a",
+        "origin": "astro-sync",
+        "outcome": null,
+        "pendingSupplementCount": 0,
+        "planId": null,
+        "projectId": null,
+        "reworkRevision": 0,
+        "reworkedAt": null,
+        "startedAt": "2026-10-09T19:00:00.000Z",
+        "status": "finished",
+        "supplementCount": 0,
+        "updatedAt": "2026-10-14T02:00:00.000Z"
+      },
+      "steps": [
+        {
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "edited": false,
+          "editedAt": null,
+          "exposureSeconds": 60,
+          "filter": "L",
+          "frameCount": 30,
+          "gain": null,
+          "id": "00000000-0000-4000-8000-00000000001b",
+          "integrationSeconds": 1800,
+          "origin": "analysis",
+          "position": 1,
+          "sessionId": "00000000-0000-4000-8000-00000000001a",
+          "stepKey": "k1",
+          "targetHint": null,
+          "targetId": "m42",
+          "updatedAt": "2026-10-14T00:00:00.000Z"
+        },
+        {
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "edited": false,
+          "editedAt": null,
+          "exposureSeconds": 180,
+          "filter": "R",
+          "frameCount": 20,
+          "gain": null,
+          "id": "00000000-0000-4000-8000-00000000001c",
+          "integrationSeconds": 3600,
+          "origin": "analysis",
+          "position": 2,
+          "sessionId": "00000000-0000-4000-8000-00000000001a",
+          "stepKey": "k2",
+          "targetHint": null,
+          "targetId": "m42",
+          "updatedAt": "2026-10-14T00:00:00.000Z"
+        },
+        {
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "edited": false,
+          "editedAt": null,
+          "exposureSeconds": 180,
+          "filter": "G",
+          "frameCount": 20,
+          "gain": null,
+          "id": "00000000-0000-4000-8000-00000000001d",
+          "integrationSeconds": 3600,
+          "origin": "analysis",
+          "position": 3,
+          "sessionId": "00000000-0000-4000-8000-00000000001a",
+          "stepKey": "k3",
+          "targetHint": null,
+          "targetId": "m42",
+          "updatedAt": "2026-10-14T00:00:00.000Z"
+        }
+      ],
+      "supplements": [],
+      "targets": [
+        {
+          "acquiredSeconds": 9000,
+          "captureId": "00000000-0000-4000-8000-00000000001f",
+          "exposureFamilies": 2,
+          "exposureSeconds": 180,
+          "filter": "G",
+          "finishedAt": null,
+          "frameCount": 70,
+          "label": "M 42",
+          "measured": {
+            "lines": [
+              {
+                "exposureSeconds": 60,
+                "filter": "L",
+                "frameCount": 30,
+                "gain": null
+              },
+              {
+                "exposureSeconds": 180,
+                "filter": "R",
+                "frameCount": 20,
+                "gain": null
+              },
+              {
+                "exposureSeconds": 180,
+                "filter": "G",
+                "frameCount": 20,
+                "gain": null
+              }
+            ],
+            "source": "astro-sync"
+          },
+          "outcome": null,
+          "passages": null,
+          "planItemId": null,
+          "plannedSeconds": null,
+          "plannedSlot": null,
+          "reason": null,
+          "slot": null,
+          "startedAt": null,
+          "state": "added",
+          "targetId": "m42",
+          "thumbnailUrl": "/v1/captures/00000000-0000-4000-8000-00000000001f/media?variant=thumbnail"
+        }
+      ],
+      "zone": { "timeZone": null, "utcOffsetMinutes": null }
+    },
+    "schema": "session.schema.json#/$defs/detail",
+    "status": 200
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "module": "app-log-redaction",
+  "package": "portal",
+  "export": "redactAppLogText",
+  "cases": [
+    {
+      "id": "clean-stack-trace",
+      "args": [
+        "#0      Sheet.build (example/sheet.js:412:17)\n#1      Widget.build (example/framework.js:5799:49)"
+      ]
+    },
+    {
+      "id": "clean-versions",
+      "args": ["iOS 18.6.2 · app 1.4.0+17 · iPhone17,1"]
+    },
+    {
+      "id": "clean-duration",
+      "args": ["Timeout after 0:00:30.000000 waiting for set_view_plan"]
+    },
+    {
+      "id": "clean-uuid",
+      "args": ["Plan 3f2b8c1e-5d4a-4e6f-9a7b-1c2d3e4f5a6b was not found"]
+    },
+    {
+      "id": "clean-small-decimals",
+      "args": ["score 72.5, altitude 41.25°"]
+    },
+    {
+      "id": "clean-whole-degrees",
+      "args": ["place rounded to 45 N, 30 W"]
+    },
+    {
+      "id": "coordinate-pair",
+      "args": ["Weather failed for 45.1234,-30.5678"]
+    },
+    {
+      "id": "coordinate-in-url",
+      "args": [
+        "GET https://api.example.test/forecast?lat=45.12345&lon=-30.98765 failed"
+      ]
+    },
+    {
+      "id": "coordinate-degrees-minutes",
+      "args": ["Place at 45°07' N 30°32' W"]
+    },
+    {
+      "id": "email-address",
+      "args": ["Sign-in failed for camille@exemple.test"]
+    },
+    {
+      "id": "ipv4-address",
+      "args": [
+        "SocketException: Connection refused (address = 192.0.2.10, port = 4700)"
+      ]
+    },
+    {
+      "id": "ipv6-address",
+      "args": ["No route to fe80::1c2b:3d4e:5f60:7a8b"]
+    },
+    {
+      "id": "mac-address",
+      "args": ["Device 02:00:5e:10:00:01 answered nothing"]
+    },
+    {
+      "id": "bearer-token",
+      "args": [
+        "Authorization: Bearer abcDEF0123456789abcDEF0123456789abcDEF012"
+      ]
+    },
+    {
+      "id": "keyed-secret",
+      "args": ["request failed: token=Zm9vYmFy and password: hunter2"]
+    },
+    {
+      "id": "long-key-run",
+      "args": [
+        "signature 4f6a1d9c2b7e8f30a5c4d1e2f3a4b5c6d7e8f9a0b1c2 rejected"
+      ]
+    },
+    {
+      "id": "pem-block",
+      "args": [
+        "key: -----BEGIN ENCRYPTED PRIVATE KEY-----\nU1lOVEhFVElD\n-----END ENCRYPTED PRIVATE KEY-----"
+      ]
+    },
+    {
+      "id": "large-decimal-kept",
+      "args": ["exposure 1234.5678 s"]
+    }
+  ]
+}

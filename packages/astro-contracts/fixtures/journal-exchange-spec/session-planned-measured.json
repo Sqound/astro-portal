@@ -1,0 +1,15 @@
+{
+  "exchange": "session-planned-measured",
+  "description": "A night launched with the lines frozen (`planned`: « 28 × 120 s · gain 100 · L ») and measured by Astro Sync (`measured`, source `astro-sync`: the two steps of the analysis add up to 27 frames).",
+  "given": "The 12 October night of `list`.",
+  "handler": "route:sessions/[id]",
+  "phase": "read",
+  "params": {
+    "id": "{session:planned-measured}"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/sessions/{session:planned-measured}"
+  },
+  "schema": "session.schema.json#/$defs/detail"
+}

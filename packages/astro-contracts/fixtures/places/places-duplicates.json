@@ -1,0 +1,296 @@
+{
+  "contract": "place.schema.json",
+  "description": "The rule of possible duplicates, computed on the device over the whole list of places, the same on the web and the phone; flagged, never blocked, never merged. Two places are possible duplicates when their names are equal once folded, or when they are less than 100 m apart (strictly). Folding: Unicode NFD, the combining marks U+0300–U+036F removed, lower case, white space trimmed and every run of white space read as one space; nothing else (« ß » stays « ß »). Distance: haversine on a sphere of radius 6 371 008.8 m. `duplicates` lists every flagged pair once, in the order of the list (the first place of the pair first), with whether the names are equal and the distance rounded to the metre (the message « Deux lieux semblent identiques : « X » et « Y », à N m l'un de l'autre. »); `flagged` lists the places that carry the pill « Doublon possible », in the order of the list.",
+  "rule": {
+    "thresholdMetres": 100,
+    "earthRadiusMetres": 6371008.8,
+    "combiningMarks": "U+0300-U+036F"
+  },
+  "cases": [
+    {
+      "id": "three-homonyms",
+      "description": "Three places of the same name: every pair is flagged, by name; the two close ones are also under 100 m.",
+      "places": [
+        {
+          "id": "a",
+          "name": "Col des Étoiles",
+          "latitude": 45,
+          "longitude": -30
+        },
+        {
+          "id": "b",
+          "name": "Col des Étoiles",
+          "latitude": 45.0004497,
+          "longitude": -30
+        },
+        {
+          "id": "c",
+          "name": "Col des Étoiles",
+          "latitude": 45.045,
+          "longitude": -30
+        }
+      ],
+      "duplicates": [
+        {
+          "ids": ["a", "b"],
+          "sameName": true,
+          "distanceMetres": 50
+        },
+        {
+          "ids": ["a", "c"],
+          "sameName": true,
+          "distanceMetres": 5004
+        },
+        {
+          "ids": ["b", "c"],
+          "sameName": true,
+          "distanceMetres": 4954
+        }
+      ],
+      "flagged": ["a", "b", "c"]
+    },
+    {
+      "id": "accents-and-case",
+      "description": "Names equal without case nor accents, far apart.",
+      "places": [
+        {
+          "id": "a",
+          "name": "Col des Etoiles",
+          "latitude": 45,
+          "longitude": -30
+        },
+        {
+          "id": "b",
+          "name": "col des ÉTOILES",
+          "latitude": 45.2,
+          "longitude": -30.2
+        }
+      ],
+      "duplicates": [
+        {
+          "ids": ["a", "b"],
+          "sameName": true,
+          "distanceMetres": 27221
+        }
+      ],
+      "flagged": ["a", "b"]
+    },
+    {
+      "id": "white-space",
+      "description": "Leading, trailing and repeated white space do not count.",
+      "places": [
+        {
+          "id": "a",
+          "name": "  Col  des Étoiles ",
+          "latitude": 45,
+          "longitude": -30
+        },
+        {
+          "id": "b",
+          "name": "Col des Étoiles",
+          "latitude": 45.2,
+          "longitude": -30.2
+        }
+      ],
+      "duplicates": [
+        {
+          "ids": ["a", "b"],
+          "sameName": true,
+          "distanceMetres": 27221
+        }
+      ],
+      "flagged": ["a", "b"]
+    },
+    {
+      "id": "close-different-names",
+      "description": "Two names, 60 m apart: flagged by distance.",
+      "places": [
+        {
+          "id": "a",
+          "name": "Belvédère",
+          "latitude": 45,
+          "longitude": -30
+        },
+        {
+          "id": "b",
+          "name": "Parking du col",
+          "latitude": 45.0005396,
+          "longitude": -30
+        }
+      ],
+      "duplicates": [
+        {
+          "ids": ["a", "b"],
+          "sameName": false,
+          "distanceMetres": 60
+        }
+      ],
+      "flagged": ["a", "b"]
+    },
+    {
+      "id": "just-under-100-m",
+      "description": "99 m apart: flagged.",
+      "places": [
+        {
+          "id": "a",
+          "name": "Belvédère",
+          "latitude": 45,
+          "longitude": -30
+        },
+        {
+          "id": "b",
+          "name": "Aire de pique-nique",
+          "latitude": 45.0008903,
+          "longitude": -30
+        }
+      ],
+      "duplicates": [
+        {
+          "ids": ["a", "b"],
+          "sameName": false,
+          "distanceMetres": 99
+        }
+      ],
+      "flagged": ["a", "b"]
+    },
+    {
+      "id": "just-over-100-m",
+      "description": "101 m apart, other names: not flagged.",
+      "places": [
+        {
+          "id": "a",
+          "name": "Belvédère",
+          "latitude": 45,
+          "longitude": -30
+        },
+        {
+          "id": "b",
+          "name": "Aire de pique-nique",
+          "latitude": 45.0009083,
+          "longitude": -30
+        }
+      ],
+      "duplicates": [],
+      "flagged": []
+    },
+    {
+      "id": "east-west",
+      "description": "60 m apart along a parallel at 45° N: flagged.",
+      "places": [
+        {
+          "id": "a",
+          "name": "Belvédère",
+          "latitude": 45,
+          "longitude": -30
+        },
+        {
+          "id": "b",
+          "name": "Lac",
+          "latitude": 45,
+          "longitude": -29.9992369
+        }
+      ],
+      "duplicates": [
+        {
+          "ids": ["a", "b"],
+          "sameName": false,
+          "distanceMetres": 60
+        }
+      ],
+      "flagged": ["a", "b"]
+    },
+    {
+      "id": "japanese",
+      "description": "Names without accents to fold (Japanese): equal after trimming.",
+      "places": [
+        {
+          "id": "a",
+          "name": "星見台",
+          "latitude": 45,
+          "longitude": -30
+        },
+        {
+          "id": "b",
+          "name": "星見台 ",
+          "latitude": 45.3,
+          "longitude": -30.3
+        },
+        {
+          "id": "c",
+          "name": "星見ヶ丘",
+          "latitude": 45.6,
+          "longitude": -30.6
+        }
+      ],
+      "duplicates": [
+        {
+          "ids": ["a", "b"],
+          "sameName": true,
+          "distanceMetres": 40820
+        }
+      ],
+      "flagged": ["a", "b"]
+    },
+    {
+      "id": "sharp-s-not-folded",
+      "description": "« ß » is not an accent: « Straße » and « Strasse » are two names.",
+      "places": [
+        {
+          "id": "a",
+          "name": "Sternwarte Straße",
+          "latitude": 45,
+          "longitude": -30
+        },
+        {
+          "id": "b",
+          "name": "Sternwarte Strasse",
+          "latitude": 45.3,
+          "longitude": -30.3
+        }
+      ],
+      "duplicates": [],
+      "flagged": []
+    },
+    {
+      "id": "far-and-different",
+      "description": "Different names, kilometres apart: nothing.",
+      "places": [
+        {
+          "id": "a",
+          "name": "Col des Étoiles",
+          "latitude": 45,
+          "longitude": -30
+        },
+        {
+          "id": "b",
+          "name": "Jardin de la maison",
+          "latitude": 45.1,
+          "longitude": -30.1
+        }
+      ],
+      "duplicates": [],
+      "flagged": []
+    },
+    {
+      "id": "one-place",
+      "description": "A single place has no duplicate.",
+      "places": [
+        {
+          "id": "a",
+          "name": "Col des Étoiles",
+          "latitude": 45,
+          "longitude": -30
+        }
+      ],
+      "duplicates": [],
+      "flagged": []
+    },
+    {
+      "id": "no-place",
+      "description": "An empty list.",
+      "places": [],
+      "duplicates": [],
+      "flagged": []
+    }
+  ]
+}

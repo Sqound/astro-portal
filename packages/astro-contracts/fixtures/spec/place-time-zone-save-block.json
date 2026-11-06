@@ -1,0 +1,59 @@
+{
+  "module": "place-time-zone-save-block",
+  "package": "portal",
+  "file": "planner/place-time-zone",
+  "export": "placeSaveBlock",
+  "cases": [
+    {
+      "id": "complete",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Europe/Paris"
+        }
+      ]
+    },
+    {
+      "id": "no-zone",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        }
+      ]
+    },
+    {
+      "id": "unknown-zone",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Not/AZone"
+        }
+      ]
+    },
+    {
+      "id": "empty-zone",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": ""
+        }
+      ]
+    },
+    {
+      "id": "no-coordinates",
+      "args": [
+        {
+          "timeZone": "Europe/Paris"
+        }
+      ]
+    },
+    {
+      "id": "nothing",
+      "args": [null]
+    }
+  ]
+}

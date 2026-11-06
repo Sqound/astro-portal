@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "args": [{ "aliases": ["C1"] }],
+      "id": "alias-caldwell-one",
+      "result": "C1"
+    },
+    {
+      "args": [{ "designation": "M31" }],
+      "id": "non-caldwell-target",
+      "result": null
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "target-catalogue-crossrefs"
+}

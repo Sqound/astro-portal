@@ -1,0 +1,202 @@
+{
+  "cases": [
+    {
+      "args": [{ "latitude": 48.8566, "longitude": 2.3522 }],
+      "id": "paris",
+      "result": "Europe/Paris"
+    },
+    {
+      "args": [{ "latitude": 43.7, "longitude": 7.27 }],
+      "id": "nice",
+      "result": "Europe/Paris"
+    },
+    {
+      "args": [{ "latitude": 43.9, "longitude": 7.4 }],
+      "id": "provence-hills",
+      "result": "Europe/Paris"
+    },
+    {
+      "args": [{ "latitude": 35.68, "longitude": 139.69 }],
+      "id": "tokyo",
+      "result": "Asia/Tokyo"
+    },
+    {
+      "args": [{ "latitude": 43.06, "longitude": 141.35 }],
+      "id": "sapporo",
+      "result": "Asia/Tokyo"
+    },
+    {
+      "args": [{ "latitude": 33.59, "longitude": 130.4 }],
+      "id": "fukuoka",
+      "result": "Asia/Tokyo"
+    },
+    {
+      "args": [{ "latitude": 26.21, "longitude": 127.68 }],
+      "id": "naha",
+      "result": "Asia/Tokyo"
+    },
+    {
+      "args": [{ "latitude": 40.7128, "longitude": -74.006 }],
+      "id": "new-york",
+      "result": "America/New_York"
+    },
+    {
+      "args": [{ "latitude": 34.05, "longitude": -118.24 }],
+      "id": "los-angeles",
+      "result": "America/Los_Angeles"
+    },
+    {
+      "args": [{ "latitude": 39.74, "longitude": -104.99 }],
+      "id": "denver",
+      "result": "America/Denver"
+    },
+    {
+      "args": [{ "latitude": 41.88, "longitude": -87.63 }],
+      "id": "chicago",
+      "result": "America/Chicago"
+    },
+    {
+      "args": [{ "latitude": 21.31, "longitude": -157.86 }],
+      "id": "honolulu",
+      "result": "Pacific/Honolulu"
+    },
+    {
+      "args": [{ "latitude": 19.82, "longitude": -155.47 }],
+      "id": "mauna-kea",
+      "result": "Pacific/Honolulu"
+    },
+    {
+      "args": [{ "latitude": -33.87, "longitude": 151.21 }],
+      "id": "sydney",
+      "result": "Australia/Sydney"
+    },
+    {
+      "args": [{ "latitude": -31.95, "longitude": 115.86 }],
+      "id": "perth",
+      "result": "Australia/Perth"
+    },
+    {
+      "args": [{ "latitude": -34.93, "longitude": 138.6 }],
+      "id": "adelaide",
+      "result": "Australia/Adelaide"
+    },
+    {
+      "args": [{ "latitude": -33.45, "longitude": -70.67 }],
+      "id": "santiago",
+      "result": "America/Santiago"
+    },
+    {
+      "args": [{ "latitude": -24.63, "longitude": -70.4 }],
+      "id": "atacama",
+      "result": "America/Santiago"
+    },
+    {
+      "args": [{ "latitude": -34.6, "longitude": -58.38 }],
+      "id": "buenos-aires",
+      "result": "America/Argentina/Buenos_Aires"
+    },
+    {
+      "args": [{ "latitude": -23.55, "longitude": -46.63 }],
+      "id": "sao-paulo",
+      "result": "America/Sao_Paulo"
+    },
+    {
+      "args": [{ "latitude": -33.92, "longitude": 18.42 }],
+      "id": "cape-town",
+      "result": "Africa/Johannesburg"
+    },
+    {
+      "args": [{ "latitude": -1.29, "longitude": 36.82 }],
+      "id": "nairobi",
+      "result": "Africa/Nairobi"
+    },
+    {
+      "args": [{ "latitude": 64.15, "longitude": -21.94 }],
+      "id": "reykjavik",
+      "result": "Atlantic/Reykjavik"
+    },
+    {
+      "args": [{ "latitude": 28.27, "longitude": -16.64 }],
+      "id": "teide",
+      "result": "Atlantic/Canary"
+    },
+    {
+      "args": [{ "latitude": 28.61, "longitude": 77.21 }],
+      "id": "delhi",
+      "result": "Asia/Kolkata"
+    },
+    {
+      "args": [{ "latitude": 39.9, "longitude": 116.4 }],
+      "id": "beijing",
+      "result": "Asia/Shanghai"
+    },
+    {
+      "args": [{ "latitude": 43.83, "longitude": 87.62 }],
+      "id": "urumqi",
+      "result": "Asia/Urumqi"
+    },
+    {
+      "args": [{ "latitude": 30.04, "longitude": 31.24 }],
+      "id": "cairo",
+      "result": "Africa/Cairo"
+    },
+    {
+      "args": [{ "latitude": 55.76, "longitude": 37.62 }],
+      "id": "moscow",
+      "result": "Europe/Moscow"
+    },
+    {
+      "args": [{ "latitude": 51.51, "longitude": -0.13 }],
+      "id": "london",
+      "result": "Europe/London"
+    },
+    {
+      "args": [{ "latitude": 40.42, "longitude": -3.7 }],
+      "id": "madrid",
+      "result": "Europe/Madrid"
+    },
+    {
+      "args": [{ "latitude": 41.9, "longitude": 12.5 }],
+      "id": "rome",
+      "result": "Europe/Rome"
+    },
+    {
+      "args": [{ "latitude": -36.85, "longitude": 174.76 }],
+      "id": "auckland",
+      "result": "Pacific/Auckland"
+    },
+    {
+      "args": [{ "latitude": 27.72, "longitude": 85.32 }],
+      "id": "kathmandu",
+      "result": "Asia/Kathmandu"
+    },
+    {
+      "args": [{ "latitude": 0, "longitude": 0 }],
+      "id": "null-island",
+      "result": "Etc/GMT"
+    },
+    {
+      "args": [{ "latitude": -10, "longitude": -150 }],
+      "id": "mid-pacific",
+      "result": "Etc/GMT+10"
+    },
+    {
+      "args": [{ "latitude": 30, "longitude": -40 }],
+      "id": "mid-atlantic",
+      "result": "Etc/GMT+3"
+    },
+    {
+      "args": [{ "latitude": "48.8566", "longitude": "2.3522" }],
+      "id": "coordinates-as-text",
+      "result": "Europe/Paris"
+    },
+    {
+      "args": [{ "latitude": 95, "longitude": 5 }],
+      "id": "latitude-out-of-range",
+      "result": null
+    },
+    { "args": [{}], "id": "no-coordinates", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "place-time-zone-offline"
+}

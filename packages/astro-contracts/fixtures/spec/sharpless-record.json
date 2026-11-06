@@ -1,0 +1,19 @@
+{
+  "module": "sharpless-record",
+  "file": "sharpless-catalogue",
+  "export": "parseSharplessRecord",
+  "cases": [
+    {
+      "id": "negative-declination",
+      "args": ["   13152 1903472 2021552480-2550001555492-255843 150323 1"]
+    },
+    {
+      "id": "cave-nebula",
+      "args": [" 155 778  261102  262252480+6205002254455+622101  60322 9"]
+    },
+    {
+      "id": "not-a-record",
+      "args": ["    "]
+    }
+  ]
+}

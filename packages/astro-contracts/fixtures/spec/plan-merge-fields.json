@@ -1,0 +1,3710 @@
+{
+  "module": "plan-merge-fields",
+  "package": "portal",
+  "file": "planner/plan-fields",
+  "export": "mergePlanFields",
+  "cases": [
+    {
+      "id": "no-setting-differs-targets-only",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "galaxy"
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            },
+            {
+              "id": "m13",
+              "startMinute": 60,
+              "endMinute": 120,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m13",
+              "startMinute": 60,
+              "endMinute": 120,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            },
+            {
+              "id": "m13",
+              "startMinute": 60,
+              "endMinute": 120,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "one-side-changed-a-scalar",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 25,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "one-side-changed-a-nested-equipment-field",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "eq6-r-pro",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "both-sides-changed-the-same-field",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 25,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 35,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "both-sides-changed-the-same-field-chosen",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 25,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 35,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "minAltitude": "other"
+        },
+        {}
+      ]
+    },
+    {
+      "id": "wind-tolerance-object",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "heavy",
+              "sustainedKmh": 30,
+              "gustKmh": 45
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"]
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "wind-tolerance-custom-limits",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "custom",
+              "sustainedKmh": "25",
+              "gustKmh": 40
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "custom",
+              "sustainedKmh": 25,
+              "gustKmh": "40"
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "night-span-custom-vs-astronomical",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ],
+          "nightSpan": {
+            "mode": "custom",
+            "start": "2026-09-17T21:30:00.000Z",
+            "end": "2026-09-18T02:00:00.000Z"
+          }
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ],
+          "nightSpan": {
+            "mode": "astronomical"
+          }
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "filter-ids-order-insensitive",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["ha", "l-pro"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "filter-ids-changed",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["ha", "oiii", "l-pro"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "view-ignored",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "nebula",
+            "query": "m42"
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": "andromeda"
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "launched-schedule-server-wins",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "planItemId": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 50
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "planItemId": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 60
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "launched-schedule-absent-on-server",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "planItemId": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 50
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "missing-base-newer-other",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 25,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ],
+          "darkness": "nautical"
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 35,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        null,
+        {},
+        {
+          "newer": "other"
+        }
+      ]
+    },
+    {
+      "id": "missing-base-newer-local",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi2600mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        null,
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "unknown-choice-path-refused",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 25,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "equipment.colour": "local",
+          "minAltitude": "local"
+        },
+        {}
+      ]
+    },
+    {
+      "id": "silent-fields-three-way",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            },
+            "binning": 2
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "executed",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ],
+          "plannerNote": "ici"
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            },
+            "binning": 1
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ],
+          "plannerNote": "là-bas"
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "shortcut-keeps-the-whole-local-version",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit du téléphone",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "eq6-r-pro",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 25,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ],
+          "darkness": "nautical"
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit du web",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 35,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ],
+          "nightSpan": {
+            "mode": "custom",
+            "start": "2026-09-17T21:30:00.000Z",
+            "end": "2026-09-18T02:00:00.000Z"
+          }
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "name": "local",
+          "minAltitude": "local",
+          "equipment.mount": "local",
+          "darkness": "local",
+          "nightSpan": "local"
+        },
+        {
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            },
+            {
+              "id": "m13",
+              "startMinute": 60,
+              "endMinute": 120,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spellings-of-the-same-setting",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": "30",
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ],
+          "darkness": "astronomical"
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "mount-safety-and-place",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": true,
+            "zenithAvoidanceDegrees": 10,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-lac-0917",
+          "location": {
+            "name": "Camping du Lac Noir",
+            "latitude": "45.10000",
+            "longitude": "-30.20000",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "location-bookkeeping-is-no-difference",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "id": "place-col",
+            "version": 2,
+            "horizonStatus": "verified",
+            "name": "Col des Mélèzes ",
+            "latitude": 45,
+            "longitude": -30.000001,
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    },
+    {
+      "id": "location-moved-is-a-row",
+      "args": [
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "id": "place-col",
+            "version": 2,
+            "horizonStatus": "verified",
+            "name": "Col des Mélèzes ",
+            "latitude": 45,
+            "longitude": -30.000001,
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Camping du Lac Noir",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {
+          "id": "plan-col",
+          "name": "Nuit au col",
+          "date": "2026-09-17",
+          "nightId": "night-col-0917",
+          "location": {
+            "name": "Col des Mélèzes",
+            "latitude": "45.00000",
+            "longitude": "-30.00000",
+            "elevation": "",
+            "timeZone": "UTC"
+          },
+          "equipment": {
+            "mode": "imaging",
+            "telescopeId": "askar-50p",
+            "mountId": "az-gti",
+            "cameraId": "asi533mc-pro",
+            "eyepieceId": "skyrover-pf-25",
+            "eyepieceFocalLengthMm": "",
+            "modifierId": "none",
+            "restrictToEquipment": false,
+            "filterIds": ["l-pro", "ha"],
+            "windTolerance": {
+              "preset": "standard",
+              "sustainedKmh": 20,
+              "gustKmh": 30
+            }
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": {
+            "enabled": false,
+            "zenithAvoidanceDegrees": 0,
+            "azimuthStart": "",
+            "azimuthEnd": ""
+          },
+          "catalogueSelection": "best",
+          "status": "pending",
+          "archivedAt": null,
+          "view": {
+            "type": "",
+            "query": ""
+          },
+          "items": [
+            {
+              "id": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "durationMinutes": 60,
+              "filter": ""
+            }
+          ]
+        },
+        {},
+        {}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1099 @@
+{
+  "module": "horizon-altitude",
+  "package": "portal",
+  "file": "planner/horizon-mask",
+  "export": "horizonAltitude",
+  "cases": [
+    {
+      "id": "interpolates-between-two-samples",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 10
+            },
+            {
+              "azimuth": 30,
+              "altitude": 22
+            }
+          ]
+        },
+        15
+      ]
+    },
+    {
+      "id": "an-exact-sample-returns-its-altitude",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 10
+            },
+            {
+              "azimuth": 30,
+              "altitude": 22
+            }
+          ]
+        },
+        30
+      ]
+    },
+    {
+      "id": "wraps-past-north",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 10
+            },
+            {
+              "azimuth": 330,
+              "altitude": 40
+            }
+          ]
+        },
+        345
+      ]
+    },
+    {
+      "id": "a-negative-azimuth-normalizes",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 10
+            },
+            {
+              "azimuth": 330,
+              "altitude": 40
+            }
+          ]
+        },
+        -15
+      ]
+    },
+    {
+      "id": "a-flat-mask-is-zero-everywhere",
+      "args": [null, 123]
+    },
+    {
+      "id": "a-twelve-point-mask-between-two-samples",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 12
+            },
+            {
+              "azimuth": 30,
+              "altitude": 8
+            },
+            {
+              "azimuth": 60,
+              "altitude": 5
+            },
+            {
+              "azimuth": 90,
+              "altitude": 0
+            },
+            {
+              "azimuth": 120,
+              "altitude": 0
+            },
+            {
+              "azimuth": 150,
+              "altitude": 3
+            },
+            {
+              "azimuth": 180,
+              "altitude": 10
+            },
+            {
+              "azimuth": 210,
+              "altitude": 22
+            },
+            {
+              "azimuth": 240,
+              "altitude": 35
+            },
+            {
+              "azimuth": 270,
+              "altitude": 28
+            },
+            {
+              "azimuth": 300,
+              "altitude": 18
+            },
+            {
+              "azimuth": 330,
+              "altitude": 14
+            }
+          ]
+        },
+        45
+      ]
+    },
+    {
+      "id": "a-twelve-point-mask-on-a-new-ten-degree-node",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 12
+            },
+            {
+              "azimuth": 30,
+              "altitude": 8
+            },
+            {
+              "azimuth": 60,
+              "altitude": 5
+            },
+            {
+              "azimuth": 90,
+              "altitude": 0
+            },
+            {
+              "azimuth": 120,
+              "altitude": 0
+            },
+            {
+              "azimuth": 150,
+              "altitude": 3
+            },
+            {
+              "azimuth": 180,
+              "altitude": 10
+            },
+            {
+              "azimuth": 210,
+              "altitude": 22
+            },
+            {
+              "azimuth": 240,
+              "altitude": 35
+            },
+            {
+              "azimuth": 270,
+              "altitude": 28
+            },
+            {
+              "azimuth": 300,
+              "altitude": 18
+            },
+            {
+              "azimuth": 330,
+              "altitude": 14
+            }
+          ]
+        },
+        250
+      ]
+    },
+    {
+      "id": "a-twelve-point-mask-at-a-fractional-azimuth",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 12
+            },
+            {
+              "azimuth": 30,
+              "altitude": 8
+            },
+            {
+              "azimuth": 60,
+              "altitude": 5
+            },
+            {
+              "azimuth": 90,
+              "altitude": 0
+            },
+            {
+              "azimuth": 120,
+              "altitude": 0
+            },
+            {
+              "azimuth": 150,
+              "altitude": 3
+            },
+            {
+              "azimuth": 180,
+              "altitude": 10
+            },
+            {
+              "azimuth": 210,
+              "altitude": 22
+            },
+            {
+              "azimuth": 240,
+              "altitude": 35
+            },
+            {
+              "azimuth": 270,
+              "altitude": 28
+            },
+            {
+              "azimuth": 300,
+              "altitude": 18
+            },
+            {
+              "azimuth": 330,
+              "altitude": 14
+            }
+          ]
+        },
+        347.5
+      ]
+    },
+    {
+      "id": "a-twelve-point-mask-on-one-of-its-own-samples",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 12
+            },
+            {
+              "azimuth": 30,
+              "altitude": 8
+            },
+            {
+              "azimuth": 60,
+              "altitude": 5
+            },
+            {
+              "azimuth": 90,
+              "altitude": 0
+            },
+            {
+              "azimuth": 120,
+              "altitude": 0
+            },
+            {
+              "azimuth": 150,
+              "altitude": 3
+            },
+            {
+              "azimuth": 180,
+              "altitude": 10
+            },
+            {
+              "azimuth": 210,
+              "altitude": 22
+            },
+            {
+              "azimuth": 240,
+              "altitude": 35
+            },
+            {
+              "azimuth": 270,
+              "altitude": 28
+            },
+            {
+              "azimuth": 300,
+              "altitude": 18
+            },
+            {
+              "azimuth": 330,
+              "altitude": 14
+            }
+          ]
+        },
+        240
+      ]
+    },
+    {
+      "id": "a-thirty-six-point-mask-between-two-nodes",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 10
+            },
+            {
+              "azimuth": 10,
+              "altitude": 12
+            },
+            {
+              "azimuth": 20,
+              "altitude": 15
+            },
+            {
+              "azimuth": 30,
+              "altitude": 18
+            },
+            {
+              "azimuth": 40,
+              "altitude": 20
+            },
+            {
+              "azimuth": 50,
+              "altitude": 22
+            },
+            {
+              "azimuth": 60,
+              "altitude": 24
+            },
+            {
+              "azimuth": 70,
+              "altitude": 21
+            },
+            {
+              "azimuth": 80,
+              "altitude": 17
+            },
+            {
+              "azimuth": 90,
+              "altitude": 12
+            },
+            {
+              "azimuth": 100,
+              "altitude": 8
+            },
+            {
+              "azimuth": 110,
+              "altitude": 5
+            },
+            {
+              "azimuth": 120,
+              "altitude": 3
+            },
+            {
+              "azimuth": 130,
+              "altitude": 2
+            },
+            {
+              "azimuth": 140,
+              "altitude": 0
+            },
+            {
+              "azimuth": 150,
+              "altitude": 0
+            },
+            {
+              "azimuth": 160,
+              "altitude": 0
+            },
+            {
+              "azimuth": 170,
+              "altitude": 1
+            },
+            {
+              "azimuth": 180,
+              "altitude": 4
+            },
+            {
+              "azimuth": 190,
+              "altitude": 7
+            },
+            {
+              "azimuth": 200,
+              "altitude": 10
+            },
+            {
+              "azimuth": 210,
+              "altitude": 15
+            },
+            {
+              "azimuth": 220,
+              "altitude": 20
+            },
+            {
+              "azimuth": 230,
+              "altitude": 26
+            },
+            {
+              "azimuth": 240,
+              "altitude": 32
+            },
+            {
+              "azimuth": 250,
+              "altitude": 30
+            },
+            {
+              "azimuth": 260,
+              "altitude": 28
+            },
+            {
+              "azimuth": 270,
+              "altitude": 25
+            },
+            {
+              "azimuth": 280,
+              "altitude": 22
+            },
+            {
+              "azimuth": 290,
+              "altitude": 18
+            },
+            {
+              "azimuth": 300,
+              "altitude": 16
+            },
+            {
+              "azimuth": 310,
+              "altitude": 14
+            },
+            {
+              "azimuth": 320,
+              "altitude": 13
+            },
+            {
+              "azimuth": 330,
+              "altitude": 12
+            },
+            {
+              "azimuth": 340,
+              "altitude": 11
+            },
+            {
+              "azimuth": 350,
+              "altitude": 10
+            }
+          ]
+        },
+        125
+      ]
+    },
+    {
+      "id": "a-thirty-six-point-mask-on-a-node",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 10
+            },
+            {
+              "azimuth": 10,
+              "altitude": 12
+            },
+            {
+              "azimuth": 20,
+              "altitude": 15
+            },
+            {
+              "azimuth": 30,
+              "altitude": 18
+            },
+            {
+              "azimuth": 40,
+              "altitude": 20
+            },
+            {
+              "azimuth": 50,
+              "altitude": 22
+            },
+            {
+              "azimuth": 60,
+              "altitude": 24
+            },
+            {
+              "azimuth": 70,
+              "altitude": 21
+            },
+            {
+              "azimuth": 80,
+              "altitude": 17
+            },
+            {
+              "azimuth": 90,
+              "altitude": 12
+            },
+            {
+              "azimuth": 100,
+              "altitude": 8
+            },
+            {
+              "azimuth": 110,
+              "altitude": 5
+            },
+            {
+              "azimuth": 120,
+              "altitude": 3
+            },
+            {
+              "azimuth": 130,
+              "altitude": 2
+            },
+            {
+              "azimuth": 140,
+              "altitude": 0
+            },
+            {
+              "azimuth": 150,
+              "altitude": 0
+            },
+            {
+              "azimuth": 160,
+              "altitude": 0
+            },
+            {
+              "azimuth": 170,
+              "altitude": 1
+            },
+            {
+              "azimuth": 180,
+              "altitude": 4
+            },
+            {
+              "azimuth": 190,
+              "altitude": 7
+            },
+            {
+              "azimuth": 200,
+              "altitude": 10
+            },
+            {
+              "azimuth": 210,
+              "altitude": 15
+            },
+            {
+              "azimuth": 220,
+              "altitude": 20
+            },
+            {
+              "azimuth": 230,
+              "altitude": 26
+            },
+            {
+              "azimuth": 240,
+              "altitude": 32
+            },
+            {
+              "azimuth": 250,
+              "altitude": 30
+            },
+            {
+              "azimuth": 260,
+              "altitude": 28
+            },
+            {
+              "azimuth": 270,
+              "altitude": 25
+            },
+            {
+              "azimuth": 280,
+              "altitude": 22
+            },
+            {
+              "azimuth": 290,
+              "altitude": 18
+            },
+            {
+              "azimuth": 300,
+              "altitude": 16
+            },
+            {
+              "azimuth": 310,
+              "altitude": 14
+            },
+            {
+              "azimuth": 320,
+              "altitude": 13
+            },
+            {
+              "azimuth": 330,
+              "altitude": 12
+            },
+            {
+              "azimuth": 340,
+              "altitude": 11
+            },
+            {
+              "azimuth": 350,
+              "altitude": 10
+            }
+          ]
+        },
+        240
+      ]
+    },
+    {
+      "id": "a-thirty-six-point-mask-wraps-past-north",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 10
+            },
+            {
+              "azimuth": 10,
+              "altitude": 12
+            },
+            {
+              "azimuth": 20,
+              "altitude": 15
+            },
+            {
+              "azimuth": 30,
+              "altitude": 18
+            },
+            {
+              "azimuth": 40,
+              "altitude": 20
+            },
+            {
+              "azimuth": 50,
+              "altitude": 22
+            },
+            {
+              "azimuth": 60,
+              "altitude": 24
+            },
+            {
+              "azimuth": 70,
+              "altitude": 21
+            },
+            {
+              "azimuth": 80,
+              "altitude": 17
+            },
+            {
+              "azimuth": 90,
+              "altitude": 12
+            },
+            {
+              "azimuth": 100,
+              "altitude": 8
+            },
+            {
+              "azimuth": 110,
+              "altitude": 5
+            },
+            {
+              "azimuth": 120,
+              "altitude": 3
+            },
+            {
+              "azimuth": 130,
+              "altitude": 2
+            },
+            {
+              "azimuth": 140,
+              "altitude": 0
+            },
+            {
+              "azimuth": 150,
+              "altitude": 0
+            },
+            {
+              "azimuth": 160,
+              "altitude": 0
+            },
+            {
+              "azimuth": 170,
+              "altitude": 1
+            },
+            {
+              "azimuth": 180,
+              "altitude": 4
+            },
+            {
+              "azimuth": 190,
+              "altitude": 7
+            },
+            {
+              "azimuth": 200,
+              "altitude": 10
+            },
+            {
+              "azimuth": 210,
+              "altitude": 15
+            },
+            {
+              "azimuth": 220,
+              "altitude": 20
+            },
+            {
+              "azimuth": 230,
+              "altitude": 26
+            },
+            {
+              "azimuth": 240,
+              "altitude": 32
+            },
+            {
+              "azimuth": 250,
+              "altitude": 30
+            },
+            {
+              "azimuth": 260,
+              "altitude": 28
+            },
+            {
+              "azimuth": 270,
+              "altitude": 25
+            },
+            {
+              "azimuth": 280,
+              "altitude": 22
+            },
+            {
+              "azimuth": 290,
+              "altitude": 18
+            },
+            {
+              "azimuth": 300,
+              "altitude": 16
+            },
+            {
+              "azimuth": 310,
+              "altitude": 14
+            },
+            {
+              "azimuth": 320,
+              "altitude": 13
+            },
+            {
+              "azimuth": 330,
+              "altitude": 12
+            },
+            {
+              "azimuth": 340,
+              "altitude": 11
+            },
+            {
+              "azimuth": 350,
+              "altitude": 10
+            }
+          ]
+        },
+        355
+      ]
+    },
+    {
+      "id": "a-thirty-six-point-mask-at-a-fractional-azimuth",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 10
+            },
+            {
+              "azimuth": 10,
+              "altitude": 12
+            },
+            {
+              "azimuth": 20,
+              "altitude": 15
+            },
+            {
+              "azimuth": 30,
+              "altitude": 18
+            },
+            {
+              "azimuth": 40,
+              "altitude": 20
+            },
+            {
+              "azimuth": 50,
+              "altitude": 22
+            },
+            {
+              "azimuth": 60,
+              "altitude": 24
+            },
+            {
+              "azimuth": 70,
+              "altitude": 21
+            },
+            {
+              "azimuth": 80,
+              "altitude": 17
+            },
+            {
+              "azimuth": 90,
+              "altitude": 12
+            },
+            {
+              "azimuth": 100,
+              "altitude": 8
+            },
+            {
+              "azimuth": 110,
+              "altitude": 5
+            },
+            {
+              "azimuth": 120,
+              "altitude": 3
+            },
+            {
+              "azimuth": 130,
+              "altitude": 2
+            },
+            {
+              "azimuth": 140,
+              "altitude": 0
+            },
+            {
+              "azimuth": 150,
+              "altitude": 0
+            },
+            {
+              "azimuth": 160,
+              "altitude": 0
+            },
+            {
+              "azimuth": 170,
+              "altitude": 1
+            },
+            {
+              "azimuth": 180,
+              "altitude": 4
+            },
+            {
+              "azimuth": 190,
+              "altitude": 7
+            },
+            {
+              "azimuth": 200,
+              "altitude": 10
+            },
+            {
+              "azimuth": 210,
+              "altitude": 15
+            },
+            {
+              "azimuth": 220,
+              "altitude": 20
+            },
+            {
+              "azimuth": 230,
+              "altitude": 26
+            },
+            {
+              "azimuth": 240,
+              "altitude": 32
+            },
+            {
+              "azimuth": 250,
+              "altitude": 30
+            },
+            {
+              "azimuth": 260,
+              "altitude": 28
+            },
+            {
+              "azimuth": 270,
+              "altitude": 25
+            },
+            {
+              "azimuth": 280,
+              "altitude": 22
+            },
+            {
+              "azimuth": 290,
+              "altitude": 18
+            },
+            {
+              "azimuth": 300,
+              "altitude": 16
+            },
+            {
+              "azimuth": 310,
+              "altitude": 14
+            },
+            {
+              "azimuth": 320,
+              "altitude": 13
+            },
+            {
+              "azimuth": 330,
+              "altitude": 12
+            },
+            {
+              "azimuth": 340,
+              "altitude": 11
+            },
+            {
+              "azimuth": 350,
+              "altitude": 10
+            }
+          ]
+        },
+        33.3
+      ]
+    },
+    {
+      "id": "an-azimuth-past-360-wraps",
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 10
+            },
+            {
+              "azimuth": 10,
+              "altitude": 12
+            },
+            {
+              "azimuth": 20,
+              "altitude": 15
+            },
+            {
+              "azimuth": 30,
+              "altitude": 18
+            },
+            {
+              "azimuth": 40,
+              "altitude": 20
+            },
+            {
+              "azimuth": 50,
+              "altitude": 22
+            },
+            {
+              "azimuth": 60,
+              "altitude": 24
+            },
+            {
+              "azimuth": 70,
+              "altitude": 21
+            },
+            {
+              "azimuth": 80,
+              "altitude": 17
+            },
+            {
+              "azimuth": 90,
+              "altitude": 12
+            },
+            {
+              "azimuth": 100,
+              "altitude": 8
+            },
+            {
+              "azimuth": 110,
+              "altitude": 5
+            },
+            {
+              "azimuth": 120,
+              "altitude": 3
+            },
+            {
+              "azimuth": 130,
+              "altitude": 2
+            },
+            {
+              "azimuth": 140,
+              "altitude": 0
+            },
+            {
+              "azimuth": 150,
+              "altitude": 0
+            },
+            {
+              "azimuth": 160,
+              "altitude": 0
+            },
+            {
+              "azimuth": 170,
+              "altitude": 1
+            },
+            {
+              "azimuth": 180,
+              "altitude": 4
+            },
+            {
+              "azimuth": 190,
+              "altitude": 7
+            },
+            {
+              "azimuth": 200,
+              "altitude": 10
+            },
+            {
+              "azimuth": 210,
+              "altitude": 15
+            },
+            {
+              "azimuth": 220,
+              "altitude": 20
+            },
+            {
+              "azimuth": 230,
+              "altitude": 26
+            },
+            {
+              "azimuth": 240,
+              "altitude": 32
+            },
+            {
+              "azimuth": 250,
+              "altitude": 30
+            },
+            {
+              "azimuth": 260,
+              "altitude": 28
+            },
+            {
+              "azimuth": 270,
+              "altitude": 25
+            },
+            {
+              "azimuth": 280,
+              "altitude": 22
+            },
+            {
+              "azimuth": 290,
+              "altitude": 18
+            },
+            {
+              "azimuth": 300,
+              "altitude": 16
+            },
+            {
+              "azimuth": 310,
+              "altitude": 14
+            },
+            {
+              "azimuth": 320,
+              "altitude": 13
+            },
+            {
+              "azimuth": 330,
+              "altitude": 12
+            },
+            {
+              "azimuth": 340,
+              "altitude": 11
+            },
+            {
+              "azimuth": 350,
+              "altitude": 10
+            }
+          ]
+        },
+        725
+      ]
+    }
+  ]
+}

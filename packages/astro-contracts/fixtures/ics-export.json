@@ -1,0 +1,404 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+            "name": "Autumn nebulae"
+          },
+          "targets": [
+            {
+              "filter": "L",
+              "target": {
+                "designation": "M31",
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy"
+              }
+            },
+            {
+              "filter": "Ha",
+              "target": {
+                "designation": "NGC 7000",
+                "id": "ngc7000",
+                "objects": ["NGC 7000"]
+              }
+            }
+          ]
+        }
+      ],
+      "id": "night-event-with-default-alarm",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Autumn nebulae\r\nDESCRIPTION:M31 — Andromeda Galaxy · L\\nNGC 7000 · Ha\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Autumn nebulae\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+            "name": "Autumn nebulae"
+          },
+          "reminderMinutes": 45,
+          "targets": [
+            {
+              "filter": "L",
+              "target": {
+                "designation": "M31",
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy"
+              }
+            },
+            {
+              "filter": "Ha",
+              "target": {
+                "designation": "NGC 7000",
+                "id": "ngc7000",
+                "objects": ["NGC 7000"]
+              }
+            }
+          ]
+        }
+      ],
+      "id": "custom-reminder-minutes",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Autumn nebulae\r\nDESCRIPTION:M31 — Andromeda Galaxy · L\\nNGC 7000 · Ha\r\nBEGIN:VALARM\r\nTRIGGER:-PT45M\r\nACTION:DISPLAY\r\nDESCRIPTION:Autumn nebulae\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-4",
+            "items": [],
+            "name": "Ha; Oiii, Sii"
+          },
+          "targets": []
+        }
+      ],
+      "id": "escapes-separators-in-the-plan-name",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-4\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Ha\\; Oiii\\, Sii\r\nDESCRIPTION:Ha\\; Oiii\\, Sii\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Ha\\; Oiii\\, Sii\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "night": null,
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+            "name": "Autumn nebulae"
+          },
+          "targets": [
+            {
+              "filter": "L",
+              "target": {
+                "designation": "M31",
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy"
+              }
+            },
+            {
+              "filter": "Ha",
+              "target": {
+                "designation": "NGC 7000",
+                "id": "ngc7000",
+                "objects": ["NGC 7000"]
+              }
+            }
+          ]
+        }
+      ],
+      "id": "no-night-window",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "locale": "fr",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" },
+          "targets": []
+        }
+      ],
+      "id": "unnamed-plan-in-fr",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Plan d’observation\r\nDESCRIPTION:Plan d’observation\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Plan d’observation\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "ja",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" },
+          "targets": []
+        }
+      ],
+      "id": "unnamed-plan-in-ja",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:観測プラン\r\nDESCRIPTION:観測プラン\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:観測プラン\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "de",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" },
+          "targets": []
+        }
+      ],
+      "id": "unnamed-plan-in-de",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Beobachtungsplan\r\nDESCRIPTION:Beobachtungsplan\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Beobachtungsplan\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "es",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" },
+          "targets": []
+        }
+      ],
+      "id": "unnamed-plan-in-es",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Plan de observación\r\nDESCRIPTION:Plan de observación\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Plan de observación\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "it",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" },
+          "targets": []
+        }
+      ],
+      "id": "unnamed-plan-in-it",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Piano di osservazione\r\nDESCRIPTION:Piano di osservazione\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Piano di osservazione\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "pt-BR",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" },
+          "targets": []
+        }
+      ],
+      "id": "unnamed-plan-in-pt-br",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Plano de observação\r\nDESCRIPTION:Plano de observação\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Plano de observação\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "ru",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" },
+          "targets": []
+        }
+      ],
+      "id": "unnamed-plan-in-ru",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:План наблюдений\r\nDESCRIPTION:План наблюдений\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:План наблюдений\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "zh-Hans",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" },
+          "targets": []
+        }
+      ],
+      "id": "unnamed-plan-in-zh-hans",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:观测计划\r\nDESCRIPTION:观测计划\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:观测计划\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "zh-Hant",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" },
+          "targets": []
+        }
+      ],
+      "id": "unnamed-plan-in-zh-hant",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:觀測計畫\r\nDESCRIPTION:觀測計畫\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:觀測計畫\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "en-XA",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" },
+          "targets": []
+        }
+      ],
+      "id": "unnamed-plan-in-en-xa",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Observation plan\r\nDESCRIPTION:Observation plan\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Observation plan\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "de",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "items": [{ "filter": "L", "id": "m31" }],
+            "name": "Herbstnebel"
+          },
+          "targets": [
+            {
+              "filter": "L",
+              "target": {
+                "designation": "M31",
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy"
+              }
+            }
+          ]
+        }
+      ],
+      "id": "named-plan-in-de-keeps-its-own-words",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Herbstnebel\r\nDESCRIPTION:M31 — Andromeda Galaxy · L\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Herbstnebel\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "acquisitionText": {
+            "m31": "120 s · gain 100 · UV/IR-cut · ≈ 28 poses · suggéré",
+            "ngc7000": "300 s · gain 100 · Duo-band · 16 poses"
+          },
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+            "name": "Autumn nebulae"
+          },
+          "targets": [
+            {
+              "filter": "L",
+              "target": {
+                "designation": "M31",
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy"
+              }
+            },
+            {
+              "filter": "Ha",
+              "target": {
+                "designation": "NGC 7000",
+                "id": "ngc7000",
+                "objects": ["NGC 7000"]
+              }
+            }
+          ]
+        }
+      ],
+      "id": "shooting-lines-in-the-description",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Autumn nebulae\r\nDESCRIPTION:M31 — Andromeda Galaxy · 120 s · gain 100 · UV/IR-cut · ≈ 28 poses · suggéré\\nNGC 7000 · 300 s · gain 100 · Duo-band · 16 poses\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Autumn nebulae\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "acquisitionText": { "m31": "60 s · 99 poses" },
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+            "name": "Autumn nebulae"
+          },
+          "targets": [
+            {
+              "filter": "L",
+              "target": {
+                "designation": "M31",
+                "id": "m31",
+                "title": "M31 — Andromeda Galaxy"
+              }
+            },
+            {
+              "filter": "Ha",
+              "target": {
+                "designation": "NGC 7000",
+                "id": "ngc7000",
+                "objects": ["NGC 7000"]
+              }
+            }
+          ]
+        }
+      ],
+      "id": "a-target-without-a-line-keeps-its-filter",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Observation planner//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T234000Z\r\nDTEND:20260916T041000Z\r\nSUMMARY:Autumn nebulae\r\nDESCRIPTION:M31 — Andromeda Galaxy · 60 s · 99 poses\\nNGC 7000 · Ha\r\nBEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Autumn nebulae\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "ics-export"
+}

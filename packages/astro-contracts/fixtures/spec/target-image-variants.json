@@ -1,0 +1,65 @@
+{
+  "module": "target-image-variants",
+  "package": "portal",
+  "file": "target-image-variants",
+  "export": "targetImageVariant",
+  "cases": [
+    {
+      "id": "photo-mode-uses-thumbnail",
+      "args": [
+        {
+          "knowledge": {
+            "photoThumbnailUrl": "p.jpg",
+            "photoImageCredit": "NASA"
+          }
+        }
+      ]
+    },
+    {
+      "id": "featured-image-wins-in-photo-mode",
+      "args": [
+        {
+          "featured": { "imageUrl": "f.jpg" },
+          "knowledge": { "photoThumbnailUrl": "p.jpg" }
+        }
+      ]
+    },
+    {
+      "id": "visual-mode-prefers-reference-image",
+      "args": [
+        {
+          "knowledge": {
+            "visualThumbnailUrl": "v.jpg",
+            "visualImageCredit": "Vc",
+            "photoThumbnailUrl": "p.jpg"
+          }
+        },
+        { "visualMode": true }
+      ]
+    },
+    {
+      "id": "visual-mode-falls-back-to-preview",
+      "args": [
+        {
+          "knowledge": {
+            "visualPreviewThumbnailUrl": "vp.jpg",
+            "visualPreviewImageCredit": "Vpc"
+          }
+        },
+        { "visualMode": true }
+      ]
+    },
+    {
+      "id": "visual-mode-without-visual-images-falls-back-to-photo",
+      "args": [
+        { "knowledge": { "photoThumbnailUrl": "p.jpg" } },
+        { "visualMode": true }
+      ]
+    },
+    {
+      "id": "no-images-uses-explicit-fallback",
+      "args": [{}, { "fallback": "default.jpg" }]
+    },
+    { "id": "no-images-no-fallback-is-null", "args": [{}] }
+  ]
+}

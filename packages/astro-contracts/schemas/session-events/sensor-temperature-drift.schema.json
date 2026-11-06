@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/sensor-temperature-drift.schema.json",
+  "title": "Astro Portal session event payload: sensor_temperature_drift",
+  "description": "A drift of the camera sensor's temperature during the session, found by Astro Sync in the frames: from `fromCelsius` to `toCelsius` (degrees Celsius). The instant is the event's own `recordedAt`, the first frame past the threshold. See session-events.md.",
+  "type": "object",
+  "required": ["fromCelsius", "toCelsius"],
+  "properties": {
+    "fromCelsius": { "type": "number", "minimum": -100, "maximum": 100 },
+    "toCelsius": { "type": "number", "minimum": -100, "maximum": 100 },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300,
+      "description": "Optional sentence for an application that does not know this type: it shows it as an ordinary report. The applications that know the type compose their own sentence, in the person's language, from the structured fields."
+    }
+  },
+  "additionalProperties": false
+}

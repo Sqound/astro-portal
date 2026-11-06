@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "cellSizeDegrees": 90,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40],
+          "height": 2,
+          "north": 90,
+          "west": -180,
+          "width": 4
+        },
+        45,
+        -135
+      ],
+      "id": "north-west-cell-centre",
+      "result": 0
+    },
+    {
+      "args": [
+        {
+          "cellSizeDegrees": 90,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40],
+          "height": 2,
+          "north": 90,
+          "west": -180,
+          "width": 4
+        },
+        -45,
+        135
+      ],
+      "id": "south-east-cell-centre",
+      "result": 0.05784759496834932
+    },
+    {
+      "args": [
+        {
+          "cellSizeDegrees": 90,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40],
+          "height": 2,
+          "north": 90,
+          "west": -180,
+          "width": 4
+        },
+        91,
+        0
+      ],
+      "id": "out-of-range-latitude",
+      "result": null
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "sky-quality-nearest"
+}

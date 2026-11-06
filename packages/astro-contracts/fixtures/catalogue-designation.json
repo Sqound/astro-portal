@@ -1,0 +1,58 @@
+{
+  "cases": [
+    { "args": ["M 31"], "id": "messier-spaced", "result": "M31" },
+    { "args": ["m31"], "id": "messier-lowercase", "result": "M31" },
+    { "args": ["M031"], "id": "messier-padded", "result": "M31" },
+    { "args": ["NGC7000"], "id": "ngc-joined", "result": "NGC 7000" },
+    { "args": ["NGC 7000"], "id": "ngc-spaced", "result": "NGC 7000" },
+    { "args": ["NGC0061A"], "id": "ngc-letter", "result": "NGC 61A" },
+    {
+      "args": ["IC0080 NED01"],
+      "id": "ic-extra-suffix",
+      "result": "IC 80 NED01"
+    },
+    { "args": ["ic 80"], "id": "ic-lowercase", "result": "IC 80" },
+    { "args": ["B 033"], "id": "barnard-spaced", "result": "B33" },
+    { "args": ["B33a"], "id": "barnard-letter", "result": "B33a" },
+    { "args": ["C14"], "id": "caldwell", "result": "C14" },
+    { "args": ["Sh2-155"], "id": "sharpless", "result": "Sh2-155" },
+    { "args": ["LDN 1622"], "id": "ldn", "result": "LDN 1622" },
+    {
+      "args": ["Andromeda Galaxy"],
+      "id": "common-name",
+      "result": "Andromeda Galaxy"
+    },
+    {
+      "args": ["NGC-007000"],
+      "id": "ngc-query-separators",
+      "result": "NGC 7000"
+    },
+    {
+      "args": ["IC 0080   NED01"],
+      "id": "ic-whitespace",
+      "result": "IC 80 NED01"
+    },
+    { "args": ["b033A"], "id": "barnard-uppercase-letter", "result": "B33a" },
+    {
+      "args": ["unknown-target"],
+      "id": "unknown-id",
+      "result": "unknown-target"
+    },
+    {
+      "args": [" vdB 14 "],
+      "id": "unchanged-other-spacing",
+      "result": " vdB 14 "
+    },
+    { "args": ["Sh 2-0155"], "id": "sharpless-spaced", "result": "Sh2-155" },
+    { "args": ["LDN1622"], "id": "ldn-joined", "result": "LDN 1622" },
+    { "args": ["LBN 0437"], "id": "lbn-padded", "result": "LBN 437" },
+    { "args": ["Abell 039"], "id": "abell-padded", "result": "Abell 39" },
+    {
+      "args": [" Abell 39 "],
+      "id": "abell-unchanged-spacing-trimmed",
+      "result": "Abell 39"
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "catalogue-designation"
+}

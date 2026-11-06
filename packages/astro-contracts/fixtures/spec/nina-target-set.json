@@ -1,0 +1,302 @@
+{
+  "module": "nina-target-set",
+  "package": "planner",
+  "file": "export",
+  "export": "planNinaTargetSet",
+  "cases": [
+    {
+      "id": "four-targets-with-their-capture-lines",
+      "args": [
+        {
+          "plan": {
+            "items": [
+              {
+                "id": "m31",
+                "startMinute": 0,
+                "target": {
+                  "id": "m31",
+                  "designation": "M 31",
+                  "coordinate": {
+                    "ra": 10.684708,
+                    "dec": 41.26875
+                  }
+                }
+              },
+              {
+                "id": "ngc253",
+                "startMinute": 90,
+                "target": {
+                  "id": "ngc253",
+                  "designation": "NGC 253",
+                  "coordinate": {
+                    "ra": 11.888,
+                    "dec": -25.288
+                  }
+                },
+                "angleDegrees": 90
+              },
+              {
+                "id": "veil",
+                "startMinute": 150,
+                "target": {
+                  "id": "veil",
+                  "designation": "Cygnus <loop> & \"veil\"",
+                  "coordinate": {
+                    "ra": 312.75,
+                    "dec": 30.7
+                  }
+                }
+              },
+              {
+                "id": "m45",
+                "startMinute": 200,
+                "target": {
+                  "id": "m45",
+                  "designation": "M 45",
+                  "coordinate": {
+                    "ra": 56.75,
+                    "dec": 24.116667
+                  }
+                }
+              }
+            ]
+          },
+          "acquisition": {
+            "m31": {
+              "frozen": false,
+              "lines": [
+                {
+                  "filter": "UV/IR-cut",
+                  "noFilter": false,
+                  "exposureSeconds": 120,
+                  "gain": 100,
+                  "gainDevice": false,
+                  "binning": null,
+                  "frameCount": 28,
+                  "approximate": true,
+                  "suggested": true
+                }
+              ]
+            },
+            "ngc253": {
+              "frozen": false,
+              "lines": [
+                {
+                  "filter": "Duo-band",
+                  "noFilter": false,
+                  "exposureSeconds": 300,
+                  "gain": null,
+                  "gainDevice": true,
+                  "binning": 2,
+                  "frameCount": 12,
+                  "approximate": false,
+                  "suggested": false
+                },
+                {
+                  "filter": null,
+                  "noFilter": true,
+                  "exposureSeconds": 0.01,
+                  "gain": null,
+                  "gainDevice": false,
+                  "binning": null,
+                  "frameCount": 500,
+                  "approximate": true,
+                  "suggested": false
+                },
+                {
+                  "filter": null,
+                  "noFilter": false,
+                  "exposureSeconds": 60,
+                  "gain": null,
+                  "gainDevice": false,
+                  "binning": null,
+                  "frameCount": null,
+                  "approximate": true,
+                  "suggested": false
+                }
+              ]
+            },
+            "veil": {
+              "frozen": true,
+              "lines": [
+                {
+                  "filter": "Oiii & <Ha>",
+                  "noFilter": false,
+                  "exposureSeconds": 180,
+                  "gain": 120,
+                  "gainDevice": false,
+                  "binning": null,
+                  "frameCount": 10,
+                  "approximate": false,
+                  "suggested": false
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "no-acquisition-is-targets-only",
+      "args": [
+        {
+          "plan": {
+            "items": [
+              {
+                "id": "m31",
+                "startMinute": 0,
+                "target": {
+                  "id": "m31",
+                  "designation": "M 31",
+                  "coordinate": {
+                    "ra": 10.684708,
+                    "dec": 41.26875
+                  }
+                }
+              },
+              {
+                "id": "ngc253",
+                "startMinute": 90,
+                "target": {
+                  "id": "ngc253",
+                  "designation": "NGC 253",
+                  "coordinate": {
+                    "ra": 11.888,
+                    "dec": -25.288
+                  }
+                },
+                "angleDegrees": 90
+              },
+              {
+                "id": "veil",
+                "startMinute": 150,
+                "target": {
+                  "id": "veil",
+                  "designation": "Cygnus <loop> & \"veil\"",
+                  "coordinate": {
+                    "ra": 312.75,
+                    "dec": 30.7
+                  }
+                }
+              },
+              {
+                "id": "m45",
+                "startMinute": 200,
+                "target": {
+                  "id": "m45",
+                  "designation": "M 45",
+                  "coordinate": {
+                    "ra": 56.75,
+                    "dec": 24.116667
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "a-target-without-coordinates-is-skipped",
+      "args": [
+        {
+          "plan": {
+            "items": [
+              {
+                "id": "x",
+                "target": {
+                  "id": "x",
+                  "designation": "X"
+                }
+              },
+              {
+                "id": "m31",
+                "startMinute": 0,
+                "target": {
+                  "id": "m31",
+                  "designation": "M 31",
+                  "coordinate": {
+                    "ra": 10.684708,
+                    "dec": 41.26875
+                  }
+                }
+              }
+            ]
+          },
+          "acquisition": {
+            "m31": {
+              "frozen": false,
+              "lines": [
+                {
+                  "filter": "UV/IR-cut",
+                  "noFilter": false,
+                  "exposureSeconds": 120,
+                  "gain": 100,
+                  "gainDevice": false,
+                  "binning": null,
+                  "frameCount": 28,
+                  "approximate": true,
+                  "suggested": true
+                }
+              ]
+            },
+            "ngc253": {
+              "frozen": false,
+              "lines": [
+                {
+                  "filter": "Duo-band",
+                  "noFilter": false,
+                  "exposureSeconds": 300,
+                  "gain": null,
+                  "gainDevice": true,
+                  "binning": 2,
+                  "frameCount": 12,
+                  "approximate": false,
+                  "suggested": false
+                },
+                {
+                  "filter": null,
+                  "noFilter": true,
+                  "exposureSeconds": 0.01,
+                  "gain": null,
+                  "gainDevice": false,
+                  "binning": null,
+                  "frameCount": 500,
+                  "approximate": true,
+                  "suggested": false
+                },
+                {
+                  "filter": null,
+                  "noFilter": false,
+                  "exposureSeconds": 60,
+                  "gain": null,
+                  "gainDevice": false,
+                  "binning": null,
+                  "frameCount": null,
+                  "approximate": true,
+                  "suggested": false
+                }
+              ]
+            },
+            "veil": {
+              "frozen": true,
+              "lines": [
+                {
+                  "filter": "Oiii & <Ha>",
+                  "noFilter": false,
+                  "exposureSeconds": 180,
+                  "gain": 120,
+                  "gainDevice": false,
+                  "binning": null,
+                  "frameCount": 10,
+                  "approximate": false,
+                  "suggested": false
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

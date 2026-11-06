@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/mount-link-back.schema.json",
+  "title": "Astro Portal session event payload: mount_link_back",
+  "description": "The link to the mount is up again after a `mount_link_lost`, read only: the application reads the mount and never resumes a slew. A reader pairs it with the previous `mount_link_lost` to say how long the link was down. Recorded by the application from the driver's own code path with the night's clock; every field but the ones marked required is optional, and a reader tolerates a payload without them. Private in a shared night. See session-events.md.",
+  "type": "object",
+  "properties": {
+    "protocol": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Optional: the mount's protocol as the application names it (`LX200`, `Alpaca`, `INDI`, `SynScan`, `iOptron`, `NexStar`)."
+    }
+  },
+  "additionalProperties": false
+}

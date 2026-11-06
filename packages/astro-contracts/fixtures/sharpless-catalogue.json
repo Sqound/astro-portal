@@ -1,0 +1,10 @@
+{
+  "cases": [
+    { "args": ["Sh 2-155"], "id": "spaced-catalogue", "result": "Sh2-155" },
+    { "args": ["SH2-0155"], "id": "zero-padded-upper", "result": "Sh2-155" },
+    { "args": ["sh2 155"], "id": "space-for-hyphen", "result": "Sh2-155" },
+    { "args": ["NGC 7000"], "id": "foreign-designation", "result": null }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "sharpless-catalogue"
+}

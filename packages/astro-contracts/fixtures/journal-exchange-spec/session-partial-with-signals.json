@@ -1,0 +1,15 @@
+{
+  "exchange": "session-partial-with-signals",
+  "description": "A session executed in part: one planned target taken out, one met on the way and added at the debriefing, the signals of the field (a note, a pause, an equipment issue, the sky) on the night, the debriefing's own times, frames and exposure.",
+  "given": "The 12 September night of `list`.",
+  "handler": "route:sessions/[id]",
+  "phase": "read",
+  "params": {
+    "id": "{session:partial-with-signals}"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/sessions/{session:partial-with-signals}"
+  },
+  "schema": "session.schema.json#/$defs/detail"
+}

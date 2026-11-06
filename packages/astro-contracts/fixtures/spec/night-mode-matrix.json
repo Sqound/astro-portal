@@ -1,0 +1,17 @@
+{
+  "module": "night-mode-matrix",
+  "package": "portal",
+  "file": "night-mode",
+  "export": "nightModeColorMatrixForIntensity",
+  "cases": [
+    { "id": "default-intensity", "args": [0.0455] },
+    { "id": "minimum-intensity", "args": [0.015] },
+    { "id": "maximum-intensity", "args": [0.12] },
+    { "id": "middle-of-the-slider", "args": [0.0675] },
+    { "id": "below-the-minimum-is-clamped", "args": [0.001] },
+    { "id": "zero-is-clamped-to-the-minimum", "args": [0] },
+    { "id": "negative-is-clamped-to-the-minimum", "args": [-1] },
+    { "id": "above-the-maximum-is-clamped", "args": [0.5] },
+    { "id": "full-white-is-clamped-to-the-maximum", "args": [1] }
+  ]
+}

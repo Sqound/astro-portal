@@ -1,0 +1,351 @@
+{
+  "description": "`PUT /v1/sessions/{id}/rework` sets the passages of a target one at a time — M 31 observed in two passages, left for twenty minutes between them. The answer gives them back in `target.passages`, the target's hours are the first start and the last end, and its acquired time is the sum of the two passages.",
+  "exchange": "rework-passages",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The 10 October night of `list`, once reworked by `rework-response` (revision 1).",
+  "request": {
+    "body": {
+      "targets": [
+        { "state": "planned", "targetId": "ic1396" },
+        {
+          "passages": [
+            {
+              "end": "2026-10-10T19:50:00.000Z",
+              "start": "2026-10-10T19:00:00.000Z"
+            },
+            {
+              "end": "2026-10-10T21:00:00.000Z",
+              "start": "2026-10-10T20:10:00.000Z"
+            }
+          ],
+          "state": "planned",
+          "targetId": "m31"
+        }
+      ]
+    },
+    "headers": { "if-match": "\"1\"" },
+    "method": "PUT",
+    "path": "/api/v1/sessions/00000000-0000-4000-8000-000000000021/rework"
+  },
+  "response": {
+    "body": {
+      "debrief": {
+        "decidedAt": "2026-10-14T03:00:00.000Z",
+        "outcome": "executed",
+        "targets": []
+      },
+      "debriefSummary": {
+        "acquiredMinutes": 240,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [],
+        "lostMinutes": 0,
+        "perTarget": [
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T21:00:00.000Z",
+                "minutes": 120,
+                "pauses": [],
+                "start": "2026-10-10T19:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-10T21:00:00.000Z",
+              "start": "2026-10-10T19:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:10:00.000Z",
+                "minutes": 120,
+                "pauses": [],
+                "start": "2026-10-10T21:10:00.000Z"
+              }
+            ],
+            "planItemId": "ic1396",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T21:10:00.000Z"
+            },
+            "targetId": "ic1396"
+          }
+        ],
+        "plannedMinutes": 240,
+        "segments": {
+          "end": 29861230,
+          "hasAuto": false,
+          "start": 29860980,
+          "targets": [
+            {
+              "end": 29861100,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861100, "start": 29860980 }
+              ],
+              "segments": [
+                { "end": 29861100, "kind": "acquired", "start": 29860980 }
+              ],
+              "start": 29860980,
+              "targetId": "m31"
+            },
+            {
+              "end": 29861230,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861230, "start": 29861110 }
+              ],
+              "segments": [
+                { "end": 29861230, "kind": "acquired", "start": 29861110 }
+              ],
+              "start": 29861110,
+              "targetId": "ic1396"
+            }
+          ]
+        }
+      },
+      "events": {
+        "events": [
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0025",
+            "originDeviceId": null,
+            "payload": { "planItemId": "m31", "targetId": "m31" },
+            "receivedAt": "2026-10-14T03:00:00.000Z",
+            "recordedAt": "2026-10-10T19:00:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000021",
+            "timing": "observed",
+            "type": "target_started"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0026",
+            "originDeviceId": null,
+            "payload": { "planItemId": "m31", "targetId": "m31" },
+            "receivedAt": "2026-10-14T03:00:00.000Z",
+            "recordedAt": "2026-10-10T21:00:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000021",
+            "timing": "observed",
+            "type": "target_finished"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0027",
+            "originDeviceId": null,
+            "payload": { "text": "Brume légère" },
+            "receivedAt": "2026-10-14T03:00:00.000Z",
+            "recordedAt": "2026-10-10T19:40:00.000Z",
+            "rework": { "added": false, "targetId": null },
+            "sessionId": "00000000-0000-4000-8000-000000000021",
+            "timing": "observed",
+            "type": "note"
+          },
+          {
+            "eventId": "01M4KJZCW030MA2KEM8NVEW0NX",
+            "originDeviceId": null,
+            "payload": { "planItemId": "m31", "targetId": "m31" },
+            "receivedAt": "2026-10-14T03:00:00.000Z",
+            "recordedAt": "2026-10-10T19:00:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000021",
+            "timing": "planned",
+            "type": "target_started"
+          },
+          {
+            "eventId": "01M4KJZCW1V9S4AZXQG7DWJBTV",
+            "originDeviceId": null,
+            "payload": { "planItemId": "m31", "targetId": "m31" },
+            "receivedAt": "2026-10-14T03:00:00.000Z",
+            "recordedAt": "2026-10-10T21:00:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000021",
+            "timing": "planned",
+            "type": "target_finished"
+          },
+          {
+            "eventId": "01M4KJZCW48G0E5X07K5AQRDWQ",
+            "originDeviceId": null,
+            "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+            "receivedAt": "2026-10-14T03:00:00.000Z",
+            "recordedAt": "2026-10-10T21:10:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000021",
+            "timing": "planned",
+            "type": "target_started"
+          },
+          {
+            "eventId": "01M4KJZCW5GW0E5WEHDRT2FB3J",
+            "originDeviceId": null,
+            "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+            "receivedAt": "2026-10-14T03:00:00.000Z",
+            "recordedAt": "2026-10-10T23:10:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000021",
+            "timing": "planned",
+            "type": "target_finished"
+          },
+          {
+            "eventId": "01M4KZJ7G1AR3SHS4CNPG4GHJ4",
+            "originDeviceId": null,
+            "payload": { "text": "Nébuleuse bien dégagée" },
+            "receivedAt": "2026-10-14T12:30:00.000Z",
+            "recordedAt": "2026-10-10T22:40:00.000Z",
+            "rework": { "added": true, "targetId": "ic1396" },
+            "sessionId": "00000000-0000-4000-8000-000000000021",
+            "source": "declared",
+            "timing": "reconstructed",
+            "type": "note"
+          }
+        ],
+        "hasMore": false,
+        "nextSince": "2026-10-14T12:30:00.000Z",
+        "sessionId": "00000000-0000-4000-8000-000000000021"
+      },
+      "guidingLosses": null,
+      "guidingLossesReason": "no_analysis",
+      "guidingSeries": [],
+      "guidingSummary": null,
+      "guidingTrace": null,
+      "night": {
+        "equipment": {
+          "source": "plan",
+          "value": {
+            "cameraId": "00000000-0000-4000-8000-000000000006",
+            "filterIds": [],
+            "mountId": null,
+            "telescopeId": "00000000-0000-4000-8000-000000000005"
+          }
+        },
+        "finishedAt": {
+          "source": "night",
+          "value": "2026-10-11T01:00:00.000Z"
+        },
+        "notes": { "source": "night", "value": null },
+        "place": {
+          "source": "plan",
+          "value": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Étoiles"
+          }
+        },
+        "startedAt": { "source": "night", "value": "2026-10-10T19:00:00.000Z" },
+        "targetIds": { "source": "plan", "value": ["m31", "ic1396"] },
+        "title": { "source": "plan", "value": "Nuit du 2026-10-10" }
+      },
+      "plan": {
+        "equipment": {
+          "cameraId": "00000000-0000-4000-8000-000000000006",
+          "mode": "imaging",
+          "telescopeId": "00000000-0000-4000-8000-000000000005"
+        },
+        "frozenAt": "2026-10-14T03:00:00.000Z",
+        "nightEndAt": "2026-10-11T04:00:00.000Z",
+        "nightStartAt": "2026-10-10T19:00:00.000Z",
+        "planId": "00000000-0000-4000-8000-000000000020",
+        "revision": 1,
+        "status": "executed"
+      },
+      "posesSummary": null,
+      "qualitySummary": null,
+      "readOnly": false,
+      "session": {
+        "clientSessionId": null,
+        "createdAt": "2026-10-14T03:00:00.000Z",
+        "eveningDate": "2026-10-10",
+        "eventCount": 7,
+        "finishedAt": "2026-10-11T01:00:00.000Z",
+        "id": "00000000-0000-4000-8000-000000000021",
+        "origin": "execution",
+        "outcome": "executed",
+        "pendingSupplementCount": 0,
+        "planId": "00000000-0000-4000-8000-000000000020",
+        "projectId": null,
+        "reworkRevision": 2,
+        "reworkedAt": "2026-10-14T12:30:00.000Z",
+        "startedAt": "2026-10-10T19:00:00.000Z",
+        "status": "finished",
+        "supplementCount": 0,
+        "updatedAt": "2026-10-14T12:30:00.000Z"
+      },
+      "steps": [],
+      "supplements": [],
+      "targets": [
+        {
+          "acquiredSeconds": 7200,
+          "captureId": null,
+          "exposureFamilies": null,
+          "exposureSeconds": null,
+          "filter": null,
+          "finishedAt": "2026-10-10T23:10:00.000Z",
+          "frameCount": null,
+          "label": "IC 1396",
+          "outcome": "done",
+          "passages": null,
+          "planItemId": "ic1396",
+          "plannedSeconds": 7200,
+          "plannedSlot": {
+            "end": "2026-10-10T23:10:00.000Z",
+            "start": "2026-10-10T21:10:00.000Z"
+          },
+          "reason": null,
+          "slot": {
+            "end": "2026-10-10T23:10:00.000Z",
+            "start": "2026-10-10T21:10:00.000Z"
+          },
+          "startedAt": "2026-10-10T21:10:00.000Z",
+          "state": "planned",
+          "targetId": "ic1396",
+          "thumbnailUrl": null
+        },
+        {
+          "acquiredSeconds": 6000,
+          "captureId": null,
+          "exposureFamilies": null,
+          "exposureSeconds": null,
+          "filter": null,
+          "finishedAt": "2026-10-10T21:00:00.000Z",
+          "frameCount": null,
+          "label": "M 31",
+          "outcome": "done",
+          "passages": [
+            {
+              "end": "2026-10-10T19:50:00.000Z",
+              "start": "2026-10-10T19:00:00.000Z"
+            },
+            {
+              "end": "2026-10-10T21:00:00.000Z",
+              "start": "2026-10-10T20:10:00.000Z"
+            }
+          ],
+          "planItemId": "m31",
+          "plannedSeconds": 7200,
+          "plannedSlot": {
+            "end": "2026-10-10T21:00:00.000Z",
+            "start": "2026-10-10T19:00:00.000Z"
+          },
+          "reason": null,
+          "slot": {
+            "end": "2026-10-10T21:00:00.000Z",
+            "start": "2026-10-10T19:00:00.000Z"
+          },
+          "startedAt": "2026-10-10T19:00:00.000Z",
+          "state": "planned",
+          "targetId": "m31",
+          "thumbnailUrl": null
+        }
+      ],
+      "zone": { "timeZone": "UTC", "utcOffsetMinutes": 0 }
+    },
+    "schema": "session.schema.json#/$defs/detail",
+    "status": 200
+  }
+}

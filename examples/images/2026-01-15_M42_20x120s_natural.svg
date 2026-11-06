@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <radialGradient id="nebula"><stop stop-color="#d9e8ff"/><stop offset=".14" stop-color="#8ea8df" stop-opacity=".9"/><stop offset=".42" stop-color="#7d557f" stop-opacity=".65"/><stop offset="1" stop-color="#071019" stop-opacity="0"/></radialGradient>
+    <pattern id="stars" width="137" height="103" patternUnits="userSpaceOnUse"><circle cx="13" cy="17" r="2" fill="#fff"/><circle cx="82" cy="51" r="1.4" fill="#d7e8ff"/><circle cx="121" cy="88" r="1" fill="#ffd9b3"/></pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="#03070c"/><rect width="1600" height="1000" fill="url(#stars)" opacity=".88"/>
+  <ellipse cx="800" cy="500" rx="520" ry="390" fill="url(#nebula)"/><path d="M475 760Q690 610 715 430T1040 245Q905 500 1115 720Q785 585 475 760Z" fill="#251c2e" opacity=".72"/>
+  <g fill="#fff"><circle cx="790" cy="493" r="8"/><circle cx="815" cy="505" r="5"/><circle cx="775" cy="520" r="4"/><circle cx="835" cy="477" r="3.5"/></g>
+  <text x="40" y="950" fill="#9ca7b1" font-family="system-ui" font-size="24">Illustration synthétique de démonstration — M42</text>
+</svg>

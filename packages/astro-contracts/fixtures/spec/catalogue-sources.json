@@ -1,0 +1,30 @@
+{
+  "module": "catalogue-sources",
+  "export": "catalogueSourceCredit",
+  "cases": [
+    {
+      "id": "sharpless-fr",
+      "args": ["Sharpless", "fr"]
+    },
+    {
+      "id": "abell-en",
+      "args": ["Abell", "en"]
+    },
+    {
+      "id": "abell-ja",
+      "args": ["Abell", "ja"]
+    },
+    {
+      "id": "ldn-zh-hant",
+      "args": ["LDN", "zh-Hant"]
+    },
+    {
+      "id": "lbn-portuguese-language",
+      "args": ["LBN", "pt"]
+    },
+    {
+      "id": "uncredited",
+      "args": ["NGC", "fr"]
+    }
+  ]
+}

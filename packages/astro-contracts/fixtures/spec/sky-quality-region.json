@@ -1,0 +1,132 @@
+{
+  "module": "sky-quality-region",
+  "package": "portal",
+  "file": "sky-quality",
+  "export": "skyQualityCalibrationAt",
+  "cases": [
+    {
+      "id": "tokyo-is-japan",
+      "args": [35.6762, 139.6503]
+    },
+    {
+      "id": "sapporo-is-japan",
+      "args": [43.0618, 141.3545]
+    },
+    {
+      "id": "naha-is-japan",
+      "args": [26.2124, 127.6809]
+    },
+    {
+      "id": "ishigaki-is-japan",
+      "args": [24.3448, 124.1572]
+    },
+    {
+      "id": "tsushima-is-japan",
+      "args": [34.2029, 129.2892]
+    },
+    {
+      "id": "ogasawara-chichijima-is-japan",
+      "args": [27.094, 142.1928]
+    },
+    {
+      "id": "busan-is-global",
+      "args": [35.1796, 129.0756]
+    },
+    {
+      "id": "seoul-is-global",
+      "args": [37.5665, 126.978]
+    },
+    {
+      "id": "vladivostok-is-global",
+      "args": [43.1198, 131.8869]
+    },
+    {
+      "id": "yuzhno-sakhalinsk-is-global",
+      "args": [46.9591, 142.7381]
+    },
+    {
+      "id": "shanghai-is-global",
+      "args": [31.2304, 121.4737]
+    },
+    {
+      "id": "taipei-is-global",
+      "args": [25.033, 121.5654]
+    },
+    {
+      "id": "guam-is-global",
+      "args": [13.4443, 144.7937]
+    },
+    {
+      "id": "open-pacific-is-global",
+      "args": [30, 170]
+    },
+    {
+      "id": "the-japan-polygon-s-own-first-vertex-pins-the-boundary-convention",
+      "args": [45.7, 140.2]
+    },
+    {
+      "id": "berlin-is-global-no-regional-entry-yet",
+      "args": [52.52, 13.405]
+    },
+    {
+      "id": "vienna-is-global-no-regional-entry-yet",
+      "args": [48.2082, 16.3738]
+    },
+    {
+      "id": "zurich-is-global-no-regional-entry-yet",
+      "args": [47.3769, 8.5417]
+    },
+    {
+      "id": "madrid-is-global-no-regional-entry-yet",
+      "args": [40.4168, -3.7038]
+    },
+    {
+      "id": "barcelona-is-global-no-regional-entry-yet",
+      "args": [41.3851, 2.1734]
+    },
+    {
+      "id": "mexico-city-is-global-no-regional-entry-yet",
+      "args": [19.4326, -99.1332]
+    },
+    {
+      "id": "rome-is-global-no-regional-entry-yet",
+      "args": [41.9028, 12.4964]
+    },
+    {
+      "id": "milan-is-global-no-regional-entry-yet",
+      "args": [45.4642, 9.19]
+    },
+    {
+      "id": "sao-paulo-is-global-no-regional-entry-yet",
+      "args": [-23.5505, -46.6333]
+    },
+    {
+      "id": "rio-de-janeiro-is-global-no-regional-entry-yet",
+      "args": [-22.9068, -43.1729]
+    },
+    {
+      "id": "moscow-is-global-no-regional-entry-yet",
+      "args": [55.7558, 37.6173]
+    },
+    {
+      "id": "saint-petersburg-is-global-no-regional-entry-yet",
+      "args": [59.9311, 30.3609]
+    },
+    {
+      "id": "beijing-is-global-no-regional-entry-yet",
+      "args": [39.9042, 116.4074]
+    },
+    {
+      "id": "chengdu-is-global-no-regional-entry-yet",
+      "args": [30.5728, 104.0668]
+    },
+    {
+      "id": "hong-kong-is-global-no-regional-entry-yet",
+      "args": [22.3193, 114.1694]
+    },
+    {
+      "id": "kaohsiung-is-global-no-regional-entry-yet",
+      "args": [22.6273, 120.3014]
+    }
+  ]
+}

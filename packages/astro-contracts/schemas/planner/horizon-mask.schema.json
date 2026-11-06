@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/planner/horizon-mask.schema.json",
+  "title": "Astro Portal horizon mask",
+  "description": "A 36-point horizon mask (azimuths 0, 10, ..., 350, in that order; written by packages/portal/src/planner/horizon-mask.js normaliseHorizonMask) owned by a place. A mask stored on a coarser grid (the former 12 points at 30 degrees, or any grid from 10 to 30 degrees that divides 360) is still read: the readers resample it by linear interpolation onto the 10-degree grid, which leaves the curve, hence every horizon altitude, unchanged; nothing rewrites it, the next write stores 36 points. Owned by a place (packages/portal/src/planner/state.js:71-79 emptyHorizon, :175-186 normalizePlace, :187-328 migratePlannerState) and the view's circular/linear projection and rotation (state.js defaultPlanView.horizon). A profile orphaned by migration (no matching place) is kept, not discarded, as an unassigned profile.",
+  "$defs": {
+    "mask": {
+      "type": "object",
+      "required": ["enabled", "points"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "points": {
+          "type": "array",
+          "minItems": 36,
+          "maxItems": 36,
+          "items": {
+            "type": "object",
+            "required": ["azimuth", "altitude"],
+            "properties": {
+              "azimuth": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 350,
+                "multipleOf": 10
+              },
+              "altitude": { "type": "number", "minimum": 0, "maximum": 90 },
+              "surveyedAt": {
+                "description": "The instant this 10° sector was last surveyed (augmented reality, or moved by hand); absent: « à relever ». Kept only on the 10° grid.",
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "horizonStatus": { "enum": ["verified", "unverified"] },
+    "view": {
+      "type": "object",
+      "required": ["projection", "rotation"],
+      "properties": {
+        "projection": { "enum": ["circular", "linear"] },
+        "rotation": { "type": "number", "minimum": -180, "maximum": 180 },
+        "showLabels": { "type": "boolean" },
+        "sampleIndex": { "anyOf": [{ "type": "integer" }, { "type": "null" }] }
+      },
+      "additionalProperties": true
+    },
+    "unassignedProfile": {
+      "type": "object",
+      "required": ["id", "mask"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string" },
+        "mask": { "$ref": "#/$defs/mask" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "oneOf": [
+    { "$ref": "#/$defs/mask" },
+    { "$ref": "#/$defs/view" },
+    { "$ref": "#/$defs/unassignedProfile" }
+  ]
+}

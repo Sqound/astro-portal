@@ -1,0 +1,23 @@
+{
+  "name": "astro-portal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "description": "Astro Portal: your astrophotography portal and night planner on your own server.",
+  "scripts": {
+    "build": "next build",
+    "dev": "node server.mjs --dev",
+    "start": "node server.mjs",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs"
+  },
+  "dependencies": {
+    "next": "^16.3.4",
+    "planner": "*",
+    "planner-projects": "*",
+    "portal": "*",
+    "portal-app": "*",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}

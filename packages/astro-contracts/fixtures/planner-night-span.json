@@ -1,0 +1,282 @@
+{
+  "cases": [
+    {
+      "args": [
+        null,
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "absent-stays-absent",
+      "result": null
+    },
+    {
+      "args": [
+        "astronomical",
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "not-an-object",
+      "result": null
+    },
+    {
+      "args": [
+        { "mode": "twilight" },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "unknown-mode-is-absent",
+      "result": null
+    },
+    {
+      "args": [
+        { "mode": "astronomical", "start": "2026-10-14T20:00:00Z" },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "astronomical-kept-extra-keys-dropped",
+      "result": { "mode": "astronomical" }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-15T02:16:00Z",
+          "mode": "custom",
+          "start": "2026-10-14T20:27:00Z"
+        },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-rounded-to-ten-minutes",
+      "result": {
+        "end": "2026-10-15T02:20:00.000Z",
+        "mode": "custom",
+        "start": "2026-10-14T20:30:00.000Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-15T02:20:00.000Z",
+          "mode": "custom",
+          "start": "2026-10-14T20:30:00.000Z"
+        },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-already-on-the-grid",
+      "result": {
+        "end": "2026-10-15T02:20:00.000Z",
+        "mode": "custom",
+        "start": "2026-10-14T20:30:00.000Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-15T09:00:00Z",
+          "mode": "custom",
+          "start": "2026-10-14T17:00:00Z"
+        },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-clamped-to-sunset-and-sunrise",
+      "result": {
+        "end": "2026-10-15T06:00:00.000Z",
+        "mode": "custom",
+        "start": "2026-10-14T18:20:00.000Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-15T03:55:59.999+02:00",
+          "mode": "custom",
+          "start": "2026-10-14T22:04:00+02:00"
+        },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-offset-instants-read-as-utc",
+      "result": {
+        "end": "2026-10-15T02:00:00.000Z",
+        "mode": "custom",
+        "start": "2026-10-14T20:00:00.000Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-14T23:30:00Z",
+          "mode": "custom",
+          "start": "2026-10-14T23:00:00Z"
+        },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-exactly-thirty-minutes-kept",
+      "result": {
+        "end": "2026-10-14T23:30:00.000Z",
+        "mode": "custom",
+        "start": "2026-10-14T23:00:00.000Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-14T23:24:00Z",
+          "mode": "custom",
+          "start": "2026-10-14T23:00:00Z"
+        },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-shorter-than-thirty-minutes",
+      "result": { "mode": "astronomical" }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-14T23:34:00Z",
+          "mode": "custom",
+          "start": "2026-10-14T23:06:00Z"
+        },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-rounding-makes-it-too-short",
+      "result": { "mode": "astronomical" }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-14T22:00:00Z",
+          "mode": "custom",
+          "start": "2026-10-15T02:00:00Z"
+        },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-inverted",
+      "result": { "mode": "astronomical" }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-15T09:00:00Z",
+          "mode": "custom",
+          "start": "2026-10-15T07:00:00Z"
+        },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-outside-the-night",
+      "result": { "mode": "astronomical" }
+    },
+    {
+      "args": [
+        { "end": "2026-10-15T02:00:00Z", "mode": "custom", "start": "tonight" },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-unreadable-instant",
+      "result": { "mode": "astronomical" }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-15T02:00:00Z",
+          "mode": "custom",
+          "start": "2026-10-14"
+        },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-date-only-is-unreadable",
+      "result": { "mode": "astronomical" }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-15T09:59:00Z",
+          "mode": "custom",
+          "start": "2026-10-14T17:01:00Z"
+        },
+        null
+      ],
+      "id": "custom-without-bounds-only-rounds",
+      "result": {
+        "end": "2026-10-15T10:00:00.000Z",
+        "mode": "custom",
+        "start": "2026-10-14T17:00:00.000Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-15T09:59:00Z",
+          "mode": "custom",
+          "start": "2026-10-14T17:01:00Z"
+        },
+        { "sunset": "2026-10-14T18:12:31.000Z" }
+      ],
+      "id": "custom-with-half-bounds",
+      "result": {
+        "end": "2026-10-15T10:00:00.000Z",
+        "mode": "custom",
+        "start": "2026-10-14T18:20:00.000Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "end": "2026-10-15T01:35:00Z",
+          "mode": "custom",
+          "start": "2026-10-14T20:25:00Z"
+        },
+        {
+          "sunrise": "2026-10-15T06:05:10.000Z",
+          "sunset": "2026-10-14T18:12:31.000Z"
+        }
+      ],
+      "id": "custom-half-step-rounds-up",
+      "result": {
+        "end": "2026-10-15T01:40:00.000Z",
+        "mode": "custom",
+        "start": "2026-10-14T20:30:00.000Z"
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "planner-night-span"
+}

@@ -1,0 +1,18 @@
+{
+  "module": "weather-fallback-symbol",
+  "package": "portal",
+  "file": "met-norway-forecast",
+  "export": "metNorwayWeatherCode",
+  "cases": [
+    { "id": "clear-day", "args": ["clearsky_day"] },
+    { "id": "partly-cloudy-night", "args": ["partlycloudy_night"] },
+    { "id": "cloudy", "args": ["cloudy"] },
+    { "id": "light-rain", "args": ["lightrain"] },
+    { "id": "heavy-rain-day", "args": ["heavyrain_day"] },
+    { "id": "heavy-snow-showers-day", "args": ["heavysnowshowers_day"] },
+    { "id": "fog", "args": ["fog"] },
+    { "id": "thunder", "args": ["thunder"] },
+    { "id": "unknown-symbol-returns-null", "args": ["unknown_symbol"] },
+    { "id": "empty-symbol-returns-null", "args": [""] }
+  ]
+}

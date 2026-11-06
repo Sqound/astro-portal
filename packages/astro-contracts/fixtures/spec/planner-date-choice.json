@@ -1,0 +1,466 @@
+{
+  "module": "planner-date-choice",
+  "package": "portal",
+  "file": "planner/state",
+  "export": "choosePlannerDate",
+  "cases": [
+    {
+      "id": "reuses-the-night-with-the-same-place",
+      "args": [
+        {
+          "activeNightId": "night-1",
+          "activePlanId": "plan-1",
+          "catalogueSelection": "best",
+          "date": "2026-09-15",
+          "equipment": {
+            "filterIds": [],
+            "mode": "imaging",
+            "telescopeId": "askar-50p"
+          },
+          "knownLocations": [
+            {
+              "elevation": "40",
+              "horizonStatus": "unverified",
+              "id": "place-home",
+              "latitude": 45.5,
+              "locality": "Home",
+              "longitude": -73.6,
+              "name": "Home",
+              "timeZone": "America/Toronto",
+              "version": 1
+            }
+          ],
+          "location": {
+            "elevation": "40",
+            "horizonStatus": "unverified",
+            "id": "place-home",
+            "latitude": 45.5,
+            "locality": "Home",
+            "longitude": -73.6,
+            "name": "Home",
+            "timeZone": "America/Toronto",
+            "version": 1
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": { "enabled": false, "meridianFlip": false },
+          "nights": [
+            {
+              "date": "2026-09-15",
+              "id": "night-1",
+              "location": {
+                "elevation": "40",
+                "horizonStatus": "unverified",
+                "id": "place-home",
+                "latitude": 45.5,
+                "locality": "Home",
+                "longitude": -73.6,
+                "name": "Home",
+                "timeZone": "America/Toronto",
+                "version": 1
+              }
+            }
+          ],
+          "plans": [
+            {
+              "archivedAt": null,
+              "date": "2026-09-15",
+              "id": "plan-1",
+              "items": [],
+              "location": {
+                "elevation": "40",
+                "horizonStatus": "unverified",
+                "id": "place-home",
+                "latitude": 45.5,
+                "locality": "Home",
+                "longitude": -73.6,
+                "name": "Home",
+                "timeZone": "America/Toronto",
+                "version": 1
+              },
+              "name": "Plan 1",
+              "nightId": "night-1",
+              "status": "pending"
+            }
+          ],
+          "schemaVersion": 2
+        },
+        "2026-09-15",
+        { "id": "plan-new", "name": "Plan 1" }
+      ]
+    },
+    {
+      "id": "creates-a-night-and-a-first-plan",
+      "args": [
+        {
+          "activeNightId": "night-1",
+          "activePlanId": "plan-1",
+          "catalogueSelection": "best",
+          "date": "2026-09-15",
+          "equipment": {
+            "filterIds": [],
+            "mode": "imaging",
+            "telescopeId": "askar-50p"
+          },
+          "knownLocations": [
+            {
+              "elevation": "40",
+              "horizonStatus": "unverified",
+              "id": "place-home",
+              "latitude": 45.5,
+              "locality": "Home",
+              "longitude": -73.6,
+              "name": "Home",
+              "timeZone": "America/Toronto",
+              "version": 1
+            }
+          ],
+          "location": {
+            "elevation": "40",
+            "horizonStatus": "unverified",
+            "id": "place-home",
+            "latitude": 45.5,
+            "locality": "Home",
+            "longitude": -73.6,
+            "name": "Home",
+            "timeZone": "America/Toronto",
+            "version": 1
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": { "enabled": false, "meridianFlip": false },
+          "nights": [
+            {
+              "date": "2026-09-15",
+              "id": "night-1",
+              "location": {
+                "elevation": "40",
+                "horizonStatus": "unverified",
+                "id": "place-home",
+                "latitude": 45.5,
+                "locality": "Home",
+                "longitude": -73.6,
+                "name": "Home",
+                "timeZone": "America/Toronto",
+                "version": 1
+              }
+            }
+          ],
+          "plans": [
+            {
+              "archivedAt": null,
+              "date": "2026-09-15",
+              "id": "plan-1",
+              "items": [],
+              "location": {
+                "elevation": "40",
+                "horizonStatus": "unverified",
+                "id": "place-home",
+                "latitude": 45.5,
+                "locality": "Home",
+                "longitude": -73.6,
+                "name": "Home",
+                "timeZone": "America/Toronto",
+                "version": 1
+              },
+              "name": "Plan 1",
+              "nightId": "night-1",
+              "status": "pending"
+            }
+          ],
+          "schemaVersion": 2
+        },
+        "2026-09-20",
+        { "id": "plan-new", "name": "Plan 1" }
+      ]
+    },
+    {
+      "id": "prefers-a-pending-plan-over-a-completed-one",
+      "args": [
+        {
+          "activeNightId": "night-1",
+          "activePlanId": null,
+          "catalogueSelection": "best",
+          "date": "2026-09-15",
+          "equipment": {
+            "filterIds": [],
+            "mode": "imaging",
+            "telescopeId": "askar-50p"
+          },
+          "knownLocations": [
+            {
+              "elevation": "40",
+              "horizonStatus": "unverified",
+              "id": "place-home",
+              "latitude": 45.5,
+              "locality": "Home",
+              "longitude": -73.6,
+              "name": "Home",
+              "timeZone": "America/Toronto",
+              "version": 1
+            }
+          ],
+          "location": {
+            "elevation": "40",
+            "horizonStatus": "unverified",
+            "id": "place-home",
+            "latitude": 45.5,
+            "locality": "Home",
+            "longitude": -73.6,
+            "name": "Home",
+            "timeZone": "America/Toronto",
+            "version": 1
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": { "enabled": false, "meridianFlip": false },
+          "nights": [
+            {
+              "date": "2026-09-15",
+              "id": "night-1",
+              "location": {
+                "elevation": "40",
+                "horizonStatus": "unverified",
+                "id": "place-home",
+                "latitude": 45.5,
+                "locality": "Home",
+                "longitude": -73.6,
+                "name": "Home",
+                "timeZone": "America/Toronto",
+                "version": 1
+              }
+            }
+          ],
+          "plans": [
+            {
+              "archivedAt": null,
+              "date": "2026-09-15",
+              "id": "plan-done",
+              "items": [],
+              "location": {
+                "elevation": "40",
+                "horizonStatus": "unverified",
+                "id": "place-home",
+                "latitude": 45.5,
+                "locality": "Home",
+                "longitude": -73.6,
+                "name": "Home",
+                "timeZone": "America/Toronto",
+                "version": 1
+              },
+              "name": "Plan 1",
+              "nightId": "night-1",
+              "status": "executed"
+            },
+            {
+              "archivedAt": null,
+              "date": "2026-09-15",
+              "id": "plan-open",
+              "items": [],
+              "location": {
+                "elevation": "40",
+                "horizonStatus": "unverified",
+                "id": "place-home",
+                "latitude": 45.5,
+                "locality": "Home",
+                "longitude": -73.6,
+                "name": "Home",
+                "timeZone": "America/Toronto",
+                "version": 1
+              },
+              "name": "Plan 1",
+              "nightId": "night-1",
+              "status": "pending"
+            }
+          ],
+          "schemaVersion": 2
+        },
+        "2026-09-15",
+        { "id": "plan-new", "name": "Plan 1" }
+      ]
+    },
+    {
+      "id": "an-invalid-date-changes-nothing",
+      "args": [
+        {
+          "activeNightId": "night-1",
+          "activePlanId": "plan-1",
+          "catalogueSelection": "best",
+          "date": "2026-09-15",
+          "equipment": {
+            "filterIds": [],
+            "mode": "imaging",
+            "telescopeId": "askar-50p"
+          },
+          "knownLocations": [
+            {
+              "elevation": "40",
+              "horizonStatus": "unverified",
+              "id": "place-home",
+              "latitude": 45.5,
+              "locality": "Home",
+              "longitude": -73.6,
+              "name": "Home",
+              "timeZone": "America/Toronto",
+              "version": 1
+            }
+          ],
+          "location": {
+            "elevation": "40",
+            "horizonStatus": "unverified",
+            "id": "place-home",
+            "latitude": 45.5,
+            "locality": "Home",
+            "longitude": -73.6,
+            "name": "Home",
+            "timeZone": "America/Toronto",
+            "version": 1
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": { "enabled": false, "meridianFlip": false },
+          "nights": [
+            {
+              "date": "2026-09-15",
+              "id": "night-1",
+              "location": {
+                "elevation": "40",
+                "horizonStatus": "unverified",
+                "id": "place-home",
+                "latitude": 45.5,
+                "locality": "Home",
+                "longitude": -73.6,
+                "name": "Home",
+                "timeZone": "America/Toronto",
+                "version": 1
+              }
+            }
+          ],
+          "plans": [
+            {
+              "archivedAt": null,
+              "date": "2026-09-15",
+              "id": "plan-1",
+              "items": [],
+              "location": {
+                "elevation": "40",
+                "horizonStatus": "unverified",
+                "id": "place-home",
+                "latitude": 45.5,
+                "locality": "Home",
+                "longitude": -73.6,
+                "name": "Home",
+                "timeZone": "America/Toronto",
+                "version": 1
+              },
+              "name": "Plan 1",
+              "nightId": "night-1",
+              "status": "pending"
+            }
+          ],
+          "schemaVersion": 2
+        },
+        "2026-13-01",
+        { "id": "plan-new", "name": "Plan 1" }
+      ]
+    },
+    {
+      "id": "the-first-plan-of-a-new-night-starts-from-the-start-equipment",
+      "args": [
+        {
+          "activeNightId": "night-1",
+          "activePlanId": "plan-1",
+          "catalogueSelection": "best",
+          "date": "2026-09-15",
+          "equipment": {
+            "filterIds": [],
+            "mode": "imaging",
+            "telescopeId": "askar-50p"
+          },
+          "knownLocations": [
+            {
+              "elevation": "40",
+              "horizonStatus": "unverified",
+              "id": "place-home",
+              "latitude": 45.5,
+              "locality": "Home",
+              "longitude": -73.6,
+              "name": "Home",
+              "timeZone": "America/Toronto",
+              "version": 1
+            }
+          ],
+          "location": {
+            "elevation": "40",
+            "horizonStatus": "unverified",
+            "id": "place-home",
+            "latitude": 45.5,
+            "locality": "Home",
+            "longitude": -73.6,
+            "name": "Home",
+            "timeZone": "America/Toronto",
+            "version": 1
+          },
+          "minAltitude": 30,
+          "moonSeparationMinimum": 25,
+          "moonSeparationMinimumByFilter": {},
+          "mountSafety": { "enabled": false, "meridianFlip": false },
+          "nights": [
+            {
+              "date": "2026-09-15",
+              "id": "night-1",
+              "location": {
+                "elevation": "40",
+                "horizonStatus": "unverified",
+                "id": "place-home",
+                "latitude": 45.5,
+                "locality": "Home",
+                "longitude": -73.6,
+                "name": "Home",
+                "timeZone": "America/Toronto",
+                "version": 1
+              }
+            }
+          ],
+          "plans": [
+            {
+              "archivedAt": null,
+              "date": "2026-09-15",
+              "id": "plan-1",
+              "items": [],
+              "location": {
+                "elevation": "40",
+                "horizonStatus": "unverified",
+                "id": "place-home",
+                "latitude": 45.5,
+                "locality": "Home",
+                "longitude": -73.6,
+                "name": "Home",
+                "timeZone": "America/Toronto",
+                "version": 1
+              },
+              "name": "Plan 1",
+              "nightId": "night-1",
+              "status": "pending"
+            }
+          ],
+          "schemaVersion": 2
+        },
+        "2026-09-20",
+        {
+          "id": "plan-new",
+          "name": "Plan 1",
+          "equipment": {
+            "mode": "visual",
+            "telescopeId": "skywatcher-skymax-127",
+            "filterIds": []
+          }
+        }
+      ]
+    }
+  ]
+}

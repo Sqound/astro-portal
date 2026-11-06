@@ -1,0 +1,11 @@
+{
+  "cases": [
+    {
+      "args": [{ "dec": 41.26875, "ra": 0.7123194444 }],
+      "id": "m31-ra-hours-to-degrees",
+      "result": { "dec": 41.26875, "ra": 10.684791665999999 }
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "planner-coordinates"
+}

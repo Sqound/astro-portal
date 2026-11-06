@@ -1,0 +1,373 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "equipment": { "mode": "imaging" },
+          "id": "plan-1",
+          "items": [
+            {
+              "endMinute": 120,
+              "filter": "",
+              "id": "m31",
+              "startMinute": 0,
+              "target": {
+                "coordinate": { "dec": 41.26875, "ra": 10.684708 },
+                "designation": "M 31",
+                "id": "m31",
+                "skyTarget": { "typeKey": "Galaxy" },
+                "title": "M 31 — Andromeda Galaxy"
+              }
+            },
+            {
+              "acquisition": {
+                "lines": [
+                  {
+                    "exposureSeconds": 300,
+                    "filter": "Duo-band",
+                    "frameCount": 16,
+                    "gain": 100
+                  }
+                ]
+              },
+              "endMinute": 200,
+              "id": "ngc7000",
+              "startMinute": 120,
+              "target": {
+                "coordinate": { "dec": 44.333333, "ra": 314.75 },
+                "designation": "NGC 7000",
+                "id": "ngc7000",
+                "skyTarget": { "typeKey": "Emission nebula" },
+                "title": "NGC 7000 — North America Nebula"
+              }
+            },
+            {
+              "acquisition": { "lines": [{ "filter": null, "gain": null }] },
+              "endMinute": 260,
+              "id": "m45",
+              "startMinute": 200,
+              "target": {
+                "coordinate": { "dec": 24.116667, "ra": 56.75 },
+                "designation": "M 45",
+                "id": "m45",
+                "skyTarget": { "typeKey": "Open cluster" },
+                "title": "M 45 — Pleiades"
+              }
+            }
+          ],
+          "name": "Autumn nebulae"
+        },
+        {
+          "context": {
+            "equipment": {
+              "apertureMm": 50,
+              "deviceKind": "dedicated",
+              "focalLengthMm": 250,
+              "hcgGain": 100,
+              "maxExposureSeconds": null,
+              "mountKind": null,
+              "pixelSizeUm": 2.9,
+              "sensorKind": "colour",
+              "unityGain": null
+            },
+            "filters": [
+              { "family": "broadband", "name": "UV/IR-cut" },
+              { "family": "dual", "name": "Duo-band" }
+            ],
+            "mode": "imaging",
+            "moon": { "illumination": 10 },
+            "sky": { "sqm": 21 }
+          }
+        }
+      ],
+      "id": "chosen-suggested-and-device-lines",
+      "result": {
+        "m31": {
+          "frozen": false,
+          "lines": [
+            {
+              "approximate": true,
+              "binning": 1,
+              "exposureSeconds": 120,
+              "filter": "UV/IR-cut",
+              "frameCount": 59,
+              "gain": 100,
+              "gainDevice": false,
+              "noFilter": false,
+              "suggested": true
+            }
+          ]
+        },
+        "m45": {
+          "frozen": false,
+          "lines": [
+            {
+              "approximate": true,
+              "binning": 1,
+              "exposureSeconds": 60,
+              "filter": null,
+              "frameCount": 58,
+              "gain": null,
+              "gainDevice": true,
+              "noFilter": true,
+              "suggested": false
+            }
+          ]
+        },
+        "ngc7000": {
+          "frozen": false,
+          "lines": [
+            {
+              "approximate": false,
+              "binning": 1,
+              "exposureSeconds": 300,
+              "filter": "Duo-band",
+              "frameCount": 16,
+              "gain": 100,
+              "gainDevice": false,
+              "noFilter": false,
+              "suggested": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "equipment": { "mode": "imaging" },
+          "id": "plan-1",
+          "items": [
+            {
+              "endMinute": 120,
+              "filter": "",
+              "id": "m31",
+              "startMinute": 0,
+              "target": {
+                "coordinate": { "dec": 41.26875, "ra": 10.684708 },
+                "designation": "M 31",
+                "id": "m31",
+                "skyTarget": { "typeKey": "Galaxy" },
+                "title": "M 31 — Andromeda Galaxy"
+              }
+            },
+            {
+              "acquisition": {
+                "lines": [
+                  {
+                    "exposureSeconds": 300,
+                    "filter": "Duo-band",
+                    "frameCount": 16,
+                    "gain": 100
+                  }
+                ]
+              },
+              "endMinute": 200,
+              "id": "ngc7000",
+              "startMinute": 120,
+              "target": {
+                "coordinate": { "dec": 44.333333, "ra": 314.75 },
+                "designation": "NGC 7000",
+                "id": "ngc7000",
+                "skyTarget": { "typeKey": "Emission nebula" },
+                "title": "NGC 7000 — North America Nebula"
+              }
+            },
+            {
+              "acquisition": { "lines": [{ "filter": null, "gain": null }] },
+              "endMinute": 260,
+              "id": "m45",
+              "startMinute": 200,
+              "target": {
+                "coordinate": { "dec": 24.116667, "ra": 56.75 },
+                "designation": "M 45",
+                "id": "m45",
+                "skyTarget": { "typeKey": "Open cluster" },
+                "title": "M 45 — Pleiades"
+              }
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "acquisition": {
+                "lines": [
+                  {
+                    "exposureSeconds": 60,
+                    "filter": "L",
+                    "frameCount": 99,
+                    "gain": 80
+                  }
+                ]
+              },
+              "endMinute": 120,
+              "planItemId": "m31",
+              "ruleVersion": "expo-b-1",
+              "startMinute": 0
+            }
+          ],
+          "name": "Autumn nebulae"
+        },
+        {
+          "context": {
+            "equipment": {
+              "apertureMm": 50,
+              "deviceKind": "dedicated",
+              "focalLengthMm": 250,
+              "hcgGain": 100,
+              "maxExposureSeconds": null,
+              "mountKind": null,
+              "pixelSizeUm": 2.9,
+              "sensorKind": "colour",
+              "unityGain": null
+            },
+            "filters": [
+              { "family": "broadband", "name": "UV/IR-cut" },
+              { "family": "dual", "name": "Duo-band" }
+            ],
+            "mode": "imaging",
+            "moon": { "illumination": 10 },
+            "sky": { "sqm": 21 }
+          }
+        }
+      ],
+      "id": "launched-lines-are-frozen",
+      "result": {
+        "m31": {
+          "frozen": true,
+          "lines": [
+            {
+              "approximate": false,
+              "binning": null,
+              "exposureSeconds": 60,
+              "filter": "L",
+              "frameCount": 99,
+              "gain": 80,
+              "gainDevice": false,
+              "noFilter": false,
+              "suggested": false
+            }
+          ]
+        },
+        "m45": {
+          "frozen": false,
+          "lines": [
+            {
+              "approximate": true,
+              "binning": 1,
+              "exposureSeconds": 60,
+              "filter": null,
+              "frameCount": 58,
+              "gain": null,
+              "gainDevice": true,
+              "noFilter": true,
+              "suggested": false
+            }
+          ]
+        },
+        "ngc7000": {
+          "frozen": false,
+          "lines": [
+            {
+              "approximate": false,
+              "binning": 1,
+              "exposureSeconds": 300,
+              "filter": "Duo-band",
+              "frameCount": 16,
+              "gain": 100,
+              "gainDevice": false,
+              "noFilter": false,
+              "suggested": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "equipment": { "mode": "visual" },
+          "id": "plan-1",
+          "items": [
+            {
+              "endMinute": 120,
+              "filter": "",
+              "id": "m31",
+              "startMinute": 0,
+              "target": {
+                "coordinate": { "dec": 41.26875, "ra": 10.684708 },
+                "designation": "M 31",
+                "id": "m31",
+                "skyTarget": { "typeKey": "Galaxy" },
+                "title": "M 31 — Andromeda Galaxy"
+              }
+            },
+            {
+              "acquisition": {
+                "lines": [
+                  {
+                    "exposureSeconds": 300,
+                    "filter": "Duo-band",
+                    "frameCount": 16,
+                    "gain": 100
+                  }
+                ]
+              },
+              "endMinute": 200,
+              "id": "ngc7000",
+              "startMinute": 120,
+              "target": {
+                "coordinate": { "dec": 44.333333, "ra": 314.75 },
+                "designation": "NGC 7000",
+                "id": "ngc7000",
+                "skyTarget": { "typeKey": "Emission nebula" },
+                "title": "NGC 7000 — North America Nebula"
+              }
+            },
+            {
+              "acquisition": { "lines": [{ "filter": null, "gain": null }] },
+              "endMinute": 260,
+              "id": "m45",
+              "startMinute": 200,
+              "target": {
+                "coordinate": { "dec": 24.116667, "ra": 56.75 },
+                "designation": "M 45",
+                "id": "m45",
+                "skyTarget": { "typeKey": "Open cluster" },
+                "title": "M 45 — Pleiades"
+              }
+            }
+          ],
+          "name": "Autumn nebulae"
+        },
+        {
+          "context": {
+            "equipment": {
+              "apertureMm": 50,
+              "deviceKind": "dedicated",
+              "focalLengthMm": 250,
+              "hcgGain": 100,
+              "maxExposureSeconds": null,
+              "mountKind": null,
+              "pixelSizeUm": 2.9,
+              "sensorKind": "colour",
+              "unityGain": null
+            },
+            "filters": [
+              { "family": "broadband", "name": "UV/IR-cut" },
+              { "family": "dual", "name": "Duo-band" }
+            ],
+            "moon": { "illumination": 10 },
+            "sky": { "sqm": 21 }
+          }
+        }
+      ],
+      "id": "visual-mode-has-no-lines",
+      "result": {}
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "export-acquisition-by-item"
+}

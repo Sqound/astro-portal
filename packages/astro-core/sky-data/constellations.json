@@ -1,0 +1,1674 @@
+[
+  {
+    "key": "And",
+    "latinName": "Andromeda",
+    "genitive": "Andromedae",
+    "englishName": "Chained Maiden",
+    "names": {
+      "en": "Andromeda",
+      "fr": "Andromède",
+      "ja": "アンドロメダ座",
+      "de": "Andromeda",
+      "es": "Andrómeda",
+      "it": "Andromeda",
+      "pt-BR": "Andrômeda",
+      "ru": "Андромеда",
+      "zh-Hans": "仙女座",
+      "zh-Hant": "仙女座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Ant",
+    "latinName": "Antlia",
+    "genitive": "Antliae",
+    "englishName": "Air Pump",
+    "names": {
+      "en": "Antlia",
+      "fr": "Machine pneumatique",
+      "ja": "ポンプ座",
+      "de": "Luftpumpe",
+      "es": "Bomba Neumática",
+      "it": "Macchina Pneumatica",
+      "pt-BR": "Máquina Pneumática",
+      "ru": "Насос",
+      "zh-Hans": "唧筒座",
+      "zh-Hant": "唧筒座"
+    },
+    "aliases": ["Air Pump"]
+  },
+  {
+    "key": "Aps",
+    "latinName": "Apus",
+    "genitive": "Apodis",
+    "englishName": "Bird of Paradise",
+    "names": {
+      "en": "Apus",
+      "fr": "Oiseau de paradis",
+      "ja": "ふうちょう座",
+      "de": "Paradiesvogel",
+      "es": "Ave del Paraíso",
+      "it": "Uccello del Paradiso",
+      "pt-BR": "Ave do Paraíso",
+      "ru": "Райская Птица",
+      "zh-Hans": "天燕座",
+      "zh-Hant": "天燕座"
+    },
+    "aliases": ["Bird of Paradise"]
+  },
+  {
+    "key": "Aql",
+    "latinName": "Aquila",
+    "genitive": "Aquilae",
+    "englishName": "Eagle",
+    "names": {
+      "en": "Aquila",
+      "fr": "Aigle",
+      "ja": "わし座",
+      "de": "Adler",
+      "es": "Águila",
+      "it": "Aquila",
+      "pt-BR": "Águia",
+      "ru": "Орёл",
+      "zh-Hans": "天鹰座",
+      "zh-Hant": "天鷹座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Aqr",
+    "latinName": "Aquarius",
+    "genitive": "Aquarii",
+    "englishName": "Water Bearer",
+    "names": {
+      "en": "Aquarius",
+      "fr": "Verseau",
+      "ja": "みずがめ座",
+      "de": "Wassermann",
+      "es": "Acuario",
+      "it": "Acquario",
+      "pt-BR": "Aquário",
+      "ru": "Водолей",
+      "zh-Hans": "宝瓶座",
+      "zh-Hant": "寶瓶座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Ara",
+    "latinName": "Ara",
+    "genitive": "Arae",
+    "englishName": "Altar",
+    "names": {
+      "en": "Ara",
+      "fr": "Autel",
+      "ja": "さいだん座",
+      "de": "Altar",
+      "es": "Altar",
+      "it": "Altare",
+      "pt-BR": "Altar",
+      "ru": "Жертвенник",
+      "zh-Hans": "天坛座",
+      "zh-Hant": "天壇座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Ari",
+    "latinName": "Aries",
+    "genitive": "Arietis",
+    "englishName": "Ram",
+    "names": {
+      "en": "Aries",
+      "fr": "Bélier",
+      "ja": "おひつじ座",
+      "de": "Widder",
+      "es": "Aries",
+      "it": "Ariete",
+      "pt-BR": "Áries",
+      "ru": "Овен",
+      "zh-Hans": "白羊座",
+      "zh-Hant": "白羊座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Aur",
+    "latinName": "Auriga",
+    "genitive": "Aurigae",
+    "englishName": "Charioteer",
+    "names": {
+      "en": "Auriga",
+      "fr": "Cocher",
+      "ja": "ぎょしゃ座",
+      "de": "Fuhrmann",
+      "es": "Auriga",
+      "it": "Auriga",
+      "pt-BR": "Cocheiro",
+      "ru": "Возничий",
+      "zh-Hans": "御夫座",
+      "zh-Hant": "御夫座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Boo",
+    "latinName": "Boötes",
+    "genitive": "Boötis",
+    "englishName": "Herdsman",
+    "names": {
+      "en": "Boötes",
+      "fr": "Bouvier",
+      "ja": "うしかい座",
+      "de": "Bärenhüter",
+      "es": "Boyero",
+      "it": "Boote",
+      "pt-BR": "Boieiro",
+      "ru": "Волопас",
+      "zh-Hans": "牧夫座",
+      "zh-Hant": "牧夫座"
+    },
+    "aliases": ["Bootes"]
+  },
+  {
+    "key": "CMa",
+    "latinName": "Canis Major",
+    "genitive": "Canis Majoris",
+    "englishName": "Great Dog",
+    "names": {
+      "en": "Canis Major",
+      "fr": "Grand Chien",
+      "ja": "おおいぬ座",
+      "de": "Großer Hund",
+      "es": "Can Mayor",
+      "it": "Cane Maggiore",
+      "pt-BR": "Cão Maior",
+      "ru": "Большой Пёс",
+      "zh-Hans": "大犬座",
+      "zh-Hant": "大犬座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "CMi",
+    "latinName": "Canis Minor",
+    "genitive": "Canis Minoris",
+    "englishName": "Lesser Dog",
+    "names": {
+      "en": "Canis Minor",
+      "fr": "Petit Chien",
+      "ja": "こいぬ座",
+      "de": "Kleiner Hund",
+      "es": "Can Menor",
+      "it": "Cane Minore",
+      "pt-BR": "Cão Menor",
+      "ru": "Малый Пёс",
+      "zh-Hans": "小犬座",
+      "zh-Hant": "小犬座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "CVn",
+    "latinName": "Canes Venatici",
+    "genitive": "Canum Venaticorum",
+    "englishName": "Hunting Dogs",
+    "names": {
+      "en": "Canes Venatici",
+      "fr": "Chiens de chasse",
+      "ja": "りょうけん座",
+      "de": "Jagdhunde",
+      "es": "Perros de Caza",
+      "it": "Cani da Caccia",
+      "pt-BR": "Cães de Caça",
+      "ru": "Гончие Псы",
+      "zh-Hans": "猎犬座",
+      "zh-Hant": "獵犬座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cae",
+    "latinName": "Caelum",
+    "genitive": "Caeli",
+    "englishName": "Engraving Tool",
+    "names": {
+      "en": "Caelum",
+      "fr": "Burins",
+      "ja": "ちょうこくぐ座",
+      "de": "Grabstichel",
+      "es": "Cincel",
+      "it": "Bulino",
+      "pt-BR": "Cinzel",
+      "ru": "Резец",
+      "zh-Hans": "雕具座",
+      "zh-Hant": "雕具座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cam",
+    "latinName": "Camelopardalis",
+    "genitive": "Camelopardalis",
+    "englishName": "Giraffe",
+    "names": {
+      "en": "Camelopardalis",
+      "fr": "Girafe",
+      "ja": "きりん座",
+      "de": "Giraffe",
+      "es": "Jirafa",
+      "it": "Giraffa",
+      "pt-BR": "Girafa",
+      "ru": "Жираф",
+      "zh-Hans": "鹿豹座",
+      "zh-Hant": "鹿豹座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cap",
+    "latinName": "Capricornus",
+    "genitive": "Capricorni",
+    "englishName": "Sea Goat",
+    "names": {
+      "en": "Capricornus",
+      "fr": "Capricorne",
+      "ja": "やぎ座",
+      "de": "Steinbock",
+      "es": "Capricornio",
+      "it": "Capricorno",
+      "pt-BR": "Capricórnio",
+      "ru": "Козерог",
+      "zh-Hans": "摩羯座",
+      "zh-Hant": "摩羯座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Car",
+    "latinName": "Carina",
+    "genitive": "Carinae",
+    "englishName": "Keel",
+    "names": {
+      "en": "Carina",
+      "fr": "Carène",
+      "ja": "りゅうこつ座",
+      "de": "Kiel des Schiffs",
+      "es": "Quilla",
+      "it": "Carena",
+      "pt-BR": "Carina",
+      "ru": "Киль",
+      "zh-Hans": "船底座",
+      "zh-Hant": "船底座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cas",
+    "latinName": "Cassiopeia",
+    "genitive": "Cassiopeiae",
+    "englishName": "Seated Queen",
+    "names": {
+      "en": "Cassiopeia",
+      "fr": "Cassiopée",
+      "ja": "カシオペヤ座",
+      "de": "Kassiopeia",
+      "es": "Casiopea",
+      "it": "Cassiopea",
+      "pt-BR": "Cassiopeia",
+      "ru": "Кассиопея",
+      "zh-Hans": "仙后座",
+      "zh-Hant": "仙后座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cen",
+    "latinName": "Centaurus",
+    "genitive": "Centauri",
+    "englishName": "Centaur",
+    "names": {
+      "en": "Centaurus",
+      "fr": "Centaure",
+      "ja": "ケンタウルス座",
+      "de": "Zentaur",
+      "es": "Centauro",
+      "it": "Centauro",
+      "pt-BR": "Centauro",
+      "ru": "Центавр",
+      "zh-Hans": "半人马座",
+      "zh-Hant": "半人馬座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cep",
+    "latinName": "Cepheus",
+    "genitive": "Cephei",
+    "englishName": "King",
+    "names": {
+      "en": "Cepheus",
+      "fr": "Céphée",
+      "ja": "ケフェウス座",
+      "de": "Kepheus",
+      "es": "Cefeo",
+      "it": "Cefeo",
+      "pt-BR": "Cefeu",
+      "ru": "Цефей",
+      "zh-Hans": "仙王座",
+      "zh-Hant": "仙王座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cet",
+    "latinName": "Cetus",
+    "genitive": "Ceti",
+    "englishName": "Sea Monster",
+    "names": {
+      "en": "Cetus",
+      "fr": "Baleine",
+      "ja": "くじら座",
+      "de": "Walfisch",
+      "es": "Ballena",
+      "it": "Balena",
+      "pt-BR": "Baleia",
+      "ru": "Кит",
+      "zh-Hans": "鲸鱼座",
+      "zh-Hant": "鯨魚座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cha",
+    "latinName": "Chamaeleon",
+    "genitive": "Chamaeleontis",
+    "englishName": "Chameleon",
+    "names": {
+      "en": "Chamaeleon",
+      "fr": "Caméléon",
+      "ja": "カメレオン座",
+      "de": "Chamäleon",
+      "es": "Camaleón",
+      "it": "Camaleonte",
+      "pt-BR": "Camaleão",
+      "ru": "Хамелеон",
+      "zh-Hans": "蝘蜓座",
+      "zh-Hant": "蝘蜓座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cir",
+    "latinName": "Circinus",
+    "genitive": "Circini",
+    "englishName": "Compass",
+    "names": {
+      "en": "Circinus",
+      "fr": "Compas",
+      "ja": "コンパス座",
+      "de": "Zirkel",
+      "es": "Compás",
+      "it": "Compasso",
+      "pt-BR": "Compasso",
+      "ru": "Циркуль",
+      "zh-Hans": "圆规座",
+      "zh-Hant": "圓規座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cnc",
+    "latinName": "Cancer",
+    "genitive": "Cancri",
+    "englishName": "Crab",
+    "names": {
+      "en": "Cancer",
+      "fr": "Cancer",
+      "ja": "かに座",
+      "de": "Krebs",
+      "es": "Cáncer",
+      "it": "Cancro",
+      "pt-BR": "Câncer",
+      "ru": "Рак",
+      "zh-Hans": "巨蟹座",
+      "zh-Hant": "巨蟹座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Col",
+    "latinName": "Columba",
+    "genitive": "Columbae",
+    "englishName": "Dove",
+    "names": {
+      "en": "Columba",
+      "fr": "Colombe",
+      "ja": "はと座",
+      "de": "Taube",
+      "es": "Paloma",
+      "it": "Colomba",
+      "pt-BR": "Pomba",
+      "ru": "Голубь",
+      "zh-Hans": "天鸽座",
+      "zh-Hant": "天鴿座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Com",
+    "latinName": "Coma Berenices",
+    "genitive": "Comae Berenices",
+    "englishName": "Bernice's Hair",
+    "names": {
+      "en": "Coma Berenices",
+      "fr": "Chevelure de Bérénice",
+      "ja": "かみのけ座",
+      "de": "Haar der Berenike",
+      "es": "Cabellera de Berenice",
+      "it": "Chioma di Berenice",
+      "pt-BR": "Cabeleira de Berenice",
+      "ru": "Волосы Вероники",
+      "zh-Hans": "后发座",
+      "zh-Hant": "后髮座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "CrA",
+    "latinName": "Corona Australis",
+    "genitive": "Coronae Australis",
+    "englishName": "Southern Crown",
+    "names": {
+      "en": "Corona Australis",
+      "fr": "Couronne australe",
+      "ja": "みなみのかんむり座",
+      "de": "Südliche Krone",
+      "es": "Corona Austral",
+      "it": "Corona Australe",
+      "pt-BR": "Coroa Austral",
+      "ru": "Южная Корона",
+      "zh-Hans": "南冕座",
+      "zh-Hant": "南冕座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "CrB",
+    "latinName": "Corona Borealis",
+    "genitive": "Coronae Borealis",
+    "englishName": "Northern Crown",
+    "names": {
+      "en": "Corona Borealis",
+      "fr": "Couronne boréale",
+      "ja": "かんむり座",
+      "de": "Nördliche Krone",
+      "es": "Corona Boreal",
+      "it": "Corona Boreale",
+      "pt-BR": "Coroa Boreal",
+      "ru": "Северная Корона",
+      "zh-Hans": "北冕座",
+      "zh-Hant": "北冕座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Crt",
+    "latinName": "Crater",
+    "genitive": "Crateris",
+    "englishName": "Cup",
+    "names": {
+      "en": "Crater",
+      "fr": "Coupe",
+      "ja": "コップ座",
+      "de": "Becher",
+      "es": "Copa",
+      "it": "Cratere",
+      "pt-BR": "Taça",
+      "ru": "Чаша",
+      "zh-Hans": "巨爵座",
+      "zh-Hant": "巨爵座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cru",
+    "latinName": "Crux",
+    "genitive": "Crucis",
+    "englishName": "Southern Cross",
+    "names": {
+      "en": "Crux",
+      "fr": "Croix du Sud",
+      "ja": "みなみじゅうじ座",
+      "de": "Kreuz des Südens",
+      "es": "Cruz del Sur",
+      "it": "Croce del Sud",
+      "pt-BR": "Cruzeiro do Sul",
+      "ru": "Южный Крест",
+      "zh-Hans": "南十字座",
+      "zh-Hant": "南十字座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Crv",
+    "latinName": "Corvus",
+    "genitive": "Corvi",
+    "englishName": "Crow",
+    "names": {
+      "en": "Corvus",
+      "fr": "Corbeau",
+      "ja": "からす座",
+      "de": "Rabe",
+      "es": "Cuervo",
+      "it": "Corvo",
+      "pt-BR": "Corvo",
+      "ru": "Ворон",
+      "zh-Hans": "乌鸦座",
+      "zh-Hant": "烏鴉座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Cyg",
+    "latinName": "Cygnus",
+    "genitive": "Cygni",
+    "englishName": "Swan",
+    "names": {
+      "en": "Cygnus",
+      "fr": "Cygne",
+      "ja": "はくちょう座",
+      "de": "Schwan",
+      "es": "Cisne",
+      "it": "Cigno",
+      "pt-BR": "Cisne",
+      "ru": "Лебедь",
+      "zh-Hans": "天鹅座",
+      "zh-Hant": "天鵝座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Del",
+    "latinName": "Delphinus",
+    "genitive": "Delphini",
+    "englishName": "Dolphin",
+    "names": {
+      "en": "Delphinus",
+      "fr": "Dauphin",
+      "ja": "いるか座",
+      "de": "Delphin",
+      "es": "Delfín",
+      "it": "Delfino",
+      "pt-BR": "Golfinho",
+      "ru": "Дельфин",
+      "zh-Hans": "海豚座",
+      "zh-Hant": "海豚座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Dor",
+    "latinName": "Dorado",
+    "genitive": "Doradus",
+    "englishName": "Swordfish",
+    "names": {
+      "en": "Dorado",
+      "fr": "Dorade",
+      "ja": "かじき座",
+      "de": "Schwertfisch",
+      "es": "Dorado",
+      "it": "Dorado",
+      "pt-BR": "Dourado",
+      "ru": "Золотая Рыба",
+      "zh-Hans": "剑鱼座",
+      "zh-Hant": "劍魚座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Dra",
+    "latinName": "Draco",
+    "genitive": "Draconis",
+    "englishName": "Dragon",
+    "names": {
+      "en": "Draco",
+      "fr": "Dragon",
+      "ja": "りゅう座",
+      "de": "Drache",
+      "es": "Dragón",
+      "it": "Dragone",
+      "pt-BR": "Dragão",
+      "ru": "Дракон",
+      "zh-Hans": "天龙座",
+      "zh-Hant": "天龍座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Equ",
+    "latinName": "Equuleus",
+    "genitive": "Equulei",
+    "englishName": "Little Horse",
+    "names": {
+      "en": "Equuleus",
+      "fr": "Petit Cheval",
+      "ja": "こうま座",
+      "de": "Füllen",
+      "es": "Caballito",
+      "it": "Cavallino",
+      "pt-BR": "Cavalo Menor",
+      "ru": "Малый Конь",
+      "zh-Hans": "小马座",
+      "zh-Hant": "小馬座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Eri",
+    "latinName": "Eridanus",
+    "genitive": "Eridani",
+    "englishName": "River",
+    "names": {
+      "en": "Eridanus",
+      "fr": "Éridan",
+      "ja": "エリダヌス座",
+      "de": "Eridanus",
+      "es": "Erídano",
+      "it": "Eridano",
+      "pt-BR": "Erídano",
+      "ru": "Эридан",
+      "zh-Hans": "波江座",
+      "zh-Hant": "波江座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "For",
+    "latinName": "Fornax",
+    "genitive": "Fornacis",
+    "englishName": "Furnace",
+    "names": {
+      "en": "Fornax",
+      "fr": "Fourneau",
+      "ja": "ろ座",
+      "de": "Chemischer Ofen",
+      "es": "Horno",
+      "it": "Fornace",
+      "pt-BR": "Fornalha",
+      "ru": "Печь",
+      "zh-Hans": "天炉座",
+      "zh-Hant": "天爐座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Gem",
+    "latinName": "Gemini",
+    "genitive": "Geminorum",
+    "englishName": "Twins",
+    "names": {
+      "en": "Gemini",
+      "fr": "Gémeaux",
+      "ja": "ふたご座",
+      "de": "Zwillinge",
+      "es": "Géminis",
+      "it": "Gemelli",
+      "pt-BR": "Gêmeos",
+      "ru": "Близнецы",
+      "zh-Hans": "双子座",
+      "zh-Hant": "雙子座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Gru",
+    "latinName": "Grus",
+    "genitive": "Gruis",
+    "englishName": "Crane",
+    "names": {
+      "en": "Grus",
+      "fr": "Grue",
+      "ja": "つる座",
+      "de": "Kranich",
+      "es": "Grulla",
+      "it": "Gru",
+      "pt-BR": "Grou",
+      "ru": "Журавль",
+      "zh-Hans": "天鹤座",
+      "zh-Hant": "天鶴座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Her",
+    "latinName": "Hercules",
+    "genitive": "Herculis",
+    "englishName": "Hercules",
+    "names": {
+      "en": "Hercules",
+      "fr": "Hercule",
+      "ja": "ヘルクレス座",
+      "de": "Herkules",
+      "es": "Hércules",
+      "it": "Ercole",
+      "pt-BR": "Hércules",
+      "ru": "Геркулес",
+      "zh-Hans": "武仙座",
+      "zh-Hant": "武仙座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Hor",
+    "latinName": "Horologium",
+    "genitive": "Horologii",
+    "englishName": "Clock",
+    "names": {
+      "en": "Horologium",
+      "fr": "Horloge",
+      "ja": "とけい座",
+      "de": "Pendeluhr",
+      "es": "Reloj",
+      "it": "Orologio",
+      "pt-BR": "Relógio",
+      "ru": "Часы",
+      "zh-Hans": "时钟座",
+      "zh-Hant": "時鐘座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Hya",
+    "latinName": "Hydra",
+    "genitive": "Hydrae",
+    "englishName": "Female Water Snake",
+    "names": {
+      "en": "Hydra",
+      "fr": "Hydre",
+      "ja": "うみへび座",
+      "de": "Wasserschlange",
+      "es": "Hidra",
+      "it": "Idra",
+      "pt-BR": "Hidra",
+      "ru": "Гидра",
+      "zh-Hans": "长蛇座",
+      "zh-Hant": "長蛇座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Hyi",
+    "latinName": "Hydrus",
+    "genitive": "Hydri",
+    "englishName": "Male Water Snake",
+    "names": {
+      "en": "Hydrus",
+      "fr": "Hydre mâle",
+      "ja": "みずへび座",
+      "de": "Kleine Wasserschlange",
+      "es": "Hidra Macho",
+      "it": "Idra Maschio",
+      "pt-BR": "Hidra Macho",
+      "ru": "Южная Гидра",
+      "zh-Hans": "水蛇座",
+      "zh-Hant": "水蛇座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Ind",
+    "latinName": "Indus",
+    "genitive": "Indi",
+    "englishName": "Indian",
+    "names": {
+      "en": "Indus",
+      "fr": "Indien",
+      "ja": "インディアン座",
+      "de": "Inder",
+      "es": "Indio",
+      "it": "Indiano",
+      "pt-BR": "Índio",
+      "ru": "Индеец",
+      "zh-Hans": "印第安座",
+      "zh-Hant": "印地安座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "LMi",
+    "latinName": "Leo Minor",
+    "genitive": "Leonis Minoris",
+    "englishName": "Lesser Lion",
+    "names": {
+      "en": "Leo Minor",
+      "fr": "Petit Lion",
+      "ja": "こじし座",
+      "de": "Kleiner Löwe",
+      "es": "Leo Menor",
+      "it": "Leone Minore",
+      "pt-BR": "Leão Menor",
+      "ru": "Малый Лев",
+      "zh-Hans": "小狮座",
+      "zh-Hant": "小獅座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Lac",
+    "latinName": "Lacerta",
+    "genitive": "Lacertae",
+    "englishName": "Lizard",
+    "names": {
+      "en": "Lacerta",
+      "fr": "Lézard",
+      "ja": "とかげ座",
+      "de": "Eidechse",
+      "es": "Lagarto",
+      "it": "Lucertola",
+      "pt-BR": "Lagarto",
+      "ru": "Ящерица",
+      "zh-Hans": "蝎虎座",
+      "zh-Hant": "蠍虎座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Leo",
+    "latinName": "Leo",
+    "genitive": "Leonis",
+    "englishName": "Lion",
+    "names": {
+      "en": "Leo",
+      "fr": "Lion",
+      "ja": "しし座",
+      "de": "Löwe",
+      "es": "Leo",
+      "it": "Leone",
+      "pt-BR": "Leão",
+      "ru": "Лев",
+      "zh-Hans": "狮子座",
+      "zh-Hant": "獅子座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Lep",
+    "latinName": "Lepus",
+    "genitive": "Leporis",
+    "englishName": "Hare",
+    "names": {
+      "en": "Lepus",
+      "fr": "Lièvre",
+      "ja": "うさぎ座",
+      "de": "Hase",
+      "es": "Liebre",
+      "it": "Lepre",
+      "pt-BR": "Lebre",
+      "ru": "Заяц",
+      "zh-Hans": "天兔座",
+      "zh-Hant": "天兔座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Lib",
+    "latinName": "Libra",
+    "genitive": "Librae",
+    "englishName": "Scales",
+    "names": {
+      "en": "Libra",
+      "fr": "Balance",
+      "ja": "てんびん座",
+      "de": "Waage",
+      "es": "Libra",
+      "it": "Bilancia",
+      "pt-BR": "Libra",
+      "ru": "Весы",
+      "zh-Hans": "天秤座",
+      "zh-Hant": "天秤座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Lup",
+    "latinName": "Lupus",
+    "genitive": "Lupi",
+    "englishName": "Wolf",
+    "names": {
+      "en": "Lupus",
+      "fr": "Loup",
+      "ja": "おおかみ座",
+      "de": "Wolf",
+      "es": "Lobo",
+      "it": "Lupo",
+      "pt-BR": "Lobo",
+      "ru": "Волк",
+      "zh-Hans": "豺狼座",
+      "zh-Hant": "豺狼座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Lyn",
+    "latinName": "Lynx",
+    "genitive": "Lyncis",
+    "englishName": "Lynx",
+    "names": {
+      "en": "Lynx",
+      "fr": "Lynx",
+      "ja": "やまねこ座",
+      "de": "Luchs",
+      "es": "Lince",
+      "it": "Lince",
+      "pt-BR": "Lince",
+      "ru": "Рысь",
+      "zh-Hans": "天猫座",
+      "zh-Hant": "天貓座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Lyr",
+    "latinName": "Lyra",
+    "genitive": "Lyrae",
+    "englishName": "Lyre",
+    "names": {
+      "en": "Lyra",
+      "fr": "Lyre",
+      "ja": "こと座",
+      "de": "Leier",
+      "es": "Lira",
+      "it": "Lira",
+      "pt-BR": "Lira",
+      "ru": "Лира",
+      "zh-Hans": "天琴座",
+      "zh-Hant": "天琴座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Men",
+    "latinName": "Mensa",
+    "genitive": "Mensae",
+    "englishName": "Table Mountain",
+    "names": {
+      "en": "Mensa",
+      "fr": "Table",
+      "ja": "テーブルさん座",
+      "de": "Tafelberg",
+      "es": "Mesa",
+      "it": "Mensa",
+      "pt-BR": "Mesa",
+      "ru": "Столовая Гора",
+      "zh-Hans": "山案座",
+      "zh-Hant": "山案座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Mic",
+    "latinName": "Microscopium",
+    "genitive": "Microscopii",
+    "englishName": "Microscope",
+    "names": {
+      "en": "Microscopium",
+      "fr": "Microscope",
+      "ja": "けんびきょう座",
+      "de": "Mikroskop",
+      "es": "Microscopio",
+      "it": "Microscopio",
+      "pt-BR": "Microscópio",
+      "ru": "Микроскоп",
+      "zh-Hans": "显微镜座",
+      "zh-Hant": "顯微鏡座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Mon",
+    "latinName": "Monoceros",
+    "genitive": "Monocerotis",
+    "englishName": "Unicorn",
+    "names": {
+      "en": "Monoceros",
+      "fr": "Licorne",
+      "ja": "いっかくじゅう座",
+      "de": "Einhorn",
+      "es": "Unicornio",
+      "it": "Unicorno",
+      "pt-BR": "Unicórnio",
+      "ru": "Единорог",
+      "zh-Hans": "麒麟座",
+      "zh-Hant": "麒麟座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Mus",
+    "latinName": "Musca",
+    "genitive": "Muscae",
+    "englishName": "Fly",
+    "names": {
+      "en": "Musca",
+      "fr": "Mouche",
+      "ja": "はえ座",
+      "de": "Fliege",
+      "es": "Mosca",
+      "it": "Mosca",
+      "pt-BR": "Mosca",
+      "ru": "Муха",
+      "zh-Hans": "苍蝇座",
+      "zh-Hant": "蒼蠅座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Nor",
+    "latinName": "Norma",
+    "genitive": "Normae",
+    "englishName": "Carpenter's Square",
+    "names": {
+      "en": "Norma",
+      "fr": "Règle",
+      "ja": "じょうぎ座",
+      "de": "Winkelmaß",
+      "es": "Escuadra",
+      "it": "Regolo",
+      "pt-BR": "Esquadro",
+      "ru": "Наугольник",
+      "zh-Hans": "矩尺座",
+      "zh-Hant": "矩尺座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Oct",
+    "latinName": "Octans",
+    "genitive": "Octantis",
+    "englishName": "Octant",
+    "names": {
+      "en": "Octans",
+      "fr": "Octant",
+      "ja": "はちぶんぎ座",
+      "de": "Oktant",
+      "es": "Octante",
+      "it": "Ottante",
+      "pt-BR": "Octante",
+      "ru": "Октант",
+      "zh-Hans": "南极座",
+      "zh-Hant": "南極座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Oph",
+    "latinName": "Ophiuchus",
+    "genitive": "Ophiuchi",
+    "englishName": "Serpent Bearer",
+    "names": {
+      "en": "Ophiuchus",
+      "fr": "Ophiuchus",
+      "ja": "へびつかい座",
+      "de": "Schlangenträger",
+      "es": "Ofiuco",
+      "it": "Ofiuco",
+      "pt-BR": "Ofiúco",
+      "ru": "Змееносец",
+      "zh-Hans": "蛇夫座",
+      "zh-Hant": "蛇夫座"
+    },
+    "aliases": ["Serpentaire"]
+  },
+  {
+    "key": "Ori",
+    "latinName": "Orion",
+    "genitive": "Orionis",
+    "englishName": "Hunter",
+    "names": {
+      "en": "Orion",
+      "fr": "Orion",
+      "ja": "オリオン座",
+      "de": "Orion",
+      "es": "Orión",
+      "it": "Orione",
+      "pt-BR": "Órion",
+      "ru": "Орион",
+      "zh-Hans": "猎户座",
+      "zh-Hant": "獵戶座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Pav",
+    "latinName": "Pavo",
+    "genitive": "Pavonis",
+    "englishName": "Peacock",
+    "names": {
+      "en": "Pavo",
+      "fr": "Paon",
+      "ja": "くじゃく座",
+      "de": "Pfau",
+      "es": "Pavo",
+      "it": "Pavone",
+      "pt-BR": "Pavão",
+      "ru": "Павлин",
+      "zh-Hans": "孔雀座",
+      "zh-Hant": "孔雀座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Peg",
+    "latinName": "Pegasus",
+    "genitive": "Pegasi",
+    "englishName": "Winged Horse",
+    "names": {
+      "en": "Pegasus",
+      "fr": "Pégase",
+      "ja": "ペガスス座",
+      "de": "Pegasus",
+      "es": "Pegaso",
+      "it": "Pegaso",
+      "pt-BR": "Pégaso",
+      "ru": "Пегас",
+      "zh-Hans": "飞马座",
+      "zh-Hant": "飛馬座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Per",
+    "latinName": "Perseus",
+    "genitive": "Persei",
+    "englishName": "Hero",
+    "names": {
+      "en": "Perseus",
+      "fr": "Persée",
+      "ja": "ペルセウス座",
+      "de": "Perseus",
+      "es": "Perseo",
+      "it": "Perseo",
+      "pt-BR": "Perseu",
+      "ru": "Персей",
+      "zh-Hans": "英仙座",
+      "zh-Hant": "英仙座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Phe",
+    "latinName": "Phoenix",
+    "genitive": "Phoenicis",
+    "englishName": "Phoenix",
+    "names": {
+      "en": "Phoenix",
+      "fr": "Phénix",
+      "ja": "ほうおう座",
+      "de": "Phönix",
+      "es": "Fénix",
+      "it": "Fenice",
+      "pt-BR": "Fênix",
+      "ru": "Феникс",
+      "zh-Hans": "凤凰座",
+      "zh-Hant": "鳳凰座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Pic",
+    "latinName": "Pictor",
+    "genitive": "Pictoris",
+    "englishName": "Painter's Easel",
+    "names": {
+      "en": "Pictor",
+      "fr": "Peintre",
+      "ja": "がか座",
+      "de": "Maler",
+      "es": "Pintor",
+      "it": "Pittore",
+      "pt-BR": "Pintor",
+      "ru": "Живописец",
+      "zh-Hans": "绘架座",
+      "zh-Hant": "繪架座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "PsA",
+    "latinName": "Piscis Austrinus",
+    "genitive": "Piscis Austrini",
+    "englishName": "Southern Fish",
+    "names": {
+      "en": "Piscis Austrinus",
+      "fr": "Poisson austral",
+      "ja": "みなみのうお座",
+      "de": "Südlicher Fisch",
+      "es": "Pez Austral",
+      "it": "Pesce Australe",
+      "pt-BR": "Peixe Austral",
+      "ru": "Южная Рыба",
+      "zh-Hans": "南鱼座",
+      "zh-Hant": "南魚座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Psc",
+    "latinName": "Pisces",
+    "genitive": "Piscium",
+    "englishName": "Fishes",
+    "names": {
+      "en": "Pisces",
+      "fr": "Poissons",
+      "ja": "うお座",
+      "de": "Fische",
+      "es": "Piscis",
+      "it": "Pesci",
+      "pt-BR": "Peixes",
+      "ru": "Рыбы",
+      "zh-Hans": "双鱼座",
+      "zh-Hant": "雙魚座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Pup",
+    "latinName": "Puppis",
+    "genitive": "Puppis",
+    "englishName": "Stern",
+    "names": {
+      "en": "Puppis",
+      "fr": "Poupe",
+      "ja": "とも座",
+      "de": "Achterdeck des Schiffs",
+      "es": "Popa",
+      "it": "Poppa",
+      "pt-BR": "Popa",
+      "ru": "Корма",
+      "zh-Hans": "船尾座",
+      "zh-Hant": "船尾座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Pyx",
+    "latinName": "Pyxis",
+    "genitive": "Pyxidis",
+    "englishName": "Compass",
+    "names": {
+      "en": "Pyxis",
+      "fr": "Boussole",
+      "ja": "らしんばん座",
+      "de": "Schiffskompass",
+      "es": "Brújula",
+      "it": "Bussola",
+      "pt-BR": "Bússola",
+      "ru": "Компас",
+      "zh-Hans": "罗盘座",
+      "zh-Hant": "羅盤座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Ret",
+    "latinName": "Reticulum",
+    "genitive": "Reticuli",
+    "englishName": "Reticle",
+    "names": {
+      "en": "Reticulum",
+      "fr": "Réticule",
+      "ja": "レチクル座",
+      "de": "Netz",
+      "es": "Retículo",
+      "it": "Reticolo",
+      "pt-BR": "Retículo",
+      "ru": "Сетка",
+      "zh-Hans": "网罟座",
+      "zh-Hant": "網罟座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Scl",
+    "latinName": "Sculptor",
+    "genitive": "Sculptoris",
+    "englishName": "Sculptor",
+    "names": {
+      "en": "Sculptor",
+      "fr": "Sculpteur",
+      "ja": "ちょうこくしつ座",
+      "de": "Bildhauer",
+      "es": "Escultor",
+      "it": "Scultore",
+      "pt-BR": "Escultor",
+      "ru": "Скульптор",
+      "zh-Hans": "玉夫座",
+      "zh-Hant": "玉夫座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Sco",
+    "latinName": "Scorpius",
+    "genitive": "Scorpii",
+    "englishName": "Scorpion",
+    "names": {
+      "en": "Scorpius",
+      "fr": "Scorpion",
+      "ja": "さそり座",
+      "de": "Skorpion",
+      "es": "Escorpio",
+      "it": "Scorpione",
+      "pt-BR": "Escorpião",
+      "ru": "Скорпион",
+      "zh-Hans": "天蝎座",
+      "zh-Hant": "天蠍座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Sct",
+    "latinName": "Scutum",
+    "genitive": "Scuti",
+    "englishName": "Shield",
+    "names": {
+      "en": "Scutum",
+      "fr": "Écu de Sobieski",
+      "ja": "たて座",
+      "de": "Schild",
+      "es": "Escudo",
+      "it": "Scudo",
+      "pt-BR": "Escudo",
+      "ru": "Щит",
+      "zh-Hans": "盾牌座",
+      "zh-Hant": "盾牌座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Ser",
+    "latinName": "Serpens",
+    "genitive": "Serpentis",
+    "englishName": "Serpent",
+    "names": {
+      "en": "Serpens",
+      "fr": "Serpent",
+      "ja": "へび座",
+      "de": "Schlange",
+      "es": "Serpiente",
+      "it": "Serpente",
+      "pt-BR": "Serpente",
+      "ru": "Змея",
+      "zh-Hans": "巨蛇座",
+      "zh-Hant": "巨蛇座"
+    },
+    "aliases": ["Se1", "Se2", "Serpens Caput", "Serpens Cauda"]
+  },
+  {
+    "key": "Sex",
+    "latinName": "Sextans",
+    "genitive": "Sextantis",
+    "englishName": "Sextant",
+    "names": {
+      "en": "Sextans",
+      "fr": "Sextant",
+      "ja": "ろくぶんぎ座",
+      "de": "Sextant",
+      "es": "Sextante",
+      "it": "Sestante",
+      "pt-BR": "Sextante",
+      "ru": "Секстант",
+      "zh-Hans": "六分仪座",
+      "zh-Hant": "六分儀座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Sge",
+    "latinName": "Sagitta",
+    "genitive": "Sagittae",
+    "englishName": "Arrow",
+    "names": {
+      "en": "Sagitta",
+      "fr": "Flèche",
+      "ja": "や座",
+      "de": "Pfeil",
+      "es": "Flecha",
+      "it": "Freccia",
+      "pt-BR": "Flecha",
+      "ru": "Стрела",
+      "zh-Hans": "天箭座",
+      "zh-Hant": "天箭座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Sgr",
+    "latinName": "Sagittarius",
+    "genitive": "Sagittarii",
+    "englishName": "Archer",
+    "names": {
+      "en": "Sagittarius",
+      "fr": "Sagittaire",
+      "ja": "いて座",
+      "de": "Schütze",
+      "es": "Sagitario",
+      "it": "Sagittario",
+      "pt-BR": "Sagitário",
+      "ru": "Стрелец",
+      "zh-Hans": "人马座",
+      "zh-Hant": "人馬座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Tau",
+    "latinName": "Taurus",
+    "genitive": "Tauri",
+    "englishName": "Bull",
+    "names": {
+      "en": "Taurus",
+      "fr": "Taureau",
+      "ja": "おうし座",
+      "de": "Stier",
+      "es": "Tauro",
+      "it": "Toro",
+      "pt-BR": "Touro",
+      "ru": "Телец",
+      "zh-Hans": "金牛座",
+      "zh-Hant": "金牛座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Tel",
+    "latinName": "Telescopium",
+    "genitive": "Telescopii",
+    "englishName": "Telescope",
+    "names": {
+      "en": "Telescopium",
+      "fr": "Télescope",
+      "ja": "ぼうえんきょう座",
+      "de": "Teleskop",
+      "es": "Telescopio",
+      "it": "Telescopio",
+      "pt-BR": "Telescópio",
+      "ru": "Телескоп",
+      "zh-Hans": "望远镜座",
+      "zh-Hant": "望遠鏡座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "TrA",
+    "latinName": "Triangulum Australe",
+    "genitive": "Trianguli Australis",
+    "englishName": "Southern Triangle",
+    "names": {
+      "en": "Triangulum Australe",
+      "fr": "Triangle austral",
+      "ja": "みなみのさんかく座",
+      "de": "Südliches Dreieck",
+      "es": "Triángulo Austral",
+      "it": "Triangolo Australe",
+      "pt-BR": "Triângulo Austral",
+      "ru": "Южный Треугольник",
+      "zh-Hans": "南三角座",
+      "zh-Hant": "南三角座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Tri",
+    "latinName": "Triangulum",
+    "genitive": "Trianguli",
+    "englishName": "Triangle",
+    "names": {
+      "en": "Triangulum",
+      "fr": "Triangle",
+      "ja": "さんかく座",
+      "de": "Dreieck",
+      "es": "Triángulo",
+      "it": "Triangolo",
+      "pt-BR": "Triângulo",
+      "ru": "Треугольник",
+      "zh-Hans": "三角座",
+      "zh-Hant": "三角座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Tuc",
+    "latinName": "Tucana",
+    "genitive": "Tucanae",
+    "englishName": "Toucan",
+    "names": {
+      "en": "Tucana",
+      "fr": "Toucan",
+      "ja": "きょしちょう座",
+      "de": "Tukan",
+      "es": "Tucán",
+      "it": "Tucano",
+      "pt-BR": "Tucano",
+      "ru": "Тукан",
+      "zh-Hans": "杜鹃座",
+      "zh-Hant": "杜鵑座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "UMa",
+    "latinName": "Ursa Major",
+    "genitive": "Ursae Majoris",
+    "englishName": "Great Bear",
+    "names": {
+      "en": "Ursa Major",
+      "fr": "Grande Ourse",
+      "ja": "おおぐま座",
+      "de": "Großer Bär",
+      "es": "Osa Mayor",
+      "it": "Orsa Maggiore",
+      "pt-BR": "Ursa Maior",
+      "ru": "Большая Медведица",
+      "zh-Hans": "大熊座",
+      "zh-Hant": "大熊座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "UMi",
+    "latinName": "Ursa Minor",
+    "genitive": "Ursae Minoris",
+    "englishName": "Little Bear",
+    "names": {
+      "en": "Ursa Minor",
+      "fr": "Petite Ourse",
+      "ja": "こぐま座",
+      "de": "Kleiner Bär",
+      "es": "Osa Menor",
+      "it": "Orsa Minore",
+      "pt-BR": "Ursa Menor",
+      "ru": "Малая Медведица",
+      "zh-Hans": "小熊座",
+      "zh-Hant": "小熊座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Vel",
+    "latinName": "Vela",
+    "genitive": "Velorum",
+    "englishName": "Sails",
+    "names": {
+      "en": "Vela",
+      "fr": "Voiles",
+      "ja": "ほ座",
+      "de": "Segel des Schiffs",
+      "es": "Vela",
+      "it": "Vele",
+      "pt-BR": "Vela",
+      "ru": "Паруса",
+      "zh-Hans": "船帆座",
+      "zh-Hant": "船帆座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Vir",
+    "latinName": "Virgo",
+    "genitive": "Virginis",
+    "englishName": "Maiden",
+    "names": {
+      "en": "Virgo",
+      "fr": "Vierge",
+      "ja": "おとめ座",
+      "de": "Jungfrau",
+      "es": "Virgo",
+      "it": "Vergine",
+      "pt-BR": "Virgem",
+      "ru": "Дева",
+      "zh-Hans": "室女座",
+      "zh-Hant": "室女座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Vol",
+    "latinName": "Volans",
+    "genitive": "Volantis",
+    "englishName": "Flying Fish",
+    "names": {
+      "en": "Volans",
+      "fr": "Poisson volant",
+      "ja": "とびうお座",
+      "de": "Fliegender Fisch",
+      "es": "Pez Volador",
+      "it": "Pesce Volante",
+      "pt-BR": "Peixe Voador",
+      "ru": "Летучая Рыба",
+      "zh-Hans": "飞鱼座",
+      "zh-Hant": "飛魚座"
+    },
+    "aliases": []
+  },
+  {
+    "key": "Vul",
+    "latinName": "Vulpecula",
+    "genitive": "Vulpeculae",
+    "englishName": "Fox",
+    "names": {
+      "en": "Vulpecula",
+      "fr": "Renard",
+      "ja": "こぎつね座",
+      "de": "Fuchs",
+      "es": "Zorra",
+      "it": "Volpetta",
+      "pt-BR": "Raposa",
+      "ru": "Лисичка",
+      "zh-Hans": "狐狸座",
+      "zh-Hant": "狐狸座"
+    },
+    "aliases": []
+  }
+]

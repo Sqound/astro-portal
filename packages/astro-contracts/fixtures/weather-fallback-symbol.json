@@ -1,0 +1,28 @@
+{
+  "cases": [
+    { "args": ["clearsky_day"], "id": "clear-day", "result": 0 },
+    {
+      "args": ["partlycloudy_night"],
+      "id": "partly-cloudy-night",
+      "result": 2
+    },
+    { "args": ["cloudy"], "id": "cloudy", "result": 3 },
+    { "args": ["lightrain"], "id": "light-rain", "result": 61 },
+    { "args": ["heavyrain_day"], "id": "heavy-rain-day", "result": 65 },
+    {
+      "args": ["heavysnowshowers_day"],
+      "id": "heavy-snow-showers-day",
+      "result": 86
+    },
+    { "args": ["fog"], "id": "fog", "result": 45 },
+    { "args": ["thunder"], "id": "thunder", "result": 95 },
+    {
+      "args": ["unknown_symbol"],
+      "id": "unknown-symbol-returns-null",
+      "result": null
+    },
+    { "args": [""], "id": "empty-symbol-returns-null", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "weather-fallback-symbol"
+}

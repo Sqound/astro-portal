@@ -1,0 +1,39 @@
+{
+  "description": "`DELETE /v1/sessions/{id}`: the session of the 4 October night is deleted softly. The answer carries the session with `deletedAt` and `purgeAt`, the 30 days the space keeps it (`graceDays`) and the days left. The plan of the night is not touched.",
+  "exchange": "session-delete",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The 4 October night of `list`, executed and debriefed.",
+  "request": {
+    "method": "DELETE",
+    "path": "/api/v1/sessions/00000000-0000-4000-8000-00000000000a"
+  },
+  "response": {
+    "body": {
+      "daysRemaining": 30,
+      "graceDays": 30,
+      "session": {
+        "clientSessionId": null,
+        "createdAt": "2026-10-14T00:10:00.000Z",
+        "deletedAt": "2026-10-14T12:30:00.000Z",
+        "eveningDate": "2026-10-04",
+        "eventCount": 4,
+        "finishedAt": "2026-10-05T03:40:00.000Z",
+        "id": "00000000-0000-4000-8000-00000000000a",
+        "origin": "execution",
+        "outcome": "executed",
+        "pendingSupplementCount": 0,
+        "planId": "00000000-0000-4000-8000-000000000009",
+        "projectId": "00000000-0000-4000-8000-000000000007",
+        "purgeAt": "2026-11-13T12:30:00.000Z",
+        "reworkRevision": 0,
+        "reworkedAt": null,
+        "startedAt": "2026-10-04T19:10:00.000Z",
+        "status": "finished",
+        "supplementCount": 0,
+        "updatedAt": "2026-10-14T12:30:00.000Z"
+      }
+    },
+    "schema": "session.schema.json#/$defs/deleteResponse",
+    "status": 200
+  }
+}

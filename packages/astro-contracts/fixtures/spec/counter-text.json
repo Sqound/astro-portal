@@ -1,0 +1,15 @@
+{
+  "module": "counter-text",
+  "package": "portal",
+  "file": "written-forms",
+  "export": "counterText",
+  "cases": [
+    { "id": "bar-counter", "args": [14220] },
+    { "id": "starts-in", "args": [750] },
+    { "id": "running-slot", "args": [5220] },
+    { "id": "zero", "args": [0] },
+    { "id": "ten-hours", "args": [36005] },
+    { "id": "fraction-floors", "args": [59.9] },
+    { "id": "negative-is-zero", "args": [-4] }
+  ]
+}

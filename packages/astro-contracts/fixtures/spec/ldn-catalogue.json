@@ -1,0 +1,18 @@
+{
+  "module": "ldn-catalogue",
+  "export": "ldnDesignation",
+  "cases": [
+    {
+      "id": "joined",
+      "args": ["LDN1622"]
+    },
+    {
+      "id": "zero-padded",
+      "args": ["LDN 01622"]
+    },
+    {
+      "id": "foreign-designation",
+      "args": ["LBN 437"]
+    }
+  ]
+}

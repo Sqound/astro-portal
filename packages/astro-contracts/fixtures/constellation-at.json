@@ -1,0 +1,111 @@
+{
+  "cases": [
+    { "args": [0, 90], "id": "north-pole", "result": "UMi" },
+    { "args": [123, 89.9], "id": "near-north-pole", "result": "UMi" },
+    { "args": [0, -90], "id": "south-pole", "result": "Oct" },
+    { "args": [200, -89.8], "id": "near-south-pole", "result": "Oct" },
+    { "args": [37.95, 89.26], "id": "polaris", "result": "UMi" },
+    { "args": [101.287, -16.716], "id": "sirius", "result": "CMa" },
+    { "args": [279.234, 38.784], "id": "vega", "result": "Lyr" },
+    { "args": [88.793, 7.407], "id": "betelgeuse", "result": "Ori" },
+    {
+      "args": [2.097, 29.09],
+      "id": "alpheratz-is-andromedas-not-pegasus",
+      "result": "And"
+    },
+    { "args": [3.309, 15.184], "id": "algenib-pegasus", "result": "Peg" },
+    {
+      "args": [81.573, 28.608],
+      "id": "elnath-is-the-bulls-not-the-charioteers",
+      "result": "Tau"
+    },
+    {
+      "args": [219.9, -60.835],
+      "id": "rigil-kentaurus-not-circinus",
+      "result": "Cen"
+    },
+    { "args": [263.736, 12.56], "id": "rasalhague-ophiuchus", "result": "Oph" },
+    { "args": [258.662, 14.39], "id": "rasalgethi-hercules", "result": "Her" },
+    {
+      "args": [236.067, 6.426],
+      "id": "unukalhai-serpens-caput",
+      "result": "Ser"
+    },
+    { "args": [284.054, 4.204], "id": "alya-serpens-cauda", "result": "Ser" },
+    {
+      "args": [260, 0],
+      "id": "between-the-serpents-ophiuchus",
+      "result": "Oph"
+    },
+    {
+      "args": [237, 10],
+      "id": "serpens-caput-east-of-the-boundary",
+      "result": "Ser"
+    },
+    { "args": [283, 5], "id": "serpens-cauda-west-of-aquila", "result": "Ser" },
+    { "args": [248, 10], "id": "hercules-above-caput", "result": "Her" },
+    {
+      "args": [269.452, 4.693],
+      "id": "barnards-star-ophiuchus",
+      "result": "Oph"
+    },
+    { "args": [83.633, 22.015], "id": "crab-nebula", "result": "Tau" },
+    { "args": [83.822, -5.391], "id": "orion-nebula", "result": "Ori" },
+    { "args": [10.685, 41.269], "id": "andromeda-galaxy", "result": "And" },
+    { "args": [85.25, -2.458], "id": "horsehead", "result": "Ori" },
+    { "args": [201.697, -47.48], "id": "omega-centauri", "result": "Cen" },
+    { "args": [266.417, -29.008], "id": "sagittarius-a", "result": "Sgr" },
+    { "args": [250.423, 36.46], "id": "m13-hercules", "result": "Her" },
+    { "args": [283.396, 33.029], "id": "ring-nebula-lyra", "result": "Lyr" },
+    { "args": [56.75, 24.117], "id": "pleiades", "result": "Tau" },
+    { "args": [148.888, 69.065], "id": "m81-ursa-major", "result": "UMa" },
+    {
+      "args": [314.7, 44.3],
+      "id": "north-america-nebula-cygnus",
+      "result": "Cyg"
+    },
+    { "args": [161.265, -59.684], "id": "eta-carinae", "result": "Car" },
+    { "args": [186.65, -63.099], "id": "acrux-crux", "result": "Cru" },
+    { "args": [310.358, 45.28], "id": "deneb-cygnus", "result": "Cyg" },
+    { "args": [247.352, -26.432], "id": "antares-scorpius", "result": "Sco" },
+    { "args": [200.981, 54.925], "id": "mizar-ursa-major", "result": "UMa" },
+    { "args": [24.429, -57.237], "id": "achernar-eridanus", "result": "Eri" },
+    { "args": [0.5, 0.5], "id": "vernal-equinox-pisces", "result": "Psc" },
+    {
+      "args": [359.8, 20],
+      "id": "right-ascension-wraps-east",
+      "result": "Peg"
+    },
+    { "args": [0.2, 20], "id": "right-ascension-wraps-west", "result": "Peg" },
+    {
+      "args": [10, 91],
+      "id": "declination-above-the-pole-is-no-position",
+      "result": null
+    },
+    {
+      "args": [10, -91],
+      "id": "declination-below-the-pole-is-no-position",
+      "result": null
+    },
+    { "args": [180.5, 0.5], "id": "autumn-equinox-virgo", "result": "Vir" },
+    {
+      "args": [260.5, -24.5],
+      "id": "galactic-centre-region-ophiuchus",
+      "result": "Oph"
+    },
+    { "args": [54, -35.5], "id": "fornax-cluster-region", "result": "For" },
+    { "args": [95.988, -52.696], "id": "canopus-carina", "result": "Car" },
+    {
+      "args": [13.19, -72.83],
+      "id": "small-magellanic-cloud-tucana",
+      "result": "Tuc"
+    },
+    {
+      "args": [80.9, -69.75],
+      "id": "large-magellanic-cloud-dorado",
+      "result": "Dor"
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "constellation-at"
+}

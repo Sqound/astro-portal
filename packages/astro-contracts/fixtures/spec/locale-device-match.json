@@ -1,0 +1,72 @@
+{
+  "module": "locale-device-match",
+  "package": "portal",
+  "file": "locales",
+  "export": "matchDeviceLocale",
+  "cases": [
+    {
+      "id": "a-registered-tag-is-itself",
+      "args": ["zh-Hant"]
+    },
+    {
+      "id": "a-bare-language-reads-its-locale",
+      "args": ["fr"]
+    },
+    {
+      "id": "a-region-of-a-language-reads-the-bare-language-locale",
+      "args": ["fr-CA"]
+    },
+    {
+      "id": "bare-chinese-reads-simplified",
+      "args": ["zh"]
+    },
+    {
+      "id": "mainland-china-reads-simplified",
+      "args": ["zh-CN"]
+    },
+    {
+      "id": "singapore-reads-simplified",
+      "args": ["zh-SG"]
+    },
+    {
+      "id": "taiwan-reads-traditional",
+      "args": ["zh-TW"]
+    },
+    {
+      "id": "hong-kong-reads-traditional",
+      "args": ["zh-HK"]
+    },
+    {
+      "id": "macao-reads-traditional",
+      "args": ["zh-MO"]
+    },
+    {
+      "id": "a-script-wins-over-a-region",
+      "args": ["zh-Hant-CN"]
+    },
+    {
+      "id": "a-script-and-a-region",
+      "args": ["zh-Hans-TW"]
+    },
+    {
+      "id": "an-underscore-and-a-script",
+      "args": ["zh_Hant_TW"]
+    },
+    {
+      "id": "a-lower-case-tag",
+      "args": ["zh-hant-tw"]
+    },
+    {
+      "id": "russian-in-russia",
+      "args": ["ru-RU"]
+    },
+    {
+      "id": "an-unshipped-language-reads-nothing",
+      "args": ["xx-YY"]
+    },
+    {
+      "id": "an-empty-tag-reads-nothing",
+      "args": [""]
+    }
+  ]
+}

@@ -1,0 +1,3407 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2026-10-14",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Camping du Lac Noir",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 41.27, "ra": 10.68 } }
+        }
+      ],
+      "id": "autumn-galaxy-season-runs-across-the-new-year",
+      "result": {
+        "best": {
+          "end": "2026-10-21",
+          "start": "2026-10-15",
+          "usableMinutes": 589
+        },
+        "days": 365,
+        "periods": [{ "from": "2027-07-18", "to": "2027-01-27" }],
+        "start": "2026-10-01",
+        "state": "periods",
+        "today": 13,
+        "weeks": [
+          {
+            "nights": 7,
+            "seasonMinutes": 553,
+            "start": "2026-10-01",
+            "usableMinutes": 553,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 575,
+            "start": "2026-10-08",
+            "usableMinutes": 575,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 589,
+            "start": "2026-10-15",
+            "usableMinutes": 589,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 575,
+            "start": "2026-10-22",
+            "usableMinutes": 263,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 557,
+            "start": "2026-10-29",
+            "usableMinutes": 557,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 537,
+            "start": "2026-11-05",
+            "usableMinutes": 537,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 516,
+            "start": "2026-11-12",
+            "usableMinutes": 516,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 494,
+            "start": "2026-11-19",
+            "usableMinutes": 211,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 469,
+            "start": "2026-11-26",
+            "usableMinutes": 469,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 443,
+            "start": "2026-12-03",
+            "usableMinutes": 443,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 414,
+            "start": "2026-12-10",
+            "usableMinutes": 414,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 384,
+            "start": "2026-12-17",
+            "usableMinutes": 161,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 352,
+            "start": "2026-12-24",
+            "usableMinutes": 352,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 320,
+            "start": "2026-12-31",
+            "usableMinutes": 320,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 286,
+            "start": "2027-01-07",
+            "usableMinutes": 272,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 251,
+            "start": "2027-01-14",
+            "usableMinutes": 103,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 215,
+            "start": "2027-01-21",
+            "usableMinutes": 215,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 179,
+            "start": "2027-01-28",
+            "usableMinutes": 179,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 143,
+            "start": "2027-02-04",
+            "usableMinutes": 125,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 107,
+            "start": "2027-02-11",
+            "usableMinutes": 57,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 70,
+            "start": "2027-02-18",
+            "usableMinutes": 70,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 33,
+            "start": "2027-02-25",
+            "usableMinutes": 33,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 3,
+            "start": "2027-03-04",
+            "usableMinutes": 3,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-11",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-18",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-25",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-01",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-08",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-15",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-22",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-29",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-06",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-13",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-20",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-27",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-06-03",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 12,
+            "start": "2027-06-10",
+            "usableMinutes": 12,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 38,
+            "start": "2027-06-17",
+            "usableMinutes": 38,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 69,
+            "start": "2027-06-24",
+            "usableMinutes": 28,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 104,
+            "start": "2027-07-01",
+            "usableMinutes": 104,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 142,
+            "start": "2027-07-08",
+            "usableMinutes": 142,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 182,
+            "start": "2027-07-15",
+            "usableMinutes": 182,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 223,
+            "start": "2027-07-22",
+            "usableMinutes": 64,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 265,
+            "start": "2027-07-29",
+            "usableMinutes": 265,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 306,
+            "start": "2027-08-05",
+            "usableMinutes": 306,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 347,
+            "start": "2027-08-12",
+            "usableMinutes": 347,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 387,
+            "start": "2027-08-19",
+            "usableMinutes": 167,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 423,
+            "start": "2027-08-26",
+            "usableMinutes": 423,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 450,
+            "start": "2027-09-02",
+            "usableMinutes": 450,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 476,
+            "start": "2027-09-09",
+            "usableMinutes": 476,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 502,
+            "start": "2027-09-16",
+            "usableMinutes": 199,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 525,
+            "start": "2027-09-23",
+            "usableMinutes": 525,
+            "workable": true
+          },
+          {
+            "nights": 1,
+            "seasonMinutes": 539,
+            "start": "2027-09-30",
+            "usableMinutes": 539,
+            "workable": true
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2026-10-14",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Camping du Lac Noir",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 89.26, "ra": 37.95 } }
+        }
+      ],
+      "id": "circumpolar-target-is-usable-all-year",
+      "result": {
+        "best": {
+          "end": "2026-12-23",
+          "start": "2026-12-17",
+          "usableMinutes": 701
+        },
+        "days": 365,
+        "periods": [{ "from": "2026-10-01", "to": "2027-09-30" }],
+        "start": "2026-10-01",
+        "state": "allYear",
+        "today": 13,
+        "weeks": [
+          {
+            "nights": 7,
+            "seasonMinutes": 553,
+            "start": "2026-10-01",
+            "usableMinutes": 553,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 575,
+            "start": "2026-10-08",
+            "usableMinutes": 575,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 595,
+            "start": "2026-10-15",
+            "usableMinutes": 595,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 615,
+            "start": "2026-10-22",
+            "usableMinutes": 615,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 633,
+            "start": "2026-10-29",
+            "usableMinutes": 633,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 649,
+            "start": "2026-11-05",
+            "usableMinutes": 649,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 663,
+            "start": "2026-11-12",
+            "usableMinutes": 663,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 676,
+            "start": "2026-11-19",
+            "usableMinutes": 676,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 687,
+            "start": "2026-11-26",
+            "usableMinutes": 687,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 694,
+            "start": "2026-12-03",
+            "usableMinutes": 694,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 699,
+            "start": "2026-12-10",
+            "usableMinutes": 699,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 701,
+            "start": "2026-12-17",
+            "usableMinutes": 701,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 699,
+            "start": "2026-12-24",
+            "usableMinutes": 699,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 695,
+            "start": "2026-12-31",
+            "usableMinutes": 695,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 689,
+            "start": "2027-01-07",
+            "usableMinutes": 689,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 678,
+            "start": "2027-01-14",
+            "usableMinutes": 678,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 666,
+            "start": "2027-01-21",
+            "usableMinutes": 666,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 652,
+            "start": "2027-01-28",
+            "usableMinutes": 652,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 636,
+            "start": "2027-02-04",
+            "usableMinutes": 636,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 618,
+            "start": "2027-02-11",
+            "usableMinutes": 618,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 598,
+            "start": "2027-02-18",
+            "usableMinutes": 598,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 578,
+            "start": "2027-02-25",
+            "usableMinutes": 578,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 556,
+            "start": "2027-03-04",
+            "usableMinutes": 556,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 532,
+            "start": "2027-03-11",
+            "usableMinutes": 532,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 508,
+            "start": "2027-03-18",
+            "usableMinutes": 508,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 483,
+            "start": "2027-03-25",
+            "usableMinutes": 483,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 456,
+            "start": "2027-04-01",
+            "usableMinutes": 456,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 429,
+            "start": "2027-04-08",
+            "usableMinutes": 429,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 401,
+            "start": "2027-04-15",
+            "usableMinutes": 401,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 373,
+            "start": "2027-04-22",
+            "usableMinutes": 373,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 343,
+            "start": "2027-04-29",
+            "usableMinutes": 343,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 314,
+            "start": "2027-05-06",
+            "usableMinutes": 314,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 286,
+            "start": "2027-05-13",
+            "usableMinutes": 286,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 259,
+            "start": "2027-05-20",
+            "usableMinutes": 259,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 235,
+            "start": "2027-05-27",
+            "usableMinutes": 235,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 215,
+            "start": "2027-06-03",
+            "usableMinutes": 215,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 202,
+            "start": "2027-06-10",
+            "usableMinutes": 202,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 197,
+            "start": "2027-06-17",
+            "usableMinutes": 197,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 200,
+            "start": "2027-06-24",
+            "usableMinutes": 200,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 213,
+            "start": "2027-07-01",
+            "usableMinutes": 213,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 231,
+            "start": "2027-07-08",
+            "usableMinutes": 231,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 255,
+            "start": "2027-07-15",
+            "usableMinutes": 255,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 281,
+            "start": "2027-07-22",
+            "usableMinutes": 281,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 309,
+            "start": "2027-07-29",
+            "usableMinutes": 309,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 338,
+            "start": "2027-08-05",
+            "usableMinutes": 338,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 367,
+            "start": "2027-08-12",
+            "usableMinutes": 367,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 395,
+            "start": "2027-08-19",
+            "usableMinutes": 395,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 423,
+            "start": "2027-08-26",
+            "usableMinutes": 423,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 450,
+            "start": "2027-09-02",
+            "usableMinutes": 450,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 476,
+            "start": "2027-09-09",
+            "usableMinutes": 476,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 502,
+            "start": "2027-09-16",
+            "usableMinutes": 502,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 525,
+            "start": "2027-09-23",
+            "usableMinutes": 525,
+            "workable": true
+          },
+          {
+            "nights": 1,
+            "seasonMinutes": 539,
+            "start": "2027-09-30",
+            "usableMinutes": 539,
+            "workable": true
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2026-10-14",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Camping du Lac Noir",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": -65, "ra": 100 } }
+        }
+      ],
+      "id": "southern-target-never-usable",
+      "result": {
+        "best": null,
+        "days": 365,
+        "periods": [],
+        "start": "2026-10-01",
+        "state": "never",
+        "today": 13,
+        "weeks": [
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-10-01",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-10-08",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-10-15",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-10-22",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-10-29",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-11-05",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-11-12",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-11-19",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-11-26",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-12-03",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-12-10",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-12-17",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-12-24",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-12-31",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-07",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-14",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-21",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-28",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-04",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-11",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-18",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-25",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-04",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-11",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-18",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-25",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-01",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-08",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-15",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-22",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-29",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-06",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-13",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-20",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-27",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-06-03",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-06-10",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-06-17",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-06-24",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-07-01",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-07-08",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-07-15",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-07-22",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-07-29",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-08-05",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-08-12",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-08-19",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-08-26",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-09-02",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-09-09",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-09-16",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-09-23",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 1,
+            "seasonMinutes": 0,
+            "start": "2027-09-30",
+            "usableMinutes": 0,
+            "workable": false
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2026-10-14",
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 10, "azimuth": 0 },
+                { "altitude": 10, "azimuth": 10 },
+                { "altitude": 10, "azimuth": 20 },
+                { "altitude": 10, "azimuth": 30 },
+                { "altitude": 10, "azimuth": 40 },
+                { "altitude": 10, "azimuth": 50 },
+                { "altitude": 10, "azimuth": 60 },
+                { "altitude": 10, "azimuth": 70 },
+                { "altitude": 10, "azimuth": 80 },
+                { "altitude": 10, "azimuth": 90 },
+                { "altitude": 10, "azimuth": 100 },
+                { "altitude": 10, "azimuth": 110 },
+                { "altitude": 10, "azimuth": 120 },
+                { "altitude": 10, "azimuth": 130 },
+                { "altitude": 10, "azimuth": 140 },
+                { "altitude": 10, "azimuth": 150 },
+                { "altitude": 10, "azimuth": 160 },
+                { "altitude": 10, "azimuth": 170 },
+                { "altitude": 10, "azimuth": 180 },
+                { "altitude": 10, "azimuth": 190 },
+                { "altitude": 10, "azimuth": 200 },
+                { "altitude": 10, "azimuth": 210 },
+                { "altitude": 10, "azimuth": 220 },
+                { "altitude": 35, "azimuth": 230 },
+                { "altitude": 35, "azimuth": 240 },
+                { "altitude": 35, "azimuth": 250 },
+                { "altitude": 35, "azimuth": 260 },
+                { "altitude": 35, "azimuth": 270 },
+                { "altitude": 35, "azimuth": 280 },
+                { "altitude": 35, "azimuth": 290 },
+                { "altitude": 35, "azimuth": 300 },
+                { "altitude": 35, "azimuth": 310 },
+                { "altitude": 35, "azimuth": 320 },
+                { "altitude": 10, "azimuth": 330 },
+                { "altitude": 10, "azimuth": 340 },
+                { "altitude": 10, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 20, "ra": 310 } }
+        }
+      ],
+      "id": "horizon-mask-cuts-the-weeks",
+      "result": {
+        "best": {
+          "end": "2027-08-25",
+          "start": "2027-08-19",
+          "usableMinutes": 352
+        },
+        "days": 365,
+        "periods": [{ "from": "2027-06-17", "to": "2026-11-11" }],
+        "start": "2026-10-01",
+        "state": "periods",
+        "today": 13,
+        "weeks": [
+          {
+            "nights": 7,
+            "seasonMinutes": 275,
+            "start": "2026-10-01",
+            "usableMinutes": 275,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 260,
+            "start": "2026-10-08",
+            "usableMinutes": 260,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 244,
+            "start": "2026-10-15",
+            "usableMinutes": 161,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 227,
+            "start": "2026-10-22",
+            "usableMinutes": 227,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 210,
+            "start": "2026-10-29",
+            "usableMinutes": 210,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 189,
+            "start": "2026-11-05",
+            "usableMinutes": 189,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 169,
+            "start": "2026-11-12",
+            "usableMinutes": 122,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 146,
+            "start": "2026-11-19",
+            "usableMinutes": 146,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 121,
+            "start": "2026-11-26",
+            "usableMinutes": 121,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 95,
+            "start": "2026-12-03",
+            "usableMinutes": 95,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 67,
+            "start": "2026-12-10",
+            "usableMinutes": 40,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 36,
+            "start": "2026-12-17",
+            "usableMinutes": 36,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 7,
+            "start": "2026-12-24",
+            "usableMinutes": 7,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-12-31",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-07",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-14",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-21",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-28",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-04",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-11",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-18",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-25",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-04",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-11",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 7,
+            "start": "2027-03-18",
+            "usableMinutes": 7,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 19,
+            "start": "2027-03-25",
+            "usableMinutes": 19,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 32,
+            "start": "2027-04-01",
+            "usableMinutes": 24,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 44,
+            "start": "2027-04-08",
+            "usableMinutes": 44,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 56,
+            "start": "2027-04-15",
+            "usableMinutes": 56,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 68,
+            "start": "2027-04-22",
+            "usableMinutes": 57,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 79,
+            "start": "2027-04-29",
+            "usableMinutes": 58,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 92,
+            "start": "2027-05-06",
+            "usableMinutes": 92,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 105,
+            "start": "2027-05-13",
+            "usableMinutes": 105,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 120,
+            "start": "2027-05-20",
+            "usableMinutes": 84,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 136,
+            "start": "2027-05-27",
+            "usableMinutes": 118,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 155,
+            "start": "2027-06-03",
+            "usableMinutes": 155,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 177,
+            "start": "2027-06-10",
+            "usableMinutes": 177,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 196,
+            "start": "2027-06-17",
+            "usableMinutes": 140,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 200,
+            "start": "2027-06-24",
+            "usableMinutes": 186,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 213,
+            "start": "2027-07-01",
+            "usableMinutes": 213,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 231,
+            "start": "2027-07-08",
+            "usableMinutes": 231,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 255,
+            "start": "2027-07-15",
+            "usableMinutes": 142,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 281,
+            "start": "2027-07-22",
+            "usableMinutes": 281,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 309,
+            "start": "2027-07-29",
+            "usableMinutes": 309,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 338,
+            "start": "2027-08-05",
+            "usableMinutes": 338,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 360,
+            "start": "2027-08-12",
+            "usableMinutes": 205,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 352,
+            "start": "2027-08-19",
+            "usableMinutes": 352,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 340,
+            "start": "2027-08-26",
+            "usableMinutes": 340,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 328,
+            "start": "2027-09-02",
+            "usableMinutes": 328,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 316,
+            "start": "2027-09-09",
+            "usableMinutes": 213,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 304,
+            "start": "2027-09-16",
+            "usableMinutes": 304,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 290,
+            "start": "2027-09-23",
+            "usableMinutes": 290,
+            "workable": true
+          },
+          {
+            "nights": 1,
+            "seasonMinutes": 283,
+            "start": "2027-09-30",
+            "usableMinutes": 283,
+            "workable": true
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": { "Dual band": 30, "L": 90 }
+          },
+          "filters": ["L"],
+          "from": "2026-10-14",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Camping du Lac Noir",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 12, "ra": 150 } }
+        }
+      ],
+      "id": "moon-limit-of-the-filter-lowers-the-bars",
+      "result": {
+        "best": {
+          "end": "2027-02-10",
+          "start": "2027-02-04",
+          "usableMinutes": 473
+        },
+        "days": 365,
+        "periods": [{ "from": "2026-11-19", "to": "2027-04-21" }],
+        "start": "2026-10-01",
+        "state": "periods",
+        "today": 13,
+        "weeks": [
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-10-01",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 2,
+            "start": "2026-10-08",
+            "usableMinutes": 2,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 29,
+            "start": "2026-10-15",
+            "usableMinutes": 29,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 66,
+            "start": "2026-10-22",
+            "usableMinutes": 43,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 102,
+            "start": "2026-10-29",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 138,
+            "start": "2026-11-05",
+            "usableMinutes": 63,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 173,
+            "start": "2026-11-12",
+            "usableMinutes": 173,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 209,
+            "start": "2026-11-19",
+            "usableMinutes": 145,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 244,
+            "start": "2026-11-26",
+            "usableMinutes": 0,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 277,
+            "start": "2026-12-03",
+            "usableMinutes": 123,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 310,
+            "start": "2026-12-10",
+            "usableMinutes": 310,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 342,
+            "start": "2026-12-17",
+            "usableMinutes": 192,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 373,
+            "start": "2026-12-24",
+            "usableMinutes": 0,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 401,
+            "start": "2026-12-31",
+            "usableMinutes": 233,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 428,
+            "start": "2027-01-07",
+            "usableMinutes": 428,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 453,
+            "start": "2027-01-14",
+            "usableMinutes": 248,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 472,
+            "start": "2027-01-21",
+            "usableMinutes": 0,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 472,
+            "start": "2027-01-28",
+            "usableMinutes": 337,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 473,
+            "start": "2027-02-04",
+            "usableMinutes": 473,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 472,
+            "start": "2027-02-11",
+            "usableMinutes": 202,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 473,
+            "start": "2027-02-18",
+            "usableMinutes": 0,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 471,
+            "start": "2027-02-25",
+            "usableMinutes": 336,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 443,
+            "start": "2027-03-04",
+            "usableMinutes": 443,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 405,
+            "start": "2027-03-11",
+            "usableMinutes": 120,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 368,
+            "start": "2027-03-18",
+            "usableMinutes": 0,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 330,
+            "start": "2027-03-25",
+            "usableMinutes": 280,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 291,
+            "start": "2027-04-01",
+            "usableMinutes": 291,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 252,
+            "start": "2027-04-08",
+            "usableMinutes": 66,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 212,
+            "start": "2027-04-15",
+            "usableMinutes": 0,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 172,
+            "start": "2027-04-22",
+            "usableMinutes": 160,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 130,
+            "start": "2027-04-29",
+            "usableMinutes": 130,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 89,
+            "start": "2027-05-06",
+            "usableMinutes": 15,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 47,
+            "start": "2027-05-13",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 9,
+            "start": "2027-05-20",
+            "usableMinutes": 9,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-27",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-06-03",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-06-10",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-06-17",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-06-24",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-07-01",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-07-08",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-07-15",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-07-22",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-07-29",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-08-05",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-08-12",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-08-19",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-08-26",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-09-02",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-09-09",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-09-16",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-09-23",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 1,
+            "seasonMinutes": 0,
+            "start": "2027-09-30",
+            "usableMinutes": 0,
+            "workable": false
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2027-03-05",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Camping du Lac Noir",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 41.27, "ra": 10.68 } }
+        }
+      ],
+      "id": "window-that-holds-a-leap-day",
+      "result": {
+        "best": {
+          "end": "2027-10-24",
+          "start": "2027-10-18",
+          "usableMinutes": 586
+        },
+        "days": 366,
+        "periods": [{ "from": "2027-07-19", "to": "2028-01-30" }],
+        "start": "2027-03-01",
+        "state": "periods",
+        "today": 4,
+        "weeks": [
+          {
+            "nights": 7,
+            "seasonMinutes": 13,
+            "start": "2027-03-01",
+            "usableMinutes": 13,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-08",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-15",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-22",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-29",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-05",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-12",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-19",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-26",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-03",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-10",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-17",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-24",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-31",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 4,
+            "start": "2027-06-07",
+            "usableMinutes": 4,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 27,
+            "start": "2027-06-14",
+            "usableMinutes": 27,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 55,
+            "start": "2027-06-21",
+            "usableMinutes": 36,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 89,
+            "start": "2027-06-28",
+            "usableMinutes": 67,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 125,
+            "start": "2027-07-05",
+            "usableMinutes": 125,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 165,
+            "start": "2027-07-12",
+            "usableMinutes": 165,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 205,
+            "start": "2027-07-19",
+            "usableMinutes": 112,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 247,
+            "start": "2027-07-26",
+            "usableMinutes": 181,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 288,
+            "start": "2027-08-02",
+            "usableMinutes": 288,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 329,
+            "start": "2027-08-09",
+            "usableMinutes": 329,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 370,
+            "start": "2027-08-16",
+            "usableMinutes": 206,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 409,
+            "start": "2027-08-23",
+            "usableMinutes": 353,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 439,
+            "start": "2027-08-30",
+            "usableMinutes": 439,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 465,
+            "start": "2027-09-06",
+            "usableMinutes": 465,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 491,
+            "start": "2027-09-13",
+            "usableMinutes": 207,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 515,
+            "start": "2027-09-20",
+            "usableMinutes": 497,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 539,
+            "start": "2027-09-27",
+            "usableMinutes": 539,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 562,
+            "start": "2027-10-04",
+            "usableMinutes": 562,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 583,
+            "start": "2027-10-11",
+            "usableMinutes": 164,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 586,
+            "start": "2027-10-18",
+            "usableMinutes": 586,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 568,
+            "start": "2027-10-25",
+            "usableMinutes": 568,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 549,
+            "start": "2027-11-01",
+            "usableMinutes": 549,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 529,
+            "start": "2027-11-08",
+            "usableMinutes": 227,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 508,
+            "start": "2027-11-15",
+            "usableMinutes": 508,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 484,
+            "start": "2027-11-22",
+            "usableMinutes": 484,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 459,
+            "start": "2027-11-29",
+            "usableMinutes": 459,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 432,
+            "start": "2027-12-06",
+            "usableMinutes": 148,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 402,
+            "start": "2027-12-13",
+            "usableMinutes": 402,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 372,
+            "start": "2027-12-20",
+            "usableMinutes": 372,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 340,
+            "start": "2027-12-27",
+            "usableMinutes": 340,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 307,
+            "start": "2028-01-03",
+            "usableMinutes": 89,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 272,
+            "start": "2028-01-10",
+            "usableMinutes": 272,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 237,
+            "start": "2028-01-17",
+            "usableMinutes": 237,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 201,
+            "start": "2028-01-24",
+            "usableMinutes": 201,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 165,
+            "start": "2028-01-31",
+            "usableMinutes": 66,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 129,
+            "start": "2028-02-07",
+            "usableMinutes": 129,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 93,
+            "start": "2028-02-14",
+            "usableMinutes": 93,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 55,
+            "start": "2028-02-21",
+            "usableMinutes": 50,
+            "workable": false
+          },
+          {
+            "nights": 2,
+            "seasonMinutes": 33,
+            "start": "2028-02-28",
+            "usableMinutes": 0,
+            "workable": false
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "darkness": "nautical",
+          "filters": [],
+          "from": "2026-10-14",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Camping du Lac Noir",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 41.27, "ra": 10.68 } }
+        }
+      ],
+      "id": "nautical-darkness-lengthens-the-weeks",
+      "result": {
+        "best": {
+          "end": "2026-10-14",
+          "start": "2026-10-08",
+          "usableMinutes": 638
+        },
+        "days": 365,
+        "periods": [{ "from": "2027-07-08", "to": "2027-02-03" }],
+        "start": "2026-10-01",
+        "state": "periods",
+        "today": 13,
+        "weeks": [
+          {
+            "nights": 7,
+            "seasonMinutes": 621,
+            "start": "2026-10-01",
+            "usableMinutes": 621,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 638,
+            "start": "2026-10-08",
+            "usableMinutes": 638,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 625,
+            "start": "2026-10-15",
+            "usableMinutes": 625,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 609,
+            "start": "2026-10-22",
+            "usableMinutes": 280,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 591,
+            "start": "2026-10-29",
+            "usableMinutes": 591,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 572,
+            "start": "2026-11-05",
+            "usableMinutes": 572,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 551,
+            "start": "2026-11-12",
+            "usableMinutes": 551,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 529,
+            "start": "2026-11-19",
+            "usableMinutes": 226,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 504,
+            "start": "2026-11-26",
+            "usableMinutes": 504,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 478,
+            "start": "2026-12-03",
+            "usableMinutes": 478,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 450,
+            "start": "2026-12-10",
+            "usableMinutes": 450,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 420,
+            "start": "2026-12-17",
+            "usableMinutes": 176,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 388,
+            "start": "2026-12-24",
+            "usableMinutes": 388,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 356,
+            "start": "2026-12-31",
+            "usableMinutes": 356,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 321,
+            "start": "2027-01-07",
+            "usableMinutes": 307,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 286,
+            "start": "2027-01-14",
+            "usableMinutes": 118,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 250,
+            "start": "2027-01-21",
+            "usableMinutes": 250,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 214,
+            "start": "2027-01-28",
+            "usableMinutes": 214,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 177,
+            "start": "2027-02-04",
+            "usableMinutes": 154,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 141,
+            "start": "2027-02-11",
+            "usableMinutes": 76,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 104,
+            "start": "2027-02-18",
+            "usableMinutes": 104,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 67,
+            "start": "2027-02-25",
+            "usableMinutes": 67,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 31,
+            "start": "2027-03-04",
+            "usableMinutes": 26,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 2,
+            "start": "2027-03-11",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-18",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-25",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-01",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-08",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-15",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-22",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-04-29",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-06",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-05-13",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 10,
+            "start": "2027-05-20",
+            "usableMinutes": 10,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 30,
+            "start": "2027-05-27",
+            "usableMinutes": 10,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 52,
+            "start": "2027-06-03",
+            "usableMinutes": 52,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 77,
+            "start": "2027-06-10",
+            "usableMinutes": 77,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 104,
+            "start": "2027-06-17",
+            "usableMinutes": 104,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 135,
+            "start": "2027-06-24",
+            "usableMinutes": 57,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 167,
+            "start": "2027-07-01",
+            "usableMinutes": 167,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 202,
+            "start": "2027-07-08",
+            "usableMinutes": 202,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 239,
+            "start": "2027-07-15",
+            "usableMinutes": 239,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 276,
+            "start": "2027-07-22",
+            "usableMinutes": 79,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 314,
+            "start": "2027-07-29",
+            "usableMinutes": 314,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 352,
+            "start": "2027-08-05",
+            "usableMinutes": 352,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 390,
+            "start": "2027-08-12",
+            "usableMinutes": 390,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 428,
+            "start": "2027-08-19",
+            "usableMinutes": 185,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 466,
+            "start": "2027-08-26",
+            "usableMinutes": 466,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 503,
+            "start": "2027-09-02",
+            "usableMinutes": 503,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 540,
+            "start": "2027-09-09",
+            "usableMinutes": 540,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 572,
+            "start": "2027-09-16",
+            "usableMinutes": 225,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 595,
+            "start": "2027-09-23",
+            "usableMinutes": 595,
+            "workable": true
+          },
+          {
+            "nights": 1,
+            "seasonMinutes": 608,
+            "start": "2027-09-30",
+            "usableMinutes": 608,
+            "workable": true
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2026-10-14",
+          "place": { "latitude": 45, "longitude": -30, "name": "Plateau" },
+          "target": { "coordinate": { "dec": -5, "ra": 288 } }
+        }
+      ],
+      "id": "place-without-time-zone-anchors-on-longitude",
+      "result": {
+        "best": {
+          "end": "2027-07-14",
+          "start": "2027-07-08",
+          "usableMinutes": 231
+        },
+        "days": 365,
+        "periods": [{ "from": "2027-06-24", "to": "2027-08-17" }],
+        "start": "2026-10-01",
+        "state": "periods",
+        "today": 13,
+        "weeks": [
+          {
+            "nights": 7,
+            "seasonMinutes": 96,
+            "start": "2026-10-01",
+            "usableMinutes": 96,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 81,
+            "start": "2026-10-08",
+            "usableMinutes": 81,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 65,
+            "start": "2026-10-15",
+            "usableMinutes": 8,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 48,
+            "start": "2026-10-22",
+            "usableMinutes": 48,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 31,
+            "start": "2026-10-29",
+            "usableMinutes": 31,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 10,
+            "start": "2026-11-05",
+            "usableMinutes": 10,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-11-12",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-11-19",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-11-26",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-12-03",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-12-10",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-12-17",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-12-24",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2026-12-31",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-07",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-14",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-21",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-01-28",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-04",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-11",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-18",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-02-25",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-04",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-11",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-18",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 0,
+            "start": "2027-03-25",
+            "usableMinutes": 0,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 1,
+            "start": "2027-04-01",
+            "usableMinutes": 1,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 12,
+            "start": "2027-04-08",
+            "usableMinutes": 12,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 24,
+            "start": "2027-04-15",
+            "usableMinutes": 24,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 35,
+            "start": "2027-04-22",
+            "usableMinutes": 9,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 47,
+            "start": "2027-04-29",
+            "usableMinutes": 41,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 60,
+            "start": "2027-05-06",
+            "usableMinutes": 60,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 73,
+            "start": "2027-05-13",
+            "usableMinutes": 73,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 88,
+            "start": "2027-05-20",
+            "usableMinutes": 12,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 104,
+            "start": "2027-05-27",
+            "usableMinutes": 104,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 123,
+            "start": "2027-06-03",
+            "usableMinutes": 123,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 145,
+            "start": "2027-06-10",
+            "usableMinutes": 145,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 172,
+            "start": "2027-06-17",
+            "usableMinutes": 27,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 198,
+            "start": "2027-06-24",
+            "usableMinutes": 198,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 213,
+            "start": "2027-07-01",
+            "usableMinutes": 213,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 231,
+            "start": "2027-07-08",
+            "usableMinutes": 231,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 237,
+            "start": "2027-07-15",
+            "usableMinutes": 33,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 222,
+            "start": "2027-07-22",
+            "usableMinutes": 222,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 209,
+            "start": "2027-07-29",
+            "usableMinutes": 209,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 196,
+            "start": "2027-08-05",
+            "usableMinutes": 169,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 184,
+            "start": "2027-08-12",
+            "usableMinutes": 51,
+            "workable": true
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 173,
+            "start": "2027-08-19",
+            "usableMinutes": 173,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 161,
+            "start": "2027-08-26",
+            "usableMinutes": 161,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 149,
+            "start": "2027-09-02",
+            "usableMinutes": 108,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 137,
+            "start": "2027-09-09",
+            "usableMinutes": 57,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 125,
+            "start": "2027-09-16",
+            "usableMinutes": 125,
+            "workable": false
+          },
+          {
+            "nights": 7,
+            "seasonMinutes": 111,
+            "start": "2027-09-23",
+            "usableMinutes": 111,
+            "workable": false
+          },
+          {
+            "nights": 1,
+            "seasonMinutes": 104,
+            "start": "2027-09-30",
+            "usableMinutes": 104,
+            "workable": false
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "2026-10-14",
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 10, "azimuth": 0 },
+                { "altitude": 10, "azimuth": 10 },
+                { "altitude": 10, "azimuth": 20 },
+                { "altitude": 10, "azimuth": 30 },
+                { "altitude": 10, "azimuth": 40 },
+                { "altitude": 10, "azimuth": 50 },
+                { "altitude": 10, "azimuth": 60 },
+                { "altitude": 10, "azimuth": 70 },
+                { "altitude": 10, "azimuth": 80 },
+                { "altitude": 10, "azimuth": 90 },
+                { "altitude": 10, "azimuth": 100 },
+                { "altitude": 10, "azimuth": 110 },
+                { "altitude": 10, "azimuth": 120 },
+                { "altitude": 10, "azimuth": 130 },
+                { "altitude": 10, "azimuth": 140 },
+                { "altitude": 10, "azimuth": 150 },
+                { "altitude": 10, "azimuth": 160 },
+                { "altitude": 10, "azimuth": 170 },
+                { "altitude": 10, "azimuth": 180 },
+                { "altitude": 10, "azimuth": 190 },
+                { "altitude": 10, "azimuth": 200 },
+                { "altitude": 10, "azimuth": 210 },
+                { "altitude": 10, "azimuth": 220 },
+                { "altitude": 35, "azimuth": 230 },
+                { "altitude": 35, "azimuth": 240 },
+                { "altitude": 35, "azimuth": 250 },
+                { "altitude": 35, "azimuth": 260 },
+                { "altitude": 35, "azimuth": 270 },
+                { "altitude": 35, "azimuth": 280 },
+                { "altitude": 35, "azimuth": 290 },
+                { "altitude": 35, "azimuth": 300 },
+                { "altitude": 35, "azimuth": 310 },
+                { "altitude": 35, "azimuth": 320 },
+                { "altitude": 10, "azimuth": 330 },
+                { "altitude": 10, "azimuth": 340 },
+                { "altitude": 10, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "target": { "name": "NGC 7000" }
+        }
+      ],
+      "id": "target-without-coordinate",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "2026-10-14",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Camping du Lac Noir",
+            "timeZone": "UTC"
+          },
+          "target": { "id": "solar-system-sun" }
+        }
+      ],
+      "id": "the-sun-has-no-year",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "14/10/2026",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Camping du Lac Noir",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 41.27, "ra": 10.68 } }
+        }
+      ],
+      "id": "invalid-first-night",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "2026-10-14",
+          "place": { "name": "Nowhere" },
+          "target": { "coordinate": { "dec": 41.27, "ra": 10.68 } }
+        }
+      ],
+      "id": "place-without-coordinates",
+      "result": null
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "target-season-year"
+}

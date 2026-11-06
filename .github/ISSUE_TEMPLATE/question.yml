@@ -1,0 +1,20 @@
+name: Question
+description: How to install, configure or use Astro Portal.
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before asking, have a look at the README and at docs/SELF_HOSTING.md.
+        Please leave out personal data and secrets.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: The version, how the portal is installed, what you already tried.

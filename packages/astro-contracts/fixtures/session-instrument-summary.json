@@ -1,0 +1,1930 @@
+{
+  "cases": [
+    {
+      "args": [
+        [
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0001",
+            "payload": { "family": "vespera", "model": "Vespera II" },
+            "recordedAt": "2026-11-02T17:57:00.000Z",
+            "type": "device_connected"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0002",
+            "payload": {
+              "battery": 92,
+              "captureId": "obs-1",
+              "dewPointDepression": 6.4,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 74,
+              "reason": "change",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 13.2
+            },
+            "recordedAt": "2026-11-02T17:58:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0003",
+            "payload": {
+              "battery": 90,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.9,
+              "family": "vespera",
+              "filter": "none",
+              "framesRejected": 6,
+              "framesStacked": 24,
+              "framesTaken": 30,
+              "heater": "off",
+              "humidity": 75.2,
+              "reason": "interval",
+              "rejections": [{ "cause": "StackingRoundnessError", "count": 6 }],
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.9
+            },
+            "recordedAt": "2026-11-02T18:03:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0004",
+            "payload": {
+              "battery": 80,
+              "captureId": "obs-1",
+              "dewPointDepression": 4.9,
+              "family": "vespera",
+              "filter": "dual_band",
+              "framesRejected": 88,
+              "framesStacked": 412,
+              "framesTaken": 500,
+              "heater": "off",
+              "humidity": 79,
+              "reason": "change",
+              "rejections": [
+                { "cause": "StackingRoundnessError", "count": 88 }
+              ],
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.1
+            },
+            "recordedAt": "2026-11-02T19:46:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0005",
+            "payload": {
+              "battery": 78,
+              "captureId": "obs-1",
+              "dewPointDepression": 4.1,
+              "family": "vespera",
+              "filter": "dual_band",
+              "framesRejected": 128,
+              "framesStacked": 540,
+              "framesTaken": 668,
+              "heater": "on",
+              "humidity": 80,
+              "reason": "change",
+              "rejections": [
+                { "cause": "StackingRoundnessError", "count": 128 }
+              ],
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 11.8
+            },
+            "recordedAt": "2026-11-02T19:58:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0006",
+            "payload": {
+              "battery": 77,
+              "dewPointDepression": 3.6,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 80.4,
+              "pointingAbandoned": true,
+              "pointingFailures": 6,
+              "reason": "change",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.6
+            },
+            "recordedAt": "2026-11-02T20:00:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0007",
+            "payload": {
+              "battery": 76,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.2,
+              "family": "vespera",
+              "filter": "dual_band",
+              "framesRejected": 2,
+              "framesStacked": 1,
+              "framesTaken": 3,
+              "heater": "on",
+              "humidity": 81,
+              "reason": "change",
+              "rejections": [{ "cause": "StackingRoundnessError", "count": 2 }],
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.5
+            },
+            "recordedAt": "2026-11-02T20:05:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0008",
+            "payload": {
+              "battery": 70,
+              "captureId": "obs-3",
+              "dewPointDepression": 2.8,
+              "family": "vespera",
+              "filter": "dual_band",
+              "framesRejected": 40,
+              "framesStacked": 100,
+              "framesTaken": 140,
+              "heater": "on",
+              "humidity": 83,
+              "reason": "interval",
+              "rejections": [
+                { "cause": "StackingRoundnessError", "count": 38 },
+                { "cause": "StackingStarsError", "count": 2 }
+              ],
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11
+            },
+            "recordedAt": "2026-11-02T20:40:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0009",
+            "payload": {
+              "battery": 69,
+              "captureId": "obs-3",
+              "dewPointDepression": 3,
+              "family": "vespera",
+              "filter": "dual_band",
+              "framesRejected": 50,
+              "framesStacked": 130,
+              "framesTaken": 180,
+              "heater": "on",
+              "humidity": 82.6,
+              "reason": "interval",
+              "rejections": [
+                { "cause": "StackingRoundnessError", "count": 47 },
+                { "cause": "StackingStarsError", "count": 3 }
+              ],
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.1
+            },
+            "recordedAt": "2026-11-02T20:45:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0010",
+            "payload": {
+              "battery": 68,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.1,
+              "family": "vespera",
+              "filter": "dual_band",
+              "framesRejected": 62,
+              "framesStacked": 160,
+              "framesTaken": 222,
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "rejections": [
+                { "cause": "StackingRoundnessError", "count": 59 },
+                { "cause": "StackingStarsError", "count": 3 }
+              ],
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.2
+            },
+            "recordedAt": "2026-11-02T20:50:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0011",
+            "payload": {
+              "battery": 66,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.3,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 81.5,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:55:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0012",
+            "payload": {
+              "battery": 64,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.5,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 81,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.4
+            },
+            "recordedAt": "2026-11-02T21:00:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0013",
+            "payload": {
+              "battery": 63,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.6,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 80.5,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.5
+            },
+            "recordedAt": "2026-11-02T21:05:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0014",
+            "payload": {
+              "battery": 62,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.7,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "on",
+              "humidity": 80.2,
+              "reason": "change",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.5
+            },
+            "recordedAt": "2026-11-02T21:09:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0015",
+            "payload": {
+              "battery": 61,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.8,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 80,
+              "reason": "change",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.6
+            },
+            "recordedAt": "2026-11-02T21:12:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0016",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:08:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0017",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:13:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0018",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:18:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0019",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:23:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0020",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:28:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0021",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:33:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0022",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:38:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0023",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:43:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0024",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:48:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0025",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:53:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0026",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:58:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0027",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:03:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0028",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:08:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0029",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:13:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0030",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:18:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0031",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:23:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0032",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:28:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0033",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:33:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0034",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:38:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0035",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:43:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0036",
+            "payload": {
+              "battery": 72,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.4,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:10:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0037",
+            "payload": {
+              "battery": 72,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.4,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:15:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0038",
+            "payload": {
+              "battery": 72,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.4,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:20:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0039",
+            "payload": {
+              "battery": 72,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.4,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:25:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0040",
+            "payload": {
+              "battery": 72,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.4,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:30:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0041",
+            "payload": {
+              "battery": 72,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.4,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:35:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0042",
+            "payload": { "targetId": "ic1805" },
+            "recordedAt": "2026-11-02T17:58:00.000Z",
+            "type": "target_started"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0043",
+            "payload": { "family": "vespera" },
+            "recordedAt": "2026-11-02T20:31:00.000Z",
+            "type": "device_link_lost"
+          }
+        ]
+      ],
+      "id": "vespera-night-application-open",
+      "result": {
+        "battery": {
+          "first": 92,
+          "firstAt": "2026-11-02T17:58:00.000Z",
+          "last": 61,
+          "lastAt": "2026-11-02T21:12:00.000Z"
+        },
+        "board": null,
+        "collectedUntil": null,
+        "family": "vespera",
+        "filter": [
+          {
+            "filter": "none",
+            "from": "2026-11-02T17:58:00.000Z",
+            "label": null,
+            "open": false,
+            "to": "2026-11-02T19:46:00.000Z"
+          },
+          {
+            "filter": "dual_band",
+            "from": "2026-11-02T19:46:00.000Z",
+            "label": null,
+            "open": false,
+            "to": "2026-11-02T21:09:00.000Z"
+          },
+          {
+            "filter": "none",
+            "from": "2026-11-02T21:09:00.000Z",
+            "label": null,
+            "open": false,
+            "to": "2026-11-02T21:12:00.000Z"
+          }
+        ],
+        "frames": {
+          "causes": [
+            { "cause": "StackingRoundnessError", "count": 187 },
+            { "cause": "StackingStarsError", "count": 3 }
+          ],
+          "rebuiltAt": null,
+          "rejected": 190,
+          "stacked": 700,
+          "taken": 890
+        },
+        "from": "2026-11-02T17:58:00.000Z",
+        "heater": {
+          "minutes": 74,
+          "ranges": [
+            {
+              "from": "2026-11-02T19:58:00.000Z",
+              "open": false,
+              "to": "2026-11-02T21:12:00.000Z"
+            }
+          ]
+        },
+        "holes": [],
+        "hygrometry": {
+          "dewPointDepressionAt": "2026-11-02T20:40:00.000Z",
+          "dewPointDepressionMin": 2.8,
+          "humidityMax": 83,
+          "humidityMin": 74,
+          "temperatureMax": 13.2,
+          "temperatureMin": 11,
+          "until": null
+        },
+        "model": "Vespera II",
+        "pointing": [
+          {
+            "at": "2026-11-02T20:00:00.000Z",
+            "attempts": 6,
+            "succeededAt": "2026-11-02T20:05:00.000Z",
+            "target": "M45",
+            "times": 1
+          }
+        ],
+        "rebuiltAt": null,
+        "reopenedAt": null,
+        "sensor": null,
+        "targets": [
+          {
+            "filter": "dual_band",
+            "filterLabel": null,
+            "rejected": 128,
+            "stacked": 540,
+            "targetId": "ic1805",
+            "targetLabel": "IC 1805"
+          },
+          {
+            "filter": "none",
+            "filterLabel": null,
+            "rejected": 62,
+            "stacked": 160,
+            "targetId": "m45",
+            "targetLabel": "M45"
+          }
+        ],
+        "to": "2026-11-02T21:12:00.000Z"
+      }
+    },
+    {
+      "args": [
+        [
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0001",
+            "payload": { "family": "vespera", "model": "Vespera II" },
+            "recordedAt": "2026-11-02T17:57:00.000Z",
+            "type": "device_connected"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0002",
+            "payload": {
+              "battery": 92,
+              "captureId": "obs-1",
+              "dewPointDepression": 6.4,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 74,
+              "reason": "change",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 13.2
+            },
+            "recordedAt": "2026-11-02T17:58:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0003",
+            "payload": {
+              "battery": 90,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.9,
+              "family": "vespera",
+              "filter": "none",
+              "framesRejected": 6,
+              "framesStacked": 24,
+              "framesTaken": 30,
+              "heater": "off",
+              "humidity": 75.2,
+              "reason": "interval",
+              "rejections": [{ "cause": "StackingRoundnessError", "count": 6 }],
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.9
+            },
+            "recordedAt": "2026-11-02T18:03:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0004",
+            "payload": {
+              "battery": 80,
+              "captureId": "obs-1",
+              "dewPointDepression": 4.9,
+              "family": "vespera",
+              "filter": "dual_band",
+              "framesRejected": 88,
+              "framesStacked": 412,
+              "framesTaken": 500,
+              "heater": "off",
+              "humidity": 79,
+              "reason": "change",
+              "rejections": [
+                { "cause": "StackingRoundnessError", "count": 88 }
+              ],
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.1
+            },
+            "recordedAt": "2026-11-02T19:46:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0005",
+            "payload": {
+              "battery": 78,
+              "captureId": "obs-1",
+              "dewPointDepression": 4.1,
+              "family": "vespera",
+              "filter": "dual_band",
+              "framesRejected": 128,
+              "framesStacked": 540,
+              "framesTaken": 668,
+              "heater": "on",
+              "humidity": 80,
+              "reason": "change",
+              "rejections": [
+                { "cause": "StackingRoundnessError", "count": 128 }
+              ],
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 11.8
+            },
+            "recordedAt": "2026-11-02T19:58:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0006",
+            "payload": {
+              "battery": 77,
+              "dewPointDepression": 3.6,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 80.4,
+              "pointingAbandoned": true,
+              "pointingFailures": 6,
+              "reason": "change",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.6
+            },
+            "recordedAt": "2026-11-02T20:00:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0007",
+            "payload": {
+              "battery": 76,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.2,
+              "family": "vespera",
+              "filter": "dual_band",
+              "framesRejected": 2,
+              "framesStacked": 1,
+              "framesTaken": 3,
+              "heater": "on",
+              "humidity": 81,
+              "reason": "change",
+              "rejections": [{ "cause": "StackingRoundnessError", "count": 2 }],
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.5
+            },
+            "recordedAt": "2026-11-02T20:05:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0016",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:08:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0017",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:13:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0018",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:18:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0019",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:23:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0020",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:28:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0021",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:33:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0022",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:38:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0023",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:43:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0024",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:48:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0025",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:53:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0026",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T18:58:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0027",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:03:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0028",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:08:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0029",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:13:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0030",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:18:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0031",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:23:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0032",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:28:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0033",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:33:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0034",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:38:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0035",
+            "payload": {
+              "battery": 86,
+              "captureId": "obs-1",
+              "dewPointDepression": 5.5,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "humidity": 76,
+              "reason": "interval",
+              "targetId": "ic1805",
+              "targetLabel": "IC 1805",
+              "temperature": 12.6
+            },
+            "recordedAt": "2026-11-02T19:43:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0036",
+            "payload": {
+              "battery": 72,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.4,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:10:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0037",
+            "payload": {
+              "battery": 72,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.4,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:15:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0038",
+            "payload": {
+              "battery": 72,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.4,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:20:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0039",
+            "payload": {
+              "battery": 72,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.4,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:25:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0040",
+            "payload": {
+              "battery": 72,
+              "captureId": "obs-3",
+              "dewPointDepression": 3.4,
+              "family": "vespera",
+              "filter": "dual_band",
+              "heater": "on",
+              "humidity": 82,
+              "reason": "interval",
+              "targetId": "m45",
+              "targetLabel": "M45",
+              "temperature": 11.3
+            },
+            "recordedAt": "2026-11-02T20:30:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0044",
+            "payload": {
+              "appStopped": {
+                "from": "2026-11-02T20:30:00.000Z",
+                "to": "2026-11-02T21:40:00.000Z"
+              }
+            },
+            "recordedAt": "2026-11-02T21:40:00.000Z",
+            "type": "note"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0045",
+            "payload": {
+              "captureId": "obs-3",
+              "endedAt": "2026-11-02T21:12:00.000Z",
+              "family": "vespera",
+              "filter": "dual_band",
+              "framesRejected": 62,
+              "framesStacked": 160,
+              "framesTaken": 222,
+              "origin": "rebuilt",
+              "rejections": [
+                { "cause": "StackingRoundnessError", "count": 59 },
+                { "cause": "StackingStarsError", "count": 3 }
+              ],
+              "targetId": "m45",
+              "targetLabel": "M45"
+            },
+            "recordedAt": "2026-11-02T21:40:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0046",
+            "payload": {
+              "battery": 60,
+              "family": "vespera",
+              "filter": "none",
+              "heater": "off",
+              "reason": "change"
+            },
+            "recordedAt": "2026-11-02T21:40:00.000Z",
+            "type": "device_instrument"
+          }
+        ]
+      ],
+      "id": "vespera-night-application-closed-and-rebuilt",
+      "result": {
+        "battery": {
+          "first": 92,
+          "firstAt": "2026-11-02T17:58:00.000Z",
+          "last": 60,
+          "lastAt": "2026-11-02T21:40:00.000Z"
+        },
+        "board": null,
+        "collectedUntil": "2026-11-02T20:30:00.000Z",
+        "family": "vespera",
+        "filter": [
+          {
+            "filter": "none",
+            "from": "2026-11-02T17:58:00.000Z",
+            "label": null,
+            "open": false,
+            "to": "2026-11-02T19:46:00.000Z"
+          },
+          {
+            "filter": "dual_band",
+            "from": "2026-11-02T19:46:00.000Z",
+            "label": null,
+            "open": true,
+            "to": "2026-11-02T20:30:00.000Z"
+          },
+          {
+            "filter": "none",
+            "from": "2026-11-02T21:40:00.000Z",
+            "label": null,
+            "open": false,
+            "to": "2026-11-02T21:40:00.000Z"
+          }
+        ],
+        "frames": {
+          "causes": [
+            { "cause": "StackingRoundnessError", "count": 187 },
+            { "cause": "StackingStarsError", "count": 3 }
+          ],
+          "rebuiltAt": "2026-11-02T21:40:00.000Z",
+          "rejected": 190,
+          "stacked": 700,
+          "taken": 890
+        },
+        "from": "2026-11-02T17:58:00.000Z",
+        "heater": {
+          "minutes": 32,
+          "ranges": [
+            {
+              "from": "2026-11-02T19:58:00.000Z",
+              "open": true,
+              "to": "2026-11-02T20:30:00.000Z"
+            }
+          ]
+        },
+        "holes": [
+          {
+            "from": "2026-11-02T20:30:00.000Z",
+            "to": "2026-11-02T21:40:00.000Z"
+          }
+        ],
+        "hygrometry": {
+          "dewPointDepressionAt": "2026-11-02T20:05:00.000Z",
+          "dewPointDepressionMin": 3.2,
+          "humidityMax": 82,
+          "humidityMin": 74,
+          "temperatureMax": 13.2,
+          "temperatureMin": 11.3,
+          "until": "2026-11-02T20:30:00.000Z"
+        },
+        "model": "Vespera II",
+        "pointing": [
+          {
+            "at": "2026-11-02T20:00:00.000Z",
+            "attempts": 6,
+            "succeededAt": "2026-11-02T20:05:00.000Z",
+            "target": "M45",
+            "times": 1
+          }
+        ],
+        "rebuiltAt": "2026-11-02T21:40:00.000Z",
+        "reopenedAt": "2026-11-02T21:40:00.000Z",
+        "sensor": null,
+        "targets": [
+          {
+            "filter": "dual_band",
+            "filterLabel": null,
+            "rejected": 128,
+            "stacked": 540,
+            "targetId": "ic1805",
+            "targetLabel": "IC 1805"
+          },
+          {
+            "filter": "dual_band",
+            "filterLabel": null,
+            "rejected": 62,
+            "stacked": 160,
+            "targetId": "m45",
+            "targetLabel": "M45"
+          }
+        ],
+        "to": "2026-11-02T21:40:00.000Z"
+      }
+    },
+    {
+      "args": [
+        [
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0047",
+            "payload": { "family": "seestar", "model": "Seestar S50 Pro" },
+            "recordedAt": "2026-11-02T21:20:00.000Z",
+            "type": "device_connected"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0048",
+            "payload": {
+              "battery": 84,
+              "boardTemperature": 38.2,
+              "charging": true,
+              "family": "seestar",
+              "filter": "light_pollution",
+              "heater": "off",
+              "reason": "change",
+              "targetLabel": "M42"
+            },
+            "recordedAt": "2026-11-02T21:26:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0049",
+            "payload": {
+              "battery": 83,
+              "boardTemperature": 40.96,
+              "charging": true,
+              "family": "seestar",
+              "filter": "light_pollution",
+              "framesRejected": 1,
+              "framesStacked": 8,
+              "heater": "off",
+              "reason": "interval",
+              "rejections": [{ "cause": "star_trails", "count": 1 }],
+              "targetLabel": "M42"
+            },
+            "recordedAt": "2026-11-02T21:31:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0050",
+            "payload": {
+              "battery": 82,
+              "boardTemperature": 41,
+              "charging": true,
+              "family": "seestar",
+              "filter": "light_pollution",
+              "framesRejected": 2,
+              "framesStacked": 18,
+              "heater": "off",
+              "overheated": true,
+              "reason": "interval",
+              "rejections": [{ "cause": "star_trails", "count": 1 }],
+              "targetLabel": "M42"
+            },
+            "recordedAt": "2026-11-02T21:36:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0051",
+            "payload": {
+              "battery": 82,
+              "boardTemperature": 39.5,
+              "family": "seestar",
+              "filter": "none",
+              "framesRejected": 0,
+              "framesStacked": 0,
+              "heater": "off",
+              "reason": "change",
+              "targetLabel": "M31"
+            },
+            "recordedAt": "2026-11-02T21:40:00.000Z",
+            "type": "device_instrument"
+          }
+        ]
+      ],
+      "id": "seestar-light-pollution-board-overheat-star-trails",
+      "result": {
+        "battery": {
+          "first": 84,
+          "firstAt": "2026-11-02T21:26:00.000Z",
+          "last": 82,
+          "lastAt": "2026-11-02T21:40:00.000Z"
+        },
+        "board": {
+          "max": 41,
+          "min": 38.2,
+          "overheatedAt": "2026-11-02T21:36:00.000Z"
+        },
+        "collectedUntil": null,
+        "family": "seestar",
+        "filter": [
+          {
+            "filter": "light_pollution",
+            "from": "2026-11-02T21:26:00.000Z",
+            "label": null,
+            "open": false,
+            "to": "2026-11-02T21:40:00.000Z"
+          },
+          {
+            "filter": "none",
+            "from": "2026-11-02T21:40:00.000Z",
+            "label": null,
+            "open": false,
+            "to": "2026-11-02T21:40:00.000Z"
+          }
+        ],
+        "frames": {
+          "causes": [{ "cause": "star_trails", "count": 1 }],
+          "rebuiltAt": null,
+          "rejected": 2,
+          "stacked": 18,
+          "taken": null
+        },
+        "from": "2026-11-02T21:26:00.000Z",
+        "heater": { "minutes": 0, "ranges": [] },
+        "holes": [],
+        "hygrometry": null,
+        "model": "Seestar S50 Pro",
+        "pointing": null,
+        "rebuiltAt": null,
+        "reopenedAt": null,
+        "sensor": null,
+        "targets": [
+          {
+            "filter": "light_pollution",
+            "filterLabel": null,
+            "rejected": 2,
+            "stacked": 18,
+            "targetId": null,
+            "targetLabel": "M42"
+          },
+          {
+            "filter": "none",
+            "filterLabel": null,
+            "rejected": 0,
+            "stacked": 0,
+            "targetId": null,
+            "targetLabel": "M31"
+          }
+        ],
+        "to": "2026-11-02T21:40:00.000Z"
+      }
+    },
+    {
+      "args": [
+        [
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0052",
+            "payload": {
+              "family": "dwarf",
+              "filter": "other",
+              "filterLabel": "IR",
+              "framesStacked": 9,
+              "framesTaken": 10,
+              "reason": "change",
+              "targetLabel": "M33",
+              "temperatureMax": 11.1,
+              "temperatureMin": 9.4
+            },
+            "recordedAt": "2026-11-02T22:00:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0053",
+            "payload": {
+              "family": "dwarf",
+              "filter": "other",
+              "filterLabel": "IR",
+              "framesStacked": 32,
+              "framesTaken": 35,
+              "reason": "interval",
+              "targetLabel": "M33",
+              "temperatureMax": 12.04,
+              "temperatureMin": 9
+            },
+            "recordedAt": "2026-11-02T22:05:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0054",
+            "payload": {
+              "battery": 140,
+              "family": "dwarf",
+              "filter": "DUAL",
+              "framesTaken": "35",
+              "humidity": -4,
+              "reason": "interval",
+              "targetLabel": "M33"
+            },
+            "recordedAt": "2026-11-02T22:10:00.000Z",
+            "type": "device_instrument"
+          }
+        ]
+      ],
+      "id": "dwarf-own-filter-word-and-wrong-values-ignored",
+      "result": {
+        "battery": null,
+        "board": null,
+        "collectedUntil": null,
+        "family": "dwarf",
+        "filter": [
+          {
+            "filter": "other",
+            "from": "2026-11-02T22:00:00.000Z",
+            "label": "IR",
+            "open": false,
+            "to": "2026-11-02T22:05:00.000Z"
+          }
+        ],
+        "frames": {
+          "causes": [],
+          "rebuiltAt": null,
+          "rejected": null,
+          "stacked": 32,
+          "taken": 35
+        },
+        "from": "2026-11-02T22:00:00.000Z",
+        "heater": null,
+        "holes": [],
+        "hygrometry": null,
+        "model": null,
+        "pointing": null,
+        "rebuiltAt": null,
+        "reopenedAt": null,
+        "sensor": { "max": 12, "min": 9 },
+        "targets": [
+          {
+            "filter": "other",
+            "filterLabel": "IR",
+            "rejected": null,
+            "stacked": 32,
+            "targetId": null,
+            "targetLabel": "M33"
+          }
+        ],
+        "to": "2026-11-02T22:10:00.000Z"
+      }
+    },
+    {
+      "args": [
+        [
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0057",
+            "payload": { "targetId": "m31" },
+            "recordedAt": "2026-11-02T20:00:00.000Z",
+            "type": "target_started"
+          }
+        ]
+      ],
+      "id": "no-instrument-sample",
+      "result": null
+    },
+    {
+      "args": [
+        [
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0055",
+            "payload": {
+              "family": "vespera",
+              "heater": "off",
+              "reason": "change"
+            },
+            "recordedAt": "2026-11-02T23:00:00.000Z",
+            "type": "device_instrument"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8I0056",
+            "payload": {
+              "family": "vespera",
+              "heater": "off",
+              "reason": "interval"
+            },
+            "recordedAt": "2026-11-02T23:05:00.000Z",
+            "type": "device_instrument"
+          }
+        ]
+      ],
+      "id": "heater-said-off-all-night",
+      "result": {
+        "battery": null,
+        "board": null,
+        "collectedUntil": null,
+        "family": "vespera",
+        "filter": null,
+        "frames": null,
+        "from": "2026-11-02T23:00:00.000Z",
+        "heater": { "minutes": 0, "ranges": [] },
+        "holes": [],
+        "hygrometry": null,
+        "model": null,
+        "pointing": null,
+        "rebuiltAt": null,
+        "reopenedAt": null,
+        "sensor": null,
+        "targets": [],
+        "to": "2026-11-02T23:05:00.000Z"
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "session-instrument-summary"
+}

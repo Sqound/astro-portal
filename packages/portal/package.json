@@ -1,0 +1,33 @@
+{
+  "name": "portal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*"
+  },
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "astro-contracts": "*",
+    "astro-core": "*",
+    "geo-tz": "^8.1.8",
+    "leaflet": "^1.9.4",
+    "next": "^16.3.4",
+    "nodemailer": "^10.0.13",
+    "onnxruntime-web": "^1.30.0",
+    "pg": "^8.23.0",
+    "qrcode": "^1.5.4",
+    "react": "^19.2.8",
+    "sharp": "^0.35.4"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "calibrate:sky-quality": "node scripts/calibrate-sky-quality.mjs",
+    "check:sky-quality-raster": "node scripts/check-sky-quality-raster.mjs",
+    "prepare:sky-quality-raster": "node scripts/prepare-sky-quality-raster.mjs",
+    "prepare:sky-tile-pack": "node scripts/prepare-sky-tile-pack.mjs",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs"
+  }
+}

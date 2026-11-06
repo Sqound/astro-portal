@@ -1,0 +1,1781 @@
+{
+  "contract": "place.schema.json",
+  "description": "Examples of every body of `/v1/places` (v1.md, « Places »), each valid against the definition it names. Synthetic data (« Col des Étoiles », 45° N, 30° W). `request` says which route and status the body belongs to.",
+  "examples": [
+    {
+      "id": "place-full",
+      "description": "A place with every field: linked to a known place, its horizon surveyed, a sky value typed, a note; used by a plan to execute and by a night done.",
+      "request": "GET /v1/places/{placeId} → 200",
+      "schema": "place.schema.json#/$defs/place",
+      "value": {
+        "id": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+        "name": "Col des Étoiles",
+        "locality": "Col des Étoiles, Massif imaginaire",
+        "latitude": 45,
+        "longitude": -30,
+        "elevation": "1240",
+        "timeZone": "Atlantic/Azores",
+        "horizonMask": {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 8
+            },
+            {
+              "azimuth": 10,
+              "altitude": 8
+            },
+            {
+              "azimuth": 20,
+              "altitude": 10
+            },
+            {
+              "azimuth": 30,
+              "altitude": 12
+            },
+            {
+              "azimuth": 40,
+              "altitude": 15
+            },
+            {
+              "azimuth": 50,
+              "altitude": 15
+            },
+            {
+              "azimuth": 60,
+              "altitude": 12
+            },
+            {
+              "azimuth": 70,
+              "altitude": 10
+            },
+            {
+              "azimuth": 80,
+              "altitude": 8
+            },
+            {
+              "azimuth": 90,
+              "altitude": 6
+            },
+            {
+              "azimuth": 100,
+              "altitude": 5
+            },
+            {
+              "azimuth": 110,
+              "altitude": 5
+            },
+            {
+              "azimuth": 120,
+              "altitude": 5
+            },
+            {
+              "azimuth": 130,
+              "altitude": 6
+            },
+            {
+              "azimuth": 140,
+              "altitude": 8
+            },
+            {
+              "azimuth": 150,
+              "altitude": 10
+            },
+            {
+              "azimuth": 160,
+              "altitude": 10
+            },
+            {
+              "azimuth": 170,
+              "altitude": 8
+            },
+            {
+              "azimuth": 180,
+              "altitude": 6
+            },
+            {
+              "azimuth": 190,
+              "altitude": 5
+            },
+            {
+              "azimuth": 200,
+              "altitude": 5
+            },
+            {
+              "azimuth": 210,
+              "altitude": 5
+            },
+            {
+              "azimuth": 220,
+              "altitude": 5
+            },
+            {
+              "azimuth": 230,
+              "altitude": 5
+            },
+            {
+              "azimuth": 240,
+              "altitude": 6
+            },
+            {
+              "azimuth": 250,
+              "altitude": 8
+            },
+            {
+              "azimuth": 260,
+              "altitude": 10
+            },
+            {
+              "azimuth": 270,
+              "altitude": 12
+            },
+            {
+              "azimuth": 280,
+              "altitude": 14
+            },
+            {
+              "azimuth": 290,
+              "altitude": 16
+            },
+            {
+              "azimuth": 300,
+              "altitude": 18
+            },
+            {
+              "azimuth": 310,
+              "altitude": 16
+            },
+            {
+              "azimuth": 320,
+              "altitude": 14
+            },
+            {
+              "azimuth": 330,
+              "altitude": 12
+            },
+            {
+              "azimuth": 340,
+              "altitude": 10
+            },
+            {
+              "azimuth": 350,
+              "altitude": 9
+            }
+          ]
+        },
+        "horizonStatus": "verified",
+        "skyEntered": {
+          "sqm": 21.3,
+          "enteredAt": "2026-10-05T22:10:00.000Z"
+        },
+        "kind": "viewpoint",
+        "knownPlace": {
+          "source": "osm",
+          "id": "node/101",
+          "type": "viewpoint",
+          "linkedAt": "2026-10-01T20:15:00.000Z"
+        },
+        "note": "Parking au col, cinq minutes à pied jusqu'au replat.",
+        "editedAt": "2026-10-08T19:42:00.000Z",
+        "createdAt": "2026-10-01T20:15:03.000Z",
+        "updatedAt": "2026-10-08T19:42:01.000Z",
+        "usage": {
+          "pendingPlans": [
+            {
+              "planId": "0c9b8a7d-6e5f-4a3b-8c2d-1e0f9a8b7c6d",
+              "name": "Nuit du 12 octobre",
+              "planDate": "2026-10-12",
+              "status": "active"
+            }
+          ],
+          "pastPlans": [
+            {
+              "planId": "1d2c3b4a-5f6e-4d7c-9b8a-7f6e5d4c3b2a",
+              "name": "Nuit du 5 octobre",
+              "planDate": "2026-10-05",
+              "status": "executed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "place-minimal",
+      "description": "A place with only its name and point: no time zone (the night is computed from the longitude and shown in UTC), no horizon, used by no plan.",
+      "request": "GET /v1/places/{placeId} → 200",
+      "schema": "place.schema.json#/$defs/place",
+      "value": {
+        "id": "b7e4c1a0-2d3f-4a5b-9c6d-1e2f3a4b5c6d",
+        "name": "Jardin de la maison",
+        "latitude": 45.1,
+        "longitude": -30.1,
+        "horizonMask": null,
+        "editedAt": "2026-10-02T18:00:00.000Z",
+        "createdAt": "2026-10-02T18:00:01.000Z",
+        "updatedAt": "2026-10-02T18:00:01.000Z",
+        "usage": {
+          "pendingPlans": [],
+          "pastPlans": []
+        }
+      }
+    },
+    {
+      "id": "place-list",
+      "description": "The places of the space, the most recently edited first, and its default place.",
+      "request": "GET /v1/places → 200",
+      "schema": "place.schema.json#/$defs/placeList",
+      "value": {
+        "places": [
+          {
+            "id": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+            "name": "Col des Étoiles",
+            "locality": "Col des Étoiles, Massif imaginaire",
+            "latitude": 45,
+            "longitude": -30,
+            "elevation": "1240",
+            "timeZone": "Atlantic/Azores",
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                {
+                  "azimuth": 0,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 10,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 20,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 30,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 40,
+                  "altitude": 15
+                },
+                {
+                  "azimuth": 50,
+                  "altitude": 15
+                },
+                {
+                  "azimuth": 60,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 70,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 80,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 90,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 100,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 110,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 120,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 130,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 140,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 150,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 160,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 170,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 180,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 190,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 200,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 210,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 220,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 230,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 240,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 250,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 260,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 270,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 280,
+                  "altitude": 14
+                },
+                {
+                  "azimuth": 290,
+                  "altitude": 16
+                },
+                {
+                  "azimuth": 300,
+                  "altitude": 18
+                },
+                {
+                  "azimuth": 310,
+                  "altitude": 16
+                },
+                {
+                  "azimuth": 320,
+                  "altitude": 14
+                },
+                {
+                  "azimuth": 330,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 340,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 350,
+                  "altitude": 9
+                }
+              ]
+            },
+            "horizonStatus": "verified",
+            "skyEntered": {
+              "sqm": 21.3,
+              "enteredAt": "2026-10-05T22:10:00.000Z"
+            },
+            "kind": "viewpoint",
+            "knownPlace": {
+              "source": "osm",
+              "id": "node/101",
+              "type": "viewpoint",
+              "linkedAt": "2026-10-01T20:15:00.000Z"
+            },
+            "note": "Parking au col, cinq minutes à pied jusqu'au replat.",
+            "editedAt": "2026-10-08T19:42:00.000Z",
+            "createdAt": "2026-10-01T20:15:03.000Z",
+            "updatedAt": "2026-10-08T19:42:01.000Z",
+            "usage": {
+              "pendingPlans": [
+                {
+                  "planId": "0c9b8a7d-6e5f-4a3b-8c2d-1e0f9a8b7c6d",
+                  "name": "Nuit du 12 octobre",
+                  "planDate": "2026-10-12",
+                  "status": "active"
+                }
+              ],
+              "pastPlans": [
+                {
+                  "planId": "1d2c3b4a-5f6e-4d7c-9b8a-7f6e5d4c3b2a",
+                  "name": "Nuit du 5 octobre",
+                  "planDate": "2026-10-05",
+                  "status": "executed"
+                }
+              ]
+            }
+          },
+          {
+            "id": "b7e4c1a0-2d3f-4a5b-9c6d-1e2f3a4b5c6d",
+            "name": "Jardin de la maison",
+            "latitude": 45.1,
+            "longitude": -30.1,
+            "horizonMask": null,
+            "editedAt": "2026-10-02T18:00:00.000Z",
+            "createdAt": "2026-10-02T18:00:01.000Z",
+            "updatedAt": "2026-10-02T18:00:01.000Z",
+            "usage": {
+              "pendingPlans": [],
+              "pastPlans": []
+            }
+          }
+        ],
+        "defaultPlaceId": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+        "defaultPlaceEditedAt": "2026-10-03T08:00:00.000Z"
+      }
+    },
+    {
+      "id": "place-list-empty",
+      "description": "A space without places and without a default place.",
+      "request": "GET /v1/places → 200",
+      "schema": "place.schema.json#/$defs/placeList",
+      "value": {
+        "places": [],
+        "defaultPlaceId": null,
+        "defaultPlaceEditedAt": null
+      }
+    },
+    {
+      "id": "place-write",
+      "description": "The whole place and the instant of the gesture.",
+      "request": "PUT /v1/places/{placeId}",
+      "schema": "place.schema.json#/$defs/placeWrite",
+      "value": {
+        "id": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+        "name": "Col des Étoiles",
+        "locality": "Col des Étoiles, Massif imaginaire",
+        "latitude": 45,
+        "longitude": -30,
+        "elevation": "1240",
+        "timeZone": "Atlantic/Azores",
+        "horizonMask": {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 8
+            },
+            {
+              "azimuth": 10,
+              "altitude": 8
+            },
+            {
+              "azimuth": 20,
+              "altitude": 10
+            },
+            {
+              "azimuth": 30,
+              "altitude": 12
+            },
+            {
+              "azimuth": 40,
+              "altitude": 15
+            },
+            {
+              "azimuth": 50,
+              "altitude": 15
+            },
+            {
+              "azimuth": 60,
+              "altitude": 12
+            },
+            {
+              "azimuth": 70,
+              "altitude": 10
+            },
+            {
+              "azimuth": 80,
+              "altitude": 8
+            },
+            {
+              "azimuth": 90,
+              "altitude": 6
+            },
+            {
+              "azimuth": 100,
+              "altitude": 5
+            },
+            {
+              "azimuth": 110,
+              "altitude": 5
+            },
+            {
+              "azimuth": 120,
+              "altitude": 5
+            },
+            {
+              "azimuth": 130,
+              "altitude": 6
+            },
+            {
+              "azimuth": 140,
+              "altitude": 8
+            },
+            {
+              "azimuth": 150,
+              "altitude": 10
+            },
+            {
+              "azimuth": 160,
+              "altitude": 10
+            },
+            {
+              "azimuth": 170,
+              "altitude": 8
+            },
+            {
+              "azimuth": 180,
+              "altitude": 6
+            },
+            {
+              "azimuth": 190,
+              "altitude": 5
+            },
+            {
+              "azimuth": 200,
+              "altitude": 5
+            },
+            {
+              "azimuth": 210,
+              "altitude": 5
+            },
+            {
+              "azimuth": 220,
+              "altitude": 5
+            },
+            {
+              "azimuth": 230,
+              "altitude": 5
+            },
+            {
+              "azimuth": 240,
+              "altitude": 6
+            },
+            {
+              "azimuth": 250,
+              "altitude": 8
+            },
+            {
+              "azimuth": 260,
+              "altitude": 10
+            },
+            {
+              "azimuth": 270,
+              "altitude": 12
+            },
+            {
+              "azimuth": 280,
+              "altitude": 14
+            },
+            {
+              "azimuth": 290,
+              "altitude": 16
+            },
+            {
+              "azimuth": 300,
+              "altitude": 18
+            },
+            {
+              "azimuth": 310,
+              "altitude": 16
+            },
+            {
+              "azimuth": 320,
+              "altitude": 14
+            },
+            {
+              "azimuth": 330,
+              "altitude": 12
+            },
+            {
+              "azimuth": 340,
+              "altitude": 10
+            },
+            {
+              "azimuth": 350,
+              "altitude": 9
+            }
+          ]
+        },
+        "horizonStatus": "verified",
+        "skyEntered": {
+          "sqm": 21.3,
+          "enteredAt": "2026-10-05T22:10:00.000Z"
+        },
+        "kind": "viewpoint",
+        "knownPlace": {
+          "source": "osm",
+          "id": "node/101",
+          "type": "viewpoint",
+          "linkedAt": "2026-10-01T20:15:00.000Z"
+        },
+        "note": "Parking au col, cinq minutes à pied jusqu'au replat.",
+        "editedAt": "2026-10-08T19:42:00.000Z"
+      }
+    },
+    {
+      "id": "place-write-minimal",
+      "description": "A new place: its name, its point, the instant.",
+      "request": "PUT /v1/places/{placeId}",
+      "schema": "place.schema.json#/$defs/placeWrite",
+      "value": {
+        "name": "Jardin de la maison",
+        "latitude": 45.1,
+        "longitude": -30.1,
+        "editedAt": "2026-10-02T18:00:00.000Z"
+      }
+    },
+    {
+      "id": "write-applied",
+      "description": "The write was kept (201 when it created the place).",
+      "request": "PUT /v1/places/{placeId} → 200 or 201",
+      "schema": "place.schema.json#/$defs/writeAnswer",
+      "value": {
+        "place": {
+          "id": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+          "name": "Col des Étoiles",
+          "locality": "Col des Étoiles, Massif imaginaire",
+          "latitude": 45,
+          "longitude": -30,
+          "elevation": "1240",
+          "timeZone": "Atlantic/Azores",
+          "horizonMask": {
+            "enabled": true,
+            "points": [
+              {
+                "azimuth": 0,
+                "altitude": 8
+              },
+              {
+                "azimuth": 10,
+                "altitude": 8
+              },
+              {
+                "azimuth": 20,
+                "altitude": 10
+              },
+              {
+                "azimuth": 30,
+                "altitude": 12
+              },
+              {
+                "azimuth": 40,
+                "altitude": 15
+              },
+              {
+                "azimuth": 50,
+                "altitude": 15
+              },
+              {
+                "azimuth": 60,
+                "altitude": 12
+              },
+              {
+                "azimuth": 70,
+                "altitude": 10
+              },
+              {
+                "azimuth": 80,
+                "altitude": 8
+              },
+              {
+                "azimuth": 90,
+                "altitude": 6
+              },
+              {
+                "azimuth": 100,
+                "altitude": 5
+              },
+              {
+                "azimuth": 110,
+                "altitude": 5
+              },
+              {
+                "azimuth": 120,
+                "altitude": 5
+              },
+              {
+                "azimuth": 130,
+                "altitude": 6
+              },
+              {
+                "azimuth": 140,
+                "altitude": 8
+              },
+              {
+                "azimuth": 150,
+                "altitude": 10
+              },
+              {
+                "azimuth": 160,
+                "altitude": 10
+              },
+              {
+                "azimuth": 170,
+                "altitude": 8
+              },
+              {
+                "azimuth": 180,
+                "altitude": 6
+              },
+              {
+                "azimuth": 190,
+                "altitude": 5
+              },
+              {
+                "azimuth": 200,
+                "altitude": 5
+              },
+              {
+                "azimuth": 210,
+                "altitude": 5
+              },
+              {
+                "azimuth": 220,
+                "altitude": 5
+              },
+              {
+                "azimuth": 230,
+                "altitude": 5
+              },
+              {
+                "azimuth": 240,
+                "altitude": 6
+              },
+              {
+                "azimuth": 250,
+                "altitude": 8
+              },
+              {
+                "azimuth": 260,
+                "altitude": 10
+              },
+              {
+                "azimuth": 270,
+                "altitude": 12
+              },
+              {
+                "azimuth": 280,
+                "altitude": 14
+              },
+              {
+                "azimuth": 290,
+                "altitude": 16
+              },
+              {
+                "azimuth": 300,
+                "altitude": 18
+              },
+              {
+                "azimuth": 310,
+                "altitude": 16
+              },
+              {
+                "azimuth": 320,
+                "altitude": 14
+              },
+              {
+                "azimuth": 330,
+                "altitude": 12
+              },
+              {
+                "azimuth": 340,
+                "altitude": 10
+              },
+              {
+                "azimuth": 350,
+                "altitude": 9
+              }
+            ]
+          },
+          "horizonStatus": "verified",
+          "skyEntered": {
+            "sqm": 21.3,
+            "enteredAt": "2026-10-05T22:10:00.000Z"
+          },
+          "kind": "viewpoint",
+          "knownPlace": {
+            "source": "osm",
+            "id": "node/101",
+            "type": "viewpoint",
+            "linkedAt": "2026-10-01T20:15:00.000Z"
+          },
+          "note": "Parking au col, cinq minutes à pied jusqu'au replat.",
+          "editedAt": "2026-10-08T19:42:00.000Z",
+          "createdAt": "2026-10-01T20:15:03.000Z",
+          "updatedAt": "2026-10-08T19:42:01.000Z",
+          "usage": {
+            "pendingPlans": [
+              {
+                "planId": "0c9b8a7d-6e5f-4a3b-8c2d-1e0f9a8b7c6d",
+                "name": "Nuit du 12 octobre",
+                "planDate": "2026-10-12",
+                "status": "active"
+              }
+            ],
+            "pastPlans": [
+              {
+                "planId": "1d2c3b4a-5f6e-4d7c-9b8a-7f6e5d4c3b2a",
+                "name": "Nuit du 5 octobre",
+                "planDate": "2026-10-05",
+                "status": "executed"
+              }
+            ]
+          }
+        },
+        "applied": true
+      }
+    },
+    {
+      "id": "write-not-applied",
+      "description": "An older (or equal) edit: the service keeps its own and answers it; the client adopts it.",
+      "request": "PUT /v1/places/{placeId} → 200",
+      "schema": "place.schema.json#/$defs/writeAnswer",
+      "value": {
+        "place": {
+          "id": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+          "name": "Col des Étoiles",
+          "locality": "Col des Étoiles, Massif imaginaire",
+          "latitude": 45,
+          "longitude": -30,
+          "elevation": "1240",
+          "timeZone": "Atlantic/Azores",
+          "horizonMask": {
+            "enabled": true,
+            "points": [
+              {
+                "azimuth": 0,
+                "altitude": 8
+              },
+              {
+                "azimuth": 10,
+                "altitude": 8
+              },
+              {
+                "azimuth": 20,
+                "altitude": 10
+              },
+              {
+                "azimuth": 30,
+                "altitude": 12
+              },
+              {
+                "azimuth": 40,
+                "altitude": 15
+              },
+              {
+                "azimuth": 50,
+                "altitude": 15
+              },
+              {
+                "azimuth": 60,
+                "altitude": 12
+              },
+              {
+                "azimuth": 70,
+                "altitude": 10
+              },
+              {
+                "azimuth": 80,
+                "altitude": 8
+              },
+              {
+                "azimuth": 90,
+                "altitude": 6
+              },
+              {
+                "azimuth": 100,
+                "altitude": 5
+              },
+              {
+                "azimuth": 110,
+                "altitude": 5
+              },
+              {
+                "azimuth": 120,
+                "altitude": 5
+              },
+              {
+                "azimuth": 130,
+                "altitude": 6
+              },
+              {
+                "azimuth": 140,
+                "altitude": 8
+              },
+              {
+                "azimuth": 150,
+                "altitude": 10
+              },
+              {
+                "azimuth": 160,
+                "altitude": 10
+              },
+              {
+                "azimuth": 170,
+                "altitude": 8
+              },
+              {
+                "azimuth": 180,
+                "altitude": 6
+              },
+              {
+                "azimuth": 190,
+                "altitude": 5
+              },
+              {
+                "azimuth": 200,
+                "altitude": 5
+              },
+              {
+                "azimuth": 210,
+                "altitude": 5
+              },
+              {
+                "azimuth": 220,
+                "altitude": 5
+              },
+              {
+                "azimuth": 230,
+                "altitude": 5
+              },
+              {
+                "azimuth": 240,
+                "altitude": 6
+              },
+              {
+                "azimuth": 250,
+                "altitude": 8
+              },
+              {
+                "azimuth": 260,
+                "altitude": 10
+              },
+              {
+                "azimuth": 270,
+                "altitude": 12
+              },
+              {
+                "azimuth": 280,
+                "altitude": 14
+              },
+              {
+                "azimuth": 290,
+                "altitude": 16
+              },
+              {
+                "azimuth": 300,
+                "altitude": 18
+              },
+              {
+                "azimuth": 310,
+                "altitude": 16
+              },
+              {
+                "azimuth": 320,
+                "altitude": 14
+              },
+              {
+                "azimuth": 330,
+                "altitude": 12
+              },
+              {
+                "azimuth": 340,
+                "altitude": 10
+              },
+              {
+                "azimuth": 350,
+                "altitude": 9
+              }
+            ]
+          },
+          "horizonStatus": "verified",
+          "skyEntered": {
+            "sqm": 21.3,
+            "enteredAt": "2026-10-05T22:10:00.000Z"
+          },
+          "kind": "viewpoint",
+          "knownPlace": {
+            "source": "osm",
+            "id": "node/101",
+            "type": "viewpoint",
+            "linkedAt": "2026-10-01T20:15:00.000Z"
+          },
+          "note": "Parking au col, cinq minutes à pied jusqu'au replat.",
+          "editedAt": "2026-10-08T19:42:00.000Z",
+          "createdAt": "2026-10-01T20:15:03.000Z",
+          "updatedAt": "2026-10-08T19:42:01.000Z",
+          "usage": {
+            "pendingPlans": [
+              {
+                "planId": "0c9b8a7d-6e5f-4a3b-8c2d-1e0f9a8b7c6d",
+                "name": "Nuit du 12 octobre",
+                "planDate": "2026-10-12",
+                "status": "active"
+              }
+            ],
+            "pastPlans": [
+              {
+                "planId": "1d2c3b4a-5f6e-4d7c-9b8a-7f6e5d4c3b2a",
+                "name": "Nuit du 5 octobre",
+                "planDate": "2026-10-05",
+                "status": "executed"
+              }
+            ]
+          }
+        },
+        "applied": false
+      }
+    },
+    {
+      "id": "write-not-applied-deleted",
+      "description": "An edit older than the place's deletion: the place stays deleted; the client drops its copy.",
+      "request": "PUT /v1/places/{placeId} → 200",
+      "schema": "place.schema.json#/$defs/writeAnswer",
+      "value": {
+        "place": null,
+        "applied": false
+      }
+    },
+    {
+      "id": "delete-done",
+      "description": "The place is deleted.",
+      "request": "DELETE /v1/places/{placeId}?at=… → 200",
+      "schema": "place.schema.json#/$defs/deleteAnswer",
+      "value": {
+        "deleted": true
+      }
+    },
+    {
+      "id": "delete-not-done",
+      "description": "The place was edited after `at`: it stays, and is answered.",
+      "request": "DELETE /v1/places/{placeId}?at=… → 200",
+      "schema": "place.schema.json#/$defs/deleteAnswer",
+      "value": {
+        "deleted": false,
+        "place": {
+          "id": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+          "name": "Col des Étoiles",
+          "locality": "Col des Étoiles, Massif imaginaire",
+          "latitude": 45,
+          "longitude": -30,
+          "elevation": "1240",
+          "timeZone": "Atlantic/Azores",
+          "horizonMask": {
+            "enabled": true,
+            "points": [
+              {
+                "azimuth": 0,
+                "altitude": 8
+              },
+              {
+                "azimuth": 10,
+                "altitude": 8
+              },
+              {
+                "azimuth": 20,
+                "altitude": 10
+              },
+              {
+                "azimuth": 30,
+                "altitude": 12
+              },
+              {
+                "azimuth": 40,
+                "altitude": 15
+              },
+              {
+                "azimuth": 50,
+                "altitude": 15
+              },
+              {
+                "azimuth": 60,
+                "altitude": 12
+              },
+              {
+                "azimuth": 70,
+                "altitude": 10
+              },
+              {
+                "azimuth": 80,
+                "altitude": 8
+              },
+              {
+                "azimuth": 90,
+                "altitude": 6
+              },
+              {
+                "azimuth": 100,
+                "altitude": 5
+              },
+              {
+                "azimuth": 110,
+                "altitude": 5
+              },
+              {
+                "azimuth": 120,
+                "altitude": 5
+              },
+              {
+                "azimuth": 130,
+                "altitude": 6
+              },
+              {
+                "azimuth": 140,
+                "altitude": 8
+              },
+              {
+                "azimuth": 150,
+                "altitude": 10
+              },
+              {
+                "azimuth": 160,
+                "altitude": 10
+              },
+              {
+                "azimuth": 170,
+                "altitude": 8
+              },
+              {
+                "azimuth": 180,
+                "altitude": 6
+              },
+              {
+                "azimuth": 190,
+                "altitude": 5
+              },
+              {
+                "azimuth": 200,
+                "altitude": 5
+              },
+              {
+                "azimuth": 210,
+                "altitude": 5
+              },
+              {
+                "azimuth": 220,
+                "altitude": 5
+              },
+              {
+                "azimuth": 230,
+                "altitude": 5
+              },
+              {
+                "azimuth": 240,
+                "altitude": 6
+              },
+              {
+                "azimuth": 250,
+                "altitude": 8
+              },
+              {
+                "azimuth": 260,
+                "altitude": 10
+              },
+              {
+                "azimuth": 270,
+                "altitude": 12
+              },
+              {
+                "azimuth": 280,
+                "altitude": 14
+              },
+              {
+                "azimuth": 290,
+                "altitude": 16
+              },
+              {
+                "azimuth": 300,
+                "altitude": 18
+              },
+              {
+                "azimuth": 310,
+                "altitude": 16
+              },
+              {
+                "azimuth": 320,
+                "altitude": 14
+              },
+              {
+                "azimuth": 330,
+                "altitude": 12
+              },
+              {
+                "azimuth": 340,
+                "altitude": 10
+              },
+              {
+                "azimuth": 350,
+                "altitude": 9
+              }
+            ]
+          },
+          "horizonStatus": "verified",
+          "skyEntered": {
+            "sqm": 21.3,
+            "enteredAt": "2026-10-05T22:10:00.000Z"
+          },
+          "kind": "viewpoint",
+          "knownPlace": {
+            "source": "osm",
+            "id": "node/101",
+            "type": "viewpoint",
+            "linkedAt": "2026-10-01T20:15:00.000Z"
+          },
+          "note": "Parking au col, cinq minutes à pied jusqu'au replat.",
+          "editedAt": "2026-10-08T19:42:00.000Z",
+          "createdAt": "2026-10-01T20:15:03.000Z",
+          "updatedAt": "2026-10-08T19:42:01.000Z",
+          "usage": {
+            "pendingPlans": [
+              {
+                "planId": "0c9b8a7d-6e5f-4a3b-8c2d-1e0f9a8b7c6d",
+                "name": "Nuit du 12 octobre",
+                "planDate": "2026-10-12",
+                "status": "active"
+              }
+            ],
+            "pastPlans": [
+              {
+                "planId": "1d2c3b4a-5f6e-4d7c-9b8a-7f6e5d4c3b2a",
+                "name": "Nuit du 5 octobre",
+                "planDate": "2026-10-05",
+                "status": "executed"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "default-write",
+      "description": "The default place chosen.",
+      "request": "PUT /v1/places/default",
+      "schema": "place.schema.json#/$defs/defaultWrite",
+      "value": {
+        "placeId": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+        "editedAt": "2026-10-03T08:00:00.000Z"
+      }
+    },
+    {
+      "id": "default-write-none",
+      "description": "No default place any more.",
+      "request": "PUT /v1/places/default",
+      "schema": "place.schema.json#/$defs/defaultWrite",
+      "value": {
+        "placeId": null,
+        "editedAt": "2026-10-04T08:00:00.000Z"
+      }
+    },
+    {
+      "id": "default-answer",
+      "description": "What the service keeps.",
+      "request": "PUT /v1/places/default → 200",
+      "schema": "place.schema.json#/$defs/defaultAnswer",
+      "value": {
+        "defaultPlaceId": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+        "defaultPlaceEditedAt": "2026-10-03T08:00:00.000Z",
+        "applied": true
+      }
+    },
+    {
+      "id": "import-request",
+      "description": "Two places a phone kept without a space, each with its own id.",
+      "request": "POST /v1/places/import",
+      "schema": "place.schema.json#/$defs/importRequest",
+      "value": {
+        "places": [
+          {
+            "id": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+            "name": "Col des Étoiles",
+            "locality": "Col des Étoiles, Massif imaginaire",
+            "latitude": 45,
+            "longitude": -30,
+            "elevation": "1240",
+            "timeZone": "Atlantic/Azores",
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                {
+                  "azimuth": 0,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 10,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 20,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 30,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 40,
+                  "altitude": 15
+                },
+                {
+                  "azimuth": 50,
+                  "altitude": 15
+                },
+                {
+                  "azimuth": 60,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 70,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 80,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 90,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 100,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 110,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 120,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 130,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 140,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 150,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 160,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 170,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 180,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 190,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 200,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 210,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 220,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 230,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 240,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 250,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 260,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 270,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 280,
+                  "altitude": 14
+                },
+                {
+                  "azimuth": 290,
+                  "altitude": 16
+                },
+                {
+                  "azimuth": 300,
+                  "altitude": 18
+                },
+                {
+                  "azimuth": 310,
+                  "altitude": 16
+                },
+                {
+                  "azimuth": 320,
+                  "altitude": 14
+                },
+                {
+                  "azimuth": 330,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 340,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 350,
+                  "altitude": 9
+                }
+              ]
+            },
+            "horizonStatus": "verified",
+            "skyEntered": {
+              "sqm": 21.3,
+              "enteredAt": "2026-10-05T22:10:00.000Z"
+            },
+            "kind": "viewpoint",
+            "knownPlace": {
+              "source": "osm",
+              "id": "node/101",
+              "type": "viewpoint",
+              "linkedAt": "2026-10-01T20:15:00.000Z"
+            },
+            "note": "Parking au col, cinq minutes à pied jusqu'au replat.",
+            "editedAt": "2026-10-08T19:42:00.000Z"
+          },
+          {
+            "id": "b7e4c1a0-2d3f-4a5b-9c6d-1e2f3a4b5c6d",
+            "name": "Jardin de la maison",
+            "latitude": 45.1,
+            "longitude": -30.1,
+            "horizonMask": null,
+            "editedAt": "2026-10-02T18:00:00.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "import-answer",
+      "description": "The space already held the first place (left unchanged), the second was created.",
+      "request": "POST /v1/places/import → 200",
+      "schema": "place.schema.json#/$defs/importAnswer",
+      "value": {
+        "places": [
+          {
+            "id": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+            "name": "Col des Étoiles",
+            "locality": "Col des Étoiles, Massif imaginaire",
+            "latitude": 45,
+            "longitude": -30,
+            "elevation": "1240",
+            "timeZone": "Atlantic/Azores",
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                {
+                  "azimuth": 0,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 10,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 20,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 30,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 40,
+                  "altitude": 15
+                },
+                {
+                  "azimuth": 50,
+                  "altitude": 15
+                },
+                {
+                  "azimuth": 60,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 70,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 80,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 90,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 100,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 110,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 120,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 130,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 140,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 150,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 160,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 170,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 180,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 190,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 200,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 210,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 220,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 230,
+                  "altitude": 5
+                },
+                {
+                  "azimuth": 240,
+                  "altitude": 6
+                },
+                {
+                  "azimuth": 250,
+                  "altitude": 8
+                },
+                {
+                  "azimuth": 260,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 270,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 280,
+                  "altitude": 14
+                },
+                {
+                  "azimuth": 290,
+                  "altitude": 16
+                },
+                {
+                  "azimuth": 300,
+                  "altitude": 18
+                },
+                {
+                  "azimuth": 310,
+                  "altitude": 16
+                },
+                {
+                  "azimuth": 320,
+                  "altitude": 14
+                },
+                {
+                  "azimuth": 330,
+                  "altitude": 12
+                },
+                {
+                  "azimuth": 340,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 350,
+                  "altitude": 9
+                }
+              ]
+            },
+            "horizonStatus": "verified",
+            "skyEntered": {
+              "sqm": 21.3,
+              "enteredAt": "2026-10-05T22:10:00.000Z"
+            },
+            "kind": "viewpoint",
+            "knownPlace": {
+              "source": "osm",
+              "id": "node/101",
+              "type": "viewpoint",
+              "linkedAt": "2026-10-01T20:15:00.000Z"
+            },
+            "note": "Parking au col, cinq minutes à pied jusqu'au replat.",
+            "editedAt": "2026-10-08T19:42:00.000Z",
+            "createdAt": "2026-10-01T20:15:03.000Z",
+            "updatedAt": "2026-10-08T19:42:01.000Z",
+            "usage": {
+              "pendingPlans": [
+                {
+                  "planId": "0c9b8a7d-6e5f-4a3b-8c2d-1e0f9a8b7c6d",
+                  "name": "Nuit du 12 octobre",
+                  "planDate": "2026-10-12",
+                  "status": "active"
+                }
+              ],
+              "pastPlans": [
+                {
+                  "planId": "1d2c3b4a-5f6e-4d7c-9b8a-7f6e5d4c3b2a",
+                  "name": "Nuit du 5 octobre",
+                  "planDate": "2026-10-05",
+                  "status": "executed"
+                }
+              ]
+            }
+          },
+          {
+            "id": "b7e4c1a0-2d3f-4a5b-9c6d-1e2f3a4b5c6d",
+            "name": "Jardin de la maison",
+            "latitude": 45.1,
+            "longitude": -30.1,
+            "horizonMask": null,
+            "editedAt": "2026-10-02T18:00:00.000Z",
+            "createdAt": "2026-10-02T18:00:01.000Z",
+            "updatedAt": "2026-10-02T18:00:01.000Z",
+            "usage": {
+              "pendingPlans": [],
+              "pastPlans": []
+            }
+          }
+        ],
+        "imported": [
+          {
+            "id": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+            "created": false
+          },
+          {
+            "id": "b7e4c1a0-2d3f-4a5b-9c6d-1e2f3a4b5c6d",
+            "created": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "error-in-use",
+      "description": "The place serves a plan to execute: the deletion is refused and names the plan.",
+      "request": "DELETE /v1/places/{placeId} → 409",
+      "schema": "place.schema.json#/$defs/error",
+      "value": {
+        "error": {
+          "code": "place_in_use",
+          "message": "This place is used by plans to execute; change their place or delete them first."
+        },
+        "pendingPlans": [
+          {
+            "planId": "0c9b8a7d-6e5f-4a3b-8c2d-1e0f9a8b7c6d",
+            "name": "Nuit du 12 octobre",
+            "planDate": "2026-10-12",
+            "status": "active"
+          }
+        ]
+      }
+    },
+    {
+      "id": "error-limit",
+      "description": "The space holds 200 places.",
+      "request": "PUT /v1/places/{placeId}, POST /v1/places/import → 409",
+      "schema": "place.schema.json#/$defs/error",
+      "value": {
+        "error": {
+          "code": "place_limit_reached",
+          "message": "A space holds at most 200 places."
+        },
+        "limit": 200
+      }
+    },
+    {
+      "id": "error-read-only",
+      "description": "The subscription has ended: the places stay readable, writes wait.",
+      "request": "PUT, DELETE, POST → 403",
+      "schema": "place.schema.json#/$defs/error",
+      "value": {
+        "error": {
+          "code": "entitlement_read_only",
+          "message": "This account's subscription has ended: place writes are suspended; existing places remain readable and exportable."
+        }
+      }
+    },
+    {
+      "id": "error-not-found",
+      "description": "No live place of this id in the space.",
+      "request": "GET, DELETE /v1/places/{placeId}, PUT /v1/places/default → 404",
+      "schema": "place.schema.json#/$defs/error",
+      "value": {
+        "error": {
+          "code": "place_not_found",
+          "message": "The place was not found."
+        }
+      }
+    },
+    {
+      "id": "error-invalid",
+      "description": "A field out of its bounds.",
+      "request": "PUT, POST → 400",
+      "schema": "place.schema.json#/$defs/error",
+      "value": {
+        "error": {
+          "code": "invalid_request",
+          "message": "A place name of 1 to 100 characters is required."
+        }
+      }
+    }
+  ]
+}

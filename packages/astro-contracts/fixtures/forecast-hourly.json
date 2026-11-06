@@ -1,0 +1,2016 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "hourly": {
+            "cloud_cover": [10, 30, 55],
+            "cloud_cover_high": [1, 4, 30],
+            "cloud_cover_low": [5, 10, 20],
+            "cloud_cover_mid": [2, 8, 15],
+            "precipitation_probability": [0, 5, 20],
+            "relative_humidity_2m": [60, 68, 74],
+            "time": [
+              "2026-09-15T20:00:00Z",
+              "2026-09-15T21:00:00Z",
+              "2026-09-15T22:00:00Z"
+            ],
+            "visibility": [24000, 18000, 12000],
+            "wind_direction_10m": [200, 215, 240],
+            "wind_speed_10m": [6, 9, 14]
+          },
+          "night": {
+            "end": "2026-09-15T23:00:00Z",
+            "start": "2026-09-15T19:30:00Z"
+          }
+        }
+      ],
+      "id": "rows-inside-the-night-are-kept-and-rounded",
+      "result": [
+        {
+          "cloud": 10,
+          "cloudHigh": 1,
+          "cloudLow": 5,
+          "cloudMid": 2,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 89,
+          "time": 1789502400000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": 200
+        },
+        {
+          "cloud": 30,
+          "cloudHigh": 4,
+          "cloudLow": 10,
+          "cloudMid": 8,
+          "humidity": 68,
+          "precipitation": 5,
+          "score": 56,
+          "time": 1789506000000,
+          "visibility": 18000,
+          "visibilityKm": 18,
+          "wind": 9,
+          "windDirection": 215
+        },
+        {
+          "cloud": 55,
+          "cloudHigh": 30,
+          "cloudLow": 20,
+          "cloudMid": 15,
+          "humidity": 74,
+          "precipitation": 20,
+          "score": 8,
+          "time": 1789509600000,
+          "visibility": 12000,
+          "visibilityKm": 12,
+          "wind": 14,
+          "windDirection": 240
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hourly": {
+            "cloud_cover": [20, 40],
+            "time": ["2026-09-15T20:00:00Z", "2026-09-15T21:00:00Z"],
+            "visibility": [24000, 18000],
+            "wind_speed_10m": [7, null]
+          },
+          "night": {
+            "end": "2026-09-15T23:00:00Z",
+            "start": "2026-09-15T19:30:00Z"
+          }
+        }
+      ],
+      "id": "missing-measurements-never-become-a-false-zero",
+      "result": [
+        {
+          "cloud": 20,
+          "humidity": null,
+          "precipitation": null,
+          "score": 58,
+          "time": 1789502400000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 7,
+          "windDirection": null
+        },
+        {
+          "cloud": 40,
+          "humidity": null,
+          "precipitation": null,
+          "score": 20,
+          "time": 1789506000000,
+          "visibility": 18000,
+          "visibilityKm": 18,
+          "wind": null,
+          "windDirection": null
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hourly": null,
+          "night": {
+            "end": "2026-09-15T23:00:00Z",
+            "start": "2026-09-15T19:30:00Z"
+          }
+        }
+      ],
+      "id": "no-hourly-series-yields-no-rows",
+      "result": []
+    },
+    {
+      "args": [
+        {
+          "hourly": {
+            "cloud_cover": [10, 12, 15, 20],
+            "dew_point_2m": [4.1, 5.06, 5.8, -1.2],
+            "precipitation": [0, 0.04, 0.3, null],
+            "relative_humidity_2m": [70, 82, 90, 96],
+            "temperature_2m": [9.84, 7.25, 6.5, -0.35],
+            "time": [
+              "2026-10-14T20:00:00Z",
+              "2026-10-14T23:00:00Z",
+              "2026-10-15T00:00:00Z",
+              "2026-10-15T01:00:00Z"
+            ],
+            "visibility": [24000, 20000, 16000, 12000],
+            "wind_gusts_10m": [12.4, 27.2, 27.2, null],
+            "wind_speed_10m": [6, 9, 14, 16]
+          },
+          "night": {
+            "end": "2026-10-15T02:30:00.000Z",
+            "start": "2026-10-14T19:30:00.000Z"
+          }
+        }
+      ],
+      "id": "night-fields-rounded-and-gaps-null",
+      "result": [
+        {
+          "cloud": 10,
+          "dewPoint": 4.1,
+          "dewRisk": "low",
+          "gust": 12,
+          "humidity": 70,
+          "precipitation": null,
+          "precipitationAmount": 0,
+          "score": 82,
+          "temperature": 9.8,
+          "time": 1792008000000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 12,
+          "dewPoint": 5.1,
+          "dewRisk": "moderate",
+          "gust": 27,
+          "humidity": 82,
+          "precipitation": null,
+          "precipitationAmount": 0,
+          "score": 77,
+          "temperature": 7.3,
+          "time": 1792018800000,
+          "visibility": 20000,
+          "visibilityKm": 20,
+          "wind": 9,
+          "windDirection": null
+        },
+        {
+          "cloud": 15,
+          "dewPoint": 5.8,
+          "dewRisk": "high",
+          "gust": 27,
+          "humidity": 90,
+          "precipitation": null,
+          "precipitationAmount": 0.3,
+          "score": 70,
+          "temperature": 6.5,
+          "time": 1792022400000,
+          "visibility": 16000,
+          "visibilityKm": 16,
+          "wind": 14,
+          "windDirection": null
+        },
+        {
+          "cloud": 20,
+          "dewPoint": -1.2,
+          "dewRisk": "moderate",
+          "gust": null,
+          "humidity": 96,
+          "precipitation": null,
+          "precipitationAmount": null,
+          "score": 55,
+          "temperature": -0.3,
+          "time": 1792026000000,
+          "visibility": 12000,
+          "visibilityKm": 12,
+          "wind": 16,
+          "windDirection": null
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hourly": {
+            "cloud_cover": [10, 12, 15, 20],
+            "time": [
+              "2026-10-14T20:00:00Z",
+              "2026-10-14T23:00:00Z",
+              "2026-10-15T00:00:00Z",
+              "2026-10-15T01:00:00Z"
+            ],
+            "visibility": [24000, 20000, 16000, 12000],
+            "wind_gusts_10m": [8, null, 11.5, 30]
+          },
+          "night": {
+            "end": "2026-10-15T02:30:00.000Z",
+            "start": "2026-10-14T19:30:00.000Z"
+          }
+        }
+      ],
+      "id": "night-fields-only-some-series",
+      "result": [
+        {
+          "cloud": 10,
+          "gust": 8,
+          "humidity": null,
+          "precipitation": null,
+          "score": 82,
+          "time": 1792008000000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": null,
+          "windDirection": null
+        },
+        {
+          "cloud": 12,
+          "gust": null,
+          "humidity": null,
+          "precipitation": null,
+          "score": 77,
+          "time": 1792018800000,
+          "visibility": 20000,
+          "visibilityKm": 20,
+          "wind": null,
+          "windDirection": null
+        },
+        {
+          "cloud": 15,
+          "gust": 12,
+          "humidity": null,
+          "precipitation": null,
+          "score": 70,
+          "time": 1792022400000,
+          "visibility": 16000,
+          "visibilityKm": 16,
+          "wind": null,
+          "windDirection": null
+        },
+        {
+          "cloud": 20,
+          "gust": 30,
+          "humidity": null,
+          "precipitation": null,
+          "score": 58,
+          "time": 1792026000000,
+          "visibility": 12000,
+          "visibilityKm": 12,
+          "wind": null,
+          "windDirection": null
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hourly": {
+            "cloud_cover": [8, 10, 12, 15, 18, 22, 20, 28, 35, 30],
+            "cloud_cover_high": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            "cloud_cover_low": [8, 10, 12, 15, 18, 22, 20, 28, 35, 30],
+            "cloud_cover_mid": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            "precipitation_probability": [0, 0, 5, 5, 10, 10, 15, 25, 40, 35],
+            "relative_humidity_2m": [78, 80, 83, 86, 89, 91, 93, 95, 96, 97],
+            "time": [
+              1774033200, 1774036800, 1774040400, 1774044000, 1774047600,
+              1774051200, 1774054800, 1774058400, 1774062000, 1774065600
+            ],
+            "visibility": [
+              20000, 20000, 18000, 16000, 14000, 12000, 10000, 9000, 7000, 6000
+            ],
+            "wind_gusts_10m": [14, 15, 18, 20, 22, 26, 30, 34, 38, 40],
+            "wind_speed_10m": [8, 8, 9, 10, 10, 12, 14, 16, 18, 18]
+          },
+          "moon": {
+            "illumination": 78,
+            "series": [
+              { "altitude": -38, "time": "2026-03-20T18:00:00.000Z" },
+              { "altitude": -30, "time": "2026-03-20T19:00:00.000Z" },
+              { "altitude": -22, "time": "2026-03-20T20:00:00.000Z" },
+              { "altitude": -14, "time": "2026-03-20T21:00:00.000Z" },
+              { "altitude": -6, "time": "2026-03-20T22:00:00.000Z" },
+              { "altitude": -1, "time": "2026-03-20T23:00:00.000Z" },
+              { "altitude": 8, "time": "2026-03-21T00:00:00.000Z" },
+              { "altitude": 20, "time": "2026-03-21T01:00:00.000Z" },
+              { "altitude": 32, "time": "2026-03-21T02:00:00.000Z" },
+              { "altitude": 42, "time": "2026-03-21T03:00:00.000Z" },
+              { "altitude": 50, "time": "2026-03-21T04:00:00.000Z" },
+              { "altitude": 58, "time": "2026-03-21T05:00:00.000Z" }
+            ]
+          },
+          "night": {
+            "end": "2026-03-21T04:10:00.000Z",
+            "start": "2026-03-20T18:50:00.000Z"
+          }
+        }
+      ],
+      "id": "rows-carry-the-moon",
+      "result": [
+        {
+          "cloud": 8,
+          "cloudHigh": 0,
+          "cloudLow": 8,
+          "cloudMid": 0,
+          "gust": 14,
+          "humidity": 78,
+          "moonAltitude": -30,
+          "moonIllumination": 78,
+          "precipitation": 0,
+          "score": 87,
+          "time": 1774033200000,
+          "visibility": 20000,
+          "visibilityKm": 20,
+          "wind": 8,
+          "windDirection": null
+        },
+        {
+          "cloud": 10,
+          "cloudHigh": 0,
+          "cloudLow": 10,
+          "cloudMid": 0,
+          "gust": 15,
+          "humidity": 80,
+          "moonAltitude": -22,
+          "moonIllumination": 78,
+          "precipitation": 0,
+          "score": 82,
+          "time": 1774036800000,
+          "visibility": 20000,
+          "visibilityKm": 20,
+          "wind": 8,
+          "windDirection": null
+        },
+        {
+          "cloud": 12,
+          "cloudHigh": 0,
+          "cloudLow": 12,
+          "cloudMid": 0,
+          "gust": 18,
+          "humidity": 83,
+          "moonAltitude": -14,
+          "moonIllumination": 78,
+          "precipitation": 5,
+          "score": 74,
+          "time": 1774040400000,
+          "visibility": 18000,
+          "visibilityKm": 18,
+          "wind": 9,
+          "windDirection": null
+        },
+        {
+          "cloud": 15,
+          "cloudHigh": 0,
+          "cloudLow": 15,
+          "cloudMid": 0,
+          "gust": 20,
+          "humidity": 86,
+          "moonAltitude": -6,
+          "moonIllumination": 78,
+          "precipitation": 5,
+          "score": 67,
+          "time": 1774044000000,
+          "visibility": 16000,
+          "visibilityKm": 16,
+          "wind": 10,
+          "windDirection": null
+        },
+        {
+          "cloud": 18,
+          "cloudHigh": 0,
+          "cloudLow": 18,
+          "cloudMid": 0,
+          "gust": 22,
+          "humidity": 89,
+          "moonAltitude": -1,
+          "moonIllumination": 78,
+          "precipitation": 10,
+          "score": 58,
+          "time": 1774047600000,
+          "visibility": 14000,
+          "visibilityKm": 14,
+          "wind": 10,
+          "windDirection": null
+        },
+        {
+          "cloud": 22,
+          "cloudHigh": 0,
+          "cloudLow": 22,
+          "cloudMid": 0,
+          "gust": 26,
+          "humidity": 91,
+          "moonAltitude": 8,
+          "moonIllumination": 78,
+          "precipitation": 10,
+          "score": 47,
+          "time": 1774051200000,
+          "visibility": 12000,
+          "visibilityKm": 12,
+          "wind": 12,
+          "windDirection": null
+        },
+        {
+          "cloud": 20,
+          "cloudHigh": 0,
+          "cloudLow": 20,
+          "cloudMid": 0,
+          "gust": 30,
+          "humidity": 93,
+          "moonAltitude": 20,
+          "moonIllumination": 78,
+          "precipitation": 15,
+          "score": 42,
+          "time": 1774054800000,
+          "visibility": 10000,
+          "visibilityKm": 10,
+          "wind": 14,
+          "windDirection": null
+        },
+        {
+          "cloud": 28,
+          "cloudHigh": 0,
+          "cloudLow": 28,
+          "cloudMid": 0,
+          "gust": 34,
+          "humidity": 95,
+          "moonAltitude": 32,
+          "moonIllumination": 78,
+          "precipitation": 25,
+          "score": 19,
+          "time": 1774058400000,
+          "visibility": 9000,
+          "visibilityKm": 9,
+          "wind": 16,
+          "windDirection": null
+        },
+        {
+          "cloud": 35,
+          "cloudHigh": 0,
+          "cloudLow": 35,
+          "cloudMid": 0,
+          "gust": 38,
+          "humidity": 96,
+          "moonAltitude": 42,
+          "moonIllumination": 78,
+          "precipitation": 40,
+          "score": 6,
+          "time": 1774062000000,
+          "visibility": 7000,
+          "visibilityKm": 7,
+          "wind": 18,
+          "windDirection": null
+        },
+        {
+          "cloud": 30,
+          "cloudHigh": 0,
+          "cloudLow": 30,
+          "cloudMid": 0,
+          "gust": 40,
+          "humidity": 97,
+          "moonAltitude": 50,
+          "moonIllumination": 78,
+          "precipitation": 35,
+          "score": 10,
+          "time": 1774065600000,
+          "visibility": 6000,
+          "visibilityKm": 6,
+          "wind": 18,
+          "windDirection": null
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hourly": {
+            "cloud_cover": [
+              0, 41.7, 14.7, 16.9, 54.3, 22.9, 42.3, 55, 58.8, 14.3, 43.9
+            ],
+            "cloud_cover_high": [
+              36.3, 46.1, 31.7, 49.4, 48.6, 8.8, 39.3, 16, 1.5, 11.8, 54.9
+            ],
+            "cloud_cover_low": [
+              27.7, 2.3, 20, 4.3, 17.5, 4.1, 29, 2.5, 23, 2.4, 29.5
+            ],
+            "cloud_cover_mid": [
+              8.9, 17.1, 9.3, 21.9, 4.6, 0.2, 10.4, 1.7, 16.6, 27.1, 4.8
+            ],
+            "precipitation_probability": [
+              27, 25, 30, 21, 34, 28, 35, 16, 19, 3, 11
+            ],
+            "relative_humidity_2m": [6, 79, 59, 15, 28, 90, 39, 89, 78, 67, 54],
+            "time": [
+              1767474000, 1767477600, 1767481200, 1767484800, 1767488400,
+              1767492000, 1767495600, 1767499200, 1767502800, 1767506400,
+              1767510000
+            ],
+            "visibility": [
+              5968, 2157, 26517, 10867, 28384, 1182, 4424, 26690, 10318, 5714,
+              16006
+            ],
+            "wind_gusts_10m": [
+              58.3, 26.9, 12.6, 56.8, 74.9, 63.6, 7.6, 28.5, 56.7, 23.9, 9.1
+            ],
+            "wind_speed_10m": [
+              36.1, 8.9, 3.7, 10.4, 21.2, 10.9, 2.1, 28.8, 26.2, 18.7, 33.2
+            ]
+          },
+          "moon": {
+            "illumination": 100,
+            "series": [
+              {
+                "altitude": -4.064667863147065,
+                "time": "2026-01-03T18:00:57.301Z"
+              },
+              {
+                "altitude": -0.2752958366238545,
+                "time": "2026-01-03T18:30:57.301Z"
+              },
+              {
+                "altitude": 3.3816478119720017,
+                "time": "2026-01-03T19:00:57.301Z"
+              },
+              {
+                "altitude": 7.592480545946813,
+                "time": "2026-01-03T19:30:57.301Z"
+              },
+              {
+                "altitude": 12.077169267900004,
+                "time": "2026-01-03T20:00:57.301Z"
+              },
+              {
+                "altitude": 16.75727881554728,
+                "time": "2026-01-03T20:30:57.301Z"
+              },
+              {
+                "altitude": 21.589079771942224,
+                "time": "2026-01-03T21:00:57.301Z"
+              },
+              {
+                "altitude": 26.53721531723182,
+                "time": "2026-01-03T21:30:57.301Z"
+              },
+              {
+                "altitude": 31.568369312399547,
+                "time": "2026-01-03T22:00:57.301Z"
+              },
+              {
+                "altitude": 36.64799597321897,
+                "time": "2026-01-03T22:30:57.301Z"
+              },
+              {
+                "altitude": 41.737079397993234,
+                "time": "2026-01-03T23:00:57.301Z"
+              },
+              {
+                "altitude": 46.78766204738216,
+                "time": "2026-01-03T23:30:57.301Z"
+              },
+              {
+                "altitude": 51.73578859434,
+                "time": "2026-01-04T00:00:57.301Z"
+              },
+              {
+                "altitude": 56.48975708890285,
+                "time": "2026-01-04T00:30:57.301Z"
+              },
+              {
+                "altitude": 60.91056104984399,
+                "time": "2026-01-04T01:00:57.301Z"
+              },
+              {
+                "altitude": 64.78217420679975,
+                "time": "2026-01-04T01:30:57.301Z"
+              },
+              {
+                "altitude": 67.78073790835356,
+                "time": "2026-01-04T02:00:57.301Z"
+              },
+              {
+                "altitude": 69.49295055873623,
+                "time": "2026-01-04T02:30:57.301Z"
+              },
+              {
+                "altitude": 69.57690481462711,
+                "time": "2026-01-04T03:00:57.301Z"
+              },
+              {
+                "altitude": 68.00931478510077,
+                "time": "2026-01-04T03:30:57.301Z"
+              },
+              {
+                "altitude": 65.10469919882692,
+                "time": "2026-01-04T04:00:57.301Z"
+              },
+              {
+                "altitude": 61.27718646741144,
+                "time": "2026-01-04T04:30:57.301Z"
+              },
+              {
+                "altitude": 56.861602351387376,
+                "time": "2026-01-04T05:00:57.301Z"
+              },
+              {
+                "altitude": 52.08357133133787,
+                "time": "2026-01-04T05:30:57.301Z"
+              },
+              {
+                "altitude": 47.08821813179201,
+                "time": "2026-01-04T06:00:57.301Z"
+              },
+              {
+                "altitude": 41.97069778172634,
+                "time": "2026-01-04T06:30:57.301Z"
+              },
+              {
+                "altitude": 36.796738334898336,
+                "time": "2026-01-04T07:00:57.301Z"
+              },
+              {
+                "altitude": 31.61505292806286,
+                "time": "2026-01-04T07:30:57.301Z"
+              },
+              {
+                "altitude": 26.46480166935318,
+                "time": "2026-01-04T08:00:57.301Z"
+              },
+              {
+                "altitude": 21.380336169877154,
+                "time": "2026-01-04T08:30:57.301Z"
+              },
+              {
+                "altitude": 16.394711851052506,
+                "time": "2026-01-04T09:00:57.301Z"
+              },
+              {
+                "altitude": 11.543521155008534,
+                "time": "2026-01-04T09:30:57.301Z"
+              },
+              {
+                "altitude": 6.873599426030282,
+                "time": "2026-01-04T10:00:57.301Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2026-01-04T07:52:12.193Z",
+            "start": "2026-01-03T20:17:06.947Z"
+          }
+        }
+      ],
+      "id": "sweep-2026-01-03-45n-30w",
+      "result": [
+        {
+          "cloud": 0,
+          "cloudHigh": 36,
+          "cloudLow": 28,
+          "cloudMid": 9,
+          "gust": 58,
+          "humidity": 6,
+          "moonAltitude": 21.4,
+          "moonIllumination": 100,
+          "precipitation": 27,
+          "score": 35,
+          "time": 1767474000000,
+          "visibility": 5968,
+          "visibilityKm": 6,
+          "wind": 36,
+          "windDirection": null
+        },
+        {
+          "cloud": 42,
+          "cloudHigh": 46,
+          "cloudLow": 2,
+          "cloudMid": 17,
+          "gust": 27,
+          "humidity": 79,
+          "moonAltitude": 31.4,
+          "moonIllumination": 100,
+          "precipitation": 25,
+          "score": 4,
+          "time": 1767477600000,
+          "visibility": 2157,
+          "visibilityKm": 2.2,
+          "wind": 9,
+          "windDirection": null
+        },
+        {
+          "cloud": 15,
+          "cloudHigh": 32,
+          "cloudLow": 20,
+          "cloudMid": 9,
+          "gust": 13,
+          "humidity": 59,
+          "moonAltitude": 41.6,
+          "moonIllumination": 100,
+          "precipitation": 30,
+          "score": 29,
+          "time": 1767481200000,
+          "visibility": 26517,
+          "visibilityKm": 26.5,
+          "wind": 4,
+          "windDirection": null
+        },
+        {
+          "cloud": 17,
+          "cloudHigh": 49,
+          "cloudLow": 4,
+          "cloudMid": 22,
+          "gust": 57,
+          "humidity": 15,
+          "moonAltitude": 51.6,
+          "moonIllumination": 100,
+          "precipitation": 21,
+          "score": 32,
+          "time": 1767484800000,
+          "visibility": 10867,
+          "visibilityKm": 10.9,
+          "wind": 10,
+          "windDirection": null
+        },
+        {
+          "cloud": 54,
+          "cloudHigh": 49,
+          "cloudLow": 18,
+          "cloudMid": 5,
+          "gust": 75,
+          "humidity": 28,
+          "moonAltitude": 60.8,
+          "moonIllumination": 100,
+          "precipitation": 34,
+          "score": 3,
+          "time": 1767488400000,
+          "visibility": 28384,
+          "visibilityKm": 28.4,
+          "wind": 21,
+          "windDirection": null
+        },
+        {
+          "cloud": 23,
+          "cloudHigh": 9,
+          "cloudLow": 4,
+          "cloudMid": 0,
+          "gust": 64,
+          "humidity": 90,
+          "moonAltitude": 67.7,
+          "moonIllumination": 100,
+          "precipitation": 28,
+          "score": 7,
+          "time": 1767492000000,
+          "visibility": 1182,
+          "visibilityKm": 1.2,
+          "wind": 11,
+          "windDirection": null
+        },
+        {
+          "cloud": 42,
+          "cloudHigh": 39,
+          "cloudLow": 29,
+          "cloudMid": 10,
+          "gust": 8,
+          "humidity": 39,
+          "moonAltitude": 69.6,
+          "moonIllumination": 100,
+          "precipitation": 35,
+          "score": 4,
+          "time": 1767495600000,
+          "visibility": 4424,
+          "visibilityKm": 4.4,
+          "wind": 2,
+          "windDirection": null
+        },
+        {
+          "cloud": 55,
+          "cloudHigh": 16,
+          "cloudLow": 3,
+          "cloudMid": 2,
+          "gust": 29,
+          "humidity": 89,
+          "moonAltitude": 65.2,
+          "moonIllumination": 100,
+          "precipitation": 16,
+          "score": 49,
+          "time": 1767499200000,
+          "visibility": 26690,
+          "visibilityKm": 26.7,
+          "wind": 29,
+          "windDirection": null
+        },
+        {
+          "cloud": 59,
+          "cloudHigh": 2,
+          "cloudLow": 23,
+          "cloudMid": 17,
+          "gust": 57,
+          "humidity": 78,
+          "moonAltitude": 57,
+          "moonIllumination": 100,
+          "precipitation": 19,
+          "score": 10,
+          "time": 1767502800000,
+          "visibility": 10318,
+          "visibilityKm": 10.3,
+          "wind": 26,
+          "windDirection": null
+        },
+        {
+          "cloud": 14,
+          "cloudHigh": 12,
+          "cloudLow": 2,
+          "cloudMid": 27,
+          "gust": 24,
+          "humidity": 67,
+          "moonAltitude": 47.2,
+          "moonIllumination": 100,
+          "precipitation": 3,
+          "score": 46,
+          "time": 1767506400000,
+          "visibility": 5714,
+          "visibilityKm": 5.7,
+          "wind": 19,
+          "windDirection": null
+        },
+        {
+          "cloud": 44,
+          "cloudHigh": 55,
+          "cloudLow": 30,
+          "cloudMid": 5,
+          "gust": 9,
+          "humidity": 54,
+          "moonAltitude": 37,
+          "moonIllumination": 100,
+          "precipitation": 11,
+          "score": 11,
+          "time": 1767510000000,
+          "visibility": 16006,
+          "visibilityKm": 16,
+          "wind": 33,
+          "windDirection": null
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hourly": {
+            "cloud_cover": [
+              70, 50.5, 16.3, 58.8, 40.9, 34.9, 2.6, 32.4, 55.8, 54.8
+            ],
+            "cloud_cover_high": [
+              46.9, 24.5, 29.2, 56, 42.9, 45.9, 28.1, 15, 38.6, 50.7
+            ],
+            "cloud_cover_low": [
+              22.3, 7.1, 2.4, 22.6, 5.9, 7.6, 11.6, 10.9, 29.7, 11.7
+            ],
+            "cloud_cover_mid": [
+              10.9, 8.3, 25.5, 12.2, 25.1, 0.6, 13.3, 10.9, 17.1, 30
+            ],
+            "precipitation_probability": [
+              24, 27, 27, 51, 56, 47, 16, 57, 33, 7
+            ],
+            "relative_humidity_2m": [19, 40, 64, 69, 16, 32, 79, 28, 14, 84],
+            "time": [
+              1777647600, 1777651200, 1777654800, 1777658400, 1777662000,
+              1777665600, 1777669200, 1777672800, 1777676400, 1777680000
+            ],
+            "visibility": [
+              25020, 6379, 22150, 10320, 23484, 29832, 2046, 2337, 27989, 15960
+            ],
+            "wind_gusts_10m": [
+              76.6, 29.8, 25.9, 7.2, 61, 1.7, 41.7, 8.4, 60.7, 15.9
+            ],
+            "wind_speed_10m": [
+              15.6, 39.3, 16.1, 6.4, 29.2, 7.3, 34.7, 24.9, 33.5, 20
+            ]
+          },
+          "moon": {
+            "illumination": 100,
+            "series": [
+              {
+                "altitude": -2.492788494605108,
+                "time": "2026-05-01T13:17:21.551Z"
+              },
+              {
+                "altitude": 3.821702057765961,
+                "time": "2026-05-01T13:47:21.551Z"
+              },
+              {
+                "altitude": 10.50705227140142,
+                "time": "2026-05-01T14:17:21.551Z"
+              },
+              {
+                "altitude": 17.320549486499218,
+                "time": "2026-05-01T14:47:21.551Z"
+              },
+              {
+                "altitude": 24.187444307685013,
+                "time": "2026-05-01T15:17:21.551Z"
+              },
+              {
+                "altitude": 31.086603057636275,
+                "time": "2026-05-01T15:47:21.551Z"
+              },
+              {
+                "altitude": 38.00406148780803,
+                "time": "2026-05-01T16:17:21.551Z"
+              },
+              {
+                "altitude": 44.92570016561978,
+                "time": "2026-05-01T16:47:21.551Z"
+              },
+              {
+                "altitude": 51.83308934025039,
+                "time": "2026-05-01T17:17:21.551Z"
+              },
+              {
+                "altitude": 58.696908040734456,
+                "time": "2026-05-01T17:47:21.551Z"
+              },
+              {
+                "altitude": 65.46090217669118,
+                "time": "2026-05-01T18:17:21.551Z"
+              },
+              {
+                "altitude": 71.99235166389637,
+                "time": "2026-05-01T18:47:21.551Z"
+              },
+              {
+                "altitude": 77.88876827959449,
+                "time": "2026-05-01T19:17:21.551Z"
+              },
+              {
+                "altitude": 81.65542368574863,
+                "time": "2026-05-01T19:47:21.551Z"
+              },
+              {
+                "altitude": 80.3488614887517,
+                "time": "2026-05-01T20:17:21.551Z"
+              },
+              {
+                "altitude": 75.26867485449799,
+                "time": "2026-05-01T20:47:21.551Z"
+              },
+              {
+                "altitude": 69.0048256990884,
+                "time": "2026-05-01T21:17:21.551Z"
+              },
+              {
+                "altitude": 62.36255872004989,
+                "time": "2026-05-01T21:47:21.551Z"
+              },
+              {
+                "altitude": 55.57347437013777,
+                "time": "2026-05-01T22:17:21.551Z"
+              },
+              {
+                "altitude": 48.724248928832374,
+                "time": "2026-05-01T22:47:21.551Z"
+              },
+              {
+                "altitude": 41.855840866928624,
+                "time": "2026-05-01T23:17:21.551Z"
+              },
+              {
+                "altitude": 34.991912044420886,
+                "time": "2026-05-01T23:47:21.551Z"
+              },
+              {
+                "altitude": 28.149063956512954,
+                "time": "2026-05-02T00:17:21.551Z"
+              },
+              {
+                "altitude": 21.341699738224463,
+                "time": "2026-05-02T00:47:21.551Z"
+              },
+              {
+                "altitude": 14.586356644999938,
+                "time": "2026-05-02T01:17:21.551Z"
+              },
+              {
+                "altitude": 7.914233119414305,
+                "time": "2026-05-02T01:47:21.551Z"
+              },
+              {
+                "altitude": 1.4964331118996483,
+                "time": "2026-05-02T02:17:21.551Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2026-05-02T00:54:31.768Z",
+            "start": "2026-05-01T14:59:36.975Z"
+          }
+        }
+      ],
+      "id": "sweep-2026-05-01-12s-60e",
+      "result": [
+        {
+          "cloud": 70,
+          "cloudHigh": 47,
+          "cloudLow": 22,
+          "cloudMid": 11,
+          "gust": 77,
+          "humidity": 19,
+          "moonAltitude": 20.2,
+          "moonIllumination": 100,
+          "precipitation": 24,
+          "score": 1,
+          "time": 1777647600000,
+          "visibility": 25020,
+          "visibilityKm": 25,
+          "wind": 16,
+          "windDirection": null
+        },
+        {
+          "cloud": 51,
+          "cloudHigh": 25,
+          "cloudLow": 7,
+          "cloudMid": 8,
+          "gust": 30,
+          "humidity": 40,
+          "moonAltitude": 34,
+          "moonIllumination": 100,
+          "precipitation": 27,
+          "score": 14,
+          "time": 1777651200000,
+          "visibility": 6379,
+          "visibilityKm": 6.4,
+          "wind": 39,
+          "windDirection": null
+        },
+        {
+          "cloud": 16,
+          "cloudHigh": 29,
+          "cloudLow": 2,
+          "cloudMid": 26,
+          "gust": 26,
+          "humidity": 64,
+          "moonAltitude": 47.8,
+          "moonIllumination": 100,
+          "precipitation": 27,
+          "score": 32,
+          "time": 1777654800000,
+          "visibility": 22150,
+          "visibilityKm": 22.2,
+          "wind": 16,
+          "windDirection": null
+        },
+        {
+          "cloud": 59,
+          "cloudHigh": 56,
+          "cloudLow": 23,
+          "cloudMid": 12,
+          "gust": 7,
+          "humidity": 69,
+          "moonAltitude": 61.5,
+          "moonIllumination": 100,
+          "precipitation": 51,
+          "score": 0,
+          "time": 1777658400000,
+          "visibility": 10320,
+          "visibilityKm": 10.3,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 41,
+          "cloudHigh": 43,
+          "cloudLow": 6,
+          "cloudMid": 25,
+          "gust": 61,
+          "humidity": 16,
+          "moonAltitude": 74.5,
+          "moonIllumination": 100,
+          "precipitation": 56,
+          "score": 2,
+          "time": 1777662000000,
+          "visibility": 23484,
+          "visibilityKm": 23.5,
+          "wind": 29,
+          "windDirection": null
+        },
+        {
+          "cloud": 35,
+          "cloudHigh": 46,
+          "cloudLow": 8,
+          "cloudMid": 1,
+          "gust": 2,
+          "humidity": 32,
+          "moonAltitude": 81.1,
+          "moonIllumination": 100,
+          "precipitation": 47,
+          "score": 6,
+          "time": 1777665600000,
+          "visibility": 29832,
+          "visibilityKm": 29.8,
+          "wind": 7,
+          "windDirection": null
+        },
+        {
+          "cloud": 3,
+          "cloudHigh": 28,
+          "cloudLow": 12,
+          "cloudMid": 13,
+          "gust": 42,
+          "humidity": 79,
+          "moonAltitude": 72.6,
+          "moonIllumination": 100,
+          "precipitation": 16,
+          "score": 27,
+          "time": 1777669200000,
+          "visibility": 2046,
+          "visibilityKm": 2,
+          "wind": 35,
+          "windDirection": null
+        },
+        {
+          "cloud": 32,
+          "cloudHigh": 15,
+          "cloudLow": 11,
+          "cloudMid": 11,
+          "gust": 8,
+          "humidity": 28,
+          "moonAltitude": 59.5,
+          "moonIllumination": 100,
+          "precipitation": 57,
+          "score": 2,
+          "time": 1777672800000,
+          "visibility": 2337,
+          "visibilityKm": 2.3,
+          "wind": 25,
+          "windDirection": null
+        },
+        {
+          "cloud": 56,
+          "cloudHigh": 39,
+          "cloudLow": 30,
+          "cloudMid": 17,
+          "gust": 61,
+          "humidity": 14,
+          "moonAltitude": 45.8,
+          "moonIllumination": 100,
+          "precipitation": 33,
+          "score": 1,
+          "time": 1777676400000,
+          "visibility": 27989,
+          "visibilityKm": 28,
+          "wind": 34,
+          "windDirection": null
+        },
+        {
+          "cloud": 55,
+          "cloudHigh": 51,
+          "cloudLow": 12,
+          "cloudMid": 30,
+          "gust": 16,
+          "humidity": 84,
+          "moonAltitude": 32.1,
+          "moonIllumination": 100,
+          "precipitation": 7,
+          "score": 4,
+          "time": 1777680000000,
+          "visibility": 15960,
+          "visibilityKm": 16,
+          "wind": 20,
+          "windDirection": null
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hourly": {
+            "cloud_cover": [
+              39.2, 5.3, 63, 1.4, 21.6, 54.8, 33.8, 55, 7.1, 11.1, 58.2
+            ],
+            "cloud_cover_high": [
+              24.7, 19.5, 57.4, 34.3, 47.6, 28.9, 26.8, 14.2, 6, 22, 24.5
+            ],
+            "cloud_cover_low": [
+              25.7, 21.3, 10.7, 2.8, 2.5, 6, 1.2, 25.6, 11.5, 1.3, 5.1
+            ],
+            "cloud_cover_mid": [
+              29.3, 28.1, 2.6, 14.5, 27.6, 10.3, 26.7, 1.9, 0.1, 14.2, 24.2
+            ],
+            "precipitation_probability": [
+              47, 1, 55, 3, 32, 36, 6, 3, 31, 55, 27
+            ],
+            "relative_humidity_2m": [77, 77, 91, 44, 69, 7, 24, 64, 66, 70, 29],
+            "time": [
+              1793037600, 1793041200, 1793044800, 1793048400, 1793052000,
+              1793055600, 1793059200, 1793062800, 1793066400, 1793070000,
+              1793073600
+            ],
+            "visibility": [
+              16704, 28732, 14216, 10408, 22416, 13968, 17220, 27753, 18288,
+              20046, 24095
+            ],
+            "wind_gusts_10m": [
+              61.3, 8, 18.1, 70.7, 73.5, 46, 10.2, 22.9, 56, 50.3, 1.6
+            ],
+            "wind_speed_10m": [
+              4.7, 29.9, 18.8, 33.5, 4.6, 4.1, 14.2, 25.8, 6.8, 6.6, 16.7
+            ]
+          },
+          "moon": {
+            "illumination": 100,
+            "series": [
+              {
+                "altitude": 0.5893407873527252,
+                "time": "2026-10-26T15:16:59.666Z"
+              },
+              {
+                "altitude": 3.634056235316365,
+                "time": "2026-10-26T15:46:59.666Z"
+              },
+              {
+                "altitude": 7.048721385487312,
+                "time": "2026-10-26T16:16:59.666Z"
+              },
+              {
+                "altitude": 10.672291712856492,
+                "time": "2026-10-26T16:46:59.666Z"
+              },
+              {
+                "altitude": 14.438333341492424,
+                "time": "2026-10-26T17:16:59.666Z"
+              },
+              {
+                "altitude": 18.30018800836403,
+                "time": "2026-10-26T17:46:59.666Z"
+              },
+              {
+                "altitude": 22.215612131753943,
+                "time": "2026-10-26T18:16:59.666Z"
+              },
+              {
+                "altitude": 26.142041420238556,
+                "time": "2026-10-26T18:46:59.666Z"
+              },
+              {
+                "altitude": 30.033991474944344,
+                "time": "2026-10-26T19:16:59.666Z"
+              },
+              {
+                "altitude": 33.84084940333146,
+                "time": "2026-10-26T19:46:59.666Z"
+              },
+              {
+                "altitude": 37.5046402745206,
+                "time": "2026-10-26T20:16:59.666Z"
+              },
+              {
+                "altitude": 40.95780250968375,
+                "time": "2026-10-26T20:46:59.666Z"
+              },
+              {
+                "altitude": 44.12138862198195,
+                "time": "2026-10-26T21:16:59.666Z"
+              },
+              {
+                "altitude": 46.90463698942498,
+                "time": "2026-10-26T21:46:59.666Z"
+              },
+              {
+                "altitude": 49.20751151805415,
+                "time": "2026-10-26T22:16:59.666Z"
+              },
+              {
+                "altitude": 50.928161644257074,
+                "time": "2026-10-26T22:46:59.666Z"
+              },
+              {
+                "altitude": 51.976344605707624,
+                "time": "2026-10-26T23:16:59.666Z"
+              },
+              {
+                "altitude": 52.2907536922453,
+                "time": "2026-10-26T23:46:59.666Z"
+              },
+              {
+                "altitude": 51.853956613562154,
+                "time": "2026-10-27T00:16:59.666Z"
+              },
+              {
+                "altitude": 50.69732658446702,
+                "time": "2026-10-27T00:46:59.666Z"
+              },
+              {
+                "altitude": 48.893076858501836,
+                "time": "2026-10-27T01:16:59.666Z"
+              },
+              {
+                "altitude": 46.5379252962297,
+                "time": "2026-10-27T01:46:59.666Z"
+              },
+              {
+                "altitude": 43.73622410572518,
+                "time": "2026-10-27T02:16:59.666Z"
+              },
+              {
+                "altitude": 40.58792405006317,
+                "time": "2026-10-27T02:46:59.666Z"
+              },
+              {
+                "altitude": 37.18248092968112,
+                "time": "2026-10-27T03:16:59.666Z"
+              },
+              {
+                "altitude": 33.59724398503234,
+                "time": "2026-10-27T03:46:59.666Z"
+              },
+              {
+                "altitude": 29.8983674367172,
+                "time": "2026-10-27T04:16:59.666Z"
+              },
+              {
+                "altitude": 26.1427850691205,
+                "time": "2026-10-27T04:46:59.666Z"
+              },
+              {
+                "altitude": 22.380426990471562,
+                "time": "2026-10-27T05:16:59.666Z"
+              },
+              {
+                "altitude": 18.656325648538072,
+                "time": "2026-10-27T05:46:59.666Z"
+              },
+              {
+                "altitude": 15.012555838404936,
+                "time": "2026-10-27T06:16:59.666Z"
+              },
+              {
+                "altitude": 11.490212460179578,
+                "time": "2026-10-27T06:46:59.666Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2026-10-27T04:09:29.475Z",
+            "start": "2026-10-26T17:59:15.794Z"
+          }
+        }
+      ],
+      "id": "sweep-2026-10-26-58n-10e",
+      "result": [
+        {
+          "cloud": 39,
+          "cloudHigh": 25,
+          "cloudLow": 26,
+          "cloudMid": 29,
+          "gust": 61,
+          "humidity": 77,
+          "moonAltitude": 20,
+          "moonIllumination": 100,
+          "precipitation": 47,
+          "score": 4,
+          "time": 1793037600000,
+          "visibility": 16704,
+          "visibilityKm": 16.7,
+          "wind": 5,
+          "windDirection": null
+        },
+        {
+          "cloud": 5,
+          "cloudHigh": 20,
+          "cloudLow": 21,
+          "cloudMid": 28,
+          "gust": 8,
+          "humidity": 77,
+          "moonAltitude": 27.8,
+          "moonIllumination": 100,
+          "precipitation": 1,
+          "score": 73,
+          "time": 1793041200000,
+          "visibility": 28732,
+          "visibilityKm": 28.7,
+          "wind": 30,
+          "windDirection": null
+        },
+        {
+          "cloud": 63,
+          "cloudHigh": 57,
+          "cloudLow": 11,
+          "cloudMid": 3,
+          "gust": 18,
+          "humidity": 91,
+          "moonAltitude": 35.4,
+          "moonIllumination": 100,
+          "precipitation": 55,
+          "score": 2,
+          "time": 1793044800000,
+          "visibility": 14216,
+          "visibilityKm": 14.2,
+          "wind": 19,
+          "windDirection": null
+        },
+        {
+          "cloud": 1,
+          "cloudHigh": 34,
+          "cloudLow": 3,
+          "cloudMid": 15,
+          "gust": 71,
+          "humidity": 44,
+          "moonAltitude": 42.3,
+          "moonIllumination": 100,
+          "precipitation": 3,
+          "score": 50,
+          "time": 1793048400000,
+          "visibility": 10408,
+          "visibilityKm": 10.4,
+          "wind": 34,
+          "windDirection": null
+        },
+        {
+          "cloud": 22,
+          "cloudHigh": 48,
+          "cloudLow": 3,
+          "cloudMid": 28,
+          "gust": 74,
+          "humidity": 69,
+          "moonAltitude": 47.9,
+          "moonIllumination": 100,
+          "precipitation": 32,
+          "score": 12,
+          "time": 1793052000000,
+          "visibility": 22416,
+          "visibilityKm": 22.4,
+          "wind": 5,
+          "windDirection": null
+        },
+        {
+          "cloud": 55,
+          "cloudHigh": 29,
+          "cloudLow": 6,
+          "cloudMid": 10,
+          "gust": 46,
+          "humidity": 7,
+          "moonAltitude": 51.4,
+          "moonIllumination": 100,
+          "precipitation": 36,
+          "score": 10,
+          "time": 1793055600000,
+          "visibility": 13968,
+          "visibilityKm": 14,
+          "wind": 4,
+          "windDirection": null
+        },
+        {
+          "cloud": 34,
+          "cloudHigh": 27,
+          "cloudLow": 1,
+          "cloudMid": 27,
+          "gust": 10,
+          "humidity": 24,
+          "moonAltitude": 52.1,
+          "moonIllumination": 100,
+          "precipitation": 6,
+          "score": 22,
+          "time": 1793059200000,
+          "visibility": 17220,
+          "visibilityKm": 17.2,
+          "wind": 14,
+          "windDirection": null
+        },
+        {
+          "cloud": 55,
+          "cloudHigh": 14,
+          "cloudLow": 26,
+          "cloudMid": 2,
+          "gust": 23,
+          "humidity": 64,
+          "moonAltitude": 49.9,
+          "moonIllumination": 100,
+          "precipitation": 3,
+          "score": 22,
+          "time": 1793062800000,
+          "visibility": 27753,
+          "visibilityKm": 27.8,
+          "wind": 26,
+          "windDirection": null
+        },
+        {
+          "cloud": 7,
+          "cloudHigh": 6,
+          "cloudLow": 12,
+          "cloudMid": 0,
+          "gust": 56,
+          "humidity": 66,
+          "moonAltitude": 45.3,
+          "moonIllumination": 100,
+          "precipitation": 31,
+          "score": 30,
+          "time": 1793066400000,
+          "visibility": 18288,
+          "visibilityKm": 18.3,
+          "wind": 7,
+          "windDirection": null
+        },
+        {
+          "cloud": 11,
+          "cloudHigh": 22,
+          "cloudLow": 1,
+          "cloudMid": 14,
+          "gust": 50,
+          "humidity": 70,
+          "moonAltitude": 39.1,
+          "moonIllumination": 100,
+          "precipitation": 55,
+          "score": 9,
+          "time": 1793070000000,
+          "visibility": 20046,
+          "visibilityKm": 20,
+          "wind": 7,
+          "windDirection": null
+        },
+        {
+          "cloud": 58,
+          "cloudHigh": 25,
+          "cloudLow": 5,
+          "cloudMid": 24,
+          "gust": 2,
+          "humidity": 29,
+          "moonAltitude": 32,
+          "moonIllumination": 100,
+          "precipitation": 27,
+          "score": 9,
+          "time": 1793073600000,
+          "visibility": 24095,
+          "visibilityKm": 24.1,
+          "wind": 17,
+          "windDirection": null
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hourly": {
+            "cloud_cover": [2, 1, 3, 2, 3, 4],
+            "cloud_cover_high": [0, 0, 0, 0, 0, 0],
+            "cloud_cover_low": [2, 1, 3, 2, 3, 4],
+            "cloud_cover_mid": [1, 0, 0, 0, 1, 2],
+            "cloud_cover_model_ecmwf_ifs025": [2, 0, 3, 8, 11, 10],
+            "cloud_cover_model_gfs_seamless": [0, 0, 13, 0, 36, 0],
+            "cloud_cover_model_icon_seamless": [39, 61, 74, 68, 58, 0],
+            "cloud_cover_model_jma_seamless": [2, 1, 3, 2, 3, 4],
+            "precipitation_probability": [0, 0, 0, 0, 0, 0],
+            "relative_humidity_2m": [60, 60, 60, 60, 60, 60],
+            "time": [
+              "2026-10-22T11:00:00Z",
+              "2026-10-22T12:00:00Z",
+              "2026-10-22T13:00:00Z",
+              "2026-10-22T14:00:00Z",
+              "2026-10-22T15:00:00Z",
+              "2026-10-22T16:00:00Z"
+            ],
+            "visibility": [24000, 24000, 24000, 24000, 24000, 24000],
+            "wind_speed_10m": [6, 6, 6, 6, 6, 6]
+          },
+          "night": {
+            "end": "2026-10-22T16:00:00Z",
+            "start": "2026-10-22T11:00:00Z"
+          }
+        }
+      ],
+      "id": "several-models-retain-the-median-night-2026-10-22",
+      "result": [
+        {
+          "cloud": 2,
+          "cloudHigh": 0,
+          "cloudLow": 2,
+          "cloudMax": 39,
+          "cloudMid": 1,
+          "cloudMin": 0,
+          "cloudModels": {
+            "ecmwf_ifs025": 2,
+            "gfs_seamless": 0,
+            "icon_seamless": 39,
+            "jma_seamless": 2
+          },
+          "cloudSpread": 39,
+          "cloudUncertain": false,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 98,
+          "time": 1792666800000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 1,
+          "cloudHigh": 0,
+          "cloudLow": 1,
+          "cloudMax": 61,
+          "cloudMid": 0,
+          "cloudMin": 0,
+          "cloudModels": {
+            "ecmwf_ifs025": 0,
+            "gfs_seamless": 0,
+            "icon_seamless": 61,
+            "jma_seamless": 1
+          },
+          "cloudSpread": 61,
+          "cloudUncertain": true,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 100,
+          "time": 1792670400000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 8,
+          "cloudHigh": 0,
+          "cloudLow": 3,
+          "cloudMax": 74,
+          "cloudMid": 0,
+          "cloudMin": 3,
+          "cloudModels": {
+            "ecmwf_ifs025": 3,
+            "gfs_seamless": 13,
+            "icon_seamless": 74,
+            "jma_seamless": 3
+          },
+          "cloudSpread": 71,
+          "cloudUncertain": true,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 87,
+          "time": 1792674000000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 5,
+          "cloudHigh": 0,
+          "cloudLow": 2,
+          "cloudMax": 68,
+          "cloudMid": 0,
+          "cloudMin": 0,
+          "cloudModels": {
+            "ecmwf_ifs025": 8,
+            "gfs_seamless": 0,
+            "icon_seamless": 68,
+            "jma_seamless": 2
+          },
+          "cloudSpread": 68,
+          "cloudUncertain": true,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 95,
+          "time": 1792677600000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 24,
+          "cloudHigh": 0,
+          "cloudLow": 3,
+          "cloudMax": 58,
+          "cloudMid": 1,
+          "cloudMin": 3,
+          "cloudModels": {
+            "ecmwf_ifs025": 11,
+            "gfs_seamless": 36,
+            "icon_seamless": 58,
+            "jma_seamless": 3
+          },
+          "cloudSpread": 55,
+          "cloudUncertain": false,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 50,
+          "time": 1792681200000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 2,
+          "cloudHigh": 0,
+          "cloudLow": 4,
+          "cloudMax": 10,
+          "cloudMid": 2,
+          "cloudMin": 0,
+          "cloudModels": {
+            "ecmwf_ifs025": 10,
+            "gfs_seamless": 0,
+            "icon_seamless": 0,
+            "jma_seamless": 4
+          },
+          "cloudSpread": 10,
+          "cloudUncertain": false,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 98,
+          "time": 1792684800000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hourly": {
+            "cloud_cover": [2, 1, 3, 2, 3, 4],
+            "cloud_cover_high": [0, 0, 0, 0, 0, 0],
+            "cloud_cover_low": [2, 1, 3, 2, 3, 4],
+            "cloud_cover_mid": [1, 0, 0, 0, 1, 2],
+            "cloud_cover_model_best_match": [2, 1, 3, 2, 3, 4],
+            "precipitation_probability": [0, 0, 0, 0, 0, 0],
+            "relative_humidity_2m": [60, 60, 60, 60, 60, 60],
+            "time": [
+              "2026-10-22T11:00:00Z",
+              "2026-10-22T12:00:00Z",
+              "2026-10-22T13:00:00Z",
+              "2026-10-22T14:00:00Z",
+              "2026-10-22T15:00:00Z",
+              "2026-10-22T16:00:00Z"
+            ],
+            "visibility": [24000, 24000, 24000, 24000, 24000, 24000],
+            "wind_speed_10m": [6, 6, 6, 6, 6, 6]
+          },
+          "night": {
+            "end": "2026-10-22T16:00:00Z",
+            "start": "2026-10-22T11:00:00Z"
+          }
+        }
+      ],
+      "id": "one-model-answering-reads-as-before",
+      "result": [
+        {
+          "cloud": 2,
+          "cloudHigh": 0,
+          "cloudLow": 2,
+          "cloudMax": null,
+          "cloudMid": 1,
+          "cloudMin": null,
+          "cloudModels": { "best_match": 2 },
+          "cloudSpread": null,
+          "cloudUncertain": false,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 98,
+          "time": 1792666800000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 1,
+          "cloudHigh": 0,
+          "cloudLow": 1,
+          "cloudMax": null,
+          "cloudMid": 0,
+          "cloudMin": null,
+          "cloudModels": { "best_match": 1 },
+          "cloudSpread": null,
+          "cloudUncertain": false,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 99,
+          "time": 1792670400000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 3,
+          "cloudHigh": 0,
+          "cloudLow": 3,
+          "cloudMax": null,
+          "cloudMid": 0,
+          "cloudMin": null,
+          "cloudModels": { "best_match": 3 },
+          "cloudSpread": null,
+          "cloudUncertain": false,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 97,
+          "time": 1792674000000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 2,
+          "cloudHigh": 0,
+          "cloudLow": 2,
+          "cloudMax": null,
+          "cloudMid": 0,
+          "cloudMin": null,
+          "cloudModels": { "best_match": 2 },
+          "cloudSpread": null,
+          "cloudUncertain": false,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 98,
+          "time": 1792677600000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 3,
+          "cloudHigh": 0,
+          "cloudLow": 3,
+          "cloudMax": null,
+          "cloudMid": 1,
+          "cloudMin": null,
+          "cloudModels": { "best_match": 3 },
+          "cloudSpread": null,
+          "cloudUncertain": false,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 97,
+          "time": 1792681200000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 4,
+          "cloudHigh": 0,
+          "cloudLow": 4,
+          "cloudMax": null,
+          "cloudMid": 2,
+          "cloudMin": null,
+          "cloudModels": { "best_match": 4 },
+          "cloudSpread": null,
+          "cloudUncertain": false,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 96,
+          "time": 1792684800000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hourly": {
+            "cloud_cover": [2, 3, 2, 3, 4, 4],
+            "cloud_cover_high": [0, 0, 0, 0, 0, 0],
+            "cloud_cover_low": [2, 3, 2, 3, 4, 4],
+            "cloud_cover_mid": [0, 0, 0, 0, 0, 0],
+            "precipitation_probability": [0, 0, 0, 0, 0, 0],
+            "relative_humidity_2m": [60, 60, 60, 60, 60, 60],
+            "time": [
+              "2026-10-22T11:00:00Z",
+              "2026-10-22T12:00:00Z",
+              "2026-10-22T13:00:00Z",
+              "2026-10-22T14:00:00Z",
+              "2026-10-22T15:00:00Z",
+              "2026-10-22T16:00:00Z"
+            ],
+            "visibility": [24000, 24000, 24000, 24000, 24000, 24000],
+            "wind_speed_10m": [6, 6, 6, 6, 6, 6]
+          },
+          "night": {
+            "end": "2026-10-22T16:00:00Z",
+            "start": "2026-10-22T11:00:00Z"
+          }
+        }
+      ],
+      "id": "no-model-series-reads-as-before-met-norway-only",
+      "result": [
+        {
+          "cloud": 2,
+          "cloudHigh": 0,
+          "cloudLow": 2,
+          "cloudMid": 0,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 98,
+          "time": 1792666800000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 3,
+          "cloudHigh": 0,
+          "cloudLow": 3,
+          "cloudMid": 0,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 97,
+          "time": 1792670400000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 2,
+          "cloudHigh": 0,
+          "cloudLow": 2,
+          "cloudMid": 0,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 98,
+          "time": 1792674000000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 3,
+          "cloudHigh": 0,
+          "cloudLow": 3,
+          "cloudMid": 0,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 97,
+          "time": 1792677600000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 4,
+          "cloudHigh": 0,
+          "cloudLow": 4,
+          "cloudMid": 0,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 96,
+          "time": 1792681200000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        },
+        {
+          "cloud": 4,
+          "cloudHigh": 0,
+          "cloudLow": 4,
+          "cloudMid": 0,
+          "humidity": 60,
+          "precipitation": 0,
+          "score": 96,
+          "time": 1792684800000,
+          "visibility": 24000,
+          "visibilityKm": 24,
+          "wind": 6,
+          "windDirection": null
+        }
+      ]
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "forecast-hourly"
+}

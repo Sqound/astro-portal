@@ -1,0 +1,8 @@
+{
+  "module": "target-hemispheres",
+  "export": "hemisphereVisibility",
+  "cases": [
+    { "id": "northern-target", "args": [35] },
+    { "id": "southern-target", "args": [-35] }
+  ]
+}

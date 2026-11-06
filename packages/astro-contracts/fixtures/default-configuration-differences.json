@@ -1,0 +1,323 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": null,
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": "inv-refractor-72",
+          "windTolerance": { "preset": "standard" }
+        },
+        null,
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "no-configuration",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": null,
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": "inv-refractor-72",
+          "windTolerance": { "preset": "standard" }
+        },
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "inv-refractor-72"
+        },
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "identical",
+      "result": []
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": null,
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": "seestar-s50",
+          "windTolerance": { "preset": "standard" }
+        },
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "inv-refractor-72"
+        },
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "a-smart-telescope-brings-its-camera-and-mount",
+      "result": ["telescope", "camera", "mount"]
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": null,
+          "filterIds": ["inv-filter-duo"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": "seestar-s50",
+          "windTolerance": { "preset": "standard" }
+        },
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "inv-refractor-72"
+        },
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "the-board-plan-differs-on-telescope-camera-and-mount-and-filters",
+      "result": ["telescope", "camera", "filters", "mount"]
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": null,
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": "seestar-s30",
+          "windTolerance": { "preset": "standard" }
+        },
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "seestar-s50"
+        },
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "two-smart-telescopes",
+      "result": ["telescope", "camera", "mount"]
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": null,
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "visual",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": "inv-refractor-72",
+          "windTolerance": { "preset": "standard" }
+        },
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "inv-refractor-72"
+        },
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "the-mode-differs",
+      "result": ["mode"]
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": null,
+          "filterIds": ["inv-filter-uvir", "inv-filter-duo"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": "inv-refractor-72",
+          "windTolerance": { "preset": "standard" }
+        },
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "inv-refractor-72"
+        },
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "filters-in-another-order-are-the-same",
+      "result": []
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": null,
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": null,
+          "windTolerance": { "preset": "standard" }
+        },
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq"
+        },
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "a-telescope-to-choose-on-both-sides-is-the-same",
+      "result": []
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": null,
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": "skywatcher-skymax-127",
+          "windTolerance": { "preset": "standard" }
+        },
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "skywatcher-evostar-80ed"
+        },
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "another-catalogue-telescope-differs",
+      "result": ["telescope"]
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": null,
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "inv-reducer-08",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": "inv-refractor-72",
+          "windTolerance": { "preset": "standard" }
+        },
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "inv-refractor-72"
+        },
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "a-reducer",
+      "result": ["modifier"]
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": "inv-eyepiece-24",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "visual",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": "inv-refractor-72",
+          "windTolerance": { "preset": "standard" }
+        },
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": "inv-eyepiece-24",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "visual",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "inv-refractor-72"
+        },
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "a-visual-plan-compares-its-eyepiece",
+      "result": []
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "eyepieceFocalLengthMm": "",
+          "eyepieceId": null,
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "restrictToEquipment": false,
+          "telescopeId": "inv-refractor-72",
+          "windTolerance": { "preset": "standard" }
+        },
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq"
+        },
+        ["seestar-s50", "seestar-s30"]
+      ],
+      "id": "an-item-to-choose-differs-from-a-chosen-one",
+      "result": ["telescope"]
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "default-configuration-differences"
+}

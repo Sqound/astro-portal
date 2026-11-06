@@ -1,0 +1,21 @@
+{
+  "name": "planner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "exports": {
+    "./*": "./dist/*"
+  },
+  "dependencies": {
+    "astro-core": "*",
+    "astronomy-engine": "^2.1.19",
+    "portal": "*",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs"
+  }
+}

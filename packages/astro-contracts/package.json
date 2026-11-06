@@ -1,0 +1,21 @@
+{
+  "name": "astro-contracts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js",
+    "./capabilities": "./dist/capabilities.js",
+    "./pairing": "./dist/pairing.js",
+    "./change-signal": "./dist/change-signal.js",
+    "./service-identity": "./dist/service-identity.js",
+    "./locales": "./dist/locales.js",
+    "./legal-links": "./dist/legal-links.js"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node tools/write-locale-registry.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

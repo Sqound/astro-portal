@@ -1,0 +1,36 @@
+{
+  "module": "planner-plan-view-selection",
+  "package": "portal",
+  "file": "planner/state",
+  "export": "planViewForTargetSelection",
+  "cases": [
+    {
+      "id": "collapses-setup-and-forces-the-list-view",
+      "args": [
+        {
+          "constraintsCollapsed": false,
+          "equipmentCollapsed": false,
+          "source": "favorites",
+          "view": "map"
+        }
+      ]
+    },
+    { "id": "a-non-object-view-falls-back-to-the-defaults", "args": [null] },
+    {
+      "id": "an-existing-horizon-sub-state-is-merged",
+      "args": [{ "horizon": { "rotation": 45, "showLabels": true } }]
+    },
+    {
+      "id": "an-unknown-horizon-mode-reads-as-positions",
+      "args": [
+        {
+          "horizon": { "mode": "spiral", "pathTargetId": "m31", "rotation": 30 }
+        }
+      ]
+    },
+    {
+      "id": "the-path-mode-and-its-target-are-kept",
+      "args": [{ "horizon": { "mode": "path", "pathTargetId": "m31" } }]
+    }
+  ]
+}

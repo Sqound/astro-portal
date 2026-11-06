@@ -1,0 +1,188 @@
+{
+  "cases": [
+    {
+      "args": ["en"],
+      "id": "en",
+      "result": {
+        "decimalSeparator": ".",
+        "groupFrom": "fourDigits",
+        "groupSeparator": ",",
+        "midSentenceCase": "lower",
+        "rangeFirstMonth": "written",
+        "sentenceSeparator": " ",
+        "spacing": "latin"
+      }
+    },
+    {
+      "args": ["fr"],
+      "id": "fr",
+      "result": {
+        "decimalSeparator": ",",
+        "groupFrom": "fourDigits",
+        "groupSeparator": " ",
+        "midSentenceCase": "lower",
+        "rangeFirstMonth": "omitted",
+        "sentenceSeparator": " ",
+        "spacing": "latin"
+      }
+    },
+    {
+      "args": ["ja"],
+      "id": "ja",
+      "result": {
+        "decimalSeparator": ".",
+        "groupFrom": "fourDigits",
+        "groupSeparator": ",",
+        "midSentenceCase": "keep",
+        "rangeFirstMonth": "written",
+        "sentenceSeparator": "",
+        "spacing": "han"
+      }
+    },
+    {
+      "args": ["de"],
+      "id": "de",
+      "result": {
+        "decimalSeparator": ",",
+        "groupFrom": "fourDigits",
+        "groupSeparator": ".",
+        "midSentenceCase": "keep",
+        "rangeFirstMonth": "written",
+        "sentenceSeparator": " ",
+        "spacing": "latin"
+      }
+    },
+    {
+      "args": ["es"],
+      "id": "es",
+      "result": {
+        "decimalSeparator": ",",
+        "groupFrom": "fiveDigits",
+        "groupSeparator": ".",
+        "midSentenceCase": "lower",
+        "rangeFirstMonth": "omitted",
+        "sentenceSeparator": " ",
+        "spacing": "latin"
+      }
+    },
+    {
+      "args": ["it"],
+      "id": "it",
+      "result": {
+        "decimalSeparator": ",",
+        "groupFrom": "fiveDigits",
+        "groupSeparator": ".",
+        "midSentenceCase": "lower",
+        "rangeFirstMonth": "omitted",
+        "sentenceSeparator": " ",
+        "spacing": "latin"
+      }
+    },
+    {
+      "args": ["pt-BR"],
+      "id": "pt-BR",
+      "result": {
+        "decimalSeparator": ",",
+        "groupFrom": "fourDigits",
+        "groupSeparator": ".",
+        "midSentenceCase": "lower",
+        "rangeFirstMonth": "omitted",
+        "sentenceSeparator": " ",
+        "spacing": "latin"
+      }
+    },
+    {
+      "args": ["zh-Hans"],
+      "id": "zh-Hans",
+      "result": {
+        "decimalSeparator": ".",
+        "groupFrom": "fourDigits",
+        "groupSeparator": ",",
+        "midSentenceCase": "keep",
+        "rangeFirstMonth": "written",
+        "sentenceSeparator": "",
+        "spacing": "han"
+      }
+    },
+    {
+      "args": ["zh-Hant"],
+      "id": "zh-Hant",
+      "result": {
+        "decimalSeparator": ".",
+        "groupFrom": "fourDigits",
+        "groupSeparator": ",",
+        "midSentenceCase": "keep",
+        "rangeFirstMonth": "written",
+        "sentenceSeparator": "",
+        "spacing": "han"
+      }
+    },
+    {
+      "args": ["ru"],
+      "id": "ru",
+      "result": {
+        "decimalSeparator": ",",
+        "groupFrom": "fourDigits",
+        "groupSeparator": " ",
+        "midSentenceCase": "lower",
+        "rangeFirstMonth": "omitted",
+        "sentenceSeparator": " ",
+        "spacing": "latin"
+      }
+    },
+    {
+      "args": ["fr-CA"],
+      "id": "fr-CA",
+      "result": {
+        "decimalSeparator": ",",
+        "groupFrom": "fourDigits",
+        "groupSeparator": " ",
+        "midSentenceCase": "lower",
+        "rangeFirstMonth": "omitted",
+        "sentenceSeparator": " ",
+        "spacing": "latin"
+      }
+    },
+    {
+      "args": ["pt-PT"],
+      "id": "pt-PT",
+      "result": {
+        "decimalSeparator": ",",
+        "groupFrom": "fourDigits",
+        "groupSeparator": ".",
+        "midSentenceCase": "lower",
+        "rangeFirstMonth": "omitted",
+        "sentenceSeparator": " ",
+        "spacing": "latin"
+      }
+    },
+    {
+      "args": ["zh-TW"],
+      "id": "zh-TW",
+      "result": {
+        "decimalSeparator": ".",
+        "groupFrom": "fourDigits",
+        "groupSeparator": ",",
+        "midSentenceCase": "keep",
+        "rangeFirstMonth": "written",
+        "sentenceSeparator": "",
+        "spacing": "han"
+      }
+    },
+    {
+      "args": ["xx"],
+      "id": "xx",
+      "result": {
+        "decimalSeparator": ".",
+        "groupFrom": "fourDigits",
+        "groupSeparator": ",",
+        "midSentenceCase": "lower",
+        "rangeFirstMonth": "written",
+        "sentenceSeparator": " ",
+        "spacing": "latin"
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "locale-typography"
+}

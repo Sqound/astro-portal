@@ -1,0 +1,894 @@
+{
+  "description": "The shared fixture of the Journal's list. `lines` are the items of `GET /v1/journal` as the service builds them (journal.schema.json `item`), `projects` the multi-night plans they point at (a plan with `status: \"finished\"` makes a group). Each case gives a `query` and what the list must answer: for every page of the query (`limit` 50 when absent) the `lineIds` in order (a line's `sessionId`, else its `planId`), the `groups` that page draws (the finished plan, the ids of every matching session of it, its acquired seconds), whether another page follows (`hasNext`), and over the whole selection `years`, `instruments` and `stats`. The cursor is opaque and implementation-defined: a replay follows the cursor each page gives. Hand-written; `packages/astro-contracts/tests/journal-reference.mjs` is the reference reading the contract test checks it against.",
+  "lines": [
+    {
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "planId": "00000000-0000-4000-8000-000000000101",
+      "planName": "Nuit du 4 octobre",
+      "projectId": null,
+      "projectName": null,
+      "eveningDate": "2026-10-04",
+      "startedAt": "2026-10-04T19:10:00.000Z",
+      "finishedAt": "2026-10-05T03:40:00.000Z",
+      "placeName": "Col des Mélèzes",
+      "instrumentLabel": "Lunette 72 · Caméra couleur",
+      "state": "executed",
+      "origin": "execution",
+      "plannedSeconds": 10800,
+      "acquiredSeconds": 9000,
+      "frameCount": 90,
+      "lostReason": null,
+      "measured": false,
+      "quality": null,
+      "captureCount": 1,
+      "targets": [
+        {
+          "targetId": "m31",
+          "label": "M 31",
+          "planItemId": "item-m31",
+          "state": "planned",
+          "outcome": "done",
+          "reason": null,
+          "plannedSeconds": 10800,
+          "acquiredSeconds": 9000,
+          "frameCount": 90,
+          "filter": null,
+          "captureId": "00000000-0000-4000-8000-000000000201",
+          "thumbnailUrl": "/v1/captures/00000000-0000-4000-8000-000000000201/media?variant=thumbnail"
+        }
+      ],
+      "readOnly": false
+    },
+    {
+      "sessionId": "00000000-0000-4000-8000-000000000002",
+      "planId": "00000000-0000-4000-8000-000000000102",
+      "planName": "Nuit du 12 septembre",
+      "projectId": "6e1d7c2f-3a5b-4d9f-8c8e-4b2a1f7d3ca1",
+      "projectName": "NGC 7000",
+      "eveningDate": "2026-09-12",
+      "startedAt": "2026-09-12T18:30:00.000Z",
+      "finishedAt": "2026-09-13T03:00:00.000Z",
+      "placeName": "Col des Mélèzes",
+      "instrumentLabel": "Newton 200 · Caméra mono",
+      "state": "partial",
+      "origin": "execution",
+      "plannedSeconds": 7200,
+      "acquiredSeconds": 4000,
+      "frameCount": 40,
+      "lostReason": "weather",
+      "measured": true,
+      "quality": {
+        "skyBackground": 410,
+        "fwhm": 2.8,
+        "eccentricity": 0.42
+      },
+      "captureCount": 0,
+      "targets": [
+        {
+          "targetId": "ngc7000",
+          "label": "NGC 7000",
+          "planItemId": "item-ngc7000",
+          "state": "planned",
+          "outcome": "partial",
+          "reason": null,
+          "plannedSeconds": 7200,
+          "acquiredSeconds": 4000,
+          "frameCount": 40,
+          "filter": null,
+          "captureId": null,
+          "thumbnailUrl": null
+        }
+      ],
+      "readOnly": false
+    },
+    {
+      "sessionId": "00000000-0000-4000-8000-000000000003",
+      "planId": null,
+      "planName": null,
+      "projectId": null,
+      "projectName": null,
+      "eveningDate": "2026-09-12",
+      "startedAt": "2026-09-12T20:05:00.000Z",
+      "finishedAt": "2026-09-13T01:00:00.000Z",
+      "placeName": "Col des Mélèzes",
+      "instrumentLabel": "Lunette 72 · Caméra couleur",
+      "state": "no_plan",
+      "origin": "execution",
+      "plannedSeconds": null,
+      "acquiredSeconds": 3000,
+      "frameCount": 30,
+      "lostReason": null,
+      "measured": false,
+      "quality": null,
+      "captureCount": 0,
+      "targets": [
+        {
+          "targetId": "m27",
+          "label": "M 27",
+          "planItemId": null,
+          "state": "added",
+          "outcome": null,
+          "reason": null,
+          "plannedSeconds": null,
+          "acquiredSeconds": 3000,
+          "frameCount": 30,
+          "filter": null,
+          "captureId": null,
+          "thumbnailUrl": null
+        }
+      ],
+      "readOnly": false
+    },
+    {
+      "sessionId": null,
+      "planId": "00000000-0000-4000-8000-000000000104",
+      "planName": "Nuit du 14 août",
+      "projectId": null,
+      "projectName": null,
+      "eveningDate": "2026-08-14",
+      "startedAt": null,
+      "finishedAt": null,
+      "placeName": "Col des Mélèzes",
+      "instrumentLabel": "Lunette 72 · Caméra couleur",
+      "state": "to_debrief",
+      "origin": null,
+      "plannedSeconds": 7200,
+      "acquiredSeconds": null,
+      "frameCount": null,
+      "lostReason": null,
+      "measured": false,
+      "quality": null,
+      "captureCount": 0,
+      "targets": [],
+      "readOnly": false
+    },
+    {
+      "sessionId": "00000000-0000-4000-8000-000000000005",
+      "planId": "00000000-0000-4000-8000-000000000105",
+      "planName": "Nuit du 12 août",
+      "projectId": "5d0c6b1e-2f4a-4c8e-9b7d-3a1f0e6c2b90",
+      "projectName": "IC 1805",
+      "eveningDate": "2026-08-12",
+      "startedAt": "2026-08-12T19:30:00.000Z",
+      "finishedAt": "2026-08-13T02:30:00.000Z",
+      "placeName": "Col des Mélèzes",
+      "instrumentLabel": "Lunette 72 · Caméra couleur",
+      "state": "partial",
+      "origin": "execution",
+      "plannedSeconds": 14400,
+      "acquiredSeconds": 10800,
+      "frameCount": 108,
+      "lostReason": null,
+      "measured": false,
+      "quality": null,
+      "captureCount": 0,
+      "targets": [
+        {
+          "targetId": "ic1805",
+          "label": "IC 1805",
+          "planItemId": "item-ic1805",
+          "state": "planned",
+          "outcome": "partial",
+          "reason": null,
+          "plannedSeconds": 7200,
+          "acquiredSeconds": 10800,
+          "frameCount": 108,
+          "filter": null,
+          "captureId": null,
+          "thumbnailUrl": null
+        },
+        {
+          "targetId": "m52",
+          "label": "M 52",
+          "planItemId": "item-m52",
+          "state": "removed",
+          "outcome": "skipped",
+          "reason": "time",
+          "plannedSeconds": 7200,
+          "acquiredSeconds": null,
+          "frameCount": null,
+          "filter": null,
+          "captureId": null,
+          "thumbnailUrl": null
+        }
+      ],
+      "readOnly": false
+    },
+    {
+      "sessionId": "00000000-0000-4000-8000-000000000006",
+      "planId": null,
+      "planName": null,
+      "projectId": "5d0c6b1e-2f4a-4c8e-9b7d-3a1f0e6c2b90",
+      "projectName": "IC 1805",
+      "eveningDate": "2026-08-10",
+      "startedAt": "2026-08-10T19:50:00.000Z",
+      "finishedAt": "2026-08-11T01:50:00.000Z",
+      "placeName": "Col des Mélèzes",
+      "instrumentLabel": "Lunette 72 · Caméra couleur",
+      "state": "no_plan",
+      "origin": "execution",
+      "plannedSeconds": null,
+      "acquiredSeconds": 12000,
+      "frameCount": 120,
+      "lostReason": null,
+      "measured": false,
+      "quality": null,
+      "captureCount": 0,
+      "targets": [
+        {
+          "targetId": "ic1805",
+          "label": "IC 1805",
+          "planItemId": null,
+          "state": "added",
+          "outcome": null,
+          "reason": null,
+          "plannedSeconds": null,
+          "acquiredSeconds": 12000,
+          "frameCount": 120,
+          "filter": null,
+          "captureId": null,
+          "thumbnailUrl": null
+        }
+      ],
+      "readOnly": false
+    },
+    {
+      "sessionId": "00000000-0000-4000-8000-000000000007",
+      "planId": "00000000-0000-4000-8000-000000000107",
+      "planName": "Nuit du 9 août",
+      "projectId": "5d0c6b1e-2f4a-4c8e-9b7d-3a1f0e6c2b90",
+      "projectName": "IC 1805",
+      "eveningDate": "2026-08-09",
+      "startedAt": "2026-08-09T19:40:00.000Z",
+      "finishedAt": "2026-08-10T02:20:00.000Z",
+      "placeName": "Col des Mélèzes",
+      "instrumentLabel": "Lunette 72 · Caméra couleur",
+      "state": "executed",
+      "origin": "execution",
+      "plannedSeconds": 12000,
+      "acquiredSeconds": 12000,
+      "frameCount": 120,
+      "lostReason": null,
+      "measured": false,
+      "quality": null,
+      "captureCount": 0,
+      "targets": [
+        {
+          "targetId": "ic1805",
+          "label": "IC 1805",
+          "planItemId": "item-ic1805",
+          "state": "planned",
+          "outcome": "done",
+          "reason": null,
+          "plannedSeconds": 12000,
+          "acquiredSeconds": 12000,
+          "frameCount": 120,
+          "filter": null,
+          "captureId": null,
+          "thumbnailUrl": null
+        }
+      ],
+      "readOnly": false
+    },
+    {
+      "sessionId": "00000000-0000-4000-8000-000000000008",
+      "planId": "00000000-0000-4000-8000-000000000108",
+      "planName": "Nuit du 5 mars",
+      "projectId": null,
+      "projectName": null,
+      "eveningDate": "2026-03-05",
+      "startedAt": "2026-03-05T20:00:00.000Z",
+      "finishedAt": "2026-03-05T20:00:00.000Z",
+      "placeName": "Col des Mélèzes",
+      "instrumentLabel": "Newton 200 · Caméra mono",
+      "state": "abandoned",
+      "origin": "debrief",
+      "plannedSeconds": 5400,
+      "acquiredSeconds": null,
+      "frameCount": null,
+      "lostReason": "weather",
+      "measured": false,
+      "quality": null,
+      "captureCount": 0,
+      "targets": [
+        {
+          "targetId": "m42",
+          "label": "M 42",
+          "planItemId": "item-m42",
+          "state": "removed",
+          "outcome": "skipped",
+          "reason": "weather",
+          "plannedSeconds": 5400,
+          "acquiredSeconds": null,
+          "frameCount": null,
+          "filter": null,
+          "captureId": null,
+          "thumbnailUrl": null
+        }
+      ],
+      "readOnly": false
+    },
+    {
+      "sessionId": "00000000-0000-4000-8000-000000000009",
+      "planId": "00000000-0000-4000-8000-000000000109",
+      "planName": "Nuit du 22 décembre",
+      "projectId": null,
+      "projectName": null,
+      "eveningDate": "2025-12-22",
+      "startedAt": "2025-12-22T18:20:00.000Z",
+      "finishedAt": "2025-12-23T04:00:00.000Z",
+      "placeName": "Col des Mélèzes",
+      "instrumentLabel": "Lunette 72 · Caméra couleur",
+      "state": "executed",
+      "origin": "execution",
+      "plannedSeconds": 9000,
+      "acquiredSeconds": 8400,
+      "frameCount": 84,
+      "lostReason": null,
+      "measured": false,
+      "quality": null,
+      "captureCount": 1,
+      "targets": [
+        {
+          "targetId": "m42",
+          "label": "M 42",
+          "planItemId": "item-m42",
+          "state": "planned",
+          "outcome": "done",
+          "reason": null,
+          "plannedSeconds": 9000,
+          "acquiredSeconds": 8400,
+          "frameCount": 84,
+          "filter": null,
+          "captureId": null,
+          "thumbnailUrl": null
+        }
+      ],
+      "readOnly": false
+    },
+    {
+      "sessionId": "00000000-0000-4000-8000-000000000010",
+      "planId": "00000000-0000-4000-8000-000000000110",
+      "planName": "Nuit du 20 juin",
+      "projectId": null,
+      "projectName": null,
+      "eveningDate": "2025-06-20",
+      "startedAt": "2025-06-20T21:30:00.000Z",
+      "finishedAt": "2025-06-21T01:30:00.000Z",
+      "placeName": "Col des Mélèzes",
+      "instrumentLabel": "Newton 200 · Caméra mono",
+      "state": "executed",
+      "origin": "execution",
+      "plannedSeconds": 3600,
+      "acquiredSeconds": 3600,
+      "frameCount": 36,
+      "lostReason": null,
+      "measured": false,
+      "quality": null,
+      "captureCount": 0,
+      "targets": [
+        {
+          "targetId": "m13",
+          "label": "M 13",
+          "planItemId": "item-m13",
+          "state": "planned",
+          "outcome": "done",
+          "reason": null,
+          "plannedSeconds": 3600,
+          "acquiredSeconds": 3600,
+          "frameCount": 36,
+          "filter": null,
+          "captureId": null,
+          "thumbnailUrl": null
+        }
+      ],
+      "readOnly": false
+    },
+    {
+      "sessionId": "catalogue:2025-06-01:m57",
+      "planId": null,
+      "planName": null,
+      "projectId": null,
+      "projectName": null,
+      "eveningDate": "2025-06-01",
+      "startedAt": "2025-06-01T21:00:00.000Z",
+      "finishedAt": "2025-06-02T00:30:00.000Z",
+      "placeName": null,
+      "instrumentLabel": null,
+      "state": "no_plan",
+      "origin": "import",
+      "plannedSeconds": null,
+      "acquiredSeconds": 2400,
+      "frameCount": 24,
+      "lostReason": null,
+      "measured": false,
+      "quality": null,
+      "captureCount": 0,
+      "targets": [
+        {
+          "targetId": "m57",
+          "label": "M 57",
+          "planItemId": null,
+          "state": "added",
+          "outcome": null,
+          "reason": null,
+          "plannedSeconds": null,
+          "acquiredSeconds": 2400,
+          "frameCount": 24,
+          "filter": null,
+          "captureId": null,
+          "thumbnailUrl": null
+        }
+      ],
+      "readOnly": true
+    },
+    {
+      "sessionId": "00000000-0000-4000-8000-000000000012",
+      "planId": "00000000-0000-4000-8000-000000000112",
+      "planName": "Nuit du 15 janvier",
+      "projectId": null,
+      "projectName": null,
+      "eveningDate": "2025-01-15",
+      "startedAt": "2025-01-15T19:00:00.000Z",
+      "finishedAt": "2025-01-16T04:30:00.000Z",
+      "placeName": "Col des Mélèzes",
+      "instrumentLabel": "Lunette 72 · Caméra couleur",
+      "state": "executed",
+      "origin": "execution",
+      "plannedSeconds": 7200,
+      "acquiredSeconds": 6600,
+      "frameCount": 66,
+      "lostReason": null,
+      "measured": false,
+      "quality": null,
+      "captureCount": 0,
+      "targets": [
+        {
+          "targetId": "m1",
+          "label": "M 1",
+          "planItemId": "item-m1",
+          "state": "planned",
+          "outcome": "done",
+          "reason": null,
+          "plannedSeconds": 7200,
+          "acquiredSeconds": 6600,
+          "frameCount": 66,
+          "filter": null,
+          "captureId": null,
+          "thumbnailUrl": null
+        }
+      ],
+      "readOnly": false
+    }
+  ],
+  "projects": [
+    {
+      "projectId": "5d0c6b1e-2f4a-4c8e-9b7d-3a1f0e6c2b90",
+      "name": "IC 1805",
+      "targetLabel": "Nébuleuse du Cœur",
+      "status": "finished",
+      "goalSeconds": 36000,
+      "acquiredSeconds": 34800,
+      "planCaptureId": "00000000-0000-4000-8000-000000000301"
+    },
+    {
+      "projectId": "6e1d7c2f-3a5b-4d9f-8c8e-4b2a1f7d3ca1",
+      "name": "NGC 7000",
+      "targetLabel": "Nébuleuse de l’Amérique du Nord",
+      "status": "active",
+      "goalSeconds": 72000,
+      "acquiredSeconds": 4000,
+      "planCaptureId": null
+    }
+  ],
+  "cases": [
+    {
+      "id": "all",
+      "query": {},
+      "years": [2026, 2025],
+      "instruments": [
+        "Lunette 72 · Caméra couleur",
+        "Newton 200 · Caméra mono"
+      ],
+      "stats": {
+        "sessions": 11,
+        "acquiredSeconds": 71800,
+        "frameCount": 718
+      },
+      "pages": [
+        {
+          "lineIds": [
+            "00000000-0000-4000-8000-000000000001",
+            "00000000-0000-4000-8000-000000000003",
+            "00000000-0000-4000-8000-000000000002",
+            "00000000-0000-4000-8000-000000000104",
+            "00000000-0000-4000-8000-000000000005",
+            "00000000-0000-4000-8000-000000000006",
+            "00000000-0000-4000-8000-000000000007",
+            "00000000-0000-4000-8000-000000000008",
+            "00000000-0000-4000-8000-000000000009",
+            "00000000-0000-4000-8000-000000000010",
+            "catalogue:2025-06-01:m57",
+            "00000000-0000-4000-8000-000000000012"
+          ],
+          "groups": [
+            {
+              "projectId": "6e1d7c2f-3a5b-4d9f-8c8e-4b2a1f7d3ca1",
+              "sessionIds": ["00000000-0000-4000-8000-000000000002"],
+              "acquiredSeconds": 4000
+            },
+            {
+              "projectId": "5d0c6b1e-2f4a-4c8e-9b7d-3a1f0e6c2b90",
+              "sessionIds": [
+                "00000000-0000-4000-8000-000000000005",
+                "00000000-0000-4000-8000-000000000006",
+                "00000000-0000-4000-8000-000000000007"
+              ],
+              "acquiredSeconds": 34800
+            }
+          ],
+          "hasNext": false
+        }
+      ]
+    },
+    {
+      "id": "year-2025",
+      "query": {
+        "year": 2025
+      },
+      "years": [2026, 2025],
+      "instruments": [
+        "Lunette 72 · Caméra couleur",
+        "Newton 200 · Caméra mono"
+      ],
+      "stats": {
+        "sessions": 4,
+        "acquiredSeconds": 21000,
+        "frameCount": 210
+      },
+      "pages": [
+        {
+          "lineIds": [
+            "00000000-0000-4000-8000-000000000009",
+            "00000000-0000-4000-8000-000000000010",
+            "catalogue:2025-06-01:m57",
+            "00000000-0000-4000-8000-000000000012"
+          ],
+          "groups": [],
+          "hasNext": false
+        }
+      ]
+    },
+    {
+      "id": "instrument-newton",
+      "query": {
+        "instrument": "Newton 200 · Caméra mono"
+      },
+      "years": [2026, 2025],
+      "instruments": [
+        "Lunette 72 · Caméra couleur",
+        "Newton 200 · Caméra mono"
+      ],
+      "stats": {
+        "sessions": 3,
+        "acquiredSeconds": 7600,
+        "frameCount": 76
+      },
+      "pages": [
+        {
+          "lineIds": [
+            "00000000-0000-4000-8000-000000000002",
+            "00000000-0000-4000-8000-000000000008",
+            "00000000-0000-4000-8000-000000000010"
+          ],
+          "groups": [
+            {
+              "projectId": "6e1d7c2f-3a5b-4d9f-8c8e-4b2a1f7d3ca1",
+              "sessionIds": ["00000000-0000-4000-8000-000000000002"],
+              "acquiredSeconds": 4000
+            }
+          ],
+          "hasNext": false
+        }
+      ]
+    },
+    {
+      "id": "season-summer",
+      "query": {
+        "season": "summer"
+      },
+      "years": [2026, 2025],
+      "instruments": [
+        "Lunette 72 · Caméra couleur",
+        "Newton 200 · Caméra mono"
+      ],
+      "stats": {
+        "sessions": 5,
+        "acquiredSeconds": 41800,
+        "frameCount": 418
+      },
+      "pages": [
+        {
+          "lineIds": [
+            "00000000-0000-4000-8000-000000000003",
+            "00000000-0000-4000-8000-000000000002",
+            "00000000-0000-4000-8000-000000000104",
+            "00000000-0000-4000-8000-000000000005",
+            "00000000-0000-4000-8000-000000000006",
+            "00000000-0000-4000-8000-000000000007"
+          ],
+          "groups": [
+            {
+              "projectId": "6e1d7c2f-3a5b-4d9f-8c8e-4b2a1f7d3ca1",
+              "sessionIds": ["00000000-0000-4000-8000-000000000002"],
+              "acquiredSeconds": 4000
+            },
+            {
+              "projectId": "5d0c6b1e-2f4a-4c8e-9b7d-3a1f0e6c2b90",
+              "sessionIds": [
+                "00000000-0000-4000-8000-000000000005",
+                "00000000-0000-4000-8000-000000000006",
+                "00000000-0000-4000-8000-000000000007"
+              ],
+              "acquiredSeconds": 34800
+            }
+          ],
+          "hasNext": false
+        }
+      ]
+    },
+    {
+      "id": "season-winter-crosses-the-new-year",
+      "query": {
+        "season": "winter"
+      },
+      "years": [2026, 2025],
+      "instruments": [
+        "Lunette 72 · Caméra couleur",
+        "Newton 200 · Caméra mono"
+      ],
+      "stats": {
+        "sessions": 3,
+        "acquiredSeconds": 15000,
+        "frameCount": 150
+      },
+      "pages": [
+        {
+          "lineIds": [
+            "00000000-0000-4000-8000-000000000008",
+            "00000000-0000-4000-8000-000000000009",
+            "00000000-0000-4000-8000-000000000012"
+          ],
+          "groups": [],
+          "hasNext": false
+        }
+      ]
+    },
+    {
+      "id": "outcome-to-debrief",
+      "query": {
+        "outcome": "to_debrief"
+      },
+      "years": [2026, 2025],
+      "instruments": [
+        "Lunette 72 · Caméra couleur",
+        "Newton 200 · Caméra mono"
+      ],
+      "stats": {
+        "sessions": 0,
+        "acquiredSeconds": 0,
+        "frameCount": 0
+      },
+      "pages": [
+        {
+          "lineIds": ["00000000-0000-4000-8000-000000000104"],
+          "groups": [],
+          "hasNext": false
+        }
+      ]
+    },
+    {
+      "id": "outcome-no-plan",
+      "query": {
+        "outcome": "no_plan"
+      },
+      "years": [2026, 2025],
+      "instruments": [
+        "Lunette 72 · Caméra couleur",
+        "Newton 200 · Caméra mono"
+      ],
+      "stats": {
+        "sessions": 3,
+        "acquiredSeconds": 17400,
+        "frameCount": 174
+      },
+      "pages": [
+        {
+          "lineIds": [
+            "00000000-0000-4000-8000-000000000003",
+            "00000000-0000-4000-8000-000000000006",
+            "catalogue:2025-06-01:m57"
+          ],
+          "groups": [
+            {
+              "projectId": "5d0c6b1e-2f4a-4c8e-9b7d-3a1f0e6c2b90",
+              "sessionIds": ["00000000-0000-4000-8000-000000000006"],
+              "acquiredSeconds": 34800
+            }
+          ],
+          "hasNext": false
+        }
+      ]
+    },
+    {
+      "id": "multi-night-only",
+      "query": {
+        "multiNightOnly": true
+      },
+      "years": [2026, 2025],
+      "instruments": [
+        "Lunette 72 · Caméra couleur",
+        "Newton 200 · Caméra mono"
+      ],
+      "stats": {
+        "sessions": 4,
+        "acquiredSeconds": 38800,
+        "frameCount": 388
+      },
+      "pages": [
+        {
+          "lineIds": [
+            "00000000-0000-4000-8000-000000000002",
+            "00000000-0000-4000-8000-000000000005",
+            "00000000-0000-4000-8000-000000000006",
+            "00000000-0000-4000-8000-000000000007"
+          ],
+          "groups": [
+            {
+              "projectId": "6e1d7c2f-3a5b-4d9f-8c8e-4b2a1f7d3ca1",
+              "sessionIds": ["00000000-0000-4000-8000-000000000002"],
+              "acquiredSeconds": 4000
+            },
+            {
+              "projectId": "5d0c6b1e-2f4a-4c8e-9b7d-3a1f0e6c2b90",
+              "sessionIds": [
+                "00000000-0000-4000-8000-000000000005",
+                "00000000-0000-4000-8000-000000000006",
+                "00000000-0000-4000-8000-000000000007"
+              ],
+              "acquiredSeconds": 34800
+            }
+          ],
+          "hasNext": false
+        }
+      ]
+    },
+    {
+      "id": "filters-add-up",
+      "query": {
+        "year": 2026,
+        "instrument": "Lunette 72 · Caméra couleur",
+        "multiNightOnly": true
+      },
+      "years": [2026, 2025],
+      "instruments": [
+        "Lunette 72 · Caméra couleur",
+        "Newton 200 · Caméra mono"
+      ],
+      "stats": {
+        "sessions": 3,
+        "acquiredSeconds": 34800,
+        "frameCount": 348
+      },
+      "pages": [
+        {
+          "lineIds": [
+            "00000000-0000-4000-8000-000000000005",
+            "00000000-0000-4000-8000-000000000006",
+            "00000000-0000-4000-8000-000000000007"
+          ],
+          "groups": [
+            {
+              "projectId": "5d0c6b1e-2f4a-4c8e-9b7d-3a1f0e6c2b90",
+              "sessionIds": [
+                "00000000-0000-4000-8000-000000000005",
+                "00000000-0000-4000-8000-000000000006",
+                "00000000-0000-4000-8000-000000000007"
+              ],
+              "acquiredSeconds": 34800
+            }
+          ],
+          "hasNext": false
+        }
+      ]
+    },
+    {
+      "id": "no-match",
+      "query": {
+        "year": 2026,
+        "season": "spring"
+      },
+      "years": [2026, 2025],
+      "instruments": [
+        "Lunette 72 · Caméra couleur",
+        "Newton 200 · Caméra mono"
+      ],
+      "stats": {
+        "sessions": 0,
+        "acquiredSeconds": 0,
+        "frameCount": 0
+      },
+      "pages": [
+        {
+          "lineIds": [],
+          "groups": [],
+          "hasNext": false
+        }
+      ]
+    },
+    {
+      "id": "paging-by-four",
+      "query": {
+        "limit": 4
+      },
+      "years": [2026, 2025],
+      "instruments": [
+        "Lunette 72 · Caméra couleur",
+        "Newton 200 · Caméra mono"
+      ],
+      "stats": {
+        "sessions": 11,
+        "acquiredSeconds": 71800,
+        "frameCount": 718
+      },
+      "pages": [
+        {
+          "lineIds": [
+            "00000000-0000-4000-8000-000000000001",
+            "00000000-0000-4000-8000-000000000003",
+            "00000000-0000-4000-8000-000000000002",
+            "00000000-0000-4000-8000-000000000104"
+          ],
+          "groups": [
+            {
+              "projectId": "6e1d7c2f-3a5b-4d9f-8c8e-4b2a1f7d3ca1",
+              "sessionIds": ["00000000-0000-4000-8000-000000000002"],
+              "acquiredSeconds": 4000
+            }
+          ],
+          "hasNext": true
+        },
+        {
+          "lineIds": [
+            "00000000-0000-4000-8000-000000000005",
+            "00000000-0000-4000-8000-000000000006",
+            "00000000-0000-4000-8000-000000000007",
+            "00000000-0000-4000-8000-000000000008"
+          ],
+          "groups": [
+            {
+              "projectId": "5d0c6b1e-2f4a-4c8e-9b7d-3a1f0e6c2b90",
+              "sessionIds": [
+                "00000000-0000-4000-8000-000000000005",
+                "00000000-0000-4000-8000-000000000006",
+                "00000000-0000-4000-8000-000000000007"
+              ],
+              "acquiredSeconds": 34800
+            }
+          ],
+          "hasNext": true
+        },
+        {
+          "lineIds": [
+            "00000000-0000-4000-8000-000000000009",
+            "00000000-0000-4000-8000-000000000010",
+            "catalogue:2025-06-01:m57",
+            "00000000-0000-4000-8000-000000000012"
+          ],
+          "groups": [],
+          "hasNext": false
+        }
+      ]
+    }
+  ]
+}

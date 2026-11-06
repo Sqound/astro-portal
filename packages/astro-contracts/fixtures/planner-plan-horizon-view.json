@@ -1,0 +1,148 @@
+{
+  "cases": [
+    {
+      "args": [null],
+      "id": "an-absent-sub-state-is-the-positions-mode",
+      "result": {
+        "layers": { "lightPollution": false, "mask": true },
+        "mode": "positions",
+        "pathTargetId": null,
+        "projection": "circular",
+        "rotation": 0,
+        "sampleIndex": null,
+        "showLabels": false
+      }
+    },
+    {
+      "args": [
+        { "mode": "path", "pathTargetId": "m31", "projection": "linear" }
+      ],
+      "id": "the-path-mode-keeps-its-target",
+      "result": {
+        "layers": { "lightPollution": false, "mask": true },
+        "mode": "path",
+        "pathTargetId": "m31",
+        "projection": "linear",
+        "rotation": 0,
+        "sampleIndex": null,
+        "showLabels": false
+      }
+    },
+    {
+      "args": [{ "mode": "trail", "pathTargetId": "m33", "showLabels": true }],
+      "id": "an-unknown-mode-reads-as-positions",
+      "result": {
+        "layers": { "lightPollution": false, "mask": true },
+        "mode": "positions",
+        "pathTargetId": "m33",
+        "projection": "circular",
+        "rotation": 0,
+        "sampleIndex": null,
+        "showLabels": true
+      }
+    },
+    {
+      "args": [{ "mode": "path", "pathTargetId": 42 }],
+      "id": "a-target-id-that-is-not-a-string-is-null",
+      "result": {
+        "layers": { "lightPollution": false, "mask": true },
+        "mode": "path",
+        "pathTargetId": null,
+        "projection": "circular",
+        "rotation": 0,
+        "sampleIndex": null,
+        "showLabels": false
+      }
+    },
+    {
+      "args": [{ "mode": "path", "pathTargetId": "" }],
+      "id": "an-empty-target-id-is-null",
+      "result": {
+        "layers": { "lightPollution": false, "mask": true },
+        "mode": "path",
+        "pathTargetId": null,
+        "projection": "circular",
+        "rotation": 0,
+        "sampleIndex": null,
+        "showLabels": false
+      }
+    },
+    {
+      "args": [
+        { "extra": { "kept": true }, "rotation": -45, "sampleIndex": 12 }
+      ],
+      "id": "other-keys-pass-through",
+      "result": {
+        "extra": { "kept": true },
+        "layers": { "lightPollution": false, "mask": true },
+        "mode": "positions",
+        "pathTargetId": null,
+        "projection": "circular",
+        "rotation": -45,
+        "sampleIndex": 12,
+        "showLabels": false
+      }
+    },
+    {
+      "args": [{ "layers": { "lightPollution": true } }],
+      "id": "the-light-pollution-layer-switched-on-keeps-the-mask",
+      "result": {
+        "layers": { "lightPollution": true, "mask": true },
+        "mode": "positions",
+        "pathTargetId": null,
+        "projection": "circular",
+        "rotation": 0,
+        "sampleIndex": null,
+        "showLabels": false
+      }
+    },
+    {
+      "args": [
+        {
+          "layers": { "lightPollution": true, "mask": false },
+          "projection": "linear"
+        }
+      ],
+      "id": "the-mask-switched-off-stays-off",
+      "result": {
+        "layers": { "lightPollution": true, "mask": false },
+        "mode": "positions",
+        "pathTargetId": null,
+        "projection": "linear",
+        "rotation": 0,
+        "sampleIndex": null,
+        "showLabels": false
+      }
+    },
+    {
+      "args": [
+        { "layers": { "future": true, "lightPollution": 1, "mask": "no" } }
+      ],
+      "id": "layers-that-are-not-booleans-read-as-the-defaults",
+      "result": {
+        "layers": { "future": true, "lightPollution": false, "mask": true },
+        "mode": "positions",
+        "pathTargetId": null,
+        "projection": "circular",
+        "rotation": 0,
+        "sampleIndex": null,
+        "showLabels": false
+      }
+    },
+    {
+      "args": [{ "layers": ["mask"], "mode": "path" }],
+      "id": "layers-that-are-not-an-object-read-as-the-defaults",
+      "result": {
+        "layers": { "lightPollution": false, "mask": true },
+        "mode": "path",
+        "pathTargetId": null,
+        "projection": "circular",
+        "rotation": 0,
+        "sampleIndex": null,
+        "showLabels": false
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "planner-plan-horizon-view"
+}

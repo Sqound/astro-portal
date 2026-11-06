@@ -1,0 +1,27 @@
+{
+  "cases": [
+    { "args": [0], "id": "cover-0", "result": 100 },
+    { "args": [2], "id": "cover-2", "result": 98 },
+    { "args": [4], "id": "cover-4", "result": 96 },
+    { "args": [5], "id": "cover-5", "result": 95 },
+    { "args": [8], "id": "cover-8", "result": 87.2 },
+    { "args": [10], "id": "cover-10", "result": 82 },
+    { "args": [15], "id": "cover-15", "result": 70 },
+    { "args": [16], "id": "cover-16", "result": 67.6 },
+    { "args": [20], "id": "cover-20", "result": 58 },
+    { "args": [24], "id": "cover-24", "result": 48.4 },
+    { "args": [25], "id": "cover-25", "result": 46 },
+    { "args": [30], "id": "cover-30", "result": 35 },
+    { "args": [32], "id": "cover-32", "result": 32 },
+    { "args": [34], "id": "cover-34", "result": 29 },
+    { "args": [40], "id": "cover-40", "result": 20 },
+    { "args": [50], "id": "cover-50", "result": 10 },
+    { "args": [60], "id": "cover-60", "result": 0 },
+    { "args": [80], "id": "cover-80", "result": 0 },
+    { "args": [100], "id": "cover-100", "result": 0 },
+    { "args": [-5], "id": "below-zero-is-clear", "result": 100 },
+    { "args": [null], "id": "no-cover-is-null", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "forecast-cloud-score"
+}

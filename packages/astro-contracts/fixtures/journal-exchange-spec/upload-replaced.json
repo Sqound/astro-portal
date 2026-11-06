@@ -1,0 +1,30 @@
+{
+  "exchange": "upload-replaced",
+  "description": "A second image for the same session and target on a space whose `capture.variant_limit` is 0: it replaces the first (`replaced: true`), and the capture says when and whose image it replaced (`replacedAt`, `replacedSource`).",
+  "given": "The 12 September night of `list`, with an image of NGC 7000 sent from the phone.",
+  "handler": "compose:upload",
+  "phase": "write",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/captures",
+    "variantLimit": 0,
+    "first": {
+      "label": "m42-phone",
+      "caller": "phone",
+      "metadata": {
+        "sessionId": "{session:partial-with-signals}",
+        "targetIds": ["ngc7000"]
+      }
+    },
+    "metadata": {
+      "label": "m42-sync",
+      "caller": "sync",
+      "fields": {
+        "sessionId": "{session:partial-with-signals}",
+        "targetIds": ["ngc7000"],
+        "source": "stacking"
+      }
+    }
+  },
+  "schema": "capture.schema.json#/$defs/uploadResponse"
+}

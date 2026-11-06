@@ -1,0 +1,330 @@
+{
+  "description": "« Synchroniser avec la session » from the phone: the measured step the night gained is added, the line the web corrected is kept; the answer is the lines and the capture, with its new revision.",
+  "exchange": "sync-response",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The late step of the analysis; the web corrected two lines (the conflicts above).",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/captures/00000000-0000-4000-8000-000000000016/acquisition/sync"
+  },
+  "response": {
+    "body": {
+      "acquisition": {
+        "at": "2026-10-14T12:00:00.000Z",
+        "edited": true,
+        "lines": [
+          {
+            "computerLabel": null,
+            "edited": true,
+            "editedAt": "2026-10-14T12:00:00.000Z",
+            "exposureSeconds": 180,
+            "filter": "Dual-band",
+            "frameCount": 39,
+            "gain": null,
+            "id": "00000000-0000-4000-8000-00000000000c",
+            "integrationSeconds": 7020,
+            "origin": "astro-sync",
+            "provenance": "measured"
+          },
+          {
+            "computerLabel": null,
+            "edited": true,
+            "editedAt": "2026-10-14T12:00:00.000Z",
+            "exposureSeconds": 120,
+            "filter": "L",
+            "frameCount": 21,
+            "gain": null,
+            "id": "00000000-0000-4000-8000-00000000000d",
+            "integrationSeconds": 2520,
+            "origin": "astro-sync",
+            "provenance": "measured"
+          },
+          {
+            "computerLabel": null,
+            "edited": false,
+            "editedAt": null,
+            "exposureSeconds": 300,
+            "filter": "Ha",
+            "frameCount": 12,
+            "gain": 100,
+            "id": "00000000-0000-4000-8000-000000000022",
+            "integrationSeconds": 3600,
+            "origin": "astro-sync",
+            "provenance": "measured"
+          }
+        ],
+        "own": true,
+        "source": "astro-sync",
+        "totalFrames": 72,
+        "totalSeconds": 13140
+      },
+      "capture": {
+        "byteSize": 100,
+        "checks": {
+          "automatic": null,
+          "automaticAt": null,
+          "protectionLiftedAt": null,
+          "protectionNoticeAt": null,
+          "removedFromGalleryAt": null,
+          "reviewRequestedAt": null,
+          "team": null,
+          "teamAt": null,
+          "teamReason": null
+        },
+        "createdAt": "2026-10-14T08:00:00.000Z",
+        "detail": {
+          "addedAt": "2026-10-14T08:00:00.000Z",
+          "byteSize": 100,
+          "equipment": ["Askar 50P", "ZWO ASI533MC Pro"],
+          "fileName": "m31-stack.jpg",
+          "intermediate": null,
+          "night": "2026-10-05",
+          "place": { "name": "Col des Étoiles" },
+          "sessionQuality": {
+            "eccentricity": 0.4,
+            "eveningDate": "2026-10-05",
+            "frameCount": 3,
+            "fwhm": 2.16,
+            "sessionId": "00000000-0000-4000-8000-00000000000b",
+            "skyBackground": 1300
+          },
+          "skyQuality": { "bortle": 4 },
+          "targets": [
+            { "designation": "M31", "id": "m31", "name": "Andromeda Galaxy" }
+          ]
+        },
+        "finalizedAt": null,
+        "galleryLabel": null,
+        "hasImage": true,
+        "id": "00000000-0000-4000-8000-000000000016",
+        "integrationMinutes": null,
+        "metadata": {
+          "acquisition": {
+            "at": "2026-10-14T12:00:00.000Z",
+            "edited": true,
+            "lines": [
+              {
+                "computerLabel": null,
+                "edited": true,
+                "editedAt": "2026-10-14T12:00:00.000Z",
+                "exposureSeconds": 180,
+                "filter": "Dual-band",
+                "frameCount": 39,
+                "gain": null,
+                "id": "00000000-0000-4000-8000-00000000000c",
+                "integrationSeconds": 7020,
+                "origin": "astro-sync",
+                "provenance": "measured"
+              },
+              {
+                "computerLabel": null,
+                "edited": true,
+                "editedAt": "2026-10-14T12:00:00.000Z",
+                "exposureSeconds": 120,
+                "filter": "L",
+                "frameCount": 21,
+                "gain": null,
+                "id": "00000000-0000-4000-8000-00000000000d",
+                "integrationSeconds": 2520,
+                "origin": "astro-sync",
+                "provenance": "measured"
+              },
+              {
+                "computerLabel": null,
+                "edited": false,
+                "editedAt": null,
+                "exposureSeconds": 300,
+                "filter": "Ha",
+                "frameCount": 12,
+                "gain": 100,
+                "id": "00000000-0000-4000-8000-000000000022",
+                "integrationSeconds": 3600,
+                "origin": "astro-sync",
+                "provenance": "measured"
+              }
+            ],
+            "own": true,
+            "source": "astro-sync",
+            "totalFrames": 72,
+            "totalSeconds": 13140
+          },
+          "calibration": {
+            "at": null,
+            "edited": false,
+            "source": null,
+            "value": null
+          },
+          "computed": {
+            "moon": { "illumination": 29, "setsAt": null },
+            "skyQuality": { "bortle": 4 }
+          },
+          "description": {
+            "at": null,
+            "edited": false,
+            "source": null,
+            "value": null
+          },
+          "equipment": {
+            "camera": {
+              "at": null,
+              "edited": false,
+              "source": "plan",
+              "value": {
+                "id": "00000000-0000-4000-8000-000000000006",
+                "name": "ZWO ASI533MC Pro"
+              }
+            },
+            "filters": {
+              "at": null,
+              "edited": false,
+              "source": null,
+              "value": []
+            },
+            "mount": {
+              "at": null,
+              "edited": false,
+              "source": null,
+              "value": null
+            },
+            "telescope": {
+              "at": null,
+              "edited": false,
+              "source": "plan",
+              "value": {
+                "id": "00000000-0000-4000-8000-000000000005",
+                "name": "Askar 50P"
+              }
+            }
+          },
+          "night": {
+            "placeTimeZone": "Etc/GMT+2",
+            "planName": "Nuit du 2026-10-05",
+            "source": "plan",
+            "value": {
+              "date": "2026-10-05",
+              "finishedAt": "2026-10-06T04:50:00.000Z",
+              "startedAt": "2026-10-05T21:40:00.000Z",
+              "title": "Nuit du 2026-10-05"
+            }
+          },
+          "notes": {
+            "at": null,
+            "edited": false,
+            "source": null,
+            "value": null
+          },
+          "place": { "source": "plan", "value": { "name": "Col des Étoiles" } },
+          "processing": {
+            "software": {
+              "at": null,
+              "edited": false,
+              "source": null,
+              "value": null
+            },
+            "steps": {
+              "at": null,
+              "edited": false,
+              "source": null,
+              "value": null
+            }
+          },
+          "sensor": {
+            "at": null,
+            "edited": false,
+            "source": null,
+            "value": null
+          },
+          "sessionId": "00000000-0000-4000-8000-00000000000b",
+          "title": {
+            "at": "2026-10-14T08:00:00.000Z",
+            "edited": false,
+            "source": "astro-sync",
+            "value": "M31, deux filtres"
+          }
+        },
+        "originalName": "m31-stack.jpg",
+        "planId": null,
+        "preview": false,
+        "progression": [],
+        "protectionLapsed": false,
+        "quality": {
+          "eccentricity": 0.38,
+          "fwhmArcsec": 2.1,
+          "fwhmPixels": 2.6,
+          "measuredAt": "2026-10-14T08:00:00.000Z",
+          "measuredOn": "linear",
+          "starCount": 1840,
+          "tool": { "name": "Astro Sync", "version": "1.4.0" }
+        },
+        "qualityShown": { "private": true, "public": true },
+        "replacedAt": null,
+        "replacedSource": null,
+        "revision": 7,
+        "sessionId": "00000000-0000-4000-8000-00000000000b",
+        "sha256": "b688ca32282bf7916b51965734fcaf3984622e482538ac39652b8db43cac618b",
+        "showable": false,
+        "stage": "draft",
+        "state": {
+          "protectionLiftsAt": null,
+          "publishAllowed": false,
+          "publishRefusal": "check_pending",
+          "publishingBlockedUntil": null,
+          "state": "check_pending",
+          "teamLine": null
+        },
+        "status": "uploaded",
+        "tags": [],
+        "targetIds": ["m31"],
+        "targets": [
+          {
+            "aliases": [],
+            "decDegrees": null,
+            "designation": "M 31",
+            "id": "m31",
+            "raHours": null,
+            "source": "catalogue",
+            "type": null
+          }
+        ],
+        "telescope": "Askar 50P",
+        "thumbnail": false,
+        "variants": [
+          {
+            "arrivalRank": 1,
+            "automaticCheck": null,
+            "byteSize": 100,
+            "createdAt": "2026-10-14T08:00:00.000Z",
+            "description": null,
+            "edited": false,
+            "frameCount": null,
+            "height": null,
+            "id": "00000000-0000-4000-8000-000000000017",
+            "main": true,
+            "originalName": "m31-stack.jpg",
+            "public": false,
+            "quality": {
+              "eccentricity": 0.38,
+              "fwhmArcsec": 2.1,
+              "fwhmPixels": 2.6,
+              "measuredAt": "2026-10-14T08:00:00.000Z",
+              "measuredOn": "linear",
+              "starCount": 1840,
+              "tool": { "name": "Astro Sync", "version": "1.4.0" }
+            },
+            "role": null,
+            "sha256": "b688ca32282bf7916b51965734fcaf3984622e482538ac39652b8db43cac618b",
+            "skySolved": false,
+            "source": "astro-sync",
+            "thumbnail": false,
+            "title": null,
+            "titleSource": null,
+            "width": null
+          }
+        ],
+        "visibility": "private"
+      }
+    },
+    "schema": "manage-captures.schema.json#/$defs/acquisitionSync",
+    "status": 200
+  }
+}

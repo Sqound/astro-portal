@@ -1,0 +1,120 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "itemId": "cur",
+          "schedule": [],
+          "value": 100,
+          "window": { "end": 60, "start": 0 }
+        }
+      ],
+      "id": "resize-clamped-to-minimum-duration",
+      "result": { "patch": { "startMinute": 55 }, "snapped": false }
+    },
+    {
+      "args": [
+        {
+          "itemId": "cur",
+          "schedule": [
+            { "item": { "id": "other" }, "window": { "end": 150, "start": 20 } }
+          ],
+          "value": 140,
+          "window": { "end": 200, "start": 120 }
+        }
+      ],
+      "id": "overlapping-start-changes-the-start-only",
+      "result": { "patch": { "startMinute": 140 }, "snapped": false }
+    },
+    {
+      "args": [
+        {
+          "itemId": "cur",
+          "schedule": [
+            {
+              "item": { "id": "other" },
+              "window": { "end": 440, "start": 300 }
+            }
+          ],
+          "value": 490,
+          "window": { "end": 480, "start": 420 }
+        }
+      ],
+      "id": "late-target-start-moves-right-up-to-end-less-minimum",
+      "result": { "patch": { "startMinute": 475 }, "snapped": false }
+    },
+    {
+      "args": [
+        {
+          "itemId": "cur",
+          "schedule": [
+            {
+              "item": { "id": "other" },
+              "window": { "end": 440, "start": 300 }
+            }
+          ],
+          "value": 380,
+          "window": { "end": 480, "start": 420 }
+        }
+      ],
+      "id": "late-target-start-moves-left-alone",
+      "result": { "patch": { "startMinute": 380 }, "snapped": false }
+    },
+    {
+      "args": [
+        {
+          "itemId": "cur",
+          "schedule": [],
+          "value": -30,
+          "window": { "end": 100, "start": 40 }
+        }
+      ],
+      "id": "start-clamped-to-night-start",
+      "result": { "patch": { "startMinute": 0 }, "snapped": false }
+    },
+    {
+      "args": [
+        {
+          "itemId": "cur",
+          "schedule": [
+            { "item": { "id": "other" }, "window": { "end": 130, "start": 20 } }
+          ],
+          "value": 128,
+          "window": { "end": 200, "start": 50 }
+        }
+      ],
+      "id": "snaps-to-neighboring-edge",
+      "result": { "patch": { "startMinute": 130 }, "snapped": true }
+    },
+    {
+      "args": [
+        {
+          "itemId": "cur",
+          "schedule": [
+            { "item": { "id": "other" }, "window": { "end": 130, "start": 20 } }
+          ],
+          "value": 100,
+          "window": { "end": 200, "start": 50 }
+        }
+      ],
+      "id": "no-snap-beyond-threshold",
+      "result": { "patch": { "startMinute": 100 }, "snapped": false }
+    },
+    {
+      "args": [
+        {
+          "itemId": "cur",
+          "minimumDuration": 10,
+          "schedule": [],
+          "snapMinutes": 15,
+          "value": 45,
+          "window": { "end": 50, "start": 0 }
+        }
+      ],
+      "id": "custom-snap-and-minimum-duration",
+      "result": { "patch": { "startMinute": 40 }, "snapped": false }
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "schedule-start-update"
+}

@@ -1,0 +1,108 @@
+{
+  "cases": [
+    {
+      "args": [
+        "#0      Sheet.build (example/sheet.js:412:17)\n#1      Widget.build (example/framework.js:5799:49)"
+      ],
+      "id": "clean-stack-trace",
+      "result": "#0      Sheet.build (example/sheet.js:412:17)\n#1      Widget.build (example/framework.js:5799:49)"
+    },
+    {
+      "args": ["iOS 18.6.2 · app 1.4.0+17 · iPhone17,1"],
+      "id": "clean-versions",
+      "result": "iOS 18.6.2 · app 1.4.0+17 · iPhone17,1"
+    },
+    {
+      "args": ["Timeout after 0:00:30.000000 waiting for set_view_plan"],
+      "id": "clean-duration",
+      "result": "Timeout after 0:00:30.000000 waiting for set_view_plan"
+    },
+    {
+      "args": ["Plan 3f2b8c1e-5d4a-4e6f-9a7b-1c2d3e4f5a6b was not found"],
+      "id": "clean-uuid",
+      "result": "Plan 3f2b8c1e-5d4a-4e6f-9a7b-1c2d3e4f5a6b was not found"
+    },
+    {
+      "args": ["score 72.5, altitude 41.25°"],
+      "id": "clean-small-decimals",
+      "result": "score 72.5, altitude 41.25°"
+    },
+    {
+      "args": ["place rounded to 45 N, 30 W"],
+      "id": "clean-whole-degrees",
+      "result": "place rounded to 45 N, 30 W"
+    },
+    {
+      "args": ["Weather failed for 45.1234,-30.5678"],
+      "id": "coordinate-pair",
+      "result": "Weather failed for [coord],[coord]"
+    },
+    {
+      "args": [
+        "GET https://api.example.test/forecast?lat=45.12345&lon=-30.98765 failed"
+      ],
+      "id": "coordinate-in-url",
+      "result": "GET https://api.example.test/forecast?lat=[coord]&lon=[coord] failed"
+    },
+    {
+      "args": ["Place at 45°07' N 30°32' W"],
+      "id": "coordinate-degrees-minutes",
+      "result": "Place at [coord] N [coord] W"
+    },
+    {
+      "args": ["Sign-in failed for camille@exemple.test"],
+      "id": "email-address",
+      "result": "Sign-in failed for [e-mail]"
+    },
+    {
+      "args": [
+        "SocketException: Connection refused (address = 192.0.2.10, port = 4700)"
+      ],
+      "id": "ipv4-address",
+      "result": "SocketException: Connection refused (address = [réseau], port = 4700)"
+    },
+    {
+      "args": ["No route to fe80::1c2b:3d4e:5f60:7a8b"],
+      "id": "ipv6-address",
+      "result": "No route to [réseau]"
+    },
+    {
+      "args": ["Device 02:00:5e:10:00:01 answered nothing"],
+      "id": "mac-address",
+      "result": "Device [réseau] answered nothing"
+    },
+    {
+      "args": [
+        "Authorization: Bearer abcDEF0123456789abcDEF0123456789abcDEF012"
+      ],
+      "id": "bearer-token",
+      "result": "Authorization: Bearer [secret]"
+    },
+    {
+      "args": ["request failed: token=Zm9vYmFy and password: hunter2"],
+      "id": "keyed-secret",
+      "result": "request failed: token=[secret] and password: [secret]"
+    },
+    {
+      "args": [
+        "signature 4f6a1d9c2b7e8f30a5c4d1e2f3a4b5c6d7e8f9a0b1c2 rejected"
+      ],
+      "id": "long-key-run",
+      "result": "signature [secret] rejected"
+    },
+    {
+      "args": [
+        "key: -----BEGIN ENCRYPTED PRIVATE KEY-----\nU1lOVEhFVElD\n-----END ENCRYPTED PRIVATE KEY-----"
+      ],
+      "id": "pem-block",
+      "result": "key: [secret]"
+    },
+    {
+      "args": ["exposure 1234.5678 s"],
+      "id": "large-decimal-kept",
+      "result": "exposure 1234.5678 s"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "app-log-redaction"
+}

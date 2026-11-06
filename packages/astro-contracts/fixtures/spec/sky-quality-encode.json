@@ -1,0 +1,15 @@
+{
+  "module": "sky-quality-encode",
+  "package": "portal",
+  "file": "sky-quality",
+  "export": "encodeSkyQualityRadiance",
+  "cases": [
+    { "id": "zero-radiance", "args": [0] },
+    { "id": "one-offset", "args": [0.01] },
+    { "id": "one-nanowatt", "args": [1] },
+    { "id": "maximum-radiance", "args": [2000] },
+    { "id": "above-maximum-clamps", "args": [4000] },
+    { "id": "negative-radiance", "args": [-1] },
+    { "id": "non-numeric", "args": ["abc"] }
+  ]
+}

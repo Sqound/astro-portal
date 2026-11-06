@@ -1,0 +1,40 @@
+{
+  "exchange": "conflict-tags",
+  "handler": "captures/[captureId]",
+  "as": "phone",
+  "status": 409,
+  "phase": "write",
+  "capture": "capture:conflicts",
+  "params": {
+    "captureId": "{capture:conflicts}"
+  },
+  "before": [
+    {
+      "as": "web",
+      "handler": "manage/captures/[captureId]",
+      "params": {
+        "captureId": "{capture:conflicts}"
+      },
+      "request": {
+        "method": "PATCH",
+        "path": "/api/v1/manage/captures/{capture:conflicts}",
+        "body": {
+          "tags": ["Nébuleuse"]
+        }
+      }
+    }
+  ],
+  "request": {
+    "method": "PATCH",
+    "path": "/api/v1/captures/{capture:conflicts}",
+    "headers": {
+      "if-match": "\"{revision}\""
+    },
+    "body": {
+      "tags": ["Dual-band"]
+    }
+  },
+  "schema": "manage-captures.schema.json#/$defs/refusal",
+  "description": "The phone replaces the tags at the revision it read; the web changed them first: 409, field tags. A change of another field would not have refused it.",
+  "given": "The web tagged the capture after the revision the phone read."
+}

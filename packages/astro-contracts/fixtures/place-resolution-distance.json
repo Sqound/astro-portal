@@ -1,0 +1,38 @@
+{
+  "cases": [
+    {
+      "args": [
+        { "latitude": 45, "longitude": 5 },
+        { "latitude": 45, "longitude": 5 }
+      ],
+      "id": "identical-points",
+      "result": 0
+    },
+    {
+      "args": [
+        { "latitude": 45, "longitude": 5 },
+        { "latitude": 45.0898, "longitude": 5 }
+      ],
+      "id": "just-under-10km",
+      "result": 9.985318204970897
+    },
+    {
+      "args": [
+        { "latitude": 45, "longitude": 5 },
+        { "latitude": 45.091, "longitude": 5 }
+      ],
+      "id": "just-over-10km",
+      "result": 10.118752301251615
+    },
+    {
+      "args": [
+        { "latitude": 999, "longitude": 5 },
+        { "latitude": 45, "longitude": 5 }
+      ],
+      "id": "invalid-coordinates-rejected",
+      "result": null
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "place-resolution-distance"
+}

@@ -1,0 +1,5324 @@
+{
+  "module": "effective-acquisition",
+  "package": "planner",
+  "file": "acquisition",
+  "export": "effectiveAcquisition",
+  "cases": [
+    {
+      "id": "table-emission-colourBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "UV/IR-cut",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-emission-colourDual",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L-eXtreme",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-emission-monoBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L",
+              "family": "l"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-emission-monoNarrow",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "Ha 3nm",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Ha 3nm",
+              "family": "ha"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-planetary-colourBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "UV/IR-cut",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse planétaire"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-planetary-colourDual",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L-eXtreme",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse planétaire"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-planetary-monoBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse planétaire"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L",
+              "family": "l"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-planetary-monoNarrow",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "Ha 3nm",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse planétaire"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Ha 3nm",
+              "family": "ha"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-reflection-colourBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "UV/IR-cut",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en réflexion"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-reflection-colourDual",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L-eXtreme",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en réflexion"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-reflection-monoBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en réflexion"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L",
+              "family": "l"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-reflection-monoNarrow",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "Ha 3nm",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en réflexion"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Ha 3nm",
+              "family": "ha"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-galaxy-colourBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "UV/IR-cut",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-galaxy-colourDual",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L-eXtreme",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-galaxy-monoBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L",
+              "family": "l"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-galaxy-monoNarrow",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "Ha 3nm",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Ha 3nm",
+              "family": "ha"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-cluster-colourBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "UV/IR-cut",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Amas ouvert"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-cluster-colourDual",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L-eXtreme",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Amas ouvert"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-cluster-monoBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Amas ouvert"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L",
+              "family": "l"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-cluster-monoNarrow",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "Ha 3nm",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Amas ouvert"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Ha 3nm",
+              "family": "ha"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-comet-colourBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "UV/IR-cut",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Comète"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-comet-colourDual",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L-eXtreme",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Comète"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-comet-monoBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Comète"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L",
+              "family": "l"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-comet-monoNarrow",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "Ha 3nm",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Comète"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Ha 3nm",
+              "family": "ha"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-planet-colourBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "UV/IR-cut",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Planète"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-planet-colourDual",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L-eXtreme",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Planète"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-planet-monoBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Planète"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L",
+              "family": "l"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-planet-monoNarrow",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "Ha 3nm",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Planète"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Ha 3nm",
+              "family": "ha"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-moon-colourBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "UV/IR-cut",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Lune"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-moon-colourDual",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L-eXtreme",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Lune"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-moon-monoBroadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Lune"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L",
+              "family": "l"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "table-moon-monoNarrow",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "Ha 3nm",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Lune"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Ha 3nm",
+              "family": "ha"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "sky-dark-broadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 21.6
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "sky-dark-narrowband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 21.6
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "sky-medium-broadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "sky-medium-narrowband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "sky-bright-broadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 19.9
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "sky-bright-narrowband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 19.9
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "sky-threshold-dark-edge",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 21.3
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "sky-threshold-bright-edge",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.3
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "sky-unknown-no-correction",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {},
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "focal-ratio-f2-5-lower-bound",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 125,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "focal-ratio-f4-fast",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 200,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "focal-ratio-f5-reference",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "focal-ratio-f6-medium",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 300,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "focal-ratio-f7-slow",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 350,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "focal-ratio-f10-upper-bound",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 500,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "mount-altaz",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en réflexion"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": "altaz"
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "mount-equatorial",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en réflexion"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": "equatorial"
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "mount-guided",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en réflexion"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": "guided"
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "mount-unknown",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en réflexion"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "device-cap-15-s",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": 15,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "device-cap-under-mount-cap-wins",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": 20,
+            "mountKind": "equatorial"
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "device-cap-above-the-value-changes-nothing",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Amas ouvert"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": 120,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "device-cap-under-the-first-step",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": 5,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "rounding-down-to-the-nearest-step",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 275,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "rounding-up-to-the-nearest-step",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 285,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "gain-hcg-gain",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": 100,
+            "hcgGain": 200,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "gain-unity-gain",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": 100,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "gain-dslr-iso",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dslr",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": 200,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "gain-smart-telescope-is-the-devices",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "smart-telescope",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": 200,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "gain-unknown-is-the-devices",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "gain-planet-is-high-left-to-the-device",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Planète"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": 200,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "gain-moon-is-low-left-to-the-device",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Lune"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": 200,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "binning-mono-fine-sampling",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.4,
+            "focalLengthMm": 2032,
+            "apertureMm": 203.2,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "binning-mono-coarse-sampling",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 3.76,
+            "focalLengthMm": 400,
+            "apertureMm": 80,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "binning-colour-stays-1",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.4,
+            "focalLengthMm": 2032,
+            "apertureMm": 203.2,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "binning-mono-no-pixel-size",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": null,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "frames-from-a-two-hour-slot",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "frames-from-a-short-slot",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 3
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "frames-slot-shorter-than-one-exposure",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 1
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "frames-without-a-slot",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": ""
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "frames-lines-share-the-slot",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120,
+          "acquisition": {
+            "lines": [
+              {
+                "filter": "Ha 3nm",
+                "exposureSeconds": 300
+              },
+              {
+                "filter": "O III",
+                "exposureSeconds": 300
+              }
+            ]
+          }
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Ha 3nm",
+              "family": "ha"
+            },
+            {
+              "name": "O III"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "frames-video-is-capped-at-90-s",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 30
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Planète"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "frames-chosen-that-fit",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120,
+          "acquisition": {
+            "lines": [
+              {
+                "exposureSeconds": 120,
+                "frameCount": 40
+              }
+            ]
+          }
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "frames-chosen-that-do-not-fit-are-flagged",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120,
+          "acquisition": {
+            "lines": [
+              {
+                "exposureSeconds": 120,
+                "frameCount": 100
+              }
+            ]
+          }
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "frames-chosen-share-of-two-lines",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120,
+          "acquisition": {
+            "lines": [
+              {
+                "exposureSeconds": 120,
+                "frameCount": 40
+              },
+              {
+                "exposureSeconds": 120
+              }
+            ]
+          }
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "frames-from-the-plan-defaults-are-checked",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": [],
+          "acquisitionDefaults": {
+            "exposureSeconds": 600,
+            "frameCount": 30
+          }
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-target-line-wins-over-plan-defaults",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": [],
+          "acquisitionDefaults": {
+            "exposureSeconds": 180,
+            "gain": 120,
+            "binning": 2,
+            "filter": "Ha 3nm"
+          }
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120,
+          "acquisition": {
+            "lines": [
+              {
+                "exposureSeconds": 90,
+                "gain": 50,
+                "binning": 1,
+                "filter": "L",
+                "frameCount": 10
+              }
+            ]
+          }
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-plan-defaults-win-over-the-rule",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": [],
+          "acquisitionDefaults": {
+            "exposureSeconds": 180,
+            "gain": 120,
+            "binning": 2,
+            "filter": "Ha 3nm"
+          }
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-item-filter-is-the-first-lines-filter",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": [],
+          "acquisitionDefaults": {
+            "filter": "Ha 3nm"
+          }
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L",
+          "startMinute": 0,
+          "endMinute": 120,
+          "acquisition": {
+            "lines": [
+              {
+                "exposureSeconds": 120
+              },
+              {
+                "exposureSeconds": 120
+              }
+            ]
+          }
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-item-filter-without-lines",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": [],
+          "acquisitionDefaults": {
+            "filter": "Ha 3nm"
+          }
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-a-null-filter-of-the-line-beats-item-filter",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "L",
+          "startMinute": 0,
+          "endMinute": 120,
+          "acquisition": {
+            "lines": [
+              {
+                "filter": null
+              }
+            ]
+          }
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-a-null-gain-is-a-choice",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": [],
+          "acquisitionDefaults": {
+            "gain": 120
+          }
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120,
+          "acquisition": {
+            "lines": [
+              {
+                "gain": null
+              }
+            ]
+          }
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": 200,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-empty-item-filter-is-nothing-chosen",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR-cut",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-a-chosen-filter-sets-the-column",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "Ha 3nm",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Ha 3nm",
+              "family": "ha"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "source-eight-lines",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 480,
+          "acquisition": {
+            "lines": [
+              {
+                "exposureSeconds": 60
+              },
+              {
+                "exposureSeconds": 61
+              },
+              {
+                "exposureSeconds": 62
+              },
+              {
+                "exposureSeconds": 63
+              },
+              {
+                "exposureSeconds": 64
+              },
+              {
+                "exposureSeconds": 65
+              },
+              {
+                "exposureSeconds": 66
+              },
+              {
+                "exposureSeconds": 67
+              }
+            ]
+          }
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "visual-mode-proposes-nothing",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "visual"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "visual-mode-keeps-nothing-either",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "visual"
+          },
+          "items": [],
+          "acquisitionDefaults": {
+            "exposureSeconds": 90
+          }
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120,
+          "acquisition": {
+            "lines": [
+              {
+                "exposureSeconds": 90
+              }
+            ]
+          }
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-mode-overrides-the-plan",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          },
+          "mode": "visual"
+        }
+      ]
+    },
+    {
+      "id": "no-mode-is-photo",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {},
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "star-gets-nothing-proposed",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Étoile"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "no-target-gets-nothing-proposed",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter-emission-takes-the-dual-band-first",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Hα 7nm",
+              "family": "ha"
+            },
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            },
+            {
+              "name": "UV/IR",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter-emission-moon-dim-settles-for-broadband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter-emission-moon-bright-wants-narrowband",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 80
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter-emission-moon-at-30-is-not-bright",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "UV/IR",
+              "family": "broadband"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter-planetary-nebula-ha-before-oiii",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse planétaire"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "O III",
+              "family": "oiii"
+            },
+            {
+              "name": "Hα",
+              "family": "ha"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter-galaxy-prefers-luminance-then-channels",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Red",
+              "family": "r"
+            },
+            {
+              "name": "Lum",
+              "family": "l"
+            },
+            {
+              "name": "Green",
+              "family": "g"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter-galaxy-with-channels-only",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "mono",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Green"
+            },
+            {
+              "name": "Blue"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter-galaxy-with-a-dual-band-only-has-none",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "L-eXtreme",
+              "family": "dual"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter-no-filters-owned",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter-family-read-from-the-name",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Nébuleuse en émission"
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Optolong L-eNhance"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter-explicit-catalogue-families-win",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit",
+          "equipment": {
+            "mode": "imaging"
+          },
+          "items": []
+        },
+        {
+          "id": "i1",
+          "targetId": "t1",
+          "filter": "",
+          "startMinute": 0,
+          "endMinute": 120
+        },
+        {
+          "target": {
+            "skyTarget": {
+              "typeKey": "Galaxie"
+            },
+            "knowledge": {
+              "observingGuide": {
+                "photoFilterFamilies": ["ha"]
+              }
+            }
+          },
+          "equipment": {
+            "deviceKind": "dedicated",
+            "sensorKind": "colour",
+            "pixelSizeUm": 2.9,
+            "focalLengthMm": 250,
+            "apertureMm": 50,
+            "unityGain": null,
+            "hcgGain": null,
+            "maxExposureSeconds": null,
+            "mountKind": null
+          },
+          "filters": [
+            {
+              "name": "Hα",
+              "family": "ha"
+            },
+            {
+              "name": "L",
+              "family": "l"
+            }
+          ],
+          "sky": {
+            "sqm": 20.8
+          },
+          "moon": {
+            "illumination": 10
+          }
+        }
+      ]
+    }
+  ]
+}

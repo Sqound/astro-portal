@@ -1,0 +1,50 @@
+{
+  "module": "cloud-disagreement",
+  "package": "portal",
+  "file": "astronomy-forecast",
+  "export": "cloudDisagreement",
+  "cases": [
+    {
+      "id": "night-2026-10-22-22h",
+      "args": [
+        {
+          "best_match": 3,
+          "ecmwf_ifs025": 3,
+          "icon_seamless": 74,
+          "gfs_seamless": 13,
+          "jma_seamless": 3
+        }
+      ]
+    },
+    {
+      "id": "exactly-25-points-is-a-disagreement",
+      "args": [
+        {
+          "best_match": 10,
+          "icon_seamless": 35
+        }
+      ]
+    },
+    {
+      "id": "24-points-is-not",
+      "args": [
+        {
+          "best_match": 10,
+          "icon_seamless": 34
+        }
+      ]
+    },
+    {
+      "id": "one-model-never-disagrees",
+      "args": [
+        {
+          "icon_seamless": 90
+        }
+      ]
+    },
+    {
+      "id": "no-model",
+      "args": [{}]
+    }
+  ]
+}

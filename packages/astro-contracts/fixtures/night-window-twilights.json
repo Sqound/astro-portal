@@ -1,0 +1,191 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "date": "2025-01-10",
+          "elevation": 0,
+          "latitude": 45,
+          "longitude": 10,
+          "timeZone": "UTC"
+        }
+      ],
+      "id": "mid-latitude-winter",
+      "result": {
+        "astronomical": {
+          "end": "2025-01-11T05:11:33.384Z",
+          "start": "2025-01-10T17:43:46.146Z"
+        },
+        "civil": {
+          "end": "2025-01-11T06:23:27.734Z",
+          "start": "2025-01-10T16:31:44.788Z"
+        },
+        "nautical": {
+          "end": "2025-01-11T05:46:52.222Z",
+          "start": "2025-01-10T17:08:24.268Z"
+        },
+        "sun": {
+          "sunrise": "2025-01-11T06:56:30.189Z",
+          "sunset": "2025-01-10T15:58:37.691Z"
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "elevation": 0,
+          "latitude": 45,
+          "longitude": -30,
+          "timeZone": "Atlantic/Azores"
+        }
+      ],
+      "id": "open-ocean-autumn",
+      "result": {
+        "astronomical": {
+          "end": "2026-10-15T06:38:00.368Z",
+          "start": "2026-10-14T20:54:20.922Z"
+        },
+        "civil": {
+          "end": "2026-10-15T07:46:04.420Z",
+          "start": "2026-10-14T19:46:25.260Z"
+        },
+        "nautical": {
+          "end": "2026-10-15T07:12:02.193Z",
+          "start": "2026-10-14T20:20:22.841Z"
+        },
+        "sun": {
+          "sunrise": "2026-10-15T08:15:40.722Z",
+          "sunset": "2026-10-14T19:16:53.939Z"
+        }
+      }
+    },
+    {
+      "args": [{ "date": "2026-10-14", "latitude": 45, "longitude": 170 }],
+      "id": "zoneless-open-ocean",
+      "result": {
+        "astronomical": {
+          "end": "2026-10-14T17:17:18.437Z",
+          "start": "2026-10-14T07:35:18.068Z"
+        },
+        "civil": {
+          "end": "2026-10-14T18:25:22.517Z",
+          "start": "2026-10-14T06:27:22.299Z"
+        },
+        "nautical": {
+          "end": "2026-10-14T17:51:20.835Z",
+          "start": "2026-10-14T07:01:19.388Z"
+        },
+        "sun": {
+          "sunrise": "2026-10-14T18:54:57.452Z",
+          "sunset": "2026-10-14T05:57:52.323Z"
+        }
+      }
+    },
+    {
+      "args": [{ "date": "2026-06-21", "latitude": 55, "longitude": -30 }],
+      "id": "short-summer-night",
+      "result": {
+        "astronomical": null,
+        "civil": {
+          "end": "2026-06-22T04:22:34.612Z",
+          "start": "2026-06-21T23:41:19.285Z"
+        },
+        "nautical": null,
+        "sun": {
+          "sunrise": "2026-06-22T05:20:49.479Z",
+          "sunset": "2026-06-21T22:43:04.435Z"
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-06-21",
+          "latitude": 69.6,
+          "longitude": 19,
+          "timeZone": "Europe/Berlin"
+        }
+      ],
+      "id": "midnight-sun",
+      "result": {
+        "astronomical": null,
+        "civil": null,
+        "nautical": null,
+        "sun": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "elevation": 0,
+          "latitude": 45,
+          "longitude": -30,
+          "sunAltitudeDegrees": -6,
+          "timeZone": "Atlantic/Azores"
+        }
+      ],
+      "id": "threshold-in-input-is-ignored",
+      "result": {
+        "astronomical": {
+          "end": "2026-10-15T06:38:00.368Z",
+          "start": "2026-10-14T20:54:20.922Z"
+        },
+        "civil": {
+          "end": "2026-10-15T07:46:04.420Z",
+          "start": "2026-10-14T19:46:25.260Z"
+        },
+        "nautical": {
+          "end": "2026-10-15T07:12:02.193Z",
+          "start": "2026-10-14T20:20:22.841Z"
+        },
+        "sun": {
+          "sunrise": "2026-10-15T08:15:40.722Z",
+          "sunset": "2026-10-14T19:16:53.939Z"
+        }
+      }
+    },
+    {
+      "args": [{ "date": "2026-10-14", "latitude": 95, "longitude": 0 }],
+      "id": "invalid-place",
+      "result": {
+        "astronomical": null,
+        "civil": null,
+        "nautical": null,
+        "sun": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "latitude": 45,
+          "longitude": 170,
+          "timeZone": "UTC"
+        }
+      ],
+      "id": "explicit-utc-far-east",
+      "result": {
+        "astronomical": {
+          "end": "2026-10-15T17:18:33.866Z",
+          "start": "2026-10-15T07:33:35.492Z"
+        },
+        "civil": {
+          "end": "2026-10-15T18:26:37.975Z",
+          "start": "2026-10-15T06:25:39.820Z"
+        },
+        "nautical": {
+          "end": "2026-10-15T17:52:35.275Z",
+          "start": "2026-10-15T06:59:37.846Z"
+        },
+        "sun": {
+          "sunrise": "2026-10-15T18:56:15.402Z",
+          "sunset": "2026-10-15T05:56:07.405Z"
+        }
+      }
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "night-window-twilights"
+}

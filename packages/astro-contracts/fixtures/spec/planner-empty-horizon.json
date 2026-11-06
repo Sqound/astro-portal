@@ -1,0 +1,7 @@
+{
+  "module": "planner-empty-horizon",
+  "package": "portal",
+  "file": "planner/state",
+  "export": "emptyHorizon",
+  "cases": [{ "id": "thirty-six-points-every-ten-degrees", "args": [] }]
+}

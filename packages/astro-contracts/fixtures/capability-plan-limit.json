@@ -1,0 +1,12 @@
+{
+  "cases": [
+    { "args": [0], "id": "zero-is-unlimited", "result": true },
+    { "args": [-1], "id": "negative-is-unlimited", "result": true },
+    { "args": [1], "id": "positive-is-limited", "result": false },
+    { "args": [5], "id": "larger-positive-is-limited", "result": false },
+    { "args": [null], "id": "absent-is-unlimited", "result": true },
+    { "args": ["abc"], "id": "non-numeric-is-unlimited", "result": true }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "capability-plan-limit"
+}

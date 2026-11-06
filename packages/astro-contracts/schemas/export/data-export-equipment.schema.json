@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/export/data-export-equipment.schema.json",
+  "title": "Data export — equipment.json",
+  "description": "« Matériel »: the owner's equipment inventory, each item equipment.schema.json's `equipmentItem` (the phone writes the copy of the space it holds).",
+  "type": "object",
+  "required": ["formatVersion", "part", "exportedAt", "equipment"],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "part": {
+      "const": "equipment"
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "equipment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

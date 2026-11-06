@@ -1,0 +1,55 @@
+name: Bug report
+description: Something in Astro Portal does not work as described.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting. Please leave out personal data: your images,
+        the coordinates of your sites, your database, your server's public
+        address. A security vulnerability goes through SECURITY.md, never a
+        public issue.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The version shown at the end of the footer, or the release you installed.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: installation
+    attributes:
+      label: Installation
+      options:
+        - Docker (deploy/install.sh)
+        - Docker image built by hand
+        - Node.js (npm start)
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: System and browser
+      placeholder: "Ubuntu 24.04, Docker 27; Firefox 140"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What you did
+      description: The steps that lead to the problem, one per line.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What you saw, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: The relevant lines of `docker compose logs portal` (or of the server's output), without secrets.
+      render: text

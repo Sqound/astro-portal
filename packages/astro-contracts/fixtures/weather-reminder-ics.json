@@ -1,0 +1,391 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+            "name": "Autumn nebulae"
+          }
+        }
+      ],
+      "id": "eighteen-hours-before-the-night",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Weather check — Autumn nebulae\r\nDESCRIPTION:Recheck the local astronomy forecast before this observing night.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Weather check — Autumn nebulae\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Weather check — Observation plan\r\nDESCRIPTION:Recheck the local astronomy forecast before this observing night.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Weather check — Observation plan\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "night": { "start": "not-a-date" },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+            "name": "Autumn nebulae"
+          }
+        }
+      ],
+      "id": "no-night-window",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "locale": "en",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan-in-en",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Weather check — Observation plan\r\nDESCRIPTION:Recheck the local astronomy forecast before this observing night.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Weather check — Observation plan\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "fr",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan-in-fr",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Vérification météo — Plan d’observation\r\nDESCRIPTION:Vérifiez de nouveau les prévisions astronomiques locales avant cette nuit d’observation.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Vérification météo — Plan d’observation\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "ja",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan-in-ja",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:天気の確認 — 観測プラン\r\nDESCRIPTION:この観測の夜の前に、現地の天体観測向け予報を再確認してください。\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:天気の確認 — 観測プラン\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "de",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan-in-de",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Wetterprüfung — Beobachtungsplan\r\nDESCRIPTION:Prüfe vor dieser Beobachtungsnacht noch einmal die lokale astronomische Vorhersage.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Wetterprüfung — Beobachtungsplan\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "es",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan-in-es",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Revisión meteorológica — Plan de observación\r\nDESCRIPTION:Vuelve a consultar el pronóstico astronómico local antes de esta noche de observación.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Revisión meteorológica — Plan de observación\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "it",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan-in-it",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Controllo meteo — Piano di osservazione\r\nDESCRIPTION:Ricontrolla le previsioni astronomiche locali prima di questa notte di osservazione.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Controllo meteo — Piano di osservazione\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "pt-BR",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan-in-pt-br",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Verificação meteorológica — Plano de observação\r\nDESCRIPTION:Verifique novamente a previsão astronômica local antes desta noite de observação.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Verificação meteorológica — Plano de observação\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "ru",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan-in-ru",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Проверка погоды — План наблюдений\r\nDESCRIPTION:Перед этой ночью наблюдений ещё раз проверьте местный астрономический прогноз.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Проверка погоды — План наблюдений\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "zh-Hans",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan-in-zh-hans",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:天气检查：观测计划\r\nDESCRIPTION:请在这一夜开始前，再次查看当地的天文预报。\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:天气检查：观测计划\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "zh-Hant",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan-in-zh-hant",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:天氣檢查：觀測計畫\r\nDESCRIPTION:請在這一夜開始前，再次查看當地的天文預報。\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:天氣檢查：觀測計畫\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "en-XA",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": { "date": "2026-09-15", "id": "plan-5" }
+        }
+      ],
+      "id": "unnamed-plan-in-en-xa",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-5\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Weather check — Observation plan\r\nDESCRIPTION:Recheck the local astronomy forecast before this observing night.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Weather check — Observation plan\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "fr",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "name": "Nuit; au col, ici"
+          }
+        }
+      ],
+      "id": "named-plan-in-fr",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Vérification météo — Nuit\\; au col\\, ici\r\nDESCRIPTION:Vérifiez de nouveau les prévisions astronomiques locales avant cette nuit d’observation.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Vérification météo — Nuit\\; au col\\, ici\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "ja",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "name": "Nuit; au col, ici"
+          }
+        }
+      ],
+      "id": "named-plan-in-ja",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:天気の確認 — Nuit\\; au col\\, ici\r\nDESCRIPTION:この観測の夜の前に、現地の天体観測向け予報を再確認してください。\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:天気の確認 — Nuit\\; au col\\, ici\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "de",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "name": "Nuit; au col, ici"
+          }
+        }
+      ],
+      "id": "named-plan-in-de",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Wetterprüfung — Nuit\\; au col\\, ici\r\nDESCRIPTION:Prüfe vor dieser Beobachtungsnacht noch einmal die lokale astronomische Vorhersage.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Wetterprüfung — Nuit\\; au col\\, ici\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "es",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "name": "Nuit; au col, ici"
+          }
+        }
+      ],
+      "id": "named-plan-in-es",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Revisión meteorológica — Nuit\\; au col\\, ici\r\nDESCRIPTION:Vuelve a consultar el pronóstico astronómico local antes de esta noche de observación.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Revisión meteorológica — Nuit\\; au col\\, ici\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "it",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "name": "Nuit; au col, ici"
+          }
+        }
+      ],
+      "id": "named-plan-in-it",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Controllo meteo — Nuit\\; au col\\, ici\r\nDESCRIPTION:Ricontrolla le previsioni astronomiche locali prima di questa notte di osservazione.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Controllo meteo — Nuit\\; au col\\, ici\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "pt-BR",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "name": "Nuit; au col, ici"
+          }
+        }
+      ],
+      "id": "named-plan-in-pt-br",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Verificação meteorológica — Nuit\\; au col\\, ici\r\nDESCRIPTION:Verifique novamente a previsão astronômica local antes desta noite de observação.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Verificação meteorológica — Nuit\\; au col\\, ici\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "ru",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "name": "Nuit; au col, ici"
+          }
+        }
+      ],
+      "id": "named-plan-in-ru",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:Проверка погоды — Nuit\\; au col\\, ici\r\nDESCRIPTION:Перед этой ночью наблюдений ещё раз проверьте местный астрономический прогноз.\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:Проверка погоды — Nuit\\; au col\\, ici\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "zh-Hans",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "name": "Nuit; au col, ici"
+          }
+        }
+      ],
+      "id": "named-plan-in-zh-hans",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:天气检查：Nuit\\; au col\\, ici\r\nDESCRIPTION:请在这一夜开始前，再次查看当地的天文预报。\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:天气检查：Nuit\\; au col\\, ici\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    },
+    {
+      "args": [
+        {
+          "locale": "zh-Hant",
+          "night": {
+            "end": "2026-09-16T04:10:00.000Z",
+            "start": "2026-09-15T23:40:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "name": "Nuit; au col, ici"
+          }
+        }
+      ],
+      "id": "named-plan-in-zh-hant",
+      "result": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Sqound//PlanAstro Weather reminder//EN\r\nCALSCALE:GREGORIAN\r\nBEGIN:VEVENT\r\nUID:astro-portal-weather-plan-1\r\nDTSTAMP:20260915T180000Z\r\nDTSTART:20260915T054000Z\r\nDTEND:20260915T055500Z\r\nSUMMARY:天氣檢查：Nuit\\; au col\\, ici\r\nDESCRIPTION:請在這一夜開始前，再次查看當地的天文預報。\r\nBEGIN:VALARM\r\nTRIGGER:PT0M\r\nACTION:DISPLAY\r\nDESCRIPTION:天氣檢查：Nuit\\; au col\\, ici\r\nEND:VALARM\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "weather-reminder-ics"
+}

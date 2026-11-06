@@ -1,0 +1,81 @@
+{
+  "$schema": "./guided-evening.schema.json",
+  "id": "moon-and-planets-tonight",
+  "sheetOrder": 3,
+  "kind": "computed",
+  "level": "beginner",
+  "observingModes": ["binoculars", "tripod", "mount", "smartTelescope"],
+  "estimatedMinutes": 30,
+  "hemispheres": ["north", "south"],
+  "seasons": ["winter", "spring", "summer", "autumn"],
+  "computed": {
+    "source": "solarSystem",
+    "stepType": "solarSystem",
+    "bodies": [
+      "moon",
+      "mercury",
+      "venus",
+      "mars",
+      "jupiter",
+      "saturn",
+      "uranus",
+      "neptune"
+    ],
+    "minAltitudeDegrees": 10,
+    "order": "westToEast",
+    "hideWhenEmpty": true,
+    "texts": [
+      {
+        "id": "lead-low",
+        "slot": "lead",
+        "when": { "altitudeBelowDegrees": 20 }
+      },
+      {
+        "id": "body-moon-crescent",
+        "slot": "body",
+        "when": { "body": "moon", "illuminatedBelow": 0.35 }
+      },
+      {
+        "id": "body-moon-quarter",
+        "slot": "body",
+        "when": {
+          "body": "moon",
+          "illuminatedFrom": 0.35,
+          "illuminatedBelow": 0.65
+        }
+      },
+      {
+        "id": "body-moon-gibbous",
+        "slot": "body",
+        "when": {
+          "body": "moon",
+          "waxing": true,
+          "illuminatedFrom": 0.65,
+          "illuminatedBelow": 0.97
+        }
+      },
+      {
+        "id": "body-moon-full",
+        "slot": "body",
+        "when": { "body": "moon", "illuminatedFrom": 0.97 }
+      },
+      {
+        "id": "body-moon-waning",
+        "slot": "body",
+        "when": {
+          "body": "moon",
+          "waxing": false,
+          "illuminatedFrom": 0.65,
+          "illuminatedBelow": 0.97
+        }
+      },
+      { "id": "body-mercury", "slot": "body", "when": { "body": "mercury" } },
+      { "id": "body-venus", "slot": "body", "when": { "body": "venus" } },
+      { "id": "body-mars", "slot": "body", "when": { "body": "mars" } },
+      { "id": "body-jupiter", "slot": "body", "when": { "body": "jupiter" } },
+      { "id": "body-saturn", "slot": "body", "when": { "body": "saturn" } },
+      { "id": "body-uranus", "slot": "body", "when": { "body": "uranus" } },
+      { "id": "body-neptune", "slot": "body", "when": { "body": "neptune" } }
+    ]
+  }
+}

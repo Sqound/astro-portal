@@ -1,0 +1,15 @@
+{
+  "exchange": "session-planned-declared",
+  "description": "A night launched with the lines frozen (`planned`: « 30 × 180 s · gain 100 · L ») that Astro Sync did not measure: `measured` is what the debriefing declared (`source: \"declared\"`: 30 frames of 180 s).",
+  "given": "The 5 October night of `list`.",
+  "handler": "route:sessions/[id]",
+  "phase": "read",
+  "params": {
+    "id": "{session:executed-group-2}"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/sessions/{session:executed-group-2}"
+  },
+  "schema": "session.schema.json#/$defs/detail"
+}

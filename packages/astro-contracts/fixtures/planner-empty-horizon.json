@@ -1,0 +1,51 @@
+{
+  "cases": [
+    {
+      "args": [],
+      "id": "thirty-six-points-every-ten-degrees",
+      "result": {
+        "enabled": true,
+        "points": [
+          { "altitude": 0, "azimuth": 0 },
+          { "altitude": 0, "azimuth": 10 },
+          { "altitude": 0, "azimuth": 20 },
+          { "altitude": 0, "azimuth": 30 },
+          { "altitude": 0, "azimuth": 40 },
+          { "altitude": 0, "azimuth": 50 },
+          { "altitude": 0, "azimuth": 60 },
+          { "altitude": 0, "azimuth": 70 },
+          { "altitude": 0, "azimuth": 80 },
+          { "altitude": 0, "azimuth": 90 },
+          { "altitude": 0, "azimuth": 100 },
+          { "altitude": 0, "azimuth": 110 },
+          { "altitude": 0, "azimuth": 120 },
+          { "altitude": 0, "azimuth": 130 },
+          { "altitude": 0, "azimuth": 140 },
+          { "altitude": 0, "azimuth": 150 },
+          { "altitude": 0, "azimuth": 160 },
+          { "altitude": 0, "azimuth": 170 },
+          { "altitude": 0, "azimuth": 180 },
+          { "altitude": 0, "azimuth": 190 },
+          { "altitude": 0, "azimuth": 200 },
+          { "altitude": 0, "azimuth": 210 },
+          { "altitude": 0, "azimuth": 220 },
+          { "altitude": 0, "azimuth": 230 },
+          { "altitude": 0, "azimuth": 240 },
+          { "altitude": 0, "azimuth": 250 },
+          { "altitude": 0, "azimuth": 260 },
+          { "altitude": 0, "azimuth": 270 },
+          { "altitude": 0, "azimuth": 280 },
+          { "altitude": 0, "azimuth": 290 },
+          { "altitude": 0, "azimuth": 300 },
+          { "altitude": 0, "azimuth": 310 },
+          { "altitude": 0, "azimuth": 320 },
+          { "altitude": 0, "azimuth": 330 },
+          { "altitude": 0, "azimuth": 340 },
+          { "altitude": 0, "azimuth": 350 }
+        ]
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "planner-empty-horizon"
+}

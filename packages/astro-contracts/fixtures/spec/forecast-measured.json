@@ -1,0 +1,332 @@
+{
+  "module": "forecast-measured",
+  "package": "portal",
+  "file": "astronomy-forecast",
+  "export": "summarizeAstronomyForecast",
+  "cases": [
+    {
+      "id": "a-clear-dry-night-measured",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [0, 5, 10, 0],
+            "cloud_cover_low": [0, 0, 5, 0],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "precipitation": [0, 0, 0, 0],
+            "wind_speed_10m": [5, 8, 12, 6],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [10, 15, 20, 12],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          },
+          "measured": true
+        }
+      ]
+    },
+    {
+      "id": "one-hour-of-measured-rain-floors-that-hour",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [0, 5, 10, 0],
+            "cloud_cover_low": [0, 0, 5, 0],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "precipitation": [0, 0.4, 0, 0],
+            "wind_speed_10m": [5, 8, 12, 6],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [10, 15, 20, 12],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          },
+          "measured": true
+        }
+      ]
+    },
+    {
+      "id": "exactly-a-tenth-of-a-millimetre-is-rain",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [0, 5, 10, 0],
+            "cloud_cover_low": [0, 0, 5, 0],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "precipitation": [0.1, 0, 0, 0],
+            "wind_speed_10m": [5, 8, 12, 6],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [10, 15, 20, 12],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          },
+          "measured": true
+        }
+      ]
+    },
+    {
+      "id": "less-than-a-tenth-is-dry",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [0, 5, 10, 0],
+            "cloud_cover_low": [0, 0, 5, 0],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "precipitation": [0.09, 0.05, 0, 0],
+            "wind_speed_10m": [5, 8, 12, 6],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [10, 15, 20, 12],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          },
+          "measured": true
+        }
+      ]
+    },
+    {
+      "id": "no-rain-amount-leaves-the-rain-neutral",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [0, 5, 10, 0],
+            "cloud_cover_low": [0, 0, 5, 0],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "wind_speed_10m": [5, 8, 12, 6],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [10, 15, 20, 12],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          },
+          "measured": true
+        }
+      ]
+    },
+    {
+      "id": "a-recent-day-from-the-forecast-keeps-its-visibility",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [0, 5, 10, 0],
+            "cloud_cover_low": [0, 0, 5, 0],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "precipitation": [0, 0, 0, 0],
+            "wind_speed_10m": [5, 8, 12, 6],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [10, 15, 20, 12],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3],
+            "visibility": [3000, 3000, 24000, 24000]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          },
+          "measured": true
+        }
+      ]
+    },
+    {
+      "id": "the-archive-without-visibility-leaves-the-haze-neutral",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [40, 40, 40, 40],
+            "cloud_cover_low": [0, 0, 5, 0],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "precipitation": [0, 0, 0, 0],
+            "wind_speed_10m": [5, 8, 12, 6],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [10, 15, 20, 12],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          },
+          "measured": true
+        }
+      ]
+    },
+    {
+      "id": "a-gust-counts-at-seventy-percent",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [0, 5, 10, 0],
+            "cloud_cover_low": [0, 0, 5, 0],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "precipitation": [0, 0, 0, 0],
+            "wind_speed_10m": [10, 10, 10, 10],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [70, 70, 70, 70],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          },
+          "measured": true
+        }
+      ]
+    },
+    {
+      "id": "the-moon-counts-on-a-measured-night",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [0, 5, 10, 0],
+            "cloud_cover_low": [0, 0, 5, 0],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "precipitation": [0, 0, 0, 0],
+            "wind_speed_10m": [5, 8, 12, 6],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [10, 15, 20, 12],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          },
+          "measured": true,
+          "moon": {
+            "illumination": 90,
+            "series": [
+              {
+                "time": "2026-10-09T21:00:00Z",
+                "altitude": 40
+              },
+              {
+                "time": "2026-10-10T00:00:00Z",
+                "altitude": 40
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "a-gap-in-the-cloud-cover-skips-that-hour",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [0, null, null, 0],
+            "cloud_cover_low": [0, null, null, 0],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "precipitation": [0, 0, 0, 0],
+            "wind_speed_10m": [5, 8, 12, 6],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [10, 15, 20, 12],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          },
+          "measured": true
+        }
+      ]
+    },
+    {
+      "id": "a-night-without-any-cloud-cover-has-no-note",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [null, null, null, null],
+            "cloud_cover_low": [null, null, null, null],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "precipitation": [0, 0, 0, 0],
+            "wind_speed_10m": [5, 8, 12, 6],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [10, 15, 20, 12],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          },
+          "measured": true
+        }
+      ]
+    },
+    {
+      "id": "the-same-rows-as-a-forecast-ignore-the-amount",
+      "args": [
+        {
+          "hourly": {
+            "time": [1791579600, 1791583200, 1791586800, 1791590400],
+            "cloud_cover": [0, 5, 10, 0],
+            "cloud_cover_low": [0, 0, 5, 0],
+            "cloud_cover_mid": [0, 5, 0, 0],
+            "cloud_cover_high": [0, 0, 10, 0],
+            "precipitation": [0, 0.4, 0, 0],
+            "wind_speed_10m": [5, 8, 12, 6],
+            "wind_direction_10m": [180, 190, 200, 210],
+            "wind_gusts_10m": [10, 15, 20, 12],
+            "relative_humidity_2m": [70, 75, 80, 85],
+            "temperature_2m": [8, 7.5, 7, 6.5],
+            "dew_point_2m": [2, 2, 2.5, 3]
+          },
+          "night": {
+            "start": "2026-10-09T21:00:00Z",
+            "end": "2026-10-10T00:00:00Z"
+          }
+        }
+      ]
+    }
+  ]
+}

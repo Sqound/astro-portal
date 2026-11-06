@@ -1,0 +1,80 @@
+{
+  "note": "Read by the web test (second-plan.test.mjs): the web and the Journal name and suggest a second plan of the night the same way.",
+  "names": [
+    {
+      "desired": "Nuit du 14 octobre",
+      "taken": [],
+      "expected": "Nuit du 14 octobre"
+    },
+    {
+      "desired": "Nuit du 14 octobre",
+      "taken": ["Nuit du 14 octobre"],
+      "expected": "Nuit du 14 octobre (2)"
+    },
+    {
+      "desired": "Nuit du 14 octobre",
+      "taken": ["Nuit du 14 octobre", "Nuit du 14 octobre (2)"],
+      "expected": "Nuit du 14 octobre (3)"
+    },
+    {
+      "desired": "Nuit du 14 octobre",
+      "taken": ["Ma nuit au lac"],
+      "expected": "Nuit du 14 octobre"
+    }
+  ],
+  "numbered": [
+    { "noun": "Plan", "taken": [], "expected": "Plan 1" },
+    { "noun": "Plan", "taken": ["Plan 1"], "expected": "Plan 2" },
+    { "noun": "Plan", "taken": ["Plan 2"], "expected": "Plan 3" },
+    { "noun": "Plan", "taken": ["Plan 1", "Plan 3"], "expected": "Plan 4" }
+  ],
+  "plans": [
+    {
+      "id": "photo-1",
+      "date": "2026-10-14",
+      "mode": "imaging",
+      "items": ["m31", "m42"]
+    },
+    {
+      "id": "photo-2",
+      "date": "2026-10-14",
+      "mode": "imaging",
+      "items": ["m45"]
+    },
+    {
+      "id": "visual-1",
+      "date": "2026-10-14",
+      "mode": "visual",
+      "items": ["m13", "m31"]
+    },
+    {
+      "id": "other-night",
+      "date": "2026-10-15",
+      "mode": "imaging",
+      "items": ["m1"]
+    },
+    {
+      "id": "abandoned",
+      "date": "2026-10-14",
+      "mode": "imaging",
+      "status": "abandoned",
+      "items": ["m2"]
+    }
+  ],
+  "taken": [
+    {
+      "date": "2026-10-14",
+      "visual": false,
+      "expected": ["m31", "m42", "m45"]
+    },
+    { "date": "2026-10-14", "visual": true, "expected": ["m13", "m31"] },
+    {
+      "date": "2026-10-14",
+      "visual": false,
+      "exceptPlanId": "photo-1",
+      "expected": ["m45"]
+    },
+    { "date": "2026-10-15", "visual": false, "expected": ["m1"] },
+    { "date": "2026-10-16", "visual": false, "expected": [] }
+  ]
+}

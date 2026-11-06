@@ -1,0 +1,28 @@
+{
+  "cases": [
+    {
+      "args": [
+        "    1   0.03   0.13 17 42  -28 50     4   4   0.002 4 5   0 S 17"
+      ],
+      "id": "negative-declination",
+      "result": {
+        "apparentSizeArcmin": [4, 4],
+        "coordinate": { "dec": -28.853258448055914, "ra": 17.752913976490355 },
+        "designation": "LBN 1"
+      }
+    },
+    {
+      "args": [
+        "  437  96.26 -14.97 22 30  +40 20    75  20   0.366 2 4  52 DG 187"
+      ],
+      "id": "lbn-437",
+      "result": {
+        "apparentSizeArcmin": [75, 20],
+        "coordinate": { "dec": 40.591011382683455, "ra": 22.536728055180088 },
+        "designation": "LBN 437"
+      }
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "lbn-record"
+}

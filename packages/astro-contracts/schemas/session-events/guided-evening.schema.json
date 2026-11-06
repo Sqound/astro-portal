@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/guided-evening.schema.json",
+  "title": "Astro Portal session event payload: guided_evening",
+  "description": "A guided evening that ran under the session's night ended (« Terminer la soirée », or closed the morning after): its route, the way of observing, the help of « Pointage avancé » chosen, the steps seen out of the route's steps, its start and end, and whether « Pour les enfants » was on. Written once by the application, at the evening's end, only when the evening ran under the night's execution (the pointing aid, a mount, the share); an evening to the naked eye, with binoculars or on a tripod without aid writes nothing and stays on the phone (its Journal card). Versioned by `version`: a reader keeps what it knows and ignores the rest; a reader that does not know the type shows it as an ordinary report. Nothing personal: no place, no name. See session-events.md.",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 99,
+      "description": "The payload's version (1). A later version may add fields; a reader of version 1 reads the fields below and ignores the others only where `additionalProperties` allows it (it does not here: a version 2 is a new schema)."
+    },
+    "evening": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": "^[a-z0-9-]+$",
+      "description": "The route's id (`packages/astro-core/sky-data/guided-evenings/`, « brightest-stars-tonight »)."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The route's title as the application showed it, in the observer's language (« Les dix étoiles les plus brillantes »)."
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["naked", "binoculars", "tripod", "mount", "smartTelescope"],
+      "description": "The way of observing (`observingModes` of the routes)."
+    },
+    "help": {
+      "type": "string",
+      "enum": ["none", "aim", "refine"],
+      "description": "The help of « Pointage avancé »: none, « Aide au pointage » (a tripod), « Affinage du GoTo » (a mount)."
+    },
+    "stepsSeen": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 200,
+      "description": "The steps the observer moved past with « Étape suivante »."
+    },
+    "stepCount": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 200,
+      "description": "The route's steps that evening."
+    },
+    "startedAt": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$",
+      "description": "The evening's start (UTC, ISO 8601)."
+    },
+    "finishedAt": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$",
+      "description": "The evening's end (UTC, ISO 8601)."
+    },
+    "durationMinutes": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2880,
+      "description": "From the start to the end, in whole minutes."
+    },
+    "kids": {
+      "type": "boolean",
+      "description": "« Pour les enfants » was on at some point of the evening."
+    }
+  },
+  "required": [
+    "version",
+    "evening",
+    "mode",
+    "stepsSeen",
+    "stepCount",
+    "startedAt",
+    "finishedAt"
+  ],
+  "additionalProperties": false
+}

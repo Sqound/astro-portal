@@ -1,0 +1,587 @@
+{
+  "module": "plan-acquisition-refusal",
+  "package": "portal",
+  "file": "planner/plan-acquisition",
+  "export": "planAcquisitionRefusal",
+  "cases": [
+    {
+      "id": "absent-fields-are-no-refusal",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "filter": "L",
+              "startMinute": 0,
+              "endMinute": 120
+            },
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "filter": "",
+              "startMinute": 120,
+              "endMinute": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "valid-lines-are-no-refusal",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "filter": "L",
+                    "exposureSeconds": 0.005,
+                    "gain": null,
+                    "binning": 8,
+                    "frameCount": 100000
+                  },
+                  {
+                    "filter": null,
+                    "exposureSeconds": 86400,
+                    "gain": -1000
+                  },
+                  {}
+                ]
+              }
+            }
+          ],
+          "acquisitionDefaults": {
+            "gain": 100000
+          },
+          "launchedSchedule": [
+            {
+              "planItemId": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "acquisition": {
+                "lines": [
+                  {
+                    "exposureSeconds": 60
+                  }
+                ]
+              },
+              "ruleVersion": "expo-b-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unknown-fields-are-no-refusal",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "exposureSeconds": 60,
+                    "offset": 30
+                  }
+                ],
+                "mode": "mono"
+              }
+            }
+          ],
+          "acquisitionDefaults": {
+            "dither": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "null-choices-are-no-refusal",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": null
+            }
+          ],
+          "acquisitionDefaults": null
+        }
+      ]
+    },
+    {
+      "id": "exposure-of-zero",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31"
+            },
+            {
+              "id": "m42",
+              "acquisition": {
+                "lines": [
+                  {
+                    "filter": "L"
+                  },
+                  {
+                    "exposureSeconds": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exposure-beyond-a-day",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "exposureSeconds": 86400.5
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exposure-as-text",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "exposureSeconds": "120"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exposure-null",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "exposureSeconds": null
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-too-long",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "filter": "fffffffffffffffffffffffffffffffffffffffff"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter-not-text",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "filter": 3
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gain-not-an-integer",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "gain": 100.5
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gain-out-of-range",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "gain": 100001
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "binning-out-of-range",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "binning": 9
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frame-count-of-zero",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "frameCount": 0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frame-count-too-large",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [
+                  {
+                    "frameCount": 100001
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-line-not-an-object",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": ["L"]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "no-line",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "more-than-eight-lines",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": {
+                "lines": [{}, {}, {}, {}, {}, {}, {}, {}, {}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acquisition-not-an-object",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "acquisition": [
+                {
+                  "exposureSeconds": 60
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "defaults-out-of-bounds",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "filter": "L",
+              "startMinute": 0,
+              "endMinute": 120
+            },
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "filter": "",
+              "startMinute": 120,
+              "endMinute": 300
+            }
+          ],
+          "acquisitionDefaults": {
+            "binning": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "defaults-not-an-object",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "filter": "L",
+              "startMinute": 0,
+              "endMinute": 120
+            },
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "filter": "",
+              "startMinute": 120,
+              "endMinute": 300
+            }
+          ],
+          "acquisitionDefaults": "120 s"
+        }
+      ]
+    },
+    {
+      "id": "launched-lines-out-of-bounds",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "filter": "L",
+              "startMinute": 0,
+              "endMinute": 120
+            },
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "filter": "",
+              "startMinute": 120,
+              "endMinute": 300
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "planItemId": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "acquisition": {
+                "lines": [
+                  {
+                    "frameCount": 1.5
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule-version-too-long",
+      "args": [
+        {
+          "id": "plan-1",
+          "date": "2026-10-21",
+          "name": "Nuit au col",
+          "items": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "filter": "L",
+              "startMinute": 0,
+              "endMinute": 120
+            },
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "filter": "",
+              "startMinute": 120,
+              "endMinute": 300
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "planItemId": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 60,
+              "ruleVersion": "vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "not-a-plan",
+      "args": ["plan"]
+    }
+  ]
+}

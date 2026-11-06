@@ -1,0 +1,15 @@
+{
+  "exchange": "project-declared-and-measured",
+  "description": "A finished multi-night plan: its first night's line is declared by the session (no frames known), its second night's line is measured by Astro Sync (with the computer's name); every night is behind it, so `allSessionsDone` is true.",
+  "given": "The finished plan of `list`.",
+  "handler": "route:projects/[projectId]",
+  "phase": "read",
+  "params": {
+    "projectId": "{project:finished}"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/projects/{project:finished}"
+  },
+  "schema": "project.schema.json#/$defs/resource"
+}

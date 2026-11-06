@@ -1,0 +1,17 @@
+{
+  "exchange": "detail-both-qualities",
+  "handler": "captures/[captureId]",
+  "as": "phone",
+  "status": 200,
+  "phase": "read",
+  "params": {
+    "captureId": "{capture:analysed}"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/captures/{capture:analysed}"
+  },
+  "schema": "manage-captures.schema.json#/$defs/one",
+  "description": "The page of a capture the phone reads: the stacked image's own quality (variants[].quality and quality, measured by Astro Sync on the linear master), the night's quality (detail.sessionQuality, the medians of the analysis), the lines of « Intégrations » filled from the session without a touch, the revision, the tags.",
+  "given": "The 5 October night of Camille, analysed by Astro Sync; the capture of M31 on it, sent by Astro Sync with its quality."
+}

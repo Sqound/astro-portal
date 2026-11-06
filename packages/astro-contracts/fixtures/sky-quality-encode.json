@@ -1,0 +1,13 @@
+{
+  "cases": [
+    { "args": [0], "id": "zero-radiance", "result": 0 },
+    { "args": [0.01], "id": "one-offset", "result": 14 },
+    { "args": [1], "id": "one-nanowatt", "result": 96 },
+    { "args": [2000], "id": "maximum-radiance", "result": 255 },
+    { "args": [4000], "id": "above-maximum-clamps", "result": 255 },
+    { "args": [-1], "id": "negative-radiance", "result": 0 },
+    { "args": ["abc"], "id": "non-numeric", "result": 0 }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "sky-quality-encode"
+}

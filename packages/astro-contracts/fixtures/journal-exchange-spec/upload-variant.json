@@ -1,0 +1,30 @@
+{
+  "exchange": "upload-variant",
+  "description": "A second image for the same session and target on a space that keeps variants: the new image is added; coming from Astro Sync, it becomes the capture's main image and the earlier one a variant (`replaced: false`).",
+  "given": "The 10 August night of `list`, with an image of M 42 sent from the phone, on a space with `capture.variant_limit` 2.",
+  "handler": "compose:upload",
+  "phase": "write",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/captures",
+    "variantLimit": 2,
+    "first": {
+      "label": "m42-phone-v",
+      "caller": "phone",
+      "metadata": {
+        "sessionId": "{session:no-plan}",
+        "targetIds": ["m42"]
+      }
+    },
+    "metadata": {
+      "label": "m42-sync-v",
+      "caller": "sync",
+      "fields": {
+        "sessionId": "{session:no-plan}",
+        "targetIds": ["m42"],
+        "source": "stacking"
+      }
+    }
+  },
+  "schema": "capture.schema.json#/$defs/uploadResponse"
+}

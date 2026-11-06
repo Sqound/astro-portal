@@ -1,0 +1,109 @@
+{
+  "cases": [
+    {
+      "args": [
+        [
+          { "dewPoint": 6, "temperature": 12, "time": 1792008000000 },
+          { "dewPoint": 7.5, "temperature": 10, "time": 1792011600000 },
+          { "dewPoint": 7, "temperature": 9, "time": 1792015200000 },
+          { "dewPoint": 7.6, "temperature": 8, "time": 1792018800000 },
+          { "dewPoint": 6.8, "temperature": 7, "time": 1792022400000 }
+        ]
+      ],
+      "id": "highest-level-first-hour",
+      "result": { "estimate": true, "from": 1792018800000, "level": "high" }
+    },
+    {
+      "args": [
+        [
+          {
+            "dewPoint": 6,
+            "temperature": 11,
+            "time": "2026-10-14T22:00:00Z",
+            "wind": 8
+          },
+          {
+            "dewPoint": 6.5,
+            "temperature": 10,
+            "time": "2026-10-15T00:00:00Z",
+            "wind": 8
+          },
+          {
+            "dewPoint": 6.4,
+            "temperature": 9,
+            "time": "2026-10-15T01:00:00Z",
+            "wind": 7
+          },
+          {
+            "dewPoint": 6,
+            "temperature": 8.5,
+            "time": "2026-10-15T02:00:00Z",
+            "wind": 7
+          }
+        ]
+      ],
+      "id": "moderate-from-one-in-the-morning",
+      "result": {
+        "estimate": true,
+        "from": "2026-10-15T01:00:00Z",
+        "level": "moderate"
+      }
+    },
+    {
+      "args": [
+        [
+          { "dewPoint": 6, "temperature": 8, "time": 1, "wind": 25 },
+          { "dewPoint": 5, "temperature": 7, "time": 2, "wind": 22 }
+        ]
+      ],
+      "id": "wind-keeps-the-night-low",
+      "result": { "estimate": true, "from": 1, "level": "low" }
+    },
+    {
+      "args": [
+        [
+          { "dewPoint": 4, "temperature": 15, "time": 1 },
+          { "dewPoint": 5, "temperature": 13, "time": 2 }
+        ]
+      ],
+      "id": "only-low-hours",
+      "result": { "estimate": true, "from": 1, "level": "low" }
+    },
+    {
+      "args": [
+        [
+          { "dewPoint": 5, "temperature": null, "time": 1 },
+          { "time": 2 },
+          { "dewPoint": 8.2, "temperature": 9, "time": 3 }
+        ]
+      ],
+      "id": "hours-without-data-are-skipped",
+      "result": { "estimate": true, "from": 3, "level": "high" }
+    },
+    {
+      "args": [
+        [
+          { "humidity": 70, "temperature": 10, "time": 1 },
+          { "humidity": 88, "temperature": 8, "time": 2 },
+          { "humidity": 96, "temperature": 7, "time": 3 }
+        ]
+      ],
+      "id": "humidity-only-forecast",
+      "result": { "estimate": true, "from": 3, "level": "high" }
+    },
+    {
+      "args": [
+        [
+          { "cloud": 10, "time": 1 },
+          { "humidity": 90, "time": 2 }
+        ]
+      ],
+      "id": "no-hour-says-enough",
+      "result": null
+    },
+    { "args": [[]], "id": "empty-night", "result": null },
+    { "args": [null], "id": "not-a-list", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "dew-risk"
+}

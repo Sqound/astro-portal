@@ -1,0 +1,283 @@
+{
+  "description": "A plan with the plan's defaults and the lines of its targets, carried web → service → phone → service. `web` is the plan the web planner saves (`PUT /api/plans`, inside its whole document, night `night-1`); `served` is the payload the service answers for it on `GET /v1/plans` (recorded from the real route handlers; the web save orders the items by id); `phoneWrite` is the payload the phone pushes back with `PUT /v1/plans/{planId}` (`If-Match: \"1\"`) after it moved the end of NGC 7000 to minute 280 and launched the night, freezing in `launchedSchedule` the effective lines of each target and `ruleVersion` (values written here by hand, not computed by the suggestion rule). The service keeps every field of `phoneWrite`.",
+  "web": {
+    "id": "web-plan",
+    "date": "2026-10-21",
+    "name": "Nuit au col",
+    "nightId": "night-1",
+    "location": {
+      "id": "col",
+      "version": 1,
+      "name": "Col des Mélèzes",
+      "latitude": "45",
+      "longitude": "-30",
+      "timeZone": "UTC"
+    },
+    "equipment": {
+      "mode": "imaging",
+      "cameraId": "camera-colour"
+    },
+    "minAltitude": 30,
+    "status": "pending",
+    "acquisitionDefaults": {
+      "exposureSeconds": 180,
+      "gain": 100,
+      "binning": 1
+    },
+    "items": [
+      {
+        "id": "m31",
+        "targetId": "m31",
+        "filter": "L-eXtreme",
+        "startMinute": 0,
+        "endMinute": 150,
+        "acquisition": {
+          "lines": [
+            {
+              "filter": "L-eXtreme",
+              "exposureSeconds": 300,
+              "frameCount": 28
+            }
+          ]
+        }
+      },
+      {
+        "id": "ngc7000",
+        "targetId": "ngc7000",
+        "filter": "",
+        "startMinute": 150,
+        "endMinute": 300,
+        "acquisition": {
+          "lines": [
+            {
+              "filter": null,
+              "exposureSeconds": 120,
+              "gain": null
+            },
+            {
+              "filter": "Ha",
+              "exposureSeconds": 300,
+              "binning": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "m45",
+        "targetId": "m45",
+        "filter": "",
+        "startMinute": 300,
+        "endMinute": 360
+      }
+    ]
+  },
+  "served": {
+    "acquisitionDefaults": {
+      "exposureSeconds": 180,
+      "gain": 100,
+      "binning": 1
+    },
+    "archivedAt": null,
+    "date": "2026-10-21",
+    "equipment": {
+      "cameraId": "camera-colour",
+      "mode": "imaging"
+    },
+    "id": "web-plan",
+    "items": [
+      {
+        "endMinute": 150,
+        "filter": "L-eXtreme",
+        "id": "m31",
+        "startMinute": 0,
+        "targetId": "m31",
+        "acquisition": {
+          "lines": [
+            {
+              "filter": "L-eXtreme",
+              "exposureSeconds": 300,
+              "frameCount": 28
+            }
+          ]
+        }
+      },
+      {
+        "endMinute": 360,
+        "filter": "",
+        "id": "m45",
+        "startMinute": 300,
+        "targetId": "m45"
+      },
+      {
+        "endMinute": 300,
+        "filter": "",
+        "id": "ngc7000",
+        "startMinute": 150,
+        "targetId": "ngc7000",
+        "acquisition": {
+          "lines": [
+            {
+              "filter": null,
+              "exposureSeconds": 120,
+              "gain": null
+            },
+            {
+              "filter": "Ha",
+              "exposureSeconds": 300,
+              "binning": 2
+            }
+          ]
+        }
+      }
+    ],
+    "location": {
+      "id": "col",
+      "latitude": "45",
+      "longitude": "-30",
+      "name": "Col des Mélèzes",
+      "timeZone": "UTC",
+      "version": 1
+    },
+    "minAltitude": 30,
+    "name": "Nuit au col",
+    "nightId": "night-1",
+    "revision": 1,
+    "status": "pending"
+  },
+  "phoneWrite": {
+    "acquisitionDefaults": {
+      "exposureSeconds": 180,
+      "gain": 100,
+      "binning": 1
+    },
+    "archivedAt": null,
+    "date": "2026-10-21",
+    "equipment": {
+      "cameraId": "camera-colour",
+      "mode": "imaging"
+    },
+    "id": "web-plan",
+    "items": [
+      {
+        "endMinute": 150,
+        "filter": "L-eXtreme",
+        "id": "m31",
+        "startMinute": 0,
+        "targetId": "m31",
+        "acquisition": {
+          "lines": [
+            {
+              "filter": "L-eXtreme",
+              "exposureSeconds": 300,
+              "frameCount": 28
+            }
+          ]
+        }
+      },
+      {
+        "endMinute": 360,
+        "filter": "",
+        "id": "m45",
+        "startMinute": 300,
+        "targetId": "m45"
+      },
+      {
+        "endMinute": 280,
+        "filter": "",
+        "id": "ngc7000",
+        "startMinute": 150,
+        "targetId": "ngc7000",
+        "acquisition": {
+          "lines": [
+            {
+              "filter": null,
+              "exposureSeconds": 120,
+              "gain": null
+            },
+            {
+              "filter": "Ha",
+              "exposureSeconds": 300,
+              "binning": 2
+            }
+          ]
+        }
+      }
+    ],
+    "location": {
+      "id": "col",
+      "latitude": "45",
+      "longitude": "-30",
+      "name": "Col des Mélèzes",
+      "timeZone": "UTC",
+      "version": 1
+    },
+    "minAltitude": 30,
+    "name": "Nuit au col",
+    "nightId": "night-1",
+    "revision": 1,
+    "status": "pending",
+    "launchedSchedule": [
+      {
+        "planItemId": "m31",
+        "targetId": "m31",
+        "startMinute": 0,
+        "endMinute": 150,
+        "acquisition": {
+          "lines": [
+            {
+              "filter": "L-eXtreme",
+              "exposureSeconds": 300,
+              "gain": 100,
+              "binning": 1,
+              "frameCount": 28
+            }
+          ]
+        },
+        "ruleVersion": "expo-a-fixture"
+      },
+      {
+        "planItemId": "ngc7000",
+        "targetId": "ngc7000",
+        "startMinute": 150,
+        "endMinute": 280,
+        "acquisition": {
+          "lines": [
+            {
+              "filter": null,
+              "exposureSeconds": 120,
+              "gain": null,
+              "binning": 1,
+              "frameCount": 30
+            },
+            {
+              "filter": "Ha",
+              "exposureSeconds": 300,
+              "gain": 100,
+              "binning": 2,
+              "frameCount": 12
+            }
+          ]
+        },
+        "ruleVersion": "expo-a-fixture"
+      },
+      {
+        "planItemId": "m45",
+        "targetId": "m45",
+        "startMinute": 300,
+        "endMinute": 360,
+        "acquisition": {
+          "lines": [
+            {
+              "filter": null,
+              "exposureSeconds": 180,
+              "gain": 100,
+              "binning": 1,
+              "frameCount": 20
+            }
+          ]
+        },
+        "ruleVersion": "expo-a-fixture"
+      }
+    ]
+  }
+}

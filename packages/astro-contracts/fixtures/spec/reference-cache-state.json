@@ -1,0 +1,47 @@
+{
+  "module": "reference-cache-state",
+  "package": "portal",
+  "file": "planner/reference-cache",
+  "export": "plannerReferenceCacheState",
+  "cases": [
+    {
+      "id": "a-recent-forecast-is-fresh",
+      "args": [{ "kind": "weather", "fetchedAt": 1000000, "now": 1600000 }]
+    },
+    {
+      "id": "an-hour-old-forecast-is-stale-and-refreshable",
+      "args": [{ "kind": "weather", "fetchedAt": 1000000, "now": 4600000 }]
+    },
+    {
+      "id": "a-forecast-past-the-stale-window-expires",
+      "args": [{ "kind": "weather", "fetchedAt": 1000000, "now": 15400000 }]
+    },
+    {
+      "id": "a-provider-cooldown-blocks-the-refresh",
+      "args": [
+        {
+          "kind": "weather",
+          "fetchedAt": 1000000,
+          "now": 4600000,
+          "cooldownUntil": 5200000
+        }
+      ]
+    },
+    {
+      "id": "nothing-cached-is-missing",
+      "args": [{ "kind": "weather", "fetchedAt": null, "now": 1000000 }]
+    },
+    {
+      "id": "a-month-old-sky-quality-estimate-is-fresh",
+      "args": [{ "kind": "skyQuality", "fetchedAt": 0, "now": 1728000000 }]
+    },
+    {
+      "id": "a-year-old-sky-quality-estimate-is-stale",
+      "args": [{ "kind": "skyQuality", "fetchedAt": 0, "now": 17280000000 }]
+    },
+    {
+      "id": "a-sky-quality-estimate-past-a-year-expires",
+      "args": [{ "kind": "skyQuality", "fetchedAt": 0, "now": 34560000000 }]
+    }
+  ]
+}

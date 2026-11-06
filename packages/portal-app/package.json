@@ -1,0 +1,26 @@
+{
+  "name": "portal-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "description": "The web application of Astro Portal — its routes, pages and server.",
+  "exports": {
+    "./styles/*": "./styles/*",
+    "./*": "./dist/*"
+  },
+  "dependencies": {
+    "astro-contracts": "*",
+    "astro-core": "*",
+    "next": "^16.3.4",
+    "planner": "*",
+    "planner-projects": "*",
+    "portal": "*",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs"
+  }
+}

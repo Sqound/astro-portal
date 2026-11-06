@@ -1,0 +1,16 @@
+{
+  "exchange": "plan-unarchived",
+  "description": "`POST /v1/plans/{planId}/unarchive`: « Rétablir » gives the plan back the status it had (`partial`).",
+  "given": "The 5 October plan archived (`plan-archived`).",
+  "handler": "route:plans/[planId]/unarchive",
+  "phase": "write",
+  "order": 15,
+  "params": {
+    "planId": "{plan:executed-group-2}"
+  },
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plans/{plan:executed-group-2}/unarchive"
+  },
+  "schema": "plan.schema.json#/$defs/archiveResponse"
+}

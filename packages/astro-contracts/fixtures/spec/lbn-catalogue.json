@@ -1,0 +1,18 @@
+{
+  "module": "lbn-catalogue",
+  "export": "lbnDesignation",
+  "cases": [
+    {
+      "id": "zero-padded",
+      "args": ["LBN 0437"]
+    },
+    {
+      "id": "lower-joined",
+      "args": ["lbn437"]
+    },
+    {
+      "id": "galactic-form-left-alone",
+      "args": ["LBN 085.75-01.48"]
+    }
+  ]
+}

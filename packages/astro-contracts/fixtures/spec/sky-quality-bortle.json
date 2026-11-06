@@ -1,0 +1,18 @@
+{
+  "module": "sky-quality-bortle",
+  "package": "portal",
+  "file": "sky-quality",
+  "export": "bortleFromSqm",
+  "cases": [
+    { "id": "class-1-boundary", "args": [21.99] },
+    { "id": "class-2-boundary", "args": [21.89] },
+    { "id": "class-3-boundary", "args": [21.69] },
+    { "id": "class-4-boundary", "args": [20.49] },
+    { "id": "class-5-boundary", "args": [19.5] },
+    { "id": "class-6-boundary", "args": [18.94] },
+    { "id": "class-7-boundary", "args": [18.38] },
+    { "id": "class-8-boundary", "args": [17] },
+    { "id": "class-9-below-all-thresholds", "args": [10] },
+    { "id": "non-finite-returns-null", "args": [null] }
+  ]
+}

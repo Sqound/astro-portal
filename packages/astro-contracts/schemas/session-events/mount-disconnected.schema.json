@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/mount-disconnected.schema.json",
+  "title": "Astro Portal session event payload: mount_disconnected",
+  "description": "The person closed the link to the mount (« Déconnecter »). Not a lost link: a `mount_link_lost` is a connection that dropped without being asked to, a `mount_disconnected` is one the person ended. A reader pairs it with nothing. Recorded by the application from the driver's own code path with the night's clock; every field but the ones marked required is optional, and a reader tolerates a payload without them. Private in a shared night. See session-events.md.",
+  "type": "object",
+  "properties": {
+    "protocol": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Optional: the mount's protocol as the application names it (`LX200`, `Alpaca`, `INDI`, `SynScan`, `iOptron`, `NexStar`)."
+    }
+  },
+  "additionalProperties": false
+}

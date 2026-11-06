@@ -1,0 +1,14 @@
+{
+  "module": "capability-plan-limit",
+  "package": "portal",
+  "file": "capabilities/provider",
+  "export": "planLimitIsUnlimited",
+  "cases": [
+    { "id": "zero-is-unlimited", "args": [0] },
+    { "id": "negative-is-unlimited", "args": [-1] },
+    { "id": "positive-is-limited", "args": [1] },
+    { "id": "larger-positive-is-limited", "args": [5] },
+    { "id": "absent-is-unlimited", "args": [null] },
+    { "id": "non-numeric-is-unlimited", "args": ["abc"] }
+  ]
+}

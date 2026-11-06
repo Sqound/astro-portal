@@ -1,0 +1,19 @@
+{
+  "module": "ldn-record",
+  "file": "ldn-catalogue",
+  "export": "parseLdnRecord",
+  "cases": [
+    {
+      "id": "ldn-1622",
+      "args": ["1622  5 52.0     2  0 204.53 -11.67    .122 6 107 1616  351"]
+    },
+    {
+      "id": "negative-declination",
+      "args": [" 134 15 51.0   - 4 30   4.18 +35.75    .220 5  85  142  432"]
+    },
+    {
+      "id": "unnumbered-cloud",
+      "args": ["      2 50.0    60 20 137.44 +01.16   0.000 0 393 1374  130"]
+    }
+  ]
+}

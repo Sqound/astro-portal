@@ -1,0 +1,20 @@
+{
+  "module": "planner-calendar-shift",
+  "package": "portal",
+  "file": "planner/calendar",
+  "export": "plannerCalendarShift",
+  "cases": [
+    {
+      "id": "the-next-month-crosses-the-year",
+      "args": [{ "year": 2026, "month": 12 }, 1]
+    },
+    {
+      "id": "the-previous-month-crosses-the-year",
+      "args": [{ "year": 2026, "month": 1 }, -1]
+    },
+    {
+      "id": "no-offset-keeps-the-month",
+      "args": [{ "year": 2026, "month": 9 }, 0]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "module": "sky-quality-nearest",
+  "package": "portal",
+  "file": "sky-quality",
+  "export": "nearestSkyQualityRadiance",
+  "cases": [
+    {
+      "id": "north-west-cell-centre",
+      "args": [
+        {
+          "width": 4,
+          "height": 2,
+          "cellSizeDegrees": 90,
+          "north": 90,
+          "west": -180,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40]
+        },
+        45,
+        -135
+      ]
+    },
+    {
+      "id": "south-east-cell-centre",
+      "args": [
+        {
+          "width": 4,
+          "height": 2,
+          "cellSizeDegrees": 90,
+          "north": 90,
+          "west": -180,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40]
+        },
+        -45,
+        135
+      ]
+    },
+    {
+      "id": "out-of-range-latitude",
+      "args": [
+        {
+          "width": 4,
+          "height": 2,
+          "cellSizeDegrees": 90,
+          "north": 90,
+          "west": -180,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40]
+        },
+        91,
+        0
+      ]
+    }
+  ]
+}

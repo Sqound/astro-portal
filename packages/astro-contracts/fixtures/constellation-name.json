@@ -1,0 +1,55 @@
+{
+  "cases": [
+    { "args": ["Lyr", "fr"], "id": "lyra-french", "result": "Lyre" },
+    { "args": ["Lyr", "ja"], "id": "lyra-japanese", "result": "こと座" },
+    { "args": ["Lyr", "de"], "id": "lyra-german", "result": "Leier" },
+    { "args": ["Lyr", "es"], "id": "lyra-spanish", "result": "Lira" },
+    { "args": ["Lyr", "it"], "id": "lyra-italian", "result": "Lira" },
+    { "args": ["Lyr", "pt-BR"], "id": "lyra-portuguese", "result": "Lira" },
+    { "args": ["Lyr", "ru"], "id": "lyra-russian", "result": "Лира" },
+    {
+      "args": ["Lyr", "zh-Hans"],
+      "id": "lyra-simplified-chinese",
+      "result": "天琴座"
+    },
+    {
+      "args": ["Lyr", "zh-Hant"],
+      "id": "lyra-traditional-chinese",
+      "result": "天琴座"
+    },
+    { "args": ["Lyr", "en"], "id": "lyra-english", "result": "Lyra" },
+    {
+      "args": ["Lyr", "en-XA"],
+      "id": "lyra-in-a-locale-without-a-name-reads-the-latin-name",
+      "result": "Lyra"
+    },
+    { "args": ["Car", "fr"], "id": "carina-french", "result": "Carène" },
+    {
+      "args": ["Car", "de"],
+      "id": "carina-german",
+      "result": "Kiel des Schiffs"
+    },
+    {
+      "args": ["Air Pump", "fr"],
+      "id": "air-pump-is-antlia-in-french",
+      "result": "Machine pneumatique"
+    },
+    {
+      "args": ["Bird of Paradise", "ru"],
+      "id": "bird-of-paradise-is-apus-in-russian",
+      "result": "Райская Птица"
+    },
+    {
+      "args": ["Se2", "fr"],
+      "id": "the-old-serpent-key-reads-the-serpent",
+      "result": "Serpent"
+    },
+    {
+      "args": ["Galaxie", "fr"],
+      "id": "a-name-that-is-no-constellation-is-no-name",
+      "result": null
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "constellation-name"
+}

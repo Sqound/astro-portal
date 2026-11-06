@@ -1,0 +1,256 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "camera": { "id": "zwo-asi585mc-pro", "pixelSizeUm": 2.9 },
+          "mountKind": "equatorial",
+          "telescope": {
+            "apertureMm": 80,
+            "focalLengthMm": 400,
+            "id": "refractor"
+          }
+        }
+      ],
+      "id": "dedicated-camera-on-a-refractor",
+      "result": {
+        "apertureMm": 80,
+        "deviceKind": "dedicated",
+        "focalLengthMm": 400,
+        "hcgGain": 200,
+        "maxExposureSeconds": null,
+        "mountKind": "equatorial",
+        "pixelSizeUm": 2.9,
+        "sensorKind": "colour",
+        "unityGain": null
+      }
+    },
+    {
+      "args": [
+        {
+          "camera": {
+            "hcgGain": 50,
+            "id": "zwo-asi585mc-pro",
+            "pixelSizeUm": 2.9,
+            "sensorKind": "mono",
+            "unityGain": 60
+          },
+          "telescope": {
+            "apertureMm": 80,
+            "focalLengthMm": 400,
+            "id": "refractor"
+          }
+        }
+      ],
+      "id": "traits-of-the-camera-win-over-the-common-profile",
+      "result": {
+        "apertureMm": 80,
+        "deviceKind": "dedicated",
+        "focalLengthMm": 400,
+        "hcgGain": 50,
+        "maxExposureSeconds": null,
+        "mountKind": null,
+        "pixelSizeUm": 2.9,
+        "sensorKind": "mono",
+        "unityGain": 60
+      }
+    },
+    {
+      "args": [
+        {
+          "camera": { "id": "zwo-asi183mm-pro", "pixelSizeUm": 2.4 },
+          "telescope": {
+            "apertureMm": 80,
+            "focalLengthMm": 400,
+            "id": "refractor"
+          }
+        }
+      ],
+      "id": "mono-camera",
+      "result": {
+        "apertureMm": 80,
+        "deviceKind": "dedicated",
+        "focalLengthMm": 400,
+        "hcgGain": null,
+        "maxExposureSeconds": null,
+        "mountKind": null,
+        "pixelSizeUm": 2.4,
+        "sensorKind": "mono",
+        "unityGain": null
+      }
+    },
+    {
+      "args": [
+        {
+          "camera": { "id": "zwo-asi585mc-pro", "pixelSizeUm": 2.9 },
+          "focalLengthMm": 320,
+          "telescope": {
+            "apertureMm": 80,
+            "focalLengthMm": 400,
+            "id": "refractor"
+          }
+        }
+      ],
+      "id": "focal-length-with-the-modifier",
+      "result": {
+        "apertureMm": 80,
+        "deviceKind": "dedicated",
+        "focalLengthMm": 320,
+        "hcgGain": 200,
+        "maxExposureSeconds": null,
+        "mountKind": null,
+        "pixelSizeUm": 2.9,
+        "sensorKind": "colour",
+        "unityGain": null
+      }
+    },
+    {
+      "args": [
+        {
+          "telescope": {
+            "apertureMm": 50,
+            "focalLengthMm": 250,
+            "id": "seestar-s50",
+            "integratedCamera": {
+              "id": "seestar-s50-imx462",
+              "pixelSizeUm": 2.9
+            },
+            "mount": { "id": "integrated-altaz", "name": "Azimutale intégrée" }
+          }
+        }
+      ],
+      "id": "smart-telescope-integrated-mount",
+      "result": {
+        "apertureMm": 50,
+        "deviceKind": "smart-telescope",
+        "focalLengthMm": 250,
+        "hcgGain": null,
+        "maxExposureSeconds": null,
+        "mountKind": "altaz",
+        "pixelSizeUm": 2.9,
+        "sensorKind": null,
+        "unityGain": null
+      }
+    },
+    {
+      "args": [
+        {
+          "telescope": {
+            "apertureMm": 35,
+            "focalLengthMm": 150,
+            "id": "dwarf-3",
+            "integratedCamera": { "id": "dwarf-3-imx678", "pixelSizeUm": 2 },
+            "mount": { "id": "integrated-altaz" }
+          }
+        }
+      ],
+      "id": "smart-telescope-with-a-cap",
+      "result": {
+        "apertureMm": 35,
+        "deviceKind": "smart-telescope",
+        "focalLengthMm": 150,
+        "hcgGain": null,
+        "maxExposureSeconds": 60,
+        "mountKind": "altaz",
+        "pixelSizeUm": 2,
+        "sensorKind": null,
+        "unityGain": null
+      }
+    },
+    {
+      "args": [
+        {
+          "telescope": {
+            "apertureMm": 35,
+            "focalLengthMm": 150,
+            "id": "own",
+            "integratedCamera": { "pixelSizeUm": 2 },
+            "maxExposureSeconds": 30
+          }
+        }
+      ],
+      "id": "cap-on-the-telescope-profile",
+      "result": {
+        "apertureMm": 35,
+        "deviceKind": "smart-telescope",
+        "focalLengthMm": 150,
+        "hcgGain": null,
+        "maxExposureSeconds": 30,
+        "mountKind": null,
+        "pixelSizeUm": 2,
+        "sensorKind": null,
+        "unityGain": null
+      }
+    },
+    {
+      "args": [
+        {
+          "camera": {
+            "id": "own-dslr",
+            "pixelSizeUm": 4.3,
+            "sensorKind": "colour"
+          },
+          "deviceKind": "dslr",
+          "telescope": {
+            "apertureMm": 80,
+            "focalLengthMm": 400,
+            "id": "refractor"
+          }
+        }
+      ],
+      "id": "dslr-is-told-by-the-caller",
+      "result": {
+        "apertureMm": 80,
+        "deviceKind": "dslr",
+        "focalLengthMm": 400,
+        "hcgGain": null,
+        "maxExposureSeconds": null,
+        "mountKind": null,
+        "pixelSizeUm": 4.3,
+        "sensorKind": "colour",
+        "unityGain": null
+      }
+    },
+    {
+      "args": [{}],
+      "id": "nothing-known",
+      "result": {
+        "apertureMm": null,
+        "deviceKind": "dedicated",
+        "focalLengthMm": null,
+        "hcgGain": null,
+        "maxExposureSeconds": null,
+        "mountKind": null,
+        "pixelSizeUm": null,
+        "sensorKind": null,
+        "unityGain": null
+      }
+    },
+    {
+      "args": [
+        {
+          "camera": { "id": "player-one-poseidon-c-pro" },
+          "telescope": {
+            "apertureMm": 80,
+            "focalLengthMm": 400,
+            "id": "refractor"
+          }
+        }
+      ],
+      "id": "hcg-gain-of-a-common-camera",
+      "result": {
+        "apertureMm": 80,
+        "deviceKind": "dedicated",
+        "focalLengthMm": 400,
+        "hcgGain": 125,
+        "maxExposureSeconds": null,
+        "mountKind": null,
+        "pixelSizeUm": null,
+        "sensorKind": "colour",
+        "unityGain": null
+      }
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "acquisition-equipment"
+}

@@ -1,0 +1,181 @@
+{
+  "module": "schedule-window-shift",
+  "package": "planner",
+  "file": "schedule",
+  "export": "scheduleWindowShift",
+  "cases": [
+    {
+      "id": "moves-keeping-the-duration",
+      "args": [
+        {
+          "value": 150,
+          "itemId": "cur",
+          "schedule": [],
+          "window": {
+            "start": 100,
+            "end": 145
+          },
+          "total": 480
+        }
+      ]
+    },
+    {
+      "id": "clamped-to-the-night-end",
+      "args": [
+        {
+          "value": 470,
+          "itemId": "cur",
+          "schedule": [],
+          "window": {
+            "start": 100,
+            "end": 160
+          },
+          "total": 480
+        }
+      ]
+    },
+    {
+      "id": "clamped-to-the-night-start",
+      "args": [
+        {
+          "value": -20,
+          "itemId": "cur",
+          "schedule": [],
+          "window": {
+            "start": 100,
+            "end": 160
+          },
+          "total": 480
+        }
+      ]
+    },
+    {
+      "id": "start-snaps-to-an-edge",
+      "args": [
+        {
+          "value": 236,
+          "itemId": "cur",
+          "schedule": [
+            {
+              "item": {
+                "id": "m31"
+              },
+              "window": {
+                "start": 76,
+                "end": 241
+              }
+            },
+            {
+              "item": {
+                "id": "m45"
+              },
+              "window": {
+                "start": 286,
+                "end": 386
+              }
+            }
+          ],
+          "window": {
+            "start": 241,
+            "end": 286
+          },
+          "total": 415
+        }
+      ]
+    },
+    {
+      "id": "end-snaps-to-an-edge",
+      "args": [
+        {
+          "value": 250,
+          "itemId": "cur",
+          "schedule": [
+            {
+              "item": {
+                "id": "m31"
+              },
+              "window": {
+                "start": 76,
+                "end": 241
+              }
+            },
+            {
+              "item": {
+                "id": "m45"
+              },
+              "window": {
+                "start": 296,
+                "end": 386
+              }
+            }
+          ],
+          "window": {
+            "start": 241,
+            "end": 286
+          },
+          "total": 415
+        }
+      ]
+    },
+    {
+      "id": "no-snap-beyond-threshold",
+      "args": [
+        {
+          "value": 260,
+          "itemId": "cur",
+          "schedule": [
+            {
+              "item": {
+                "id": "m31"
+              },
+              "window": {
+                "start": 76,
+                "end": 241
+              }
+            },
+            {
+              "item": {
+                "id": "m45"
+              },
+              "window": {
+                "start": 320,
+                "end": 386
+              }
+            }
+          ],
+          "window": {
+            "start": 241,
+            "end": 286
+          },
+          "total": 415
+        }
+      ]
+    },
+    {
+      "id": "custom-snap",
+      "args": [
+        {
+          "value": 120,
+          "itemId": "cur",
+          "schedule": [
+            {
+              "item": {
+                "id": "other"
+              },
+              "window": {
+                "start": 20,
+                "end": 135
+              }
+            }
+          ],
+          "window": {
+            "start": 200,
+            "end": 260
+          },
+          "total": 480,
+          "snapMinutes": 15
+        }
+      ]
+    }
+  ]
+}

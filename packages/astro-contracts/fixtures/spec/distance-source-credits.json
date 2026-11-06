@@ -1,0 +1,19 @@
+{
+  "module": "distance-source-credits",
+  "file": "catalogue-sources",
+  "export": "distanceSourceCredits",
+  "cases": [
+    { "id": "fr", "args": ["fr"] },
+    { "id": "en", "args": ["en"] },
+    { "id": "ja", "args": ["ja"] },
+    { "id": "de", "args": ["de"] },
+    { "id": "es", "args": ["es"] },
+    { "id": "it", "args": ["it"] },
+    { "id": "pt-br", "args": ["pt-BR"] },
+    { "id": "ru", "args": ["ru"] },
+    { "id": "zh-hans", "args": ["zh-Hans"] },
+    { "id": "zh-hant", "args": ["zh-Hant"] },
+    { "id": "portuguese-language", "args": ["pt"] },
+    { "id": "unknown-language", "args": ["sv"] }
+  ]
+}

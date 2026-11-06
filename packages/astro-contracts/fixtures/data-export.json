@@ -1,0 +1,1549 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "exportedAt": "2026-10-05T18:30:00.000Z",
+          "parts": [
+            "plans",
+            "places",
+            "equipment",
+            "framings",
+            "journal",
+            "sky-measurements"
+          ],
+          "source": {
+            "debriefs": [
+              {
+                "decidedAt": "2026-10-04T09:00:00.000Z",
+                "outcome": "executed",
+                "planId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                "targets": [
+                  { "acquiredMinutes": 120, "state": "done", "targetId": "m31" }
+                ]
+              }
+            ],
+            "equipment": [
+              {
+                "id": "9d2b6c1e-1111-4a0b-8c00-000000000004",
+                "name": "Lunette 80 mm",
+                "type": "telescope"
+              },
+              {
+                "id": "9d2b6c1e-1111-4a0b-8c00-000000000005",
+                "name": "Caméra couleur",
+                "type": "camera"
+              }
+            ],
+            "framings": [
+              {
+                "id": "3c1f0e9a-2222-4d3e-9a00-000000000006",
+                "name": "M31 en deux panneaux",
+                "payload": { "targetId": "m31" },
+                "revision": 1,
+                "state": "free"
+              }
+            ],
+            "horizonProfiles": [
+              {
+                "id": "horizon-terrasse",
+                "mask": {
+                  "enabled": true,
+                  "points": [
+                    { "altitude": 0, "azimuth": 0 },
+                    { "altitude": 0, "azimuth": 10 },
+                    { "altitude": 0, "azimuth": 20 },
+                    { "altitude": 0, "azimuth": 30 },
+                    { "altitude": 0, "azimuth": 40 },
+                    { "altitude": 0, "azimuth": 50 },
+                    { "altitude": 0, "azimuth": 60 },
+                    { "altitude": 0, "azimuth": 70 },
+                    { "altitude": 0, "azimuth": 80 },
+                    { "altitude": 12, "azimuth": 90 },
+                    { "altitude": 12, "azimuth": 100 },
+                    { "altitude": 12, "azimuth": 110 },
+                    { "altitude": 12, "azimuth": 120 },
+                    { "altitude": 12, "azimuth": 130 },
+                    { "altitude": 12, "azimuth": 140 },
+                    { "altitude": 0, "azimuth": 150 },
+                    { "altitude": 0, "azimuth": 160 },
+                    { "altitude": 0, "azimuth": 170 },
+                    { "altitude": 0, "azimuth": 180 },
+                    { "altitude": 0, "azimuth": 190 },
+                    { "altitude": 0, "azimuth": 200 },
+                    { "altitude": 0, "azimuth": 210 },
+                    { "altitude": 0, "azimuth": 220 },
+                    { "altitude": 0, "azimuth": 230 },
+                    { "altitude": 0, "azimuth": 240 },
+                    { "altitude": 0, "azimuth": 250 },
+                    { "altitude": 0, "azimuth": 260 },
+                    { "altitude": 0, "azimuth": 270 },
+                    { "altitude": 0, "azimuth": 280 },
+                    { "altitude": 0, "azimuth": 290 },
+                    { "altitude": 0, "azimuth": 300 },
+                    { "altitude": 0, "azimuth": 310 },
+                    { "altitude": 0, "azimuth": 320 },
+                    { "altitude": 0, "azimuth": 330 },
+                    { "altitude": 0, "azimuth": 340 },
+                    { "altitude": 0, "azimuth": 350 }
+                  ]
+                },
+                "name": "Terrasse"
+              }
+            ],
+            "nights": [
+              {
+                "date": "2026-10-03",
+                "id": "night-col-2026-10-03",
+                "location": {
+                  "id": "col-des-melezes",
+                  "latitude": 45,
+                  "longitude": -30,
+                  "name": "Col des Mélèzes"
+                }
+              }
+            ],
+            "places": [
+              {
+                "horizonMask": {
+                  "enabled": true,
+                  "points": [
+                    { "altitude": 0, "azimuth": 0 },
+                    { "altitude": 0, "azimuth": 10 },
+                    { "altitude": 0, "azimuth": 20 },
+                    { "altitude": 0, "azimuth": 30 },
+                    { "altitude": 0, "azimuth": 40 },
+                    { "altitude": 0, "azimuth": 50 },
+                    { "altitude": 0, "azimuth": 60 },
+                    { "altitude": 0, "azimuth": 70 },
+                    { "altitude": 0, "azimuth": 80 },
+                    { "altitude": 12, "azimuth": 90 },
+                    { "altitude": 12, "azimuth": 100 },
+                    { "altitude": 12, "azimuth": 110 },
+                    { "altitude": 12, "azimuth": 120 },
+                    { "altitude": 12, "azimuth": 130 },
+                    { "altitude": 12, "azimuth": 140 },
+                    { "altitude": 0, "azimuth": 150 },
+                    { "altitude": 0, "azimuth": 160 },
+                    { "altitude": 0, "azimuth": 170 },
+                    { "altitude": 0, "azimuth": 180 },
+                    { "altitude": 0, "azimuth": 190 },
+                    { "altitude": 0, "azimuth": 200 },
+                    { "altitude": 0, "azimuth": 210 },
+                    { "altitude": 0, "azimuth": 220 },
+                    { "altitude": 0, "azimuth": 230 },
+                    { "altitude": 0, "azimuth": 240 },
+                    { "altitude": 0, "azimuth": 250 },
+                    { "altitude": 0, "azimuth": 260 },
+                    { "altitude": 0, "azimuth": 270 },
+                    { "altitude": 0, "azimuth": 280 },
+                    { "altitude": 0, "azimuth": 290 },
+                    { "altitude": 0, "azimuth": 300 },
+                    { "altitude": 0, "azimuth": 310 },
+                    { "altitude": 0, "azimuth": 320 },
+                    { "altitude": 0, "azimuth": 330 },
+                    { "altitude": 0, "azimuth": 340 },
+                    { "altitude": 0, "azimuth": 350 }
+                  ]
+                },
+                "horizonStatus": "verified",
+                "id": "col-des-melezes",
+                "latitude": 45,
+                "longitude": -30,
+                "name": "Col des Mélèzes"
+              },
+              {
+                "horizonMask": {
+                  "enabled": true,
+                  "points": [
+                    { "altitude": 0, "azimuth": 0 },
+                    { "altitude": 0, "azimuth": 10 },
+                    { "altitude": 0, "azimuth": 20 },
+                    { "altitude": 0, "azimuth": 30 },
+                    { "altitude": 0, "azimuth": 40 },
+                    { "altitude": 0, "azimuth": 50 },
+                    { "altitude": 0, "azimuth": 60 },
+                    { "altitude": 0, "azimuth": 70 },
+                    { "altitude": 0, "azimuth": 80 },
+                    { "altitude": 0, "azimuth": 90 },
+                    { "altitude": 0, "azimuth": 100 },
+                    { "altitude": 0, "azimuth": 110 },
+                    { "altitude": 0, "azimuth": 120 },
+                    { "altitude": 0, "azimuth": 130 },
+                    { "altitude": 0, "azimuth": 140 },
+                    { "altitude": 0, "azimuth": 150 },
+                    { "altitude": 0, "azimuth": 160 },
+                    { "altitude": 0, "azimuth": 170 },
+                    { "altitude": 0, "azimuth": 180 },
+                    { "altitude": 0, "azimuth": 190 },
+                    { "altitude": 0, "azimuth": 200 },
+                    { "altitude": 0, "azimuth": 210 },
+                    { "altitude": 0, "azimuth": 220 },
+                    { "altitude": 0, "azimuth": 230 },
+                    { "altitude": 0, "azimuth": 240 },
+                    { "altitude": 0, "azimuth": 250 },
+                    { "altitude": 0, "azimuth": 260 },
+                    { "altitude": 0, "azimuth": 270 },
+                    { "altitude": 0, "azimuth": 280 },
+                    { "altitude": 0, "azimuth": 290 },
+                    { "altitude": 0, "azimuth": 300 },
+                    { "altitude": 0, "azimuth": 310 },
+                    { "altitude": 0, "azimuth": 320 },
+                    { "altitude": 0, "azimuth": 330 },
+                    { "altitude": 0, "azimuth": 340 },
+                    { "altitude": 0, "azimuth": 350 }
+                  ]
+                },
+                "id": "camping-du-lac-noir",
+                "latitude": 45.18,
+                "longitude": -30,
+                "name": "Camping du Lac Noir"
+              },
+              {
+                "horizonMask": null,
+                "id": "plage-ouest",
+                "latitude": 45.05,
+                "longitude": -30.2,
+                "name": "Plage Ouest"
+              }
+            ],
+            "plans": [
+              {
+                "date": "2026-10-03",
+                "id": "plan-col-1",
+                "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+                "location": {
+                  "id": "col-des-melezes",
+                  "latitude": 45,
+                  "longitude": -30,
+                  "name": "Col des Mélèzes"
+                },
+                "name": "Nébuleuses d’automne",
+                "nightId": "night-col-2026-10-03",
+                "resourceId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                "status": "executed"
+              },
+              {
+                "date": "2026-10-05",
+                "id": "plan-lac-2",
+                "items": [],
+                "name": "Nuit au lac",
+                "status": "active"
+              }
+            ],
+            "projects": [
+              {
+                "goalMinutes": 600,
+                "id": "6f1d1c2a-6b3c-4c55-8e1f-000000000003",
+                "revision": 2,
+                "status": "active",
+                "target": { "id": "ngc7000" }
+              }
+            ],
+            "sessions": [
+              {
+                "events": [
+                  {
+                    "eventId": "01JA0000000000000000000001",
+                    "payload": { "targetId": "m31" },
+                    "recordedAt": "2026-10-03T19:45:00.000Z",
+                    "type": "target_started"
+                  }
+                ],
+                "finishedAt": "2026-10-04T02:10:00.000Z",
+                "id": "5b7e2d10-3333-4e4f-8b00-000000000007",
+                "planId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                "startedAt": "2026-10-03T19:40:00.000Z",
+                "status": "finished"
+              }
+            ],
+            "skyMeasurements": [
+              {
+                "measures": [
+                  {
+                    "methodVersion": "astro-sync-sky/1",
+                    "night": "2026-10-03",
+                    "poseCount": 14,
+                    "sqm": 21.04
+                  },
+                  {
+                    "methodVersion": "astro-sync-sky/1",
+                    "night": "2026-09-28",
+                    "poseCount": 9,
+                    "sqm": 20.88
+                  }
+                ],
+                "placeId": "col-des-melezes"
+              }
+            ]
+          }
+        }
+      ],
+      "id": "six-boxes",
+      "result": {
+        "files": [
+          {
+            "name": "README.md",
+            "text": "formatVersion: 1\nexportedAt: 2026-10-05T18:30:00.000Z\nparts: plans, places, equipment, framings, journal, sky-measurements\n\n# PlanAstro — mes données\n\nCe fichier .zip contient un fichier JSON par élément coché, décrit par son schéma (format version 1) :\n\n- plans.json — Plans (plans d’une nuit et plans multi-nuits)\n- places.json — Lieux et horizons relevés\n- equipment.json — Matériel\n- framings.json — Cadrages\n- journal.json — Journal et bilans (sessions exécutées, leurs événements, leurs bilans)\n- sky-measurements.json — Fond de ciel mesuré\n\nLes images de la galerie privée restent dans l’espace : elles ne sont pas dans le fichier.\n\nIl se charge tel quel dans un portail privé PlanAstro.\n\n---\n\nThis .zip file holds one JSON file per ticked item, each described by its schema (format version 1):\n\n- plans.json — Plans (one-night plans and multi-night plans)\n- places.json — Places and recorded horizons\n- equipment.json — Equipment\n- framings.json — Framings\n- journal.json — Journal and debriefings (sessions executed, their events, their debriefings)\n- sky-measurements.json — Measured sky background\n\nThe private gallery’s images stay in the space: they are not in the file.\n\nIt loads as it is into a private PlanAstro portal.\n"
+          },
+          {
+            "document": {
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "nights": [
+                {
+                  "date": "2026-10-03",
+                  "id": "night-col-2026-10-03",
+                  "location": {
+                    "id": "col-des-melezes",
+                    "latitude": 45,
+                    "longitude": -30,
+                    "name": "Col des Mélèzes"
+                  }
+                }
+              ],
+              "part": "plans",
+              "plans": [
+                {
+                  "date": "2026-10-03",
+                  "id": "plan-col-1",
+                  "items": [
+                    { "filter": "L", "id": "m31" },
+                    { "id": "ngc7000" }
+                  ],
+                  "location": {
+                    "id": "col-des-melezes",
+                    "latitude": 45,
+                    "longitude": -30,
+                    "name": "Col des Mélèzes"
+                  },
+                  "name": "Nébuleuses d’automne",
+                  "nightId": "night-col-2026-10-03",
+                  "resourceId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                  "status": "executed"
+                },
+                {
+                  "date": "2026-10-05",
+                  "id": "plan-lac-2",
+                  "items": [],
+                  "name": "Nuit au lac",
+                  "status": "active"
+                }
+              ],
+              "projects": [
+                {
+                  "goalMinutes": 600,
+                  "id": "6f1d1c2a-6b3c-4c55-8e1f-000000000003",
+                  "revision": 2,
+                  "status": "active",
+                  "target": { "id": "ngc7000" }
+                }
+              ]
+            },
+            "name": "plans.json"
+          },
+          {
+            "document": {
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "horizonProfiles": [
+                {
+                  "id": "horizon-terrasse",
+                  "mask": {
+                    "enabled": true,
+                    "points": [
+                      { "altitude": 0, "azimuth": 0 },
+                      { "altitude": 0, "azimuth": 10 },
+                      { "altitude": 0, "azimuth": 20 },
+                      { "altitude": 0, "azimuth": 30 },
+                      { "altitude": 0, "azimuth": 40 },
+                      { "altitude": 0, "azimuth": 50 },
+                      { "altitude": 0, "azimuth": 60 },
+                      { "altitude": 0, "azimuth": 70 },
+                      { "altitude": 0, "azimuth": 80 },
+                      { "altitude": 12, "azimuth": 90 },
+                      { "altitude": 12, "azimuth": 100 },
+                      { "altitude": 12, "azimuth": 110 },
+                      { "altitude": 12, "azimuth": 120 },
+                      { "altitude": 12, "azimuth": 130 },
+                      { "altitude": 12, "azimuth": 140 },
+                      { "altitude": 0, "azimuth": 150 },
+                      { "altitude": 0, "azimuth": 160 },
+                      { "altitude": 0, "azimuth": 170 },
+                      { "altitude": 0, "azimuth": 180 },
+                      { "altitude": 0, "azimuth": 190 },
+                      { "altitude": 0, "azimuth": 200 },
+                      { "altitude": 0, "azimuth": 210 },
+                      { "altitude": 0, "azimuth": 220 },
+                      { "altitude": 0, "azimuth": 230 },
+                      { "altitude": 0, "azimuth": 240 },
+                      { "altitude": 0, "azimuth": 250 },
+                      { "altitude": 0, "azimuth": 260 },
+                      { "altitude": 0, "azimuth": 270 },
+                      { "altitude": 0, "azimuth": 280 },
+                      { "altitude": 0, "azimuth": 290 },
+                      { "altitude": 0, "azimuth": 300 },
+                      { "altitude": 0, "azimuth": 310 },
+                      { "altitude": 0, "azimuth": 320 },
+                      { "altitude": 0, "azimuth": 330 },
+                      { "altitude": 0, "azimuth": 340 },
+                      { "altitude": 0, "azimuth": 350 }
+                    ]
+                  },
+                  "name": "Terrasse"
+                }
+              ],
+              "part": "places",
+              "places": [
+                {
+                  "horizonMask": {
+                    "enabled": true,
+                    "points": [
+                      { "altitude": 0, "azimuth": 0 },
+                      { "altitude": 0, "azimuth": 10 },
+                      { "altitude": 0, "azimuth": 20 },
+                      { "altitude": 0, "azimuth": 30 },
+                      { "altitude": 0, "azimuth": 40 },
+                      { "altitude": 0, "azimuth": 50 },
+                      { "altitude": 0, "azimuth": 60 },
+                      { "altitude": 0, "azimuth": 70 },
+                      { "altitude": 0, "azimuth": 80 },
+                      { "altitude": 12, "azimuth": 90 },
+                      { "altitude": 12, "azimuth": 100 },
+                      { "altitude": 12, "azimuth": 110 },
+                      { "altitude": 12, "azimuth": 120 },
+                      { "altitude": 12, "azimuth": 130 },
+                      { "altitude": 12, "azimuth": 140 },
+                      { "altitude": 0, "azimuth": 150 },
+                      { "altitude": 0, "azimuth": 160 },
+                      { "altitude": 0, "azimuth": 170 },
+                      { "altitude": 0, "azimuth": 180 },
+                      { "altitude": 0, "azimuth": 190 },
+                      { "altitude": 0, "azimuth": 200 },
+                      { "altitude": 0, "azimuth": 210 },
+                      { "altitude": 0, "azimuth": 220 },
+                      { "altitude": 0, "azimuth": 230 },
+                      { "altitude": 0, "azimuth": 240 },
+                      { "altitude": 0, "azimuth": 250 },
+                      { "altitude": 0, "azimuth": 260 },
+                      { "altitude": 0, "azimuth": 270 },
+                      { "altitude": 0, "azimuth": 280 },
+                      { "altitude": 0, "azimuth": 290 },
+                      { "altitude": 0, "azimuth": 300 },
+                      { "altitude": 0, "azimuth": 310 },
+                      { "altitude": 0, "azimuth": 320 },
+                      { "altitude": 0, "azimuth": 330 },
+                      { "altitude": 0, "azimuth": 340 },
+                      { "altitude": 0, "azimuth": 350 }
+                    ]
+                  },
+                  "horizonStatus": "verified",
+                  "id": "col-des-melezes",
+                  "latitude": 45,
+                  "longitude": -30,
+                  "name": "Col des Mélèzes"
+                },
+                {
+                  "horizonMask": {
+                    "enabled": true,
+                    "points": [
+                      { "altitude": 0, "azimuth": 0 },
+                      { "altitude": 0, "azimuth": 10 },
+                      { "altitude": 0, "azimuth": 20 },
+                      { "altitude": 0, "azimuth": 30 },
+                      { "altitude": 0, "azimuth": 40 },
+                      { "altitude": 0, "azimuth": 50 },
+                      { "altitude": 0, "azimuth": 60 },
+                      { "altitude": 0, "azimuth": 70 },
+                      { "altitude": 0, "azimuth": 80 },
+                      { "altitude": 0, "azimuth": 90 },
+                      { "altitude": 0, "azimuth": 100 },
+                      { "altitude": 0, "azimuth": 110 },
+                      { "altitude": 0, "azimuth": 120 },
+                      { "altitude": 0, "azimuth": 130 },
+                      { "altitude": 0, "azimuth": 140 },
+                      { "altitude": 0, "azimuth": 150 },
+                      { "altitude": 0, "azimuth": 160 },
+                      { "altitude": 0, "azimuth": 170 },
+                      { "altitude": 0, "azimuth": 180 },
+                      { "altitude": 0, "azimuth": 190 },
+                      { "altitude": 0, "azimuth": 200 },
+                      { "altitude": 0, "azimuth": 210 },
+                      { "altitude": 0, "azimuth": 220 },
+                      { "altitude": 0, "azimuth": 230 },
+                      { "altitude": 0, "azimuth": 240 },
+                      { "altitude": 0, "azimuth": 250 },
+                      { "altitude": 0, "azimuth": 260 },
+                      { "altitude": 0, "azimuth": 270 },
+                      { "altitude": 0, "azimuth": 280 },
+                      { "altitude": 0, "azimuth": 290 },
+                      { "altitude": 0, "azimuth": 300 },
+                      { "altitude": 0, "azimuth": 310 },
+                      { "altitude": 0, "azimuth": 320 },
+                      { "altitude": 0, "azimuth": 330 },
+                      { "altitude": 0, "azimuth": 340 },
+                      { "altitude": 0, "azimuth": 350 }
+                    ]
+                  },
+                  "id": "camping-du-lac-noir",
+                  "latitude": 45.18,
+                  "longitude": -30,
+                  "name": "Camping du Lac Noir"
+                },
+                {
+                  "horizonMask": null,
+                  "id": "plage-ouest",
+                  "latitude": 45.05,
+                  "longitude": -30.2,
+                  "name": "Plage Ouest"
+                }
+              ]
+            },
+            "name": "places.json"
+          },
+          {
+            "document": {
+              "equipment": [
+                {
+                  "id": "9d2b6c1e-1111-4a0b-8c00-000000000004",
+                  "name": "Lunette 80 mm",
+                  "type": "telescope"
+                },
+                {
+                  "id": "9d2b6c1e-1111-4a0b-8c00-000000000005",
+                  "name": "Caméra couleur",
+                  "type": "camera"
+                }
+              ],
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "part": "equipment"
+            },
+            "name": "equipment.json"
+          },
+          {
+            "document": {
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "framings": [
+                {
+                  "id": "3c1f0e9a-2222-4d3e-9a00-000000000006",
+                  "name": "M31 en deux panneaux",
+                  "payload": { "targetId": "m31" },
+                  "revision": 1,
+                  "state": "free"
+                }
+              ],
+              "part": "framings"
+            },
+            "name": "framings.json"
+          },
+          {
+            "document": {
+              "debriefs": [
+                {
+                  "decidedAt": "2026-10-04T09:00:00.000Z",
+                  "outcome": "executed",
+                  "planId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                  "targets": [
+                    {
+                      "acquiredMinutes": 120,
+                      "state": "done",
+                      "targetId": "m31"
+                    }
+                  ]
+                }
+              ],
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "part": "journal",
+              "sessions": [
+                {
+                  "events": [
+                    {
+                      "eventId": "01JA0000000000000000000001",
+                      "payload": { "targetId": "m31" },
+                      "recordedAt": "2026-10-03T19:45:00.000Z",
+                      "type": "target_started"
+                    }
+                  ],
+                  "finishedAt": "2026-10-04T02:10:00.000Z",
+                  "id": "5b7e2d10-3333-4e4f-8b00-000000000007",
+                  "planId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "status": "finished"
+                }
+              ]
+            },
+            "name": "journal.json"
+          },
+          {
+            "document": {
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "part": "sky-measurements",
+              "places": [
+                {
+                  "measures": [
+                    {
+                      "methodVersion": "astro-sync-sky/1",
+                      "night": "2026-10-03",
+                      "poseCount": 14,
+                      "sqm": 21.04
+                    },
+                    {
+                      "methodVersion": "astro-sync-sky/1",
+                      "night": "2026-09-28",
+                      "poseCount": 9,
+                      "sqm": 20.88
+                    }
+                  ],
+                  "placeId": "col-des-melezes"
+                }
+              ]
+            },
+            "name": "sky-measurements.json"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "exportedAt": "2026-10-05T18:30:00.000Z",
+          "parts": ["plans", "places", "equipment", "framings"],
+          "source": {
+            "debriefs": [
+              {
+                "decidedAt": "2026-10-04T09:00:00.000Z",
+                "outcome": "executed",
+                "planId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                "targets": [
+                  { "acquiredMinutes": 120, "state": "done", "targetId": "m31" }
+                ]
+              }
+            ],
+            "equipment": [
+              {
+                "id": "9d2b6c1e-1111-4a0b-8c00-000000000004",
+                "name": "Lunette 80 mm",
+                "type": "telescope"
+              },
+              {
+                "id": "9d2b6c1e-1111-4a0b-8c00-000000000005",
+                "name": "Caméra couleur",
+                "type": "camera"
+              }
+            ],
+            "framings": [
+              {
+                "id": "3c1f0e9a-2222-4d3e-9a00-000000000006",
+                "name": "M31 en deux panneaux",
+                "payload": { "targetId": "m31" },
+                "revision": 1,
+                "state": "free"
+              }
+            ],
+            "horizonProfiles": [
+              {
+                "id": "horizon-terrasse",
+                "mask": {
+                  "enabled": true,
+                  "points": [
+                    { "altitude": 0, "azimuth": 0 },
+                    { "altitude": 0, "azimuth": 10 },
+                    { "altitude": 0, "azimuth": 20 },
+                    { "altitude": 0, "azimuth": 30 },
+                    { "altitude": 0, "azimuth": 40 },
+                    { "altitude": 0, "azimuth": 50 },
+                    { "altitude": 0, "azimuth": 60 },
+                    { "altitude": 0, "azimuth": 70 },
+                    { "altitude": 0, "azimuth": 80 },
+                    { "altitude": 12, "azimuth": 90 },
+                    { "altitude": 12, "azimuth": 100 },
+                    { "altitude": 12, "azimuth": 110 },
+                    { "altitude": 12, "azimuth": 120 },
+                    { "altitude": 12, "azimuth": 130 },
+                    { "altitude": 12, "azimuth": 140 },
+                    { "altitude": 0, "azimuth": 150 },
+                    { "altitude": 0, "azimuth": 160 },
+                    { "altitude": 0, "azimuth": 170 },
+                    { "altitude": 0, "azimuth": 180 },
+                    { "altitude": 0, "azimuth": 190 },
+                    { "altitude": 0, "azimuth": 200 },
+                    { "altitude": 0, "azimuth": 210 },
+                    { "altitude": 0, "azimuth": 220 },
+                    { "altitude": 0, "azimuth": 230 },
+                    { "altitude": 0, "azimuth": 240 },
+                    { "altitude": 0, "azimuth": 250 },
+                    { "altitude": 0, "azimuth": 260 },
+                    { "altitude": 0, "azimuth": 270 },
+                    { "altitude": 0, "azimuth": 280 },
+                    { "altitude": 0, "azimuth": 290 },
+                    { "altitude": 0, "azimuth": 300 },
+                    { "altitude": 0, "azimuth": 310 },
+                    { "altitude": 0, "azimuth": 320 },
+                    { "altitude": 0, "azimuth": 330 },
+                    { "altitude": 0, "azimuth": 340 },
+                    { "altitude": 0, "azimuth": 350 }
+                  ]
+                },
+                "name": "Terrasse"
+              }
+            ],
+            "places": [
+              {
+                "horizonMask": {
+                  "enabled": true,
+                  "points": [
+                    { "altitude": 0, "azimuth": 0 },
+                    { "altitude": 0, "azimuth": 10 },
+                    { "altitude": 0, "azimuth": 20 },
+                    { "altitude": 0, "azimuth": 30 },
+                    { "altitude": 0, "azimuth": 40 },
+                    { "altitude": 0, "azimuth": 50 },
+                    { "altitude": 0, "azimuth": 60 },
+                    { "altitude": 0, "azimuth": 70 },
+                    { "altitude": 0, "azimuth": 80 },
+                    { "altitude": 12, "azimuth": 90 },
+                    { "altitude": 12, "azimuth": 100 },
+                    { "altitude": 12, "azimuth": 110 },
+                    { "altitude": 12, "azimuth": 120 },
+                    { "altitude": 12, "azimuth": 130 },
+                    { "altitude": 12, "azimuth": 140 },
+                    { "altitude": 0, "azimuth": 150 },
+                    { "altitude": 0, "azimuth": 160 },
+                    { "altitude": 0, "azimuth": 170 },
+                    { "altitude": 0, "azimuth": 180 },
+                    { "altitude": 0, "azimuth": 190 },
+                    { "altitude": 0, "azimuth": 200 },
+                    { "altitude": 0, "azimuth": 210 },
+                    { "altitude": 0, "azimuth": 220 },
+                    { "altitude": 0, "azimuth": 230 },
+                    { "altitude": 0, "azimuth": 240 },
+                    { "altitude": 0, "azimuth": 250 },
+                    { "altitude": 0, "azimuth": 260 },
+                    { "altitude": 0, "azimuth": 270 },
+                    { "altitude": 0, "azimuth": 280 },
+                    { "altitude": 0, "azimuth": 290 },
+                    { "altitude": 0, "azimuth": 300 },
+                    { "altitude": 0, "azimuth": 310 },
+                    { "altitude": 0, "azimuth": 320 },
+                    { "altitude": 0, "azimuth": 330 },
+                    { "altitude": 0, "azimuth": 340 },
+                    { "altitude": 0, "azimuth": 350 }
+                  ]
+                },
+                "horizonStatus": "verified",
+                "id": "col-des-melezes",
+                "latitude": 45,
+                "longitude": -30,
+                "name": "Col des Mélèzes"
+              },
+              {
+                "horizonMask": {
+                  "enabled": true,
+                  "points": [
+                    { "altitude": 0, "azimuth": 0 },
+                    { "altitude": 0, "azimuth": 10 },
+                    { "altitude": 0, "azimuth": 20 },
+                    { "altitude": 0, "azimuth": 30 },
+                    { "altitude": 0, "azimuth": 40 },
+                    { "altitude": 0, "azimuth": 50 },
+                    { "altitude": 0, "azimuth": 60 },
+                    { "altitude": 0, "azimuth": 70 },
+                    { "altitude": 0, "azimuth": 80 },
+                    { "altitude": 0, "azimuth": 90 },
+                    { "altitude": 0, "azimuth": 100 },
+                    { "altitude": 0, "azimuth": 110 },
+                    { "altitude": 0, "azimuth": 120 },
+                    { "altitude": 0, "azimuth": 130 },
+                    { "altitude": 0, "azimuth": 140 },
+                    { "altitude": 0, "azimuth": 150 },
+                    { "altitude": 0, "azimuth": 160 },
+                    { "altitude": 0, "azimuth": 170 },
+                    { "altitude": 0, "azimuth": 180 },
+                    { "altitude": 0, "azimuth": 190 },
+                    { "altitude": 0, "azimuth": 200 },
+                    { "altitude": 0, "azimuth": 210 },
+                    { "altitude": 0, "azimuth": 220 },
+                    { "altitude": 0, "azimuth": 230 },
+                    { "altitude": 0, "azimuth": 240 },
+                    { "altitude": 0, "azimuth": 250 },
+                    { "altitude": 0, "azimuth": 260 },
+                    { "altitude": 0, "azimuth": 270 },
+                    { "altitude": 0, "azimuth": 280 },
+                    { "altitude": 0, "azimuth": 290 },
+                    { "altitude": 0, "azimuth": 300 },
+                    { "altitude": 0, "azimuth": 310 },
+                    { "altitude": 0, "azimuth": 320 },
+                    { "altitude": 0, "azimuth": 330 },
+                    { "altitude": 0, "azimuth": 340 },
+                    { "altitude": 0, "azimuth": 350 }
+                  ]
+                },
+                "id": "camping-du-lac-noir",
+                "latitude": 45.18,
+                "longitude": -30,
+                "name": "Camping du Lac Noir"
+              },
+              {
+                "horizonMask": null,
+                "id": "plage-ouest",
+                "latitude": 45.05,
+                "longitude": -30.2,
+                "name": "Plage Ouest"
+              }
+            ],
+            "plans": [
+              {
+                "date": "2026-10-03",
+                "id": "plan-col-1",
+                "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+                "location": {
+                  "id": "col-des-melezes",
+                  "latitude": 45,
+                  "longitude": -30,
+                  "name": "Col des Mélèzes"
+                },
+                "name": "Nébuleuses d’automne",
+                "resourceId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                "status": "executed"
+              },
+              {
+                "date": "2026-10-05",
+                "id": "plan-lac-2",
+                "items": [],
+                "name": "Nuit au lac",
+                "status": "active"
+              }
+            ],
+            "projects": [
+              {
+                "goalMinutes": 600,
+                "id": "6f1d1c2a-6b3c-4c55-8e1f-000000000003",
+                "revision": 2,
+                "status": "active",
+                "target": { "id": "ngc7000" }
+              }
+            ],
+            "sessions": [
+              {
+                "events": [
+                  {
+                    "eventId": "01JA0000000000000000000001",
+                    "payload": { "targetId": "m31" },
+                    "recordedAt": "2026-10-03T19:45:00.000Z",
+                    "type": "target_started"
+                  }
+                ],
+                "finishedAt": "2026-10-04T02:10:00.000Z",
+                "id": "5b7e2d10-3333-4e4f-8b00-000000000007",
+                "planId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                "startedAt": "2026-10-03T19:40:00.000Z",
+                "status": "finished"
+              }
+            ],
+            "skyMeasurements": [
+              {
+                "measures": [
+                  {
+                    "methodVersion": "astro-sync-sky/1",
+                    "night": "2026-10-03",
+                    "poseCount": 14,
+                    "sqm": 21.04
+                  },
+                  {
+                    "methodVersion": "astro-sync-sky/1",
+                    "night": "2026-09-28",
+                    "poseCount": 9,
+                    "sqm": 20.88
+                  }
+                ],
+                "placeId": "col-des-melezes"
+              }
+            ]
+          }
+        }
+      ],
+      "id": "four-of-six",
+      "result": {
+        "files": [
+          {
+            "name": "README.md",
+            "text": "formatVersion: 1\nexportedAt: 2026-10-05T18:30:00.000Z\nparts: plans, places, equipment, framings\n\n# PlanAstro — mes données\n\nCe fichier .zip contient un fichier JSON par élément coché, décrit par son schéma (format version 1) :\n\n- plans.json — Plans (plans d’une nuit et plans multi-nuits)\n- places.json — Lieux et horizons relevés\n- equipment.json — Matériel\n- framings.json — Cadrages\n\nLes images de la galerie privée restent dans l’espace : elles ne sont pas dans le fichier.\n\nIl se charge tel quel dans un portail privé PlanAstro.\n\n---\n\nThis .zip file holds one JSON file per ticked item, each described by its schema (format version 1):\n\n- plans.json — Plans (one-night plans and multi-night plans)\n- places.json — Places and recorded horizons\n- equipment.json — Equipment\n- framings.json — Framings\n\nThe private gallery’s images stay in the space: they are not in the file.\n\nIt loads as it is into a private PlanAstro portal.\n"
+          },
+          {
+            "document": {
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "nights": [],
+              "part": "plans",
+              "plans": [
+                {
+                  "date": "2026-10-03",
+                  "id": "plan-col-1",
+                  "items": [
+                    { "filter": "L", "id": "m31" },
+                    { "id": "ngc7000" }
+                  ],
+                  "location": {
+                    "id": "col-des-melezes",
+                    "latitude": 45,
+                    "longitude": -30,
+                    "name": "Col des Mélèzes"
+                  },
+                  "name": "Nébuleuses d’automne",
+                  "resourceId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                  "status": "executed"
+                },
+                {
+                  "date": "2026-10-05",
+                  "id": "plan-lac-2",
+                  "items": [],
+                  "name": "Nuit au lac",
+                  "status": "active"
+                }
+              ],
+              "projects": [
+                {
+                  "goalMinutes": 600,
+                  "id": "6f1d1c2a-6b3c-4c55-8e1f-000000000003",
+                  "revision": 2,
+                  "status": "active",
+                  "target": { "id": "ngc7000" }
+                }
+              ]
+            },
+            "name": "plans.json"
+          },
+          {
+            "document": {
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "horizonProfiles": [
+                {
+                  "id": "horizon-terrasse",
+                  "mask": {
+                    "enabled": true,
+                    "points": [
+                      { "altitude": 0, "azimuth": 0 },
+                      { "altitude": 0, "azimuth": 10 },
+                      { "altitude": 0, "azimuth": 20 },
+                      { "altitude": 0, "azimuth": 30 },
+                      { "altitude": 0, "azimuth": 40 },
+                      { "altitude": 0, "azimuth": 50 },
+                      { "altitude": 0, "azimuth": 60 },
+                      { "altitude": 0, "azimuth": 70 },
+                      { "altitude": 0, "azimuth": 80 },
+                      { "altitude": 12, "azimuth": 90 },
+                      { "altitude": 12, "azimuth": 100 },
+                      { "altitude": 12, "azimuth": 110 },
+                      { "altitude": 12, "azimuth": 120 },
+                      { "altitude": 12, "azimuth": 130 },
+                      { "altitude": 12, "azimuth": 140 },
+                      { "altitude": 0, "azimuth": 150 },
+                      { "altitude": 0, "azimuth": 160 },
+                      { "altitude": 0, "azimuth": 170 },
+                      { "altitude": 0, "azimuth": 180 },
+                      { "altitude": 0, "azimuth": 190 },
+                      { "altitude": 0, "azimuth": 200 },
+                      { "altitude": 0, "azimuth": 210 },
+                      { "altitude": 0, "azimuth": 220 },
+                      { "altitude": 0, "azimuth": 230 },
+                      { "altitude": 0, "azimuth": 240 },
+                      { "altitude": 0, "azimuth": 250 },
+                      { "altitude": 0, "azimuth": 260 },
+                      { "altitude": 0, "azimuth": 270 },
+                      { "altitude": 0, "azimuth": 280 },
+                      { "altitude": 0, "azimuth": 290 },
+                      { "altitude": 0, "azimuth": 300 },
+                      { "altitude": 0, "azimuth": 310 },
+                      { "altitude": 0, "azimuth": 320 },
+                      { "altitude": 0, "azimuth": 330 },
+                      { "altitude": 0, "azimuth": 340 },
+                      { "altitude": 0, "azimuth": 350 }
+                    ]
+                  },
+                  "name": "Terrasse"
+                }
+              ],
+              "part": "places",
+              "places": [
+                {
+                  "horizonMask": {
+                    "enabled": true,
+                    "points": [
+                      { "altitude": 0, "azimuth": 0 },
+                      { "altitude": 0, "azimuth": 10 },
+                      { "altitude": 0, "azimuth": 20 },
+                      { "altitude": 0, "azimuth": 30 },
+                      { "altitude": 0, "azimuth": 40 },
+                      { "altitude": 0, "azimuth": 50 },
+                      { "altitude": 0, "azimuth": 60 },
+                      { "altitude": 0, "azimuth": 70 },
+                      { "altitude": 0, "azimuth": 80 },
+                      { "altitude": 12, "azimuth": 90 },
+                      { "altitude": 12, "azimuth": 100 },
+                      { "altitude": 12, "azimuth": 110 },
+                      { "altitude": 12, "azimuth": 120 },
+                      { "altitude": 12, "azimuth": 130 },
+                      { "altitude": 12, "azimuth": 140 },
+                      { "altitude": 0, "azimuth": 150 },
+                      { "altitude": 0, "azimuth": 160 },
+                      { "altitude": 0, "azimuth": 170 },
+                      { "altitude": 0, "azimuth": 180 },
+                      { "altitude": 0, "azimuth": 190 },
+                      { "altitude": 0, "azimuth": 200 },
+                      { "altitude": 0, "azimuth": 210 },
+                      { "altitude": 0, "azimuth": 220 },
+                      { "altitude": 0, "azimuth": 230 },
+                      { "altitude": 0, "azimuth": 240 },
+                      { "altitude": 0, "azimuth": 250 },
+                      { "altitude": 0, "azimuth": 260 },
+                      { "altitude": 0, "azimuth": 270 },
+                      { "altitude": 0, "azimuth": 280 },
+                      { "altitude": 0, "azimuth": 290 },
+                      { "altitude": 0, "azimuth": 300 },
+                      { "altitude": 0, "azimuth": 310 },
+                      { "altitude": 0, "azimuth": 320 },
+                      { "altitude": 0, "azimuth": 330 },
+                      { "altitude": 0, "azimuth": 340 },
+                      { "altitude": 0, "azimuth": 350 }
+                    ]
+                  },
+                  "horizonStatus": "verified",
+                  "id": "col-des-melezes",
+                  "latitude": 45,
+                  "longitude": -30,
+                  "name": "Col des Mélèzes"
+                },
+                {
+                  "horizonMask": {
+                    "enabled": true,
+                    "points": [
+                      { "altitude": 0, "azimuth": 0 },
+                      { "altitude": 0, "azimuth": 10 },
+                      { "altitude": 0, "azimuth": 20 },
+                      { "altitude": 0, "azimuth": 30 },
+                      { "altitude": 0, "azimuth": 40 },
+                      { "altitude": 0, "azimuth": 50 },
+                      { "altitude": 0, "azimuth": 60 },
+                      { "altitude": 0, "azimuth": 70 },
+                      { "altitude": 0, "azimuth": 80 },
+                      { "altitude": 0, "azimuth": 90 },
+                      { "altitude": 0, "azimuth": 100 },
+                      { "altitude": 0, "azimuth": 110 },
+                      { "altitude": 0, "azimuth": 120 },
+                      { "altitude": 0, "azimuth": 130 },
+                      { "altitude": 0, "azimuth": 140 },
+                      { "altitude": 0, "azimuth": 150 },
+                      { "altitude": 0, "azimuth": 160 },
+                      { "altitude": 0, "azimuth": 170 },
+                      { "altitude": 0, "azimuth": 180 },
+                      { "altitude": 0, "azimuth": 190 },
+                      { "altitude": 0, "azimuth": 200 },
+                      { "altitude": 0, "azimuth": 210 },
+                      { "altitude": 0, "azimuth": 220 },
+                      { "altitude": 0, "azimuth": 230 },
+                      { "altitude": 0, "azimuth": 240 },
+                      { "altitude": 0, "azimuth": 250 },
+                      { "altitude": 0, "azimuth": 260 },
+                      { "altitude": 0, "azimuth": 270 },
+                      { "altitude": 0, "azimuth": 280 },
+                      { "altitude": 0, "azimuth": 290 },
+                      { "altitude": 0, "azimuth": 300 },
+                      { "altitude": 0, "azimuth": 310 },
+                      { "altitude": 0, "azimuth": 320 },
+                      { "altitude": 0, "azimuth": 330 },
+                      { "altitude": 0, "azimuth": 340 },
+                      { "altitude": 0, "azimuth": 350 }
+                    ]
+                  },
+                  "id": "camping-du-lac-noir",
+                  "latitude": 45.18,
+                  "longitude": -30,
+                  "name": "Camping du Lac Noir"
+                },
+                {
+                  "horizonMask": null,
+                  "id": "plage-ouest",
+                  "latitude": 45.05,
+                  "longitude": -30.2,
+                  "name": "Plage Ouest"
+                }
+              ]
+            },
+            "name": "places.json"
+          },
+          {
+            "document": {
+              "equipment": [
+                {
+                  "id": "9d2b6c1e-1111-4a0b-8c00-000000000004",
+                  "name": "Lunette 80 mm",
+                  "type": "telescope"
+                },
+                {
+                  "id": "9d2b6c1e-1111-4a0b-8c00-000000000005",
+                  "name": "Caméra couleur",
+                  "type": "camera"
+                }
+              ],
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "part": "equipment"
+            },
+            "name": "equipment.json"
+          },
+          {
+            "document": {
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "framings": [
+                {
+                  "id": "3c1f0e9a-2222-4d3e-9a00-000000000006",
+                  "name": "M31 en deux panneaux",
+                  "payload": { "targetId": "m31" },
+                  "revision": 1,
+                  "state": "free"
+                }
+              ],
+              "part": "framings"
+            },
+            "name": "framings.json"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "exportedAt": "2026-10-05T18:30:00.000Z",
+          "parts": ["equipment", "sky-measurements"],
+          "source": {}
+        }
+      ],
+      "id": "empty-box-is-an-empty-list",
+      "result": {
+        "files": [
+          {
+            "name": "README.md",
+            "text": "formatVersion: 1\nexportedAt: 2026-10-05T18:30:00.000Z\nparts: equipment, sky-measurements\n\n# PlanAstro — mes données\n\nCe fichier .zip contient un fichier JSON par élément coché, décrit par son schéma (format version 1) :\n\n- equipment.json — Matériel\n- sky-measurements.json — Fond de ciel mesuré\n\nLes images de la galerie privée restent dans l’espace : elles ne sont pas dans le fichier.\n\nIl se charge tel quel dans un portail privé PlanAstro.\n\n---\n\nThis .zip file holds one JSON file per ticked item, each described by its schema (format version 1):\n\n- equipment.json — Equipment\n- sky-measurements.json — Measured sky background\n\nThe private gallery’s images stay in the space: they are not in the file.\n\nIt loads as it is into a private PlanAstro portal.\n"
+          },
+          {
+            "document": {
+              "equipment": [],
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "part": "equipment"
+            },
+            "name": "equipment.json"
+          },
+          {
+            "document": {
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "part": "sky-measurements",
+              "places": []
+            },
+            "name": "sky-measurements.json"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "exportedAt": "2026-10-05T18:30:00.000Z",
+          "parts": ["journal", "plans", "journal"],
+          "source": {
+            "plans": [
+              {
+                "date": "2026-10-05",
+                "id": "plan-lac-2",
+                "items": [],
+                "name": "Nuit au lac",
+                "status": "active"
+              }
+            ],
+            "sessions": [
+              {
+                "id": "local-session-1",
+                "planId": null,
+                "serverId": null,
+                "startedAt": "2026-10-05T19:00:00.000Z",
+                "status": "open"
+              }
+            ]
+          }
+        }
+      ],
+      "id": "boxes-in-screen-order-once",
+      "result": {
+        "files": [
+          {
+            "name": "README.md",
+            "text": "formatVersion: 1\nexportedAt: 2026-10-05T18:30:00.000Z\nparts: plans, journal\n\n# PlanAstro — mes données\n\nCe fichier .zip contient un fichier JSON par élément coché, décrit par son schéma (format version 1) :\n\n- plans.json — Plans (plans d’une nuit et plans multi-nuits)\n- journal.json — Journal et bilans (sessions exécutées, leurs événements, leurs bilans)\n\nLes images de la galerie privée restent dans l’espace : elles ne sont pas dans le fichier.\n\nIl se charge tel quel dans un portail privé PlanAstro.\n\n---\n\nThis .zip file holds one JSON file per ticked item, each described by its schema (format version 1):\n\n- plans.json — Plans (one-night plans and multi-night plans)\n- journal.json — Journal and debriefings (sessions executed, their events, their debriefings)\n\nThe private gallery’s images stay in the space: they are not in the file.\n\nIt loads as it is into a private PlanAstro portal.\n"
+          },
+          {
+            "document": {
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "nights": [],
+              "part": "plans",
+              "plans": [
+                {
+                  "date": "2026-10-05",
+                  "id": "plan-lac-2",
+                  "items": [],
+                  "name": "Nuit au lac",
+                  "status": "active"
+                }
+              ],
+              "projects": []
+            },
+            "name": "plans.json"
+          },
+          {
+            "document": {
+              "debriefs": [],
+              "exportedAt": "2026-10-05T18:30:00.000Z",
+              "formatVersion": 1,
+              "part": "journal",
+              "sessions": [
+                {
+                  "events": [],
+                  "id": "local-session-1",
+                  "planId": null,
+                  "serverId": null,
+                  "startedAt": "2026-10-05T19:00:00.000Z",
+                  "status": "open"
+                }
+              ]
+            },
+            "name": "journal.json"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "exportedAt": "2026-10-05T18:30:00.000Z",
+          "parts": ["plans", "photos"],
+          "source": {
+            "debriefs": [
+              {
+                "decidedAt": "2026-10-04T09:00:00.000Z",
+                "outcome": "executed",
+                "planId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                "targets": [
+                  { "acquiredMinutes": 120, "state": "done", "targetId": "m31" }
+                ]
+              }
+            ],
+            "equipment": [
+              {
+                "id": "9d2b6c1e-1111-4a0b-8c00-000000000004",
+                "name": "Lunette 80 mm",
+                "type": "telescope"
+              },
+              {
+                "id": "9d2b6c1e-1111-4a0b-8c00-000000000005",
+                "name": "Caméra couleur",
+                "type": "camera"
+              }
+            ],
+            "framings": [
+              {
+                "id": "3c1f0e9a-2222-4d3e-9a00-000000000006",
+                "name": "M31 en deux panneaux",
+                "payload": { "targetId": "m31" },
+                "revision": 1,
+                "state": "free"
+              }
+            ],
+            "horizonProfiles": [
+              {
+                "id": "horizon-terrasse",
+                "mask": {
+                  "enabled": true,
+                  "points": [
+                    { "altitude": 0, "azimuth": 0 },
+                    { "altitude": 0, "azimuth": 10 },
+                    { "altitude": 0, "azimuth": 20 },
+                    { "altitude": 0, "azimuth": 30 },
+                    { "altitude": 0, "azimuth": 40 },
+                    { "altitude": 0, "azimuth": 50 },
+                    { "altitude": 0, "azimuth": 60 },
+                    { "altitude": 0, "azimuth": 70 },
+                    { "altitude": 0, "azimuth": 80 },
+                    { "altitude": 12, "azimuth": 90 },
+                    { "altitude": 12, "azimuth": 100 },
+                    { "altitude": 12, "azimuth": 110 },
+                    { "altitude": 12, "azimuth": 120 },
+                    { "altitude": 12, "azimuth": 130 },
+                    { "altitude": 12, "azimuth": 140 },
+                    { "altitude": 0, "azimuth": 150 },
+                    { "altitude": 0, "azimuth": 160 },
+                    { "altitude": 0, "azimuth": 170 },
+                    { "altitude": 0, "azimuth": 180 },
+                    { "altitude": 0, "azimuth": 190 },
+                    { "altitude": 0, "azimuth": 200 },
+                    { "altitude": 0, "azimuth": 210 },
+                    { "altitude": 0, "azimuth": 220 },
+                    { "altitude": 0, "azimuth": 230 },
+                    { "altitude": 0, "azimuth": 240 },
+                    { "altitude": 0, "azimuth": 250 },
+                    { "altitude": 0, "azimuth": 260 },
+                    { "altitude": 0, "azimuth": 270 },
+                    { "altitude": 0, "azimuth": 280 },
+                    { "altitude": 0, "azimuth": 290 },
+                    { "altitude": 0, "azimuth": 300 },
+                    { "altitude": 0, "azimuth": 310 },
+                    { "altitude": 0, "azimuth": 320 },
+                    { "altitude": 0, "azimuth": 330 },
+                    { "altitude": 0, "azimuth": 340 },
+                    { "altitude": 0, "azimuth": 350 }
+                  ]
+                },
+                "name": "Terrasse"
+              }
+            ],
+            "places": [
+              {
+                "horizonMask": {
+                  "enabled": true,
+                  "points": [
+                    { "altitude": 0, "azimuth": 0 },
+                    { "altitude": 0, "azimuth": 10 },
+                    { "altitude": 0, "azimuth": 20 },
+                    { "altitude": 0, "azimuth": 30 },
+                    { "altitude": 0, "azimuth": 40 },
+                    { "altitude": 0, "azimuth": 50 },
+                    { "altitude": 0, "azimuth": 60 },
+                    { "altitude": 0, "azimuth": 70 },
+                    { "altitude": 0, "azimuth": 80 },
+                    { "altitude": 12, "azimuth": 90 },
+                    { "altitude": 12, "azimuth": 100 },
+                    { "altitude": 12, "azimuth": 110 },
+                    { "altitude": 12, "azimuth": 120 },
+                    { "altitude": 12, "azimuth": 130 },
+                    { "altitude": 12, "azimuth": 140 },
+                    { "altitude": 0, "azimuth": 150 },
+                    { "altitude": 0, "azimuth": 160 },
+                    { "altitude": 0, "azimuth": 170 },
+                    { "altitude": 0, "azimuth": 180 },
+                    { "altitude": 0, "azimuth": 190 },
+                    { "altitude": 0, "azimuth": 200 },
+                    { "altitude": 0, "azimuth": 210 },
+                    { "altitude": 0, "azimuth": 220 },
+                    { "altitude": 0, "azimuth": 230 },
+                    { "altitude": 0, "azimuth": 240 },
+                    { "altitude": 0, "azimuth": 250 },
+                    { "altitude": 0, "azimuth": 260 },
+                    { "altitude": 0, "azimuth": 270 },
+                    { "altitude": 0, "azimuth": 280 },
+                    { "altitude": 0, "azimuth": 290 },
+                    { "altitude": 0, "azimuth": 300 },
+                    { "altitude": 0, "azimuth": 310 },
+                    { "altitude": 0, "azimuth": 320 },
+                    { "altitude": 0, "azimuth": 330 },
+                    { "altitude": 0, "azimuth": 340 },
+                    { "altitude": 0, "azimuth": 350 }
+                  ]
+                },
+                "horizonStatus": "verified",
+                "id": "col-des-melezes",
+                "latitude": 45,
+                "longitude": -30,
+                "name": "Col des Mélèzes"
+              },
+              {
+                "horizonMask": {
+                  "enabled": true,
+                  "points": [
+                    { "altitude": 0, "azimuth": 0 },
+                    { "altitude": 0, "azimuth": 10 },
+                    { "altitude": 0, "azimuth": 20 },
+                    { "altitude": 0, "azimuth": 30 },
+                    { "altitude": 0, "azimuth": 40 },
+                    { "altitude": 0, "azimuth": 50 },
+                    { "altitude": 0, "azimuth": 60 },
+                    { "altitude": 0, "azimuth": 70 },
+                    { "altitude": 0, "azimuth": 80 },
+                    { "altitude": 0, "azimuth": 90 },
+                    { "altitude": 0, "azimuth": 100 },
+                    { "altitude": 0, "azimuth": 110 },
+                    { "altitude": 0, "azimuth": 120 },
+                    { "altitude": 0, "azimuth": 130 },
+                    { "altitude": 0, "azimuth": 140 },
+                    { "altitude": 0, "azimuth": 150 },
+                    { "altitude": 0, "azimuth": 160 },
+                    { "altitude": 0, "azimuth": 170 },
+                    { "altitude": 0, "azimuth": 180 },
+                    { "altitude": 0, "azimuth": 190 },
+                    { "altitude": 0, "azimuth": 200 },
+                    { "altitude": 0, "azimuth": 210 },
+                    { "altitude": 0, "azimuth": 220 },
+                    { "altitude": 0, "azimuth": 230 },
+                    { "altitude": 0, "azimuth": 240 },
+                    { "altitude": 0, "azimuth": 250 },
+                    { "altitude": 0, "azimuth": 260 },
+                    { "altitude": 0, "azimuth": 270 },
+                    { "altitude": 0, "azimuth": 280 },
+                    { "altitude": 0, "azimuth": 290 },
+                    { "altitude": 0, "azimuth": 300 },
+                    { "altitude": 0, "azimuth": 310 },
+                    { "altitude": 0, "azimuth": 320 },
+                    { "altitude": 0, "azimuth": 330 },
+                    { "altitude": 0, "azimuth": 340 },
+                    { "altitude": 0, "azimuth": 350 }
+                  ]
+                },
+                "id": "camping-du-lac-noir",
+                "latitude": 45.18,
+                "longitude": -30,
+                "name": "Camping du Lac Noir"
+              },
+              {
+                "horizonMask": null,
+                "id": "plage-ouest",
+                "latitude": 45.05,
+                "longitude": -30.2,
+                "name": "Plage Ouest"
+              }
+            ],
+            "plans": [
+              {
+                "date": "2026-10-03",
+                "id": "plan-col-1",
+                "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+                "location": {
+                  "id": "col-des-melezes",
+                  "latitude": 45,
+                  "longitude": -30,
+                  "name": "Col des Mélèzes"
+                },
+                "name": "Nébuleuses d’automne",
+                "resourceId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                "status": "executed"
+              },
+              {
+                "date": "2026-10-05",
+                "id": "plan-lac-2",
+                "items": [],
+                "name": "Nuit au lac",
+                "status": "active"
+              }
+            ],
+            "projects": [
+              {
+                "goalMinutes": 600,
+                "id": "6f1d1c2a-6b3c-4c55-8e1f-000000000003",
+                "revision": 2,
+                "status": "active",
+                "target": { "id": "ngc7000" }
+              }
+            ],
+            "sessions": [
+              {
+                "events": [
+                  {
+                    "eventId": "01JA0000000000000000000001",
+                    "payload": { "targetId": "m31" },
+                    "recordedAt": "2026-10-03T19:45:00.000Z",
+                    "type": "target_started"
+                  }
+                ],
+                "finishedAt": "2026-10-04T02:10:00.000Z",
+                "id": "5b7e2d10-3333-4e4f-8b00-000000000007",
+                "planId": "8a3e5c1e-0d1f-4b8e-9f00-000000000001",
+                "startedAt": "2026-10-03T19:40:00.000Z",
+                "status": "finished"
+              }
+            ],
+            "skyMeasurements": [
+              {
+                "measures": [
+                  {
+                    "methodVersion": "astro-sync-sky/1",
+                    "night": "2026-10-03",
+                    "poseCount": 14,
+                    "sqm": 21.04
+                  },
+                  {
+                    "methodVersion": "astro-sync-sky/1",
+                    "night": "2026-09-28",
+                    "poseCount": 9,
+                    "sqm": 20.88
+                  }
+                ],
+                "placeId": "col-des-melezes"
+              }
+            ]
+          }
+        }
+      ],
+      "id": "unknown-box-exports-nothing",
+      "result": {
+        "files": [
+          {
+            "name": "README.md",
+            "text": "formatVersion: 1\nexportedAt: 2026-10-05T18:30:00.000Z\nparts: \n\n# PlanAstro — mes données\n\nCe fichier .zip contient un fichier JSON par élément coché, décrit par son schéma (format version 1) :\n\n\nLes images de la galerie privée restent dans l’espace : elles ne sont pas dans le fichier.\n\nIl se charge tel quel dans un portail privé PlanAstro.\n\n---\n\nThis .zip file holds one JSON file per ticked item, each described by its schema (format version 1):\n\n\nThe private gallery’s images stay in the space: they are not in the file.\n\nIt loads as it is into a private PlanAstro portal.\n"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "exportedAt": "hier soir",
+          "parts": ["framings"],
+          "source": {
+            "framings": [
+              {
+                "id": "3c1f0e9a-2222-4d3e-9a00-000000000006",
+                "name": "M31 en deux panneaux",
+                "payload": { "targetId": "m31" },
+                "revision": 1,
+                "state": "free"
+              },
+              "pas un cadrage",
+              null
+            ]
+          }
+        }
+      ],
+      "id": "instant-that-is-not-one",
+      "result": {
+        "files": [
+          {
+            "name": "README.md",
+            "text": "formatVersion: 1\nexportedAt: \nparts: framings\n\n# PlanAstro — mes données\n\nCe fichier .zip contient un fichier JSON par élément coché, décrit par son schéma (format version 1) :\n\n- framings.json — Cadrages\n\nLes images de la galerie privée restent dans l’espace : elles ne sont pas dans le fichier.\n\nIl se charge tel quel dans un portail privé PlanAstro.\n\n---\n\nThis .zip file holds one JSON file per ticked item, each described by its schema (format version 1):\n\n- framings.json — Framings\n\nThe private gallery’s images stay in the space: they are not in the file.\n\nIt loads as it is into a private PlanAstro portal.\n"
+          },
+          {
+            "document": {
+              "exportedAt": null,
+              "formatVersion": 1,
+              "framings": [
+                {
+                  "id": "3c1f0e9a-2222-4d3e-9a00-000000000006",
+                  "name": "M31 en deux panneaux",
+                  "payload": { "targetId": "m31" },
+                  "revision": 1,
+                  "state": "free"
+                }
+              ],
+              "part": "framings"
+            },
+            "name": "framings.json"
+          }
+        ]
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "data-export"
+}

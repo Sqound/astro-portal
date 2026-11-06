@@ -1,0 +1,90 @@
+{
+  "module": "mosaic-grid",
+  "export": "mosaicGrid",
+  "cases": [
+    {
+      "id": "field-already-covers-surface",
+      "args": [
+        {
+          "widthDegrees": 2,
+          "heightDegrees": 1.5,
+          "overlapPercent": 10,
+          "fieldWidthDegrees": 3,
+          "fieldHeightDegrees": 2
+        }
+      ]
+    },
+    {
+      "id": "wider-surface-only",
+      "args": [
+        {
+          "widthDegrees": 10,
+          "heightDegrees": 1,
+          "overlapPercent": 0,
+          "fieldWidthDegrees": 3,
+          "fieldHeightDegrees": 2
+        }
+      ]
+    },
+    {
+      "id": "grid-with-overlap",
+      "args": [
+        {
+          "widthDegrees": 8,
+          "heightDegrees": 6,
+          "overlapPercent": 20,
+          "fieldWidthDegrees": 2,
+          "fieldHeightDegrees": 2
+        }
+      ]
+    },
+    {
+      "id": "overlap-clamped-at-90",
+      "args": [
+        {
+          "widthDegrees": 8,
+          "heightDegrees": 1,
+          "overlapPercent": 150,
+          "fieldWidthDegrees": 2,
+          "fieldHeightDegrees": 2
+        }
+      ]
+    },
+    {
+      "id": "zero-field-falls-back-to-one-panel",
+      "args": [
+        {
+          "widthDegrees": 5,
+          "heightDegrees": 5,
+          "overlapPercent": 10,
+          "fieldWidthDegrees": 0,
+          "fieldHeightDegrees": 0
+        }
+      ]
+    },
+    {
+      "id": "non-positive-surface-falls-back-to-one-panel",
+      "args": [
+        {
+          "widthDegrees": 0,
+          "heightDegrees": -3,
+          "overlapPercent": 0,
+          "fieldWidthDegrees": 2,
+          "fieldHeightDegrees": 2
+        }
+      ]
+    },
+    {
+      "id": "square-surface-square-field-no-overlap",
+      "args": [
+        {
+          "widthDegrees": 4,
+          "heightDegrees": 4,
+          "overlapPercent": 0,
+          "fieldWidthDegrees": 2,
+          "fieldHeightDegrees": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "exchange": "journal-deleted",
+  "description": "`GET /v1/journal/deleted`: the deleted sessions, each the line of the Journal it was with `deletedAt`, `purgeAt` and `daysRemaining`; `graceDays` is 30.",
+  "given": "The 4 October night deleted (`session-delete`).",
+  "handler": "route:journal/deleted",
+  "phase": "write",
+  "order": 11,
+  "params": {},
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/journal/deleted"
+  },
+  "schema": "journal.schema.json#/$defs/deletedList"
+}

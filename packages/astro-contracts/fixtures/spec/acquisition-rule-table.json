@@ -1,0 +1,12 @@
+{
+  "module": "acquisition-rule-table",
+  "package": "planner",
+  "file": "acquisition",
+  "export": "acquisitionRuleTable",
+  "cases": [
+    {
+      "id": "the-table",
+      "args": []
+    }
+  ]
+}

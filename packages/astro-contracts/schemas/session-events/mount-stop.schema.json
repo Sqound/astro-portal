@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/mount-stop.schema.json",
+  "title": "Astro Portal session event payload: mount_stop",
+  "description": "STOP reached the mount: its motion was aborted at once. Recorded when the stop was sent, whatever the mount then reported. Recorded by the application from the driver's own code path with the night's clock; every field but the ones marked required is optional, and a reader tolerates a payload without them. Private in a shared night. See session-events.md.",
+  "type": "object",
+  "properties": {
+    "cause": {
+      "type": "string",
+      "enum": ["person", "night_end"],
+      "description": "Optional: `person` — the STOP the person pressed; `night_end` — the stop that closes a night (« Terminer la nuit », the automatic closure). Absent means the application did not say."
+    },
+    "protocol": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Optional: the mount's protocol as the application names it (`LX200`, `Alpaca`, `INDI`, `SynScan`, `iOptron`, `NexStar`)."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/auto-time-confirmed.schema.json",
+  "title": "Astro Portal session event payload: auto_time_confirmed",
+  "description": "The observer confirms the time the device's clock counted on one target in automatic advance mode. The journal is append-only, so a confirmation cannot be a field set later on the target_started/target_finished events it confirms: it is this event, naming the target the same way they do. It confirms every event of that target carrying `auto: true` that comes before it in session order; an auto event written after it (the target resumed and moved on by itself again) is unconfirmed until a later confirmation. Naming a target that has no auto event changes nothing. See session-events.md for what this type is for and what it deliberately is not.",
+  "type": "object",
+  "properties": {
+    "targetId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The same catalogue id the target's target_started/target_finished events used."
+    },
+    "targetLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The same free label the target's target_started/target_finished events used, for a target with no catalogue id."
+    },
+    "planItemId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "Optional: the plan item this target came from, when the session was started from a plan (planner-document.schema.json's plan.items[].id)."
+    }
+  },
+  "allOf": [
+    {
+      "anyOf": [{ "required": ["targetId"] }, { "required": ["targetLabel"] }]
+    }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "module": "abell-position",
+  "file": "abell-catalogue",
+  "export": "parseKerberPnPosition",
+  "cases": [
+    {
+      "id": "abell-39-j2000",
+      "args": [
+        "A 39          N13220123587   16 27 33.737 +27 54 33.44  47.053  42.483 1989.349    4.51  286.17 CS  "
+      ]
+    },
+    {
+      "id": "negative-declination-spaced",
+      "args": [
+        "IC 1295                      18 54 37.206 - 8 49 39.08  25.420  -4.714    0.000   14.34  225.16 GEO "
+      ]
+    }
+  ]
+}

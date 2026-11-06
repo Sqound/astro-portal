@@ -1,0 +1,84 @@
+{
+  "description": "A night of the operator's catalogue on a private server, read as a session: read only, of origin `import`, with its target and nothing else. Every write to it answers `409 session_read_only`.",
+  "exchange": "session-imported",
+  "generatedFrom": "portal@1.0.0",
+  "given": "A catalogue night of `list-private-server`.",
+  "request": {
+    "catalogueNights": [
+      {
+        "date": "2025-07-12",
+        "targets": [
+          {
+            "captureEndedAt": 1752362400000,
+            "captureStartedAt": 1752354000000,
+            "id": "m57",
+            "imageUrl": "/gallery/m57-nuit.jpg",
+            "title": "M 57",
+            "totalSeconds": 2400
+          }
+        ]
+      }
+    ],
+    "sessionId": "catalogue:2025-07-12:m57"
+  },
+  "response": {
+    "body": {
+      "debrief": null,
+      "debriefSummary": null,
+      "events": {
+        "events": [],
+        "hasMore": false,
+        "nextSince": null,
+        "sessionId": "catalogue:2025-07-12:m57"
+      },
+      "guidingLosses": null,
+      "guidingLossesReason": "no_analysis",
+      "plan": null,
+      "readOnly": true,
+      "session": {
+        "clientSessionId": null,
+        "createdAt": "2025-07-12T21:00:00.000Z",
+        "eveningDate": "2025-07-12",
+        "eventCount": 0,
+        "finishedAt": "2025-07-12T23:20:00.000Z",
+        "id": "catalogue:2025-07-12:m57",
+        "origin": "import",
+        "outcome": null,
+        "pendingSupplementCount": 0,
+        "planId": null,
+        "projectId": null,
+        "readOnly": true,
+        "reworkRevision": 0,
+        "reworkedAt": null,
+        "startedAt": "2025-07-12T21:00:00.000Z",
+        "status": "finished",
+        "supplementCount": 0,
+        "updatedAt": "2025-07-12T21:00:00.000Z"
+      },
+      "supplements": [],
+      "targets": [
+        {
+          "acquiredSeconds": 2400,
+          "captureId": null,
+          "exposureFamilies": null,
+          "exposureSeconds": null,
+          "filter": null,
+          "finishedAt": "2025-07-12T23:20:00.000Z",
+          "frameCount": null,
+          "imageUrl": "/gallery/m57-nuit.jpg",
+          "label": "M 57",
+          "outcome": null,
+          "planItemId": null,
+          "plannedSeconds": null,
+          "reason": null,
+          "startedAt": "2025-07-12T21:00:00.000Z",
+          "state": "added",
+          "targetId": "m57",
+          "thumbnailUrl": null
+        }
+      ]
+    },
+    "schema": "session.schema.json#/$defs/detail",
+    "status": 200
+  }
+}

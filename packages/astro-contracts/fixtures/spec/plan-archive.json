@@ -1,0 +1,72 @@
+{
+  "module": "plan-archive",
+  "package": "portal",
+  "file": "planner/export",
+  "export": "planArchive",
+  "cases": [
+    {
+      "id": "format-version-envelope",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Autumn nebulae",
+            "items": [{ "id": "m31", "filter": "L" }, { "id": "ngc7000" }]
+          },
+          "exportedAt": "2026-09-15T18:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "acquisition-lines-are-carried-as-they-are",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-2",
+            "date": "2026-10-21",
+            "name": "Prise de vue par cible",
+            "acquisitionDefaults": { "exposureSeconds": 180, "gain": 120 },
+            "items": [
+              {
+                "id": "m31",
+                "filter": "L",
+                "acquisition": {
+                  "lines": [
+                    { "filter": "L", "exposureSeconds": 120, "binning": 1 },
+                    { "filter": "Ha", "exposureSeconds": 300, "frameCount": 12 }
+                  ]
+                }
+              }
+            ],
+            "launchedSchedule": [
+              {
+                "planItemId": "m31",
+                "targetId": "m31",
+                "startMinute": 0,
+                "endMinute": 120,
+                "acquisition": {
+                  "lines": [
+                    {
+                      "filter": "L",
+                      "exposureSeconds": 120,
+                      "gain": 120,
+                      "binning": 1,
+                      "frameCount": 58
+                    }
+                  ]
+                },
+                "ruleVersion": "expo-b-1"
+              }
+            ]
+          },
+          "exportedAt": "2026-10-21T18:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "no-plan",
+      "args": [{ "plan": null, "exportedAt": "2026-09-15T18:00:00.000Z" }]
+    }
+  ]
+}

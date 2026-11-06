@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/target-started.schema.json",
+  "title": "Astro Portal session event payload: target_started",
+  "description": "Marks the moment observation of one target began. Timing comes from the envelope's recordedAt/the server's receivedAt, not from a field in this payload. See session-events.md for what this type is for and what it deliberately is not.",
+  "type": "object",
+  "properties": {
+    "targetId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The shared catalogue id (as in GET /v1/targets, e.g. \"m31\") or a plan item's own target reference, when the target resolves to one."
+    },
+    "targetLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "A free display name, for a target with no catalogue id — an uncatalogued or custom object, exactly as the web planner already tolerates in a plan item."
+    },
+    "planItemId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "Optional: the plan item this target came from, when the session was started from a plan (planner-document.schema.json's plan.items[].id)."
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "auto": {
+      "enum": [true],
+      "description": "Present, and only ever true, on an event the device's clock wrote in automatic advance mode (the plan moved on by itself when the now line reached a slot, or finished a slot at its planned end). Absent means a person's gesture wrote it. The time it implies is unconfirmed until an auto_time_confirmed event names this target later in session order. Spelled as a one-value enum rather than const: the server's validator implements enum, not const."
+    },
+    "advance": {
+      "type": "string",
+      "enum": ["auto", "manual"],
+      "description": "The advance mode in force when this target started: auto (the next target starts by itself at its slot, its clock-counted time marked auto until confirmed) or manual (the current target keeps counting until the observer's gesture). The launch's first start carries the mode chosen in the launch sheet; a mode changed during a target is written at the next start only. Absent on events written before this field existed, and on a direct session's starts."
+    }
+  },
+  "allOf": [
+    {
+      "anyOf": [
+        {
+          "required": ["targetId"]
+        },
+        {
+          "required": ["targetLabel"]
+        }
+      ]
+    }
+  ],
+  "additionalProperties": false
+}

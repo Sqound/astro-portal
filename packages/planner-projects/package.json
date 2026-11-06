@@ -1,0 +1,18 @@
+{
+  "name": "planner-projects",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "description": "The projects — shown to the observer as multi-night plans — of the open core: open on a private server; a composition may gate their writes behind planner.mosaic.",
+  "exports": {
+    "./*": "./dist/*"
+  },
+  "dependencies": {
+    "portal": "*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs"
+  }
+}

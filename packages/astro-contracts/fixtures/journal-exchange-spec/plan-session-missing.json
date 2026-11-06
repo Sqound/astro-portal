@@ -1,0 +1,16 @@
+{
+  "exchange": "plan-session-missing",
+  "description": "`GET /v1/plans/{planId}`: the plan of a deleted session stays `executed` and says `sessionMissing`, with the `deletedSessionId` the trash can restore (« Session manquante »).",
+  "given": "The 4 October night deleted (`session-delete`).",
+  "handler": "route:plans/[planId]",
+  "phase": "write",
+  "order": 12,
+  "params": {
+    "planId": "{plan:executed-group-1}"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/plans/{plan:executed-group-1}"
+  },
+  "schema": "plan.schema.json#/$defs/resource"
+}

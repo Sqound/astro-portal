@@ -1,0 +1,71 @@
+{
+  "module": "object-pictogram",
+  "file": "object-pictograms",
+  "export": "objectPictogramKey",
+  "cases": [
+    { "id": "galaxy", "args": ["Galaxie"] },
+    { "id": "globular-cluster", "args": ["Amas globulaire"] },
+    { "id": "open-cluster", "args": ["Amas ouvert"] },
+    { "id": "emission-nebula", "args": ["Nébuleuse en émission"] },
+    { "id": "reflection-nebula", "args": ["Nébuleuse en réflexion"] },
+    { "id": "planetary-nebula", "args": ["Nébuleuse planétaire"] },
+    { "id": "supernova-remnant", "args": ["Rémanent de supernova"] },
+    { "id": "dark-nebula", "args": ["Nébuleuse sombre"] },
+    { "id": "star", "args": ["Étoile"] },
+    { "id": "sun", "args": ["Soleil"] },
+    { "id": "moon", "args": ["Lune"] },
+    { "id": "planet", "args": ["Planète"] },
+    { "id": "dwarf-planet", "args": ["Planète naine"] },
+    { "id": "solar-system", "args": ["Système solaire"] },
+    { "id": "comet", "args": ["Comète"] },
+    {
+      "id": "alias-emission-complex",
+      "args": ["Complexe de nébuleuses en émission"]
+    },
+    {
+      "id": "alias-hii-region",
+      "args": ["Région H II / nébuleuse en émission"]
+    },
+    {
+      "id": "alias-hii-region-compact",
+      "args": ["Région HII / nébuleuse en émission"]
+    },
+    { "id": "unknown-type", "args": ["Quasar"] },
+    { "id": "unknown-english-label", "args": ["Spiral galaxy"] },
+    { "id": "empty-string", "args": [""] },
+    { "id": "whitespace-only", "args": ["   "] },
+    { "id": "no-type", "args": [null] },
+    { "id": "empty-target", "args": [{}] },
+    {
+      "id": "target-sky-type-key",
+      "args": [{ "skyTarget": { "typeKey": "Galaxie", "type": "Galaxy" } }]
+    },
+    {
+      "id": "target-sky-type-key-wins-over-key",
+      "args": [{ "typeKey": "Lune", "skyTarget": { "typeKey": "Amas ouvert" } }]
+    },
+    {
+      "id": "target-type-key",
+      "args": [{ "typeKey": "Amas globulaire", "skyTarget": {} }]
+    },
+    {
+      "id": "target-sky-type-only",
+      "args": [{ "skyTarget": { "type": "Nébuleuse planétaire" } }]
+    },
+    {
+      "id": "target-localized-type-only",
+      "args": [{ "skyTarget": { "type": "Galaxie spirale" } }]
+    },
+    {
+      "id": "target-alias",
+      "args": [
+        {
+          "skyTarget": {
+            "typeKey": "Région H II / nébuleuse en émission"
+          }
+        }
+      ]
+    },
+    { "id": "target-non-string-type", "args": [{ "typeKey": 12 }] }
+  ]
+}

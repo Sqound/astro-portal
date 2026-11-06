@@ -1,0 +1,33 @@
+{
+  "module": "locale-content-choice",
+  "package": "portal",
+  "file": "locale-content",
+  "export": "localeChoice",
+  "cases": [
+    {
+      "id": "the-locale-asked-for-has-content",
+      "args": [["en", "fr", "ja"], "fr"]
+    },
+    {
+      "id": "a-locale-without-content-reads-english-flagged-as-fallback",
+      "args": [["en", "fr", "ja"], "de"]
+    },
+    {
+      "id": "a-test-registered-pseudo-locale-reads-english-flagged",
+      "args": [["en", "fr", "ja"], "en-XA"]
+    },
+    {
+      "id": "a-script-variant-is-not-the-other-script",
+      "args": [["en", "zh-Hans"], "zh-Hant"]
+    },
+    {
+      "id": "without-english-the-first-available-flagged",
+      "args": [["fr", "ja"], "de"]
+    },
+    {
+      "id": "an-explicit-base-locale",
+      "args": [["fr", "ja"], "de", "ja"]
+    },
+    { "id": "nothing-available-nothing-shown", "args": [[], "fr"] }
+  ]
+}

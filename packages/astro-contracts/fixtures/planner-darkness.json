@@ -1,0 +1,17 @@
+{
+  "cases": [
+    {
+      "args": ["astronomical"],
+      "id": "astronomical",
+      "result": "astronomical"
+    },
+    { "args": ["nautical"], "id": "nautical", "result": "nautical" },
+    { "args": ["civil"], "id": "civil", "result": "civil" },
+    { "args": ["twilight"], "id": "unknown-name", "result": null },
+    { "args": ["Nautical"], "id": "wrong-case", "result": null },
+    { "args": [null], "id": "absent", "result": null },
+    { "args": [-12], "id": "number", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "planner-darkness"
+}

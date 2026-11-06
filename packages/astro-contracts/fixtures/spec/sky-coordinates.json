@@ -1,0 +1,8 @@
+{
+  "module": "sky-coordinates",
+  "export": "coordinateForTarget",
+  "cases": [
+    { "id": "m31-northern-sky", "args": [{ "objects": ["M31"] }] },
+    { "id": "m8-southern-sky", "args": [{ "objects": ["M8"] }] }
+  ]
+}

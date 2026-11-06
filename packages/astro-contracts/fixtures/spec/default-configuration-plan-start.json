@@ -1,0 +1,141 @@
+{
+  "module": "default-configuration-plan-start",
+  "package": "portal",
+  "file": "planner/default-configuration",
+  "export": "planStartEquipment",
+  "cases": [
+    {
+      "id": "without-a-configuration-the-plan-takes-the-current-equipment",
+      "args": [
+        {
+          "mode": "imaging",
+          "telescopeId": "inv-refractor-72",
+          "cameraId": "inv-camera-colour",
+          "eyepieceId": null,
+          "eyepieceFocalLengthMm": "",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "restrictToEquipment": false,
+          "windTolerance": {
+            "preset": "standard"
+          }
+        },
+        null
+      ]
+    },
+    {
+      "id": "with-a-configuration-the-plan-takes-it",
+      "args": [
+        {
+          "mode": "imaging",
+          "telescopeId": "seestar-s50",
+          "cameraId": "inv-camera-colour",
+          "eyepieceId": null,
+          "eyepieceFocalLengthMm": "",
+          "modifierId": "none",
+          "mountId": "none",
+          "filterIds": ["inv-filter-duo"],
+          "restrictToEquipment": false,
+          "windTolerance": {
+            "preset": "standard"
+          }
+        },
+        {
+          "mode": "imaging",
+          "telescopeId": "inv-refractor-72",
+          "cameraId": "inv-camera-colour",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"]
+        }
+      ]
+    },
+    {
+      "id": "an-item-left-out-is-to-choose",
+      "args": [
+        {
+          "mode": "imaging",
+          "telescopeId": "inv-refractor-72",
+          "cameraId": "inv-camera-colour",
+          "eyepieceId": null,
+          "eyepieceFocalLengthMm": "",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "restrictToEquipment": false,
+          "windTolerance": {
+            "preset": "standard"
+          }
+        },
+        {
+          "mode": "imaging",
+          "cameraId": "inv-camera-colour",
+          "filterIds": []
+        }
+      ]
+    },
+    {
+      "id": "a-visual-configuration-with-its-eyepiece",
+      "args": [
+        {
+          "mode": "imaging",
+          "telescopeId": "inv-refractor-72",
+          "cameraId": "inv-camera-colour",
+          "eyepieceId": null,
+          "eyepieceFocalLengthMm": "",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "restrictToEquipment": false,
+          "windTolerance": {
+            "preset": "standard"
+          }
+        },
+        {
+          "mode": "visual",
+          "telescopeId": "skywatcher-skymax-127",
+          "eyepieceId": "inv-eyepiece-zoom",
+          "eyepieceFocalLengthMm": "12"
+        }
+      ]
+    },
+    {
+      "id": "no-current-equipment",
+      "args": [
+        null,
+        {
+          "mode": "imaging",
+          "telescopeId": "inv-refractor-72",
+          "cameraId": "inv-camera-colour",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"]
+        }
+      ]
+    },
+    {
+      "id": "a-configuration-without-telescope-starts-with-nothing-chosen",
+      "args": [
+        {
+          "mode": "imaging",
+          "telescopeId": "inv-refractor-72",
+          "cameraId": "inv-camera-colour",
+          "eyepieceId": null,
+          "eyepieceFocalLengthMm": "",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "restrictToEquipment": false,
+          "windTolerance": {
+            "preset": "standard"
+          }
+        },
+        {
+          "mode": "visual",
+          "eyepieceId": "plossl-25"
+        }
+      ]
+    }
+  ]
+}

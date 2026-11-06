@@ -1,0 +1,323 @@
+{
+  "module": "capability-plan-night-limit",
+  "package": "portal",
+  "file": "capabilities/provider",
+  "export": "pendingPlanPermission",
+  "cases": [
+    {
+      "id": "no-plan",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "plans": [],
+          "date": "2030-01-01"
+        }
+      ]
+    },
+    {
+      "id": "same-night-another-place",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "pending",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-01"
+        }
+      ]
+    },
+    {
+      "id": "another-night",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "pending",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-02"
+        }
+      ]
+    },
+    {
+      "id": "executed",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "executed",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-01"
+        }
+      ]
+    },
+    {
+      "id": "partial",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "partial",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-01"
+        }
+      ]
+    },
+    {
+      "id": "abandoned",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "abandoned",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-01"
+        }
+      ]
+    },
+    {
+      "id": "archived",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "archived",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-01"
+        }
+      ]
+    },
+    {
+      "id": "executed-another-night",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "executed",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-02"
+        }
+      ]
+    },
+    {
+      "id": "executed-is-not-a-guard-slot",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "executed",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-02"
+        }
+      ]
+    },
+    {
+      "id": "executed-and-multiple",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": true,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "executed",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-01"
+        }
+      ]
+    },
+    {
+      "id": "edit-own-executed-night",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "executed",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-01",
+          "planId": "a"
+        }
+      ]
+    },
+    {
+      "id": "multiple",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": true,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "pending",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-01"
+        }
+      ]
+    },
+    {
+      "id": "guard",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "pending",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-02"
+        }
+      ]
+    },
+    {
+      "id": "zero-guard",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 0
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "pending",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-02"
+        }
+      ]
+    },
+    {
+      "id": "undated",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "pending",
+              "place": "A"
+            }
+          ],
+          "date": null
+        }
+      ]
+    },
+    {
+      "id": "edit-own-night",
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "plans": [
+            {
+              "id": "a",
+              "date": "2030-01-01",
+              "status": "pending",
+              "place": "A"
+            }
+          ],
+          "date": "2030-01-01",
+          "planId": "a"
+        }
+      ]
+    }
+  ]
+}

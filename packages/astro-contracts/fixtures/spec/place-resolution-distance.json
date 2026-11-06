@@ -1,0 +1,36 @@
+{
+  "module": "place-resolution-distance",
+  "package": "portal",
+  "file": "planner/state",
+  "export": "placeDistanceKm",
+  "cases": [
+    {
+      "id": "identical-points",
+      "args": [
+        { "latitude": 45, "longitude": 5 },
+        { "latitude": 45, "longitude": 5 }
+      ]
+    },
+    {
+      "id": "just-under-10km",
+      "args": [
+        { "latitude": 45, "longitude": 5 },
+        { "latitude": 45.0898, "longitude": 5 }
+      ]
+    },
+    {
+      "id": "just-over-10km",
+      "args": [
+        { "latitude": 45, "longitude": 5 },
+        { "latitude": 45.091, "longitude": 5 }
+      ]
+    },
+    {
+      "id": "invalid-coordinates-rejected",
+      "args": [
+        { "latitude": 999, "longitude": 5 },
+        { "latitude": 45, "longitude": 5 }
+      ]
+    }
+  ]
+}

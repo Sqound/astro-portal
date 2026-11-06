@@ -1,0 +1,64 @@
+{
+  "module": "locale-typography",
+  "package": "portal",
+  "file": "locales",
+  "export": "localeTypography",
+  "cases": [
+    {
+      "id": "en",
+      "args": ["en"]
+    },
+    {
+      "id": "fr",
+      "args": ["fr"]
+    },
+    {
+      "id": "ja",
+      "args": ["ja"]
+    },
+    {
+      "id": "de",
+      "args": ["de"]
+    },
+    {
+      "id": "es",
+      "args": ["es"]
+    },
+    {
+      "id": "it",
+      "args": ["it"]
+    },
+    {
+      "id": "pt-BR",
+      "args": ["pt-BR"]
+    },
+    {
+      "id": "zh-Hans",
+      "args": ["zh-Hans"]
+    },
+    {
+      "id": "zh-Hant",
+      "args": ["zh-Hant"]
+    },
+    {
+      "id": "ru",
+      "args": ["ru"]
+    },
+    {
+      "id": "fr-CA",
+      "args": ["fr-CA"]
+    },
+    {
+      "id": "pt-PT",
+      "args": ["pt-PT"]
+    },
+    {
+      "id": "zh-TW",
+      "args": ["zh-TW"]
+    },
+    {
+      "id": "xx",
+      "args": ["xx"]
+    }
+  ]
+}

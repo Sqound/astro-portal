@@ -1,0 +1,225 @@
+{
+  "module": "night-span-transpose",
+  "package": "planner",
+  "file": "night-span",
+  "export": "transposeNightSpan",
+  "cases": [
+    {
+      "id": "same-zone-change-keeps-the-slot",
+      "args": [
+        {
+          "span": {
+            "mode": "custom",
+            "start": "2026-10-14T10:00:00.000Z",
+            "end": "2026-10-14T14:00:00.000Z"
+          },
+          "date": "2026-10-14",
+          "from": { "timeZone": "Asia/Tokyo", "longitude": "139.7" },
+          "to": { "timeZone": "Asia/Tokyo", "longitude": "135.5" },
+          "night": {
+            "start": "2026-10-14T09:30:00.000Z",
+            "end": "2026-10-14T20:10:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nine-hours-west-keeps-the-local-hours",
+      "args": [
+        {
+          "span": {
+            "mode": "custom",
+            "start": "2026-10-14T10:00:00.000Z",
+            "end": "2026-10-14T14:00:00.000Z"
+          },
+          "date": "2026-10-14",
+          "from": { "timeZone": "Asia/Tokyo", "longitude": "139.7" },
+          "to": { "timeZone": "Etc/UTC", "longitude": "0" },
+          "night": {
+            "start": "2026-10-14T18:40:00.000Z",
+            "end": "2026-10-15T05:30:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-start-is-brought-inside-the-new-night",
+      "args": [
+        {
+          "span": {
+            "mode": "custom",
+            "start": "2026-10-14T10:00:00.000Z",
+            "end": "2026-10-14T14:00:00.000Z"
+          },
+          "date": "2026-10-14",
+          "from": { "timeZone": "Asia/Tokyo", "longitude": "139.7" },
+          "to": { "timeZone": "Etc/UTC", "longitude": "0" },
+          "night": {
+            "start": "2026-10-14T19:52:00.000Z",
+            "end": "2026-10-15T05:30:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a-slot-across-midnight-is-moved-whole",
+      "args": [
+        {
+          "span": {
+            "mode": "custom",
+            "start": "2026-10-14T14:00:00.000Z",
+            "end": "2026-10-14T18:00:00.000Z"
+          },
+          "date": "2026-10-14",
+          "from": { "timeZone": "Asia/Tokyo", "longitude": "139.7" },
+          "to": { "timeZone": "Etc/UTC", "longitude": "0" },
+          "night": {
+            "start": "2026-10-14T18:40:00.000Z",
+            "end": "2026-10-15T05:30:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-end-is-brought-inside-the-new-night",
+      "args": [
+        {
+          "span": {
+            "mode": "custom",
+            "start": "2026-10-14T14:00:00.000Z",
+            "end": "2026-10-14T18:55:00.000Z"
+          },
+          "date": "2026-10-14",
+          "from": { "timeZone": "Asia/Tokyo", "longitude": "139.7" },
+          "to": { "timeZone": "Etc/UTC", "longitude": "0" },
+          "night": {
+            "start": "2026-10-14T18:40:00.000Z",
+            "end": "2026-10-15T04:05:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hours-outside-the-new-night-fall-back",
+      "args": [
+        {
+          "span": {
+            "mode": "custom",
+            "start": "2026-10-14T03:00:00.000Z",
+            "end": "2026-10-14T06:00:00.000Z"
+          },
+          "date": "2026-10-14",
+          "from": { "timeZone": "Asia/Tokyo", "longitude": "139.7" },
+          "to": { "timeZone": "Etc/UTC", "longitude": "0" },
+          "night": {
+            "start": "2026-10-14T19:50:00.000Z",
+            "end": "2026-10-15T05:30:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "less-than-one-hour-left-falls-back",
+      "args": [
+        {
+          "span": {
+            "mode": "custom",
+            "start": "2026-10-14T19:00:00.000Z",
+            "end": "2026-10-14T21:00:00.000Z"
+          },
+          "date": "2026-10-14",
+          "from": { "timeZone": "Asia/Tokyo", "longitude": "139.7" },
+          "to": { "timeZone": "Etc/UTC", "longitude": "0" },
+          "night": {
+            "start": "2026-10-14T19:50:00.000Z",
+            "end": "2026-10-15T04:30:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exactly-one-hour-left-is-kept",
+      "args": [
+        {
+          "span": {
+            "mode": "custom",
+            "start": "2026-10-14T10:00:00.000Z",
+            "end": "2026-10-14T14:00:00.000Z"
+          },
+          "date": "2026-10-14",
+          "from": { "timeZone": "Asia/Tokyo", "longitude": "139.7" },
+          "to": { "timeZone": "Etc/UTC", "longitude": "0" },
+          "night": {
+            "start": "2026-10-14T18:40:00.000Z",
+            "end": "2026-10-14T20:00:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "places-without-a-zone-use-their-longitude",
+      "args": [
+        {
+          "span": {
+            "mode": "custom",
+            "start": "2026-10-14T10:00:00.000Z",
+            "end": "2026-10-14T14:00:00.000Z"
+          },
+          "date": "2026-10-14",
+          "from": { "longitude": "135" },
+          "to": { "longitude": "-45" },
+          "night": {
+            "start": "2026-10-14T21:00:00.000Z",
+            "end": "2026-10-15T07:00:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "an-astronomical-slot-has-nothing-to-move",
+      "args": [
+        {
+          "span": { "mode": "astronomical" },
+          "date": "2026-10-14",
+          "from": { "timeZone": "Asia/Tokyo", "longitude": "139.7" },
+          "to": { "timeZone": "Etc/UTC", "longitude": "0" },
+          "night": {
+            "start": "2026-10-14T18:40:00.000Z",
+            "end": "2026-10-15T05:30:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "no-slot-stays-none",
+      "args": [
+        {
+          "span": null,
+          "date": "2026-10-14",
+          "from": { "timeZone": "Asia/Tokyo", "longitude": "139.7" },
+          "to": { "timeZone": "Etc/UTC", "longitude": "0" },
+          "night": {
+            "start": "2026-10-14T18:40:00.000Z",
+            "end": "2026-10-15T05:30:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "an-unreadable-new-night-keeps-the-slot",
+      "args": [
+        {
+          "span": {
+            "mode": "custom",
+            "start": "2026-10-14T10:00:00.000Z",
+            "end": "2026-10-14T14:00:00.000Z"
+          },
+          "date": "2026-10-14",
+          "from": { "timeZone": "Asia/Tokyo", "longitude": "139.7" },
+          "to": { "timeZone": "Etc/UTC", "longitude": "0" },
+          "night": null
+        }
+      ]
+    }
+  ]
+}

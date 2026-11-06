@@ -1,0 +1,14 @@
+{
+  "cases": [
+    {
+      "args": ["047.0+42.4 |  174.   71..9065"],
+      "id": "arcseconds-to-arcminutes",
+      "result": {
+        "apparentSizeArcmin": [2.9, 2.9],
+        "galacticName": "PN G047.0+42.4"
+      }
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "abell-diameter"
+}

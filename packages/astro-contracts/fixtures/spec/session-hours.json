@@ -1,0 +1,173 @@
+{
+  "module": "session-hours",
+  "package": "portal",
+  "file": "components/sessions/session-page-view",
+  "export": "sessionHoursOfPlaces",
+  "cases": [
+    {
+      "id": "a-place-with-a-zone-reads-its-own-hours",
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Europe/Paris"
+        },
+        null,
+        []
+      ]
+    },
+    {
+      "id": "a-place-in-japan-reads-japanese-hours",
+      "args": [
+        "2026-10-19T14:18:00.000Z",
+        "2026-10-19T14:19:00.000Z",
+        {
+          "name": "Jardin",
+          "latitude": 35.6762,
+          "longitude": 139.6503
+        },
+        {
+          "name": "Jardin",
+          "latitude": 35.6762,
+          "longitude": 139.6503,
+          "timeZone": "Asia/Tokyo"
+        },
+        []
+      ]
+    },
+    {
+      "id": "the-table-gives-the-zone-of-a-position-without-one",
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        {
+          "name": "Col des Étoiles",
+          "latitude": 44.5,
+          "longitude": 6.5
+        },
+        null,
+        []
+      ]
+    },
+    {
+      "id": "a-place-the-person-keeps-lends-its-zone",
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        {
+          "name": "Maison",
+          "latitude": 40.7128,
+          "longitude": -74.006
+        },
+        null,
+        [
+          {
+            "id": "home",
+            "name": "Maison",
+            "latitude": 40.7128,
+            "longitude": -74.006,
+            "timeZone": "America/New_York",
+            "timeZoneSource": "chosen"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "a-place-with-no-zone-and-no-position-is-in-utc",
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        {
+          "name": "Col des Étoiles"
+        },
+        null,
+        []
+      ]
+    },
+    {
+      "id": "a-session-without-a-place-is-in-utc",
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        null,
+        null,
+        []
+      ]
+    },
+    {
+      "id": "a-zone-of-utc-is-utc-written",
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        {
+          "name": "Nulle part",
+          "latitude": 0,
+          "longitude": 0,
+          "timeZone": "Etc/UTC",
+          "timeZoneSource": "chosen"
+        },
+        null,
+        []
+      ]
+    },
+    {
+      "id": "a-night-that-ends-with-its-start-tells-no-hours",
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-07T21:08:00.000Z",
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Europe/Paris"
+        },
+        null,
+        []
+      ]
+    },
+    {
+      "id": "the-audit-night-in-tokyo-reads-18-29-to-04-23",
+      "args": [
+        "2026-10-16T09:29:00.000Z",
+        "2026-10-16T19:23:00.000Z",
+        {
+          "name": "Love",
+          "latitude": 35.6762,
+          "longitude": 139.6503,
+          "timeZone": "Asia/Tokyo"
+        },
+        null,
+        []
+      ]
+    },
+    {
+      "id": "the-audit-night-by-position-only-reads-the-table-zone",
+      "args": [
+        "2026-10-16T09:29:00.000Z",
+        "2026-10-16T19:23:00.000Z",
+        {
+          "name": "Love",
+          "latitude": 35.6762,
+          "longitude": 139.6503
+        },
+        null,
+        []
+      ]
+    },
+    {
+      "id": "the-audit-night-without-a-zone-or-a-position-is-in-utc",
+      "args": [
+        "2026-10-16T09:29:00.000Z",
+        "2026-10-16T19:23:00.000Z",
+        {
+          "name": "Love"
+        },
+        null,
+        []
+      ]
+    }
+  ]
+}

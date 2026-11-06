@@ -1,0 +1,263 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "date": "2025-01-10",
+          "elevation": 0,
+          "latitude": 45,
+          "longitude": 10,
+          "timeZone": "UTC"
+        }
+      ],
+      "id": "default-is-astronomical-unchanged",
+      "result": {
+        "end": "2025-01-11T05:11:33.384Z",
+        "start": "2025-01-10T17:43:46.146Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2025-01-10",
+          "elevation": 0,
+          "latitude": 45,
+          "longitude": 10,
+          "sunAltitudeDegrees": -18,
+          "timeZone": "UTC"
+        }
+      ],
+      "id": "explicit-astronomical",
+      "result": {
+        "end": "2025-01-11T05:11:33.384Z",
+        "start": "2025-01-10T17:43:46.146Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2025-01-10",
+          "elevation": 0,
+          "latitude": 45,
+          "longitude": 10,
+          "sunAltitudeDegrees": -12,
+          "timeZone": "UTC"
+        }
+      ],
+      "id": "nautical",
+      "result": {
+        "end": "2025-01-11T05:46:52.222Z",
+        "start": "2025-01-10T17:08:24.268Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2025-01-10",
+          "elevation": 0,
+          "latitude": 45,
+          "longitude": 10,
+          "sunAltitudeDegrees": -6,
+          "timeZone": "UTC"
+        }
+      ],
+      "id": "civil",
+      "result": {
+        "end": "2025-01-11T06:23:27.734Z",
+        "start": "2025-01-10T16:31:44.788Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2025-01-10",
+          "elevation": 0,
+          "latitude": 45,
+          "longitude": 10,
+          "sunAltitudeDegrees": -0.8333,
+          "timeZone": "UTC"
+        }
+      ],
+      "id": "sunset-to-sunrise",
+      "result": {
+        "end": "2025-01-11T06:56:30.189Z",
+        "start": "2025-01-10T15:58:37.691Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2025-01-10",
+          "elevation": 0,
+          "latitude": 45,
+          "longitude": 10,
+          "sunAltitudeDegrees": "-12",
+          "timeZone": "UTC"
+        }
+      ],
+      "id": "unusable-threshold-reads-astronomical",
+      "result": {
+        "end": "2025-01-11T05:11:33.384Z",
+        "start": "2025-01-10T17:43:46.146Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2025-01-10",
+          "elevation": 0,
+          "latitude": "45",
+          "longitude": "10",
+          "sunAltitudeDegrees": -6,
+          "timeZone": "UTC"
+        }
+      ],
+      "id": "numeric-strings-civil",
+      "result": {
+        "end": "2025-01-11T06:23:27.734Z",
+        "start": "2025-01-10T16:31:44.788Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "elevation": 0,
+          "latitude": 45,
+          "longitude": -30,
+          "sunAltitudeDegrees": -12,
+          "timeZone": "Atlantic/Azores"
+        }
+      ],
+      "id": "iana-zone-nautical",
+      "result": {
+        "end": "2026-10-15T07:12:02.193Z",
+        "start": "2026-10-14T20:20:22.841Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "elevation": 1200,
+          "latitude": 45,
+          "longitude": -30,
+          "sunAltitudeDegrees": -6,
+          "timeZone": "Atlantic/Azores"
+        }
+      ],
+      "id": "iana-zone-civil-with-elevation",
+      "result": {
+        "end": "2026-10-15T07:46:04.420Z",
+        "start": "2026-10-14T19:46:25.260Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2025-06-21",
+          "elevation": 25,
+          "latitude": -34.6,
+          "longitude": -58.4,
+          "sunAltitudeDegrees": -6,
+          "timeZone": "America/Argentina/Buenos_Aires"
+        }
+      ],
+      "id": "southern-winter-civil",
+      "result": {
+        "end": "2025-06-22T10:32:38.339Z",
+        "start": "2025-06-21T21:18:33.191Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "latitude": 45,
+          "longitude": 170,
+          "sunAltitudeDegrees": -12
+        }
+      ],
+      "id": "zoneless-place-anchors-on-longitude",
+      "result": {
+        "end": "2026-10-14T17:51:20.835Z",
+        "start": "2026-10-14T07:01:19.388Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "latitude": 45,
+          "longitude": 170,
+          "sunAltitudeDegrees": -12,
+          "timeZone": "Etc/UTC"
+        }
+      ],
+      "id": "explicit-etc-utc-is-zero-offset",
+      "result": {
+        "end": "2026-10-15T17:52:35.275Z",
+        "start": "2026-10-15T06:59:37.846Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-06-21",
+          "latitude": 60,
+          "longitude": 10,
+          "sunAltitudeDegrees": -6,
+          "timeZone": "Europe/Berlin"
+        }
+      ],
+      "id": "short-summer-night-civil-only",
+      "result": {
+        "end": "2026-06-22T00:09:25.378Z",
+        "start": "2026-06-21T22:34:25.593Z"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-06-21",
+          "latitude": 60,
+          "longitude": 10,
+          "sunAltitudeDegrees": -12,
+          "timeZone": "Europe/Berlin"
+        }
+      ],
+      "id": "short-summer-night-no-nautical",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "date": "2025-01-10",
+          "elevation": 0,
+          "latitude": 95,
+          "longitude": 10,
+          "sunAltitudeDegrees": -6,
+          "timeZone": "UTC"
+        }
+      ],
+      "id": "invalid-latitude",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "date": "",
+          "elevation": 0,
+          "latitude": 45,
+          "longitude": 10,
+          "sunAltitudeDegrees": -6,
+          "timeZone": "UTC"
+        }
+      ],
+      "id": "missing-date",
+      "result": null
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "night-window-thresholds"
+}

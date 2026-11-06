@@ -1,0 +1,141 @@
+{
+  "module": "target-common-names",
+  "export": "localizedTargetCommonName",
+  "cases": [
+    {
+      "id": "m31-japanese-name",
+      "args": [
+        {
+          "designation": "M31"
+        },
+        "ja"
+      ]
+    },
+    {
+      "id": "m44-de-name",
+      "args": [
+        {
+          "designation": "M44"
+        },
+        "de"
+      ]
+    },
+    {
+      "id": "name-without-a-label-in-de-reads-english",
+      "args": [
+        {
+          "designation": "NGC 1275"
+        },
+        "de"
+      ]
+    },
+    {
+      "id": "m44-es-name",
+      "args": [
+        {
+          "designation": "M44"
+        },
+        "es"
+      ]
+    },
+    {
+      "id": "name-without-a-label-in-es-reads-english",
+      "args": [
+        {
+          "designation": "NGC 1275"
+        },
+        "es"
+      ]
+    },
+    {
+      "id": "m44-it-name",
+      "args": [
+        {
+          "designation": "M44"
+        },
+        "it"
+      ]
+    },
+    {
+      "id": "name-without-a-label-in-it-reads-english",
+      "args": [
+        {
+          "designation": "NGC 1275"
+        },
+        "it"
+      ]
+    },
+    {
+      "id": "m44-pt-br-name",
+      "args": [
+        {
+          "designation": "M44"
+        },
+        "pt-BR"
+      ]
+    },
+    {
+      "id": "name-without-a-label-in-pt-br-reads-english",
+      "args": [
+        {
+          "designation": "NGC 1275"
+        },
+        "pt-BR"
+      ]
+    },
+    {
+      "id": "ic-2602-simplified-chinese-name",
+      "args": [
+        {
+          "designation": "IC 2602"
+        },
+        "zh-Hans"
+      ]
+    },
+    {
+      "id": "jupiter-simplified-chinese-name",
+      "args": [
+        {
+          "designation": "Jupiter"
+        },
+        "zh-Hans"
+      ]
+    },
+    {
+      "id": "ic-2602-traditional-chinese-name",
+      "args": [
+        {
+          "designation": "IC 2602"
+        },
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "jupiter-traditional-chinese-name",
+      "args": [
+        {
+          "designation": "Jupiter"
+        },
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "ic-2602-russian-name",
+      "args": [
+        {
+          "designation": "IC 2602"
+        },
+        "ru"
+      ]
+    },
+    {
+      "id": "jupiter-russian-name",
+      "args": [
+        {
+          "designation": "Jupiter"
+        },
+        "ru"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1302 @@
+{
+  "module": "journal-statistics-instrument",
+  "package": "portal",
+  "file": "journal/journal-statistics",
+  "export": "journalStatisticsInstrument",
+  "cases": [
+    {
+      "id": "newton-pair-latest-year",
+      "args": [
+        [
+          {
+            "sessionId": "s-1",
+            "planId": "p-1",
+            "eveningDate": "2026-10-07",
+            "startedAt": "2026-10-07T19:00:00.000Z",
+            "state": "partial",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 17400,
+            "frameCount": 100,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.7
+            },
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 14400,
+                "frameCount": 80,
+                "filter": "Luminance",
+                "captureId": "c-m31-oct"
+              },
+              {
+                "targetId": "ngc7000",
+                "label": "NGC 7000",
+                "state": "planned",
+                "acquiredSeconds": 3000,
+                "frameCount": 20,
+                "filter": null,
+                "captureId": "c-ngc-oct"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-2",
+            "planId": "p-2",
+            "eveningDate": "2026-09-26",
+            "startedAt": "2026-09-26T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 15000,
+            "frameCount": 83,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.4
+            },
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 15000,
+                "frameCount": 83,
+                "filter": "Luminance",
+                "captureId": "c-m31-sep26"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-3",
+            "planId": "p-3",
+            "eveningDate": "2026-09-15",
+            "startedAt": "2026-09-15T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 9000,
+            "frameCount": 50,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 9000,
+                "frameCount": 50,
+                "filter": "Double bande",
+                "captureId": "c-m31-sep15"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-4",
+            "planId": "p-4",
+            "eveningDate": "2026-09-04",
+            "startedAt": "2026-09-04T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 4800,
+            "frameCount": 27,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 4800,
+                "frameCount": 27,
+                "filter": "Double bande",
+                "captureId": null
+              },
+              {
+                "targetId": "ic1396",
+                "label": "IC 1396",
+                "state": "planned",
+                "acquiredSeconds": 0,
+                "frameCount": null,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-5",
+            "planId": "p-5",
+            "eveningDate": "2026-08-12",
+            "startedAt": "2026-08-12T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 2400,
+            "frameCount": 13,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 2400,
+                "frameCount": 13,
+                "filter": null,
+                "captureId": null
+              },
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "removed",
+                "acquiredSeconds": 600,
+                "frameCount": 5,
+                "filter": "Luminance",
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-6",
+            "planId": "p-6",
+            "eveningDate": "2026-08-02",
+            "startedAt": "2026-08-02T19:00:00.000Z",
+            "state": "abandoned",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 0,
+            "frameCount": null,
+            "lostReason": "wind",
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ic1805",
+                "label": "IC 1805",
+                "state": "planned",
+                "acquiredSeconds": 0,
+                "frameCount": null,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-7",
+            "planId": "p-7",
+            "eveningDate": "2026-07-20",
+            "startedAt": "2026-07-20T19:00:00.000Z",
+            "state": "abandoned",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 0,
+            "frameCount": null,
+            "lostReason": "clouds",
+            "quality": null,
+            "targets": []
+          },
+          {
+            "sessionId": "s-8",
+            "planId": "p-8",
+            "eveningDate": "2026-05-08",
+            "startedAt": "2026-05-08T19:00:00.000Z",
+            "state": "no_plan",
+            "instrumentLabel": null,
+            "acquiredSeconds": 7200,
+            "frameCount": 40,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ic1396",
+                "label": "IC 1396",
+                "state": "planned",
+                "acquiredSeconds": 7200,
+                "frameCount": 40,
+                "filter": "Double bande",
+                "captureId": "c-ic-may"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-9",
+            "planId": "p-9",
+            "eveningDate": "2025-12-12",
+            "startedAt": "2025-12-12T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 7200,
+            "frameCount": 40,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m42",
+                "label": "M 42",
+                "state": "planned",
+                "acquiredSeconds": 7200,
+                "frameCount": 40,
+                "filter": null,
+                "captureId": "c-m42"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-10",
+            "planId": "p-10",
+            "eveningDate": "2026-10-10",
+            "startedAt": "2026-10-10T19:00:00.000Z",
+            "state": "to_debrief",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 5400,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ngc7000",
+                "label": "NGC 7000",
+                "state": "planned",
+                "acquiredSeconds": 5400,
+                "frameCount": 30,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": null,
+            "planId": "p-plan",
+            "eveningDate": "2026-10-02",
+            "startedAt": "2026-10-02T19:00:00.000Z",
+            "state": "to_debrief",
+            "instrumentLabel": null,
+            "acquiredSeconds": null,
+            "frameCount": null,
+            "lostReason": null,
+            "quality": null,
+            "targets": []
+          },
+          {
+            "sessionId": "s-11",
+            "planId": "p-11",
+            "eveningDate": "2026-06-10",
+            "startedAt": "2026-06-10T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 6000,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.9
+            },
+            "targets": [
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "planned",
+                "acquiredSeconds": 6000,
+                "frameCount": 30,
+                "filter": "Luminance",
+                "captureId": "c-m27-a"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-12",
+            "planId": "p-12",
+            "eveningDate": "2026-06-11",
+            "startedAt": "2026-06-11T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 6000,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.1
+            },
+            "targets": [
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "planned",
+                "acquiredSeconds": 6000,
+                "frameCount": 30,
+                "filter": "Luminance",
+                "captureId": "c-m27-b"
+              }
+            ]
+          }
+        ],
+        "Newton 150/750 · Caméra couleur refroidie",
+        {}
+      ]
+    },
+    {
+      "id": "lunette-pair-year-2025",
+      "args": [
+        [
+          {
+            "sessionId": "s-1",
+            "planId": "p-1",
+            "eveningDate": "2026-10-07",
+            "startedAt": "2026-10-07T19:00:00.000Z",
+            "state": "partial",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 17400,
+            "frameCount": 100,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.7
+            },
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 14400,
+                "frameCount": 80,
+                "filter": "Luminance",
+                "captureId": "c-m31-oct"
+              },
+              {
+                "targetId": "ngc7000",
+                "label": "NGC 7000",
+                "state": "planned",
+                "acquiredSeconds": 3000,
+                "frameCount": 20,
+                "filter": null,
+                "captureId": "c-ngc-oct"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-2",
+            "planId": "p-2",
+            "eveningDate": "2026-09-26",
+            "startedAt": "2026-09-26T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 15000,
+            "frameCount": 83,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.4
+            },
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 15000,
+                "frameCount": 83,
+                "filter": "Luminance",
+                "captureId": "c-m31-sep26"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-3",
+            "planId": "p-3",
+            "eveningDate": "2026-09-15",
+            "startedAt": "2026-09-15T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 9000,
+            "frameCount": 50,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 9000,
+                "frameCount": 50,
+                "filter": "Double bande",
+                "captureId": "c-m31-sep15"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-4",
+            "planId": "p-4",
+            "eveningDate": "2026-09-04",
+            "startedAt": "2026-09-04T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 4800,
+            "frameCount": 27,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 4800,
+                "frameCount": 27,
+                "filter": "Double bande",
+                "captureId": null
+              },
+              {
+                "targetId": "ic1396",
+                "label": "IC 1396",
+                "state": "planned",
+                "acquiredSeconds": 0,
+                "frameCount": null,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-5",
+            "planId": "p-5",
+            "eveningDate": "2026-08-12",
+            "startedAt": "2026-08-12T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 2400,
+            "frameCount": 13,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 2400,
+                "frameCount": 13,
+                "filter": null,
+                "captureId": null
+              },
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "removed",
+                "acquiredSeconds": 600,
+                "frameCount": 5,
+                "filter": "Luminance",
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-6",
+            "planId": "p-6",
+            "eveningDate": "2026-08-02",
+            "startedAt": "2026-08-02T19:00:00.000Z",
+            "state": "abandoned",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 0,
+            "frameCount": null,
+            "lostReason": "wind",
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ic1805",
+                "label": "IC 1805",
+                "state": "planned",
+                "acquiredSeconds": 0,
+                "frameCount": null,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-7",
+            "planId": "p-7",
+            "eveningDate": "2026-07-20",
+            "startedAt": "2026-07-20T19:00:00.000Z",
+            "state": "abandoned",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 0,
+            "frameCount": null,
+            "lostReason": "clouds",
+            "quality": null,
+            "targets": []
+          },
+          {
+            "sessionId": "s-8",
+            "planId": "p-8",
+            "eveningDate": "2026-05-08",
+            "startedAt": "2026-05-08T19:00:00.000Z",
+            "state": "no_plan",
+            "instrumentLabel": null,
+            "acquiredSeconds": 7200,
+            "frameCount": 40,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ic1396",
+                "label": "IC 1396",
+                "state": "planned",
+                "acquiredSeconds": 7200,
+                "frameCount": 40,
+                "filter": "Double bande",
+                "captureId": "c-ic-may"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-9",
+            "planId": "p-9",
+            "eveningDate": "2025-12-12",
+            "startedAt": "2025-12-12T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 7200,
+            "frameCount": 40,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m42",
+                "label": "M 42",
+                "state": "planned",
+                "acquiredSeconds": 7200,
+                "frameCount": 40,
+                "filter": null,
+                "captureId": "c-m42"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-10",
+            "planId": "p-10",
+            "eveningDate": "2026-10-10",
+            "startedAt": "2026-10-10T19:00:00.000Z",
+            "state": "to_debrief",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 5400,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ngc7000",
+                "label": "NGC 7000",
+                "state": "planned",
+                "acquiredSeconds": 5400,
+                "frameCount": 30,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": null,
+            "planId": "p-plan",
+            "eveningDate": "2026-10-02",
+            "startedAt": "2026-10-02T19:00:00.000Z",
+            "state": "to_debrief",
+            "instrumentLabel": null,
+            "acquiredSeconds": null,
+            "frameCount": null,
+            "lostReason": null,
+            "quality": null,
+            "targets": []
+          },
+          {
+            "sessionId": "s-11",
+            "planId": "p-11",
+            "eveningDate": "2026-06-10",
+            "startedAt": "2026-06-10T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 6000,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.9
+            },
+            "targets": [
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "planned",
+                "acquiredSeconds": 6000,
+                "frameCount": 30,
+                "filter": "Luminance",
+                "captureId": "c-m27-a"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-12",
+            "planId": "p-12",
+            "eveningDate": "2026-06-11",
+            "startedAt": "2026-06-11T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 6000,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.1
+            },
+            "targets": [
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "planned",
+                "acquiredSeconds": 6000,
+                "frameCount": 30,
+                "filter": "Luminance",
+                "captureId": "c-m27-b"
+              }
+            ]
+          }
+        ],
+        "Lunette 72 mm · Caméra couleur refroidie",
+        {
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": "lunette-pair-default-year",
+      "args": [
+        [
+          {
+            "sessionId": "s-1",
+            "planId": "p-1",
+            "eveningDate": "2026-10-07",
+            "startedAt": "2026-10-07T19:00:00.000Z",
+            "state": "partial",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 17400,
+            "frameCount": 100,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.7
+            },
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 14400,
+                "frameCount": 80,
+                "filter": "Luminance",
+                "captureId": "c-m31-oct"
+              },
+              {
+                "targetId": "ngc7000",
+                "label": "NGC 7000",
+                "state": "planned",
+                "acquiredSeconds": 3000,
+                "frameCount": 20,
+                "filter": null,
+                "captureId": "c-ngc-oct"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-2",
+            "planId": "p-2",
+            "eveningDate": "2026-09-26",
+            "startedAt": "2026-09-26T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 15000,
+            "frameCount": 83,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.4
+            },
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 15000,
+                "frameCount": 83,
+                "filter": "Luminance",
+                "captureId": "c-m31-sep26"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-3",
+            "planId": "p-3",
+            "eveningDate": "2026-09-15",
+            "startedAt": "2026-09-15T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 9000,
+            "frameCount": 50,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 9000,
+                "frameCount": 50,
+                "filter": "Double bande",
+                "captureId": "c-m31-sep15"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-4",
+            "planId": "p-4",
+            "eveningDate": "2026-09-04",
+            "startedAt": "2026-09-04T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 4800,
+            "frameCount": 27,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 4800,
+                "frameCount": 27,
+                "filter": "Double bande",
+                "captureId": null
+              },
+              {
+                "targetId": "ic1396",
+                "label": "IC 1396",
+                "state": "planned",
+                "acquiredSeconds": 0,
+                "frameCount": null,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-5",
+            "planId": "p-5",
+            "eveningDate": "2026-08-12",
+            "startedAt": "2026-08-12T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 2400,
+            "frameCount": 13,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 2400,
+                "frameCount": 13,
+                "filter": null,
+                "captureId": null
+              },
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "removed",
+                "acquiredSeconds": 600,
+                "frameCount": 5,
+                "filter": "Luminance",
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-6",
+            "planId": "p-6",
+            "eveningDate": "2026-08-02",
+            "startedAt": "2026-08-02T19:00:00.000Z",
+            "state": "abandoned",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 0,
+            "frameCount": null,
+            "lostReason": "wind",
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ic1805",
+                "label": "IC 1805",
+                "state": "planned",
+                "acquiredSeconds": 0,
+                "frameCount": null,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-7",
+            "planId": "p-7",
+            "eveningDate": "2026-07-20",
+            "startedAt": "2026-07-20T19:00:00.000Z",
+            "state": "abandoned",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 0,
+            "frameCount": null,
+            "lostReason": "clouds",
+            "quality": null,
+            "targets": []
+          },
+          {
+            "sessionId": "s-8",
+            "planId": "p-8",
+            "eveningDate": "2026-05-08",
+            "startedAt": "2026-05-08T19:00:00.000Z",
+            "state": "no_plan",
+            "instrumentLabel": null,
+            "acquiredSeconds": 7200,
+            "frameCount": 40,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ic1396",
+                "label": "IC 1396",
+                "state": "planned",
+                "acquiredSeconds": 7200,
+                "frameCount": 40,
+                "filter": "Double bande",
+                "captureId": "c-ic-may"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-9",
+            "planId": "p-9",
+            "eveningDate": "2025-12-12",
+            "startedAt": "2025-12-12T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 7200,
+            "frameCount": 40,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m42",
+                "label": "M 42",
+                "state": "planned",
+                "acquiredSeconds": 7200,
+                "frameCount": 40,
+                "filter": null,
+                "captureId": "c-m42"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-10",
+            "planId": "p-10",
+            "eveningDate": "2026-10-10",
+            "startedAt": "2026-10-10T19:00:00.000Z",
+            "state": "to_debrief",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 5400,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ngc7000",
+                "label": "NGC 7000",
+                "state": "planned",
+                "acquiredSeconds": 5400,
+                "frameCount": 30,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": null,
+            "planId": "p-plan",
+            "eveningDate": "2026-10-02",
+            "startedAt": "2026-10-02T19:00:00.000Z",
+            "state": "to_debrief",
+            "instrumentLabel": null,
+            "acquiredSeconds": null,
+            "frameCount": null,
+            "lostReason": null,
+            "quality": null,
+            "targets": []
+          },
+          {
+            "sessionId": "s-11",
+            "planId": "p-11",
+            "eveningDate": "2026-06-10",
+            "startedAt": "2026-06-10T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 6000,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.9
+            },
+            "targets": [
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "planned",
+                "acquiredSeconds": 6000,
+                "frameCount": 30,
+                "filter": "Luminance",
+                "captureId": "c-m27-a"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-12",
+            "planId": "p-12",
+            "eveningDate": "2026-06-11",
+            "startedAt": "2026-06-11T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 6000,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.1
+            },
+            "targets": [
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "planned",
+                "acquiredSeconds": 6000,
+                "frameCount": 30,
+                "filter": "Luminance",
+                "captureId": "c-m27-b"
+              }
+            ]
+          }
+        ],
+        "Lunette 72 mm · Caméra couleur refroidie",
+        {}
+      ]
+    },
+    {
+      "id": "unknown-instrument",
+      "args": [
+        [
+          {
+            "sessionId": "s-1",
+            "planId": "p-1",
+            "eveningDate": "2026-10-07",
+            "startedAt": "2026-10-07T19:00:00.000Z",
+            "state": "partial",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 17400,
+            "frameCount": 100,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.7
+            },
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 14400,
+                "frameCount": 80,
+                "filter": "Luminance",
+                "captureId": "c-m31-oct"
+              },
+              {
+                "targetId": "ngc7000",
+                "label": "NGC 7000",
+                "state": "planned",
+                "acquiredSeconds": 3000,
+                "frameCount": 20,
+                "filter": null,
+                "captureId": "c-ngc-oct"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-2",
+            "planId": "p-2",
+            "eveningDate": "2026-09-26",
+            "startedAt": "2026-09-26T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 15000,
+            "frameCount": 83,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.4
+            },
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 15000,
+                "frameCount": 83,
+                "filter": "Luminance",
+                "captureId": "c-m31-sep26"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-3",
+            "planId": "p-3",
+            "eveningDate": "2026-09-15",
+            "startedAt": "2026-09-15T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 9000,
+            "frameCount": 50,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 9000,
+                "frameCount": 50,
+                "filter": "Double bande",
+                "captureId": "c-m31-sep15"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-4",
+            "planId": "p-4",
+            "eveningDate": "2026-09-04",
+            "startedAt": "2026-09-04T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 4800,
+            "frameCount": 27,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 4800,
+                "frameCount": 27,
+                "filter": "Double bande",
+                "captureId": null
+              },
+              {
+                "targetId": "ic1396",
+                "label": "IC 1396",
+                "state": "planned",
+                "acquiredSeconds": 0,
+                "frameCount": null,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-5",
+            "planId": "p-5",
+            "eveningDate": "2026-08-12",
+            "startedAt": "2026-08-12T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 2400,
+            "frameCount": 13,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m31",
+                "label": "M31",
+                "state": "planned",
+                "acquiredSeconds": 2400,
+                "frameCount": 13,
+                "filter": null,
+                "captureId": null
+              },
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "removed",
+                "acquiredSeconds": 600,
+                "frameCount": 5,
+                "filter": "Luminance",
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-6",
+            "planId": "p-6",
+            "eveningDate": "2026-08-02",
+            "startedAt": "2026-08-02T19:00:00.000Z",
+            "state": "abandoned",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 0,
+            "frameCount": null,
+            "lostReason": "wind",
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ic1805",
+                "label": "IC 1805",
+                "state": "planned",
+                "acquiredSeconds": 0,
+                "frameCount": null,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": "s-7",
+            "planId": "p-7",
+            "eveningDate": "2026-07-20",
+            "startedAt": "2026-07-20T19:00:00.000Z",
+            "state": "abandoned",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 0,
+            "frameCount": null,
+            "lostReason": "clouds",
+            "quality": null,
+            "targets": []
+          },
+          {
+            "sessionId": "s-8",
+            "planId": "p-8",
+            "eveningDate": "2026-05-08",
+            "startedAt": "2026-05-08T19:00:00.000Z",
+            "state": "no_plan",
+            "instrumentLabel": null,
+            "acquiredSeconds": 7200,
+            "frameCount": 40,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ic1396",
+                "label": "IC 1396",
+                "state": "planned",
+                "acquiredSeconds": 7200,
+                "frameCount": 40,
+                "filter": "Double bande",
+                "captureId": "c-ic-may"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-9",
+            "planId": "p-9",
+            "eveningDate": "2025-12-12",
+            "startedAt": "2025-12-12T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Lunette 72 mm · Caméra couleur refroidie",
+            "acquiredSeconds": 7200,
+            "frameCount": 40,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "m42",
+                "label": "M 42",
+                "state": "planned",
+                "acquiredSeconds": 7200,
+                "frameCount": 40,
+                "filter": null,
+                "captureId": "c-m42"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-10",
+            "planId": "p-10",
+            "eveningDate": "2026-10-10",
+            "startedAt": "2026-10-10T19:00:00.000Z",
+            "state": "to_debrief",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 5400,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": null,
+            "targets": [
+              {
+                "targetId": "ngc7000",
+                "label": "NGC 7000",
+                "state": "planned",
+                "acquiredSeconds": 5400,
+                "frameCount": 30,
+                "filter": null,
+                "captureId": null
+              }
+            ]
+          },
+          {
+            "sessionId": null,
+            "planId": "p-plan",
+            "eveningDate": "2026-10-02",
+            "startedAt": "2026-10-02T19:00:00.000Z",
+            "state": "to_debrief",
+            "instrumentLabel": null,
+            "acquiredSeconds": null,
+            "frameCount": null,
+            "lostReason": null,
+            "quality": null,
+            "targets": []
+          },
+          {
+            "sessionId": "s-11",
+            "planId": "p-11",
+            "eveningDate": "2026-06-10",
+            "startedAt": "2026-06-10T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 6000,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.9
+            },
+            "targets": [
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "planned",
+                "acquiredSeconds": 6000,
+                "frameCount": 30,
+                "filter": "Luminance",
+                "captureId": "c-m27-a"
+              }
+            ]
+          },
+          {
+            "sessionId": "s-12",
+            "planId": "p-12",
+            "eveningDate": "2026-06-11",
+            "startedAt": "2026-06-11T19:00:00.000Z",
+            "state": "executed",
+            "instrumentLabel": "Newton 150/750 · Caméra couleur refroidie",
+            "acquiredSeconds": 6000,
+            "frameCount": 30,
+            "lostReason": null,
+            "quality": {
+              "fwhm": 2.1
+            },
+            "targets": [
+              {
+                "targetId": "m27",
+                "label": "M27",
+                "state": "planned",
+                "acquiredSeconds": 6000,
+                "frameCount": 30,
+                "filter": "Luminance",
+                "captureId": "c-m27-b"
+              }
+            ]
+          }
+        ],
+        "Dobson 300",
+        {}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "cases": [
+    {
+      "args": ["2026-09-15", "2026-09-15T18:00:00Z"],
+      "id": "tonight-is-available",
+      "result": "available"
+    },
+    {
+      "args": ["2026-09-14", "2026-09-15T18:00:00Z"],
+      "id": "a-past-night-is-past",
+      "result": "past"
+    },
+    {
+      "args": ["2026-09-25", "2026-09-15T18:00:00Z"],
+      "id": "the-tenth-day-is-still-available",
+      "result": "available"
+    },
+    {
+      "args": ["2026-09-26", "2026-09-15T18:00:00Z"],
+      "id": "the-eleventh-day-is-a-trend",
+      "result": "trend"
+    },
+    {
+      "args": ["", "2026-09-15T18:00:00Z"],
+      "id": "an-unparsable-date-is-invalid",
+      "result": "invalid"
+    },
+    {
+      "args": ["2026-10-09", "2026-10-10T01:00:00Z"],
+      "id": "the-utc-date-counts-when-no-night-is-given",
+      "result": "past"
+    },
+    {
+      "args": ["2026-10-09", "2026-10-10T01:00:00Z", "2026-10-09"],
+      "id": "the-night-still-lived-west-of-greenwich-is-available",
+      "result": "available"
+    },
+    {
+      "args": ["2026-10-20", "2026-10-09T23:59:00Z", "2026-10-10"],
+      "id": "a-far-east-place-already-in-the-next-night-sees-ten-days-from-it",
+      "result": "available"
+    },
+    {
+      "args": ["2026-10-09", "2026-10-10T11:00:00Z", "2026-10-10"],
+      "id": "the-night-before-the-one-lived-is-past",
+      "result": "past"
+    },
+    {
+      "args": ["2026-09-30", "2026-09-15T18:00:00Z"],
+      "id": "the-fifteenth-day-is-still-a-trend",
+      "result": "trend"
+    },
+    {
+      "args": ["2026-10-01", "2026-09-15T18:00:00Z"],
+      "id": "the-sixteenth-day-is-beyond-range",
+      "result": "beyond-range"
+    },
+    {
+      "args": ["2026-09-13", "2026-09-15T18:00:00Z"],
+      "id": "two-days-before-today-is-past",
+      "result": "past"
+    },
+    {
+      "args": ["2026-10-25", "2026-10-09T23:59:00Z", "2026-10-10"],
+      "id": "a-far-east-place-in-the-next-night-sees-the-trend-from-it",
+      "result": "trend"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "forecast-date-availability"
+}

@@ -1,0 +1,52 @@
+{
+  "exchange": "rework-response",
+  "description": "`PUT /v1/sessions/{id}/rework`: the whole list of targets in a new order with the times and the exposure of one of them, a note added on a target, an observed note moved to the whole night. The answer is the session's detail, `reworkRevision` 1.",
+  "given": "The 10 October night of `list`, never reworked.",
+  "handler": "route:sessions/[id]/rework",
+  "phase": "write",
+  "params": {
+    "id": "{session:to-rework}"
+  },
+  "request": {
+    "method": "PUT",
+    "path": "/api/v1/sessions/{session:to-rework}/rework",
+    "headers": {
+      "if-match": "\"0\""
+    },
+    "body": {
+      "targets": [
+        {
+          "targetId": "ic1396",
+          "state": "added",
+          "startedAt": "2026-10-10T22:00:00.000Z",
+          "finishedAt": "2026-10-10T23:30:00.000Z",
+          "frameCount": 45,
+          "exposureSeconds": 120,
+          "filter": "Ha"
+        },
+        {
+          "targetId": "m31",
+          "state": "planned",
+          "exposureSeconds": 180
+        }
+      ],
+      "addedEvents": [
+        {
+          "type": "note",
+          "at": "2026-10-10T22:40:00.000Z",
+          "targetId": "ic1396",
+          "payload": {
+            "text": "Nébuleuse bien dégagée"
+          }
+        }
+      ],
+      "eventMoves": [
+        {
+          "eventId": "{event:to-rework-note}",
+          "targetId": null
+        }
+      ]
+    }
+  },
+  "schema": "session.schema.json#/$defs/detail"
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/device-link-lost.schema.json",
+  "title": "Astro Portal session event payload: device_link_lost",
+  "description": "The link to a smart telescope in mode expérimental dropped without being asked to. The application tries again by itself, read only. Recorded by the application from the driver's own code path with the night's clock; every field but the ones marked required is optional, and a reader tolerates a payload without them. Private in a shared night. See session-events.md.",
+  "type": "object",
+  "properties": {
+    "family": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Optional: the smart telescope's family (`seestar`, `dwarf`, `vespera`, `origin`) when the device is one."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+{
+  "module": "astronomical-seasons",
+  "export": "astronomicalSeason",
+  "cases": [
+    { "id": "2024-before-spring-boundary", "args": ["2024-03-19"] },
+    { "id": "2024-spring-boundary", "args": ["2024-03-20"] },
+    { "id": "2025-spring-boundary", "args": ["2025-03-20"] },
+    { "id": "2026-spring-boundary", "args": ["2026-03-20"] },
+    { "id": "2027-spring-boundary", "args": ["2027-03-20"] },
+    { "id": "2028-spring-boundary", "args": ["2028-03-20"] },
+    { "id": "2029-spring-boundary", "args": ["2029-03-20"] },
+    { "id": "2030-winter-boundary", "args": ["2030-12-21"] }
+  ]
+}

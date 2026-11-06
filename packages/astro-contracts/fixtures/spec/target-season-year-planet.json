@@ -1,0 +1,318 @@
+{
+  "module": "target-season-year-planet",
+  "package": "planner",
+  "file": "season-window",
+  "export": "targetSeasonYear",
+  "tolerance": 3,
+  "cases": [
+    {
+      "id": "outer-planet-through-its-opposition",
+      "args": [
+        {
+          "target": {
+            "id": "solar-system-jupiter"
+          },
+          "place": {
+            "name": "Camping du Lac Noir",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": ["L"],
+          "from": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "outer-planet-behind-the-western-mask",
+      "args": [
+        {
+          "target": {
+            "id": "solar-system-saturn"
+          },
+          "place": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC",
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                {
+                  "azimuth": 0,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 10,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 20,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 30,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 40,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 50,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 60,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 70,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 80,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 90,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 100,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 110,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 120,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 130,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 140,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 150,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 160,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 170,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 180,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 190,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 200,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 210,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 220,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 230,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 240,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 250,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 260,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 270,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 280,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 290,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 300,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 310,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 320,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 330,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 340,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 350,
+                  "altitude": 10
+                }
+              ]
+            }
+          },
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "inner-planet-venus-on-its-own-rule",
+      "args": [
+        {
+          "target": {
+            "id": "solar-system-venus"
+          },
+          "place": {
+            "name": "Camping du Lac Noir",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "inner-planet-mercury-on-its-own-rule",
+      "args": [
+        {
+          "target": {
+            "id": "solar-system-mercury"
+          },
+          "place": {
+            "name": "Camping du Lac Noir",
+            "latitude": 0,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "inner-planet-mercury-ten-minutes-at-45n",
+      "args": [
+        {
+          "target": {
+            "id": "solar-system-mercury"
+          },
+          "place": {
+            "name": "Camping du Lac Noir",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "inner-planet-mercury-ten-minutes-at-35n",
+      "args": [
+        {
+          "target": {
+            "id": "solar-system-mercury"
+          },
+          "place": {
+            "name": "Camping du Lac Noir",
+            "latitude": 35,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "the-earth-has-no-year",
+      "args": [
+        {
+          "target": {
+            "id": "solar-system-earth"
+          },
+          "place": {
+            "name": "Camping du Lac Noir",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "2026-10-14"
+        }
+      ]
+    }
+  ]
+}

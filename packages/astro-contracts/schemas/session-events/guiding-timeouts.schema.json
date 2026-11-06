@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/guiding-timeouts.schema.json",
+  "title": "Astro Portal session event payload: guiding_timeouts",
+  "description": "A group of guiding settle timeouts (the guiding did not settle within the time allowed) found by Astro Sync in the capture software's log: `count` of them from `firstAt` to `lastAt`. One event per GROUP of close timeouts, never one per timeout: two timeouts more than an hour apart are two groups (the emitter's rule, see session-events.md). The instant of the event is its `recordedAt`, the first timeout of the group. See session-events.md.",
+  "type": "object",
+  "required": ["count", "firstAt", "lastAt"],
+  "properties": {
+    "count": { "type": "integer", "minimum": 1, "maximum": 100000 },
+    "firstAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{1,9})?(Z|[+-][0-9]{2}:[0-9]{2})$"
+    },
+    "lastAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{1,9})?(Z|[+-][0-9]{2}:[0-9]{2})$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300,
+      "description": "Optional sentence for an application that does not know this type: it shows it as an ordinary report. The applications that know the type compose their own sentence, in the person's language, from the structured fields."
+    }
+  },
+  "additionalProperties": false
+}

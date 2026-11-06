@@ -1,0 +1,32 @@
+{
+  "module": "data-export-crc32",
+  "package": "portal",
+  "file": "data-export/zip",
+  "export": "dataExportCrc32",
+  "cases": [
+    {
+      "id": "empty",
+      "args": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "check-value",
+      "args": [
+        {
+          "text": "123456789"
+        }
+      ]
+    },
+    {
+      "id": "utf8-gallery-line",
+      "args": [
+        {
+          "text": "Les images de la galerie privée restent dans l’espace : elles ne sont pas dans le fichier."
+        }
+      ]
+    }
+  ]
+}

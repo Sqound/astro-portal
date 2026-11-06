@@ -1,0 +1,81 @@
+{
+  "module": "spoken-text-choice",
+  "package": "portal",
+  "file": "spoken-text",
+  "export": "spokenTextChoice",
+  "cases": [
+    {
+      "id": "the-spoken-text-is-preferred-to-the-written-one",
+      "args": [
+        {
+          "story": "M31 est une galaxie dans Andromède.",
+          "storyParagraphs": ["M31 est une galaxie dans Andromède."],
+          "spokenParagraphs": [
+            "Messier 31 est une galaxie dans la constellation d’Andromède."
+          ],
+          "childrenSpokenParagraphs": ["Messier 31 est une galaxie."]
+        },
+        { "children": false }
+      ]
+    },
+    {
+      "id": "the-childrens-switch-reads-the-childrens-text",
+      "args": [
+        {
+          "storyParagraphs": ["M31 est une galaxie dans Andromède."],
+          "spokenParagraphs": [
+            "Messier 31 est une galaxie dans la constellation d’Andromède."
+          ],
+          "childrenSpokenParagraphs": [
+            "Messier 31 est une galaxie.",
+            "On la trouve parmi les étoiles d’Andromède."
+          ]
+        },
+        { "children": true }
+      ]
+    },
+    {
+      "id": "the-childrens-switch-without-a-childrens-text-reads-the-spoken-one",
+      "args": [
+        {
+          "storyParagraphs": ["NGC 7000 is an emission nebula."],
+          "spokenParagraphs": ["NGC 7000 is an emission nebula in Cygnus."]
+        },
+        { "children": true }
+      ]
+    },
+    {
+      "id": "without-spoken-fields-the-written-paragraphs",
+      "args": [
+        {
+          "story": "M31は、アンドロメダ座にある銀河です。",
+          "storyParagraphs": ["M31は、アンドロメダ座にある銀河です。", ""]
+        },
+        { "children": true }
+      ]
+    },
+    {
+      "id": "empty-spoken-lists-are-absent",
+      "args": [
+        {
+          "storyParagraphs": ["Die Galaxie liegt in Andromeda."],
+          "spokenParagraphs": [],
+          "childrenSpokenParagraphs": ["", 7]
+        },
+        { "children": true }
+      ]
+    },
+    {
+      "id": "the-story-when-there-is-no-paragraph-list",
+      "args": [{ "story": "A deep-sky object." }, {}]
+    },
+    {
+      "id": "an-empty-paragraph-list-is-nothing-to-read",
+      "args": [{ "story": "Unused.", "storyParagraphs": [] }, {}]
+    },
+    {
+      "id": "nothing-to-read",
+      "args": [{}, { "children": true }]
+    }
+  ]
+}

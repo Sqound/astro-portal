@@ -1,0 +1,16 @@
+{
+  "exchange": "session-delete",
+  "description": "`DELETE /v1/sessions/{id}`: the session of the 4 October night is deleted softly. The answer carries the session with `deletedAt` and `purgeAt`, the 30 days the space keeps it (`graceDays`) and the days left. The plan of the night is not touched.",
+  "given": "The 4 October night of `list`, executed and debriefed.",
+  "handler": "route:sessions/[id]",
+  "phase": "write",
+  "order": 10,
+  "params": {
+    "id": "{session:executed-group-1}"
+  },
+  "request": {
+    "method": "DELETE",
+    "path": "/api/v1/sessions/{session:executed-group-1}"
+  },
+  "schema": "session.schema.json#/$defs/deleteResponse"
+}

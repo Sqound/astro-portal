@@ -1,0 +1,2682 @@
+{
+  "version": "2026-11-tags-v1",
+  "description": "The two editorial selections of the target catalogue, disjoint: « Essentielles » (essential) and « Étendues » (extended); each target's modes (visual, photo). Validated list of TARGET-SELECTIONS-REVIEW-01 (03/11/2026).",
+  "targets": [
+    {
+      "id": "openngc-b033",
+      "designation": "B033",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b86",
+      "designation": "B86",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "barnard-b142",
+      "designation": "B142",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "barnard-b143",
+      "designation": "B143",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-c014",
+      "designation": "C014",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-c041",
+      "designation": "C041",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-c099",
+      "designation": "C099",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-eso056-115",
+      "designation": "ESO056-115",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ic0405",
+      "designation": "IC 405",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0434",
+      "designation": "IC 434",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0443",
+      "designation": "IC 443",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic1318",
+      "designation": "IC 1318",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic1396",
+      "designation": "IC 1396",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic1805",
+      "designation": "IC 1805",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic1848",
+      "designation": "IC 1848",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic2177",
+      "designation": "IC 2177",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic2391",
+      "designation": "IC 2391",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ic2602",
+      "designation": "IC 2602",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ic2944",
+      "designation": "IC 2944",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ic4604",
+      "designation": "IC 4604",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic4628",
+      "designation": "IC 4628",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic5070",
+      "designation": "IC 5070",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic5146",
+      "designation": "IC 5146",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "solar-system-jupiter",
+      "designation": "Jupiter",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc1952",
+      "designation": "M1",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7089",
+      "designation": "M2",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5272",
+      "designation": "M3",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6121",
+      "designation": "M4",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5904",
+      "designation": "M5",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6405",
+      "designation": "M6",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6475",
+      "designation": "M7",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6523",
+      "designation": "M8",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6333",
+      "designation": "M9",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6254",
+      "designation": "M10",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6705",
+      "designation": "M11",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6218",
+      "designation": "M12",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6205",
+      "designation": "M13",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6402",
+      "designation": "M14",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7078",
+      "designation": "M15",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6611",
+      "designation": "M16",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6618",
+      "designation": "M17",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6613",
+      "designation": "M18",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6273",
+      "designation": "M19",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6514",
+      "designation": "M20",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6531",
+      "designation": "M21",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6656",
+      "designation": "M22",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6494",
+      "designation": "M23",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ic4715",
+      "designation": "M24",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ic4725",
+      "designation": "M25",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6694",
+      "designation": "M26",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6853",
+      "designation": "M27",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6626",
+      "designation": "M28",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6913",
+      "designation": "M29",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7099",
+      "designation": "M30",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0224",
+      "designation": "M31",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0221",
+      "designation": "M32",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0598",
+      "designation": "M33",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1039",
+      "designation": "M34",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2168",
+      "designation": "M35",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1960",
+      "designation": "M36",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2099",
+      "designation": "M37",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1912",
+      "designation": "M38",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7092",
+      "designation": "M39",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2287",
+      "designation": "M41",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1976",
+      "designation": "M42",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1982",
+      "designation": "M43",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2632",
+      "designation": "M44",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-mel022",
+      "designation": "M45",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2437",
+      "designation": "M46",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2422",
+      "designation": "M47",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2548",
+      "designation": "M48",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4472",
+      "designation": "M49",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2323",
+      "designation": "M50",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5194",
+      "designation": "M51",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7654",
+      "designation": "M52",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5024",
+      "designation": "M53",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6715",
+      "designation": "M54",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6809",
+      "designation": "M55",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6779",
+      "designation": "M56",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6720",
+      "designation": "M57",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4579",
+      "designation": "M58",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4621",
+      "designation": "M59",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4649",
+      "designation": "M60",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4303",
+      "designation": "M61",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6266",
+      "designation": "M62",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5055",
+      "designation": "M63",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4826",
+      "designation": "M64",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3623",
+      "designation": "M65",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3627",
+      "designation": "M66",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2682",
+      "designation": "M67",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4590",
+      "designation": "M68",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6637",
+      "designation": "M69",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6681",
+      "designation": "M70",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6838",
+      "designation": "M71",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6981",
+      "designation": "M72",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0628",
+      "designation": "M74",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6864",
+      "designation": "M75",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc0650",
+      "designation": "M76",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1068",
+      "designation": "M77",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2068",
+      "designation": "M78",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1904",
+      "designation": "M79",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6093",
+      "designation": "M80",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3031",
+      "designation": "M81",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3034",
+      "designation": "M82",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5236",
+      "designation": "M83",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4374",
+      "designation": "M84",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4382",
+      "designation": "M85",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4406",
+      "designation": "M86",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4486",
+      "designation": "M87",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4501",
+      "designation": "M88",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4552",
+      "designation": "M89",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4569",
+      "designation": "M90",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4548",
+      "designation": "M91",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6341",
+      "designation": "M92",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2447",
+      "designation": "M93",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4736",
+      "designation": "M94",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3351",
+      "designation": "M95",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3368",
+      "designation": "M96",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3587",
+      "designation": "M97",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4192",
+      "designation": "M98",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4254",
+      "designation": "M99",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4321",
+      "designation": "M100",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5457",
+      "designation": "M101",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0581",
+      "designation": "M103",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4594",
+      "designation": "M104",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3379",
+      "designation": "M105",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4258",
+      "designation": "M106",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6171",
+      "designation": "M107",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3556",
+      "designation": "M108",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3992",
+      "designation": "M109",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0205",
+      "designation": "M110",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "solar-system-mars",
+      "designation": "Mars",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-mel111",
+      "designation": "Mel111",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "solar-system-moon",
+      "designation": "Moon",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0104",
+      "designation": "NGC 104",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0253",
+      "designation": "NGC 253",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0281",
+      "designation": "NGC 281",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc0292",
+      "designation": "NGC 292",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0457",
+      "designation": "NGC 457",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0752",
+      "designation": "NGC 752",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0891",
+      "designation": "NGC 891",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1023",
+      "designation": "NGC 1023",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1097",
+      "designation": "NGC 1097",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1313",
+      "designation": "NGC 1313",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1333",
+      "designation": "NGC 1333",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc1365",
+      "designation": "NGC 1365",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1499",
+      "designation": "NGC 1499",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc1512",
+      "designation": "NGC 1512",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2070",
+      "designation": "NGC 2070",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2174",
+      "designation": "NGC 2174",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc2237",
+      "designation": "NGC 2237",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc2244",
+      "designation": "NGC 2244",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2264",
+      "designation": "NGC 2264",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2359",
+      "designation": "NGC 2359",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc2362",
+      "designation": "NGC 2362",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2392",
+      "designation": "NGC 2392",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2403",
+      "designation": "NGC 2403",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2419",
+      "designation": "NGC 2419",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2477",
+      "designation": "NGC 2477",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2516",
+      "designation": "NGC 2516",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2683",
+      "designation": "NGC 2683",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2808",
+      "designation": "NGC 2808",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2903",
+      "designation": "NGC 2903",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3115",
+      "designation": "NGC 3115",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3132",
+      "designation": "NGC 3132",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3184",
+      "designation": "NGC 3184",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3242",
+      "designation": "NGC 3242",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc3293",
+      "designation": "NGC 3293",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3372",
+      "designation": "NGC 3372",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3521",
+      "designation": "NGC 3521",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3532",
+      "designation": "NGC 3532",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3628",
+      "designation": "NGC 3628",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3766",
+      "designation": "NGC 3766",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc4038",
+      "designation": "NGC 4038",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4236",
+      "designation": "NGC 4236",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4244",
+      "designation": "NGC 4244",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4449",
+      "designation": "NGC 4449",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4565",
+      "designation": "NGC 4565",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4631",
+      "designation": "NGC 4631",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4755",
+      "designation": "NGC 4755",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4945",
+      "designation": "NGC 4945",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5128",
+      "designation": "NGC 5128",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5139",
+      "designation": "NGC 5139",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5253",
+      "designation": "NGC 5253",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5866",
+      "designation": "NGC 5866",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5907",
+      "designation": "NGC 5907",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6188",
+      "designation": "NGC 6188",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc6231",
+      "designation": "NGC 6231",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6302",
+      "designation": "NGC 6302",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6357",
+      "designation": "NGC 6357",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc6397",
+      "designation": "NGC 6397",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6543",
+      "designation": "NGC 6543",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6633",
+      "designation": "NGC 6633",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6752",
+      "designation": "NGC 6752",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6822",
+      "designation": "NGC 6822",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc6826",
+      "designation": "NGC 6826",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6888",
+      "designation": "NGC 6888",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6946",
+      "designation": "NGC 6946",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6960",
+      "designation": "NGC 6960",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6992",
+      "designation": "NGC 6992",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7000",
+      "designation": "NGC 7000",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc7009",
+      "designation": "NGC 7009",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7023",
+      "designation": "NGC 7023",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7293",
+      "designation": "NGC 7293",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7331",
+      "designation": "NGC 7331",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7380",
+      "designation": "NGC 7380",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc7635",
+      "designation": "NGC 7635",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc7662",
+      "designation": "NGC 7662",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc7789",
+      "designation": "NGC 7789",
+      "tier": "essential",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "solar-system-saturn",
+      "designation": "Saturn",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "sharpless-129",
+      "designation": "Sh2-129",
+      "tier": "essential",
+      "modes": ["photo"]
+    },
+    {
+      "id": "solar-system-venus",
+      "designation": "Venus",
+      "tier": "essential",
+      "modes": ["visual"]
+    },
+    {
+      "id": "barnard-b5",
+      "designation": "B5",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b18",
+      "designation": "B18",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b19",
+      "designation": "B19",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b20",
+      "designation": "B20",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b22",
+      "designation": "B22",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b30",
+      "designation": "B30",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b36",
+      "designation": "B36",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b37",
+      "designation": "B37",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b38",
+      "designation": "B38",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b45",
+      "designation": "B45",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b53",
+      "designation": "B53",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b59",
+      "designation": "B59",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "barnard-b63",
+      "designation": "B63",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b77",
+      "designation": "B77",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b78",
+      "designation": "B78",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "barnard-b92",
+      "designation": "B92",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "barnard-b97",
+      "designation": "B97",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b111",
+      "designation": "B111",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b138",
+      "designation": "B138",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b140",
+      "designation": "B140",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b144",
+      "designation": "B144",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b150",
+      "designation": "B150",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b151",
+      "designation": "B151",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b153",
+      "designation": "B153",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b168",
+      "designation": "B168",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b169",
+      "designation": "B169",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b171",
+      "designation": "B171",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b175",
+      "designation": "B175",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b219",
+      "designation": "B219",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b228",
+      "designation": "B228",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b230",
+      "designation": "B230",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b253",
+      "designation": "B253",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b268",
+      "designation": "B268",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b269",
+      "designation": "B269",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b271",
+      "designation": "B271",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b279",
+      "designation": "B279",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b280",
+      "designation": "B280",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b283",
+      "designation": "B283",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b292",
+      "designation": "B292",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b297",
+      "designation": "B297",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b312",
+      "designation": "B312",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b318",
+      "designation": "B318",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b333",
+      "designation": "B333",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b339",
+      "designation": "B339",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b348",
+      "designation": "B348",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b354",
+      "designation": "B354",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "barnard-b364",
+      "designation": "B364",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-c009",
+      "designation": "C009",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-cl399",
+      "designation": "Cl399",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-eso097-013",
+      "designation": "ESO097-013",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-eso270-017",
+      "designation": "ESO270-017",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-eso351-030",
+      "designation": "ESO351-030",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-eso356-004",
+      "designation": "ESO356-004",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-hcg079",
+      "designation": "HCG079",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-hcg092",
+      "designation": "HCG092",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0010",
+      "designation": "IC 10",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ic0059",
+      "designation": "IC 59",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0063",
+      "designation": "IC 63",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0341",
+      "designation": "IC 341",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0342",
+      "designation": "IC 342",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0348",
+      "designation": "IC 348",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0353",
+      "designation": "IC 353",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0354",
+      "designation": "IC 354",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0359a",
+      "designation": "IC 359A",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0360",
+      "designation": "IC 360",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0410",
+      "designation": "IC 410",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0417",
+      "designation": "IC 417",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0418",
+      "designation": "IC 418",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ic0447",
+      "designation": "IC 447",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic0448",
+      "designation": "IC 448",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic1287",
+      "designation": "IC 1287",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic1613",
+      "designation": "IC 1613",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic1831",
+      "designation": "IC 1831",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic1871",
+      "designation": "IC 1871",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic2118",
+      "designation": "IC 2118",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic2163",
+      "designation": "IC 2163",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ic2165",
+      "designation": "IC 2165",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ic2220",
+      "designation": "IC 2220",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic2574",
+      "designation": "IC 2574",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ic4592",
+      "designation": "IC 4592",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic4605",
+      "designation": "IC 4605",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic4665",
+      "designation": "IC 4665",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ic4701",
+      "designation": "IC 4701",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ic4756",
+      "designation": "IC 4756",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ic5148",
+      "designation": "IC 5148",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-m040",
+      "designation": "M40",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6994",
+      "designation": "M73",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "solar-system-mercury",
+      "designation": "Mercury",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc0040",
+      "designation": "NGC 40",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0055",
+      "designation": "NGC 55",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0147",
+      "designation": "NGC 147",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc0185",
+      "designation": "NGC 185",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc0188",
+      "designation": "NGC 188",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc0246",
+      "designation": "NGC 246",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0247",
+      "designation": "NGC 247",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc0300",
+      "designation": "NGC 300",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc0362",
+      "designation": "NGC 362",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc0559",
+      "designation": "NGC 559",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc0663",
+      "designation": "NGC 663",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc1261",
+      "designation": "NGC 1261",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1275",
+      "designation": "NGC 1275",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc1300",
+      "designation": "NGC 1300",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc1316",
+      "designation": "NGC 1316",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc1317",
+      "designation": "NGC 1317",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1491",
+      "designation": "NGC 1491",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc1502",
+      "designation": "NGC 1502",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc1514",
+      "designation": "NGC 1514",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1528",
+      "designation": "NGC 1528",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc1535",
+      "designation": "NGC 1535",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1555",
+      "designation": "NGC 1555",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc1566",
+      "designation": "NGC 1566",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1647",
+      "designation": "NGC 1647",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc1788",
+      "designation": "NGC 1788",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc1851",
+      "designation": "NGC 1851",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc1909",
+      "designation": "NGC 1909",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc1931",
+      "designation": "NGC 1931",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc1977",
+      "designation": "NGC 1977",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc1999",
+      "designation": "NGC 1999",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2023",
+      "designation": "NGC 2023",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc2024",
+      "designation": "NGC 2024",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc2071",
+      "designation": "NGC 2071",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc2169",
+      "designation": "NGC 2169",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2170",
+      "designation": "NGC 2170",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc2175",
+      "designation": "NGC 2175",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2232",
+      "designation": "NGC 2232",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2261",
+      "designation": "NGC 2261",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc2301",
+      "designation": "NGC 2301",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2360",
+      "designation": "NGC 2360",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2371",
+      "designation": "NGC 2371",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2372",
+      "designation": "NGC 2372",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc2438",
+      "designation": "NGC 2438",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2440",
+      "designation": "NGC 2440",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2506",
+      "designation": "NGC 2506",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2547",
+      "designation": "NGC 2547",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2685",
+      "designation": "NGC 2685",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2775",
+      "designation": "NGC 2775",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2818",
+      "designation": "NGC 2818",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc2841",
+      "designation": "NGC 2841",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2867",
+      "designation": "NGC 2867",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc2976",
+      "designation": "NGC 2976",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3077",
+      "designation": "NGC 3077",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3079",
+      "designation": "NGC 3079",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3114",
+      "designation": "NGC 3114",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc3190",
+      "designation": "NGC 3190",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc3193",
+      "designation": "NGC 3193",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3195",
+      "designation": "NGC 3195",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3201",
+      "designation": "NGC 3201",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3227",
+      "designation": "NGC 3227",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc3576",
+      "designation": "NGC 3576",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc3603",
+      "designation": "NGC 3603",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc3626",
+      "designation": "NGC 3626",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3718",
+      "designation": "NGC 3718",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3893",
+      "designation": "NGC 3893",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc3918",
+      "designation": "NGC 3918",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc4027",
+      "designation": "NGC 4027",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4039",
+      "designation": "NGC 4039",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4051",
+      "designation": "NGC 4051",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4151",
+      "designation": "NGC 4151",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc4214",
+      "designation": "NGC 4214",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4216",
+      "designation": "NGC 4216",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc4361",
+      "designation": "NGC 4361",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4372",
+      "designation": "NGC 4372",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4395",
+      "designation": "NGC 4395",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4438",
+      "designation": "NGC 4438",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4490",
+      "designation": "NGC 4490",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4559",
+      "designation": "NGC 4559",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4567",
+      "designation": "NGC 4567",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4609",
+      "designation": "NGC 4609",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc4651",
+      "designation": "NGC 4651",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4656",
+      "designation": "NGC 4656",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc4676",
+      "designation": "NGC 4676",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc4697",
+      "designation": "NGC 4697",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4725",
+      "designation": "NGC 4725",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4833",
+      "designation": "NGC 4833",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc4889",
+      "designation": "NGC 4889",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc5005",
+      "designation": "NGC 5005",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5033",
+      "designation": "NGC 5033",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5189",
+      "designation": "NGC 5189",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5248",
+      "designation": "NGC 5248",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5286",
+      "designation": "NGC 5286",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc5694",
+      "designation": "NGC 5694",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc5823",
+      "designation": "NGC 5823",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc5985",
+      "designation": "NGC 5985",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc6025",
+      "designation": "NGC 6025",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6087",
+      "designation": "NGC 6087",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6101",
+      "designation": "NGC 6101",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6124",
+      "designation": "NGC 6124",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6193",
+      "designation": "NGC 6193",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6210",
+      "designation": "NGC 6210",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6309",
+      "designation": "NGC 6309",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6334",
+      "designation": "NGC 6334",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc6352",
+      "designation": "NGC 6352",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6369",
+      "designation": "NGC 6369",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6388",
+      "designation": "NGC 6388",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6445",
+      "designation": "NGC 6445",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6503",
+      "designation": "NGC 6503",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6537",
+      "designation": "NGC 6537",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6541",
+      "designation": "NGC 6541",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6572",
+      "designation": "NGC 6572",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6729",
+      "designation": "NGC 6729",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc6741",
+      "designation": "NGC 6741",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6744",
+      "designation": "NGC 6744",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6781",
+      "designation": "NGC 6781",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6818",
+      "designation": "NGC 6818",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6819",
+      "designation": "NGC 6819",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6871",
+      "designation": "NGC 6871",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6885",
+      "designation": "NGC 6885",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6905",
+      "designation": "NGC 6905",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6910",
+      "designation": "NGC 6910",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6934",
+      "designation": "NGC 6934",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc6939",
+      "designation": "NGC 6939",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6940",
+      "designation": "NGC 6940",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc6995",
+      "designation": "NGC 6995",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7006",
+      "designation": "NGC 7006",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7027",
+      "designation": "NGC 7027",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc7160",
+      "designation": "NGC 7160",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc7235",
+      "designation": "NGC 7235",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc7243",
+      "designation": "NGC 7243",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-ngc7479",
+      "designation": "NGC 7479",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7541",
+      "designation": "NGC 7541",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ngc7814",
+      "designation": "NGC 7814",
+      "tier": "extended",
+      "modes": ["visual", "photo"]
+    },
+    {
+      "id": "openngc-ngc7822",
+      "designation": "NGC 7822",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "solar-system-neptune",
+      "designation": "Neptune",
+      "tier": "extended",
+      "modes": ["visual"]
+    },
+    {
+      "id": "openngc-pgc000143",
+      "designation": "PGC000143",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-pgc088608",
+      "designation": "PGC088608",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "sharpless-101",
+      "designation": "Sh2-101",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "sharpless-132",
+      "designation": "Sh2-132",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "sharpless-157",
+      "designation": "Sh2-157",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "sharpless-240",
+      "designation": "Sh2-240",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "sharpless-264",
+      "designation": "Sh2-264",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "sharpless-308",
+      "designation": "Sh2-308",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ugc05373",
+      "designation": "UGC05373",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "openngc-ugc05470",
+      "designation": "UGC05470",
+      "tier": "extended",
+      "modes": ["photo"]
+    },
+    {
+      "id": "solar-system-uranus",
+      "designation": "Uranus",
+      "tier": "extended",
+      "modes": ["visual"]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "module": "duration-text",
+  "package": "portal",
+  "file": "written-forms",
+  "export": "durationText",
+  "cases": [
+    { "id": "french-zero", "args": [0, "fr"] },
+    { "id": "french-minutes-only", "args": [38, "fr"] },
+    { "id": "french-whole-hour", "args": [60, "fr"] },
+    { "id": "french-padded-minutes", "args": [125, "fr"] },
+    { "id": "french-hours-minutes", "args": [150, "fr"] },
+    { "id": "french-ten-hours", "args": [600, "fr"] },
+    { "id": "french-seconds-round-half-up", "args": [37.5, "fr"] },
+    { "id": "french-negative-is-zero", "args": [-12, "fr"] },
+    { "id": "japanese-minutes-only", "args": [40, "ja"] },
+    { "id": "japanese-hours-minutes", "args": [160, "ja"] },
+    { "id": "japanese-whole-hours", "args": [180, "ja"] },
+    { "id": "japanese-zero", "args": [0, "ja"] },
+    { "id": "english-hours-minutes", "args": [150, "en"] },
+    { "id": "english-whole-hours", "args": [120, "en"] },
+    { "id": "german-no-break-space", "args": [150, "de"] },
+    { "id": "spanish-minutes-only", "args": [38, "es"] },
+    { "id": "italian-whole-hours", "args": [120, "it"] },
+    { "id": "portuguese-hours-minutes", "args": [150, "pt-BR"] },
+    { "id": "russian-hours-minutes", "args": [150, "ru"] },
+    { "id": "chinese-simplified", "args": [150, "zh-Hans"] },
+    { "id": "chinese-traditional", "args": [150, "zh-Hant"] },
+    { "id": "underscore-locale-traditional", "args": [40, "zh_Hant"] },
+    { "id": "unknown-locale-reads-english", "args": [75, "xx"] }
+  ]
+}

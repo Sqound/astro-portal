@@ -1,0 +1,2478 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 25,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 10,
+              "score": 42,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 30,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 20,
+              "score": 26,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 40,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 60,
+              "score": 2,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 40,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 60,
+              "score": 2,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 40,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 60,
+              "score": 2,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 40,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 60,
+              "score": 2,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "board-1-good-start-rain",
+      "result": {
+        "ideal": {
+          "end": "2026-10-14T23:00:00.000Z",
+          "start": "2026-10-14T19:00:00.000Z"
+        },
+        "reason": "rain",
+        "shape": "goodStart",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "mixed",
+            "reason": "clouds",
+            "score": 54,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "poor",
+            "reason": "rain",
+            "score": 2,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 8,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 87,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 8,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 87,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 8,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 87,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 8,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 87,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 10,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 82,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 10,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 82,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 10,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 82,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 15,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 70,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 15,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 70,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 15,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 70,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "board-2-steady-good",
+      "result": {
+        "ideal": null,
+        "reason": null,
+        "shape": "steadyGood",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "good",
+            "reason": null,
+            "score": 87,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "good",
+            "reason": null,
+            "score": 84,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "good",
+            "reason": null,
+            "score": 73,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 30,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 35,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 30,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 35,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 30,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 35,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 25,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 46,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 25,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 46,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 25,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 46,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 25,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 46,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "board-3-good-middle-clouds",
+      "result": {
+        "ideal": {
+          "end": "2026-10-15T01:00:00.000Z",
+          "start": "2026-10-14T22:00:00.000Z"
+        },
+        "reason": "clouds",
+        "shape": "goodMiddle",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "poor",
+            "reason": "clouds",
+            "score": 35,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "mixed",
+            "reason": "clouds",
+            "score": 46,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 31,
+              "time": 1792004400000,
+              "visibility": 1500,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 31,
+              "time": 1792008000000,
+              "visibility": 1500,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 31,
+              "time": 1792011600000,
+              "visibility": 1500,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 59,
+              "time": 1792015200000,
+              "visibility": 3500,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 59,
+              "time": 1792018800000,
+              "visibility": 3500,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 59,
+              "time": 1792022400000,
+              "visibility": 3500,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "board-4-good-end-mist",
+      "result": {
+        "ideal": {
+          "end": "2026-10-15T04:38:00.000Z",
+          "start": "2026-10-15T01:00:00.000Z"
+        },
+        "reason": "mist",
+        "shape": "goodEnd",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "poor",
+            "reason": "mist",
+            "score": 31,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "mixed",
+            "reason": "mist",
+            "score": 59,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 35,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 45,
+              "score": 7,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 35,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 45,
+              "score": 7,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 35,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 45,
+              "score": 7,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 35,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 45,
+              "score": 7,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 35,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 45,
+              "score": 7,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 35,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 45,
+              "score": 7,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 35,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 45,
+              "score": 7,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 35,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 45,
+              "score": 7,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 35,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 45,
+              "score": 7,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 35,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 45,
+              "score": 7,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "board-5-steady-poor-rain",
+      "result": {
+        "ideal": null,
+        "reason": "rain",
+        "shape": "steadyPoor",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "poor",
+            "reason": "rain",
+            "score": 7,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "poor",
+            "reason": "rain",
+            "score": 7,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "poor",
+            "reason": "rain",
+            "score": 7,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "moonAltitude": -10,
+              "moonIllumination": 98,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "moonAltitude": -10,
+              "moonIllumination": 98,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "moonAltitude": -10,
+              "moonIllumination": 98,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "moonAltitude": -10,
+              "moonIllumination": 98,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "moonAltitude": -10,
+              "moonIllumination": 98,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "moonAltitude": -10,
+              "moonIllumination": 98,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 10,
+              "gust": 12,
+              "humidity": 95,
+              "moonAltitude": 45,
+              "moonIllumination": 98,
+              "precipitation": 0,
+              "score": 63,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 10,
+              "gust": 12,
+              "humidity": 95,
+              "moonAltitude": 45,
+              "moonIllumination": 98,
+              "precipitation": 0,
+              "score": 63,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 10,
+              "gust": 12,
+              "humidity": 95,
+              "moonAltitude": 45,
+              "moonIllumination": 98,
+              "precipitation": 0,
+              "score": 63,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 10,
+              "gust": 12,
+              "humidity": 95,
+              "moonAltitude": 45,
+              "moonIllumination": 98,
+              "precipitation": 0,
+              "score": 63,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "moon-dominates-the-end",
+      "result": {
+        "ideal": {
+          "end": "2026-10-15T01:00:00.000Z",
+          "start": "2026-10-14T19:00:00.000Z"
+        },
+        "reason": "moon",
+        "shape": "goodStartMiddle",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "mixed",
+            "reason": "moon",
+            "score": 63,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 6.08,
+              "gust": 0,
+              "humidity": 100,
+              "moonAltitude": 30,
+              "moonIllumination": 39,
+              "precipitation": 9.75,
+              "score": 61,
+              "time": 1792015200000,
+              "visibility": 8050,
+              "wind": 34.75
+            },
+            {
+              "cloud": 6.08,
+              "gust": 0,
+              "humidity": 100,
+              "moonAltitude": 30,
+              "moonIllumination": 39,
+              "precipitation": 9.75,
+              "score": 61,
+              "time": 1792018800000,
+              "visibility": 8050,
+              "wind": 34.75
+            },
+            {
+              "cloud": 6.08,
+              "gust": 0,
+              "humidity": 100,
+              "moonAltitude": 30,
+              "moonIllumination": 39,
+              "precipitation": 9.75,
+              "score": 61,
+              "time": 1792022400000,
+              "visibility": 8050,
+              "wind": 34.75
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "dew-is-the-reason",
+      "result": {
+        "ideal": {
+          "end": "2026-10-15T04:38:00.000Z",
+          "start": "2026-10-15T01:00:00.000Z"
+        },
+        "reason": "dew",
+        "shape": "goodEdges",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "mixed",
+            "reason": "dew",
+            "score": 61,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 40,
+              "score": 30,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 40,
+              "score": 30,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 40,
+              "score": 30,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 40,
+              "score": 30,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 40,
+              "score": 30,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 40,
+              "score": 30,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "rain-forty-is-no-cap",
+      "result": {
+        "ideal": {
+          "end": "2026-10-14T23:00:00.000Z",
+          "start": "2026-10-14T19:00:00.000Z"
+        },
+        "reason": "rain",
+        "shape": "goodStart",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "mixed",
+            "reason": "rain",
+            "score": 52,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "poor",
+            "reason": "rain",
+            "score": 30,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 70,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 62,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 40
+            },
+            {
+              "cloud": 5,
+              "gust": 70,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 62,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 40
+            },
+            {
+              "cloud": 5,
+              "gust": 70,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 62,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 40
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "wind-spoils-the-middle",
+      "result": {
+        "ideal": {
+          "end": "2026-10-15T04:38:00.000Z",
+          "start": "2026-10-15T01:00:00.000Z"
+        },
+        "reason": "wind",
+        "shape": "goodEdges",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "mixed",
+            "reason": "wind",
+            "score": 62,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 22,
+              "gust": 12,
+              "humidity": 100,
+              "precipitation": 0,
+              "score": 49,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 22,
+              "gust": 12,
+              "humidity": 100,
+              "precipitation": 0,
+              "score": 49,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 22,
+              "gust": 12,
+              "humidity": 100,
+              "precipitation": 0,
+              "score": 49,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 22,
+              "gust": 12,
+              "humidity": 100,
+              "precipitation": 0,
+              "score": 49,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 22,
+              "gust": 12,
+              "humidity": 100,
+              "precipitation": 0,
+              "score": 49,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 22,
+              "gust": 12,
+              "humidity": 100,
+              "precipitation": 0,
+              "score": 49,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 22,
+              "gust": 12,
+              "humidity": 100,
+              "precipitation": 0,
+              "score": 49,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 22,
+              "gust": 12,
+              "humidity": 100,
+              "precipitation": 0,
+              "score": 49,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 22,
+              "gust": 12,
+              "humidity": 100,
+              "precipitation": 0,
+              "score": 49,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 22,
+              "gust": 12,
+              "humidity": 100,
+              "precipitation": 0,
+              "score": 49,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "humidity-mixed-steady",
+      "result": {
+        "ideal": null,
+        "reason": "clouds",
+        "shape": "steadyMixed",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "mixed",
+            "reason": "clouds",
+            "score": 49,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "mixed",
+            "reason": "clouds",
+            "score": 49,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "mixed",
+            "reason": "clouds",
+            "score": 49,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 17,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 65,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 17,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 65,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 17,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 65,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 18,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 63,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 18,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 63,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 18,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 63,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 20,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 58,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 20,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 58,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 20,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 58,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 20,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 58,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "gap-under-twelve-is-steady",
+      "result": {
+        "ideal": {
+          "end": "2026-10-14T22:00:00.000Z",
+          "start": "2026-10-14T19:00:00.000Z"
+        },
+        "reason": "clouds",
+        "shape": "steadyMixed",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "good",
+            "reason": null,
+            "score": 65,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "mixed",
+            "reason": "clouds",
+            "score": 63,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "mixed",
+            "reason": "clouds",
+            "score": 58,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "ideal-end-brought-to-night-end",
+      "result": {
+        "ideal": {
+          "end": "2026-10-15T04:38:00.000Z",
+          "start": "2026-10-15T00:00:00.000Z"
+        },
+        "reason": "clouds",
+        "shape": "goodEnd",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "poor",
+            "reason": "clouds",
+            "score": 10,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "poor",
+            "reason": "clouds",
+            "score": 38,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 50,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 10,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "ideal-of-one-hour-is-none",
+      "result": {
+        "ideal": null,
+        "reason": "clouds",
+        "shape": "steadyPoor",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "poor",
+            "reason": "clouds",
+            "score": 10,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "poor",
+            "reason": "clouds",
+            "score": 38,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "poor",
+            "reason": "clouds",
+            "score": 10,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 70,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 0,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "fewer-than-three-hours",
+      "result": {
+        "ideal": null,
+        "reason": "clouds",
+        "shape": "steadyMixed",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 2,
+            "part": "start",
+            "quality": "mixed",
+            "reason": "clouds",
+            "score": 48,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 0,
+            "part": "middle",
+            "quality": null,
+            "reason": null,
+            "score": null,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 0,
+            "part": "end",
+            "quality": null,
+            "reason": null,
+            "score": null,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 70,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 0,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "a-third-without-an-hour",
+      "result": {
+        "ideal": {
+          "end": "2026-10-14T22:00:00.000Z",
+          "start": "2026-10-14T19:00:00.000Z"
+        },
+        "reason": null,
+        "shape": "steadyGood",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 1,
+            "part": "middle",
+            "quality": "poor",
+            "reason": "clouds",
+            "score": 0,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 0,
+            "part": "end",
+            "quality": null,
+            "reason": null,
+            "score": null,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792015200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 60,
+              "score": 10,
+              "time": 1792018800000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 60,
+              "score": 10,
+              "time": 1792022400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 60,
+              "score": 10,
+              "time": 1792026000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 60,
+              "score": 10,
+              "time": 1792029600000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 60,
+              "score": 10,
+              "time": 1792033200000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 60,
+              "score": 10,
+              "time": 1792036800000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-14T23:00:00.000Z",
+            "start": "2026-10-14T19:00:00.000Z"
+          }
+        }
+      ],
+      "id": "chosen-slot",
+      "result": {
+        "ideal": null,
+        "reason": "rain",
+        "shape": "goodStartMiddle",
+        "thirds": [
+          {
+            "end": "2026-10-14T20:20:00.000Z",
+            "hours": 1,
+            "part": "start",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-14T19:00:00.000Z"
+          },
+          {
+            "end": "2026-10-14T21:40:00.000Z",
+            "hours": 2,
+            "part": "middle",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-14T20:20:00.000Z"
+          },
+          {
+            "end": "2026-10-14T23:00:00.000Z",
+            "hours": 2,
+            "part": "end",
+            "quality": "mixed",
+            "reason": "rain",
+            "score": 53,
+            "start": "2026-10-14T21:40:00.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 60,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 0,
+              "time": "2026-10-15T04:00:00.000Z",
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 60,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 0,
+              "time": "2026-10-15T03:00:00.000Z",
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 60,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 0,
+              "time": "2026-10-15T02:00:00.000Z",
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 60,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 0,
+              "time": "2026-10-15T01:00:00.000Z",
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 60,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 0,
+              "time": "2026-10-15T00:00:00.000Z",
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 60,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 0,
+              "time": "2026-10-14T23:00:00.000Z",
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": "2026-10-14T22:00:00.000Z",
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": "2026-10-14T21:00:00.000Z",
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": "2026-10-14T20:00:00.000Z",
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": "2026-10-14T19:00:00.000Z",
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "iso-times-and-unordered-rows",
+      "result": {
+        "ideal": {
+          "end": "2026-10-14T23:00:00.000Z",
+          "start": "2026-10-14T19:00:00.000Z"
+        },
+        "reason": "clouds",
+        "shape": "goodStart",
+        "thirds": [
+          {
+            "end": "2026-10-14T22:08:40.000Z",
+            "hours": 3,
+            "part": "start",
+            "quality": "good",
+            "reason": null,
+            "score": 95,
+            "start": "2026-10-14T18:54:00.000Z"
+          },
+          {
+            "end": "2026-10-15T01:23:20.000Z",
+            "hours": 3,
+            "part": "middle",
+            "quality": "poor",
+            "reason": "clouds",
+            "score": 32,
+            "start": "2026-10-14T22:08:40.000Z"
+          },
+          {
+            "end": "2026-10-15T04:38:00.000Z",
+            "hours": 4,
+            "part": "end",
+            "quality": "poor",
+            "reason": "clouds",
+            "score": 0,
+            "start": "2026-10-15T01:23:20.000Z"
+          }
+        ]
+      }
+    },
+    {
+      "args": [
+        {
+          "hours": [{ "score": null, "time": 1792004400000 }],
+          "night": {
+            "end": "2026-10-15T04:38:00.000Z",
+            "start": "2026-10-14T18:54:00.000Z"
+          }
+        }
+      ],
+      "id": "no-scored-hour",
+      "result": { "ideal": null, "reason": null, "shape": null, "thirds": [] }
+    },
+    {
+      "args": [
+        {
+          "hours": [
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792004400000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792008000000,
+              "visibility": 20000,
+              "wind": 8
+            },
+            {
+              "cloud": 5,
+              "gust": 12,
+              "humidity": 70,
+              "precipitation": 0,
+              "score": 95,
+              "time": 1792011600000,
+              "visibility": 20000,
+              "wind": 8
+            }
+          ],
+          "night": null
+        }
+      ],
+      "id": "no-night",
+      "result": { "ideal": null, "reason": null, "shape": null, "thirds": [] }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "night-story"
+}

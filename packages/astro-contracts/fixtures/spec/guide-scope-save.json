@@ -1,0 +1,153 @@
+{
+  "module": "guide-scope-save",
+  "package": "portal",
+  "file": "components/equipment/guide-scope",
+  "export": "guideScopeToSave",
+  "cases": [
+    {
+      "id": "phone-item-saved-by-the-web-untouched",
+      "args": [
+        {
+          "id": "guide-1",
+          "type": "guide-scope",
+          "name": "Lunette guide 50/200",
+          "specifications": { "apertureMm": 50, "focalLengthMm": 200 },
+          "planner": {
+            "guideScope": {
+              "telescopeId": "newton",
+              "placement": "guide",
+              "camera": {
+                "name": "ZWO ASI120MM Mini",
+                "pixelSizeUm": 3.75,
+                "widthPx": 1280,
+                "heightPx": 960,
+                "sensor": "mono"
+              },
+              "protocol": "alpaca",
+              "method": "softwareOffset",
+              "lastAdjustment": {
+                "at": "2026-11-04T21:30:00.000Z",
+                "star": "Véga",
+                "errorArcmin": 3,
+                "offset": { "xDegrees": 0.31, "yDegrees": -0.12 }
+              },
+              "exposureSeconds": 3,
+              "binning": 2,
+              "gain": 120
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "web-form-text-becomes-numbers-and-keeps-the-last-alignment",
+      "args": [
+        {
+          "id": "guide-1",
+          "type": "guide-scope",
+          "name": "Lunette guide 50/200",
+          "specifications": { "apertureMm": "50", "focalLengthMm": "200" },
+          "planner": {
+            "guideScope": {
+              "telescopeId": "newton",
+              "placement": "main",
+              "camera": {
+                "name": " ZWO ASI120MM Mini ",
+                "pixelSizeUm": "3,75",
+                "widthPx": "1280",
+                "heightPx": "960",
+                "sensor": "colour"
+              },
+              "protocol": "alpaca",
+              "connection": {
+                "host": " 192.168.1.20 ",
+                "port": "11111",
+                "device": "0"
+              },
+              "method": "rings",
+              "lastAdjustment": {
+                "at": "2026-11-04T21:30:00.000Z",
+                "star": "Véga",
+                "errorArcmin": 3
+              },
+              "exposureSeconds": 5,
+              "binning": 1,
+              "gain": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "indi-keeps-no-connection",
+      "args": [
+        {
+          "type": "guide-scope",
+          "name": "Guide",
+          "specifications": {},
+          "planner": {
+            "guideScope": {
+              "protocol": "indi",
+              "connection": {
+                "host": "indi.local",
+                "port": "",
+                "device": "ZWO CCD ASI120MM Mini"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "empty-fields-are-left-out-and-defaults-are-written",
+      "args": [
+        {
+          "type": "guide-scope",
+          "name": "Guide",
+          "specifications": {},
+          "planner": {
+            "guideScope": {
+              "telescopeId": "",
+              "camera": {
+                "name": "",
+                "pixelSizeUm": "",
+                "widthPx": "",
+                "heightPx": "",
+                "sensor": ""
+              },
+              "connection": { "host": "", "port": "", "device": "" },
+              "exposureSeconds": 9,
+              "binning": 4,
+              "gain": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "no-guide-scope-yet",
+      "args": [
+        {
+          "type": "guide-scope",
+          "name": "Guide",
+          "specifications": {},
+          "planner": {}
+        }
+      ]
+    },
+    {
+      "id": "another-kind-leaves-guide-scope-out",
+      "args": [
+        {
+          "type": "telescope",
+          "name": "Newton",
+          "specifications": {},
+          "planner": {
+            "guideScope": { "protocol": "indi" },
+            "finder": "aligned"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "module": "fk4-fk5-galactic",
+  "file": "fk4-fk5",
+  "export": "galacticToFk5J2000",
+  "cases": [
+    {
+      "id": "galactic-centre",
+      "args": [0, 0]
+    },
+    {
+      "id": "north-galactic-pole",
+      "args": [0, 90]
+    },
+    {
+      "id": "lbn-437",
+      "args": [96.26, -14.97]
+    }
+  ]
+}

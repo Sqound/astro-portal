@@ -1,0 +1,163 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "best_match": 3,
+          "ecmwf_ifs025": 3,
+          "gfs_seamless": 13,
+          "icon_seamless": 74,
+          "jma_seamless": 3
+        }
+      ],
+      "id": "night-2026-10-22-22h",
+      "result": {
+        "count": 5,
+        "cover": 3,
+        "high": { "cover": 74, "model": "icon_seamless" },
+        "low": { "cover": 3, "model": "jma_seamless" },
+        "max": 74,
+        "min": 3,
+        "spread": 71,
+        "uncertain": true
+      }
+    },
+    {
+      "args": [{ "icon_seamless": 40 }],
+      "id": "one-model",
+      "result": {
+        "count": 1,
+        "cover": 40,
+        "high": { "cover": 40, "model": "icon_seamless" },
+        "low": { "cover": 40, "model": "icon_seamless" },
+        "max": 40,
+        "min": 40,
+        "spread": 0,
+        "uncertain": false
+      }
+    },
+    {
+      "args": [
+        {
+          "best_match": 10,
+          "gfs_seamless": 50,
+          "icon_seamless": 50,
+          "jma_seamless": 10
+        }
+      ],
+      "id": "ties-go-to-a-named-model",
+      "result": {
+        "count": 4,
+        "cover": 30,
+        "high": { "cover": 50, "model": "gfs_seamless" },
+        "low": { "cover": 10, "model": "jma_seamless" },
+        "max": 50,
+        "min": 10,
+        "spread": 40,
+        "uncertain": false
+      }
+    },
+    {
+      "args": [
+        {
+          "best_match": null,
+          "ecmwf_ifs025": "",
+          "gfs_seamless": 35,
+          "icon_seamless": 20
+        }
+      ],
+      "id": "models-without-a-value-are-ignored",
+      "result": {
+        "count": 2,
+        "cover": 27.5,
+        "high": { "cover": 35, "model": "gfs_seamless" },
+        "low": { "cover": 20, "model": "icon_seamless" },
+        "max": 35,
+        "min": 20,
+        "spread": 15,
+        "uncertain": false
+      }
+    },
+    { "args": [{}], "id": "none-answers", "result": null },
+    { "args": [null], "id": "not-an-object", "result": null },
+    {
+      "args": [
+        {
+          "ecmwf_ifs025": 3,
+          "gfs_seamless": 13,
+          "icon_seamless": 74,
+          "jma_seamless": 3
+        }
+      ],
+      "id": "even-count-is-the-mean-of-the-middle-two",
+      "result": {
+        "count": 4,
+        "cover": 8,
+        "high": { "cover": 74, "model": "icon_seamless" },
+        "low": { "cover": 3, "model": "jma_seamless" },
+        "max": 74,
+        "min": 3,
+        "spread": 71,
+        "uncertain": true
+      }
+    },
+    {
+      "args": [{ "a": 50, "b": 10, "c": 10 }],
+      "id": "uncertain-needs-a-model-at-50-and-a-median-under-20",
+      "result": {
+        "count": 3,
+        "cover": 10,
+        "high": { "cover": 50, "model": "a" },
+        "low": { "cover": 10, "model": "b" },
+        "max": 50,
+        "min": 10,
+        "spread": 40,
+        "uncertain": true
+      }
+    },
+    {
+      "args": [{ "a": 60, "b": 20, "c": 20 }],
+      "id": "median-at-20-is-not-uncertain",
+      "result": {
+        "count": 3,
+        "cover": 20,
+        "high": { "cover": 60, "model": "a" },
+        "low": { "cover": 20, "model": "b" },
+        "max": 60,
+        "min": 20,
+        "spread": 40,
+        "uncertain": false
+      }
+    },
+    {
+      "args": [{ "a": 49, "b": 5, "c": 5 }],
+      "id": "no-model-at-50-is-not-uncertain",
+      "result": {
+        "count": 3,
+        "cover": 5,
+        "high": { "cover": 49, "model": "a" },
+        "low": { "cover": 5, "model": "b" },
+        "max": 49,
+        "min": 5,
+        "spread": 44,
+        "uncertain": false
+      }
+    },
+    {
+      "args": [{ "met_norway": 12 }],
+      "id": "met-norway-alone",
+      "result": {
+        "count": 1,
+        "cover": 12,
+        "high": { "cover": 12, "model": "met_norway" },
+        "low": { "cover": 12, "model": "met_norway" },
+        "max": 12,
+        "min": 12,
+        "spread": 0,
+        "uncertain": false
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "retained-cloud-cover"
+}

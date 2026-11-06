@@ -1,0 +1,75 @@
+{
+  "module": "night-date-label",
+  "package": "portal",
+  "file": "planner/state",
+  "export": "nightDateLabel",
+  "cases": [
+    { "id": "english-same-month", "args": ["2024-01-01", "en"] },
+    { "id": "french-day-one-uses-1er", "args": ["2024-01-01", "fr"] },
+    { "id": "french-leap-day-month-boundary", "args": ["2024-02-29", "fr"] },
+    { "id": "french-year-boundary", "args": ["2024-12-31", "fr"] },
+    { "id": "japanese-label", "args": ["2024-06-15", "ja"] },
+    { "id": "german-same-month", "args": ["2024-06-15", "de"] },
+    { "id": "german-month-boundary", "args": ["2024-10-31", "de"] },
+    { "id": "german-year-boundary", "args": ["2024-12-31", "de"] },
+    { "id": "spanish-same-month", "args": ["2024-06-15", "es"] },
+    { "id": "spanish-year-boundary", "args": ["2024-12-31", "es"] },
+    { "id": "italian-same-month", "args": ["2024-06-15", "it"] },
+    { "id": "italian-month-boundary-day-one", "args": ["2024-05-31", "it"] },
+    { "id": "portuguese-same-month", "args": ["2024-06-15", "pt-BR"] },
+    {
+      "id": "portuguese-month-boundary-day-one",
+      "args": ["2024-05-31", "pt-BR"]
+    },
+    { "id": "portuguese-year-boundary", "args": ["2024-12-31", "pt-BR"] },
+    { "id": "invalid-date-is-empty", "args": ["not-a-date", "en"] },
+    {
+      "id": "english-same-month",
+      "args": ["2024-01-01", "en"]
+    },
+    {
+      "id": "french-day-one-uses-1er",
+      "args": ["2024-01-01", "fr"]
+    },
+    {
+      "id": "french-leap-day-month-boundary",
+      "args": ["2024-02-29", "fr"]
+    },
+    {
+      "id": "french-year-boundary",
+      "args": ["2024-12-31", "fr"]
+    },
+    {
+      "id": "japanese-label",
+      "args": ["2024-06-15", "ja"]
+    },
+    {
+      "id": "invalid-date-is-empty",
+      "args": ["not-a-date", "en"]
+    },
+    {
+      "id": "simplified-chinese-label",
+      "args": ["2024-06-15", "zh-Hans"]
+    },
+    {
+      "id": "simplified-chinese-month-boundary",
+      "args": ["2024-02-29", "zh-Hans"]
+    },
+    {
+      "id": "traditional-chinese-year-boundary",
+      "args": ["2024-12-31", "zh-Hant"]
+    },
+    {
+      "id": "russian-label",
+      "args": ["2024-06-15", "ru"]
+    },
+    {
+      "id": "russian-month-boundary",
+      "args": ["2024-02-29", "ru"]
+    },
+    {
+      "id": "russian-year-boundary",
+      "args": ["2024-12-31", "ru"]
+    }
+  ]
+}

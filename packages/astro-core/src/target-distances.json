@@ -1,0 +1,1182 @@
+{
+  "schemaVersion": 1,
+  "description": "Published distances of catalogue objects, one per object, each with its reference. Read through astro-core/target-distance.js when the target library is built; wins over the parallax and redshift layers. Units: ly, kly, Mly, pc, kpc, Mpc, as published.",
+  "distances": [
+    {
+      "id": "C014",
+      "value": 2246,
+      "unit": "pc",
+      "reference": "Dias et al. 2021, MNRAS 504, 356 · 2021MNRAS.504..356D · Gaia parallax (clusters NGC 869 and NGC 884) · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504..356D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "C041",
+      "value": 47,
+      "unit": "pc",
+      "reference": "Dias et al. 2021, MNRAS 504, 356 · 2021MNRAS.504..356D · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504..356D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "IC 342",
+      "value": 3.28,
+      "unit": "Mpc",
+      "reference": "Saha et al. 2002, AJ 124, 839 · 2002AJ....124..839S · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2002AJ....124..839S/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "IC 410",
+      "value": 3019,
+      "unit": "pc",
+      "reference": "Dias et al. 2021, MNRAS 504, 356 · 2021MNRAS.504..356D · Gaia parallax (cluster NGC 1893) · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504..356D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "IC 1613",
+      "value": 0.698,
+      "unit": "Mpc",
+      "reference": "Bhardwaj et al. 2016, AJ 151, 88 · 2016AJ....151...88B · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016AJ....151...88B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "IC 1805",
+      "value": 2187,
+      "unit": "pc",
+      "reference": "Dias et al. 2021, MNRAS 504, 356 · 2021MNRAS.504..356D · Gaia parallax (cluster Melotte 15) · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504..356D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "IC 1848",
+      "value": 1981,
+      "unit": "pc",
+      "reference": "Zucker et al. 2020, A&A 633, 51 · 2020A&A...633A..51Z · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2020A%26A...633A..51Z/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M2",
+      "value": 11.69,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M3",
+      "value": 10.18,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M4",
+      "value": 1.85,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M5",
+      "value": 7.48,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M8",
+      "value": 1272,
+      "unit": "pc",
+      "reference": "Zucker et al. 2020, A&A 633, 51 · 2020A&A...633A..51Z · Gaia parallax (cluster NGC 6530) · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2020A%26A...633A..51Z/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M9",
+      "value": 8.3,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M10",
+      "value": 5.07,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M11",
+      "value": 1888,
+      "unit": "pc",
+      "reference": "Dias et al. 2021, MNRAS 504, 356 · 2021MNRAS.504..356D · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504..356D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M12",
+      "value": 5.11,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M13",
+      "value": 7.42,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M14",
+      "value": 9.14,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M15",
+      "value": 10.71,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M19",
+      "value": 8.34,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M22",
+      "value": 3.3,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M28",
+      "value": 5.37,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M30",
+      "value": 8.46,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M31",
+      "value": 0.78,
+      "unit": "Mpc",
+      "reference": "Bhardwaj et al. 2016, AJ 151, 88 · 2016AJ....151...88B · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016AJ....151...88B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M32",
+      "value": 0.718,
+      "unit": "Mpc",
+      "reference": "Mould & Sakai 2009, ApJ 694, 1331 · 2009ApJ...694.1331M · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...694.1331M/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M33",
+      "value": 0.836,
+      "unit": "Mpc",
+      "reference": "Bhardwaj et al. 2016, AJ 151, 88 · 2016AJ....151...88B · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016AJ....151...88B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M42",
+      "value": 403,
+      "unit": "pc",
+      "reference": "Kuhn et al. 2019, ApJ 870, 32 · 2019ApJ...870...32K · Gaia parallax (Orion Nebula Cluster) · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2019ApJ...870...32K/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M49",
+      "value": 16.7,
+      "unit": "Mpc",
+      "reference": "Blakeslee et al. 2009, ApJ 694, 556 · 2009ApJ...694..556B · SBF · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...694..556B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M51",
+      "value": 8.58,
+      "unit": "Mpc",
+      "reference": "McQuinn et al. 2016, ApJ 826, 21 · 2016ApJ...826...21M · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...826...21M/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M53",
+      "value": 18.5,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M54",
+      "value": 26.28,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M55",
+      "value": 5.35,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M56",
+      "value": 10.43,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M58",
+      "value": 16.7,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · Tully-Fisher (Cosmicflows-2) · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M59",
+      "value": 15.6,
+      "unit": "Mpc",
+      "reference": "Cantiello et al. 2011, A&A 532, 154 · 2011A&A...532A.154C · SBF · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2011A%26A...532A.154C/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M60",
+      "value": 16.5,
+      "unit": "Mpc",
+      "reference": "Blakeslee et al. 2009, ApJ 694, 556 · 2009ApJ...694..556B · SBF · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...694..556B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M61",
+      "value": 12.3,
+      "unit": "Mpc",
+      "reference": "Bose & Kumar 2014, ApJ 782, 98 · 2014ApJ...782...98B · expanding photosphere method (SN 2008in) · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...782...98B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M62",
+      "value": 6.03,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M63",
+      "value": 8.83,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, TRGB and Tully-Fisher, m-M = 29.73 ± 0.02 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M64",
+      "value": 4.36,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, TRGB, SBF and Tully-Fisher, m-M = 28.198 ± 0.03 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M65",
+      "value": 12.2,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · Tully-Fisher (Cosmicflows-2) · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M66",
+      "value": 10.6,
+      "unit": "Mpc",
+      "reference": "Lee & Jang 2013, ApJ 773, 13 · 2013ApJ...773...13L · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...773...13L/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M68",
+      "value": 10.4,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M69",
+      "value": 8.9,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M70",
+      "value": 9.36,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M71",
+      "value": 4,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M72",
+      "value": 16.66,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M74",
+      "value": 9.77,
+      "unit": "Mpc",
+      "reference": "McQuinn et al. 2017, AJ 154, 51 · 2017AJ....154...51M · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2017AJ....154...51M/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M75",
+      "value": 20.52,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M79",
+      "value": 13.08,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M80",
+      "value": 10.34,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M81",
+      "value": 3.31,
+      "unit": "Mpc",
+      "reference": "Gerke et al. 2011, ApJ 743, 176 · 2011ApJ...743..176G · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2011ApJ...743..176G/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M82",
+      "value": 3.53,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M83",
+      "value": 4.61,
+      "unit": "Mpc",
+      "reference": "Saha et al. 2006, ApJS 165, 108 · 2006ApJS..165..108S · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2006ApJS..165..108S/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M84",
+      "value": 17.5,
+      "unit": "Mpc",
+      "reference": "Cantiello et al. 2011, A&A 532, 154 · 2011A&A...532A.154C · SBF · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2011A%26A...532A.154C/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M85",
+      "value": 17.9,
+      "unit": "Mpc",
+      "reference": "Blakeslee et al. 2009, ApJ 694, 556 · 2009ApJ...694..556B · SBF · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...694..556B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M86",
+      "value": 17.9,
+      "unit": "Mpc",
+      "reference": "Blakeslee et al. 2009, ApJ 694, 556 · 2009ApJ...694..556B · SBF · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...694..556B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M87",
+      "value": 16.7,
+      "unit": "Mpc",
+      "reference": "Blakeslee et al. 2009, ApJ 694, 556 · 2009ApJ...694..556B · SBF · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...694..556B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M88",
+      "value": 19.7,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · Tully-Fisher (Cosmicflows-2) · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M89",
+      "value": 15.9,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · SBF · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M90",
+      "value": 17,
+      "unit": "Mpc",
+      "reference": "Kim et al. 2014, ApJ 782, 4 · 2014ApJ...782....4K · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...782....4K/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M91",
+      "value": 15.8,
+      "unit": "Mpc",
+      "reference": "Saha et al. 2006, ApJS 165, 108 · 2006ApJS..165..108S · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2006ApJS..165..108S/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M92",
+      "value": 8.5,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M94",
+      "value": 4.25,
+      "unit": "Mpc",
+      "reference": "Makarov et al. 2013, AstBu 68, 125 · 2013AstBu..68..125M · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AstBu..68..125M/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M95",
+      "value": 10.5,
+      "unit": "Mpc",
+      "reference": "Saha et al. 2006, ApJS 165, 108 · 2006ApJS..165..108S · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2006ApJS..165..108S/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M96",
+      "value": 11.7,
+      "unit": "Mpc",
+      "reference": "Saha et al. 2006, ApJS 165, 108 · 2006ApJS..165..108S · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2006ApJS..165..108S/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M98",
+      "value": 13.6,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2009, AJ 138, 323 · 2009AJ....138..323T · Tully-Fisher · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2009AJ....138..323T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M99",
+      "value": 14.4,
+      "unit": "Mpc",
+      "reference": "Poznanski et al. 2009, ApJ 694, 1067 · 2009ApJ...694.1067P · type II supernova (SN 1986I) · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...694.1067P/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M100",
+      "value": 17.2,
+      "unit": "Mpc",
+      "reference": "Saha et al. 2006, ApJS 165, 108 · 2006ApJS..165..108S · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2006ApJS..165..108S/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M101",
+      "value": 6.71,
+      "unit": "Mpc",
+      "reference": "Riess et al. 2016, ApJ 826, 56 · 2016ApJ...826...56R · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...826...56R/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M103",
+      "value": 2292,
+      "unit": "pc",
+      "reference": "Dias et al. 2021, MNRAS 504, 356 · 2021MNRAS.504..356D · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504..356D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M104",
+      "value": 9.55,
+      "unit": "Mpc",
+      "reference": "McQuinn et al. 2016, AJ 152, 144 · 2016AJ....152..144M · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016AJ....152..144M/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M105",
+      "value": 10.2,
+      "unit": "Mpc",
+      "reference": "Lee & Jang 2016, ApJ 822, 70 · 2016ApJ...822...70L · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...822...70L/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M106",
+      "value": 6.85,
+      "unit": "Mpc",
+      "reference": "Hoffmann & Macri 2015, AJ 149, 183 · 2015AJ....149..183H · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2015AJ....149..183H/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M107",
+      "value": 5.63,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M108",
+      "value": 9.18,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, Tully-Fisher, m-M = 29.815 ± 0.4 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M109",
+      "value": 20.9,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, Tully-Fisher, group of 9 galaxies (PGC 37617), m-M = 31.596 ± 0.139 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "M110",
+      "value": 0.81,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 55",
+      "value": 1.86,
+      "unit": "Mpc",
+      "reference": "Bhardwaj et al. 2016, AJ 151, 88 · 2016AJ....151...88B · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016AJ....151...88B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 104",
+      "value": 4.52,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 147",
+      "value": 0.755,
+      "unit": "Mpc",
+      "reference": "McQuinn et al. 2017, ApJ 834, 78 · 2017ApJ...834...78M · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2017ApJ...834...78M/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 185",
+      "value": 0.682,
+      "unit": "Mpc",
+      "reference": "McQuinn et al. 2017, ApJ 834, 78 · 2017ApJ...834...78M · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2017ApJ...834...78M/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 247",
+      "value": 3.28,
+      "unit": "Mpc",
+      "reference": "Bhardwaj et al. 2016, AJ 151, 88 · 2016AJ....151...88B · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016AJ....151...88B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 253",
+      "value": 3.5,
+      "unit": "Mpc",
+      "reference": "Radburn-Smith et al. 2011, ApJS 195, 18 · 2011ApJS..195...18R · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2011ApJS..195...18R/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 300",
+      "value": 1.8,
+      "unit": "Mpc",
+      "reference": "Bhardwaj et al. 2016, AJ 151, 88 · 2016AJ....151...88B · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016AJ....151...88B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 362",
+      "value": 8.83,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 457",
+      "value": 2540,
+      "unit": "pc",
+      "reference": "Dias et al. 2021, MNRAS 504, 356 · 2021MNRAS.504..356D · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504..356D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 891",
+      "value": 9.1,
+      "unit": "Mpc",
+      "reference": "Radburn-Smith et al. 2011, ApJS 195, 18 · 2011ApJS..195...18R · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2011ApJS..195...18R/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 1023",
+      "value": 9.7,
+      "unit": "Mpc",
+      "reference": "Tikhonov & Galazoutdinova 2002, Ap 45, 253 · 2002Ap.....45..253T · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2002Ap.....45..253T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 1097",
+      "value": 16,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · Tully-Fisher (Cosmicflows-2) · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 1261",
+      "value": 16.4,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 1275",
+      "value": 62.9,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, supernova Ia, m-M = 33.993 ± 0.15 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 1313",
+      "value": 3.88,
+      "unit": "Mpc",
+      "reference": "Tikhonov & Galazutdinova 2016, AstL 42, 428 · 2016AstL...42..428T · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016AstL...42..428T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 1365",
+      "value": 18.3,
+      "unit": "Mpc",
+      "reference": "Riess et al. 2016, ApJ 826, 56 · 2016ApJ...826...56R · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...826...56R/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 1512",
+      "value": 12,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · Tully-Fisher (Cosmicflows-2) · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 1851",
+      "value": 11.95,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 1980",
+      "value": 377,
+      "unit": "pc",
+      "reference": "Poggio et al. 2021, A&A 651, 104 · 2021A&A...651A.104P · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021A%26A...651A.104P/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 1981",
+      "value": 378,
+      "unit": "pc",
+      "reference": "Poggio et al. 2021, A&A 651, 104 · 2021A&A...651A.104P · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021A%26A...651A.104P/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 2070",
+      "value": 50.12,
+      "unit": "kpc",
+      "reference": "Bono et al. 2010, ApJ 715, 277 · 2010ApJ...715..277B · Cepheids (Large Magellanic Cloud) · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2010ApJ...715..277B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 2237",
+      "value": 1304,
+      "unit": "pc",
+      "reference": "Dias et al. 2019, MNRAS 486, 5726 · 2019MNRAS.486.5726D · Gaia parallax (cluster NGC 2244) · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.486.5726D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 2244",
+      "value": 1304,
+      "unit": "pc",
+      "reference": "Dias et al. 2019, MNRAS 486, 5726 · 2019MNRAS.486.5726D · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.486.5726D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 2403",
+      "value": 3.06,
+      "unit": "Mpc",
+      "reference": "Saha et al. 2006, ApJS 165, 108 · 2006ApJS..165..108S · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2006ApJS..165..108S/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 2419",
+      "value": 88.47,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 2506",
+      "value": 3231,
+      "unit": "pc",
+      "reference": "Dias et al. 2021, MNRAS 504, 356 · 2021MNRAS.504..356D · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504..356D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 2903",
+      "value": 9.46,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · Tully-Fisher (Cosmicflows-2) · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 3115",
+      "value": 10.2,
+      "unit": "Mpc",
+      "reference": "Peacock et al. 2015, ApJ 800, 13 · 2015ApJ...800...13P · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...800...13P/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 3201",
+      "value": 4.74,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 3226",
+      "value": 23.6,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · SBF · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 3293",
+      "value": 2590,
+      "unit": "pc",
+      "reference": "Bisht et al. 2021, MNRAS 503, 5929 · 2021MNRAS.503.5929B · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.503.5929B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 3626",
+      "value": 22.5,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, SBF and Tully-Fisher, m-M = 31.761 ± 0.207 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 3628",
+      "value": 10.3,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · Tully-Fisher (Cosmicflows-2) · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 3766",
+      "value": 1862,
+      "unit": "pc",
+      "reference": "Dias et al. 2021, MNRAS 504, 356 · 2021MNRAS.504..356D · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504..356D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4038",
+      "value": 21.6,
+      "unit": "Mpc",
+      "reference": "Jang & Lee 2015, ApJ 807, 133 · 2015ApJ...807..133J · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...807..133J/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4039",
+      "value": 21.6,
+      "unit": "Mpc",
+      "reference": "Jang & Lee 2015, ApJ 807, 133 · 2015ApJ...807..133J · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...807..133J/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4236",
+      "value": 4.41,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4244",
+      "value": 4.34,
+      "unit": "Mpc",
+      "reference": "Makarov et al. 2013, AstBu 68, 125 · 2013AstBu..68..125M · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AstBu..68..125M/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4372",
+      "value": 5.71,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4449",
+      "value": 4.2,
+      "unit": "Mpc",
+      "reference": "Lelli et al. 2014, A&A 566, 71 · 2014A&A...566A..71L · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2014A%26A...566A..71L/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4559",
+      "value": 7.31,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · Tully-Fisher (Cosmicflows-2) · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4565",
+      "value": 11.9,
+      "unit": "Mpc",
+      "reference": "Radburn-Smith et al. 2011, ApJS 195, 18 · 2011ApJS..195...18R · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2011ApJS..195...18R/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4631",
+      "value": 7.52,
+      "unit": "Mpc",
+      "reference": "Monachesi et al. 2016, MNRAS 457, 1419 · 2016MNRAS.457.1419M · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.457.1419M/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4697",
+      "value": 12.4,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2013, AJ 146, 86 · 2013AJ....146...86T · SBF · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2013AJ....146...86T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4755",
+      "value": 1887,
+      "unit": "pc",
+      "reference": "Dias et al. 2021, MNRAS 504, 356 · 2021MNRAS.504..356D · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504..356D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4833",
+      "value": 6.48,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4889",
+      "value": 106,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, fundamental plane, m-M = 35.126 ± 0.46 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 4945",
+      "value": 3.58,
+      "unit": "Mpc",
+      "reference": "Monachesi et al. 2016, MNRAS 457, 1419 · 2016MNRAS.457.1419M · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.457.1419M/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 5005",
+      "value": 16.6,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, supernova Ia and Tully-Fisher, m-M = 31.094 ± 0.206 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 5128",
+      "value": 3.55,
+      "unit": "Mpc",
+      "reference": "Lee & Jang 2016, ApJ 822, 70 · 2016ApJ...822...70L · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...822...70L/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 5139",
+      "value": 5.43,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 5248",
+      "value": 13.4,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, Tully-Fisher, m-M = 30.635 ± 0.4 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 5253",
+      "value": 3.36,
+      "unit": "Mpc",
+      "reference": "Sakai et al. 2004, ApJ 608, 42 · 2004ApJ...608...42S · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2004ApJ...608...42S/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 5286",
+      "value": 11.1,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 5694",
+      "value": 34.84,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 6101",
+      "value": 14.45,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 6352",
+      "value": 5.54,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 6397",
+      "value": 2.48,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 6541",
+      "value": 7.61,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 6744",
+      "value": 9.09,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, TRGB and Tully-Fisher, m-M = 29.792 ± 0.097 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 6752",
+      "value": 4.12,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 6822",
+      "value": 0.481,
+      "unit": "Mpc",
+      "reference": "Bhardwaj et al. 2016, AJ 151, 88 · 2016AJ....151...88B · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2016AJ....151...88B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 6934",
+      "value": 15.72,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 6946",
+      "value": 6.72,
+      "unit": "Mpc",
+      "reference": "Tikhonov 2014, AstL 40, 537 · 2014AstL...40..537T · TRGB · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2014AstL...40..537T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 7006",
+      "value": 39.32,
+      "unit": "kpc",
+      "reference": "Baumgardt & Vasiliev 2021, MNRAS 505, 5957 · 2021MNRAS.505.5957B · via Baumgardt & Vasiliev table",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 7331",
+      "value": 15.1,
+      "unit": "Mpc",
+      "reference": "Saha et al. 2006, ApJS 165, 108 · 2006ApJS..165..108S · Cepheids · via NED-D",
+      "url": "https://ui.adsabs.harvard.edu/abs/2006ApJS..165..108S/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 7380",
+      "value": 2394,
+      "unit": "pc",
+      "reference": "Dias et al. 2021, MNRAS 504, 356 · 2021MNRAS.504..356D · Gaia parallax · via SIMBAD",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504..356D/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 7479",
+      "value": 31.3,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, Tully-Fisher, m-M = 32.475 ± 0.39 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    },
+    {
+      "id": "NGC 7814",
+      "value": 13.6,
+      "unit": "Mpc",
+      "reference": "Tully et al. 2023, ApJ 944, 94 · 2023ApJ...944...94T · Cosmicflows-4, TRGB, SBF and Tully-Fisher, m-M = 30.66 ± 0.08 · via VizieR J/ApJ/944/94",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944...94T/abstract",
+      "retrievedAt": "2026-10-14"
+    }
+  ]
+}

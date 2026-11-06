@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/device-connected.schema.json",
+  "title": "Astro Portal session event payload: device_connected",
+  "description": "The application opened its own link to a smart telescope in mode expérimental (the link a mount does not share). Read only: connecting never moves or commands the device. A smart telescope in mode simplifié is driven through the mount link and writes the `mount_*` events instead. Recorded by the application from the driver's own code path with the night's clock; every field but the ones marked required is optional, and a reader tolerates a payload without them. Private in a shared night. See session-events.md.",
+  "type": "object",
+  "properties": {
+    "family": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Optional: the smart telescope's family (`seestar`, `dwarf`, `vespera`, `origin`) when the device is one."
+    },
+    "model": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "description": "Optional: the model the device reported."
+    }
+  },
+  "additionalProperties": false
+}

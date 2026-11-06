@@ -1,0 +1,711 @@
+{
+  "contract": "place.schema.json",
+  "description": "What the phone writes for the places of a space: each `input` is a place as the phone's list keeps it (coordinates as the phone writes them, local fields such as `needsOnlineResolution` and `version`), with its note; `body` is the `PUT /v1/places/{placeId}` body the phone builds from it. The phone's tests check that its builder gives exactly `body`; the service's tests send `body` and `import` to the real routes in both identities and check the web reads back what was written. Synthetic data.",
+  "writes": [
+    {
+      "id": "place-full",
+      "description": "A place with every field the phone knows: chosen zone, traced horizon, linked to a known place, a sky value typed, a note.",
+      "input": {
+        "place": {
+          "id": "c0ffee00-0000-4000-8000-000000000001",
+          "name": "Col des Mélèzes",
+          "locality": "Hautes-Alpes",
+          "latitude": "45.3418",
+          "longitude": "6.4",
+          "elevation": "1450",
+          "timeZone": "Europe/Paris",
+          "timeZoneSource": "chosen",
+          "horizonStatus": "verified",
+          "horizonMask": {
+            "enabled": true,
+            "points": [
+              {
+                "azimuth": 0,
+                "altitude": 0
+              },
+              {
+                "azimuth": 10,
+                "altitude": 0
+              },
+              {
+                "azimuth": 20,
+                "altitude": 0
+              },
+              {
+                "azimuth": 30,
+                "altitude": 0
+              },
+              {
+                "azimuth": 40,
+                "altitude": 0
+              },
+              {
+                "azimuth": 50,
+                "altitude": 0
+              },
+              {
+                "azimuth": 60,
+                "altitude": 0
+              },
+              {
+                "azimuth": 70,
+                "altitude": 0
+              },
+              {
+                "azimuth": 80,
+                "altitude": 5
+              },
+              {
+                "azimuth": 90,
+                "altitude": 8
+              },
+              {
+                "azimuth": 100,
+                "altitude": 6
+              },
+              {
+                "azimuth": 110,
+                "altitude": 0
+              },
+              {
+                "azimuth": 120,
+                "altitude": 0
+              },
+              {
+                "azimuth": 130,
+                "altitude": 0
+              },
+              {
+                "azimuth": 140,
+                "altitude": 0
+              },
+              {
+                "azimuth": 150,
+                "altitude": 0
+              },
+              {
+                "azimuth": 160,
+                "altitude": 0
+              },
+              {
+                "azimuth": 170,
+                "altitude": 0
+              },
+              {
+                "azimuth": 180,
+                "altitude": 0
+              },
+              {
+                "azimuth": 190,
+                "altitude": 0
+              },
+              {
+                "azimuth": 200,
+                "altitude": 0
+              },
+              {
+                "azimuth": 210,
+                "altitude": 0
+              },
+              {
+                "azimuth": 220,
+                "altitude": 0
+              },
+              {
+                "azimuth": 230,
+                "altitude": 0
+              },
+              {
+                "azimuth": 240,
+                "altitude": 0
+              },
+              {
+                "azimuth": 250,
+                "altitude": 0
+              },
+              {
+                "azimuth": 260,
+                "altitude": 0
+              },
+              {
+                "azimuth": 270,
+                "altitude": 0
+              },
+              {
+                "azimuth": 280,
+                "altitude": 0
+              },
+              {
+                "azimuth": 290,
+                "altitude": 0
+              },
+              {
+                "azimuth": 300,
+                "altitude": 0
+              },
+              {
+                "azimuth": 310,
+                "altitude": 0
+              },
+              {
+                "azimuth": 320,
+                "altitude": 0
+              },
+              {
+                "azimuth": 330,
+                "altitude": 0
+              },
+              {
+                "azimuth": 340,
+                "altitude": 0
+              },
+              {
+                "azimuth": 350,
+                "altitude": 0
+              }
+            ]
+          },
+          "kind": "viewpoint",
+          "knownPlace": {
+            "source": "osm",
+            "id": "node/1234",
+            "type": "viewpoint",
+            "linkedAt": "2026-09-20T18:00:00.000Z"
+          },
+          "skyEntered": {
+            "sqm": 21.35,
+            "enteredAt": "2026-10-01T20:00:00.000Z"
+          },
+          "needsOnlineResolution": false,
+          "version": 1,
+          "editedAt": "2026-10-21T20:00:00.000Z"
+        },
+        "note": "Parking au pied du col, dix minutes à pied."
+      },
+      "body": {
+        "id": "c0ffee00-0000-4000-8000-000000000001",
+        "name": "Col des Mélèzes",
+        "locality": "Hautes-Alpes",
+        "latitude": 45.3418,
+        "longitude": 6.4,
+        "elevation": "1450",
+        "timeZone": "Europe/Paris",
+        "timeZoneSource": "chosen",
+        "horizonMask": {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 0
+            },
+            {
+              "azimuth": 10,
+              "altitude": 0
+            },
+            {
+              "azimuth": 20,
+              "altitude": 0
+            },
+            {
+              "azimuth": 30,
+              "altitude": 0
+            },
+            {
+              "azimuth": 40,
+              "altitude": 0
+            },
+            {
+              "azimuth": 50,
+              "altitude": 0
+            },
+            {
+              "azimuth": 60,
+              "altitude": 0
+            },
+            {
+              "azimuth": 70,
+              "altitude": 0
+            },
+            {
+              "azimuth": 80,
+              "altitude": 5
+            },
+            {
+              "azimuth": 90,
+              "altitude": 8
+            },
+            {
+              "azimuth": 100,
+              "altitude": 6
+            },
+            {
+              "azimuth": 110,
+              "altitude": 0
+            },
+            {
+              "azimuth": 120,
+              "altitude": 0
+            },
+            {
+              "azimuth": 130,
+              "altitude": 0
+            },
+            {
+              "azimuth": 140,
+              "altitude": 0
+            },
+            {
+              "azimuth": 150,
+              "altitude": 0
+            },
+            {
+              "azimuth": 160,
+              "altitude": 0
+            },
+            {
+              "azimuth": 170,
+              "altitude": 0
+            },
+            {
+              "azimuth": 180,
+              "altitude": 0
+            },
+            {
+              "azimuth": 190,
+              "altitude": 0
+            },
+            {
+              "azimuth": 200,
+              "altitude": 0
+            },
+            {
+              "azimuth": 210,
+              "altitude": 0
+            },
+            {
+              "azimuth": 220,
+              "altitude": 0
+            },
+            {
+              "azimuth": 230,
+              "altitude": 0
+            },
+            {
+              "azimuth": 240,
+              "altitude": 0
+            },
+            {
+              "azimuth": 250,
+              "altitude": 0
+            },
+            {
+              "azimuth": 260,
+              "altitude": 0
+            },
+            {
+              "azimuth": 270,
+              "altitude": 0
+            },
+            {
+              "azimuth": 280,
+              "altitude": 0
+            },
+            {
+              "azimuth": 290,
+              "altitude": 0
+            },
+            {
+              "azimuth": 300,
+              "altitude": 0
+            },
+            {
+              "azimuth": 310,
+              "altitude": 0
+            },
+            {
+              "azimuth": 320,
+              "altitude": 0
+            },
+            {
+              "azimuth": 330,
+              "altitude": 0
+            },
+            {
+              "azimuth": 340,
+              "altitude": 0
+            },
+            {
+              "azimuth": 350,
+              "altitude": 0
+            }
+          ]
+        },
+        "horizonStatus": "verified",
+        "skyEntered": {
+          "sqm": 21.35,
+          "enteredAt": "2026-10-01T20:00:00.000Z"
+        },
+        "kind": "viewpoint",
+        "knownPlace": {
+          "source": "osm",
+          "id": "node/1234",
+          "type": "viewpoint",
+          "linkedAt": "2026-09-20T18:00:00.000Z"
+        },
+        "note": "Parking au pied du col, dix minutes à pied.",
+        "editedAt": "2026-10-21T20:00:00.000Z"
+      }
+    },
+    {
+      "id": "place-bare",
+      "description": "A place with no zone, no horizon, no elevation: the service completes the zone from the position; the horizon is null.",
+      "input": {
+        "place": {
+          "id": "c0ffee00-0000-4000-8000-000000000002",
+          "name": "Jardin de la maison",
+          "latitude": 48.85,
+          "longitude": 2.35,
+          "horizonStatus": "unverified",
+          "version": 1,
+          "editedAt": "2026-10-21T21:00:00.000Z"
+        }
+      },
+      "body": {
+        "id": "c0ffee00-0000-4000-8000-000000000002",
+        "name": "Jardin de la maison",
+        "latitude": 48.85,
+        "longitude": 2.35,
+        "horizonMask": null,
+        "horizonStatus": "unverified",
+        "editedAt": "2026-10-21T21:00:00.000Z"
+      }
+    },
+    {
+      "id": "place-unnamed",
+      "description": "A place with no name takes its locality; a decimal elevation is kept as text.",
+      "input": {
+        "place": {
+          "id": "c0ffee00-0000-4000-8000-000000000003",
+          "name": "",
+          "locality": "Grotte de la Balme",
+          "latitude": 45.7,
+          "longitude": 5.6,
+          "elevation": "230.5",
+          "timeZone": "Europe/Paris",
+          "horizonStatus": "verified",
+          "horizonMask": {
+            "enabled": true,
+            "points": [
+              {
+                "azimuth": 0,
+                "altitude": 0
+              },
+              {
+                "azimuth": 10,
+                "altitude": 0
+              },
+              {
+                "azimuth": 20,
+                "altitude": 0
+              },
+              {
+                "azimuth": 30,
+                "altitude": 0
+              },
+              {
+                "azimuth": 40,
+                "altitude": 0
+              },
+              {
+                "azimuth": 50,
+                "altitude": 0
+              },
+              {
+                "azimuth": 60,
+                "altitude": 0
+              },
+              {
+                "azimuth": 70,
+                "altitude": 0
+              },
+              {
+                "azimuth": 80,
+                "altitude": 0
+              },
+              {
+                "azimuth": 90,
+                "altitude": 0
+              },
+              {
+                "azimuth": 100,
+                "altitude": 0
+              },
+              {
+                "azimuth": 110,
+                "altitude": 0
+              },
+              {
+                "azimuth": 120,
+                "altitude": 0
+              },
+              {
+                "azimuth": 130,
+                "altitude": 0
+              },
+              {
+                "azimuth": 140,
+                "altitude": 0
+              },
+              {
+                "azimuth": 150,
+                "altitude": 0
+              },
+              {
+                "azimuth": 160,
+                "altitude": 0
+              },
+              {
+                "azimuth": 170,
+                "altitude": 0
+              },
+              {
+                "azimuth": 180,
+                "altitude": 0
+              },
+              {
+                "azimuth": 190,
+                "altitude": 0
+              },
+              {
+                "azimuth": 200,
+                "altitude": 3
+              },
+              {
+                "azimuth": 210,
+                "altitude": 0
+              },
+              {
+                "azimuth": 220,
+                "altitude": 0
+              },
+              {
+                "azimuth": 230,
+                "altitude": 0
+              },
+              {
+                "azimuth": 240,
+                "altitude": 0
+              },
+              {
+                "azimuth": 250,
+                "altitude": 0
+              },
+              {
+                "azimuth": 260,
+                "altitude": 0
+              },
+              {
+                "azimuth": 270,
+                "altitude": 0
+              },
+              {
+                "azimuth": 280,
+                "altitude": 0
+              },
+              {
+                "azimuth": 290,
+                "altitude": 0
+              },
+              {
+                "azimuth": 300,
+                "altitude": 0
+              },
+              {
+                "azimuth": 310,
+                "altitude": 0
+              },
+              {
+                "azimuth": 320,
+                "altitude": 0
+              },
+              {
+                "azimuth": 330,
+                "altitude": 0
+              },
+              {
+                "azimuth": 340,
+                "altitude": 0
+              },
+              {
+                "azimuth": 350,
+                "altitude": 0
+              }
+            ]
+          },
+          "version": 1,
+          "editedAt": "2026-10-21T22:00:00.000Z"
+        }
+      },
+      "body": {
+        "id": "c0ffee00-0000-4000-8000-000000000003",
+        "name": "Grotte de la Balme",
+        "locality": "Grotte de la Balme",
+        "latitude": 45.7,
+        "longitude": 5.6,
+        "elevation": "230.5",
+        "timeZone": "Europe/Paris",
+        "horizonMask": {
+          "enabled": true,
+          "points": [
+            {
+              "azimuth": 0,
+              "altitude": 0
+            },
+            {
+              "azimuth": 10,
+              "altitude": 0
+            },
+            {
+              "azimuth": 20,
+              "altitude": 0
+            },
+            {
+              "azimuth": 30,
+              "altitude": 0
+            },
+            {
+              "azimuth": 40,
+              "altitude": 0
+            },
+            {
+              "azimuth": 50,
+              "altitude": 0
+            },
+            {
+              "azimuth": 60,
+              "altitude": 0
+            },
+            {
+              "azimuth": 70,
+              "altitude": 0
+            },
+            {
+              "azimuth": 80,
+              "altitude": 0
+            },
+            {
+              "azimuth": 90,
+              "altitude": 0
+            },
+            {
+              "azimuth": 100,
+              "altitude": 0
+            },
+            {
+              "azimuth": 110,
+              "altitude": 0
+            },
+            {
+              "azimuth": 120,
+              "altitude": 0
+            },
+            {
+              "azimuth": 130,
+              "altitude": 0
+            },
+            {
+              "azimuth": 140,
+              "altitude": 0
+            },
+            {
+              "azimuth": 150,
+              "altitude": 0
+            },
+            {
+              "azimuth": 160,
+              "altitude": 0
+            },
+            {
+              "azimuth": 170,
+              "altitude": 0
+            },
+            {
+              "azimuth": 180,
+              "altitude": 0
+            },
+            {
+              "azimuth": 190,
+              "altitude": 0
+            },
+            {
+              "azimuth": 200,
+              "altitude": 3
+            },
+            {
+              "azimuth": 210,
+              "altitude": 0
+            },
+            {
+              "azimuth": 220,
+              "altitude": 0
+            },
+            {
+              "azimuth": 230,
+              "altitude": 0
+            },
+            {
+              "azimuth": 240,
+              "altitude": 0
+            },
+            {
+              "azimuth": 250,
+              "altitude": 0
+            },
+            {
+              "azimuth": 260,
+              "altitude": 0
+            },
+            {
+              "azimuth": 270,
+              "altitude": 0
+            },
+            {
+              "azimuth": 280,
+              "altitude": 0
+            },
+            {
+              "azimuth": 290,
+              "altitude": 0
+            },
+            {
+              "azimuth": 300,
+              "altitude": 0
+            },
+            {
+              "azimuth": 310,
+              "altitude": 0
+            },
+            {
+              "azimuth": 320,
+              "altitude": 0
+            },
+            {
+              "azimuth": 330,
+              "altitude": 0
+            },
+            {
+              "azimuth": 340,
+              "altitude": 0
+            },
+            {
+              "azimuth": 350,
+              "altitude": 0
+            }
+          ]
+        },
+        "horizonStatus": "verified",
+        "editedAt": "2026-10-21T22:00:00.000Z"
+      }
+    }
+  ]
+}

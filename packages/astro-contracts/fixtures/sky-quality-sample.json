@@ -1,0 +1,107 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "cellSizeDegrees": 90,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40],
+          "height": 2,
+          "north": 90,
+          "west": -180,
+          "width": 4
+        },
+        45,
+        -135
+      ],
+      "id": "cell-centre-returns-the-cell",
+      "result": 0
+    },
+    {
+      "args": [
+        {
+          "cellSizeDegrees": 90,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40],
+          "height": 2,
+          "north": 90,
+          "west": -180,
+          "width": 4
+        },
+        45,
+        -90
+      ],
+      "id": "halfway-between-two-columns",
+      "result": 0.10201019032433842
+    },
+    {
+      "args": [
+        {
+          "cellSizeDegrees": 90,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40],
+          "height": 2,
+          "north": 90,
+          "west": -180,
+          "width": 4
+        },
+        0,
+        -135
+      ],
+      "id": "halfway-between-two-rows",
+      "result": 0.003069629932336646
+    },
+    {
+      "args": [
+        {
+          "cellSizeDegrees": 90,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40],
+          "height": 2,
+          "north": 90,
+          "west": -180,
+          "width": 4
+        },
+        45,
+        180
+      ],
+      "id": "longitude-wraps-across-the-antimeridian",
+      "result": 999.9999999999993
+    },
+    {
+      "args": [
+        {
+          "cellSizeDegrees": 90,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40],
+          "height": 2,
+          "north": 90,
+          "west": -180,
+          "width": 4
+        },
+        90,
+        -135
+      ],
+      "id": "north-pole-clamps-to-the-first-row",
+      "result": 0
+    },
+    {
+      "args": [
+        {
+          "cellSizeDegrees": 90,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40],
+          "height": 2,
+          "north": 90,
+          "west": -180,
+          "width": 4
+        },
+        0,
+        181
+      ],
+      "id": "out-of-range-longitude",
+      "result": null
+    },
+    {
+      "args": [{ "cellSizeDegrees": 0, "height": 0, "width": 0 }, 0, 0],
+      "id": "malformed-grid",
+      "result": null
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "sky-quality-sample"
+}

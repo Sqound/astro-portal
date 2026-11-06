@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/guiding-spikes.schema.json",
+  "title": "Astro Portal session event payload: guiding_spikes",
+  "description": "A group of guiding spikes (an error beyond the threshold outside a dither settle) found by Astro Sync in the guiding log: `count` of them, up to `maxArcSeconds` (arcseconds), from `firstAt` to `lastAt`. One event per group, like guiding_timeouts. The instant of the event is its `recordedAt`, the first spike. See session-events.md.",
+  "type": "object",
+  "required": ["count", "maxArcSeconds", "firstAt", "lastAt"],
+  "properties": {
+    "count": { "type": "integer", "minimum": 1, "maximum": 100000 },
+    "maxArcSeconds": { "type": "number", "minimum": 0, "maximum": 3600 },
+    "firstAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{1,9})?(Z|[+-][0-9]{2}:[0-9]{2})$"
+    },
+    "lastAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{1,9})?(Z|[+-][0-9]{2}:[0-9]{2})$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300,
+      "description": "Optional sentence for an application that does not know this type: it shows it as an ordinary report. The applications that know the type compose their own sentence, in the person's language, from the structured fields."
+    }
+  },
+  "additionalProperties": false
+}

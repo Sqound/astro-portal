@@ -1,0 +1,566 @@
+{
+  "module": "suggestion-malus",
+  "package": "planner",
+  "file": "suggestion-ranking",
+  "export": "suggestionMalus",
+  "cases": [
+    {
+      "id": "photo-done-30-days-tonight-much-better-comes-back",
+      "args": [
+        {
+          "row": {
+            "date": "2026-09-12",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 45
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 85
+        }
+      ]
+    },
+    {
+      "id": "photo-done-30-days-good-sky-goes-down-clearly",
+      "args": [
+        {
+          "row": {
+            "date": "2026-09-12",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 82
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 85
+        }
+      ]
+    },
+    {
+      "id": "visual-observed-180-days-almost-nothing",
+      "args": [
+        {
+          "row": {
+            "date": "2026-04-15",
+            "outcome": "observed",
+            "mode": "visual",
+            "acquiredMinutes": 25,
+            "noteThen": 70
+          },
+          "mode": "visual",
+          "date": "2026-10-12",
+          "noteNow": 70
+        }
+      ]
+    },
+    {
+      "id": "maximum-forty-done-in-full-the-same-day-as-good",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 180,
+            "noteThen": 70
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 70
+        }
+      ]
+    },
+    {
+      "id": "minimum-zero-nothing-acquired",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-02",
+            "outcome": "partial",
+            "acquiredMinutes": 0,
+            "noteThen": 50
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 50
+        }
+      ]
+    },
+    {
+      "id": "age-30-days-no-notes",
+      "args": [
+        {
+          "row": {
+            "date": "2026-09-12",
+            "outcome": "done",
+            "acquiredMinutes": 120
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "age-90-days-no-notes",
+      "args": [
+        {
+          "row": {
+            "date": "2026-07-14",
+            "outcome": "done",
+            "acquiredMinutes": 120
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "age-270-days-the-half-life",
+      "args": [
+        {
+          "row": {
+            "date": "2026-01-15",
+            "outcome": "done",
+            "acquiredMinutes": 120
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "done-a-quarter-of-the-reference",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 30
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "done-half-of-the-reference",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 60
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "lift-none-same-note",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 40
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 40
+        }
+      ]
+    },
+    {
+      "id": "lift-half-fifteen-points-better",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 40
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 55
+        }
+      ]
+    },
+    {
+      "id": "lift-whole-thirty-points-better",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 40
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 70
+        }
+      ]
+    },
+    {
+      "id": "lift-more-than-thirty-points-stays-whole",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 10
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 95
+        }
+      ]
+    },
+    {
+      "id": "partial-counts-at-what-was-done-of-the-plan",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "partial",
+            "acquiredMinutes": 45,
+            "plannedMinutes": 180
+          },
+          "mode": "photo",
+          "date": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": "unknown-reference-counted-complete",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 90
+          },
+          "mode": "photo",
+          "date": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": "reference-the-plan-when-no-recommendation",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 60,
+            "plannedMinutes": 120
+          },
+          "mode": "photo",
+          "date": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": "reference-the-recommendation-before-the-plan",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 60,
+            "plannedMinutes": 240
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "reference-zero-recommendation-falls-back-to-the-plan",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 60,
+            "plannedMinutes": 120
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 0
+        }
+      ]
+    },
+    {
+      "id": "unknown-note-then-lifts-nothing",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 120
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 85
+        }
+      ]
+    },
+    {
+      "id": "unknown-note-now-lifts-nothing",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 45
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "tonight-worse-lifts-nothing",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 80
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 60
+        }
+      ]
+    },
+    {
+      "id": "good-sky-then-caps-the-lift-at-half",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 64
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 100
+        }
+      ]
+    },
+    {
+      "id": "just-under-the-good-bound-lifts-all",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-12",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 63
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 100
+        }
+      ]
+    },
+    {
+      "id": "photo-forgotten-after-three-years",
+      "args": [
+        {
+          "row": {
+            "date": "2023-06-30",
+            "outcome": "done",
+            "acquiredMinutes": 120
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "photo-just-before-forgotten",
+      "args": [
+        {
+          "row": {
+            "date": "2023-10-08",
+            "outcome": "done",
+            "acquiredMinutes": 120
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "visual-forgotten-after-six-months",
+      "args": [
+        {
+          "row": {
+            "date": "2026-03-26",
+            "outcome": "observed",
+            "mode": "visual",
+            "acquiredMinutes": 40
+          },
+          "mode": "visual",
+          "date": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": "visual-just-before-forgotten",
+      "args": [
+        {
+          "row": {
+            "date": "2026-04-05",
+            "outcome": "observed",
+            "mode": "visual",
+            "acquiredMinutes": 40
+          },
+          "mode": "visual",
+          "date": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": "same-age-photo-request",
+      "args": [
+        {
+          "row": {
+            "date": "2026-07-14",
+            "outcome": "done",
+            "acquiredMinutes": 120
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "same-age-visual-request",
+      "args": [
+        {
+          "row": {
+            "date": "2026-07-14",
+            "outcome": "done",
+            "acquiredMinutes": 120
+          },
+          "mode": "visual",
+          "date": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "id": "visual-row-in-a-photo-request-counts-from-twenty-minutes",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-02",
+            "outcome": "done",
+            "mode": "visual",
+            "acquiredMinutes": 30
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "row-dated-after-the-night-has-no-age",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-20",
+            "outcome": "done",
+            "acquiredMinutes": 120
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": "sky-then-worse-by-eight-points",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-07",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 60
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 68
+        }
+      ]
+    },
+    {
+      "id": "sky-then-comparable-by-seven-points",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-07",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 60
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 67
+        }
+      ]
+    },
+    {
+      "id": "sky-then-better-by-eight-points",
+      "args": [
+        {
+          "row": {
+            "date": "2026-10-07",
+            "outcome": "done",
+            "acquiredMinutes": 120,
+            "noteThen": 75
+          },
+          "mode": "photo",
+          "date": "2026-10-12",
+          "recommendedMinutes": 120,
+          "noteNow": 67
+        }
+      ]
+    }
+  ]
+}

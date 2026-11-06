@@ -1,0 +1,102 @@
+{
+  "module": "sky-quality-sample",
+  "package": "portal",
+  "file": "sky-quality",
+  "export": "sampleSkyQualityRadiance",
+  "cases": [
+    {
+      "id": "cell-centre-returns-the-cell",
+      "args": [
+        {
+          "width": 4,
+          "height": 2,
+          "cellSizeDegrees": 90,
+          "north": 90,
+          "west": -180,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40]
+        },
+        45,
+        -135
+      ]
+    },
+    {
+      "id": "halfway-between-two-columns",
+      "args": [
+        {
+          "width": 4,
+          "height": 2,
+          "cellSizeDegrees": 90,
+          "north": 90,
+          "west": -180,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40]
+        },
+        45,
+        -90
+      ]
+    },
+    {
+      "id": "halfway-between-two-rows",
+      "args": [
+        {
+          "width": 4,
+          "height": 2,
+          "cellSizeDegrees": 90,
+          "north": 90,
+          "west": -180,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40]
+        },
+        0,
+        -135
+      ]
+    },
+    {
+      "id": "longitude-wraps-across-the-antimeridian",
+      "args": [
+        {
+          "width": 4,
+          "height": 2,
+          "cellSizeDegrees": 90,
+          "north": 90,
+          "west": -180,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40]
+        },
+        45,
+        180
+      ]
+    },
+    {
+      "id": "north-pole-clamps-to-the-first-row",
+      "args": [
+        {
+          "width": 4,
+          "height": 2,
+          "cellSizeDegrees": 90,
+          "north": 90,
+          "west": -180,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40]
+        },
+        90,
+        -135
+      ]
+    },
+    {
+      "id": "out-of-range-longitude",
+      "args": [
+        {
+          "width": 4,
+          "height": 2,
+          "cellSizeDegrees": 90,
+          "north": 90,
+          "west": -180,
+          "data": [0, 64, 128, 255, 10, 20, 30, 40]
+        },
+        0,
+        181
+      ]
+    },
+    {
+      "id": "malformed-grid",
+      "args": [{ "width": 0, "height": 0, "cellSizeDegrees": 0 }, 0, 0]
+    }
+  ]
+}

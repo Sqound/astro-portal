@@ -1,0 +1,11 @@
+{
+  "module": "abell-diameter",
+  "file": "abell-catalogue",
+  "export": "parseStrasbourgPnDiameter",
+  "cases": [
+    {
+      "id": "arcseconds-to-arcminutes",
+      "args": ["047.0+42.4 |  174.   71..9065"]
+    }
+  ]
+}

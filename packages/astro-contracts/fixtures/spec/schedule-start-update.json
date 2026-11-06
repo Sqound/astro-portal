@@ -1,0 +1,172 @@
+{
+  "module": "schedule-start-update",
+  "package": "planner",
+  "file": "schedule",
+  "export": "scheduleStartUpdate",
+  "cases": [
+    {
+      "id": "resize-clamped-to-minimum-duration",
+      "args": [
+        {
+          "value": 100,
+          "itemId": "cur",
+          "schedule": [],
+          "window": {
+            "start": 0,
+            "end": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "overlapping-start-changes-the-start-only",
+      "args": [
+        {
+          "value": 140,
+          "itemId": "cur",
+          "schedule": [
+            {
+              "item": {
+                "id": "other"
+              },
+              "window": {
+                "start": 20,
+                "end": 150
+              }
+            }
+          ],
+          "window": {
+            "start": 120,
+            "end": 200
+          }
+        }
+      ]
+    },
+    {
+      "id": "late-target-start-moves-right-up-to-end-less-minimum",
+      "args": [
+        {
+          "value": 490,
+          "itemId": "cur",
+          "schedule": [
+            {
+              "item": {
+                "id": "other"
+              },
+              "window": {
+                "start": 300,
+                "end": 440
+              }
+            }
+          ],
+          "window": {
+            "start": 420,
+            "end": 480
+          }
+        }
+      ]
+    },
+    {
+      "id": "late-target-start-moves-left-alone",
+      "args": [
+        {
+          "value": 380,
+          "itemId": "cur",
+          "schedule": [
+            {
+              "item": {
+                "id": "other"
+              },
+              "window": {
+                "start": 300,
+                "end": 440
+              }
+            }
+          ],
+          "window": {
+            "start": 420,
+            "end": 480
+          }
+        }
+      ]
+    },
+    {
+      "id": "start-clamped-to-night-start",
+      "args": [
+        {
+          "value": -30,
+          "itemId": "cur",
+          "schedule": [],
+          "window": {
+            "start": 40,
+            "end": 100
+          }
+        }
+      ]
+    },
+    {
+      "id": "snaps-to-neighboring-edge",
+      "args": [
+        {
+          "value": 128,
+          "itemId": "cur",
+          "schedule": [
+            {
+              "item": {
+                "id": "other"
+              },
+              "window": {
+                "start": 20,
+                "end": 130
+              }
+            }
+          ],
+          "window": {
+            "start": 50,
+            "end": 200
+          }
+        }
+      ]
+    },
+    {
+      "id": "no-snap-beyond-threshold",
+      "args": [
+        {
+          "value": 100,
+          "itemId": "cur",
+          "schedule": [
+            {
+              "item": {
+                "id": "other"
+              },
+              "window": {
+                "start": 20,
+                "end": 130
+              }
+            }
+          ],
+          "window": {
+            "start": 50,
+            "end": 200
+          }
+        }
+      ]
+    },
+    {
+      "id": "custom-snap-and-minimum-duration",
+      "args": [
+        {
+          "value": 45,
+          "itemId": "cur",
+          "schedule": [],
+          "window": {
+            "start": 0,
+            "end": 50
+          },
+          "snapMinutes": 15,
+          "minimumDuration": 10
+        }
+      ]
+    }
+  ]
+}

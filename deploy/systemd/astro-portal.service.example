@@ -1,0 +1,29 @@
+# Astro Portal as a systemd service
+# (docs/SELF_HOSTING.md, « Linux with systemd »). /srv/astro-portal is the
+# deployment root of `npm run deploy:release` (ASTRO_PORTAL_PRIVATE_ROOT);
+# the settings, the sign-in key among them, are in an environment file
+# readable by root alone (chmod 600).
+[Unit]
+Description=Astro Portal
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=astroportal
+Group=astroportal
+WorkingDirectory=/srv/astro-portal/current
+Environment=NODE_ENV=production
+EnvironmentFile=/etc/astro-portal.env
+ExecStart=/usr/bin/node /srv/astro-portal/current/apps/portal-oss/server.mjs
+# The service stops cleanly on SIGTERM: the requests in flight finish.
+KillSignal=SIGTERM
+TimeoutStopSec=15
+Restart=on-failure
+PrivateTmp=true
+NoNewPrivileges=true
+ProtectSystem=full
+ReadWritePaths=/srv/astro-portal
+
+[Install]
+WantedBy=multi-user.target

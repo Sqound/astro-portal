@@ -1,0 +1,16 @@
+{
+  "cases": [
+    { "args": [0], "id": "level-zero-is-exactly-zero", "result": 0 },
+    { "args": [128], "id": "mid-level", "result": 4.570472333300453 },
+    {
+      "args": [255],
+      "id": "top-level-is-the-maximum",
+      "result": 1999.9999999999986
+    },
+    { "args": [256], "id": "above-the-top-level", "result": null },
+    { "args": [-1], "id": "negative-level", "result": null },
+    { "args": [12.5], "id": "fractional-level", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "sky-quality-decode"
+}

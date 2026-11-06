@@ -1,0 +1,245 @@
+{
+  "description": "The phone's list, the most recent first (`order=recent`): each capture with its title, the summary of its lines, its revision, its thumbnail flag, its targets; the image of a plan with its plan.",
+  "exchange": "list",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The four captures of Camille.",
+  "request": { "method": "GET", "path": "/api/v1/captures?order=recent" },
+  "response": {
+    "body": {
+      "captures": [
+        {
+          "acquisitionSummary": {
+            "exposureSeconds": null,
+            "frameCount": 40,
+            "integrationSeconds": 12600,
+            "lineCount": 2
+          },
+          "byteSize": 100,
+          "checks": {
+            "automatic": null,
+            "automaticAt": null,
+            "protectionLiftedAt": null,
+            "protectionNoticeAt": null,
+            "removedFromGalleryAt": null,
+            "reviewRequestedAt": null,
+            "team": null,
+            "teamAt": null,
+            "teamReason": null
+          },
+          "createdAt": "2026-10-14T08:20:00.000Z",
+          "galleryLabel": "Grand champ",
+          "height": null,
+          "id": "00000000-0000-4000-8000-00000000001d",
+          "imageCount": 1,
+          "mainImageId": "00000000-0000-4000-8000-00000000001e",
+          "mainImageSource": "astro-sync",
+          "nightDate": null,
+          "originalName": "m31-plan.jpg",
+          "plan": {
+            "combinedNightIds": [
+              "00000000-0000-4000-8000-000000000011",
+              "00000000-0000-4000-8000-000000000013"
+            ],
+            "render": "dualband",
+            "totalsByFilter": [
+              { "filter": "Dual-band", "frameCount": 40, "totalSeconds": 7200 }
+            ]
+          },
+          "planId": null,
+          "projectId": "00000000-0000-4000-8000-00000000000f",
+          "protectionLiftsAt": null,
+          "replacedAt": null,
+          "replacedSource": null,
+          "revision": 2,
+          "sessionId": null,
+          "sha256": "99a652584497d16864293aaf5173196d6ee4a9971346cd01d5323bc7d6de3b51",
+          "skySolved": false,
+          "stage": "draft",
+          "status": "uploaded",
+          "tags": [],
+          "targetIds": [],
+          "targets": [],
+          "thumbnail": false,
+          "title": null,
+          "visibility": "private",
+          "visibilityEditable": false,
+          "width": null
+        },
+        {
+          "acquisitionSummary": null,
+          "byteSize": 100,
+          "checks": {
+            "automatic": null,
+            "automaticAt": null,
+            "protectionLiftedAt": null,
+            "protectionNoticeAt": null,
+            "removedFromGalleryAt": null,
+            "reviewRequestedAt": null,
+            "team": null,
+            "teamAt": null,
+            "teamReason": null
+          },
+          "createdAt": "2026-10-14T08:10:00.000Z",
+          "galleryLabel": null,
+          "height": null,
+          "id": "00000000-0000-4000-8000-00000000001b",
+          "imageCount": 1,
+          "mainImageId": "00000000-0000-4000-8000-00000000001c",
+          "mainImageSource": "phone",
+          "nightDate": "2026-10-06",
+          "originalName": "m31-intermediate.jpg",
+          "planId": null,
+          "protectionLiftsAt": null,
+          "replacedAt": null,
+          "replacedSource": null,
+          "revision": 1,
+          "sessionId": "00000000-0000-4000-8000-000000000011",
+          "sha256": "d9c3bb2c410a22ffa41248bfc27f0aae2165337b687c5de496db3f8d0b87edbe",
+          "skySolved": false,
+          "stage": "draft",
+          "status": "uploaded",
+          "tags": [],
+          "targetIds": ["m31"],
+          "targets": [
+            {
+              "aliases": [],
+              "decDegrees": null,
+              "designation": "M 31",
+              "id": "m31",
+              "raHours": null,
+              "source": "catalogue",
+              "type": null
+            }
+          ],
+          "thumbnail": false,
+          "title": null,
+          "visibility": "private",
+          "visibilityEditable": false,
+          "width": null
+        },
+        {
+          "acquisitionSummary": null,
+          "byteSize": 100,
+          "checks": {
+            "automatic": null,
+            "automaticAt": null,
+            "protectionLiftedAt": null,
+            "protectionNoticeAt": null,
+            "removedFromGalleryAt": null,
+            "reviewRequestedAt": null,
+            "team": null,
+            "teamAt": null,
+            "teamReason": null
+          },
+          "createdAt": "2026-10-14T08:30:00.000Z",
+          "galleryLabel": null,
+          "height": null,
+          "id": "00000000-0000-4000-8000-000000000020",
+          "imageCount": 1,
+          "mainImageId": "00000000-0000-4000-8000-000000000021",
+          "mainImageSource": "phone",
+          "nightDate": "2026-10-05",
+          "originalName": "ic1396.jpg",
+          "planId": null,
+          "protectionLiftsAt": null,
+          "replacedAt": null,
+          "replacedSource": null,
+          "revision": 1,
+          "sessionId": "00000000-0000-4000-8000-00000000000b",
+          "sha256": "f1151f2505c5baac72894470b7459deb5c87f36086683ae09adb08cae52d8512",
+          "skySolved": false,
+          "stage": "draft",
+          "status": "uploaded",
+          "tags": [],
+          "targetIds": ["ic1396"],
+          "targets": [
+            {
+              "aliases": [],
+              "decDegrees": null,
+              "designation": "IC 1396",
+              "id": "ic1396",
+              "raHours": null,
+              "source": "catalogue",
+              "type": null
+            }
+          ],
+          "thumbnail": false,
+          "title": null,
+          "visibility": "private",
+          "visibilityEditable": false,
+          "width": null
+        },
+        {
+          "acquisitionSummary": {
+            "exposureSeconds": null,
+            "frameCount": 58,
+            "integrationSeconds": 9240,
+            "lineCount": 2
+          },
+          "byteSize": 100,
+          "checks": {
+            "automatic": null,
+            "automaticAt": null,
+            "protectionLiftedAt": null,
+            "protectionNoticeAt": null,
+            "removedFromGalleryAt": null,
+            "reviewRequestedAt": null,
+            "team": null,
+            "teamAt": null,
+            "teamReason": null
+          },
+          "createdAt": "2026-10-14T08:00:00.000Z",
+          "galleryLabel": null,
+          "height": null,
+          "id": "00000000-0000-4000-8000-000000000016",
+          "imageCount": 1,
+          "mainImageId": "00000000-0000-4000-8000-000000000017",
+          "mainImageSource": "astro-sync",
+          "nightDate": "2026-10-05",
+          "originalName": "m31-stack.jpg",
+          "planId": null,
+          "protectionLiftsAt": null,
+          "replacedAt": null,
+          "replacedSource": null,
+          "revision": 4,
+          "sessionId": "00000000-0000-4000-8000-00000000000b",
+          "sha256": "b688ca32282bf7916b51965734fcaf3984622e482538ac39652b8db43cac618b",
+          "skySolved": false,
+          "stage": "draft",
+          "status": "uploaded",
+          "tags": [],
+          "targetIds": ["m31"],
+          "targets": [
+            {
+              "aliases": [],
+              "decDegrees": null,
+              "designation": "M 31",
+              "id": "m31",
+              "raHours": null,
+              "source": "catalogue",
+              "type": null
+            }
+          ],
+          "thumbnail": false,
+          "title": "M31, deux filtres",
+          "visibility": "private",
+          "visibilityEditable": false,
+          "width": null
+        }
+      ],
+      "hasMore": false,
+      "nextBefore": null,
+      "nextSince": null,
+      "publishingBlocked": false,
+      "storage": {
+        "captureCount": 4,
+        "captureCountLimit": 9007199254740991,
+        "maxFileBytes": 9007199254740991,
+        "quotaBytes": 9007199254740991,
+        "usedBytes": 400
+      }
+    },
+    "schema": "capture.schema.json#/$defs/list",
+    "status": 200
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "timeZone": "Europe/Paris" }
+      ],
+      "id": "complete",
+      "result": null
+    },
+    {
+      "args": [{ "latitude": 48.8566, "longitude": 2.3522 }],
+      "id": "no-zone",
+      "result": "timeZone"
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "timeZone": "Not/AZone" }
+      ],
+      "id": "unknown-zone",
+      "result": "timeZone"
+    },
+    {
+      "args": [{ "latitude": 48.8566, "longitude": 2.3522, "timeZone": "" }],
+      "id": "empty-zone",
+      "result": "timeZone"
+    },
+    {
+      "args": [{ "timeZone": "Europe/Paris" }],
+      "id": "no-coordinates",
+      "result": "coordinates"
+    },
+    { "args": [null], "id": "nothing", "result": "coordinates" }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "place-time-zone-save-block"
+}

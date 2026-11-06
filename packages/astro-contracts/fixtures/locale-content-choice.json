@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "args": [["en", "fr", "ja"], "fr"],
+      "id": "the-locale-asked-for-has-content",
+      "result": { "fallback": false, "locale": "fr" }
+    },
+    {
+      "args": [["en", "fr", "ja"], "de"],
+      "id": "a-locale-without-content-reads-english-flagged-as-fallback",
+      "result": { "fallback": true, "locale": "en" }
+    },
+    {
+      "args": [["en", "fr", "ja"], "en-XA"],
+      "id": "a-test-registered-pseudo-locale-reads-english-flagged",
+      "result": { "fallback": true, "locale": "en" }
+    },
+    {
+      "args": [["en", "zh-Hans"], "zh-Hant"],
+      "id": "a-script-variant-is-not-the-other-script",
+      "result": { "fallback": true, "locale": "en" }
+    },
+    {
+      "args": [["fr", "ja"], "de"],
+      "id": "without-english-the-first-available-flagged",
+      "result": { "fallback": true, "locale": "fr" }
+    },
+    {
+      "args": [["fr", "ja"], "de", "ja"],
+      "id": "an-explicit-base-locale",
+      "result": { "fallback": true, "locale": "ja" }
+    },
+    {
+      "args": [[], "fr"],
+      "id": "nothing-available-nothing-shown",
+      "result": { "fallback": false, "locale": null }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "locale-content-choice"
+}

@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "args": [{ "latitude": 48.8566, "longitude": 2.3522 }],
+      "id": "paris",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "timeZone": "Europe/Paris",
+        "timeZones": ["Europe/Paris"]
+      }
+    },
+    {
+      "args": [{ "latitude": 40.7128, "longitude": -74.006 }],
+      "id": "new-york",
+      "result": {
+        "latitude": 40.7128,
+        "longitude": -74.006,
+        "timeZone": "America/New_York",
+        "timeZones": ["America/New_York"]
+      }
+    },
+    {
+      "args": [{ "latitude": 0, "longitude": 0 }],
+      "id": "null-island",
+      "result": {
+        "latitude": 0,
+        "longitude": 0,
+        "timeZone": "Etc/GMT",
+        "timeZones": ["Etc/GMT"]
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "place-resolution-timezone"
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/export/data-export-sky-measurements.schema.json",
+  "title": "Data export — sky-measurements.json",
+  "description": "« Fond de ciel mesuré »: the measured sky backgrounds of the places, by place, newest night first — place-sky-measure.schema.json's `list` (`placeId`, `measures`).",
+  "type": "object",
+  "required": ["formatVersion", "part", "exportedAt", "places"],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "part": {
+      "const": "sky-measurements"
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "places": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["placeId", "measures"],
+        "properties": {
+          "placeId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "measures": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["night", "sqm"],
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

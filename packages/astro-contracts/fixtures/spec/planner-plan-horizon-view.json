@@ -1,0 +1,105 @@
+{
+  "module": "planner-plan-horizon-view",
+  "package": "portal",
+  "file": "planner/state",
+  "export": "normalizePlanHorizonView",
+  "cases": [
+    {
+      "id": "an-absent-sub-state-is-the-positions-mode",
+      "args": [null]
+    },
+    {
+      "id": "the-path-mode-keeps-its-target",
+      "args": [
+        {
+          "projection": "linear",
+          "mode": "path",
+          "pathTargetId": "m31"
+        }
+      ]
+    },
+    {
+      "id": "an-unknown-mode-reads-as-positions",
+      "args": [
+        {
+          "mode": "trail",
+          "pathTargetId": "m33",
+          "showLabels": true
+        }
+      ]
+    },
+    {
+      "id": "a-target-id-that-is-not-a-string-is-null",
+      "args": [
+        {
+          "mode": "path",
+          "pathTargetId": 42
+        }
+      ]
+    },
+    {
+      "id": "an-empty-target-id-is-null",
+      "args": [
+        {
+          "mode": "path",
+          "pathTargetId": ""
+        }
+      ]
+    },
+    {
+      "id": "other-keys-pass-through",
+      "args": [
+        {
+          "rotation": -45,
+          "sampleIndex": 12,
+          "extra": {
+            "kept": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-light-pollution-layer-switched-on-keeps-the-mask",
+      "args": [
+        {
+          "layers": {
+            "lightPollution": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-mask-switched-off-stays-off",
+      "args": [
+        {
+          "projection": "linear",
+          "layers": {
+            "mask": false,
+            "lightPollution": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "layers-that-are-not-booleans-read-as-the-defaults",
+      "args": [
+        {
+          "layers": {
+            "mask": "no",
+            "lightPollution": 1,
+            "future": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "layers-that-are-not-an-object-read-as-the-defaults",
+      "args": [
+        {
+          "mode": "path",
+          "layers": ["mask"]
+        }
+      ]
+    }
+  ]
+}

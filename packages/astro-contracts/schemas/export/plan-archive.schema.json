@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/export/plan-archive.schema.json",
+  "title": "Astro Portal plan archive envelope",
+  "description": "The portable single-plan export envelope written by the web planner's JSON export. `format` and `version` are literal today; a future incompatible shape must bump `version` rather than reuse it, so a reader that only understands version 1 can refuse a later one instead of misreading it.",
+  "type": "object",
+  "required": ["format", "version", "exportedAt", "plan"],
+  "properties": {
+    "format": { "const": "astro-portal-observation-plan" },
+    "version": { "const": 1 },
+    "exportedAt": { "type": "string", "format": "date-time" },
+    "plan": { "type": "object", "required": ["id", "date", "name", "items"] }
+  },
+  "additionalProperties": false
+}

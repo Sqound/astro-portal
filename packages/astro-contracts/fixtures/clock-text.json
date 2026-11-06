@@ -1,0 +1,29 @@
+{
+  "cases": [
+    { "args": [1791321180000, 0], "id": "evening-utc", "result": "21:13" },
+    { "args": [1791288780000, 540], "id": "evening-tokyo", "result": "21:13" },
+    {
+      "args": [1791335400000, 0],
+      "id": "after-midnight-padded",
+      "result": "01:10"
+    },
+    {
+      "args": [1791335400000, -300],
+      "id": "crosses-midnight-west",
+      "result": "20:10"
+    },
+    {
+      "args": [1791321180000, 270],
+      "id": "crosses-midnight-east",
+      "result": "01:43"
+    },
+    {
+      "args": [1791321180000, null],
+      "id": "no-zone-reads-utc",
+      "result": "21:13"
+    },
+    { "args": [null, 0], "id": "unreadable-instant", "result": "—" }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "clock-text"
+}

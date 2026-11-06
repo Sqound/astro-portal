@@ -1,0 +1,684 @@
+{
+  "module": "target-night-facts",
+  "package": "planner",
+  "file": "target-night-facts",
+  "export": "targetNightFacts",
+  "cases": [
+    {
+      "id": "culminates-high-in-the-evening",
+      "args": [
+        {
+          "target": {
+            "id": "m31",
+            "coordinate": {
+              "ra": 10.6847,
+              "dec": 41.2688
+            }
+          },
+          "place": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "date": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "circumpolar-never-sets",
+      "args": [
+        {
+          "target": {
+            "id": "polaris",
+            "coordinate": {
+              "ra": 37.95,
+              "dec": 89.26
+            }
+          },
+          "place": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "date": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "never-reaches-thirty",
+      "args": [
+        {
+          "target": {
+            "id": "fomalhaut",
+            "coordinate": {
+              "ra": 344.41,
+              "dec": -29.62
+            }
+          },
+          "place": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "date": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "hidden-by-the-mask-all-night",
+      "args": [
+        {
+          "target": {
+            "id": "m1",
+            "coordinate": {
+              "ra": 83.63,
+              "dec": 22.01
+            }
+          },
+          "place": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC",
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                {
+                  "azimuth": 0,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 10,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 20,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 30,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 40,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 50,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 60,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 70,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 80,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 90,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 100,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 110,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 120,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 130,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 140,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 150,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 160,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 170,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 180,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 190,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 200,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 210,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 220,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 230,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 240,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 250,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 260,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 270,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 280,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 290,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 300,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 310,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 320,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 330,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 340,
+                  "altitude": 70
+                },
+                {
+                  "azimuth": 350,
+                  "altitude": 70
+                }
+              ]
+            }
+          },
+          "date": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "western-mask-cuts-the-window",
+      "args": [
+        {
+          "target": {
+            "id": "ngc7000",
+            "coordinate": {
+              "ra": 314.75,
+              "dec": 44.33
+            }
+          },
+          "place": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC",
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                {
+                  "azimuth": 0,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 10,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 20,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 30,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 40,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 50,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 60,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 70,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 80,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 90,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 100,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 110,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 120,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 130,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 140,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 150,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 160,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 170,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 180,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 190,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 200,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 210,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 220,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 230,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 240,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 250,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 260,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 270,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 280,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 290,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 300,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 310,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 320,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 330,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 340,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 350,
+                  "altitude": 10
+                }
+              ]
+            }
+          },
+          "date": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "planet-from-the-coordinate-of-the-day",
+      "args": [
+        {
+          "target": {
+            "id": "solar-system-jupiter",
+            "solarSystem": true,
+            "coordinate": {
+              "ra": 112.4,
+              "dec": 22.9
+            }
+          },
+          "place": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "date": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "place-without-time-zone-anchors-on-longitude",
+      "args": [
+        {
+          "target": {
+            "id": "m31",
+            "coordinate": {
+              "ra": 10.6847,
+              "dec": 41.2688
+            }
+          },
+          "place": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                {
+                  "azimuth": 0,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 10,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 20,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 30,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 40,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 50,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 60,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 70,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 80,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 90,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 100,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 110,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 120,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 130,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 140,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 150,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 160,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 170,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 180,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 190,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 200,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 210,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 220,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 230,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 240,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 250,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 260,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 270,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 280,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 290,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 300,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 310,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 320,
+                  "altitude": 35
+                },
+                {
+                  "azimuth": 330,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 340,
+                  "altitude": 10
+                },
+                {
+                  "azimuth": 350,
+                  "altitude": 10
+                }
+              ]
+            }
+          },
+          "date": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "higher-minimum-and-nautical-darkness",
+      "args": [
+        {
+          "target": {
+            "id": "m31",
+            "coordinate": {
+              "ra": 10.6847,
+              "dec": 41.2688
+            }
+          },
+          "place": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "date": "2026-10-14",
+          "constraints": {
+            "minAltitude": 50,
+            "moonSeparationMinimum": 40
+          },
+          "darkness": "nautical"
+        }
+      ]
+    },
+    {
+      "id": "target-without-coordinate",
+      "args": [
+        {
+          "target": {
+            "id": "x"
+          },
+          "place": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "date": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "a-day-that-does-not-exist",
+      "args": [
+        {
+          "target": {
+            "id": "m31",
+            "coordinate": {
+              "ra": 10.6847,
+              "dec": 41.2688
+            }
+          },
+          "place": {
+            "name": "Col des Mélèzes",
+            "latitude": 45,
+            "longitude": -30,
+            "timeZone": "UTC"
+          },
+          "date": "2026-02-30"
+        }
+      ]
+    },
+    {
+      "id": "place-without-coordinates",
+      "args": [
+        {
+          "target": {
+            "id": "m31",
+            "coordinate": {
+              "ra": 10.6847,
+              "dec": 41.2688
+            }
+          },
+          "place": {
+            "name": "Nowhere"
+          },
+          "date": "2026-10-14"
+        }
+      ]
+    }
+  ]
+}

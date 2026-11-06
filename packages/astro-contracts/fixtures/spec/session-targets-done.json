@@ -1,0 +1,116 @@
+{
+  "module": "session-targets-done",
+  "package": "portal",
+  "file": "session-figures",
+  "export": "sessionTargetsDoneCount",
+  "cases": [
+    {
+      "id": "none",
+      "args": [[]]
+    },
+    {
+      "id": "a-target-given-up-is-not-done",
+      "args": [
+        [
+          {
+            "state": "planned",
+            "outcome": "done"
+          },
+          {
+            "state": "planned",
+            "outcome": "partial"
+          },
+          {
+            "state": "planned",
+            "outcome": "skipped"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "a-removed-target-is-not-done",
+      "args": [
+        [
+          {
+            "state": "planned",
+            "outcome": "done"
+          },
+          {
+            "state": "removed",
+            "outcome": "skipped"
+          },
+          {
+            "state": "removed",
+            "outcome": null
+          }
+        ]
+      ]
+    },
+    {
+      "id": "a-target-added-in-the-field-counts",
+      "args": [
+        [
+          {
+            "state": "added",
+            "outcome": "done"
+          },
+          {
+            "state": "planned",
+            "outcome": null
+          }
+        ]
+      ]
+    },
+    {
+      "id": "eleven-targets-three-given-up",
+      "args": [
+        [
+          {
+            "state": "planned",
+            "outcome": "done"
+          },
+          {
+            "state": "planned",
+            "outcome": "done"
+          },
+          {
+            "state": "planned",
+            "outcome": "done"
+          },
+          {
+            "state": "planned",
+            "outcome": "done"
+          },
+          {
+            "state": "planned",
+            "outcome": "done"
+          },
+          {
+            "state": "planned",
+            "outcome": "done"
+          },
+          {
+            "state": "planned",
+            "outcome": "done"
+          },
+          {
+            "state": "planned",
+            "outcome": "done"
+          },
+          {
+            "state": "planned",
+            "outcome": "skipped"
+          },
+          {
+            "state": "planned",
+            "outcome": "skipped"
+          },
+          {
+            "state": "planned",
+            "outcome": "skipped"
+          }
+        ]
+      ]
+    }
+  ]
+}

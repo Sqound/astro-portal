@@ -1,0 +1,52 @@
+{
+  "module": "planner-calendar-window",
+  "package": "portal",
+  "file": "planner/calendar",
+  "export": "plannerCalendarWindow",
+  "cases": [
+    {
+      "id": "the-default-window-starts-two-days-before-today",
+      "args": ["2026-10-14", 0]
+    },
+    {
+      "id": "a-month-back-shows-the-measured-past",
+      "args": ["2026-10-14", -1]
+    },
+    {
+      "id": "two-months-back",
+      "args": ["2026-10-14", -2]
+    },
+    {
+      "id": "a-month-forward",
+      "args": ["2026-10-14", 1]
+    },
+    {
+      "id": "across-a-year-end",
+      "args": ["2026-12-30", 0]
+    },
+    {
+      "id": "back-across-a-year-start",
+      "args": ["2027-01-01", -1]
+    },
+    {
+      "id": "a-leap-february-anchor",
+      "args": ["2028-03-02", 0]
+    },
+    {
+      "id": "a-leap-february-a-month-back",
+      "args": ["2028-03-31", -1]
+    },
+    {
+      "id": "a-month-end-anchor-is-clamped",
+      "args": ["2026-02-02", 1]
+    },
+    {
+      "id": "a-far-east-place-already-in-the-next-night-starts-from-its-own-date",
+      "args": ["2026-10-10", 0]
+    },
+    {
+      "id": "an-invalid-date-has-no-window",
+      "args": ["2026-13-40", 0]
+    }
+  ]
+}

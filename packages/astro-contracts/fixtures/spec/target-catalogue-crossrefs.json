@@ -1,0 +1,8 @@
+{
+  "module": "target-catalogue-crossrefs",
+  "export": "caldwellReferenceFor",
+  "cases": [
+    { "id": "alias-caldwell-one", "args": [{ "aliases": ["C1"] }] },
+    { "id": "non-caldwell-target", "args": [{ "designation": "M31" }] }
+  ]
+}

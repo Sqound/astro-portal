@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "args": [{ "latitude": 45.5, "longitude": -73.6 }],
+      "id": "valid-coordinates",
+      "result": { "latitude": 45.5, "longitude": -73.6 }
+    },
+    {
+      "args": [{ "latitude": 90, "longitude": 180 }],
+      "id": "boundary-pole-and-antimeridian",
+      "result": { "latitude": 90, "longitude": 180 }
+    },
+    {
+      "args": [{ "latitude": 91, "longitude": 0 }],
+      "id": "latitude-out-of-range-rejected",
+      "result": null
+    },
+    {
+      "args": [{ "latitude": 0, "longitude": 181 }],
+      "id": "longitude-out-of-range-rejected",
+      "result": null
+    },
+    {
+      "args": [{ "latitude": "45.5", "longitude": "-73.6" }],
+      "id": "numeric-strings-accepted",
+      "result": { "latitude": 45.5, "longitude": -73.6 }
+    },
+    { "args": [{}], "id": "missing-coordinates-rejected", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "place-resolution"
+}

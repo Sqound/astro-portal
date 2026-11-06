@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "best_match": 3,
+          "ecmwf_ifs025": 3,
+          "gfs_seamless": 13,
+          "icon_seamless": 74,
+          "jma_seamless": 3
+        }
+      ],
+      "id": "night-2026-10-22-22h",
+      "result": {
+        "high": { "cover": 74, "label": "ICON", "model": "icon_seamless" },
+        "low": { "cover": 3, "label": "JMA", "model": "jma_seamless" }
+      }
+    },
+    {
+      "args": [{ "best_match": 10, "icon_seamless": 35 }],
+      "id": "exactly-25-points-is-a-disagreement",
+      "result": {
+        "high": { "cover": 35, "label": "ICON", "model": "icon_seamless" },
+        "low": { "cover": 10, "label": "Open-Meteo", "model": "best_match" }
+      }
+    },
+    {
+      "args": [{ "best_match": 10, "icon_seamless": 34 }],
+      "id": "24-points-is-not",
+      "result": null
+    },
+    {
+      "args": [{ "icon_seamless": 90 }],
+      "id": "one-model-never-disagrees",
+      "result": null
+    },
+    { "args": [{}], "id": "no-model", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "cloud-disagreement"
+}

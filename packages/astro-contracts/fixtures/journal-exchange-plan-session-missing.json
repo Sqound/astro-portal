@@ -1,0 +1,53 @@
+{
+  "description": "`GET /v1/plans/{planId}`: the plan of a deleted session stays `executed` and says `sessionMissing`, with the `deletedSessionId` the trash can restore (« Session manquante »).",
+  "exchange": "plan-session-missing",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The 4 October night deleted (`session-delete`).",
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/plans/00000000-0000-4000-8000-000000000009"
+  },
+  "response": {
+    "body": {
+      "archivedFrom": null,
+      "deletedSessionId": "00000000-0000-4000-8000-00000000000a",
+      "frozenAt": "2026-10-14T00:10:00.000Z",
+      "id": "00000000-0000-4000-8000-000000000009",
+      "nightEndAt": "2026-10-05T04:00:00.000Z",
+      "nightStartAt": "2026-10-04T19:00:00.000Z",
+      "payload": {
+        "date": "2026-10-04",
+        "equipment": {
+          "cameraId": "00000000-0000-4000-8000-000000000006",
+          "mode": "imaging",
+          "telescopeId": "00000000-0000-4000-8000-000000000005"
+        },
+        "id": "browser-00000000-0000-4000-8000-000000000009",
+        "items": [
+          {
+            "durationMinutes": 120,
+            "endMinute": 120,
+            "filter": "L",
+            "id": "m31",
+            "projectId": "00000000-0000-4000-8000-000000000007",
+            "startMinute": 0,
+            "targetId": "m31"
+          }
+        ],
+        "location": {
+          "latitude": 45,
+          "longitude": -30,
+          "name": "Col des Étoiles",
+          "timeZone": "UTC"
+        },
+        "name": "Nuit du 2026-10-04"
+      },
+      "revision": 1,
+      "sessionMissing": true,
+      "status": "executed",
+      "updatedAt": "2026-10-14T00:10:00.000Z"
+    },
+    "schema": "plan.schema.json#/$defs/resource",
+    "status": 200
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "exchange": "conflict-stage",
+  "handler": "captures/[captureId]",
+  "as": "phone",
+  "status": 409,
+  "phase": "write",
+  "capture": "capture:conflicts",
+  "params": {
+    "captureId": "{capture:conflicts}"
+  },
+  "before": [
+    {
+      "as": "web",
+      "handler": "manage/captures/[captureId]",
+      "params": {
+        "captureId": "{capture:conflicts}"
+      },
+      "request": {
+        "method": "PATCH",
+        "path": "/api/v1/manage/captures/{capture:conflicts}",
+        "body": {
+          "stage": "finalized"
+        }
+      }
+    }
+  ],
+  "request": {
+    "method": "PATCH",
+    "path": "/api/v1/captures/{capture:conflicts}",
+    "headers": {
+      "if-match": "\"{revision}\""
+    },
+    "body": {
+      "stage": "draft"
+    }
+  },
+  "schema": "manage-captures.schema.json#/$defs/refusal",
+  "description": "The phone sets the stage back to draft at the revision it read; the web finalised the capture first: 409, field stage.",
+  "given": "The web finalised the capture after the revision the phone read."
+}

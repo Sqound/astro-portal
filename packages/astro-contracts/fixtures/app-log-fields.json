@@ -1,0 +1,251 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "firmware": "2.6.1",
+          "model": "Seestar S50",
+          "outcome": "accepted",
+          "state": "working",
+          "targets": 3
+        }
+      ],
+      "id": "launch-send-plan-accepted",
+      "result": {
+        "firmware": "2.6.1",
+        "model": "Seestar S50",
+        "outcome": "accepted",
+        "state": "working",
+        "targets": 3
+      }
+    },
+    {
+      "args": [
+        {
+          "code": null,
+          "outcome": "readBackMismatch",
+          "sent": true,
+          "step": "readBack"
+        }
+      ],
+      "id": "launch-refused-read-back",
+      "result": {
+        "code": null,
+        "outcome": "readBackMismatch",
+        "sent": true,
+        "step": "readBack"
+      }
+    },
+    {
+      "args": [
+        {
+          "lat": 45.1234,
+          "lon": -30.5678,
+          "placeName": "Col des Synthèses",
+          "site_name": "Plateau test"
+        }
+      ],
+      "id": "place-keys-removed",
+      "result": {
+        "lat": "[retiré]",
+        "lon": "[retiré]",
+        "placeName": "[retiré]",
+        "site_name": "[retiré]"
+      }
+    },
+    {
+      "args": [
+        {
+          "deviceName": "iPhone de Camille",
+          "email": "camille@exemple.test",
+          "owner": "Camille",
+          "planName": "M31 en mosaïque"
+        }
+      ],
+      "id": "person-and-plan-keys-removed",
+      "result": {
+        "deviceName": "[retiré]",
+        "email": "[retiré]",
+        "owner": "[retiré]",
+        "planName": "[retiré]"
+      }
+    },
+    {
+      "args": [
+        {
+          "apiKey": "def",
+          "ip": "192.0.2.10",
+          "ssid": "S50_test",
+          "token": "abc"
+        }
+      ],
+      "id": "network-and-secret-keys-removed",
+      "result": {
+        "apiKey": "[retiré]",
+        "ip": "[retiré]",
+        "ssid": "[retiré]",
+        "token": "[retiré]"
+      }
+    },
+    {
+      "args": [{ "count": 12, "ratio": 0.5, "value": 12.3456 }],
+      "id": "precise-number-replaced",
+      "result": { "count": 12, "ratio": 0.5, "value": "[coord]" }
+    },
+    {
+      "args": [
+        {
+          "error": "Connection refused (address = 192.0.2.10)",
+          "note": "at 45.1234,-30.5678"
+        }
+      ],
+      "id": "text-values-redacted",
+      "result": {
+        "error": "Connection refused (address = [réseau])",
+        "note": "at [coord],[coord]"
+      }
+    },
+    {
+      "args": [{ "kept": "yes", "list": [1, 2], "object": { "a": 1 } }],
+      "id": "nested-values-dropped",
+      "result": { "kept": "yes" }
+    },
+    {
+      "args": [
+        {
+          "f00": 0,
+          "f01": 1,
+          "f02": 2,
+          "f03": 3,
+          "f04": 4,
+          "f05": 5,
+          "f06": 6,
+          "f07": 7,
+          "f08": 8,
+          "f09": 9,
+          "f10": 10,
+          "f11": 11,
+          "f12": 12,
+          "f13": 13,
+          "f14": 14
+        }
+      ],
+      "id": "twelve-fields-at-most",
+      "result": {
+        "f00": 0,
+        "f01": 1,
+        "f02": 2,
+        "f03": 3,
+        "f04": 4,
+        "f05": 5,
+        "f06": 6,
+        "f07": 7,
+        "f08": 8,
+        "f09": 9,
+        "f10": 10,
+        "f11": 11
+      }
+    },
+    { "args": [null], "id": "not-an-object", "result": {} },
+    {
+      "args": [
+        {
+          "askedMs": 7600,
+          "binning": 2,
+          "choice": "maximum",
+          "exposureMs": 7600,
+          "fovDeg": 71.12,
+          "frameMs": 950,
+          "frames": 8,
+          "iso": 1600,
+          "lens": "wide",
+          "saturation": 32736,
+          "size": "2016x1512",
+          "step": 2
+        }
+      ],
+      "id": "probe-settings-whole-thousandths",
+      "result": {
+        "askedMs": 7600,
+        "binning": 2,
+        "choice": "maximum",
+        "exposureMs": 7600,
+        "fovDeg": 71.12,
+        "frameMs": 950,
+        "frames": 8,
+        "iso": 1600,
+        "lens": "wide",
+        "saturation": 32736,
+        "size": "2016x1512",
+        "step": 2
+      }
+    },
+    {
+      "args": [
+        {
+          "askedMilli": 1000,
+          "lensPosMilli": 875,
+          "locked": true,
+          "mode": "locked_lens_position",
+          "steps": "1000:10.2/12 900:3.4/21 800:3.0/22 700:-/0 875:2.4/20",
+          "sweep": "measured",
+          "sweepWidthPx": 2.41
+        }
+      ],
+      "id": "probe-focus-steps-text",
+      "result": {
+        "askedMilli": 1000,
+        "lensPosMilli": 875,
+        "locked": true,
+        "mode": "locked_lens_position",
+        "steps": "1000:10.2/12 900:3.4/21 800:3.0/22 700:-/0 875:2.4/20",
+        "sweep": "measured",
+        "sweepWidthPx": 2.41
+      }
+    },
+    {
+      "args": [
+        {
+          "backgroundAdu": 429.12,
+          "cause": "shaken",
+          "detected": 250,
+          "elongation": 1.35,
+          "medianWidthPx": 19.88,
+          "pixelScaleMas": 146200,
+          "reason": "focus",
+          "status": "failed"
+        }
+      ],
+      "id": "probe-solve-two-decimals",
+      "result": {
+        "backgroundAdu": 429.12,
+        "cause": "shaken",
+        "detected": 250,
+        "elongation": 1.35,
+        "medianWidthPx": 19.88,
+        "pixelScaleMas": 146200,
+        "reason": "focus",
+        "status": "failed"
+      }
+    },
+    {
+      "args": [
+        {
+          "exposure": 0.95,
+          "fov": 71.123,
+          "lensPosition": 0.875,
+          "lensPosMilli": 875
+        }
+      ],
+      "id": "probe-three-decimals-become-coord",
+      "result": {
+        "exposure": 0.95,
+        "fov": "[coord]",
+        "lensPosition": "[coord]",
+        "lensPosMilli": 875
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "app-log-fields"
+}

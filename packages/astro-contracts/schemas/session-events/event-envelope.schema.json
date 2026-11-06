@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/event-envelope.schema.json",
+  "title": "Astro Portal session event envelope",
+  "description": "The shape a client submits to POST /v1/sessions/{id}/events, one entry per array item (packages/portal/src/persistence/migrations.ts migration 17, table session_events). `eventId` is a client-generated ULID and is the idempotency key together with the session: resubmitting the same (session, eventId) pair is a silent no-op, never a duplicate or an error. `recordedAt` is the device's own clock and is informational only — it is never trusted for ordering or for the debrief's night-window detection, both of which use the server-assigned `receivedAt`. `type` and `payload` are validated against the matching schema named in session-events.md; an unknown `type`, or a `payload` that fails its schema, is rejected by the server rather than stored. The envelope never carries the originating device nor the `source` of the event: the server derives both from the caller's device bearer token.",
+  "type": "object",
+  "required": ["eventId", "type", "payload", "recordedAt"],
+  "properties": {
+    "eventId": {
+      "type": "string",
+      "description": "Client-generated ULID (Crockford base32, 26 characters). Generated once per event and replayed unchanged on every retry.",
+      "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$"
+    },
+    "type": {
+      "type": "string",
+      "description": "One of the registered session-event types; see session-events.md for the full registry. A reader MUST tolerate a type it does not know (a newer service may send one): it shows an ordinary report, never an error.",
+      "enum": [
+        "note",
+        "target_started",
+        "target_finished",
+        "target_skipped",
+        "pause",
+        "resume",
+        "condition",
+        "equipment_issue",
+        "auto_time_confirmed",
+        "exposure_change",
+        "guiding_timeouts",
+        "sensor_temperature_drift",
+        "guiding_spikes",
+        "mount_connected",
+        "mount_goto",
+        "mount_stop",
+        "mount_link_lost",
+        "mount_link_back",
+        "mount_disconnected",
+        "mount_parked",
+        "mount_aligned",
+        "pointing_help",
+        "device_connected",
+        "device_goto",
+        "device_stop",
+        "device_parked",
+        "device_link_lost",
+        "device_link_back",
+        "plan_edited",
+        "device_instrument",
+        "guided_evening"
+      ]
+    },
+    "payload": {
+      "type": "object",
+      "description": "Validated against the JSON Schema named for this `type` in session-events.md (session-events/<type>.schema.json). Left generic here because this envelope schema cannot express a type-conditional payload shape."
+    },
+    "recordedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The device clock at the moment the event was captured, not when it reached the server. Informational only."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,73 @@
+{
+  "description": "`POST /v1/plans/{planId}/unarchive`: « Rétablir » gives the plan back the status it had (`partial`).",
+  "exchange": "plan-unarchived",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The 5 October plan archived (`plan-archived`).",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plans/00000000-0000-4000-8000-00000000000c/unarchive"
+  },
+  "response": {
+    "body": {
+      "plan": {
+        "archivedFrom": null,
+        "frozenAt": "2026-10-14T00:10:00.000Z",
+        "id": "00000000-0000-4000-8000-00000000000c",
+        "liveSessionId": "00000000-0000-4000-8000-00000000000d",
+        "nightEndAt": "2026-10-06T04:00:00.000Z",
+        "nightStartAt": "2026-10-05T19:00:00.000Z",
+        "payload": {
+          "date": "2026-10-05",
+          "equipment": {
+            "cameraId": "00000000-0000-4000-8000-000000000006",
+            "mode": "imaging",
+            "telescopeId": "00000000-0000-4000-8000-000000000005"
+          },
+          "id": "browser-00000000-0000-4000-8000-00000000000c",
+          "items": [
+            {
+              "durationMinutes": 120,
+              "endMinute": 120,
+              "id": "m31",
+              "projectId": "00000000-0000-4000-8000-000000000007",
+              "startMinute": 0,
+              "targetId": "m31"
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "acquisition": {
+                "lines": [
+                  {
+                    "binning": 1,
+                    "exposureSeconds": 180,
+                    "filter": "L",
+                    "frameCount": 30,
+                    "gain": 100
+                  }
+                ]
+              },
+              "endMinute": 120,
+              "planItemId": "m31",
+              "ruleVersion": "expo-b-1",
+              "startMinute": 0,
+              "targetId": "m31"
+            }
+          ],
+          "location": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Étoiles",
+            "timeZone": "UTC"
+          },
+          "name": "Nuit du 2026-10-05"
+        },
+        "revision": 3,
+        "status": "partial",
+        "updatedAt": "2026-10-14T12:30:00.000Z"
+      }
+    },
+    "schema": "plan.schema.json#/$defs/archiveResponse",
+    "status": 200
+  }
+}

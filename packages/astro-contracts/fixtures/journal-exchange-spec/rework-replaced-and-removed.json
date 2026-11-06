@@ -1,0 +1,62 @@
+{
+  "exchange": "rework-replaced-and-removed",
+  "description": "`PUT /v1/sessions/{id}/rework` on the night of `session-partial-with-signals`: a signal of the field modified — the note rewritten and moved in time, the pause lengthened (its resume goes with it) — and the target the night met on the way and added at the debriefing taken out. The originals stay in the log and are hidden from the answer's events; the modified signals read `rework.replaces`; the target stays in `targets` as `removed` with its reason. `reworkRevision` 1.",
+  "given": "The 12 September night of `list` (`session-partial-with-signals`), never reworked.",
+  "handler": "route:sessions/[id]/rework",
+  "phase": "write",
+  "order": 1,
+  "params": {
+    "id": "{session:partial-with-signals}"
+  },
+  "request": {
+    "method": "PUT",
+    "path": "/api/v1/sessions/{session:partial-with-signals}/rework",
+    "headers": {
+      "if-match": "\"0\""
+    },
+    "body": {
+      "targets": [
+        {
+          "targetId": "ngc7000",
+          "state": "planned"
+        },
+        {
+          "targetId": "m31",
+          "state": "removed",
+          "reason": "time"
+        },
+        {
+          "targetId": "m27",
+          "state": "removed",
+          "reason": "weather"
+        }
+      ],
+      "eventReplacements": [
+        {
+          "eventId": "{event:signals-note}",
+          "event": {
+            "type": "note",
+            "at": "2026-09-12T19:40:00.000Z",
+            "targetId": "ngc7000",
+            "payload": {
+              "text": "Mise au point reprise, étoiles plus fines",
+              "targetId": "ngc7000"
+            }
+          }
+        },
+        {
+          "eventId": "{event:signals-pause}",
+          "event": {
+            "type": "pause",
+            "at": "2026-09-12T19:50:00.000Z",
+            "until": "2026-09-12T20:25:00.000Z",
+            "payload": {
+              "cause": "clouds"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "schema": "session.schema.json#/$defs/detail"
+}

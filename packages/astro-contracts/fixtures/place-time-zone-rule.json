@@ -1,0 +1,83 @@
+{
+  "cases": [
+    {
+      "args": [{ "latitude": 48.8566, "longitude": 2.3522 }],
+      "id": "nothing-known-from-the-table",
+      "result": { "source": "table", "timeZone": "Europe/Paris" }
+    },
+    {
+      "args": [{ "latitude": 48.8566, "longitude": 2.3522 }, "Europe/Paris"],
+      "id": "nothing-known-service-answers",
+      "result": { "source": "service", "timeZone": "Europe/Paris" }
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "timeZone": "Europe/Paris" }
+      ],
+      "id": "stored-zone-kept",
+      "result": { "source": "stored", "timeZone": "Europe/Paris" }
+    },
+    {
+      "args": [
+        { "latitude": 43.9, "longitude": 7.4, "timeZone": "Europe/Monaco" },
+        "Europe/Paris"
+      ],
+      "id": "service-refines-a-stored-zone",
+      "result": { "source": "service", "timeZone": "Europe/Paris" }
+    },
+    {
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Asia/Tokyo",
+          "timeZoneSource": "chosen"
+        },
+        "Europe/Paris"
+      ],
+      "id": "chosen-zone-is-final",
+      "result": { "source": "chosen", "timeZone": "Asia/Tokyo" }
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "timeZoneSource": "chosen" }
+      ],
+      "id": "chosen-marker-without-a-zone",
+      "result": { "source": "table", "timeZone": "Europe/Paris" }
+    },
+    {
+      "args": [
+        { "latitude": 35.68, "longitude": 139.69, "timeZone": "Not/AZone" }
+      ],
+      "id": "unknown-stored-zone-falls-to-the-table",
+      "result": { "source": "table", "timeZone": "Asia/Tokyo" }
+    },
+    {
+      "args": [{ "latitude": 35.68, "longitude": 139.69 }, "Not/AZone"],
+      "id": "unknown-service-zone-ignored",
+      "result": { "source": "table", "timeZone": "Asia/Tokyo" }
+    },
+    {
+      "args": [{ "latitude": 48.8566, "longitude": 2.3522, "timeZone": "UTC" }],
+      "id": "explicit-utc-is-a-zone",
+      "result": { "source": "stored", "timeZone": "UTC" }
+    },
+    {
+      "args": [{ "name": "Maison" }],
+      "id": "no-coordinates-no-zone",
+      "result": { "source": null, "timeZone": null }
+    },
+    {
+      "args": [{ "name": "Maison" }, "Europe/Paris"],
+      "id": "no-coordinates-service-answers",
+      "result": { "source": "service", "timeZone": "Europe/Paris" }
+    },
+    {
+      "args": [{ "latitude": -10, "longitude": -150 }],
+      "id": "at-sea",
+      "result": { "source": "table", "timeZone": "Etc/GMT+10" }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "place-time-zone-rule"
+}

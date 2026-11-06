@@ -1,0 +1,58 @@
+{
+  "exchange": "conflict-line",
+  "handler": "captures/[captureId]",
+  "as": "phone",
+  "status": 409,
+  "phase": "write",
+  "capture": "capture:analysed",
+  "params": {
+    "captureId": "{capture:analysed}"
+  },
+  "before": [
+    {
+      "as": "web",
+      "handler": "manage/captures/[captureId]",
+      "params": {
+        "captureId": "{capture:analysed}"
+      },
+      "request": {
+        "method": "PATCH",
+        "path": "/api/v1/manage/captures/{capture:analysed}",
+        "body": {
+          "metadata": {
+            "acquisition": {
+              "line": "{line0}",
+              "set": {
+                "filter": "Dual-band",
+                "frameCount": 39,
+                "exposureSeconds": 180
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "request": {
+    "method": "PATCH",
+    "path": "/api/v1/captures/{capture:analysed}",
+    "headers": {
+      "if-match": "\"{revision}\""
+    },
+    "body": {
+      "metadata": {
+        "acquisition": {
+          "line": "{line0}",
+          "set": {
+            "filter": "Dual-band",
+            "frameCount": 41,
+            "exposureSeconds": 180
+          }
+        }
+      }
+    }
+  },
+  "schema": "manage-captures.schema.json#/$defs/refusal",
+  "description": "The phone corrects a line of « Intégrations » at the revision it read; the web corrected the same line first: 409, field acquisition and the id of the line. Another line changed meanwhile would not have refused it.",
+  "given": "The web corrected the first line after the revision the phone read."
+}

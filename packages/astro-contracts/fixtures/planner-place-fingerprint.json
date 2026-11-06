@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "latitude": 45.5000004,
+          "longitude": -73.6,
+          "timeZone": "America/Toronto"
+        }
+      ],
+      "id": "rounds-coordinates-to-five-decimals",
+      "result": "[\"45.50000\",\"-73.60000\",\"America/Toronto\",null]"
+    },
+    {
+      "args": [{ "latitude": 45.5, "longitude": -73.6 }],
+      "id": "an-absent-time-zone-reads-as-utc",
+      "result": "[\"45.50000\",\"-73.60000\",\"UTC\",null]"
+    },
+    {
+      "args": [
+        {
+          "horizonMask": {
+            "enabled": true,
+            "points": [{ "altitude": 5, "azimuth": 0 }]
+          },
+          "latitude": 45.5,
+          "longitude": -73.6
+        }
+      ],
+      "id": "the-horizon-mask-participates",
+      "result": "[\"45.50000\",\"-73.60000\",\"UTC\",{\"enabled\":true,\"points\":[{\"altitude\":5,\"azimuth\":0}]}]"
+    },
+    {
+      "args": [{ "latitude": "", "longitude": "" }],
+      "id": "invalid-coordinates-fingerprint-as-null",
+      "result": "null"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "planner-place-fingerprint"
+}

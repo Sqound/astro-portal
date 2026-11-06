@@ -1,0 +1,56 @@
+{
+  "cases": [
+    {
+      "args": ["Nébuleuse", "en"],
+      "id": "stored-word-is-itself",
+      "result": "Nébuleuse"
+    },
+    {
+      "args": ["Nebula", "en"],
+      "id": "english-label-is-the-stored-word",
+      "result": "Nébuleuse"
+    },
+    {
+      "args": ["星雲", "ja"],
+      "id": "japanese-label-is-the-stored-word",
+      "result": "Nébuleuse"
+    },
+    {
+      "args": ["Sternhaufen", "de"],
+      "id": "german-label-is-the-stored-word",
+      "result": "Amas"
+    },
+    {
+      "args": ["Nebula", "fr"],
+      "id": "a-label-of-another-language-stays-as-typed",
+      "result": "Nebula"
+    },
+    {
+      "args": ["Askar", "en"],
+      "id": "own-tag-stays-as-typed",
+      "result": "Askar"
+    },
+    {
+      "args": ["nebula", "en"],
+      "id": "own-tag-keeps-its-case",
+      "result": "nebula"
+    },
+    {
+      "args": ["メシエ", "ja"],
+      "id": "messier-label-in-japanese",
+      "result": "Messier"
+    },
+    {
+      "args": ["Широкое поле", "ru"],
+      "id": "wide-field-label-in-russian",
+      "result": "Grand champ"
+    },
+    {
+      "args": ["Star", "en"],
+      "id": "star-label-in-english",
+      "result": "Étoile"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "generic-tag-stored"
+}

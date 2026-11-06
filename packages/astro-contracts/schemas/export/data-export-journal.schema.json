@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/export/data-export-journal.schema.json",
+  "title": "Data export — journal.json",
+  "description": "« Journal et bilans »: `sessions`, the nights executed — each session.schema.json's `resource` (on the phone its local row, with the service's id as `serverId`) — with its `events` (the journal's events as they were recorded, payload included); Additive: each session also carries its `origin`, its `outcome` and, once reworked, its `rework` (the correction layer of `session-rework.schema.json`: `revision`, `reworkedAt`, `targets`, `addedEvents`, `eventMoves`: an added event that replaces another carries `replaces`, one a later revision replaced carries `replacedBy`, and the signal a rework replaced stays in `events` with `rework: { added: false, targetId, replacedBy }` — nothing is erased), given beside the log, which stays as it was recorded; `debriefs`, the debriefings, one per plan, debrief.schema.json's `record` with its `planId` (`decidedAt` is null where the device does not know it). Additive, no change of shape: the figures a person declared travel with them — the exposure, the times and the frames of each target in `debriefs[].targets` and `addedTargets`, and the same in `sessions[].rework.targets` — and the events and placements a debriefing applied as the first layer of a rework are in `sessions[].rework` like those of a later rework. The capture records go with the images: they stay in the space.",
+  "type": "object",
+  "required": ["formatVersion", "part", "exportedAt", "sessions", "debriefs"],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "part": {
+      "const": "journal"
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sessions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "status", "startedAt", "events"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "planId": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "status": {
+            "type": "string"
+          },
+          "startedAt": {
+            "type": "string"
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["eventId", "type", "payload"],
+              "properties": {
+                "eventId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "type": {
+                  "type": "string"
+                },
+                "payload": {
+                  "type": "object"
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "origin": {
+            "type": "string",
+            "enum": ["execution", "debrief", "import", "astro-sync"]
+          },
+          "outcome": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": ["executed", "partial", "abandoned"]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "rework": {
+            "type": "object",
+            "required": ["revision"],
+            "properties": {
+              "revision": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "reworkedAt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "targets": {
+                "anyOf": [
+                  {
+                    "type": "array"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "addedEvents": {
+                "type": "array"
+              },
+              "eventMoves": {
+                "type": "object"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "debriefs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["planId", "outcome", "targets"],
+        "properties": {
+          "planId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "outcome": {
+            "enum": ["executed", "partial", "abandoned"]
+          },
+          "decidedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "targets": {
+            "type": "array"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

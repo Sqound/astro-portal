@@ -1,0 +1,363 @@
+{
+  "module": "place-time-zone-offline",
+  "package": "portal",
+  "file": "planner/place-time-zone",
+  "export": "offlineTimeZoneForCoordinates",
+  "cases": [
+    {
+      "id": "paris",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        }
+      ]
+    },
+    {
+      "id": "nice",
+      "args": [
+        {
+          "latitude": 43.7,
+          "longitude": 7.27
+        }
+      ]
+    },
+    {
+      "id": "provence-hills",
+      "args": [
+        {
+          "latitude": 43.9,
+          "longitude": 7.4
+        }
+      ]
+    },
+    {
+      "id": "tokyo",
+      "args": [
+        {
+          "latitude": 35.68,
+          "longitude": 139.69
+        }
+      ]
+    },
+    {
+      "id": "sapporo",
+      "args": [
+        {
+          "latitude": 43.06,
+          "longitude": 141.35
+        }
+      ]
+    },
+    {
+      "id": "fukuoka",
+      "args": [
+        {
+          "latitude": 33.59,
+          "longitude": 130.4
+        }
+      ]
+    },
+    {
+      "id": "naha",
+      "args": [
+        {
+          "latitude": 26.21,
+          "longitude": 127.68
+        }
+      ]
+    },
+    {
+      "id": "new-york",
+      "args": [
+        {
+          "latitude": 40.7128,
+          "longitude": -74.006
+        }
+      ]
+    },
+    {
+      "id": "los-angeles",
+      "args": [
+        {
+          "latitude": 34.05,
+          "longitude": -118.24
+        }
+      ]
+    },
+    {
+      "id": "denver",
+      "args": [
+        {
+          "latitude": 39.74,
+          "longitude": -104.99
+        }
+      ]
+    },
+    {
+      "id": "chicago",
+      "args": [
+        {
+          "latitude": 41.88,
+          "longitude": -87.63
+        }
+      ]
+    },
+    {
+      "id": "honolulu",
+      "args": [
+        {
+          "latitude": 21.31,
+          "longitude": -157.86
+        }
+      ]
+    },
+    {
+      "id": "mauna-kea",
+      "args": [
+        {
+          "latitude": 19.82,
+          "longitude": -155.47
+        }
+      ]
+    },
+    {
+      "id": "sydney",
+      "args": [
+        {
+          "latitude": -33.87,
+          "longitude": 151.21
+        }
+      ]
+    },
+    {
+      "id": "perth",
+      "args": [
+        {
+          "latitude": -31.95,
+          "longitude": 115.86
+        }
+      ]
+    },
+    {
+      "id": "adelaide",
+      "args": [
+        {
+          "latitude": -34.93,
+          "longitude": 138.6
+        }
+      ]
+    },
+    {
+      "id": "santiago",
+      "args": [
+        {
+          "latitude": -33.45,
+          "longitude": -70.67
+        }
+      ]
+    },
+    {
+      "id": "atacama",
+      "args": [
+        {
+          "latitude": -24.63,
+          "longitude": -70.4
+        }
+      ]
+    },
+    {
+      "id": "buenos-aires",
+      "args": [
+        {
+          "latitude": -34.6,
+          "longitude": -58.38
+        }
+      ]
+    },
+    {
+      "id": "sao-paulo",
+      "args": [
+        {
+          "latitude": -23.55,
+          "longitude": -46.63
+        }
+      ]
+    },
+    {
+      "id": "cape-town",
+      "args": [
+        {
+          "latitude": -33.92,
+          "longitude": 18.42
+        }
+      ]
+    },
+    {
+      "id": "nairobi",
+      "args": [
+        {
+          "latitude": -1.29,
+          "longitude": 36.82
+        }
+      ]
+    },
+    {
+      "id": "reykjavik",
+      "args": [
+        {
+          "latitude": 64.15,
+          "longitude": -21.94
+        }
+      ]
+    },
+    {
+      "id": "teide",
+      "args": [
+        {
+          "latitude": 28.27,
+          "longitude": -16.64
+        }
+      ]
+    },
+    {
+      "id": "delhi",
+      "args": [
+        {
+          "latitude": 28.61,
+          "longitude": 77.21
+        }
+      ]
+    },
+    {
+      "id": "beijing",
+      "args": [
+        {
+          "latitude": 39.9,
+          "longitude": 116.4
+        }
+      ]
+    },
+    {
+      "id": "urumqi",
+      "args": [
+        {
+          "latitude": 43.83,
+          "longitude": 87.62
+        }
+      ]
+    },
+    {
+      "id": "cairo",
+      "args": [
+        {
+          "latitude": 30.04,
+          "longitude": 31.24
+        }
+      ]
+    },
+    {
+      "id": "moscow",
+      "args": [
+        {
+          "latitude": 55.76,
+          "longitude": 37.62
+        }
+      ]
+    },
+    {
+      "id": "london",
+      "args": [
+        {
+          "latitude": 51.51,
+          "longitude": -0.13
+        }
+      ]
+    },
+    {
+      "id": "madrid",
+      "args": [
+        {
+          "latitude": 40.42,
+          "longitude": -3.7
+        }
+      ]
+    },
+    {
+      "id": "rome",
+      "args": [
+        {
+          "latitude": 41.9,
+          "longitude": 12.5
+        }
+      ]
+    },
+    {
+      "id": "auckland",
+      "args": [
+        {
+          "latitude": -36.85,
+          "longitude": 174.76
+        }
+      ]
+    },
+    {
+      "id": "kathmandu",
+      "args": [
+        {
+          "latitude": 27.72,
+          "longitude": 85.32
+        }
+      ]
+    },
+    {
+      "id": "null-island",
+      "args": [
+        {
+          "latitude": 0,
+          "longitude": 0
+        }
+      ]
+    },
+    {
+      "id": "mid-pacific",
+      "args": [
+        {
+          "latitude": -10,
+          "longitude": -150
+        }
+      ]
+    },
+    {
+      "id": "mid-atlantic",
+      "args": [
+        {
+          "latitude": 30,
+          "longitude": -40
+        }
+      ]
+    },
+    {
+      "id": "coordinates-as-text",
+      "args": [
+        {
+          "latitude": "48.8566",
+          "longitude": "2.3522"
+        }
+      ]
+    },
+    {
+      "id": "latitude-out-of-range",
+      "args": [
+        {
+          "latitude": 95,
+          "longitude": 5
+        }
+      ]
+    },
+    {
+      "id": "no-coordinates",
+      "args": [{}]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "args": ["2026-10-20T12:09:50.000Z", "2026-10-20T12:11:10.000Z"],
+      "id": "seconds-are-cut-not-rounded",
+      "result": 2
+    },
+    {
+      "args": ["2026-10-20T12:09:10.000Z", "2026-10-20T12:09:31.000Z"],
+      "id": "a-pass-of-21-seconds-inside-one-minute",
+      "result": 0
+    },
+    {
+      "args": ["2026-10-20T12:09:50.000Z", "2026-10-20T12:10:11.000Z"],
+      "id": "a-pass-of-21-seconds-across-a-minute-line",
+      "result": 1
+    },
+    {
+      "args": ["2026-10-20T12:09:00.000Z", "2026-10-20T12:10:00.000Z"],
+      "id": "a-whole-minute-pass",
+      "result": 1
+    },
+    {
+      "args": ["2026-10-20T12:18:55.000Z", "2026-10-20T12:27:05.000Z"],
+      "id": "eight-minutes-with-seconds",
+      "result": 9
+    },
+    {
+      "args": ["2026-10-20T12:11:00.000Z", "2026-10-20T12:09:00.000Z"],
+      "id": "an-end-before-the-start-is-zero",
+      "result": 0
+    },
+    {
+      "args": ["2026-10-20T12:11:00.000Z", "soon"],
+      "id": "an-unreadable-end-is-null",
+      "result": null
+    },
+    {
+      "args": ["2026-10-20T23:58:30.000Z", "2026-10-21T00:03:29.000Z"],
+      "id": "across-midnight",
+      "result": 5
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "session-figures"
+}

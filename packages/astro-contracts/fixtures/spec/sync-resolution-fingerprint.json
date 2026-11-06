@@ -1,0 +1,38 @@
+{
+  "module": "sync-resolution-fingerprint",
+  "package": "portal",
+  "file": "planner/sync",
+  "export": "plannerDocumentFingerprint",
+  "cases": [
+    {
+      "id": "excludes-sync-metadata",
+      "args": [
+        {
+          "plans": [{ "id": "p1" }],
+          "sync": {
+            "version": 1,
+            "deviceId": "d1",
+            "updatedAt": "2024-01-01T00:00:00Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "same-content-different-sync-matches-previous",
+      "args": [
+        {
+          "plans": [{ "id": "p1" }],
+          "sync": {
+            "version": 2,
+            "deviceId": "d2",
+            "updatedAt": "2025-05-05T00:00:00Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "different-content-differs",
+      "args": [{ "plans": [{ "id": "p2" }] }]
+    }
+  ]
+}

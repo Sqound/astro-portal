@@ -1,0 +1,38 @@
+{
+  "exchange": "list-private-server",
+  "description": "The list on a private server whose operator's catalogue holds two nights no session of the space matches: they come as read-only sessions of origin `import`, under an opaque identifier.",
+  "given": "As `list`, plus two nights of the operator's catalogue.",
+  "handler": "compose:catalogue-journal",
+  "phase": "read",
+  "request": {
+    "query": {
+      "year": "2025"
+    },
+    "catalogueNights": [
+      {
+        "date": "2025-06-01",
+        "targets": [
+          {
+            "id": "m13",
+            "title": "M 13",
+            "totalSeconds": 1200
+          }
+        ]
+      },
+      {
+        "date": "2025-07-12",
+        "targets": [
+          {
+            "id": "m57",
+            "title": "M 57",
+            "totalSeconds": 2400,
+            "imageUrl": "/gallery/m57-nuit.jpg",
+            "captureStartedAt": 1752354000000,
+            "captureEndedAt": 1752362400000
+          }
+        ]
+      }
+    ]
+  },
+  "schema": "journal.schema.json#/$defs/list"
+}

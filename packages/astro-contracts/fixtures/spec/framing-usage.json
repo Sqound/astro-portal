@@ -1,0 +1,211 @@
+{
+  "module": "framing-usage",
+  "export": "framingUsage",
+  "cases": [
+    {
+      "id": "free-no-plans",
+      "args": [{ "framingId": "framing-1", "plans": [], "sessionPlanIds": [] }]
+    },
+    {
+      "id": "one-pending-plan",
+      "args": [
+        {
+          "framingId": "framing-1",
+          "plans": [
+            {
+              "planId": "plan-1",
+              "name": "Autumn nebulae",
+              "planDate": "2026-09-20",
+              "status": "active"
+            }
+          ],
+          "sessionPlanIds": []
+        }
+      ]
+    },
+    {
+      "id": "two-pending-plans",
+      "args": [
+        {
+          "framingId": "framing-1",
+          "plans": [
+            {
+              "planId": "plan-1",
+              "name": "Autumn nebulae",
+              "planDate": "2026-09-20",
+              "status": "active"
+            },
+            {
+              "planId": "plan-2",
+              "name": "Winter clusters",
+              "planDate": "2026-12-01",
+              "status": "active"
+            }
+          ],
+          "sessionPlanIds": []
+        }
+      ]
+    },
+    {
+      "id": "launched-not-debriefed",
+      "args": [
+        {
+          "framingId": "framing-1",
+          "plans": [
+            {
+              "planId": "plan-1",
+              "name": "Autumn nebulae",
+              "planDate": "2026-09-20",
+              "status": "active"
+            }
+          ],
+          "sessionPlanIds": ["plan-1"]
+        }
+      ]
+    },
+    {
+      "id": "executed-status",
+      "args": [
+        {
+          "framingId": "framing-1",
+          "plans": [
+            {
+              "planId": "plan-1",
+              "name": "Autumn nebulae",
+              "planDate": "2026-09-20",
+              "status": "executed"
+            }
+          ],
+          "sessionPlanIds": ["plan-1"]
+        }
+      ]
+    },
+    {
+      "id": "partial-status",
+      "args": [
+        {
+          "framingId": "framing-1",
+          "plans": [
+            {
+              "planId": "plan-1",
+              "name": "Autumn nebulae",
+              "planDate": "2026-09-20",
+              "status": "partial"
+            }
+          ],
+          "sessionPlanIds": ["plan-1"]
+        }
+      ]
+    },
+    {
+      "id": "archived-plan-status",
+      "args": [
+        {
+          "framingId": "framing-1",
+          "plans": [
+            {
+              "planId": "plan-1",
+              "name": "Autumn nebulae",
+              "planDate": "2026-09-20",
+              "status": "archived"
+            }
+          ],
+          "sessionPlanIds": ["plan-1"]
+        }
+      ]
+    },
+    {
+      "id": "abandoned-without-session",
+      "args": [
+        {
+          "framingId": "framing-1",
+          "plans": [
+            {
+              "planId": "plan-1",
+              "name": "Autumn nebulae",
+              "planDate": "2026-09-20",
+              "status": "abandoned"
+            }
+          ],
+          "sessionPlanIds": []
+        }
+      ]
+    },
+    {
+      "id": "abandoned-with-empty-session",
+      "args": [
+        {
+          "framingId": "framing-1",
+          "plans": [
+            {
+              "planId": "plan-1",
+              "name": "Autumn nebulae",
+              "planDate": "2026-09-20",
+              "status": "abandoned"
+            }
+          ],
+          "sessionPlanIds": ["plan-1"]
+        }
+      ]
+    },
+    {
+      "id": "deleted-plan-excluded",
+      "args": [
+        {
+          "framingId": "framing-1",
+          "plans": [
+            {
+              "planId": "plan-1",
+              "name": "Autumn nebulae",
+              "planDate": "2026-09-20",
+              "status": "executed",
+              "deletedAt": "2026-09-21T00:00:00.000Z"
+            }
+          ],
+          "sessionPlanIds": ["plan-1"]
+        }
+      ]
+    },
+    {
+      "id": "mixed-executed-and-pending",
+      "args": [
+        {
+          "framingId": "framing-1",
+          "plans": [
+            {
+              "planId": "plan-1",
+              "name": "Autumn nebulae",
+              "planDate": "2026-09-20",
+              "status": "executed"
+            },
+            {
+              "planId": "plan-2",
+              "name": "Winter clusters",
+              "planDate": "2026-12-01",
+              "status": "active"
+            }
+          ],
+          "sessionPlanIds": ["plan-1"]
+        }
+      ]
+    },
+    {
+      "id": "archived-framing-overrides-usage",
+      "args": [
+        {
+          "framingId": "framing-1",
+          "plans": [
+            {
+              "planId": "plan-1",
+              "name": "Autumn nebulae",
+              "planDate": "2026-09-20",
+              "status": "executed"
+            }
+          ],
+          "sessionPlanIds": ["plan-1"],
+          "archivedAt": "2026-09-22T00:00:00.000Z"
+        }
+      ]
+    }
+  ]
+}

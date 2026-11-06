@@ -1,0 +1,58 @@
+{
+  "exchange": "debrief-added-targets-and-events",
+  "description": "`POST /v1/plans/{planId}/debrief` for a night carried out without the application: a target added at the debriefing with its times, its frames and its exposure, a pause and a note added after the fact. The session is created (`createdSession`), of origin `debrief`, and already reworked once (`reworkRevision` 1).",
+  "given": "The 1 October plan of `list` (no session).",
+  "handler": "route:plans/[planId]/debrief",
+  "phase": "write",
+  "params": {
+    "planId": "{plan:to-debrief-with-events}"
+  },
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plans/{plan:to-debrief-with-events}/debrief",
+    "body": {
+      "outcome": "partial",
+      "sessionAdjustments": {
+        "targets": [
+          {
+            "targetId": "m31",
+            "state": "partial",
+            "acquiredMinutes": 90,
+            "frameCount": 30,
+            "exposureSeconds": 180,
+            "startedAt": "2026-10-01T20:00:00.000Z",
+            "finishedAt": "2026-10-01T21:30:00.000Z"
+          }
+        ]
+      },
+      "addedTargets": [
+        {
+          "targetId": "m42",
+          "acquiredMinutes": 30,
+          "frameCount": 15,
+          "filter": "Ha",
+          "exposureSeconds": 120
+        }
+      ],
+      "addedEvents": [
+        {
+          "type": "pause",
+          "at": "2026-10-01T20:30:00.000Z",
+          "until": "2026-10-01T20:45:00.000Z",
+          "targetId": "m31",
+          "payload": {
+            "cause": "clouds"
+          }
+        },
+        {
+          "type": "note",
+          "at": "2026-10-01T22:00:00.000Z",
+          "payload": {
+            "text": "Ciel dégagé après minuit"
+          }
+        }
+      ]
+    }
+  },
+  "schema": "debrief.schema.json#/$defs/response"
+}

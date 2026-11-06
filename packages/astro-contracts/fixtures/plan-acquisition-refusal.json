@@ -1,0 +1,546 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "endMinute": 120,
+              "filter": "L",
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 300,
+              "filter": "",
+              "id": "ngc7000",
+              "startMinute": 120,
+              "targetId": "ngc7000"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "absent-fields-are-no-refusal",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "acquisitionDefaults": { "gain": 100000 },
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": {
+                "lines": [
+                  {
+                    "binning": 8,
+                    "exposureSeconds": 0.005,
+                    "filter": "L",
+                    "frameCount": 100000,
+                    "gain": null
+                  },
+                  { "exposureSeconds": 86400, "filter": null, "gain": -1000 },
+                  {}
+                ]
+              },
+              "id": "m31"
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "acquisition": { "lines": [{ "exposureSeconds": 60 }] },
+              "endMinute": 60,
+              "planItemId": "m31",
+              "ruleVersion": "expo-b-1",
+              "startMinute": 0,
+              "targetId": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "valid-lines-are-no-refusal",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "acquisitionDefaults": { "dither": true },
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": {
+                "lines": [{ "exposureSeconds": 60, "offset": 30 }],
+                "mode": "mono"
+              },
+              "id": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "unknown-fields-are-no-refusal",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "acquisitionDefaults": null,
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [{ "acquisition": null, "id": "m31" }],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "null-choices-are-no-refusal",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            { "id": "m31" },
+            {
+              "acquisition": {
+                "lines": [{ "filter": "L" }, { "exposureSeconds": 0 }]
+              },
+              "id": "m42"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "exposure-of-zero",
+      "result": {
+        "field": "items[1].acquisition.lines[1].exposureSeconds",
+        "limit": 0,
+        "message": "exposureSeconds is a duration of more than 0 s."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": { "lines": [{ "exposureSeconds": 86400.5 }] },
+              "id": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "exposure-beyond-a-day",
+      "result": {
+        "field": "items[0].acquisition.lines[0].exposureSeconds",
+        "limit": 86400,
+        "message": "exposureSeconds is a duration of 86400 s at most."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": { "lines": [{ "exposureSeconds": "120" }] },
+              "id": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "exposure-as-text",
+      "result": {
+        "field": "items[0].acquisition.lines[0].exposureSeconds",
+        "limit": 0,
+        "message": "exposureSeconds is a duration of more than 0 s."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": { "lines": [{ "exposureSeconds": null }] },
+              "id": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "exposure-null",
+      "result": {
+        "field": "items[0].acquisition.lines[0].exposureSeconds",
+        "limit": 0,
+        "message": "exposureSeconds is a duration of more than 0 s."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": {
+                "lines": [
+                  { "filter": "fffffffffffffffffffffffffffffffffffffffff" }
+                ]
+              },
+              "id": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "filter-too-long",
+      "result": {
+        "field": "items[0].acquisition.lines[0].filter",
+        "limit": 40,
+        "message": "filter holds 40 characters at most."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            { "acquisition": { "lines": [{ "filter": 3 }] }, "id": "m31" }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "filter-not-text",
+      "result": {
+        "field": "items[0].acquisition.lines[0].filter",
+        "limit": 40,
+        "message": "filter is a string or null."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            { "acquisition": { "lines": [{ "gain": 100.5 }] }, "id": "m31" }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "gain-not-an-integer",
+      "result": {
+        "field": "items[0].acquisition.lines[0].gain",
+        "limit": null,
+        "message": "gain is an integer or null."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            { "acquisition": { "lines": [{ "gain": 100001 }] }, "id": "m31" }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "gain-out-of-range",
+      "result": {
+        "field": "items[0].acquisition.lines[0].gain",
+        "limit": null,
+        "message": "gain is an integer or null."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            { "acquisition": { "lines": [{ "binning": 9 }] }, "id": "m31" }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "binning-out-of-range",
+      "result": {
+        "field": "items[0].acquisition.lines[0].binning",
+        "limit": 8,
+        "message": "binning is an integer from 1 to 8."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            { "acquisition": { "lines": [{ "frameCount": 0 }] }, "id": "m31" }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "frame-count-of-zero",
+      "result": {
+        "field": "items[0].acquisition.lines[0].frameCount",
+        "limit": 1,
+        "message": "frameCount is an integer of at least 1."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": { "lines": [{ "frameCount": 100001 }] },
+              "id": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "frame-count-too-large",
+      "result": {
+        "field": "items[0].acquisition.lines[0].frameCount",
+        "limit": 100000,
+        "message": "frameCount is an integer of at most 100000."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [{ "acquisition": { "lines": ["L"] }, "id": "m31" }],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "a-line-not-an-object",
+      "result": {
+        "field": "items[0].acquisition.lines[0]",
+        "limit": null,
+        "message": "An acquisition line is an object."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [{ "acquisition": { "lines": [] }, "id": "m31" }],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "no-line",
+      "result": {
+        "field": "items[0].acquisition.lines",
+        "limit": 1,
+        "message": "lines is a list of 1 to 8 acquisition lines."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": { "lines": [{}, {}, {}, {}, {}, {}, {}, {}, {}] },
+              "id": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "more-than-eight-lines",
+      "result": {
+        "field": "items[0].acquisition.lines",
+        "limit": 8,
+        "message": "lines holds 8 acquisition lines at most."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            { "acquisition": [{ "exposureSeconds": 60 }], "id": "m31" }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "acquisition-not-an-object",
+      "result": {
+        "field": "items[0].acquisition",
+        "limit": null,
+        "message": "acquisition is an object holding its lines."
+      }
+    },
+    {
+      "args": [
+        {
+          "acquisitionDefaults": { "binning": 0 },
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "endMinute": 120,
+              "filter": "L",
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 300,
+              "filter": "",
+              "id": "ngc7000",
+              "startMinute": 120,
+              "targetId": "ngc7000"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "defaults-out-of-bounds",
+      "result": {
+        "field": "acquisitionDefaults.binning",
+        "limit": 8,
+        "message": "binning is an integer from 1 to 8."
+      }
+    },
+    {
+      "args": [
+        {
+          "acquisitionDefaults": "120 s",
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "endMinute": 120,
+              "filter": "L",
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 300,
+              "filter": "",
+              "id": "ngc7000",
+              "startMinute": 120,
+              "targetId": "ngc7000"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "defaults-not-an-object",
+      "result": {
+        "field": "acquisitionDefaults",
+        "limit": null,
+        "message": "An acquisition line is an object."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "endMinute": 120,
+              "filter": "L",
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 300,
+              "filter": "",
+              "id": "ngc7000",
+              "startMinute": 120,
+              "targetId": "ngc7000"
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "acquisition": { "lines": [{ "frameCount": 1.5 }] },
+              "endMinute": 60,
+              "planItemId": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "launched-lines-out-of-bounds",
+      "result": {
+        "field": "launchedSchedule[0].acquisition.lines[0].frameCount",
+        "limit": 1,
+        "message": "frameCount is an integer of at least 1."
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "endMinute": 120,
+              "filter": "L",
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 300,
+              "filter": "",
+              "id": "ngc7000",
+              "startMinute": 120,
+              "targetId": "ngc7000"
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "endMinute": 60,
+              "planItemId": "m31",
+              "ruleVersion": "vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv",
+              "startMinute": 0,
+              "targetId": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "rule-version-too-long",
+      "result": {
+        "field": "launchedSchedule[0].ruleVersion",
+        "limit": 64,
+        "message": "ruleVersion is a text of 1 to 64 characters."
+      }
+    },
+    { "args": ["plan"], "id": "not-a-plan", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "plan-acquisition-refusal"
+}

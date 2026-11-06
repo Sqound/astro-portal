@@ -1,0 +1,34 @@
+
+National Park Service Night Skies Program, night sky data set (nsdmap.geojson). A work of the United States Government: public domain.
+Globe at Night, NSF NOIRLab (globeatnight.org), CC BY 4.0.
+星空観察「デジタルカメラによる夜空の明るさ調査」, Ministry of the Environment of Japan (環境省) with 星空公団; the copy carrying coordinates is published by the National Institute for Environmental Studies (国立環境研究所) as the 環境展望台 / 環境GIS star-watching map layer.
+
+Measurements 2022–2023, raster average_masked 2025
+  5 NPS sites
+  60 Globe at Night readings -> 15 cells with >= 3 readings
+
+skyQualityLuminancePerRadiance = 0.2993 mcd/m² per nW/cm²/sr
+  20 sites, RMS 0.025 mag, bias +0.002 mag (positive = model reads darker than measured)
+  currently compiled in: 0.299
+
+  per source
+    National Park Service  a = 0.2977  n = 5  RMS = 0.045 mag
+    Globe at Night         a = 0.2998  n = 15  RMS = 0.013 mag
+
+  Japan — 星空観察「デジタルカメラによる夜空の明るさ調査」, Ministry of the Environment of Japan (環境省) with 星空公団; the copy carrying coordinates is published by the National Institute for Environmental Studies (国立環境研究所) as the 環境展望台 / 環境GIS star-watching map layer.
+    licence: env.go.jp tables: 公共データ利用規約（第1.0版）/ PDL1.0 (CC BY 4.0 compatible), attribution required (出典：環境省 星空観察), no coordinates. NIES map layer (with coordinates): 国立環境研究所 site policy, reproduction reserved for the site's own content — a request to use it for calibration is pending with the institute; only a fitted constant is shipped, never the underlying measurements or positions.
+    32 measurements (ばらつき <= 0.2) -> 8 cells with >= 3 readings
+    fitted here          a = 0.8012  n = 8  RMS = 0.015 mag  bias +0.000 mag
+    summer (humid)       —
+    winter (dry)         —
+    reported only; not part of the fit above
+
+  region japan
+    campaign (環境省 星空観察, V-band camera)   luminancePerRadiance = 0.8012  n = 8 (32 readings -> 8 cells)  RMS = 0.015 mag  bias +0.000 mag
+    Globe at Night (SQM band, alternative)   not enough usable sites in this region
+
+  residual of the compiled-in constant, by measured Bortle class
+    Bortle 4  n=   4  mean Δ = +0.02 mag
+    Bortle 5  n=   4  mean Δ = -0.01 mag
+    Bortle 6  n=   4  mean Δ = -0.01 mag
+    Bortle 7  n=   8  mean Δ = +0.00 mag

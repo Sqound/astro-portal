@@ -1,0 +1,39 @@
+{
+  "module": "planner-place-fingerprint",
+  "package": "portal",
+  "file": "planner/state",
+  "export": "placeFingerprint",
+  "cases": [
+    {
+      "id": "rounds-coordinates-to-five-decimals",
+      "args": [
+        {
+          "latitude": 45.5000004,
+          "longitude": -73.6,
+          "timeZone": "America/Toronto"
+        }
+      ]
+    },
+    {
+      "id": "an-absent-time-zone-reads-as-utc",
+      "args": [{ "latitude": 45.5, "longitude": -73.6 }]
+    },
+    {
+      "id": "the-horizon-mask-participates",
+      "args": [
+        {
+          "horizonMask": {
+            "enabled": true,
+            "points": [{ "altitude": 5, "azimuth": 0 }]
+          },
+          "latitude": 45.5,
+          "longitude": -73.6
+        }
+      ]
+    },
+    {
+      "id": "invalid-coordinates-fingerprint-as-null",
+      "args": [{ "latitude": "", "longitude": "" }]
+    }
+  ]
+}

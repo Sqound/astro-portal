@@ -1,0 +1,70 @@
+{
+  "cases": [
+    {
+      "args": ["zh-Hant"],
+      "id": "a-registered-tag-is-itself",
+      "result": "zh-Hant"
+    },
+    {
+      "args": ["fr"],
+      "id": "a-bare-language-reads-its-locale",
+      "result": "fr"
+    },
+    {
+      "args": ["fr-CA"],
+      "id": "a-region-of-a-language-reads-the-bare-language-locale",
+      "result": "fr"
+    },
+    {
+      "args": ["zh"],
+      "id": "bare-chinese-reads-simplified",
+      "result": "zh-Hans"
+    },
+    {
+      "args": ["zh-CN"],
+      "id": "mainland-china-reads-simplified",
+      "result": "zh-Hans"
+    },
+    {
+      "args": ["zh-SG"],
+      "id": "singapore-reads-simplified",
+      "result": "zh-Hans"
+    },
+    {
+      "args": ["zh-TW"],
+      "id": "taiwan-reads-traditional",
+      "result": "zh-Hant"
+    },
+    {
+      "args": ["zh-HK"],
+      "id": "hong-kong-reads-traditional",
+      "result": "zh-Hant"
+    },
+    { "args": ["zh-MO"], "id": "macao-reads-traditional", "result": "zh-Hant" },
+    {
+      "args": ["zh-Hant-CN"],
+      "id": "a-script-wins-over-a-region",
+      "result": "zh-Hant"
+    },
+    {
+      "args": ["zh-Hans-TW"],
+      "id": "a-script-and-a-region",
+      "result": "zh-Hans"
+    },
+    {
+      "args": ["zh_Hant_TW"],
+      "id": "an-underscore-and-a-script",
+      "result": "zh-Hant"
+    },
+    { "args": ["zh-hant-tw"], "id": "a-lower-case-tag", "result": "zh-Hant" },
+    { "args": ["ru-RU"], "id": "russian-in-russia", "result": "ru" },
+    {
+      "args": ["xx-YY"],
+      "id": "an-unshipped-language-reads-nothing",
+      "result": null
+    },
+    { "args": [""], "id": "an-empty-tag-reads-nothing", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "locale-device-match"
+}

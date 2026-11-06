@@ -1,0 +1,12 @@
+{
+  "module": "target-observing-seasons",
+  "export": "targetIsInObservingSeason",
+  "cases": [
+    {
+      "id": "northern-winter-meridian",
+      "args": [
+        { "rightAscensionHours": 6, "season": "winter", "hemisphere": "north" }
+      ]
+    }
+  ]
+}

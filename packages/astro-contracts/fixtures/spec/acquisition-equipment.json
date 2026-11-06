@@ -1,0 +1,169 @@
+{
+  "module": "acquisition-equipment",
+  "package": "planner",
+  "file": "acquisition",
+  "export": "acquisitionEquipment",
+  "cases": [
+    {
+      "id": "dedicated-camera-on-a-refractor",
+      "args": [
+        {
+          "telescope": {
+            "id": "refractor",
+            "apertureMm": 80,
+            "focalLengthMm": 400
+          },
+          "camera": {
+            "id": "zwo-asi585mc-pro",
+            "pixelSizeUm": 2.9
+          },
+          "mountKind": "equatorial"
+        }
+      ]
+    },
+    {
+      "id": "traits-of-the-camera-win-over-the-common-profile",
+      "args": [
+        {
+          "telescope": {
+            "id": "refractor",
+            "apertureMm": 80,
+            "focalLengthMm": 400
+          },
+          "camera": {
+            "id": "zwo-asi585mc-pro",
+            "sensorKind": "mono",
+            "hcgGain": 50,
+            "unityGain": 60,
+            "pixelSizeUm": 2.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "mono-camera",
+      "args": [
+        {
+          "telescope": {
+            "id": "refractor",
+            "apertureMm": 80,
+            "focalLengthMm": 400
+          },
+          "camera": {
+            "id": "zwo-asi183mm-pro",
+            "pixelSizeUm": 2.4
+          }
+        }
+      ]
+    },
+    {
+      "id": "focal-length-with-the-modifier",
+      "args": [
+        {
+          "telescope": {
+            "id": "refractor",
+            "apertureMm": 80,
+            "focalLengthMm": 400
+          },
+          "camera": {
+            "id": "zwo-asi585mc-pro",
+            "pixelSizeUm": 2.9
+          },
+          "focalLengthMm": 320
+        }
+      ]
+    },
+    {
+      "id": "smart-telescope-integrated-mount",
+      "args": [
+        {
+          "telescope": {
+            "id": "seestar-s50",
+            "apertureMm": 50,
+            "focalLengthMm": 250,
+            "integratedCamera": {
+              "id": "seestar-s50-imx462",
+              "pixelSizeUm": 2.9
+            },
+            "mount": {
+              "id": "integrated-altaz",
+              "name": "Azimutale intégrée"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "smart-telescope-with-a-cap",
+      "args": [
+        {
+          "telescope": {
+            "id": "dwarf-3",
+            "apertureMm": 35,
+            "focalLengthMm": 150,
+            "integratedCamera": {
+              "id": "dwarf-3-imx678",
+              "pixelSizeUm": 2
+            },
+            "mount": {
+              "id": "integrated-altaz"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cap-on-the-telescope-profile",
+      "args": [
+        {
+          "telescope": {
+            "id": "own",
+            "apertureMm": 35,
+            "focalLengthMm": 150,
+            "maxExposureSeconds": 30,
+            "integratedCamera": {
+              "pixelSizeUm": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "dslr-is-told-by-the-caller",
+      "args": [
+        {
+          "telescope": {
+            "id": "refractor",
+            "apertureMm": 80,
+            "focalLengthMm": 400
+          },
+          "camera": {
+            "id": "own-dslr",
+            "sensorKind": "colour",
+            "pixelSizeUm": 4.3
+          },
+          "deviceKind": "dslr"
+        }
+      ]
+    },
+    {
+      "id": "nothing-known",
+      "args": [{}]
+    },
+    {
+      "id": "hcg-gain-of-a-common-camera",
+      "args": [
+        {
+          "telescope": {
+            "id": "refractor",
+            "apertureMm": 80,
+            "focalLengthMm": 400
+          },
+          "camera": {
+            "id": "player-one-poseidon-c-pro"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,797 @@
+{
+  "module": "forecast-hour-score",
+  "package": "portal",
+  "file": "astronomy-forecast",
+  "export": "forecastHourScore",
+  "cases": [
+    {
+      "id": "board-19-00",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 6,
+          "gust": 11,
+          "humidity": 62,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "board-20-00",
+      "args": [
+        {
+          "cloud": 2,
+          "cloudLow": 0,
+          "cloudMid": 2,
+          "cloudHigh": 0,
+          "wind": 7,
+          "gust": 12,
+          "humidity": 64,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "board-21-00",
+      "args": [
+        {
+          "cloud": 4,
+          "cloudLow": 0,
+          "cloudMid": 4,
+          "cloudHigh": 0,
+          "wind": 8,
+          "gust": 13,
+          "humidity": 67,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "board-22-00",
+      "args": [
+        {
+          "cloud": 8,
+          "cloudLow": 0,
+          "cloudMid": 8,
+          "cloudHigh": 0,
+          "wind": 9,
+          "gust": 14,
+          "humidity": 70,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "board-23-00",
+      "args": [
+        {
+          "cloud": 16,
+          "cloudLow": 0,
+          "cloudMid": 16,
+          "cloudHigh": 0,
+          "wind": 9,
+          "gust": 15,
+          "humidity": 74,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "board-00-00",
+      "args": [
+        {
+          "cloud": 24,
+          "cloudLow": 0,
+          "cloudMid": 24,
+          "cloudHigh": 0,
+          "wind": 10,
+          "gust": 15,
+          "humidity": 79,
+          "visibility": 22000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "board-01-00",
+      "args": [
+        {
+          "cloud": 30,
+          "cloudLow": 0,
+          "cloudMid": 30,
+          "cloudHigh": 0,
+          "wind": 11,
+          "gust": 16,
+          "humidity": 84,
+          "visibility": 20000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "board-02-00",
+      "args": [
+        {
+          "cloud": 34,
+          "cloudLow": 0,
+          "cloudMid": 34,
+          "cloudHigh": 0,
+          "wind": 12,
+          "gust": 17,
+          "humidity": 88,
+          "visibility": 18000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "board-03-00",
+      "args": [
+        {
+          "cloud": 32,
+          "cloudLow": 0,
+          "cloudMid": 32,
+          "cloudHigh": 0,
+          "wind": 10,
+          "gust": 15,
+          "humidity": 90,
+          "visibility": 18000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "board-04-00",
+      "args": [
+        {
+          "cloud": 30,
+          "cloudLow": 0,
+          "cloudMid": 30,
+          "cloudHigh": 0,
+          "wind": 9,
+          "gust": 14,
+          "humidity": 91,
+          "visibility": 20000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "clear-calm-dry-is-100",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "gust": 7,
+          "humidity": 60,
+          "visibility": 30000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "gust-counts-at-70-percent",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "gust": 30,
+          "humidity": 60,
+          "visibility": 30000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "wind-stronger-than-gust-share",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 20,
+          "gust": 24,
+          "humidity": 60,
+          "visibility": 30000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "gust-without-wind",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": null,
+          "gust": 40,
+          "humidity": 60,
+          "visibility": 30000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "high-clouds-count-at-half",
+      "args": [
+        {
+          "cloud": 40,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 40,
+          "wind": 5,
+          "gust": 7,
+          "humidity": 60,
+          "visibility": 30000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "low-and-middle-count-whole",
+      "args": [
+        {
+          "cloud": 20,
+          "cloudLow": 10,
+          "cloudMid": 10,
+          "cloudHigh": 0,
+          "wind": 5,
+          "gust": 7,
+          "humidity": 60,
+          "visibility": 30000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "layers-never-exceed-the-total",
+      "args": [
+        {
+          "cloud": 50,
+          "cloudLow": 40,
+          "cloudMid": 40,
+          "cloudHigh": 0,
+          "wind": 5,
+          "gust": 7,
+          "humidity": 60,
+          "visibility": 30000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "missing-layer-uses-the-total",
+      "args": [
+        {
+          "cloud": 30,
+          "cloudLow": null,
+          "cloudMid": 10,
+          "cloudHigh": 30,
+          "wind": 5,
+          "gust": 7,
+          "humidity": 60,
+          "visibility": 30000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "wind-full-to-25",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 25,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "wind-35-is-92",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 35,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "wind-between-45-and-60",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 52,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "wind-nil-at-90",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 90,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "humidity-full-to-90",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 90,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "humidity-95-is-96",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 95,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "humidity-100-is-92",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 100,
+          "visibility": 24000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "haze-none-beyond-10-km",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 10000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "haze-5-km-is-80",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 5000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "haze-between-1-and-2-km",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 1500,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "fog-at-0-km-is-5",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 0,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "rain-10-is-92",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 10
+        }
+      ]
+    },
+    {
+      "id": "rain-between-20-and-30",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 25
+        }
+      ]
+    },
+    {
+      "id": "rain-40-is-32-no-cap",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 40
+        }
+      ]
+    },
+    {
+      "id": "rain-nil-at-80",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 80
+        }
+      ]
+    },
+    {
+      "id": "moon-full-high-is-80",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 0,
+          "moonAltitude": 45,
+          "moonIllumination": 100
+        }
+      ]
+    },
+    {
+      "id": "moon-full-at-30-is-80",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 0,
+          "moonAltitude": 30,
+          "moonIllumination": 100
+        }
+      ]
+    },
+    {
+      "id": "moon-78-high-is-84",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 0,
+          "moonAltitude": 50,
+          "moonIllumination": 78
+        }
+      ]
+    },
+    {
+      "id": "moon-half-at-15",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 0,
+          "moonAltitude": 15,
+          "moonIllumination": 50
+        }
+      ]
+    },
+    {
+      "id": "moon-below-the-horizon-is-neutral",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 0,
+          "moonAltitude": -12,
+          "moonIllumination": 100
+        }
+      ]
+    },
+    {
+      "id": "moon-without-illumination-is-neutral",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 0,
+          "moonAltitude": 40
+        }
+      ]
+    },
+    {
+      "id": "missing-metrics-are-neutral",
+      "args": [
+        {
+          "cloud": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "cloudHigh": 0
+        }
+      ]
+    },
+    {
+      "id": "product-of-two-nuisances",
+      "args": [
+        {
+          "cloud": 30,
+          "cloudLow": 30,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 40
+        }
+      ]
+    },
+    {
+      "id": "nil-weight-takes-the-whole-loss",
+      "args": [
+        {
+          "cloud": 60,
+          "cloudLow": 60,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 20
+        }
+      ]
+    },
+    {
+      "id": "two-nil-weights-share-the-loss",
+      "args": [
+        {
+          "cloud": 70,
+          "cloudLow": 70,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 5,
+          "humidity": 50,
+          "visibility": 24000,
+          "precipitation": 90
+        }
+      ]
+    },
+    {
+      "id": "board-02-00-worked-hour",
+      "args": [
+        {
+          "cloud": 28,
+          "cloudLow": 28,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 16,
+          "humidity": 95,
+          "visibility": 9000,
+          "precipitation": 25,
+          "moonAltitude": 32,
+          "moonIllumination": 78,
+          "gust": 34
+        }
+      ]
+    },
+    {
+      "id": "no-cloud-cover-is-null",
+      "args": [
+        {
+          "cloud": null,
+          "cloudLow": null,
+          "cloudMid": null,
+          "cloudHigh": null,
+          "wind": 5,
+          "gust": 7,
+          "humidity": 60,
+          "visibility": 30000,
+          "precipitation": 0
+        }
+      ]
+    },
+    {
+      "id": "not-an-object-is-null",
+      "args": [null]
+    },
+    {
+      "id": "models-2026-10-22-22h-jst-median-clear-but-uncertain",
+      "args": [
+        {
+          "cloud": 3,
+          "cloudLow": 3,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 6,
+          "gust": 11,
+          "humidity": 62,
+          "visibility": 24000,
+          "precipitation": 0,
+          "cloudModels": {
+            "best_match": 3,
+            "ecmwf_ifs025": 3,
+            "icon_seamless": 74,
+            "gfs_seamless": 13,
+            "jma_seamless": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "models-agreeing-clear",
+      "args": [
+        {
+          "cloud": 3,
+          "cloudLow": 3,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 6,
+          "gust": 11,
+          "humidity": 62,
+          "visibility": 24000,
+          "precipitation": 0,
+          "cloudModels": {
+            "best_match": 2,
+            "ecmwf_ifs025": 0,
+            "icon_seamless": 4,
+            "gfs_seamless": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "models-one-model-only",
+      "args": [
+        {
+          "cloud": 3,
+          "cloudLow": 3,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 6,
+          "gust": 11,
+          "humidity": 62,
+          "visibility": 24000,
+          "precipitation": 0,
+          "cloudModels": {
+            "icon_seamless": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "models-empty-falls-back-to-the-layers",
+      "args": [
+        {
+          "cloud": 3,
+          "cloudLow": 3,
+          "cloudMid": 0,
+          "cloudHigh": 0,
+          "wind": 6,
+          "gust": 11,
+          "humidity": 62,
+          "visibility": 24000,
+          "precipitation": 0,
+          "cloudModels": {}
+        }
+      ]
+    }
+  ]
+}

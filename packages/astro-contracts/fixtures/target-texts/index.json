@@ -1,0 +1,16 @@
+{
+  "v": 1,
+  "shardCount": 32,
+  "locales": {
+    "en": [
+      {
+        "shard": "007",
+        "path": "en/007.json",
+        "bytes": 3383,
+        "sha256": "6ab7b4313f50f9d2574ef4a43b0016e765361066c9816dcd15f01927b1036ae7",
+        "revision": "784bd111a1616e13",
+        "count": 4
+      }
+    ]
+  }
+}

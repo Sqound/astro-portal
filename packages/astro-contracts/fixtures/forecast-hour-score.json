@@ -1,0 +1,1792 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "gust": 11,
+          "humidity": 62,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 6
+        }
+      ],
+      "id": "board-19-00",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 100
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 2,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 2,
+          "gust": 12,
+          "humidity": 64,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 7
+        }
+      ],
+      "id": "board-20-00",
+      "result": {
+        "category": "excellent",
+        "cover": 2,
+        "factors": {
+          "cloud": 98,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 2,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 98
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 4,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 4,
+          "gust": 13,
+          "humidity": 67,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 8
+        }
+      ],
+      "id": "board-21-00",
+      "result": {
+        "category": "excellent",
+        "cover": 4,
+        "factors": {
+          "cloud": 96,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 4,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 96
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 8,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 8,
+          "gust": 14,
+          "humidity": 70,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 9
+        }
+      ],
+      "id": "board-22-00",
+      "result": {
+        "category": "excellent",
+        "cover": 8,
+        "factors": {
+          "cloud": 87,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 12.8,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 87
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 16,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 16,
+          "gust": 15,
+          "humidity": 74,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 9
+        }
+      ],
+      "id": "board-23-00",
+      "result": {
+        "category": "favourable",
+        "cover": 16,
+        "factors": {
+          "cloud": 68,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 32.4,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 68
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 24,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 24,
+          "gust": 15,
+          "humidity": 79,
+          "precipitation": 0,
+          "visibility": 22000,
+          "wind": 10
+        }
+      ],
+      "id": "board-00-00",
+      "result": {
+        "category": "variable",
+        "cover": 24,
+        "factors": {
+          "cloud": 48,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 51.6,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 48
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 30,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 30,
+          "gust": 16,
+          "humidity": 84,
+          "precipitation": 0,
+          "visibility": 20000,
+          "wind": 11
+        }
+      ],
+      "id": "board-01-00",
+      "result": {
+        "category": "poor",
+        "cover": 30,
+        "factors": {
+          "cloud": 35,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 65,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 35
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 34,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 34,
+          "gust": 17,
+          "humidity": 88,
+          "precipitation": 0,
+          "visibility": 18000,
+          "wind": 12
+        }
+      ],
+      "id": "board-02-00",
+      "result": {
+        "category": "poor",
+        "cover": 34,
+        "factors": {
+          "cloud": 29,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 71,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 29
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 32,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 32,
+          "gust": 15,
+          "humidity": 90,
+          "precipitation": 0,
+          "visibility": 18000,
+          "wind": 10
+        }
+      ],
+      "id": "board-03-00",
+      "result": {
+        "category": "poor",
+        "cover": 32,
+        "factors": {
+          "cloud": 32,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 68,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 32
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 30,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 30,
+          "gust": 14,
+          "humidity": 91,
+          "precipitation": 0,
+          "visibility": 20000,
+          "wind": 9
+        }
+      ],
+      "id": "board-04-00",
+      "result": {
+        "category": "poor",
+        "cover": 30,
+        "factors": {
+          "cloud": 35,
+          "humidity": 99,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 64.8,
+          "humidity": 0.5,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 35
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "gust": 7,
+          "humidity": 60,
+          "precipitation": 0,
+          "visibility": 30000,
+          "wind": 5
+        }
+      ],
+      "id": "clear-calm-dry-is-100",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 100
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "gust": 30,
+          "humidity": 60,
+          "precipitation": 0,
+          "visibility": 30000,
+          "wind": 5
+        }
+      ],
+      "id": "gust-counts-at-70-percent",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 100
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "gust": 24,
+          "humidity": 60,
+          "precipitation": 0,
+          "visibility": 30000,
+          "wind": 20
+        }
+      ],
+      "id": "wind-stronger-than-gust-share",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 100
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "gust": 40,
+          "humidity": 60,
+          "precipitation": 0,
+          "visibility": 30000,
+          "wind": null
+        }
+      ],
+      "id": "gust-without-wind",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 98
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 2.4
+        },
+        "score": 98
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 40,
+          "cloudHigh": 40,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "gust": 7,
+          "humidity": 60,
+          "precipitation": 0,
+          "visibility": 30000,
+          "wind": 5
+        }
+      ],
+      "id": "high-clouds-count-at-half",
+      "result": {
+        "category": "variable",
+        "cover": 20,
+        "factors": {
+          "cloud": 58,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 42,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 58
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 20,
+          "cloudHigh": 0,
+          "cloudLow": 10,
+          "cloudMid": 10,
+          "gust": 7,
+          "humidity": 60,
+          "precipitation": 0,
+          "visibility": 30000,
+          "wind": 5
+        }
+      ],
+      "id": "low-and-middle-count-whole",
+      "result": {
+        "category": "variable",
+        "cover": 20,
+        "factors": {
+          "cloud": 58,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 42,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 58
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 50,
+          "cloudHigh": 0,
+          "cloudLow": 40,
+          "cloudMid": 40,
+          "gust": 7,
+          "humidity": 60,
+          "precipitation": 0,
+          "visibility": 30000,
+          "wind": 5
+        }
+      ],
+      "id": "layers-never-exceed-the-total",
+      "result": {
+        "category": "poor",
+        "cover": 50,
+        "factors": {
+          "cloud": 10,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 90,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 10
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 30,
+          "cloudHigh": 30,
+          "cloudLow": null,
+          "cloudMid": 10,
+          "gust": 7,
+          "humidity": 60,
+          "precipitation": 0,
+          "visibility": 30000,
+          "wind": 5
+        }
+      ],
+      "id": "missing-layer-uses-the-total",
+      "result": {
+        "category": "poor",
+        "cover": 30,
+        "factors": {
+          "cloud": 35,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 65,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 35
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 25
+        }
+      ],
+      "id": "wind-full-to-25",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 100
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 35
+        }
+      ],
+      "id": "wind-35-is-92",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 92
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 8
+        },
+        "score": 92
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 52
+        }
+      ],
+      "id": "wind-between-45-and-60",
+      "result": {
+        "category": "variable",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 59
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 41.3
+        },
+        "score": 59
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 90
+        }
+      ],
+      "id": "wind-nil-at-90",
+      "result": {
+        "category": "poor",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 0
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 100
+        },
+        "score": 0
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 90,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "humidity-full-to-90",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 100
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 95,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "humidity-95-is-96",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 96,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 4,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 96
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 100,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "humidity-100-is-92",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 92,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 8,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 92
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 0,
+          "visibility": 10000,
+          "wind": 5
+        }
+      ],
+      "id": "haze-none-beyond-10-km",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 100
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 0,
+          "visibility": 5000,
+          "wind": 5
+        }
+      ],
+      "id": "haze-5-km-is-80",
+      "result": {
+        "category": "favourable",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 80,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 20,
+          "wind": 0
+        },
+        "score": 80
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 0,
+          "visibility": 1500,
+          "wind": 5
+        }
+      ],
+      "id": "haze-between-1-and-2-km",
+      "result": {
+        "category": "poor",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 33,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 67.5,
+          "wind": 0
+        },
+        "score": 33
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 0,
+          "visibility": 0,
+          "wind": 5
+        }
+      ],
+      "id": "fog-at-0-km-is-5",
+      "result": {
+        "category": "poor",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 5,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 95,
+          "wind": 0
+        },
+        "score": 5
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 10,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "rain-10-is-92",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 92,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 8,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 92
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 25,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "rain-between-20-and-30",
+      "result": {
+        "category": "favourable",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 64,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 36.5,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 64
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 40,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "rain-40-is-32-no-cap",
+      "result": {
+        "category": "poor",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 32,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 68,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 32
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 80,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "rain-nil-at-80",
+      "result": {
+        "category": "poor",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 0,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 100,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 0
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "moonAltitude": 45,
+          "moonIllumination": 100,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "moon-full-high-is-80",
+      "result": {
+        "category": "favourable",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": 80,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 20,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 80
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "moonAltitude": 30,
+          "moonIllumination": 100,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "moon-full-at-30-is-80",
+      "result": {
+        "category": "favourable",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": 80,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 20,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 80
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "moonAltitude": 50,
+          "moonIllumination": 78,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "moon-78-high-is-84",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": 84,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 15.6,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 84
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "moonAltitude": 15,
+          "moonIllumination": 50,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "moon-half-at-15",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": 95,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 5,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 95
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "moonAltitude": -12,
+          "moonIllumination": 100,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "moon-below-the-horizon-is-neutral",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": 100,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 100
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 0,
+          "cloudHigh": 0,
+          "cloudLow": 0,
+          "cloudMid": 0,
+          "humidity": 50,
+          "moonAltitude": 40,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "moon-without-illumination-is-neutral",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 100
+      }
+    },
+    {
+      "args": [{ "cloud": 0, "cloudHigh": 0, "cloudLow": 0, "cloudMid": 0 }],
+      "id": "missing-metrics-are-neutral",
+      "result": {
+        "category": "excellent",
+        "cover": 0,
+        "factors": {
+          "cloud": 100,
+          "humidity": null,
+          "moon": null,
+          "rain": null,
+          "visibility": null,
+          "wind": null
+        },
+        "losses": {
+          "cloud": 0,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 100
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 30,
+          "cloudHigh": 0,
+          "cloudLow": 30,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 40,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "product-of-two-nuisances",
+      "result": {
+        "category": "poor",
+        "cover": 30,
+        "factors": {
+          "cloud": 35,
+          "humidity": 100,
+          "moon": null,
+          "rain": 32,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 42.6,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 46.2,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 11
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 60,
+          "cloudHigh": 0,
+          "cloudLow": 60,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 20,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "nil-weight-takes-the-whole-loss",
+      "result": {
+        "category": "poor",
+        "cover": 60,
+        "factors": {
+          "cloud": 0,
+          "humidity": 100,
+          "moon": null,
+          "rain": 75,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 100,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 0
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 70,
+          "cloudHigh": 0,
+          "cloudLow": 70,
+          "cloudMid": 0,
+          "humidity": 50,
+          "precipitation": 90,
+          "visibility": 24000,
+          "wind": 5
+        }
+      ],
+      "id": "two-nil-weights-share-the-loss",
+      "result": {
+        "category": "poor",
+        "cover": 70,
+        "factors": {
+          "cloud": 0,
+          "humidity": 100,
+          "moon": null,
+          "rain": 0,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 50,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 50,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 0
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 28,
+          "cloudHigh": 0,
+          "cloudLow": 28,
+          "cloudMid": 0,
+          "gust": 34,
+          "humidity": 95,
+          "moonAltitude": 32,
+          "moonIllumination": 78,
+          "precipitation": 25,
+          "visibility": 9000,
+          "wind": 16
+        }
+      ],
+      "id": "board-02-00-worked-hour",
+      "result": {
+        "category": "poor",
+        "cover": 28,
+        "factors": {
+          "cloud": 39,
+          "humidity": 96,
+          "moon": 84,
+          "rain": 64,
+          "visibility": 96,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 45.8,
+          "humidity": 2,
+          "moon": 8.3,
+          "rain": 22.3,
+          "visibility": 2,
+          "wind": 0
+        },
+        "score": 19
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": null,
+          "cloudHigh": null,
+          "cloudLow": null,
+          "cloudMid": null,
+          "gust": 7,
+          "humidity": 60,
+          "precipitation": 0,
+          "visibility": 30000,
+          "wind": 5
+        }
+      ],
+      "id": "no-cloud-cover-is-null",
+      "result": null
+    },
+    { "args": [null], "id": "not-an-object-is-null", "result": null },
+    {
+      "args": [
+        {
+          "cloud": 3,
+          "cloudHigh": 0,
+          "cloudLow": 3,
+          "cloudMid": 0,
+          "cloudModels": {
+            "best_match": 3,
+            "ecmwf_ifs025": 3,
+            "gfs_seamless": 13,
+            "icon_seamless": 74,
+            "jma_seamless": 3
+          },
+          "gust": 11,
+          "humidity": 62,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 6
+        }
+      ],
+      "id": "models-2026-10-22-22h-jst-median-clear-but-uncertain",
+      "result": {
+        "category": "excellent",
+        "cover": 3,
+        "factors": {
+          "cloud": 97,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 3,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 97
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 3,
+          "cloudHigh": 0,
+          "cloudLow": 3,
+          "cloudMid": 0,
+          "cloudModels": {
+            "best_match": 2,
+            "ecmwf_ifs025": 0,
+            "gfs_seamless": 0,
+            "icon_seamless": 4
+          },
+          "gust": 11,
+          "humidity": 62,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 6
+        }
+      ],
+      "id": "models-agreeing-clear",
+      "result": {
+        "category": "excellent",
+        "cover": 1,
+        "factors": {
+          "cloud": 99,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 1,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 99
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 3,
+          "cloudHigh": 0,
+          "cloudLow": 3,
+          "cloudMid": 0,
+          "cloudModels": { "icon_seamless": 40 },
+          "gust": 11,
+          "humidity": 62,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 6
+        }
+      ],
+      "id": "models-one-model-only",
+      "result": {
+        "category": "poor",
+        "cover": 40,
+        "factors": {
+          "cloud": 20,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 80,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 20
+      }
+    },
+    {
+      "args": [
+        {
+          "cloud": 3,
+          "cloudHigh": 0,
+          "cloudLow": 3,
+          "cloudMid": 0,
+          "cloudModels": {},
+          "gust": 11,
+          "humidity": 62,
+          "precipitation": 0,
+          "visibility": 24000,
+          "wind": 6
+        }
+      ],
+      "id": "models-empty-falls-back-to-the-layers",
+      "result": {
+        "category": "excellent",
+        "cover": 3,
+        "factors": {
+          "cloud": 97,
+          "humidity": 100,
+          "moon": null,
+          "rain": 100,
+          "visibility": 100,
+          "wind": 100
+        },
+        "losses": {
+          "cloud": 3,
+          "humidity": 0,
+          "moon": 0,
+          "rain": 0,
+          "visibility": 0,
+          "wind": 0
+        },
+        "score": 97
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "forecast-hour-score"
+}

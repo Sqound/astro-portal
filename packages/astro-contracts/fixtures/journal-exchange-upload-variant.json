@@ -1,0 +1,92 @@
+{
+  "description": "A second image for the same session and target on a space that keeps variants: the new image is added; coming from Astro Sync, it becomes the capture's main image and the earlier one a variant (`replaced: false`).",
+  "exchange": "upload-variant",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The 10 August night of `list`, with an image of M 42 sent from the phone, on a space with `capture.variant_limit` 2.",
+  "request": {
+    "first": {
+      "caller": "phone",
+      "label": "m42-phone-v",
+      "metadata": {
+        "sessionId": "00000000-0000-4000-8000-000000000016",
+        "targetIds": ["m42"]
+      }
+    },
+    "metadata": {
+      "caller": "sync",
+      "fields": {
+        "sessionId": "00000000-0000-4000-8000-000000000016",
+        "source": "stacking",
+        "targetIds": ["m42"]
+      },
+      "label": "m42-sync-v"
+    },
+    "method": "POST",
+    "path": "/api/v1/captures",
+    "variantLimit": 2
+  },
+  "response": {
+    "body": {
+      "capture": {
+        "byteSize": 100,
+        "checks": {
+          "automatic": null,
+          "automaticAt": null,
+          "protectionLiftedAt": null,
+          "protectionNoticeAt": null,
+          "removedFromGalleryAt": null,
+          "reviewRequestedAt": null,
+          "team": null,
+          "teamAt": null,
+          "teamReason": null
+        },
+        "createdAt": "2026-10-14T12:30:00.000Z",
+        "id": "00000000-0000-4000-8000-00000000002f",
+        "originalName": "m42-sync-v.jpg",
+        "planId": null,
+        "replacedAt": null,
+        "replacedSource": null,
+        "revision": 2,
+        "sessionId": "00000000-0000-4000-8000-000000000016",
+        "sha256": "99046de94e990f8201a2bbc91fe268e25006fa3b33a5fa1a8201534a870b34e0",
+        "stage": "draft",
+        "status": "uploaded",
+        "targetIds": ["m42"],
+        "visibility": "private"
+      },
+      "deduplicated": false,
+      "replaced": false,
+      "storage": {
+        "captureCount": 3,
+        "captureCountLimit": 9007199254740991,
+        "maxFileBytes": 100000,
+        "quotaBytes": 1000000,
+        "usedBytes": 300,
+        "variantCount": 1,
+        "variantLimit": 2
+      },
+      "variant": {
+        "automaticCheck": null,
+        "byteSize": 100,
+        "createdAt": "2026-10-14T12:30:00.000Z",
+        "description": null,
+        "edited": false,
+        "frameCount": null,
+        "height": null,
+        "id": "00000000-0000-4000-8000-000000000031",
+        "main": true,
+        "originalName": "m42-sync-v.jpg",
+        "public": false,
+        "quality": null,
+        "role": null,
+        "sha256": "99046de94e990f8201a2bbc91fe268e25006fa3b33a5fa1a8201534a870b34e0",
+        "source": "stacking",
+        "title": null,
+        "titleSource": null,
+        "width": null
+      }
+    },
+    "schema": "capture.schema.json#/$defs/uploadResponse",
+    "status": 201
+  }
+}

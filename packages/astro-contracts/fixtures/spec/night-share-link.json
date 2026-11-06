@@ -1,0 +1,1840 @@
+{
+  "module": "night-share-link",
+  "package": "portal",
+  "file": "link/night-share",
+  "export": "nightShareScript",
+  "cases": [
+    {
+      "id": "two-viewers-join-then-every-change-goes-to-both-in-join-order",
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "label": "Soirée visuelle au col",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "links": [
+            "https://www.planastro.space/n/km7q2x",
+            "HTTPS://WWW.PLANASTRO.SPACE/N/KM7Q2X",
+            "https://planastro.space/N/KM7Q2X",
+            "https://portal.planastro.space/n/KM7Q2X",
+            "https://www.planastro.space/n/KM7Q2O",
+            "https://www.planastro.space/auth/link"
+          ],
+          "steps": [
+            {
+              "plan": {
+                "ref": {
+                  "id": "plan-1",
+                  "revision": 3,
+                  "name": "Soirée visuelle au col",
+                  "targets": 2
+                },
+                "payload": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "date": "2026-10-03",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr",
+                  "location": {
+                    "name": "Col des Mélèzes",
+                    "latitude": "45.0437",
+                    "longitude": -30.0812,
+                    "elevation": 1847,
+                    "timeZone": "Atlantic/Azores",
+                    "locality": "Hameau des Mélèzes",
+                    "address": "3 chemin du col",
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10]
+                  },
+                  "items": [
+                    {
+                      "id": "item-1",
+                      "targetId": "m57",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "endMinute": 34
+                    },
+                    {
+                      "id": "item-2",
+                      "targetId": "saturne",
+                      "comment": "à revoir",
+                      "startMinute": 60,
+                      "endMinute": 85
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "night": {
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "status": "open",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "updatedAt": "2026-10-03T21:36:00.000Z",
+                  "serverId": "srv-1"
+                },
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "type": "target_started",
+                    "payload": {
+                      "targetId": "m57"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  }
+                ]
+              }
+            },
+            {
+              "target": {
+                "key": "saturne",
+                "name": "Saturne"
+              }
+            },
+            {
+              "connect": "a"
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "v": 1,
+                  "t": "ack",
+                  "s": 2,
+                  "b": {
+                    "of": 2,
+                    "plan": {
+                      "id": "plan-1",
+                      "revision": 3,
+                      "name": "Soirée visuelle au col",
+                      "targets": 2
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "connect": "b"
+            },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "target": {
+                "key": "m31",
+                "name": "M31",
+                "target": {
+                  "coordinate": {
+                    "ra": 10.68,
+                    "dec": 41.27
+                  }
+                }
+              }
+            },
+            {
+              "night": {
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "status": "paused",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "updatedAt": "2026-10-03T21:36:00.000Z",
+                  "serverId": "srv-1"
+                },
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "type": "target_started",
+                    "payload": {
+                      "targetId": "m57"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e2",
+                    "type": "target_finished",
+                    "payload": {
+                      "targetId": "m57"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e3",
+                    "type": "pause",
+                    "payload": {
+                      "cause": "cloud"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "five-viewers-and-a-newcomer-during-the-night-gets-the-whole-night",
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "label": "Soirée visuelle au col",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "steps": [
+            {
+              "plan": {
+                "ref": {
+                  "id": "plan-1",
+                  "revision": 3,
+                  "name": "Soirée visuelle au col",
+                  "targets": 2
+                },
+                "payload": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "date": "2026-10-03",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr",
+                  "location": {
+                    "name": "Col des Mélèzes",
+                    "latitude": "45.0437",
+                    "longitude": -30.0812,
+                    "elevation": 1847,
+                    "timeZone": "Atlantic/Azores",
+                    "locality": "Hameau des Mélèzes",
+                    "address": "3 chemin du col",
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10]
+                  },
+                  "items": [
+                    {
+                      "id": "item-1",
+                      "targetId": "m57",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "endMinute": 34
+                    },
+                    {
+                      "id": "item-2",
+                      "targetId": "saturne",
+                      "comment": "à revoir",
+                      "startMinute": 60,
+                      "endMinute": 85
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "night": {
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "status": "open",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "updatedAt": "2026-10-03T21:36:00.000Z",
+                  "serverId": "srv-1"
+                },
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "type": "target_started",
+                    "payload": {
+                      "targetId": "m57"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  }
+                ]
+              }
+            },
+            {
+              "target": {
+                "key": "saturne",
+                "name": "Saturne"
+              }
+            },
+            {
+              "connect": "a"
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "connect": "b"
+            },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "connect": "c"
+            },
+            {
+              "receive": {
+                "from": "c",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "connect": "d"
+            },
+            {
+              "receive": {
+                "from": "d",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "night": {
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "status": "open",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "updatedAt": "2026-10-03T21:36:00.000Z",
+                  "serverId": "srv-1"
+                },
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "type": "target_started",
+                    "payload": {
+                      "targetId": "m57"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e2",
+                    "type": "target_finished",
+                    "payload": {
+                      "targetId": "m57"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  }
+                ]
+              }
+            },
+            {
+              "connect": "e"
+            },
+            {
+              "receive": {
+                "from": "e",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-viewer-leaves-a-viewer-says-bye-then-the-host-stops",
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "label": "Soirée visuelle au col",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "steps": [
+            {
+              "plan": {
+                "ref": {
+                  "id": "plan-1",
+                  "revision": 3,
+                  "name": "Soirée visuelle au col",
+                  "targets": 2
+                },
+                "payload": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "date": "2026-10-03",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr",
+                  "location": {
+                    "name": "Col des Mélèzes",
+                    "latitude": "45.0437",
+                    "longitude": -30.0812,
+                    "elevation": 1847,
+                    "timeZone": "Atlantic/Azores",
+                    "locality": "Hameau des Mélèzes",
+                    "address": "3 chemin du col",
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10]
+                  },
+                  "items": [
+                    {
+                      "id": "item-1",
+                      "targetId": "m57",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "endMinute": 34
+                    },
+                    {
+                      "id": "item-2",
+                      "targetId": "saturne",
+                      "comment": "à revoir",
+                      "startMinute": 60,
+                      "endMinute": 85
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "night": {
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "status": "open",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "updatedAt": "2026-10-03T21:36:00.000Z",
+                  "serverId": "srv-1"
+                },
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "type": "target_started",
+                    "payload": {
+                      "targetId": "m57"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  }
+                ]
+              }
+            },
+            {
+              "connect": "a"
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "connect": "b"
+            },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "connect": "c"
+            },
+            {
+              "receive": {
+                "from": "c",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "leave": "a"
+            },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "v": 1,
+                  "t": "bye",
+                  "s": 2,
+                  "b": {
+                    "reason": "done"
+                  }
+                }
+              }
+            },
+            {
+              "target": {
+                "key": "saturne",
+                "name": "Saturne"
+              }
+            },
+            {
+              "stop": true
+            },
+            {
+              "connect": "d"
+            },
+            {
+              "target": {
+                "key": "m31",
+                "name": "M31",
+                "target": {
+                  "coordinate": {
+                    "ra": 10.68,
+                    "dec": 41.27
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "every-write-from-a-viewer-is-refused-and-cut",
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "label": "Soirée visuelle au col",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "steps": [
+            {
+              "plan": {
+                "ref": {
+                  "id": "plan-1",
+                  "revision": 3,
+                  "name": "Soirée visuelle au col",
+                  "targets": 2
+                },
+                "payload": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "date": "2026-10-03",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr",
+                  "location": {
+                    "name": "Col des Mélèzes",
+                    "latitude": "45.0437",
+                    "longitude": -30.0812,
+                    "elevation": 1847,
+                    "timeZone": "Atlantic/Azores",
+                    "locality": "Hameau des Mélèzes",
+                    "address": "3 chemin du col",
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10]
+                  },
+                  "items": [
+                    {
+                      "id": "item-1",
+                      "targetId": "m57",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "endMinute": 34
+                    },
+                    {
+                      "id": "item-2",
+                      "targetId": "saturne",
+                      "comment": "à revoir",
+                      "startMinute": 60,
+                      "endMinute": 85
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "night": {
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "status": "open",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "updatedAt": "2026-10-03T21:36:00.000Z",
+                  "serverId": "srv-1"
+                },
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "type": "target_started",
+                    "payload": {
+                      "targetId": "m57"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  }
+                ]
+              }
+            },
+            {
+              "target": {
+                "key": "saturne",
+                "name": "Saturne"
+              }
+            },
+            {
+              "connect": "honest"
+            },
+            {
+              "receive": {
+                "from": "honest",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "connect": "rogue-0"
+            },
+            {
+              "receive": {
+                "from": "rogue-0",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-0",
+                "message": {
+                  "v": 1,
+                  "t": "target",
+                  "s": 2,
+                  "b": {
+                    "key": "m42",
+                    "name": "M42"
+                  }
+                }
+              }
+            },
+            {
+              "connect": "rogue-1"
+            },
+            {
+              "receive": {
+                "from": "rogue-1",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-1",
+                "message": {
+                  "v": 1,
+                  "t": "plan",
+                  "s": 2,
+                  "b": {
+                    "plan": {
+                      "id": "plan-1",
+                      "revision": 99,
+                      "name": "Soirée visuelle au col",
+                      "targets": 2
+                    },
+                    "payload": {}
+                  }
+                }
+              }
+            },
+            {
+              "connect": "rogue-2"
+            },
+            {
+              "receive": {
+                "from": "rogue-2",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-2",
+                "message": {
+                  "v": 1,
+                  "t": "status",
+                  "s": 2,
+                  "b": {
+                    "banner": "solved"
+                  }
+                }
+              }
+            },
+            {
+              "connect": "rogue-3"
+            },
+            {
+              "receive": {
+                "from": "rogue-3",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-3",
+                "message": {
+                  "v": 1,
+                  "t": "nudge",
+                  "s": 2,
+                  "b": {
+                    "direction": "north",
+                    "arcsec": 120
+                  }
+                }
+              }
+            },
+            {
+              "connect": "rogue-4"
+            },
+            {
+              "receive": {
+                "from": "rogue-4",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-4",
+                "message": {
+                  "v": 1,
+                  "t": "souvenir",
+                  "s": 2,
+                  "b": {}
+                }
+              }
+            },
+            {
+              "connect": "rogue-5"
+            },
+            {
+              "receive": {
+                "from": "rogue-5",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-5",
+                "message": {
+                  "v": 1,
+                  "t": "night",
+                  "s": 2,
+                  "b": {
+                    "session": {
+                      "id": "x"
+                    },
+                    "events": [],
+                    "full": true
+                  }
+                }
+              }
+            },
+            {
+              "connect": "early"
+            },
+            {
+              "receive": {
+                "from": "early",
+                "message": {
+                  "v": 1,
+                  "t": "ack",
+                  "s": 1,
+                  "b": {
+                    "of": 1,
+                    "plan": {
+                      "id": "plan-1",
+                      "revision": 3,
+                      "name": "Soirée visuelle au col",
+                      "targets": 2
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "connect": "pilot"
+            },
+            {
+              "receive": {
+                "from": "pilot",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "pilot",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "target": {
+                "key": "m31",
+                "name": "M31",
+                "target": {
+                  "coordinate": {
+                    "ra": 10.68,
+                    "dec": 41.27
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-wrong-code-or-a-newer-protocol-is-told-bye-and-cut",
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "label": "Soirée visuelle au col",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "steps": [
+            {
+              "plan": {
+                "ref": {
+                  "id": "plan-1",
+                  "revision": 3,
+                  "name": "Soirée visuelle au col",
+                  "targets": 2
+                },
+                "payload": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "date": "2026-10-03",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr",
+                  "location": {
+                    "name": "Col des Mélèzes",
+                    "latitude": "45.0437",
+                    "longitude": -30.0812,
+                    "elevation": 1847,
+                    "timeZone": "Atlantic/Azores",
+                    "locality": "Hameau des Mélèzes",
+                    "address": "3 chemin du col",
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10]
+                  },
+                  "items": [
+                    {
+                      "id": "item-1",
+                      "targetId": "m57",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "endMinute": 34
+                    },
+                    {
+                      "id": "item-2",
+                      "targetId": "saturne",
+                      "comment": "à revoir",
+                      "startMinute": 60,
+                      "endMinute": 85
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "night": {
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "status": "open",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "updatedAt": "2026-10-03T21:36:00.000Z",
+                  "serverId": "srv-1"
+                },
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "type": "target_started",
+                    "payload": {
+                      "targetId": "m57"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  }
+                ]
+              }
+            },
+            {
+              "connect": "stranger"
+            },
+            {
+              "receive": {
+                "from": "stranger",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "81d9cd5ace50e18b0e8a529de019599dacfeac5d59e0add9fbdae95cba098e8e",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "connect": "future"
+            },
+            {
+              "receive": {
+                "from": "future",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 2
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-plan-and-the-night-leave-the-host-without-its-notes-or-its-spot",
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "label": "Soirée visuelle au col",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "steps": [
+            {
+              "connect": "a"
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "plan": {
+                "ref": {
+                  "id": "plan-1",
+                  "revision": 3,
+                  "name": "Soirée visuelle au col",
+                  "targets": 2
+                },
+                "payload": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "date": "2026-10-03",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr",
+                  "location": {
+                    "name": "Col des Mélèzes",
+                    "latitude": "45.0437",
+                    "longitude": -30.0812,
+                    "elevation": 1847,
+                    "timeZone": "Atlantic/Azores",
+                    "locality": "Hameau des Mélèzes",
+                    "address": "3 chemin du col",
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10]
+                  },
+                  "items": [
+                    {
+                      "id": "item-1",
+                      "targetId": "m57",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "endMinute": 34
+                    },
+                    {
+                      "id": "item-2",
+                      "targetId": "saturne",
+                      "comment": "à revoir",
+                      "startMinute": 60,
+                      "endMinute": 85
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "night": {
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "status": "open",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "updatedAt": "2026-10-03T21:36:00.000Z",
+                  "serverId": "srv-1"
+                },
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "type": "target_started",
+                    "payload": {
+                      "targetId": "m57"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e2",
+                    "type": "note",
+                    "payload": {
+                      "text": "mal au dos"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e3",
+                    "type": "equipment_issue",
+                    "payload": {
+                      "text": "buée sur le chercheur"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e4",
+                    "type": "condition",
+                    "payload": {
+                      "sky": "clear",
+                      "text": "privé"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e5",
+                    "type": "target_skipped",
+                    "payload": {
+                      "targetId": "m13",
+                      "reason": "cloud",
+                      "comment": "trop bas"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e6",
+                    "type": "exposure_change",
+                    "payload": {
+                      "fromSeconds": 120,
+                      "toSeconds": 180
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e7",
+                    "type": "guiding_timeouts",
+                    "payload": {
+                      "count": 11,
+                      "firstAt": "2026-10-03T21:44:00Z",
+                      "lastAt": "2026-10-04T03:44:00Z"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e8",
+                    "type": "sensor_temperature_drift",
+                    "payload": {
+                      "fromCelsius": -10,
+                      "toCelsius": -6
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e9",
+                    "type": "guiding_spikes",
+                    "payload": {
+                      "count": 3,
+                      "maxArcSeconds": 9,
+                      "firstAt": "2026-10-04T00:10:00Z",
+                      "lastAt": "2026-10-04T01:08:00Z"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e10",
+                    "type": "mount_connected",
+                    "payload": {},
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e11",
+                    "type": "mount_goto",
+                    "payload": {
+                      "outcome": "arrived",
+                      "targetId": "m110",
+                      "gapDegrees": 0.2
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e12",
+                    "type": "mount_stop",
+                    "payload": {},
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e13",
+                    "type": "mount_link_lost",
+                    "payload": {},
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e14",
+                    "type": "mount_link_back",
+                    "payload": {},
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e15",
+                    "type": "mount_parked",
+                    "payload": {
+                      "outcome": "parked"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e16",
+                    "type": "mount_aligned",
+                    "payload": {
+                      "outcome": "synced",
+                      "targetId": "m110"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e17",
+                    "type": "pointing_help",
+                    "payload": {
+                      "method": "mount",
+                      "outcome": "centred"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e18",
+                    "type": "device_connected",
+                    "payload": {},
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e19",
+                    "type": "device_goto",
+                    "payload": {
+                      "outcome": "sent",
+                      "targetId": "m31"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e20",
+                    "type": "device_stop",
+                    "payload": {},
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e21",
+                    "type": "device_parked",
+                    "payload": {
+                      "outcome": "requested"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e22",
+                    "type": "device_link_lost",
+                    "payload": {},
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  },
+                  {
+                    "eventId": "e23",
+                    "type": "device_link_back",
+                    "payload": {},
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-viewer-back-with-the-same-revision-is-not-sent-the-plan-again",
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "label": "Soirée visuelle au col",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "steps": [
+            {
+              "plan": {
+                "ref": {
+                  "id": "plan-1",
+                  "revision": 3,
+                  "name": "Soirée visuelle au col",
+                  "targets": 2
+                },
+                "payload": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "date": "2026-10-03",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr",
+                  "location": {
+                    "name": "Col des Mélèzes",
+                    "latitude": "45.0437",
+                    "longitude": -30.0812,
+                    "elevation": 1847,
+                    "timeZone": "Atlantic/Azores",
+                    "locality": "Hameau des Mélèzes",
+                    "address": "3 chemin du col",
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10]
+                  },
+                  "items": [
+                    {
+                      "id": "item-1",
+                      "targetId": "m57",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "endMinute": 34
+                    },
+                    {
+                      "id": "item-2",
+                      "targetId": "saturne",
+                      "comment": "à revoir",
+                      "startMinute": 60,
+                      "endMinute": 85
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "night": {
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "status": "open",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "updatedAt": "2026-10-03T21:36:00.000Z",
+                  "serverId": "srv-1"
+                },
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "type": "target_started",
+                    "payload": {
+                      "targetId": "m57"
+                    },
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "syncStatus": "sent"
+                  }
+                ]
+              }
+            },
+            {
+              "target": {
+                "key": "saturne",
+                "name": "Saturne"
+              }
+            },
+            {
+              "connect": "a"
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "leave": "a"
+            },
+            {
+              "connect": "a"
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1,
+                    "holds": {
+                      "id": "plan-1",
+                      "revision": 3,
+                      "name": "Soirée visuelle au col",
+                      "targets": 2
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "connect": "b"
+            },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1,
+                    "holds": {
+                      "id": "plan-1",
+                      "revision": 2,
+                      "name": "Soirée visuelle au col",
+                      "targets": 2
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "plan": {
+                "ref": {
+                  "id": "plan-1",
+                  "revision": 4,
+                  "name": "Soirée visuelle au col",
+                  "targets": 2
+                },
+                "payload": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col (2)",
+                  "date": "2026-10-03",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr",
+                  "location": {
+                    "name": "Col des Mélèzes",
+                    "latitude": "45.0437",
+                    "longitude": -30.0812,
+                    "elevation": 1847,
+                    "timeZone": "Atlantic/Azores",
+                    "locality": "Hameau des Mélèzes",
+                    "address": "3 chemin du col",
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10]
+                  },
+                  "items": [
+                    {
+                      "id": "item-1",
+                      "targetId": "m57",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "endMinute": 34
+                    },
+                    {
+                      "id": "item-2",
+                      "targetId": "saturne",
+                      "comment": "à revoir",
+                      "startMinute": 60,
+                      "endMinute": 85
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-guided-evening-goes-to-its-viewers-and-each-says-seen-once",
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "label": "Soirée guidée",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "links": [],
+          "steps": [
+            {
+              "guided": {
+                "v": 1,
+                "evening": {
+                  "format": 1,
+                  "evening": "brightest-stars-tonight",
+                  "titleKey": "brightest-stars-tonight.title",
+                  "subtitleKey": "brightest-stars-tonight.subtitle",
+                  "minutes": 45,
+                  "steps": [
+                    {
+                      "id": "star-hip-91262",
+                      "type": "brightStar",
+                      "targetId": "star-hip-91262",
+                      "name": "Véga",
+                      "ra": 18.6156,
+                      "dec": 38.7837,
+                      "alt": 61.2,
+                      "az": 288.4,
+                      "texts": ["brightest-stars-tonight.lead-first"]
+                    }
+                  ],
+                  "mode": "naked",
+                  "help": "none",
+                  "startedAt": "2026-10-14T19:40:00.000Z",
+                  "index": 0,
+                  "seen": []
+                }
+              }
+            },
+            {
+              "connect": "a"
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "v": 1,
+                  "t": "seen",
+                  "s": 1,
+                  "b": {
+                    "v": 1,
+                    "step": "1792007999000:star-hip-91262"
+                  }
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-a",
+                    "epoch": "run-a",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "connect": "b"
+            },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "v": 1,
+                  "t": "hello",
+                  "s": 1,
+                  "b": {
+                    "device": "dev-b",
+                    "epoch": "run-b",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "name": "",
+                    "version": 1
+                  }
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "v": 1,
+                  "t": "seen",
+                  "s": 2,
+                  "b": {
+                    "v": 1,
+                    "step": "1792007999000:star-hip-91262"
+                  }
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "v": 1,
+                  "t": "seen",
+                  "s": 3,
+                  "b": {
+                    "v": 1,
+                    "step": "1792007999000:star-hip-91262"
+                  }
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "v": 1,
+                  "t": "seen",
+                  "s": 2,
+                  "b": {
+                    "v": 1,
+                    "step": "1792007999000:star-hip-91262"
+                  }
+                }
+              }
+            },
+            {
+              "guided": {
+                "v": 1,
+                "evening": {
+                  "format": 1,
+                  "evening": "brightest-stars-tonight",
+                  "titleKey": "brightest-stars-tonight.title",
+                  "subtitleKey": "brightest-stars-tonight.subtitle",
+                  "minutes": 45,
+                  "steps": [
+                    {
+                      "id": "star-hip-91262",
+                      "type": "brightStar",
+                      "targetId": "star-hip-91262",
+                      "name": "Véga",
+                      "ra": 18.6156,
+                      "dec": 38.7837,
+                      "alt": 61.2,
+                      "az": 288.4,
+                      "texts": ["brightest-stars-tonight.lead-first"]
+                    }
+                  ],
+                  "mode": "naked",
+                  "help": "none",
+                  "startedAt": "2026-10-14T19:40:00.000Z",
+                  "index": 0,
+                  "seen": []
+                }
+              }
+            },
+            {
+              "guided": {
+                "v": 1,
+                "evening": {
+                  "format": 1,
+                  "evening": "brightest-stars-tonight",
+                  "titleKey": "brightest-stars-tonight.title",
+                  "subtitleKey": "brightest-stars-tonight.subtitle",
+                  "minutes": 45,
+                  "steps": [
+                    {
+                      "id": "star-hip-91262",
+                      "type": "brightStar",
+                      "targetId": "star-hip-91262",
+                      "name": "Véga",
+                      "ra": 18.6156,
+                      "dec": 38.7837,
+                      "alt": 61.2,
+                      "az": 288.4,
+                      "texts": ["brightest-stars-tonight.lead-first"]
+                    }
+                  ],
+                  "mode": "naked",
+                  "help": "none",
+                  "startedAt": "2026-10-14T19:40:00.000Z",
+                  "index": 1,
+                  "seen": [0]
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "v": 1,
+                  "t": "guided",
+                  "s": 3,
+                  "b": {
+                    "v": 1,
+                    "evening": null
+                  }
+                }
+              }
+            },
+            {
+              "guided": {
+                "v": 1,
+                "evening": null
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

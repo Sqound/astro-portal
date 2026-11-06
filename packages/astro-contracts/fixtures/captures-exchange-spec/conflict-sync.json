@@ -1,0 +1,46 @@
+{
+  "exchange": "conflict-sync",
+  "handler": "captures/[captureId]/acquisition/sync",
+  "as": "phone",
+  "status": 409,
+  "phase": "write",
+  "capture": "capture:analysed",
+  "params": {
+    "captureId": "{capture:analysed}"
+  },
+  "before": [
+    {
+      "as": "web",
+      "handler": "manage/captures/[captureId]",
+      "params": {
+        "captureId": "{capture:analysed}"
+      },
+      "request": {
+        "method": "PATCH",
+        "path": "/api/v1/manage/captures/{capture:analysed}",
+        "body": {
+          "metadata": {
+            "acquisition": {
+              "line": "{line1}",
+              "set": {
+                "filter": "L",
+                "frameCount": 21,
+                "exposureSeconds": 120
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/captures/{capture:analysed}/acquisition/sync",
+    "headers": {
+      "if-match": "\"{revision}\""
+    }
+  },
+  "schema": "manage-captures.schema.json#/$defs/refusal",
+  "description": "« Synchroniser avec la session » at the revision the phone read: the night gained a measured step meanwhile (the synchronisation would add it) and the web corrected a line: 409, field acquisition, no line (the lines as a whole).",
+  "given": "The analysis of the night gained a step after the capture was filled; the web corrected a line."
+}

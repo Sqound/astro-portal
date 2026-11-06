@@ -1,0 +1,16 @@
+{
+  "exchange": "plan-archived",
+  "description": "`POST /v1/plans/{planId}/archive`: a plan the service froze (here `partial`, debriefed) is archived. The `status` reads `archived`, the revision goes up, the payload, the debriefing and the session do not move.",
+  "given": "The 5 October night of `list`, debriefed `partial`.",
+  "handler": "route:plans/[planId]/archive",
+  "phase": "write",
+  "order": 14,
+  "params": {
+    "planId": "{plan:executed-group-2}"
+  },
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plans/{plan:executed-group-2}/archive"
+  },
+  "schema": "plan.schema.json#/$defs/archiveResponse"
+}

@@ -1,0 +1,206 @@
+{
+  "module": "schedule-placement",
+  "package": "planner",
+  "file": "schedule",
+  "export": "schedulePlacementRun",
+  "cases": [
+    {
+      "id": "resists-then-escapes-right",
+      "args": [
+        {
+          "items": [
+            {
+              "id": "m",
+              "start": 60,
+              "end": 100
+            },
+            {
+              "id": "n",
+              "start": 100,
+              "end": 160
+            }
+          ],
+          "movingId": "m",
+          "hi": 480,
+          "path": [60, 72, 84, 96, 108, 120, 132, 144, 156, 168, 180]
+        }
+      ]
+    },
+    {
+      "id": "escapes-left-when-the-left-is-bigger",
+      "args": [
+        {
+          "items": [
+            {
+              "id": "n",
+              "start": 320,
+              "end": 380
+            },
+            {
+              "id": "m",
+              "start": 380,
+              "end": 420
+            }
+          ],
+          "movingId": "m",
+          "hi": 480,
+          "path": [380, 368, 356, 344, 332, 320, 308, 296, 284, 272, 260]
+        }
+      ]
+    },
+    {
+      "id": "chain-of-four-nights-targets-and-back",
+      "args": [
+        {
+          "items": [
+            {
+              "id": "a",
+              "start": 0,
+              "end": 50
+            },
+            {
+              "id": "b",
+              "start": 50,
+              "end": 100
+            },
+            {
+              "id": "c",
+              "start": 110,
+              "end": 150
+            },
+            {
+              "id": "d",
+              "start": 160,
+              "end": 200
+            }
+          ],
+          "movingId": "b",
+          "hi": 240,
+          "path": [
+            50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180,
+            190, 200, 200, 180, 160, 140, 120, 100, 80, 60, 50
+          ]
+        }
+      ]
+    },
+    {
+      "id": "no-free-stretch-squeezes-then-covers-and-comes-back",
+      "args": [
+        {
+          "items": [
+            {
+              "id": "x",
+              "start": 0,
+              "end": 30
+            },
+            {
+              "id": "a",
+              "start": 0,
+              "end": 40
+            },
+            {
+              "id": "b",
+              "start": 40,
+              "end": 80
+            },
+            {
+              "id": "c",
+              "start": 80,
+              "end": 120
+            }
+          ],
+          "movingId": "x",
+          "hi": 120,
+          "added": true,
+          "path": [
+            0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78, 84, 90, 0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fixed-slots-and-now-floor",
+      "args": [
+        {
+          "items": [
+            {
+              "id": "past",
+              "start": 0,
+              "end": 60,
+              "fixed": true
+            },
+            {
+              "id": "m",
+              "start": 80,
+              "end": 120
+            },
+            {
+              "id": "n",
+              "start": 130,
+              "end": 170
+            },
+            {
+              "id": "stuck",
+              "start": 200,
+              "end": 260,
+              "fixed": true
+            }
+          ],
+          "movingId": "m",
+          "lo": 70,
+          "hi": 300,
+          "path": [
+            80, 75, 70, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180,
+            190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300
+          ]
+        }
+      ]
+    },
+    {
+      "id": "now-late-in-the-night-keeps-the-end-in-the-night",
+      "args": [
+        {
+          "items": [
+            {
+              "id": "m",
+              "start": 100,
+              "end": 200
+            }
+          ],
+          "movingId": "m",
+          "lo": 420,
+          "hi": 480,
+          "path": [100, 300, 380, 420, 470]
+        }
+      ]
+    },
+    {
+      "id": "added-on-what-it-covers-pushes-it",
+      "args": [
+        {
+          "items": [
+            {
+              "id": "x",
+              "start": 100,
+              "end": 160
+            },
+            {
+              "id": "a",
+              "start": 90,
+              "end": 150
+            },
+            {
+              "id": "b",
+              "start": 200,
+              "end": 260
+            }
+          ],
+          "movingId": "x",
+          "hi": 300,
+          "added": true,
+          "path": [100, 110, 130]
+        }
+      ]
+    }
+  ]
+}

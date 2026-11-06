@@ -1,0 +1,170 @@
+{
+  "module": "catalog-taxonomy",
+  "export": "taxonomyLabel",
+  "cases": [
+    {
+      "id": "galaxy-japanese-label",
+      "args": ["Galaxie", "ja"]
+    },
+    {
+      "id": "type-without-a-label-in-the-locale-reads-english",
+      "args": ["Galaxie", "en-XA"]
+    },
+    {
+      "id": "constellation-japanese-name",
+      "args": ["Andromède", "ja"]
+    },
+    {
+      "id": "constellation-english-name",
+      "args": ["Andromède", "en"]
+    },
+    {
+      "id": "constellation-french-key-in-french",
+      "args": ["Andromède", "fr"]
+    },
+    {
+      "id": "constellation-without-a-label-in-the-locale-reads-the-english-name",
+      "args": ["Andromède", "en-XA"]
+    },
+    {
+      "id": "type-de-label",
+      "args": ["Nébuleuse en émission", "de"]
+    },
+    {
+      "id": "constellation-de-name",
+      "args": ["Chiens de chasse", "de"]
+    },
+    {
+      "id": "type-es-label",
+      "args": ["Nébuleuse en émission", "es"]
+    },
+    {
+      "id": "constellation-es-name",
+      "args": ["Chiens de chasse", "es"]
+    },
+    {
+      "id": "type-it-label",
+      "args": ["Nébuleuse en émission", "it"]
+    },
+    {
+      "id": "constellation-it-name",
+      "args": ["Chiens de chasse", "it"]
+    },
+    {
+      "id": "type-pt-br-label",
+      "args": ["Nébuleuse en émission", "pt-BR"]
+    },
+    {
+      "id": "constellation-pt-br-name",
+      "args": ["Chiens de chasse", "pt-BR"]
+    },
+    {
+      "id": "galaxy-simplified-chinese-label",
+      "args": ["Galaxie", "zh-Hans"]
+    },
+    {
+      "id": "galaxy-traditional-chinese-label",
+      "args": ["Galaxie", "zh-Hant"]
+    },
+    {
+      "id": "galaxy-russian-label",
+      "args": ["Galaxie", "ru"]
+    },
+    {
+      "id": "constellation-simplified-chinese-name",
+      "args": ["Andromède", "zh-Hans"]
+    },
+    {
+      "id": "constellation-traditional-chinese-name",
+      "args": ["Andromède", "zh-Hant"]
+    },
+    {
+      "id": "constellation-russian-name",
+      "args": ["Andromède", "ru"]
+    },
+    {
+      "id": "emission-nebula-simplified-chinese-label",
+      "args": ["Nébuleuse en émission", "zh-Hans"]
+    },
+    {
+      "id": "emission-nebula-traditional-chinese-label",
+      "args": ["Nébuleuse en émission", "zh-Hant"]
+    },
+    {
+      "id": "emission-nebula-russian-label",
+      "args": ["Nébuleuse en émission", "ru"]
+    },
+    {
+      "id": "constellation-by-iau-key-in-french",
+      "args": ["Lyr", "fr"]
+    },
+    {
+      "id": "constellation-by-iau-key-in-japanese",
+      "args": ["Lyr", "ja"]
+    },
+    {
+      "id": "constellation-by-iau-key-in-spanish",
+      "args": ["Lyr", "es"]
+    },
+    {
+      "id": "constellation-by-iau-key-in-russian",
+      "args": ["Lyr", "ru"]
+    },
+    {
+      "id": "constellation-by-iau-key-in-simplified-chinese",
+      "args": ["Lyr", "zh-Hans"]
+    },
+    {
+      "id": "constellation-old-serpent-key-reads-the-serpent",
+      "args": ["Se1", "de"]
+    },
+    {
+      "id": "carina-in-german",
+      "args": ["Car", "de"]
+    },
+    {
+      "id": "antlia-in-french",
+      "args": ["Ant", "fr"]
+    },
+    {
+      "id": "bright-star-type-in-english",
+      "args": ["Étoile brillante", "en"]
+    },
+    {
+      "id": "bright-star-type-in-japanese",
+      "args": ["Étoile brillante", "ja"]
+    },
+    {
+      "id": "bright-star-type-in-portuguese",
+      "args": ["Étoile brillante", "pt-BR"]
+    },
+    {
+      "id": "bright-star-type-in-russian",
+      "args": ["Étoile brillante", "ru"]
+    },
+    {
+      "id": "bright-star-type-in-traditional-chinese",
+      "args": ["Étoile brillante", "zh-Hant"]
+    },
+    {
+      "id": "bright-star-type-in-french",
+      "args": ["Étoile brillante", "fr"]
+    },
+    {
+      "id": "constellation-type-in-german",
+      "args": ["Constellation", "de"]
+    },
+    {
+      "id": "constellation-type-in-japanese",
+      "args": ["Constellation", "ja"]
+    },
+    {
+      "id": "constellation-type-in-italian",
+      "args": ["Constellation", "it"]
+    },
+    {
+      "id": "constellation-type-in-russian",
+      "args": ["Constellation", "ru"]
+    }
+  ]
+}

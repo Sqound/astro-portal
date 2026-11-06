@@ -1,0 +1,15 @@
+{
+  "module": "score-on-100",
+  "package": "portal",
+  "file": "written-forms",
+  "export": "scoreOn100",
+  "cases": [
+    { "id": "one-criterion-unrated", "args": [{ "total": 74, "max": 90 }] },
+    { "id": "all-rated", "args": [{ "total": 81, "max": 100 }] },
+    { "id": "nothing-rated", "args": [{ "total": 0, "max": 0 }] },
+    { "id": "half-rounds-up", "args": [{ "total": 1, "max": 8 }] },
+    { "id": "below-half-rounds-down", "args": [{ "total": 62, "max": 80 }] },
+    { "id": "full-marks-reduced", "args": [{ "total": 70, "max": 70 }] },
+    { "id": "no-score", "args": [null] }
+  ]
+}

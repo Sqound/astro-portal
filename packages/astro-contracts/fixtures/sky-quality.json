@@ -1,0 +1,12 @@
+{
+  "cases": [
+    { "args": [0], "id": "zero-brightness", "result": 22 },
+    { "args": [1], "id": "moderate-brightness", "result": 19.91 },
+    { "args": [1000], "id": "high-brightness", "result": 12.58 },
+    { "args": [100000000], "id": "out-of-range-returns-null", "result": null },
+    { "args": [-5], "id": "negative-returns-null", "result": null },
+    { "args": ["abc"], "id": "non-numeric-returns-null", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "sky-quality"
+}

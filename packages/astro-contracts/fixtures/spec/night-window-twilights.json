@@ -1,0 +1,78 @@
+{
+  "module": "night-window-twilights",
+  "file": "night-window",
+  "export": "twilightWindows",
+  "cases": [
+    {
+      "id": "mid-latitude-winter",
+      "args": [
+        {
+          "date": "2025-01-10",
+          "latitude": 45,
+          "longitude": 10,
+          "elevation": 0,
+          "timeZone": "UTC"
+        }
+      ]
+    },
+    {
+      "id": "open-ocean-autumn",
+      "args": [
+        {
+          "date": "2026-10-14",
+          "latitude": 45,
+          "longitude": -30,
+          "elevation": 0,
+          "timeZone": "Atlantic/Azores"
+        }
+      ]
+    },
+    {
+      "id": "zoneless-open-ocean",
+      "args": [{ "date": "2026-10-14", "latitude": 45, "longitude": 170 }]
+    },
+    {
+      "id": "short-summer-night",
+      "args": [{ "date": "2026-06-21", "latitude": 55, "longitude": -30 }]
+    },
+    {
+      "id": "midnight-sun",
+      "args": [
+        {
+          "date": "2026-06-21",
+          "latitude": 69.6,
+          "longitude": 19,
+          "timeZone": "Europe/Berlin"
+        }
+      ]
+    },
+    {
+      "id": "threshold-in-input-is-ignored",
+      "args": [
+        {
+          "date": "2026-10-14",
+          "latitude": 45,
+          "longitude": -30,
+          "elevation": 0,
+          "timeZone": "Atlantic/Azores",
+          "sunAltitudeDegrees": -6
+        }
+      ]
+    },
+    {
+      "id": "invalid-place",
+      "args": [{ "date": "2026-10-14", "latitude": 95, "longitude": 0 }]
+    },
+    {
+      "id": "explicit-utc-far-east",
+      "args": [
+        {
+          "date": "2026-10-14",
+          "latitude": 45,
+          "longitude": 170,
+          "timeZone": "UTC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "cases": [
+    { "args": [null, null, []], "id": "no-place-at-all", "result": null },
+    {
+      "args": [
+        null,
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "name": "Maison",
+          "timeZone": "Europe/Paris"
+        },
+        []
+      ],
+      "id": "the-plan-place-when-the-session-names-none",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "name": "Maison",
+        "timeZone": "Europe/Paris"
+      }
+    },
+    {
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "name": "Maison",
+          "timeZone": "Asia/Tokyo"
+        },
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "name": "Maison",
+          "timeZone": "Europe/Paris"
+        },
+        []
+      ],
+      "id": "the-session-place-keeps-its-own-zone",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "name": "Maison",
+        "timeZone": "Asia/Tokyo"
+      }
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" },
+        {
+          "id": "home",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "name": "Maison",
+          "timeZone": "Europe/Paris"
+        },
+        []
+      ],
+      "id": "the-plan-copy-lends-its-zone",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "name": "Maison",
+        "timeZone": "Europe/Paris"
+      }
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" },
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "name": "Maison",
+          "timeZone": "Europe/Paris",
+          "timeZoneSource": "chosen"
+        },
+        []
+      ],
+      "id": "the-plan-copy-lends-its-chosen-mark",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "name": "Maison",
+        "timeZone": "Europe/Paris",
+        "timeZoneSource": "chosen"
+      }
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" },
+        {
+          "latitude": 35.68,
+          "longitude": 139.69,
+          "name": "Gîte",
+          "timeZone": "Asia/Tokyo"
+        },
+        []
+      ],
+      "id": "another-place-lends-nothing",
+      "result": { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" }
+    },
+    {
+      "args": [
+        { "name": "Maison" },
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "name": "Maison",
+          "timeZone": "Europe/Paris"
+        },
+        []
+      ],
+      "id": "a-session-place-without-position-reads-the-plan",
+      "result": { "name": "Maison", "timeZone": "Europe/Paris" }
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" },
+        { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" },
+        [
+          {
+            "id": "home",
+            "latitude": 48.8566,
+            "longitude": 2.3522,
+            "name": "Maison",
+            "timeZone": "America/Toronto",
+            "timeZoneSource": "chosen"
+          }
+        ]
+      ],
+      "id": "the-persons-own-place-lends-its-zone",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "name": "Maison",
+        "timeZone": "America/Toronto",
+        "timeZoneSource": "chosen"
+      }
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" },
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "name": "Maison",
+          "timeZone": "Europe/Paris"
+        },
+        [
+          {
+            "id": "home",
+            "latitude": 48.8566,
+            "longitude": 2.3522,
+            "name": "Maison",
+            "timeZone": "America/Toronto"
+          }
+        ]
+      ],
+      "id": "the-plan-copy-comes-before-the-persons-places",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "name": "Maison",
+        "timeZone": "Europe/Paris"
+      }
+    },
+    {
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "name": "Maison",
+          "timeZone": "Not/AZone"
+        },
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "name": "Maison",
+          "timeZone": "Europe/Paris"
+        },
+        []
+      ],
+      "id": "a-place-with-an-unknown-zone-is-lent-one",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "name": "Maison",
+        "timeZone": "Europe/Paris"
+      }
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" },
+        { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" },
+        [
+          {
+            "id": "home",
+            "latitude": 48.8566,
+            "longitude": 2.3522,
+            "name": "Maison"
+          }
+        ]
+      ],
+      "id": "nobody-has-a-zone",
+      "result": { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "place-time-zone-session-place"
+}

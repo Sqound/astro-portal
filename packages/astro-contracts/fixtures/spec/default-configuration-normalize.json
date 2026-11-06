@@ -1,0 +1,85 @@
+{
+  "module": "default-configuration-normalize",
+  "package": "portal",
+  "file": "planner/default-configuration",
+  "export": "normalizeDefaultConfiguration",
+  "cases": [
+    {
+      "id": "no-configuration-is-null",
+      "args": [null]
+    },
+    {
+      "id": "a-list-is-no-configuration",
+      "args": [["inv-refractor-72"]]
+    },
+    {
+      "id": "a-plan-equipment-keeps-only-the-configuration-keys",
+      "args": [
+        {
+          "mode": "imaging",
+          "telescopeId": "inv-refractor-72",
+          "cameraId": "inv-camera-colour",
+          "eyepieceId": null,
+          "eyepieceFocalLengthMm": "",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "restrictToEquipment": false,
+          "windTolerance": {
+            "preset": "standard"
+          }
+        }
+      ]
+    },
+    {
+      "id": "an-empty-object-is-a-configuration-with-nothing-chosen",
+      "args": [{}]
+    },
+    {
+      "id": "the-mode-is-imaging-unless-visual",
+      "args": [
+        {
+          "mode": "telescope"
+        }
+      ]
+    },
+    {
+      "id": "a-blank-or-non-text-identifier-is-left-out",
+      "args": [
+        {
+          "mode": "visual",
+          "telescopeId": "",
+          "cameraId": 42,
+          "eyepieceId": "inv-eyepiece-24",
+          "mountId": null
+        }
+      ]
+    },
+    {
+      "id": "filters-are-distinct-texts",
+      "args": [
+        {
+          "filterIds": [
+            "inv-filter-duo",
+            "inv-filter-duo",
+            "",
+            7,
+            "inv-filter-uvir"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-null-identifier-is-left-out",
+      "args": [
+        {
+          "mode": "imaging",
+          "telescopeId": null,
+          "cameraId": null,
+          "eyepieceId": "plossl-25",
+          "modifierId": "none"
+        }
+      ]
+    }
+  ]
+}

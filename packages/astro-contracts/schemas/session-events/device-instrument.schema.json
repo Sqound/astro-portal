@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/device-instrument.schema.json",
+  "title": "Astro Portal session event payload: device_instrument",
+  "description": "One sample of what a smart telescope in mode expérimental says of itself: the filter it carries, its hygrometer, its dew heater, its battery, its temperatures, the frames of the capture under way (kept, rejected and why) and the pointing attempts that failed. Written by the application every 5 minutes and at each change (a filter mounted or removed, the heater switching, rejected frames climbing, a pointing given up), never once per read; `origin: rebuilt` is a sample the application read back from what the device kept, when it was reopened after being closed (`endedAt`: when the device's capture ended). Every field is optional but at least one reading is present; a reader takes only what a sample says and draws nothing for a field it lacks. Never a position, never a raw answer of the device. Private in a shared night. Added by SMART-SCOPE-INSTRUMENT-PANEL-01 (contract revision 2026-11-03): a reader that predates it ignores it. See session-events.md, « The instrument kind ».",
+  "type": "object",
+  "properties": {
+    "family": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "The smart telescope's family (`vespera`, `seestar`, `dwarf`)."
+    },
+    "origin": {
+      "type": "string",
+      "enum": ["live", "rebuilt"],
+      "description": "`live` (the default): read while the application was open; `rebuilt`: read back at the reopening from what the device kept."
+    },
+    "reason": {
+      "type": "string",
+      "enum": ["interval", "change"],
+      "description": "Why this sample was written: the 5-minute beat, or a change."
+    },
+    "endedAt": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 40,
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T",
+      "description": "With `origin: rebuilt`: the ISO 8601 instant the device's capture or pointing ended, when it says it."
+    },
+    "targetId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The plan's key of the target the device works on, when the application knows it."
+    },
+    "targetLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The target's display name as the device or the plan names it (« IC 1805 »)."
+    },
+    "captureId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120,
+      "description": "The device's own identifier of the capture the frame counts belong to; the counts of one capture only grow, so a reader keeps the largest of each capture."
+    },
+    "filter": {
+      "type": "string",
+      "enum": ["none", "dual_band", "cls", "light_pollution", "other"],
+      "description": "The filter the device says it carries: `none` (it says none: a fact, not an absence), `dual_band`, `cls`, `light_pollution` (a Seestar's built-in light-pollution filter, on), `other` (any other word, given in `filterLabel`)."
+    },
+    "filterLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "With `filter: other`: the device's own word for it (« LP2 », a DWARF's « IR »), never translated."
+    },
+    "humidity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Relative humidity at the device's hygrometer, percent."
+    },
+    "temperature": {
+      "type": "number",
+      "minimum": -80,
+      "maximum": 100,
+      "description": "Air temperature at the device's hygrometer, °C."
+    },
+    "dewPointDepression": {
+      "type": "number",
+      "minimum": -50,
+      "maximum": 100,
+      "description": "How far the temperature is above the dew point, °C."
+    },
+    "heater": {
+      "type": "string",
+      "enum": ["on", "off"],
+      "description": "The dew heater, as the device says it."
+    },
+    "battery": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "The device's own battery, percent."
+    },
+    "charging": {
+      "type": "boolean",
+      "description": "Whether the device says its battery charges."
+    },
+    "boardTemperature": {
+      "type": "number",
+      "minimum": -80,
+      "maximum": 150,
+      "description": "A Seestar's board temperature, °C."
+    },
+    "overheated": {
+      "type": "boolean",
+      "description": "Whether the device says it is too hot."
+    },
+    "temperatureMin": {
+      "type": "number",
+      "minimum": -80,
+      "maximum": 150,
+      "description": "A DWARF's lowest sensor temperature of the capture, °C."
+    },
+    "temperatureMax": {
+      "type": "number",
+      "minimum": -80,
+      "maximum": 150,
+      "description": "A DWARF's highest sensor temperature of the capture, °C."
+    },
+    "framesTaken": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000,
+      "description": "Frames the device took for the capture so far."
+    },
+    "framesStacked": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000,
+      "description": "Frames the device kept in its stack so far."
+    },
+    "framesRejected": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000000,
+      "description": "Frames the device rejected so far."
+    },
+    "rejections": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "description": "Why frames were rejected, as the device counts them.",
+      "items": {
+        "type": "object",
+        "required": ["cause", "count"],
+        "properties": {
+          "cause": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 60,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "description": "A short machine word: the device's own code (`StackingRoundnessError`) or the application's (`star_trails`)."
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "pointingFailures": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1000,
+      "description": "Pointing attempts the device failed on the target (a Vespera's failed astrometries)."
+    },
+    "pointingAbandoned": {
+      "type": "boolean",
+      "description": "The device gave the target up after too many failed attempts."
+    }
+  },
+  "allOf": [
+    {
+      "anyOf": [
+        {
+          "required": ["filter"]
+        },
+        {
+          "required": ["humidity"]
+        },
+        {
+          "required": ["temperature"]
+        },
+        {
+          "required": ["heater"]
+        },
+        {
+          "required": ["battery"]
+        },
+        {
+          "required": ["boardTemperature"]
+        },
+        {
+          "required": ["temperatureMin"]
+        },
+        {
+          "required": ["temperatureMax"]
+        },
+        {
+          "required": ["framesTaken"]
+        },
+        {
+          "required": ["framesStacked"]
+        },
+        {
+          "required": ["framesRejected"]
+        },
+        {
+          "required": ["pointingFailures"]
+        },
+        {
+          "required": ["pointingAbandoned"]
+        }
+      ]
+    }
+  ],
+  "additionalProperties": false
+}

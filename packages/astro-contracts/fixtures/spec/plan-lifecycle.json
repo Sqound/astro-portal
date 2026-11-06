@@ -1,0 +1,15 @@
+{
+  "module": "plan-lifecycle",
+  "package": "portal",
+  "file": "persistence/planner-state-repository",
+  "export": "apiPlanStatus",
+  "cases": [
+    { "id": "pending-maps-to-active", "args": ["pending"] },
+    { "id": "executed-stays-executed", "args": ["executed"] },
+    { "id": "partial-stays-partial", "args": ["partial"] },
+    { "id": "abandoned-stays-abandoned", "args": ["abandoned"] },
+    { "id": "archived-stays-archived", "args": ["archived"] },
+    { "id": "unknown-status-falls-back-to-active", "args": ["bogus"] },
+    { "id": "empty-status-falls-back-to-active", "args": [""] }
+  ]
+}

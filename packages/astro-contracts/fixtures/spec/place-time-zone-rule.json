@@ -1,0 +1,126 @@
+{
+  "module": "place-time-zone-rule",
+  "package": "portal",
+  "file": "planner/place-time-zone",
+  "export": "resolvePlaceTimeZone",
+  "cases": [
+    {
+      "id": "nothing-known-from-the-table",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        }
+      ]
+    },
+    {
+      "id": "nothing-known-service-answers",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        "Europe/Paris"
+      ]
+    },
+    {
+      "id": "stored-zone-kept",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Europe/Paris"
+        }
+      ]
+    },
+    {
+      "id": "service-refines-a-stored-zone",
+      "args": [
+        {
+          "latitude": 43.9,
+          "longitude": 7.4,
+          "timeZone": "Europe/Monaco"
+        },
+        "Europe/Paris"
+      ]
+    },
+    {
+      "id": "chosen-zone-is-final",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Asia/Tokyo",
+          "timeZoneSource": "chosen"
+        },
+        "Europe/Paris"
+      ]
+    },
+    {
+      "id": "chosen-marker-without-a-zone",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZoneSource": "chosen"
+        }
+      ]
+    },
+    {
+      "id": "unknown-stored-zone-falls-to-the-table",
+      "args": [
+        {
+          "latitude": 35.68,
+          "longitude": 139.69,
+          "timeZone": "Not/AZone"
+        }
+      ]
+    },
+    {
+      "id": "unknown-service-zone-ignored",
+      "args": [
+        {
+          "latitude": 35.68,
+          "longitude": 139.69
+        },
+        "Not/AZone"
+      ]
+    },
+    {
+      "id": "explicit-utc-is-a-zone",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "UTC"
+        }
+      ]
+    },
+    {
+      "id": "no-coordinates-no-zone",
+      "args": [
+        {
+          "name": "Maison"
+        }
+      ]
+    },
+    {
+      "id": "no-coordinates-service-answers",
+      "args": [
+        {
+          "name": "Maison"
+        },
+        "Europe/Paris"
+      ]
+    },
+    {
+      "id": "at-sea",
+      "args": [
+        {
+          "latitude": -10,
+          "longitude": -150
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "cases": [
+    { "args": ["LDN1622"], "id": "joined", "result": "LDN 1622" },
+    { "args": ["LDN 01622"], "id": "zero-padded", "result": "LDN 1622" },
+    { "args": ["LBN 437"], "id": "foreign-designation", "result": null }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "ldn-catalogue"
+}

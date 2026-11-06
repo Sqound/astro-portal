@@ -1,0 +1,403 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 10, "azimuth": 0 },
+            { "altitude": 22, "azimuth": 30 }
+          ]
+        },
+        15
+      ],
+      "id": "interpolates-between-two-samples",
+      "result": 16
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 10, "azimuth": 0 },
+            { "altitude": 22, "azimuth": 30 }
+          ]
+        },
+        30
+      ],
+      "id": "an-exact-sample-returns-its-altitude",
+      "result": 22
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 10, "azimuth": 0 },
+            { "altitude": 40, "azimuth": 330 }
+          ]
+        },
+        345
+      ],
+      "id": "wraps-past-north",
+      "result": 25
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 10, "azimuth": 0 },
+            { "altitude": 40, "azimuth": 330 }
+          ]
+        },
+        -15
+      ],
+      "id": "a-negative-azimuth-normalizes",
+      "result": 25
+    },
+    {
+      "args": [null, 123],
+      "id": "a-flat-mask-is-zero-everywhere",
+      "result": 0
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 12, "azimuth": 0 },
+            { "altitude": 8, "azimuth": 30 },
+            { "altitude": 5, "azimuth": 60 },
+            { "altitude": 0, "azimuth": 90 },
+            { "altitude": 0, "azimuth": 120 },
+            { "altitude": 3, "azimuth": 150 },
+            { "altitude": 10, "azimuth": 180 },
+            { "altitude": 22, "azimuth": 210 },
+            { "altitude": 35, "azimuth": 240 },
+            { "altitude": 28, "azimuth": 270 },
+            { "altitude": 18, "azimuth": 300 },
+            { "altitude": 14, "azimuth": 330 }
+          ]
+        },
+        45
+      ],
+      "id": "a-twelve-point-mask-between-two-samples",
+      "result": 6.5
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 12, "azimuth": 0 },
+            { "altitude": 8, "azimuth": 30 },
+            { "altitude": 5, "azimuth": 60 },
+            { "altitude": 0, "azimuth": 90 },
+            { "altitude": 0, "azimuth": 120 },
+            { "altitude": 3, "azimuth": 150 },
+            { "altitude": 10, "azimuth": 180 },
+            { "altitude": 22, "azimuth": 210 },
+            { "altitude": 35, "azimuth": 240 },
+            { "altitude": 28, "azimuth": 270 },
+            { "altitude": 18, "azimuth": 300 },
+            { "altitude": 14, "azimuth": 330 }
+          ]
+        },
+        250
+      ],
+      "id": "a-twelve-point-mask-on-a-new-ten-degree-node",
+      "result": 32.666666666666664
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 12, "azimuth": 0 },
+            { "altitude": 8, "azimuth": 30 },
+            { "altitude": 5, "azimuth": 60 },
+            { "altitude": 0, "azimuth": 90 },
+            { "altitude": 0, "azimuth": 120 },
+            { "altitude": 3, "azimuth": 150 },
+            { "altitude": 10, "azimuth": 180 },
+            { "altitude": 22, "azimuth": 210 },
+            { "altitude": 35, "azimuth": 240 },
+            { "altitude": 28, "azimuth": 270 },
+            { "altitude": 18, "azimuth": 300 },
+            { "altitude": 14, "azimuth": 330 }
+          ]
+        },
+        347.5
+      ],
+      "id": "a-twelve-point-mask-at-a-fractional-azimuth",
+      "result": 12.833333333333332
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 12, "azimuth": 0 },
+            { "altitude": 8, "azimuth": 30 },
+            { "altitude": 5, "azimuth": 60 },
+            { "altitude": 0, "azimuth": 90 },
+            { "altitude": 0, "azimuth": 120 },
+            { "altitude": 3, "azimuth": 150 },
+            { "altitude": 10, "azimuth": 180 },
+            { "altitude": 22, "azimuth": 210 },
+            { "altitude": 35, "azimuth": 240 },
+            { "altitude": 28, "azimuth": 270 },
+            { "altitude": 18, "azimuth": 300 },
+            { "altitude": 14, "azimuth": 330 }
+          ]
+        },
+        240
+      ],
+      "id": "a-twelve-point-mask-on-one-of-its-own-samples",
+      "result": 35
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 10, "azimuth": 0 },
+            { "altitude": 12, "azimuth": 10 },
+            { "altitude": 15, "azimuth": 20 },
+            { "altitude": 18, "azimuth": 30 },
+            { "altitude": 20, "azimuth": 40 },
+            { "altitude": 22, "azimuth": 50 },
+            { "altitude": 24, "azimuth": 60 },
+            { "altitude": 21, "azimuth": 70 },
+            { "altitude": 17, "azimuth": 80 },
+            { "altitude": 12, "azimuth": 90 },
+            { "altitude": 8, "azimuth": 100 },
+            { "altitude": 5, "azimuth": 110 },
+            { "altitude": 3, "azimuth": 120 },
+            { "altitude": 2, "azimuth": 130 },
+            { "altitude": 0, "azimuth": 140 },
+            { "altitude": 0, "azimuth": 150 },
+            { "altitude": 0, "azimuth": 160 },
+            { "altitude": 1, "azimuth": 170 },
+            { "altitude": 4, "azimuth": 180 },
+            { "altitude": 7, "azimuth": 190 },
+            { "altitude": 10, "azimuth": 200 },
+            { "altitude": 15, "azimuth": 210 },
+            { "altitude": 20, "azimuth": 220 },
+            { "altitude": 26, "azimuth": 230 },
+            { "altitude": 32, "azimuth": 240 },
+            { "altitude": 30, "azimuth": 250 },
+            { "altitude": 28, "azimuth": 260 },
+            { "altitude": 25, "azimuth": 270 },
+            { "altitude": 22, "azimuth": 280 },
+            { "altitude": 18, "azimuth": 290 },
+            { "altitude": 16, "azimuth": 300 },
+            { "altitude": 14, "azimuth": 310 },
+            { "altitude": 13, "azimuth": 320 },
+            { "altitude": 12, "azimuth": 330 },
+            { "altitude": 11, "azimuth": 340 },
+            { "altitude": 10, "azimuth": 350 }
+          ]
+        },
+        125
+      ],
+      "id": "a-thirty-six-point-mask-between-two-nodes",
+      "result": 2.5
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 10, "azimuth": 0 },
+            { "altitude": 12, "azimuth": 10 },
+            { "altitude": 15, "azimuth": 20 },
+            { "altitude": 18, "azimuth": 30 },
+            { "altitude": 20, "azimuth": 40 },
+            { "altitude": 22, "azimuth": 50 },
+            { "altitude": 24, "azimuth": 60 },
+            { "altitude": 21, "azimuth": 70 },
+            { "altitude": 17, "azimuth": 80 },
+            { "altitude": 12, "azimuth": 90 },
+            { "altitude": 8, "azimuth": 100 },
+            { "altitude": 5, "azimuth": 110 },
+            { "altitude": 3, "azimuth": 120 },
+            { "altitude": 2, "azimuth": 130 },
+            { "altitude": 0, "azimuth": 140 },
+            { "altitude": 0, "azimuth": 150 },
+            { "altitude": 0, "azimuth": 160 },
+            { "altitude": 1, "azimuth": 170 },
+            { "altitude": 4, "azimuth": 180 },
+            { "altitude": 7, "azimuth": 190 },
+            { "altitude": 10, "azimuth": 200 },
+            { "altitude": 15, "azimuth": 210 },
+            { "altitude": 20, "azimuth": 220 },
+            { "altitude": 26, "azimuth": 230 },
+            { "altitude": 32, "azimuth": 240 },
+            { "altitude": 30, "azimuth": 250 },
+            { "altitude": 28, "azimuth": 260 },
+            { "altitude": 25, "azimuth": 270 },
+            { "altitude": 22, "azimuth": 280 },
+            { "altitude": 18, "azimuth": 290 },
+            { "altitude": 16, "azimuth": 300 },
+            { "altitude": 14, "azimuth": 310 },
+            { "altitude": 13, "azimuth": 320 },
+            { "altitude": 12, "azimuth": 330 },
+            { "altitude": 11, "azimuth": 340 },
+            { "altitude": 10, "azimuth": 350 }
+          ]
+        },
+        240
+      ],
+      "id": "a-thirty-six-point-mask-on-a-node",
+      "result": 32
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 10, "azimuth": 0 },
+            { "altitude": 12, "azimuth": 10 },
+            { "altitude": 15, "azimuth": 20 },
+            { "altitude": 18, "azimuth": 30 },
+            { "altitude": 20, "azimuth": 40 },
+            { "altitude": 22, "azimuth": 50 },
+            { "altitude": 24, "azimuth": 60 },
+            { "altitude": 21, "azimuth": 70 },
+            { "altitude": 17, "azimuth": 80 },
+            { "altitude": 12, "azimuth": 90 },
+            { "altitude": 8, "azimuth": 100 },
+            { "altitude": 5, "azimuth": 110 },
+            { "altitude": 3, "azimuth": 120 },
+            { "altitude": 2, "azimuth": 130 },
+            { "altitude": 0, "azimuth": 140 },
+            { "altitude": 0, "azimuth": 150 },
+            { "altitude": 0, "azimuth": 160 },
+            { "altitude": 1, "azimuth": 170 },
+            { "altitude": 4, "azimuth": 180 },
+            { "altitude": 7, "azimuth": 190 },
+            { "altitude": 10, "azimuth": 200 },
+            { "altitude": 15, "azimuth": 210 },
+            { "altitude": 20, "azimuth": 220 },
+            { "altitude": 26, "azimuth": 230 },
+            { "altitude": 32, "azimuth": 240 },
+            { "altitude": 30, "azimuth": 250 },
+            { "altitude": 28, "azimuth": 260 },
+            { "altitude": 25, "azimuth": 270 },
+            { "altitude": 22, "azimuth": 280 },
+            { "altitude": 18, "azimuth": 290 },
+            { "altitude": 16, "azimuth": 300 },
+            { "altitude": 14, "azimuth": 310 },
+            { "altitude": 13, "azimuth": 320 },
+            { "altitude": 12, "azimuth": 330 },
+            { "altitude": 11, "azimuth": 340 },
+            { "altitude": 10, "azimuth": 350 }
+          ]
+        },
+        355
+      ],
+      "id": "a-thirty-six-point-mask-wraps-past-north",
+      "result": 10
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 10, "azimuth": 0 },
+            { "altitude": 12, "azimuth": 10 },
+            { "altitude": 15, "azimuth": 20 },
+            { "altitude": 18, "azimuth": 30 },
+            { "altitude": 20, "azimuth": 40 },
+            { "altitude": 22, "azimuth": 50 },
+            { "altitude": 24, "azimuth": 60 },
+            { "altitude": 21, "azimuth": 70 },
+            { "altitude": 17, "azimuth": 80 },
+            { "altitude": 12, "azimuth": 90 },
+            { "altitude": 8, "azimuth": 100 },
+            { "altitude": 5, "azimuth": 110 },
+            { "altitude": 3, "azimuth": 120 },
+            { "altitude": 2, "azimuth": 130 },
+            { "altitude": 0, "azimuth": 140 },
+            { "altitude": 0, "azimuth": 150 },
+            { "altitude": 0, "azimuth": 160 },
+            { "altitude": 1, "azimuth": 170 },
+            { "altitude": 4, "azimuth": 180 },
+            { "altitude": 7, "azimuth": 190 },
+            { "altitude": 10, "azimuth": 200 },
+            { "altitude": 15, "azimuth": 210 },
+            { "altitude": 20, "azimuth": 220 },
+            { "altitude": 26, "azimuth": 230 },
+            { "altitude": 32, "azimuth": 240 },
+            { "altitude": 30, "azimuth": 250 },
+            { "altitude": 28, "azimuth": 260 },
+            { "altitude": 25, "azimuth": 270 },
+            { "altitude": 22, "azimuth": 280 },
+            { "altitude": 18, "azimuth": 290 },
+            { "altitude": 16, "azimuth": 300 },
+            { "altitude": 14, "azimuth": 310 },
+            { "altitude": 13, "azimuth": 320 },
+            { "altitude": 12, "azimuth": 330 },
+            { "altitude": 11, "azimuth": 340 },
+            { "altitude": 10, "azimuth": 350 }
+          ]
+        },
+        33.3
+      ],
+      "id": "a-thirty-six-point-mask-at-a-fractional-azimuth",
+      "result": 18.660000000000004
+    },
+    {
+      "args": [
+        {
+          "enabled": true,
+          "points": [
+            { "altitude": 10, "azimuth": 0 },
+            { "altitude": 12, "azimuth": 10 },
+            { "altitude": 15, "azimuth": 20 },
+            { "altitude": 18, "azimuth": 30 },
+            { "altitude": 20, "azimuth": 40 },
+            { "altitude": 22, "azimuth": 50 },
+            { "altitude": 24, "azimuth": 60 },
+            { "altitude": 21, "azimuth": 70 },
+            { "altitude": 17, "azimuth": 80 },
+            { "altitude": 12, "azimuth": 90 },
+            { "altitude": 8, "azimuth": 100 },
+            { "altitude": 5, "azimuth": 110 },
+            { "altitude": 3, "azimuth": 120 },
+            { "altitude": 2, "azimuth": 130 },
+            { "altitude": 0, "azimuth": 140 },
+            { "altitude": 0, "azimuth": 150 },
+            { "altitude": 0, "azimuth": 160 },
+            { "altitude": 1, "azimuth": 170 },
+            { "altitude": 4, "azimuth": 180 },
+            { "altitude": 7, "azimuth": 190 },
+            { "altitude": 10, "azimuth": 200 },
+            { "altitude": 15, "azimuth": 210 },
+            { "altitude": 20, "azimuth": 220 },
+            { "altitude": 26, "azimuth": 230 },
+            { "altitude": 32, "azimuth": 240 },
+            { "altitude": 30, "azimuth": 250 },
+            { "altitude": 28, "azimuth": 260 },
+            { "altitude": 25, "azimuth": 270 },
+            { "altitude": 22, "azimuth": 280 },
+            { "altitude": 18, "azimuth": 290 },
+            { "altitude": 16, "azimuth": 300 },
+            { "altitude": 14, "azimuth": 310 },
+            { "altitude": 13, "azimuth": 320 },
+            { "altitude": 12, "azimuth": 330 },
+            { "altitude": 11, "azimuth": 340 },
+            { "altitude": 10, "azimuth": 350 }
+          ]
+        },
+        725
+      ],
+      "id": "an-azimuth-past-360-wraps",
+      "result": 11
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "horizon-altitude"
+}

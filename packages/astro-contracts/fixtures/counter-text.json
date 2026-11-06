@@ -1,0 +1,13 @@
+{
+  "cases": [
+    { "args": [14220], "id": "bar-counter", "result": "3:57:00" },
+    { "args": [750], "id": "starts-in", "result": "0:12:30" },
+    { "args": [5220], "id": "running-slot", "result": "1:27:00" },
+    { "args": [0], "id": "zero", "result": "0:00:00" },
+    { "args": [36005], "id": "ten-hours", "result": "10:00:05" },
+    { "args": [59.9], "id": "fraction-floors", "result": "0:00:59" },
+    { "args": [-4], "id": "negative-is-zero", "result": "0:00:00" }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "counter-text"
+}

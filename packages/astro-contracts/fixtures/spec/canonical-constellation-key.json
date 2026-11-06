@@ -1,0 +1,135 @@
+{
+  "module": "canonical-constellation-key",
+  "file": "constellations",
+  "export": "canonicalConstellationKey",
+  "cases": [
+    {
+      "id": "lyra-by-abbreviation",
+      "args": ["Lyr"]
+    },
+    {
+      "id": "lyra-by-lowercase-abbreviation",
+      "args": ["lyr"]
+    },
+    {
+      "id": "lyra-by-french-name",
+      "args": ["Lyre"]
+    },
+    {
+      "id": "lyra-by-latin-name",
+      "args": ["Lyra"]
+    },
+    {
+      "id": "lyra-by-japanese-name",
+      "args": ["こと座"]
+    },
+    {
+      "id": "lyra-by-russian-name",
+      "args": ["Лира"]
+    },
+    {
+      "id": "lyra-by-german-name",
+      "args": ["Leier"]
+    },
+    {
+      "id": "serpent-first-part-of-the-old-key",
+      "args": ["Se1"]
+    },
+    {
+      "id": "serpent-second-part-of-the-old-key",
+      "args": ["Se2"]
+    },
+    {
+      "id": "serpent-by-french-name",
+      "args": ["Serpent"]
+    },
+    {
+      "id": "serpens-by-latin-name",
+      "args": ["Serpens"]
+    },
+    {
+      "id": "carina-already-an-abbreviation",
+      "args": ["Car"]
+    },
+    {
+      "id": "carina-by-french-name",
+      "args": ["Carène"]
+    },
+    {
+      "id": "antlia-by-the-old-english-label",
+      "args": ["Air Pump"]
+    },
+    {
+      "id": "apus-by-the-old-english-label",
+      "args": ["Bird of Paradise"]
+    },
+    {
+      "id": "bootes-with-the-diaeresis",
+      "args": ["Boötes"]
+    },
+    {
+      "id": "bootes-without-the-diaeresis",
+      "args": ["Bootes"]
+    },
+    {
+      "id": "bootes-by-french-name-lowercase",
+      "args": ["bouvier"]
+    },
+    {
+      "id": "sobieski-with-an-accent",
+      "args": ["Écu de Sobieski"]
+    },
+    {
+      "id": "sobieski-without-the-accent",
+      "args": ["ecu de sobieski"]
+    },
+    {
+      "id": "hunting-dogs-by-french-name",
+      "args": ["Chiens de chasse"]
+    },
+    {
+      "id": "hunting-dogs-by-latin-name",
+      "args": ["Canes Venatici"]
+    },
+    {
+      "id": "southern-triangle-by-french-name",
+      "args": ["Triangle austral"]
+    },
+    {
+      "id": "padded-spaces-are-ignored",
+      "args": ["  Grande Ourse "]
+    },
+    {
+      "id": "northern-crown-abbreviation",
+      "args": ["CrB"]
+    },
+    {
+      "id": "the-solar-system-is-no-constellation",
+      "args": ["Système solaire"]
+    },
+    {
+      "id": "a-type-is-no-constellation",
+      "args": ["Galaxie"]
+    },
+    {
+      "id": "nothing-is-no-constellation",
+      "args": [""]
+    },
+    {
+      "id": "an-english-name-shared-by-two-names-neither",
+      "args": ["Compass"]
+    },
+    {
+      "id": "chinese-simplified-name",
+      "args": ["天琴座"]
+    },
+    {
+      "id": "chinese-traditional-name",
+      "args": ["獵戶座"]
+    },
+    {
+      "id": "river-eridanus-by-french-name-with-accent",
+      "args": ["Éridan"]
+    }
+  ]
+}

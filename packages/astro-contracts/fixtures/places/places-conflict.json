@@ -1,0 +1,929 @@
+{
+  "contract": "place.schema.json",
+  "description": "The matrix of the most recent edit, replayed by the service's tests against the real routes and readable by the clients' fakes. Each case starts from an empty space and plays its steps in order; `now` is the service's clock at that step. `placeId: \"A\"` names the place `5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f`; a step's `body` is completed with the base point (`latitude` 45, `longitude` -30). A `PUT` of a place carries `name` and `editedAt`; a `DELETE` carries `at` as `?at=` (absent: the service's clock); `path: \"default\"` is `PUT /v1/places/default`; a `GET` without `placeId` is the list. `expect` names only what the step checks: `status`, `applied`/`deleted`, the kept `name` and `editedAt` (or `place: null`), the error `code`, the list's `placeIds` and `defaultPlaceId`. The service caps an instant at its clock + 5 minutes, keeps a tombstone 90 days after the deletion's instant, and refuses to create a place from an edit older than that.",
+  "base": {
+    "placeId": "5f0c1d2e-3a4b-4c5d-8e6f-7a8b9c0d1e2f",
+    "latitude": 45,
+    "longitude": -30
+  },
+  "rule": {
+    "clockCapMinutes": 5,
+    "tombstoneDays": 90
+  },
+  "cases": [
+    {
+      "id": "create-then-newer-edit",
+      "description": "A creation (201), then a more recent edit: kept.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:50:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:50:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles (parking)",
+              "editedAt": "2026-10-09T11:55:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": true,
+            "name": "Col des Étoiles (parking)",
+            "editedAt": "2026-10-09T11:55:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "edit-edit-older-loses",
+      "description": "Edit/edit: an older edit is not kept; the service answers its own.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:55:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:55:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-10-09T11:50:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": false,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:55:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "edit-edit-equal-service-keeps",
+      "description": "Edit/edit at the same instant: the service keeps its own.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:55:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:55:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-10-09T11:55:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": false,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:55:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "edit-delete-newer-deletes",
+      "description": "Edit/delete: a deletion more recent than the last edit deletes; the place is gone.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:50:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:50:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-10-09T11:55:00.000Z"
+          },
+          "expect": {
+            "status": 200,
+            "deleted": true
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "GET",
+            "placeId": "A"
+          },
+          "expect": {
+            "status": 404,
+            "code": "place_not_found"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "GET"
+          },
+          "expect": {
+            "status": 200,
+            "placeIds": [],
+            "defaultPlaceId": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "edit-delete-older-gives-back",
+      "description": "Edit/delete: the place was edited after the deletion's instant; it stays and is answered.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:55:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:55:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-10-09T11:50:00.000Z"
+          },
+          "expect": {
+            "status": 200,
+            "deleted": false,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:55:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "edit-delete-equal-deletes",
+      "description": "Edit/delete at the same instant: the place was not edited after it, the deletion applies.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:55:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:55:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-10-09T11:55:00.000Z"
+          },
+          "expect": {
+            "status": 200,
+            "deleted": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "delete-edit-newer-gives-back",
+      "description": "Delete/edit: an edit more recent than the deletion gives the place back.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:50:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:50:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-10-09T11:52:00.000Z"
+          },
+          "expect": {
+            "status": 200,
+            "deleted": true
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-10-09T11:55:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": true,
+            "name": "Col du Nord",
+            "editedAt": "2026-10-09T11:55:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "GET"
+          },
+          "expect": {
+            "status": 200,
+            "placeIds": ["A"],
+            "defaultPlaceId": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "delete-edit-older-stays-deleted",
+      "description": "Delete/edit: an edit older than the deletion is not kept; the answer has no place, the client drops its copy.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:50:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:50:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-10-09T11:55:00.000Z"
+          },
+          "expect": {
+            "status": 200,
+            "deleted": true
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-10-09T11:52:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": false,
+            "place": null
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "GET",
+            "placeId": "A"
+          },
+          "expect": {
+            "status": 404,
+            "code": "place_not_found"
+          }
+        }
+      ]
+    },
+    {
+      "id": "delete-edit-equal-stays-deleted",
+      "description": "Delete/edit at the same instant: the service keeps its own (the deletion).",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:50:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:50:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-10-09T11:55:00.000Z"
+          },
+          "expect": {
+            "status": 200,
+            "deleted": true
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-10-09T11:55:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": false,
+            "place": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "clock-one-hour-ahead",
+      "description": "A device clock one hour ahead: its instant is kept as the service's clock + 5 min, so it wins for five minutes at most.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T13:00:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T12:05:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:01:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-10-09T12:02:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": false,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T12:05:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:07:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-10-09T12:06:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": true,
+            "name": "Col du Nord",
+            "editedAt": "2026-10-09T12:06:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "delete-clock-one-hour-ahead",
+      "description": "A deletion from a clock one hour ahead: capped the same way.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:59:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:59:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-10-09T13:00:00.000Z"
+          },
+          "expect": {
+            "status": 200,
+            "deleted": true
+          }
+        },
+        {
+          "now": "2026-10-09T12:01:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-10-09T12:03:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": false,
+            "place": null
+          }
+        },
+        {
+          "now": "2026-10-09T12:10:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-10-09T12:06:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": true,
+            "name": "Col du Nord",
+            "editedAt": "2026-10-09T12:06:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "delete-without-at",
+      "description": "A deletion without `at` takes the service's clock.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:59:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:59:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A"
+          },
+          "expect": {
+            "status": 200,
+            "deleted": true
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-10-09T11:59:30.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": false,
+            "place": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "purged-tombstone-never-resurrected",
+      "description": "A deletion older than 90 days: its tombstone is purged, and a stale edit from before it never brings the place back; a fresh edit creates it again.",
+      "steps": [
+        {
+          "now": "2026-07-01T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-07-01T11:59:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-07-01T11:59:00.000Z"
+          }
+        },
+        {
+          "now": "2026-07-01T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-07-01T12:00:00.000Z"
+          },
+          "expect": {
+            "status": 200,
+            "deleted": true
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "GET"
+          },
+          "expect": {
+            "status": 200,
+            "placeIds": [],
+            "defaultPlaceId": null
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-07-01T11:59:30.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": false,
+            "place": null
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col du Nord",
+              "editedAt": "2026-10-09T11:59:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col du Nord",
+            "editedAt": "2026-10-09T11:59:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "delete-unknown",
+      "description": "Deleting a place the space never held.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-10-09T12:00:00.000Z"
+          },
+          "expect": {
+            "status": 404,
+            "code": "place_not_found"
+          }
+        }
+      ]
+    },
+    {
+      "id": "delete-twice",
+      "description": "A second deletion finds no live place.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:50:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:50:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-10-09T11:55:00.000Z"
+          },
+          "expect": {
+            "status": 200,
+            "deleted": true
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-10-09T11:56:00.000Z"
+          },
+          "expect": {
+            "status": 404,
+            "code": "place_not_found"
+          }
+        }
+      ]
+    },
+    {
+      "id": "default-place-most-recent",
+      "description": "The default place answers to the same rule: newer kept, older and equal not.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:30:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:30:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "path": "default",
+            "body": {
+              "placeId": "A",
+              "editedAt": "2026-10-09T11:55:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": true,
+            "defaultPlaceId": "A"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "path": "default",
+            "body": {
+              "placeId": null,
+              "editedAt": "2026-10-09T11:50:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": false,
+            "defaultPlaceId": "A"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "path": "default",
+            "body": {
+              "placeId": null,
+              "editedAt": "2026-10-09T11:55:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": false,
+            "defaultPlaceId": "A"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "path": "default",
+            "body": {
+              "placeId": null,
+              "editedAt": "2026-10-09T11:59:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": true,
+            "defaultPlaceId": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "default-place-deleted-reads-none",
+      "description": "A default place deleted reads as none.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "placeId": "A",
+            "body": {
+              "name": "Col des Étoiles",
+              "editedAt": "2026-10-09T11:30:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 201,
+            "applied": true,
+            "name": "Col des Étoiles",
+            "editedAt": "2026-10-09T11:30:00.000Z"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "path": "default",
+            "body": {
+              "placeId": "A",
+              "editedAt": "2026-10-09T11:40:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 200,
+            "applied": true,
+            "defaultPlaceId": "A"
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "DELETE",
+            "placeId": "A",
+            "at": "2026-10-09T11:50:00.000Z"
+          },
+          "expect": {
+            "status": 200,
+            "deleted": true
+          }
+        },
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "GET"
+          },
+          "expect": {
+            "status": 200,
+            "placeIds": [],
+            "defaultPlaceId": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "default-place-unknown",
+      "description": "The default place must be a live place of the space.",
+      "steps": [
+        {
+          "now": "2026-10-09T12:00:00.000Z",
+          "request": {
+            "method": "PUT",
+            "path": "default",
+            "body": {
+              "placeId": "A",
+              "editedAt": "2026-10-09T11:55:00.000Z"
+            }
+          },
+          "expect": {
+            "status": 404,
+            "code": "place_not_found"
+          }
+        }
+      ]
+    }
+  ]
+}

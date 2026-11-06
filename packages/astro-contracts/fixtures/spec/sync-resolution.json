@@ -1,0 +1,141 @@
+{
+  "module": "sync-resolution",
+  "package": "portal",
+  "file": "planner/sync",
+  "export": "resolvePlannerDocuments",
+  "cases": [
+    {
+      "id": "no-server-keeps-local",
+      "args": [
+        {
+          "local": {
+            "plans": [{ "id": "p1" }],
+            "sync": {
+              "version": 1,
+              "deviceId": "d",
+              "updatedAt": "2024-01-01T00:00:00Z"
+            }
+          },
+          "server": null
+        }
+      ]
+    },
+    {
+      "id": "no-local-keeps-server",
+      "args": [
+        {
+          "local": null,
+          "server": {
+            "plans": [{ "id": "p1" }],
+            "sync": {
+              "version": 1,
+              "deviceId": "d",
+              "updatedAt": "2024-01-01T00:00:00Z"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "newer-local-wins",
+      "args": [
+        {
+          "local": {
+            "plans": [{ "id": "p1" }],
+            "sync": {
+              "version": 1,
+              "deviceId": "d",
+              "updatedAt": "2024-06-01T00:00:00Z"
+            }
+          },
+          "server": {
+            "plans": [{ "id": "p1" }],
+            "sync": {
+              "version": 1,
+              "deviceId": "d",
+              "updatedAt": "2024-01-01T00:00:00Z"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "newer-server-wins",
+      "args": [
+        {
+          "local": {
+            "plans": [{ "id": "p1" }],
+            "sync": {
+              "version": 1,
+              "deviceId": "d",
+              "updatedAt": "2024-01-01T00:00:00Z"
+            }
+          },
+          "server": {
+            "plans": [{ "id": "p1" }],
+            "sync": {
+              "version": 1,
+              "deviceId": "d",
+              "updatedAt": "2024-06-01T00:00:00Z"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "equal-timestamps-local-content-wins",
+      "args": [
+        {
+          "local": {
+            "plans": [{ "id": "p1" }],
+            "sync": {
+              "version": 1,
+              "deviceId": "d",
+              "updatedAt": "2024-01-01T00:00:00Z"
+            }
+          },
+          "server": {
+            "plans": [],
+            "sync": {
+              "version": 1,
+              "deviceId": "d",
+              "updatedAt": "2024-01-01T00:00:00Z"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "equal-timestamps-both-empty-server-wins",
+      "args": [
+        {
+          "local": {
+            "plans": [],
+            "sync": {
+              "version": 1,
+              "deviceId": "d",
+              "updatedAt": "2024-01-01T00:00:00Z"
+            }
+          },
+          "server": {
+            "plans": [],
+            "sync": {
+              "version": 1,
+              "deviceId": "d",
+              "updatedAt": "2024-01-01T00:00:00Z"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "legacy-documents-without-sync-server-wins",
+      "args": [
+        {
+          "local": { "plans": [{ "id": "p1" }] },
+          "server": { "plans": [{ "id": "p1" }] }
+        }
+      ]
+    }
+  ]
+}

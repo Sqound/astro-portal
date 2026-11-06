@@ -1,0 +1,7 @@
+export {
+  GET,
+  POST,
+} from "portal-app/routes/api/v1/place-sky-measures/route.js";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";

@@ -1,0 +1,199 @@
+{
+  "contract": "place.schema.json",
+  "description": "The default place of a list of places, the same on the web and the phone, so that the label « Lieu par défaut » and the distances measured from it name one place on every surface. The place the space marks (`defaultPlaceId`) when it is in the list and has a position; otherwise the oldest place with a position: the earliest `editedAt` (a place with no instant before the others), equal instants in list order. The rule never reads the order the list is displayed in. `defaultId` is the answer; only the fields the rule reads are given for each place.",
+  "cases": [
+    {
+      "id": "marked-wins",
+      "description": "The place the space marks is the default one, whatever its age and its place in the list.",
+      "markedId": "c",
+      "places": [
+        {
+          "id": "a",
+          "name": "A",
+          "latitude": 45.0,
+          "longitude": -30.0,
+          "editedAt": "2026-10-01T10:00:00.000Z"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "latitude": -23.27,
+          "longitude": 16.5,
+          "editedAt": "2026-10-05T10:00:00.000Z"
+        },
+        {
+          "id": "c",
+          "name": "C",
+          "latitude": 31.96,
+          "longitude": -111.6,
+          "editedAt": "2026-10-20T08:30:00.000Z"
+        }
+      ],
+      "defaultId": "c"
+    },
+    {
+      "id": "nothing-marked-oldest-edit-service-order",
+      "description": "Nothing marked (the service answers defaultPlaceId null): the place whose last gesture is the earliest. The list as the service sends it, the most recent first.",
+      "markedId": null,
+      "places": [
+        {
+          "id": "c",
+          "name": "C",
+          "latitude": 31.96,
+          "longitude": -111.6,
+          "editedAt": "2026-10-20T08:30:00.000Z"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "latitude": -23.27,
+          "longitude": 16.5,
+          "editedAt": "2026-10-05T10:00:00.000Z"
+        },
+        {
+          "id": "a",
+          "name": "A",
+          "latitude": 45.0,
+          "longitude": -30.0,
+          "editedAt": "2026-10-01T10:00:00.000Z"
+        }
+      ],
+      "defaultId": "a"
+    },
+    {
+      "id": "nothing-marked-oldest-edit-phone-order",
+      "description": "The same three places in the order the phone keeps them, the oldest first: the same answer — the rule never depends on the order of the list.",
+      "markedId": null,
+      "places": [
+        {
+          "id": "a",
+          "name": "A",
+          "latitude": 45.0,
+          "longitude": -30.0,
+          "editedAt": "2026-10-01T10:00:00.000Z"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "latitude": -23.27,
+          "longitude": 16.5,
+          "editedAt": "2026-10-05T10:00:00.000Z"
+        },
+        {
+          "id": "c",
+          "name": "C",
+          "latitude": 31.96,
+          "longitude": -111.6,
+          "editedAt": "2026-10-20T08:30:00.000Z"
+        }
+      ],
+      "defaultId": "a"
+    },
+    {
+      "id": "mark-names-a-gone-place",
+      "description": "The mark names a place that is no longer in the list: as if nothing were marked.",
+      "markedId": "gone",
+      "places": [
+        {
+          "id": "c",
+          "name": "C",
+          "latitude": 31.96,
+          "longitude": -111.6,
+          "editedAt": "2026-10-20T08:30:00.000Z"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "latitude": -23.27,
+          "longitude": 16.5,
+          "editedAt": "2026-10-05T10:00:00.000Z"
+        }
+      ],
+      "defaultId": "b"
+    },
+    {
+      "id": "no-instant-comes-first",
+      "description": "A place with no recorded gesture (made on the device, never edited) is older than the ones with an instant.",
+      "markedId": null,
+      "places": [
+        {
+          "id": "c",
+          "name": "C",
+          "latitude": 31.96,
+          "longitude": -111.6,
+          "editedAt": "2026-10-20T08:30:00.000Z"
+        },
+        {
+          "id": "n",
+          "name": "N",
+          "latitude": 45.0,
+          "longitude": -30.0
+        },
+        {
+          "id": "a",
+          "name": "A",
+          "latitude": 45.0,
+          "longitude": -30.0,
+          "editedAt": "2026-10-01T10:00:00.000Z"
+        }
+      ],
+      "defaultId": "n"
+    },
+    {
+      "id": "equal-instants-list-order",
+      "description": "Equal instants: the first of the list.",
+      "markedId": null,
+      "places": [
+        {
+          "id": "x",
+          "name": "X",
+          "latitude": 45.0,
+          "longitude": -30.0,
+          "editedAt": "2026-10-05T10:00:00.000Z"
+        },
+        {
+          "id": "y",
+          "name": "Y",
+          "latitude": 45.0,
+          "longitude": -30.0,
+          "editedAt": "2026-10-05T10:00:00.000Z"
+        }
+      ],
+      "defaultId": "x"
+    },
+    {
+      "id": "without-position-never",
+      "description": "A place without a position is never the default one, marked or not; the marked one is then ignored.",
+      "markedId": "nopos",
+      "places": [
+        {
+          "id": "nopos",
+          "name": "Sans position",
+          "editedAt": "2026-09-01T10:00:00.000Z"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "latitude": -23.27,
+          "longitude": 16.5,
+          "editedAt": "2026-10-05T10:00:00.000Z"
+        },
+        {
+          "id": "a",
+          "name": "A",
+          "latitude": 45.0,
+          "longitude": -30.0,
+          "editedAt": "2026-10-01T10:00:00.000Z"
+        }
+      ],
+      "defaultId": "a"
+    },
+    {
+      "id": "empty",
+      "description": "No place: no default place.",
+      "markedId": null,
+      "places": [],
+      "defaultId": null
+    }
+  ]
+}

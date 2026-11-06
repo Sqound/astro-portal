@@ -1,0 +1,106 @@
+{
+  "cases": [
+    { "args": ["Lyr"], "id": "lyra-by-abbreviation", "result": "Lyr" },
+    {
+      "args": ["lyr"],
+      "id": "lyra-by-lowercase-abbreviation",
+      "result": "Lyr"
+    },
+    { "args": ["Lyre"], "id": "lyra-by-french-name", "result": "Lyr" },
+    { "args": ["Lyra"], "id": "lyra-by-latin-name", "result": "Lyr" },
+    { "args": ["こと座"], "id": "lyra-by-japanese-name", "result": "Lyr" },
+    { "args": ["Лира"], "id": "lyra-by-russian-name", "result": "Lyr" },
+    { "args": ["Leier"], "id": "lyra-by-german-name", "result": "Lyr" },
+    {
+      "args": ["Se1"],
+      "id": "serpent-first-part-of-the-old-key",
+      "result": "Ser"
+    },
+    {
+      "args": ["Se2"],
+      "id": "serpent-second-part-of-the-old-key",
+      "result": "Ser"
+    },
+    { "args": ["Serpent"], "id": "serpent-by-french-name", "result": "Ser" },
+    { "args": ["Serpens"], "id": "serpens-by-latin-name", "result": "Ser" },
+    {
+      "args": ["Car"],
+      "id": "carina-already-an-abbreviation",
+      "result": "Car"
+    },
+    { "args": ["Carène"], "id": "carina-by-french-name", "result": "Car" },
+    {
+      "args": ["Air Pump"],
+      "id": "antlia-by-the-old-english-label",
+      "result": "Ant"
+    },
+    {
+      "args": ["Bird of Paradise"],
+      "id": "apus-by-the-old-english-label",
+      "result": "Aps"
+    },
+    { "args": ["Boötes"], "id": "bootes-with-the-diaeresis", "result": "Boo" },
+    {
+      "args": ["Bootes"],
+      "id": "bootes-without-the-diaeresis",
+      "result": "Boo"
+    },
+    {
+      "args": ["bouvier"],
+      "id": "bootes-by-french-name-lowercase",
+      "result": "Boo"
+    },
+    {
+      "args": ["Écu de Sobieski"],
+      "id": "sobieski-with-an-accent",
+      "result": "Sct"
+    },
+    {
+      "args": ["ecu de sobieski"],
+      "id": "sobieski-without-the-accent",
+      "result": "Sct"
+    },
+    {
+      "args": ["Chiens de chasse"],
+      "id": "hunting-dogs-by-french-name",
+      "result": "CVn"
+    },
+    {
+      "args": ["Canes Venatici"],
+      "id": "hunting-dogs-by-latin-name",
+      "result": "CVn"
+    },
+    {
+      "args": ["Triangle austral"],
+      "id": "southern-triangle-by-french-name",
+      "result": "TrA"
+    },
+    {
+      "args": ["  Grande Ourse "],
+      "id": "padded-spaces-are-ignored",
+      "result": "UMa"
+    },
+    { "args": ["CrB"], "id": "northern-crown-abbreviation", "result": "CrB" },
+    {
+      "args": ["Système solaire"],
+      "id": "the-solar-system-is-no-constellation",
+      "result": null
+    },
+    { "args": ["Galaxie"], "id": "a-type-is-no-constellation", "result": null },
+    { "args": [""], "id": "nothing-is-no-constellation", "result": null },
+    {
+      "args": ["Compass"],
+      "id": "an-english-name-shared-by-two-names-neither",
+      "result": null
+    },
+    { "args": ["天琴座"], "id": "chinese-simplified-name", "result": "Lyr" },
+    { "args": ["獵戶座"], "id": "chinese-traditional-name", "result": "Ori" },
+    {
+      "args": ["Éridan"],
+      "id": "river-eridanus-by-french-name-with-accent",
+      "result": "Eri"
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "canonical-constellation-key"
+}

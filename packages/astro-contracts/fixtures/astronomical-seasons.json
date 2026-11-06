@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "args": ["2024-03-19"],
+      "id": "2024-before-spring-boundary",
+      "result": "winter"
+    },
+    {
+      "args": ["2024-03-20"],
+      "id": "2024-spring-boundary",
+      "result": "spring"
+    },
+    {
+      "args": ["2025-03-20"],
+      "id": "2025-spring-boundary",
+      "result": "spring"
+    },
+    {
+      "args": ["2026-03-20"],
+      "id": "2026-spring-boundary",
+      "result": "spring"
+    },
+    {
+      "args": ["2027-03-20"],
+      "id": "2027-spring-boundary",
+      "result": "spring"
+    },
+    {
+      "args": ["2028-03-20"],
+      "id": "2028-spring-boundary",
+      "result": "spring"
+    },
+    {
+      "args": ["2029-03-20"],
+      "id": "2029-spring-boundary",
+      "result": "spring"
+    },
+    { "args": ["2030-12-21"], "id": "2030-winter-boundary", "result": "winter" }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "astronomical-seasons"
+}

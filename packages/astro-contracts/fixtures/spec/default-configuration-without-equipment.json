@@ -1,0 +1,68 @@
+{
+  "module": "default-configuration-without-equipment",
+  "package": "portal",
+  "file": "planner/default-configuration",
+  "export": "configurationWithoutEquipment",
+  "cases": [
+    {
+      "id": "no-configuration",
+      "args": [null, "inv-refractor-72"]
+    },
+    {
+      "id": "the-archived-telescope-is-to-choose",
+      "args": [
+        {
+          "mode": "imaging",
+          "telescopeId": "inv-refractor-72",
+          "cameraId": "inv-camera-colour",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"]
+        },
+        "inv-refractor-72"
+      ]
+    },
+    {
+      "id": "an-archived-filter-leaves-the-filters",
+      "args": [
+        {
+          "mode": "imaging",
+          "telescopeId": "inv-refractor-72",
+          "cameraId": "inv-camera-colour",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"]
+        },
+        "inv-filter-duo"
+      ]
+    },
+    {
+      "id": "an-item-it-does-not-name",
+      "args": [
+        {
+          "mode": "imaging",
+          "telescopeId": "inv-refractor-72",
+          "cameraId": "inv-camera-colour",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"]
+        },
+        "inv-newton-150"
+      ]
+    },
+    {
+      "id": "none-is-no-item",
+      "args": [
+        {
+          "mode": "imaging",
+          "telescopeId": "skywatcher-skymax-127",
+          "cameraId": "inv-camera-colour",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"]
+        },
+        "none"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "exchange": "list",
+  "description": "The Journal's first page for the whole space: a session of every state (executed, executed in part, to debrief, abandoned, free), a plan carried out without the application, a night Astro Sync created, a reworked session, and the finished multi-night plan grouped. The request the Journal screens make with no filter.",
+  "given": "A space with ten nights; the multi-night plan of M 31 is finished, the one of NGC 7000 is active.",
+  "handler": "route:journal",
+  "phase": "read",
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/journal?limit=50"
+  },
+  "schema": "journal.schema.json#/$defs/list"
+}

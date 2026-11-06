@@ -1,0 +1,118 @@
+{
+  "v": 1,
+  "locale": "en",
+  "shard": "007",
+  "revision": "784bd111a1616e13",
+  "entries": [
+    {
+      "id": "example-a-0001",
+      "revision": "a0f25c6fd4f19b1a",
+      "tier": "A",
+      "children": {
+        "paragraphs": [
+          "A big round of stars.",
+          "Look for a faint smudge tonight."
+        ]
+      }
+    },
+    {
+      "id": "example-b-0002",
+      "revision": "7fd83abceb694fe7",
+      "tier": "B",
+      "lede": "Example B 2 — A dark cloud of dust. It blocks the light of the stars behind it.",
+      "page": {
+        "storySections": [
+          {
+            "heading": null,
+            "paragraphs": [
+              "A dark cloud of dust. It blocks the light of the stars behind it."
+            ]
+          },
+          {
+            "heading": "What to look for",
+            "paragraphs": ["It is easiest to see on a dark night."]
+          },
+          {
+            "heading": "In short",
+            "paragraphs": ["Closing paragraph."]
+          }
+        ],
+        "researchSources": [
+          {
+            "label": "Example catalogue — consulted on 2026-10-01",
+            "url": "https://example.org/catalogue/entry"
+          }
+        ],
+        "researchNote": "Texts under CC0; the sources keep their own licences."
+      },
+      "children": {
+        "paragraphs": ["A dark cloud that hides stars."]
+      }
+    },
+    {
+      "id": "example-c-0003",
+      "revision": "1ec5926b2710053f",
+      "tier": "C",
+      "lede": "Example C 3 — A faint galaxy in the constellation of Example.",
+      "page": {
+        "storySections": [
+          {
+            "heading": null,
+            "paragraphs": ["A faint galaxy in the constellation of Example."]
+          },
+          {
+            "heading": "What to look for",
+            "paragraphs": ["A medium telescope shows it as a pale patch."]
+          },
+          {
+            "heading": "In short",
+            "paragraphs": ["Closing paragraph."]
+          }
+        ],
+        "researchSources": [
+          {
+            "label": "Example catalogue — consulted on 2026-10-01",
+            "url": "https://example.org/catalogue/entry"
+          }
+        ],
+        "researchNote": "Texts under CC0; the sources keep their own licences."
+      }
+    },
+    {
+      "id": "example-page-a-0004",
+      "revision": "1abc8e18eee97870",
+      "tier": "A",
+      "lede": "Example A 4 — A bright cluster of young stars. It is easy to find with binoculars.",
+      "page": {
+        "storySections": [
+          {
+            "heading": null,
+            "paragraphs": [
+              "A bright cluster of young stars. It is easy to find with binoculars."
+            ]
+          },
+          {
+            "heading": "What to look for",
+            "paragraphs": [
+              "A hazy patch to the eye, a handful of stars in binoculars."
+            ]
+          },
+          {
+            "heading": "In short",
+            "paragraphs": ["Closing paragraph."]
+          }
+        ],
+        "researchSources": [
+          {
+            "label": "Example catalogue — consulted on 2026-10-01",
+            "url": "https://example.org/catalogue/entry"
+          }
+        ],
+        "researchNote": "Texts under CC0; the sources keep their own licences."
+      },
+      "children": {
+        "paragraphs": ["A bright cluster of young stars."]
+      }
+    }
+  ]
+}

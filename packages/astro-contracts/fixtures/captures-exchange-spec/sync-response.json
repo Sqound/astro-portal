@@ -1,0 +1,18 @@
+{
+  "exchange": "sync-response",
+  "handler": "captures/[captureId]/acquisition/sync",
+  "as": "phone",
+  "status": 200,
+  "phase": "write",
+  "capture": "capture:analysed",
+  "params": {
+    "captureId": "{capture:analysed}"
+  },
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/captures/{capture:analysed}/acquisition/sync"
+  },
+  "schema": "manage-captures.schema.json#/$defs/acquisitionSync",
+  "description": "« Synchroniser avec la session » from the phone: the measured step the night gained is added, the line the web corrected is kept; the answer is the lines and the capture, with its new revision.",
+  "given": "The late step of the analysis; the web corrected two lines (the conflicts above)."
+}

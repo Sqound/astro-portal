@@ -1,0 +1,20 @@
+{
+  "exchange": "device-write-tags",
+  "handler": "captures/[captureId]",
+  "as": "phone",
+  "status": 200,
+  "phase": "write",
+  "params": {
+    "captureId": "{capture:intermediate}"
+  },
+  "request": {
+    "method": "PATCH",
+    "path": "/api/v1/captures/{capture:intermediate}",
+    "body": {
+      "tags": ["Dual-band", "M31"]
+    }
+  },
+  "schema": "manage-captures.schema.json#/$defs/one",
+  "description": "The phone writes the capture's tags (a device token): the whole list, one change per request; the answer is the capture with its new revision.",
+  "given": "The intermediate capture of the plan of M31."
+}

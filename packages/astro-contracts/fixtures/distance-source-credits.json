@@ -1,0 +1,102 @@
+{
+  "cases": [
+    {
+      "args": ["fr"],
+      "id": "fr",
+      "result": [
+        "Distances : parallaxes et vitesses radiales d’OpenNGC (CC BY-SA 4.0) ; les distances qui en sont tirées en sont une adaptation, partagée sous la même licence.",
+        "Distances : valeurs publiées, citées chacune avec sa référence (NED-D, Cosmicflows-4 (Tully et al. 2023), Baumgardt et Vasiliev 2021, Dias et al. 2021, entre autres ; la liste figure dans la documentation des sources de données). Cette recherche a utilisé la NASA/IPAC Extragalactic Database (NED), exploitée par le California Institute of Technology sous contrat avec la NASA, et la base SIMBAD, exploitée au CDS, Strasbourg."
+      ]
+    },
+    {
+      "args": ["en"],
+      "id": "en",
+      "result": [
+        "Distances: parallaxes and radial velocities from OpenNGC (CC BY-SA 4.0); the distances derived from them are an adaptation, shared under the same licence.",
+        "Distances: published values, each cited with its reference (NED-D, Cosmicflows-4 (Tully et al. 2023), Baumgardt & Vasiliev 2021, Dias et al. 2021, among others; the list is in the data-sources documentation). This research has made use of the NASA/IPAC Extragalactic Database (NED), operated by the California Institute of Technology under contract with NASA, and of the SIMBAD database, operated at CDS, Strasbourg."
+      ]
+    },
+    {
+      "args": ["ja"],
+      "id": "ja",
+      "result": [
+        "距離：OpenNGCの視差と視線速度（CC BY-SA 4.0）に基づきます。そこから導いた距離は翻案であり、同じライセンスで共有されます。",
+        "距離：公表値で、それぞれ参照文献を明記しています（NED-D、Cosmicflows-4（Tully ほか 2023）、Baumgardt & Vasiliev 2021、Dias ほか 2021 など。一覧はデータソースの文書にあります）。本研究は、カリフォルニア工科大学がNASAとの契約で運用するNASA/IPAC Extragalactic Database (NED)と、ストラスブールのCDSが運用するSIMBADデータベースを利用しました。"
+      ]
+    },
+    {
+      "args": ["de"],
+      "id": "de",
+      "result": [
+        "Entfernungen: Parallaxen und Radialgeschwindigkeiten aus OpenNGC (CC BY-SA 4.0); die daraus abgeleiteten Entfernungen sind eine Bearbeitung und werden unter derselben Lizenz geteilt.",
+        "Entfernungen: veröffentlichte Werte, jeweils mit ihrer Quelle zitiert (NED-D, Cosmicflows-4 (Tully et al. 2023), Baumgardt & Vasiliev 2021, Dias et al. 2021 u. a.; die Liste steht in der Dokumentation der Datenquellen). Diese Arbeit nutzte die NASA/IPAC Extragalactic Database (NED), betrieben vom California Institute of Technology im Auftrag der NASA, und die Datenbank SIMBAD, betrieben am CDS in Straßburg."
+      ]
+    },
+    {
+      "args": ["es"],
+      "id": "es",
+      "result": [
+        "Distancias: paralajes y velocidades radiales de OpenNGC (CC BY-SA 4.0); las distancias que se derivan de ellos son una adaptación, compartida bajo la misma licencia.",
+        "Distancias: valores publicados, cada uno citado con su referencia (NED-D, Cosmicflows-4 (Tully et al. 2023), Baumgardt y Vasiliev 2021, Dias et al. 2021, entre otros; la lista figura en la documentación de las fuentes de datos). Esta investigación ha utilizado la NASA/IPAC Extragalactic Database (NED), operada por el California Institute of Technology bajo contrato con la NASA, y la base de datos SIMBAD, operada en el CDS de Estrasburgo."
+      ]
+    },
+    {
+      "args": ["it"],
+      "id": "it",
+      "result": [
+        "Distanze: parallassi e velocità radiali di OpenNGC (CC BY-SA 4.0); le distanze che ne derivano sono un adattamento, condiviso con la stessa licenza.",
+        "Distanze: valori pubblicati, ciascuno citato con il proprio riferimento (NED-D, Cosmicflows-4 (Tully et al. 2023), Baumgardt e Vasiliev 2021, Dias et al. 2021, tra gli altri; l’elenco è nella documentazione delle fonti di dati). Questa ricerca ha utilizzato la NASA/IPAC Extragalactic Database (NED), gestita dal California Institute of Technology su contratto con la NASA, e il database SIMBAD, gestito al CDS di Strasburgo."
+      ]
+    },
+    {
+      "args": ["pt-BR"],
+      "id": "pt-br",
+      "result": [
+        "Distâncias: paralaxes e velocidades radiais do OpenNGC (CC BY-SA 4.0); as distâncias derivadas delas são uma adaptação, compartilhada sob a mesma licença.",
+        "Distâncias: valores publicados, cada um citado com a sua referência (NED-D, Cosmicflows-4 (Tully et al. 2023), Baumgardt e Vasiliev 2021, Dias et al. 2021, entre outros; a lista está na documentação das fontes de dados). Esta pesquisa utilizou a NASA/IPAC Extragalactic Database (NED), operada pelo California Institute of Technology sob contrato com a NASA, e a base de dados SIMBAD, operada no CDS, em Estrasburgo."
+      ]
+    },
+    {
+      "args": ["ru"],
+      "id": "ru",
+      "result": [
+        "Расстояния: параллаксы и лучевые скорости из OpenNGC (CC BY-SA 4.0); полученные из них расстояния являются производным произведением и распространяются на тех же условиях лицензии.",
+        "Расстояния: опубликованные значения, каждое со ссылкой на источник (NED-D, Cosmicflows-4 (Tully и др. 2023), Baumgardt и Vasiliev 2021, Dias и др. 2021 и другие; список приведён в документации источников данных). В этом исследовании использованы NASA/IPAC Extragalactic Database (NED), которую по контракту с NASA ведёт Калифорнийский технологический институт, и база данных SIMBAD, которую ведёт CDS в Страсбурге."
+      ]
+    },
+    {
+      "args": ["zh-Hans"],
+      "id": "zh-hans",
+      "result": [
+        "距离：视差和视向速度来自OpenNGC（CC BY-SA 4.0）；由此推算的距离属于改编，以相同许可共享。",
+        "距离：已发表的数值，均附参考文献（NED-D、Cosmicflows-4（Tully等人2023）、Baumgardt和Vasiliev 2021、Dias等人2021等；清单见数据来源文档）。本研究使用了由加州理工学院根据与NASA的合同运营的NASA/IPAC Extragalactic Database（NED），以及由斯特拉斯堡CDS运营的SIMBAD数据库。"
+      ]
+    },
+    {
+      "args": ["zh-Hant"],
+      "id": "zh-hant",
+      "result": [
+        "距離：視差與視向速度來自OpenNGC（CC BY-SA 4.0）；由此推算的距離屬於改作，以相同授權分享。",
+        "距離：已發表的數值，均附參考文獻（NED-D、Cosmicflows-4（Tully等人2023）、Baumgardt和Vasiliev 2021、Dias等人2021等；清單見資料來源文件）。本研究使用了由加州理工學院依與NASA的合約營運的NASA/IPAC Extragalactic Database（NED），以及由史特拉斯堡CDS營運的SIMBAD資料庫。"
+      ]
+    },
+    {
+      "args": ["pt"],
+      "id": "portuguese-language",
+      "result": [
+        "Distâncias: paralaxes e velocidades radiais do OpenNGC (CC BY-SA 4.0); as distâncias derivadas delas são uma adaptação, compartilhada sob a mesma licença.",
+        "Distâncias: valores publicados, cada um citado com a sua referência (NED-D, Cosmicflows-4 (Tully et al. 2023), Baumgardt e Vasiliev 2021, Dias et al. 2021, entre outros; a lista está na documentação das fontes de dados). Esta pesquisa utilizou a NASA/IPAC Extragalactic Database (NED), operada pelo California Institute of Technology sob contrato com a NASA, e a base de dados SIMBAD, operada no CDS, em Estrasburgo."
+      ]
+    },
+    {
+      "args": ["sv"],
+      "id": "unknown-language",
+      "result": [
+        "Distances: parallaxes and radial velocities from OpenNGC (CC BY-SA 4.0); the distances derived from them are an adaptation, shared under the same licence.",
+        "Distances: published values, each cited with its reference (NED-D, Cosmicflows-4 (Tully et al. 2023), Baumgardt & Vasiliev 2021, Dias et al. 2021, among others; the list is in the data-sources documentation). This research has made use of the NASA/IPAC Extragalactic Database (NED), operated by the California Institute of Technology under contract with NASA, and of the SIMBAD database, operated at CDS, Strasbourg."
+      ]
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "distance-source-credits"
+}

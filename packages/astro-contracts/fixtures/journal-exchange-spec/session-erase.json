@@ -1,0 +1,28 @@
+{
+  "exchange": "session-erase",
+  "description": "`POST /v1/sessions/{id}/erase`: a deleted session is erased at once, with its capture, its events, its device journals and its integrations; the answer counts what went.",
+  "given": "The session sent by Astro Sync (one capture, one analysis), deleted just before.",
+  "handler": "route:sessions/[id]/erase",
+  "phase": "write",
+  "order": 17,
+  "params": {
+    "id": "{session:astro-sync}"
+  },
+  "setup": [
+    {
+      "handler": "route:sessions/[id]",
+      "params": {
+        "id": "{session:astro-sync}"
+      },
+      "request": {
+        "method": "DELETE",
+        "path": "/api/v1/sessions/{session:astro-sync}"
+      }
+    }
+  ],
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/sessions/{session:astro-sync}/erase"
+  },
+  "schema": "session.schema.json#/$defs/erasure"
+}

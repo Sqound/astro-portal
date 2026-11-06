@@ -1,0 +1,85 @@
+{
+  "version": "2026-11-corrections-v1",
+  "description": "Corrections of the catalogue's source records, applied to every target the catalogue imports (the OpenNGC import, every seed): the fields named in `set` replace the source's. An administrator's own edit of a field still wins. TARGET-SELECTIONS-REVIEW-01 § 2.4 and § 6.11, confirmed on the data on 03/11/2026.",
+  "corrections": [
+    {
+      "id": "openngc-ic1318",
+      "designation": "IC 1318",
+      "set": { "typeKey": "Nébuleuse en émission", "magnitude": null },
+      "reason": "The emission region around γ Cygni, typed as a star and given the star's magnitude (2.23); the nebula has no integrated magnitude of its own."
+    },
+    {
+      "id": "openngc-ngc2244",
+      "designation": "NGC 2244",
+      "set": { "typeKey": "Amas ouvert" },
+      "reason": "The open cluster at the heart of the Rosette, typed « Ciel profond »."
+    },
+    {
+      "id": "openngc-ic2118",
+      "designation": "IC 2118",
+      "set": { "typeKey": "Nébuleuse en réflexion" },
+      "reason": "The Witch Head, a reflection nebula lit by Rigel, typed « Ciel profond »."
+    },
+    {
+      "id": "openngc-ngc3190",
+      "designation": "NGC 3190",
+      "set": { "typeKey": "Galaxie" },
+      "reason": "A spiral galaxy of Hickson 44, typed « Ciel profond »."
+    },
+    {
+      "id": "openngc-ngc2372",
+      "designation": "NGC 2372",
+      "set": { "typeKey": "Nébuleuse planétaire" },
+      "reason": "One lobe of the planetary nebula NGC 2371-2372 in Gemini, typed « Ciel profond »."
+    },
+    {
+      "id": "openngc-ngc6885",
+      "designation": "NGC 6885",
+      "set": { "typeKey": "Amas ouvert" },
+      "reason": "Caldwell 37, an open cluster in Vulpecula, typed « Ciel profond »."
+    },
+    {
+      "id": "openngc-ngc7235",
+      "designation": "NGC 7235",
+      "set": { "typeKey": "Amas ouvert" },
+      "reason": "An open cluster in Cepheus, typed « Ciel profond »."
+    },
+    {
+      "id": "openngc-ic0434",
+      "designation": "IC 434",
+      "set": { "commonNames": ["Orion B"] },
+      "reason": "IC 434 is the bright band behind the Horsehead; the Flame Nebula is NGC 2024."
+    },
+    {
+      "id": "openngc-ngc2024",
+      "designation": "NGC 2024",
+      "set": { "commonNames": ["Flame Nebula"] },
+      "reason": "The Flame Nebula, next to Alnitak, had no common name (it was given to IC 434)."
+    },
+    {
+      "id": "openngc-ngc0253",
+      "designation": "NGC 253",
+      "set": { "magnitude": 7.6 },
+      "reason": "The Sculptor Galaxy's visual magnitude is about 7.6; the source's 11.11 is not its integrated V magnitude."
+    },
+    {
+      "id": "openngc-ngc4945",
+      "designation": "NGC 4945",
+      "set": { "magnitude": 9.3 },
+      "reason": "NGC 4945's visual magnitude is about 9.3; the source's 11.86 is not its integrated V magnitude."
+    },
+    {
+      "id": "openngc-m102",
+      "designation": "M102",
+      "set": {
+        "aliases": ["M102"],
+        "typeKey": "Galaxie",
+        "constellationKey": "Dra",
+        "coordinate": { "ra": 15.108056, "dec": 55.763333 },
+        "apparentSizeArcmin": [6.31, 2.72],
+        "magnitude": 9.89
+      },
+      "reason": "M102 had M101's position and alias; its page describes NGC 5866, whose position (15h06m29s, +55°45′48″) it now has. It stays an entry of its own (plans name it), out of the selections; NGC 5866 is the Essential."
+    }
+  ]
+}

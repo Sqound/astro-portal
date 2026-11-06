@@ -1,0 +1,13 @@
+{
+  "module": "capability-plan-limit-status",
+  "package": "portal",
+  "file": "capabilities/provider",
+  "export": "planStatusCountsTowardLimit",
+  "cases": [
+    { "id": "pending-counts", "args": ["pending"] },
+    { "id": "executed-does-not-count", "args": ["executed"] },
+    { "id": "abandoned-does-not-count", "args": ["abandoned"] },
+    { "id": "archived-does-not-count", "args": ["archived"] },
+    { "id": "unknown-does-not-count", "args": ["bogus"] }
+  ]
+}

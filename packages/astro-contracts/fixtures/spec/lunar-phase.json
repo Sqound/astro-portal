@@ -1,0 +1,8 @@
+{
+  "module": "lunar-phase",
+  "export": "lunarPhaseForDate",
+  "cases": [
+    { "id": "2024-total-solar-eclipse-new-moon", "args": ["2024-04-08"] },
+    { "id": "2024-september-full-moon", "args": ["2024-09-17"] }
+  ]
+}

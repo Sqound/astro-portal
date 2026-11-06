@@ -1,0 +1,424 @@
+{
+  "module": "weather-reminder-ics",
+  "package": "portal",
+  "file": "planner/export",
+  "export": "weatherReminderIcs",
+  "cases": [
+    {
+      "id": "eighteen-hours-before-the-night",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Autumn nebulae",
+            "items": [
+              {
+                "id": "m31",
+                "filter": "L"
+              },
+              {
+                "id": "ngc7000"
+              }
+            ]
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "no-night-window",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Autumn nebulae",
+            "items": [
+              {
+                "id": "m31",
+                "filter": "L"
+              },
+              {
+                "id": "ngc7000"
+              }
+            ]
+          },
+          "night": {
+            "start": "not-a-date"
+          },
+          "now": "2026-09-15T18:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-en",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-fr",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "fr"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-ja",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "ja"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-de",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "de"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-es",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "es"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-it",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "it"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-pt-br",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "pt-BR"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-ru",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "ru"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-zh-hans",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "zh-Hans"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-zh-hant",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-in-en-xa",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-5",
+            "date": "2026-09-15"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "en-XA"
+        }
+      ]
+    },
+    {
+      "id": "named-plan-in-fr",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Nuit; au col, ici"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "fr"
+        }
+      ]
+    },
+    {
+      "id": "named-plan-in-ja",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Nuit; au col, ici"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "ja"
+        }
+      ]
+    },
+    {
+      "id": "named-plan-in-de",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Nuit; au col, ici"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "de"
+        }
+      ]
+    },
+    {
+      "id": "named-plan-in-es",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Nuit; au col, ici"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "es"
+        }
+      ]
+    },
+    {
+      "id": "named-plan-in-it",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Nuit; au col, ici"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "it"
+        }
+      ]
+    },
+    {
+      "id": "named-plan-in-pt-br",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Nuit; au col, ici"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "pt-BR"
+        }
+      ]
+    },
+    {
+      "id": "named-plan-in-ru",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Nuit; au col, ici"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "ru"
+        }
+      ]
+    },
+    {
+      "id": "named-plan-in-zh-hans",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Nuit; au col, ici"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "zh-Hans"
+        }
+      ]
+    },
+    {
+      "id": "named-plan-in-zh-hant",
+      "args": [
+        {
+          "plan": {
+            "id": "plan-1",
+            "date": "2026-09-15",
+            "name": "Nuit; au col, ici"
+          },
+          "night": {
+            "start": "2026-09-15T23:40:00.000Z",
+            "end": "2026-09-16T04:10:00.000Z"
+          },
+          "now": "2026-09-15T18:00:00.000Z",
+          "locale": "zh-Hant"
+        }
+      ]
+    }
+  ]
+}

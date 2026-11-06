@@ -1,0 +1,471 @@
+{
+  "module": "capture-state",
+  "package": "portal",
+  "file": "captures/capture-state",
+  "export": "captureState",
+  "cases": [
+    {
+      "id": "frame-1-private-sky",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "sky",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "frame-2-public-pending",
+      "args": [
+        {
+          "visibility": "public",
+          "checks": {
+            "automatic": "sky",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "frame-3-public-verified",
+      "args": [
+        {
+          "visibility": "public",
+          "checks": {
+            "automatic": "sky",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": "approved",
+            "teamAt": "2026-10-03T09:00:00.000Z",
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "frame-4-and-5-undetermined-public-refused",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "undetermined",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "frame-5-bis-review-requested",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "undetermined",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": "2026-10-02T09:00:00.000Z",
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "frame-6-notice-lifts-on-the-20th",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "other",
+            "automaticAt": "2026-10-06T09:59:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": "2026-10-06T10:00:00.000Z",
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "frame-6-bis-accepted",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "other",
+            "automaticAt": "2026-10-06T09:59:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": "2026-10-06T10:00:00.000Z",
+            "protectionLiftedAt": "2026-10-07T07:30:00.000Z",
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "frame-6-bis-delay-passed-before-any-job",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "other",
+            "automaticAt": "2026-10-06T09:59:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": "2026-10-06T10:00:00.000Z",
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-21T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "frame-7-refused-by-the-team",
+      "args": [
+        {
+          "visibility": "public",
+          "checks": {
+            "automatic": "sky",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": "refused",
+            "teamAt": "2026-10-04T09:00:00.000Z",
+            "teamReason": "not_sky",
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "frame-8-removed-after-reports",
+      "args": [
+        {
+          "visibility": "public",
+          "checks": {
+            "automatic": "sky",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": "2026-10-05T09:00:00.000Z"
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "frame-9-publishing-blocked",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "sky",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": "2026-11-05T12:00:00.000Z",
+          "now": "2026-10-06T12:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "block-ended-publish-allowed-again",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "sky",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": "2026-11-05T12:00:00.000Z",
+          "now": "2026-11-05T12:00:00.001Z"
+        }
+      ]
+    },
+    {
+      "id": "check-not-run-yet",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": null,
+            "automaticAt": null,
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "refused-private-capture",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "sky",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": "refused",
+            "teamAt": "2026-10-04T09:00:00.000Z",
+            "teamReason": "identifiable",
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "undetermined-approved-after-review",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "undetermined",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": "approved",
+            "teamAt": "2026-10-03T09:00:00.000Z",
+            "teamReason": null,
+            "reviewRequestedAt": "2026-10-02T09:00:00.000Z",
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "df-5-failed-check-approved-by-the-team-is-public",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "other",
+            "automaticAt": "2026-10-06T09:59:00.000Z",
+            "team": "approved",
+            "teamAt": "2026-10-08T09:00:00.000Z",
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": "2026-10-06T10:00:00.000Z",
+            "protectionLiftedAt": "2026-10-07T07:30:00.000Z",
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-09T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "removed-then-approved-is-verified",
+      "args": [
+        {
+          "visibility": "public",
+          "checks": {
+            "automatic": "sky",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": "approved",
+            "teamAt": "2026-10-06T09:00:00.000Z",
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "public-capture-under-a-block-stays-public",
+      "args": [
+        {
+          "visibility": "public",
+          "checks": {
+            "automatic": "sky",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": "2026-11-05T12:00:00.000Z",
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "block-over-a-review-request",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "undetermined",
+            "automaticAt": "2026-09-27T21:00:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": "2026-10-02T09:00:00.000Z",
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": "2026-11-05T12:00:00.000Z",
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "notice-wins-over-a-block",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "other",
+            "automaticAt": "2026-10-06T09:59:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": "2026-10-06T10:00:00.000Z",
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": "2026-11-05T12:00:00.000Z",
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "notice-delay-setting",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "other",
+            "automaticAt": "2026-10-06T09:59:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": "2026-10-06T10:00:00.000Z",
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z",
+          "noticeDays": 7
+        }
+      ]
+    },
+    {
+      "id": "notice-time-missing-counts-from-the-check",
+      "args": [
+        {
+          "visibility": "private",
+          "checks": {
+            "automatic": "other",
+            "automaticAt": "2026-10-01T10:00:00.000Z",
+            "team": null,
+            "teamAt": null,
+            "teamReason": null,
+            "reviewRequestedAt": null,
+            "protectionNoticeAt": null,
+            "protectionLiftedAt": null,
+            "removedFromGalleryAt": null
+          },
+          "publishingBlockedUntil": null,
+          "now": "2026-10-07T08:00:00.000Z"
+        }
+      ]
+    }
+  ]
+}

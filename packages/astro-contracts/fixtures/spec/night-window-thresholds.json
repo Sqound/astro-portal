@@ -1,0 +1,209 @@
+{
+  "module": "night-window-thresholds",
+  "file": "night-window",
+  "export": "astronomicalNightWindow",
+  "cases": [
+    {
+      "id": "default-is-astronomical-unchanged",
+      "args": [
+        {
+          "date": "2025-01-10",
+          "latitude": 45,
+          "longitude": 10,
+          "elevation": 0,
+          "timeZone": "UTC"
+        }
+      ]
+    },
+    {
+      "id": "explicit-astronomical",
+      "args": [
+        {
+          "date": "2025-01-10",
+          "latitude": 45,
+          "longitude": 10,
+          "elevation": 0,
+          "timeZone": "UTC",
+          "sunAltitudeDegrees": -18
+        }
+      ]
+    },
+    {
+      "id": "nautical",
+      "args": [
+        {
+          "date": "2025-01-10",
+          "latitude": 45,
+          "longitude": 10,
+          "elevation": 0,
+          "timeZone": "UTC",
+          "sunAltitudeDegrees": -12
+        }
+      ]
+    },
+    {
+      "id": "civil",
+      "args": [
+        {
+          "date": "2025-01-10",
+          "latitude": 45,
+          "longitude": 10,
+          "elevation": 0,
+          "timeZone": "UTC",
+          "sunAltitudeDegrees": -6
+        }
+      ]
+    },
+    {
+      "id": "sunset-to-sunrise",
+      "args": [
+        {
+          "date": "2025-01-10",
+          "latitude": 45,
+          "longitude": 10,
+          "elevation": 0,
+          "timeZone": "UTC",
+          "sunAltitudeDegrees": -0.8333
+        }
+      ]
+    },
+    {
+      "id": "unusable-threshold-reads-astronomical",
+      "args": [
+        {
+          "date": "2025-01-10",
+          "latitude": 45,
+          "longitude": 10,
+          "elevation": 0,
+          "timeZone": "UTC",
+          "sunAltitudeDegrees": "-12"
+        }
+      ]
+    },
+    {
+      "id": "numeric-strings-civil",
+      "args": [
+        {
+          "date": "2025-01-10",
+          "latitude": "45",
+          "longitude": "10",
+          "elevation": 0,
+          "timeZone": "UTC",
+          "sunAltitudeDegrees": -6
+        }
+      ]
+    },
+    {
+      "id": "iana-zone-nautical",
+      "args": [
+        {
+          "date": "2026-10-14",
+          "latitude": 45,
+          "longitude": -30,
+          "elevation": 0,
+          "timeZone": "Atlantic/Azores",
+          "sunAltitudeDegrees": -12
+        }
+      ]
+    },
+    {
+      "id": "iana-zone-civil-with-elevation",
+      "args": [
+        {
+          "date": "2026-10-14",
+          "latitude": 45,
+          "longitude": -30,
+          "elevation": 1200,
+          "timeZone": "Atlantic/Azores",
+          "sunAltitudeDegrees": -6
+        }
+      ]
+    },
+    {
+      "id": "southern-winter-civil",
+      "args": [
+        {
+          "date": "2025-06-21",
+          "latitude": -34.6,
+          "longitude": -58.4,
+          "elevation": 25,
+          "timeZone": "America/Argentina/Buenos_Aires",
+          "sunAltitudeDegrees": -6
+        }
+      ]
+    },
+    {
+      "id": "zoneless-place-anchors-on-longitude",
+      "args": [
+        {
+          "date": "2026-10-14",
+          "latitude": 45,
+          "longitude": 170,
+          "sunAltitudeDegrees": -12
+        }
+      ]
+    },
+    {
+      "id": "explicit-etc-utc-is-zero-offset",
+      "args": [
+        {
+          "date": "2026-10-14",
+          "latitude": 45,
+          "longitude": 170,
+          "timeZone": "Etc/UTC",
+          "sunAltitudeDegrees": -12
+        }
+      ]
+    },
+    {
+      "id": "short-summer-night-civil-only",
+      "args": [
+        {
+          "date": "2026-06-21",
+          "latitude": 60,
+          "longitude": 10,
+          "timeZone": "Europe/Berlin",
+          "sunAltitudeDegrees": -6
+        }
+      ]
+    },
+    {
+      "id": "short-summer-night-no-nautical",
+      "args": [
+        {
+          "date": "2026-06-21",
+          "latitude": 60,
+          "longitude": 10,
+          "timeZone": "Europe/Berlin",
+          "sunAltitudeDegrees": -12
+        }
+      ]
+    },
+    {
+      "id": "invalid-latitude",
+      "args": [
+        {
+          "date": "2025-01-10",
+          "latitude": 95,
+          "longitude": 10,
+          "elevation": 0,
+          "timeZone": "UTC",
+          "sunAltitudeDegrees": -6
+        }
+      ]
+    },
+    {
+      "id": "missing-date",
+      "args": [
+        {
+          "date": "",
+          "latitude": 45,
+          "longitude": 10,
+          "elevation": 0,
+          "timeZone": "UTC",
+          "sunAltitudeDegrees": -6
+        }
+      ]
+    }
+  ]
+}

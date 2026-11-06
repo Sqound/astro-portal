@@ -1,0 +1,47 @@
+{
+  "hourly": {
+    "time": [
+      1792666800, 1792670400, 1792674000, 1792677600, 1792681200, 1792684800
+    ],
+    "cloud_cover_best_match": [2, 1, 3, 2, 3, 4],
+    "cloud_cover_low_best_match": [2, 1, 3, 2, 3, 4],
+    "cloud_cover_mid_best_match": [1, 0, 0, 0, 1, 2],
+    "cloud_cover_high_best_match": [0, 0, 0, 0, 0, 0],
+    "visibility_best_match": [
+      40820.0, 37820.0, 37820.0, 37840.0, 34580.0, 34580.0
+    ],
+    "temperature_2m_best_match": [13.7, 12.8, 11.9, 11.1, 10.3, 9.7],
+    "cloud_cover_ecmwf_ifs025": [2, 0, 3, 8, 11, 10],
+    "cloud_cover_low_ecmwf_ifs025": [3, 0, 0, 1, 2, 3],
+    "cloud_cover_mid_ecmwf_ifs025": [0, 0, 3, 8, 11, 9],
+    "cloud_cover_high_ecmwf_ifs025": [0, 0, 0, 0, 0, 0],
+    "visibility_ecmwf_ifs025": [null, null, null, null, null, null],
+    "temperature_2m_ecmwf_ifs025": [13.2, 12.8, 12.2, 11.6, 10.9, 10.3],
+    "cloud_cover_icon_seamless": [39, 61, 74, 68, 58, 0],
+    "cloud_cover_low_icon_seamless": [34, 25, 42, 44, 30, 0],
+    "cloud_cover_mid_icon_seamless": [5, 48, 53, 42, 42, 0],
+    "cloud_cover_high_icon_seamless": [0, 0, 0, 0, 0, 0],
+    "visibility_icon_seamless": [null, null, null, null, null, null],
+    "temperature_2m_icon_seamless": [13.8, 13.5, 13.3, 12.8, 12.2, 11.3],
+    "cloud_cover_gfs_seamless": [0, 0, 13, 0, 36, 0],
+    "cloud_cover_low_gfs_seamless": [0, 0, 13, 0, 36, 0],
+    "cloud_cover_mid_gfs_seamless": [0, 0, 0, 0, 0, 0],
+    "cloud_cover_high_gfs_seamless": [0, 0, 0, 0, 0, 0],
+    "visibility_gfs_seamless": [
+      24140.0, 24140.0, 24140.0, 24140.0, 24140.0, 24140.0
+    ],
+    "temperature_2m_gfs_seamless": [15.2, 14.7, 14.1, 13.6, 13.3, 13.1],
+    "cloud_cover_jma_seamless": [2, 1, 3, 2, 3, 4],
+    "cloud_cover_low_jma_seamless": [2, 1, 3, 2, 3, 4],
+    "cloud_cover_mid_jma_seamless": [1, 0, 0, 0, 1, 2],
+    "cloud_cover_high_jma_seamless": [0, 0, 0, 0, 0, 0],
+    "visibility_jma_seamless": [null, null, null, null, null, null],
+    "temperature_2m_jma_seamless": [13.7, 12.8, 11.9, 11.1, 10.3, 9.7]
+  },
+  "daily": {
+    "time": [1792627200],
+    "weather_code_best_match": [3],
+    "weather_code_icon_seamless": [3]
+  },
+  "note": "Open-Meteo answer for 36.5 N 139.9 E, models best_match, ecmwf_ifs025, icon_seamless, gfs_seamless, jma_seamless; 2026-10-22 20:00-01:00 JST, trimmed to the cloud variables, visibility and temperature"
+}

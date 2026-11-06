@@ -1,0 +1,29 @@
+{
+  "module": "place-resolution",
+  "package": "portal",
+  "file": "planner/state",
+  "export": "placeCoordinates",
+  "cases": [
+    {
+      "id": "valid-coordinates",
+      "args": [{ "latitude": 45.5, "longitude": -73.6 }]
+    },
+    {
+      "id": "boundary-pole-and-antimeridian",
+      "args": [{ "latitude": 90, "longitude": 180 }]
+    },
+    {
+      "id": "latitude-out-of-range-rejected",
+      "args": [{ "latitude": 91, "longitude": 0 }]
+    },
+    {
+      "id": "longitude-out-of-range-rejected",
+      "args": [{ "latitude": 0, "longitude": 181 }]
+    },
+    {
+      "id": "numeric-strings-accepted",
+      "args": [{ "latitude": "45.5", "longitude": "-73.6" }]
+    },
+    { "id": "missing-coordinates-rejected", "args": [{}] }
+  ]
+}

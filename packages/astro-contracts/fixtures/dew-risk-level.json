@@ -1,0 +1,77 @@
+{
+  "cases": [
+    {
+      "args": [{ "dewPoint": 7, "temperature": 8 }],
+      "id": "high-spread-at-most-one-degree",
+      "result": "high"
+    },
+    {
+      "args": [{ "dewPoint": 8.4, "temperature": 8 }],
+      "id": "high-dew-point-above-temperature",
+      "result": "high"
+    },
+    {
+      "args": [{ "dewPoint": 5, "temperature": 8 }],
+      "id": "moderate-spread-at-most-three-degrees",
+      "result": "moderate"
+    },
+    {
+      "args": [{ "dewPoint": 4.9, "temperature": 8 }],
+      "id": "low-spread-above-three-degrees",
+      "result": "low"
+    },
+    {
+      "args": [{ "dewPoint": 11.3, "temperature": 12.3 }],
+      "id": "spread-read-to-a-tenth",
+      "result": "high"
+    },
+    {
+      "args": [{ "dewPoint": 7.5, "temperature": 8, "wind": 15 }],
+      "id": "wind-lowers-high-to-moderate",
+      "result": "moderate"
+    },
+    {
+      "args": [{ "dewPoint": 6, "temperature": 8, "wind": 20 }],
+      "id": "wind-lowers-moderate-to-low",
+      "result": "low"
+    },
+    {
+      "args": [{ "dewPoint": 2, "temperature": 8, "wind": 30 }],
+      "id": "wind-never-below-low",
+      "result": "low"
+    },
+    {
+      "args": [{ "humidity": 95, "temperature": 10 }],
+      "id": "humidity-gives-the-dew-point",
+      "result": "high"
+    },
+    {
+      "args": [{ "humidity": 60, "temperature": 10, "wind": "4" }],
+      "id": "humidity-dry-air-low",
+      "result": "low"
+    },
+    {
+      "args": [{ "dewPoint": 2, "humidity": 99, "temperature": 10 }],
+      "id": "dew-point-preferred-over-humidity",
+      "result": "low"
+    },
+    {
+      "args": [{ "dewPoint": "6", "temperature": "6.5" }],
+      "id": "numeric-strings-accepted",
+      "result": "high"
+    },
+    {
+      "args": [{ "dewPoint": 5, "humidity": 90 }],
+      "id": "no-temperature-no-level",
+      "result": null
+    },
+    { "args": [{ "temperature": 10 }], "id": "nothing-to-say", "result": null },
+    {
+      "args": [{ "dewPoint": -3.1, "temperature": -2.4 }],
+      "id": "negative-temperatures",
+      "result": "high"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "dew-risk-level"
+}

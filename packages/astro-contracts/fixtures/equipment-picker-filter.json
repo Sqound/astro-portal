@@ -1,0 +1,2843 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": ""
+        }
+      ],
+      "id": "eyepieces-everything",
+      "result": {
+        "count": 15,
+        "defaults": [
+          "tv-ethos-6",
+          "tv-ethos-13",
+          "tv-ethos-21",
+          "tv-nagler-13",
+          "tv-delos-10",
+          "tv-plossl-32",
+          "baader-hyperion-zoom",
+          "baader-morpheus-12-5",
+          "baader-classic-ortho-18",
+          "es-82-11",
+          "es-68-24",
+          "es-100-9",
+          "vixen-npl-25",
+          "plossl-10",
+          "plossl-25"
+        ],
+        "filtered": false,
+        "kinds": [
+          { "count": 1, "value": "zoom" },
+          { "count": 4, "value": "plossl" },
+          { "count": 1, "value": "orthoscopic" },
+          { "count": 3, "value": "wide-field" },
+          { "count": 6, "value": "ultra-wide-field" }
+        ],
+        "makers": [
+          { "count": 6, "value": "Tele Vue" },
+          { "count": 3, "value": "Baader" },
+          { "count": 3, "value": "Explore Scientific" },
+          { "count": 1, "value": "Vixen" }
+        ],
+        "mine": ["inv-hyperion", "inv-ortho"],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": "PLOSSL"
+        }
+      ],
+      "id": "search-folds-case-and-accents",
+      "result": {
+        "count": 3,
+        "defaults": ["tv-plossl-32", "plossl-10", "plossl-25"],
+        "filtered": false,
+        "kinds": [{ "count": 3, "value": "plossl" }],
+        "makers": [{ "count": 1, "value": "Tele Vue" }],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": "plössl 2"
+        }
+      ],
+      "id": "search-accented-query",
+      "result": {
+        "count": 2,
+        "defaults": ["tv-plossl-32", "plossl-25"],
+        "filtered": false,
+        "kinds": [{ "count": 2, "value": "plossl" }],
+        "makers": [{ "count": 1, "value": "Tele Vue" }],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": "oeil"
+        }
+      ],
+      "id": "search-ligature",
+      "result": {
+        "count": 0,
+        "defaults": [],
+        "filtered": false,
+        "kinds": [],
+        "makers": [],
+        "mine": ["inv-ortho"],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": "  13   tele "
+        }
+      ],
+      "id": "search-every-word-in-any-order",
+      "result": {
+        "count": 2,
+        "defaults": ["tv-ethos-13", "tv-nagler-13"],
+        "filtered": false,
+        "kinds": [{ "count": 2, "value": "ultra-wide-field" }],
+        "makers": [{ "count": 2, "value": "Tele Vue" }],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": "hyperion"
+        }
+      ],
+      "id": "search-reaches-mine-and-defaults",
+      "result": {
+        "count": 1,
+        "defaults": ["baader-hyperion-zoom"],
+        "filtered": false,
+        "kinds": [{ "count": 1, "value": "zoom" }],
+        "makers": [{ "count": 1, "value": "Baader" }],
+        "mine": ["inv-hyperion"],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": "ultra-wide-field",
+          "maker": "Tele Vue",
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": ""
+        }
+      ],
+      "id": "maker-and-kind-narrow-defaults-not-mine",
+      "result": {
+        "count": 4,
+        "defaults": [
+          "tv-ethos-6",
+          "tv-ethos-13",
+          "tv-ethos-21",
+          "tv-nagler-13"
+        ],
+        "filtered": true,
+        "kinds": [
+          { "count": 1, "value": "plossl" },
+          { "count": 1, "value": "wide-field" },
+          { "count": 4, "value": "ultra-wide-field" }
+        ],
+        "makers": [
+          { "count": 4, "value": "Tele Vue" },
+          { "count": 2, "value": "Explore Scientific" }
+        ],
+        "mine": ["inv-hyperion", "inv-ortho"],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": "wide-field",
+          "maker": null,
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": ""
+        }
+      ],
+      "id": "maker-menu-faceted-by-kind",
+      "result": {
+        "count": 3,
+        "defaults": ["tv-delos-10", "baader-morpheus-12-5", "es-68-24"],
+        "filtered": true,
+        "kinds": [
+          { "count": 1, "value": "zoom" },
+          { "count": 4, "value": "plossl" },
+          { "count": 1, "value": "orthoscopic" },
+          { "count": 3, "value": "wide-field" },
+          { "count": 6, "value": "ultra-wide-field" }
+        ],
+        "makers": [
+          { "count": 1, "value": "Baader" },
+          { "count": 1, "value": "Explore Scientific" },
+          { "count": 1, "value": "Tele Vue" }
+        ],
+        "mine": ["inv-hyperion", "inv-ortho"],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": null,
+          "maker": "Baader",
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": "mm"
+        }
+      ],
+      "id": "kind-menu-faceted-by-maker-and-search",
+      "result": {
+        "count": 3,
+        "defaults": [
+          "baader-hyperion-zoom",
+          "baader-morpheus-12-5",
+          "baader-classic-ortho-18"
+        ],
+        "filtered": true,
+        "kinds": [
+          { "count": 1, "value": "zoom" },
+          { "count": 1, "value": "orthoscopic" },
+          { "count": 1, "value": "wide-field" }
+        ],
+        "makers": [
+          { "count": 6, "value": "Tele Vue" },
+          { "count": 3, "value": "Baader" },
+          { "count": 3, "value": "Explore Scientific" },
+          { "count": 1, "value": "Vixen" }
+        ],
+        "mine": ["inv-hyperion", "inv-ortho"],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": null,
+          "maker": "Baader",
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": "ethos"
+        }
+      ],
+      "id": "chosen-maker-with-count-zero-stays",
+      "result": {
+        "count": 0,
+        "defaults": [],
+        "filtered": true,
+        "kinds": [],
+        "makers": [
+          { "count": 3, "value": "Tele Vue" },
+          { "count": 0, "value": "Baader" }
+        ],
+        "mine": [],
+        "noMatch": true,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": "zoom",
+          "maker": "Vixen",
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": ""
+        }
+      ],
+      "id": "chosen-kind-with-count-zero-stays",
+      "result": {
+        "count": 0,
+        "defaults": [],
+        "filtered": true,
+        "kinds": [
+          { "count": 0, "value": "zoom" },
+          { "count": 1, "value": "plossl" }
+        ],
+        "makers": [
+          { "count": 1, "value": "Baader" },
+          { "count": 0, "value": "Vixen" }
+        ],
+        "mine": ["inv-hyperion", "inv-ortho"],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": "barlow 3"
+        }
+      ],
+      "id": "nothing-matches",
+      "result": {
+        "count": 0,
+        "defaults": [],
+        "filtered": false,
+        "kinds": [],
+        "makers": [],
+        "mine": [],
+        "noMatch": true,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": null,
+          "maker": "Vixen",
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": "hyperion 13"
+        }
+      ],
+      "id": "mine-alone-matches-with-filters",
+      "result": {
+        "count": 0,
+        "defaults": [],
+        "filtered": true,
+        "kinds": [],
+        "makers": [{ "count": 0, "value": "Vixen" }],
+        "mine": ["inv-hyperion"],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            },
+            { "id": "plossl-10", "kind": "plossl", "name": "Plössl 10 mm" },
+            { "id": "plossl-25", "kind": "plossl", "name": "Plössl 25 mm" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [],
+          "query": "plossl"
+        }
+      ],
+      "id": "entries-without-maker-count-only-in-all",
+      "result": {
+        "count": 3,
+        "defaults": ["tv-plossl-32", "plossl-10", "plossl-25"],
+        "filtered": false,
+        "kinds": [{ "count": 3, "value": "plossl" }],
+        "makers": [{ "count": 1, "value": "Tele Vue" }],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [],
+          "kind": "plossl",
+          "maker": "Tele Vue",
+          "mine": [
+            { "id": "inv-1", "name": "Oculaire 1 mm" },
+            { "id": "inv-2", "name": "Oculaire 2 mm" },
+            { "id": "inv-3", "name": "Oculaire 3 mm" },
+            { "id": "inv-4", "name": "Oculaire 4 mm" },
+            { "id": "inv-5", "name": "Oculaire 5 mm" },
+            { "id": "inv-6", "name": "Oculaire 6 mm" },
+            { "id": "inv-7", "name": "Oculaire 7 mm" },
+            { "id": "inv-8", "name": "Oculaire 8 mm" },
+            { "id": "inv-9", "name": "Oculaire 9 mm" },
+            { "id": "inv-10", "name": "Oculaire 10 mm" },
+            { "id": "inv-11", "name": "Oculaire 11 mm" },
+            { "id": "inv-12", "name": "Oculaire 12 mm" },
+            { "id": "inv-13", "name": "Oculaire 13 mm" }
+          ],
+          "query": ""
+        }
+      ],
+      "id": "defaults-hidden-search-on-mine-only",
+      "result": {
+        "count": 0,
+        "defaults": [],
+        "filtered": false,
+        "kinds": [],
+        "makers": [],
+        "mine": [
+          "inv-1",
+          "inv-2",
+          "inv-3",
+          "inv-4",
+          "inv-5",
+          "inv-6",
+          "inv-7",
+          "inv-8",
+          "inv-9",
+          "inv-10",
+          "inv-11",
+          "inv-12",
+          "inv-13"
+        ],
+        "noMatch": false,
+        "showsKindMenu": false,
+        "showsMakerMenu": false,
+        "showsMenus": false,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [],
+          "kind": null,
+          "maker": null,
+          "mine": [
+            { "id": "inv-hyperion", "name": "Hyperion 13 mm" },
+            { "id": "inv-ortho", "name": "Œil de bœuf 7 mm" }
+          ],
+          "query": ""
+        }
+      ],
+      "id": "defaults-hidden-few-own-rows",
+      "result": {
+        "count": 0,
+        "defaults": [],
+        "filtered": false,
+        "kinds": [],
+        "makers": [],
+        "mine": ["inv-hyperion", "inv-ortho"],
+        "noMatch": false,
+        "showsKindMenu": false,
+        "showsMakerMenu": false,
+        "showsMenus": false,
+        "showsSearch": false
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [],
+          "query": ""
+        }
+      ],
+      "id": "twelve-rows-no-search",
+      "result": {
+        "count": 12,
+        "defaults": [
+          "tv-ethos-6",
+          "tv-ethos-13",
+          "tv-ethos-21",
+          "tv-nagler-13",
+          "tv-delos-10",
+          "tv-plossl-32",
+          "baader-hyperion-zoom",
+          "baader-morpheus-12-5",
+          "baader-classic-ortho-18",
+          "es-82-11",
+          "es-68-24",
+          "es-100-9"
+        ],
+        "filtered": false,
+        "kinds": [],
+        "makers": [],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": false,
+        "showsMakerMenu": false,
+        "showsMenus": false,
+        "showsSearch": false
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            },
+            {
+              "id": "vixen-npl-25",
+              "kind": "plossl",
+              "maker": "Vixen",
+              "name": "Vixen NPL 25 mm"
+            }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [],
+          "query": ""
+        }
+      ],
+      "id": "thirteen-rows-search-and-menus",
+      "result": {
+        "count": 13,
+        "defaults": [
+          "tv-ethos-6",
+          "tv-ethos-13",
+          "tv-ethos-21",
+          "tv-nagler-13",
+          "tv-delos-10",
+          "tv-plossl-32",
+          "baader-hyperion-zoom",
+          "baader-morpheus-12-5",
+          "baader-classic-ortho-18",
+          "es-82-11",
+          "es-68-24",
+          "es-100-9",
+          "vixen-npl-25"
+        ],
+        "filtered": false,
+        "kinds": [
+          { "count": 1, "value": "zoom" },
+          { "count": 2, "value": "plossl" },
+          { "count": 1, "value": "orthoscopic" },
+          { "count": 3, "value": "wide-field" },
+          { "count": 6, "value": "ultra-wide-field" }
+        ],
+        "makers": [
+          { "count": 6, "value": "Tele Vue" },
+          { "count": 3, "value": "Baader" },
+          { "count": 3, "value": "Explore Scientific" },
+          { "count": 1, "value": "Vixen" }
+        ],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "eyepiece",
+          "defaults": [
+            {
+              "id": "tv-ethos-6",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 6 mm"
+            },
+            {
+              "id": "tv-ethos-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 13 mm"
+            },
+            {
+              "id": "tv-ethos-21",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Ethos 21 mm"
+            },
+            {
+              "id": "tv-nagler-13",
+              "kind": "ultra-wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Nagler T6 13 mm"
+            },
+            {
+              "id": "tv-delos-10",
+              "kind": "wide-field",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Delos 10 mm"
+            },
+            {
+              "id": "tv-plossl-32",
+              "kind": "plossl",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Plössl 32 mm"
+            },
+            {
+              "id": "baader-hyperion-zoom",
+              "kind": "zoom",
+              "maker": "Baader",
+              "name": "Baader Hyperion Zoom Mark IV 8–24 mm"
+            },
+            {
+              "id": "baader-morpheus-12-5",
+              "kind": "wide-field",
+              "maker": "Baader",
+              "name": "Baader Morpheus 12,5 mm"
+            },
+            {
+              "id": "baader-classic-ortho-18",
+              "kind": "orthoscopic",
+              "maker": "Baader",
+              "name": "Baader Classic Ortho 18 mm"
+            },
+            {
+              "id": "es-82-11",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 82° 11 mm"
+            },
+            {
+              "id": "es-68-24",
+              "kind": "wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 68° 24 mm"
+            },
+            {
+              "id": "es-100-9",
+              "kind": "ultra-wide-field",
+              "maker": "Explore Scientific",
+              "name": "Explore Scientific 100° 9 mm"
+            }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [{ "id": "inv-hyperion", "name": "Hyperion 13 mm" }],
+          "query": ""
+        }
+      ],
+      "id": "twelve-defaults-and-one-own-search-only",
+      "result": {
+        "count": 12,
+        "defaults": [
+          "tv-ethos-6",
+          "tv-ethos-13",
+          "tv-ethos-21",
+          "tv-nagler-13",
+          "tv-delos-10",
+          "tv-plossl-32",
+          "baader-hyperion-zoom",
+          "baader-morpheus-12-5",
+          "baader-classic-ortho-18",
+          "es-82-11",
+          "es-68-24",
+          "es-100-9"
+        ],
+        "filtered": false,
+        "kinds": [],
+        "makers": [],
+        "mine": ["inv-hyperion"],
+        "noMatch": false,
+        "showsKindMenu": false,
+        "showsMakerMenu": false,
+        "showsMenus": false,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "filter",
+          "defaults": [
+            { "family": "dual", "id": "f0", "name": "Duo-Band" },
+            { "family": "dual", "id": "f1", "name": "L-eXtreme" },
+            { "family": "dual", "id": "f2", "name": "L-eNhance" },
+            { "family": "ha", "id": "f3", "name": "Hα 7 nm" },
+            { "family": "ha", "id": "f4", "name": "Hα 3 nm" },
+            { "family": "oiii", "id": "f5", "name": "O III 6,5 nm" },
+            { "family": "sii", "id": "f6", "name": "S II 6,5 nm" },
+            { "family": "uhc", "id": "f7", "name": "UHC" },
+            { "family": "hb", "id": "f8", "name": "Hβ" },
+            { "family": "broadband", "id": "f9", "name": "UV/IR-cut" },
+            { "family": "broadband", "id": "f10", "name": "RGB" },
+            { "family": "solar", "id": "f11", "name": "Solar film" },
+            { "family": "solar", "id": "f12", "name": "Herschel wedge" },
+            { "family": "broadband", "id": "f13", "name": "Light pollution" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [
+            { "family": "ha", "id": "own-filter", "name": "Mon Hα maison" }
+          ],
+          "query": ""
+        }
+      ],
+      "id": "filters-type-is-the-family",
+      "result": {
+        "count": 14,
+        "defaults": [
+          "f0",
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f9",
+          "f10",
+          "f11",
+          "f12",
+          "f13"
+        ],
+        "filtered": false,
+        "kinds": [
+          { "count": 3, "value": "dual" },
+          { "count": 2, "value": "ha" },
+          { "count": 1, "value": "oiii" },
+          { "count": 1, "value": "sii" },
+          { "count": 1, "value": "uhc" },
+          { "count": 1, "value": "hb" },
+          { "count": 3, "value": "broadband" },
+          { "count": 2, "value": "solar" }
+        ],
+        "makers": [],
+        "mine": ["own-filter"],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": false,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "filter",
+          "defaults": [
+            { "family": "dual", "id": "f0", "name": "Duo-Band" },
+            { "family": "dual", "id": "f1", "name": "L-eXtreme" },
+            { "family": "dual", "id": "f2", "name": "L-eNhance" },
+            { "family": "ha", "id": "f3", "name": "Hα 7 nm" },
+            { "family": "ha", "id": "f4", "name": "Hα 3 nm" },
+            { "family": "oiii", "id": "f5", "name": "O III 6,5 nm" },
+            { "family": "sii", "id": "f6", "name": "S II 6,5 nm" },
+            { "family": "uhc", "id": "f7", "name": "UHC" },
+            { "family": "hb", "id": "f8", "name": "Hβ" },
+            { "family": "broadband", "id": "f9", "name": "UV/IR-cut" },
+            { "family": "broadband", "id": "f10", "name": "RGB" },
+            { "family": "solar", "id": "f11", "name": "Solar film" },
+            { "family": "solar", "id": "f12", "name": "Herschel wedge" },
+            { "family": "broadband", "id": "f13", "name": "Light pollution" }
+          ],
+          "kind": "solar",
+          "maker": "Vaonis",
+          "mine": [
+            { "family": "ha", "id": "own-filter", "name": "Mon Hα maison" }
+          ],
+          "query": ""
+        }
+      ],
+      "id": "filters-by-family",
+      "result": {
+        "count": 2,
+        "defaults": ["f11", "f12"],
+        "filtered": true,
+        "kinds": [
+          { "count": 3, "value": "dual" },
+          { "count": 2, "value": "ha" },
+          { "count": 1, "value": "oiii" },
+          { "count": 1, "value": "sii" },
+          { "count": 1, "value": "uhc" },
+          { "count": 1, "value": "hb" },
+          { "count": 3, "value": "broadband" },
+          { "count": 2, "value": "solar" }
+        ],
+        "makers": [],
+        "mine": ["own-filter"],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": false,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "filter",
+          "defaults": [
+            { "family": "dual", "id": "f0", "name": "Duo-Band" },
+            { "family": "dual", "id": "f1", "name": "L-eXtreme" },
+            { "family": "dual", "id": "f2", "name": "L-eNhance" },
+            { "family": "ha", "id": "f3", "name": "Hα 7 nm" },
+            { "family": "ha", "id": "f4", "name": "Hα 3 nm" },
+            { "family": "oiii", "id": "f5", "name": "O III 6,5 nm" },
+            { "family": "sii", "id": "f6", "name": "S II 6,5 nm" },
+            { "family": "uhc", "id": "f7", "name": "UHC" },
+            { "family": "hb", "id": "f8", "name": "Hβ" },
+            { "family": "broadband", "id": "f9", "name": "UV/IR-cut" },
+            { "family": "broadband", "id": "f10", "name": "RGB" },
+            { "family": "solar", "id": "f11", "name": "Solar film" },
+            { "family": "solar", "id": "f12", "name": "Herschel wedge" },
+            { "family": "broadband", "id": "f13", "name": "Light pollution" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [
+            { "family": "ha", "id": "own-filter", "name": "Mon Hα maison" }
+          ],
+          "query": "HA"
+        }
+      ],
+      "id": "filters-search-ha",
+      "result": {
+        "count": 1,
+        "defaults": ["f2"],
+        "filtered": false,
+        "kinds": [{ "count": 1, "value": "dual" }],
+        "makers": [],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": false,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "telescope",
+          "defaults": [
+            {
+              "id": "seestar-s50",
+              "kind": "smart",
+              "maker": "ZWO",
+              "name": "Seestar S50"
+            },
+            {
+              "id": "seestar-s30",
+              "kind": "smart",
+              "maker": "ZWO",
+              "name": "Seestar S30"
+            },
+            {
+              "id": "vespera-ii",
+              "kind": "smart",
+              "maker": "Vaonis",
+              "name": "Vespera II"
+            },
+            {
+              "id": "evostar-72",
+              "kind": "refractor",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Evostar 72 ED"
+            },
+            {
+              "id": "evostar-80",
+              "kind": "refractor",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Evostar 80 ED"
+            },
+            {
+              "id": "dob-200",
+              "kind": "newtonian",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Dobson 200/1200"
+            },
+            {
+              "id": "skymax-127",
+              "kind": "maksutov",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Skymax 127"
+            },
+            {
+              "id": "c8",
+              "kind": "schmidt-cassegrain",
+              "maker": "Celestron",
+              "name": "Celestron C8"
+            },
+            {
+              "id": "edgehd-8",
+              "kind": "schmidt-cassegrain",
+              "maker": "Celestron",
+              "name": "Celestron EdgeHD 8"
+            },
+            {
+              "id": "rc-8",
+              "kind": "ritchey-chretien",
+              "maker": "GSO",
+              "name": "GSO RC 8"
+            },
+            {
+              "id": "mewlon-180",
+              "kind": "cassegrain",
+              "maker": "Takahashi",
+              "name": "Takahashi Mewlon 180C"
+            },
+            {
+              "id": "fsq-106",
+              "kind": "refractor",
+              "maker": "Takahashi",
+              "name": "Takahashi FSQ-106EDX4"
+            },
+            {
+              "id": "askar-fra400",
+              "kind": "refractor",
+              "maker": "Askar",
+              "name": "Askar FRA400"
+            },
+            { "id": "custom-row", "name": "Lunette de l'atelier" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [],
+          "query": ""
+        }
+      ],
+      "id": "telescope-kinds-in-catalogue-order",
+      "result": {
+        "count": 14,
+        "defaults": [
+          "seestar-s50",
+          "seestar-s30",
+          "vespera-ii",
+          "evostar-72",
+          "evostar-80",
+          "dob-200",
+          "skymax-127",
+          "c8",
+          "edgehd-8",
+          "rc-8",
+          "mewlon-180",
+          "fsq-106",
+          "askar-fra400",
+          "custom-row"
+        ],
+        "filtered": false,
+        "kinds": [
+          { "count": 4, "value": "refractor" },
+          { "count": 1, "value": "newtonian" },
+          { "count": 2, "value": "schmidt-cassegrain" },
+          { "count": 1, "value": "maksutov" },
+          { "count": 1, "value": "ritchey-chretien" },
+          { "count": 1, "value": "cassegrain" },
+          { "count": 3, "value": "smart" }
+        ],
+        "makers": [
+          { "count": 4, "value": "Sky-Watcher" },
+          { "count": 2, "value": "Celestron" },
+          { "count": 2, "value": "Takahashi" },
+          { "count": 2, "value": "ZWO" },
+          { "count": 1, "value": "Askar" },
+          { "count": 1, "value": "GSO" },
+          { "count": 1, "value": "Vaonis" }
+        ],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "telescope",
+          "defaults": [
+            {
+              "id": "seestar-s50",
+              "kind": "smart",
+              "maker": "ZWO",
+              "name": "Seestar S50"
+            },
+            {
+              "id": "seestar-s30",
+              "kind": "smart",
+              "maker": "ZWO",
+              "name": "Seestar S30"
+            },
+            {
+              "id": "vespera-ii",
+              "kind": "smart",
+              "maker": "Vaonis",
+              "name": "Vespera II"
+            },
+            {
+              "id": "evostar-72",
+              "kind": "refractor",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Evostar 72 ED"
+            },
+            {
+              "id": "evostar-80",
+              "kind": "refractor",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Evostar 80 ED"
+            },
+            {
+              "id": "dob-200",
+              "kind": "newtonian",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Dobson 200/1200"
+            },
+            {
+              "id": "skymax-127",
+              "kind": "maksutov",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Skymax 127"
+            },
+            {
+              "id": "c8",
+              "kind": "schmidt-cassegrain",
+              "maker": "Celestron",
+              "name": "Celestron C8"
+            },
+            {
+              "id": "edgehd-8",
+              "kind": "schmidt-cassegrain",
+              "maker": "Celestron",
+              "name": "Celestron EdgeHD 8"
+            },
+            {
+              "id": "rc-8",
+              "kind": "ritchey-chretien",
+              "maker": "GSO",
+              "name": "GSO RC 8"
+            },
+            {
+              "id": "mewlon-180",
+              "kind": "cassegrain",
+              "maker": "Takahashi",
+              "name": "Takahashi Mewlon 180C"
+            },
+            {
+              "id": "fsq-106",
+              "kind": "refractor",
+              "maker": "Takahashi",
+              "name": "Takahashi FSQ-106EDX4"
+            },
+            {
+              "id": "askar-fra400",
+              "kind": "refractor",
+              "maker": "Askar",
+              "name": "Askar FRA400"
+            },
+            { "id": "custom-row", "name": "Lunette de l'atelier" }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [],
+          "query": "zwo s50"
+        }
+      ],
+      "id": "telescope-maker-written-before-the-name",
+      "result": {
+        "count": 1,
+        "defaults": ["seestar-s50"],
+        "filtered": false,
+        "kinds": [{ "count": 1, "value": "smart" }],
+        "makers": [{ "count": 1, "value": "ZWO" }],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "telescope",
+          "defaults": [
+            {
+              "id": "seestar-s50",
+              "kind": "smart",
+              "maker": "ZWO",
+              "name": "Seestar S50"
+            },
+            {
+              "id": "seestar-s30",
+              "kind": "smart",
+              "maker": "ZWO",
+              "name": "Seestar S30"
+            },
+            {
+              "id": "vespera-ii",
+              "kind": "smart",
+              "maker": "Vaonis",
+              "name": "Vespera II"
+            },
+            {
+              "id": "evostar-72",
+              "kind": "refractor",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Evostar 72 ED"
+            },
+            {
+              "id": "evostar-80",
+              "kind": "refractor",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Evostar 80 ED"
+            },
+            {
+              "id": "dob-200",
+              "kind": "newtonian",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Dobson 200/1200"
+            },
+            {
+              "id": "skymax-127",
+              "kind": "maksutov",
+              "maker": "Sky-Watcher",
+              "name": "Sky-Watcher Skymax 127"
+            },
+            {
+              "id": "c8",
+              "kind": "schmidt-cassegrain",
+              "maker": "Celestron",
+              "name": "Celestron C8"
+            },
+            {
+              "id": "edgehd-8",
+              "kind": "schmidt-cassegrain",
+              "maker": "Celestron",
+              "name": "Celestron EdgeHD 8"
+            },
+            {
+              "id": "rc-8",
+              "kind": "ritchey-chretien",
+              "maker": "GSO",
+              "name": "GSO RC 8"
+            },
+            {
+              "id": "mewlon-180",
+              "kind": "cassegrain",
+              "maker": "Takahashi",
+              "name": "Takahashi Mewlon 180C"
+            },
+            {
+              "id": "fsq-106",
+              "kind": "refractor",
+              "maker": "Takahashi",
+              "name": "Takahashi FSQ-106EDX4"
+            },
+            {
+              "id": "askar-fra400",
+              "kind": "refractor",
+              "maker": "Askar",
+              "name": "Askar FRA400"
+            },
+            { "id": "custom-row", "name": "Lunette de l'atelier" }
+          ],
+          "kind": "schmidt-cassegrain",
+          "maker": null,
+          "mine": [{ "id": "inv-c8", "name": "C8 du club" }],
+          "query": "c8"
+        }
+      ],
+      "id": "telescope-kind-and-search",
+      "result": {
+        "count": 1,
+        "defaults": ["c8"],
+        "filtered": true,
+        "kinds": [{ "count": 1, "value": "schmidt-cassegrain" }],
+        "makers": [{ "count": 1, "value": "Celestron" }],
+        "mine": ["inv-c8"],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "camera",
+          "defaults": [
+            {
+              "id": "asi585",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI585MC Pro"
+            },
+            {
+              "id": "asi533mm",
+              "kind": "mono",
+              "maker": "ZWO",
+              "name": "ZWO ASI533MM Pro"
+            },
+            {
+              "id": "eos-r",
+              "kind": "colour",
+              "maker": "Canon",
+              "name": "Canon EOS R"
+            }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [{ "id": "inv-cam", "name": "Ma caméra" }],
+          "query": "asi"
+        }
+      ],
+      "id": "short-list-no-search-no-menus",
+      "result": {
+        "count": 2,
+        "defaults": ["asi585", "asi533mm"],
+        "filtered": false,
+        "kinds": [],
+        "makers": [],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": false,
+        "showsMakerMenu": false,
+        "showsMenus": false,
+        "showsSearch": false
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "modifier",
+          "defaults": [
+            {
+              "id": "tv-powermate-2",
+              "kind": "barlow",
+              "maker": "Tele Vue",
+              "name": "Tele Vue Powermate 2×"
+            },
+            { "id": "reducer", "kind": "reducer", "name": "Réducteur 0,8×" },
+            { "id": "barlow", "kind": "barlow", "name": "Barlow 2×" },
+            {
+              "id": "m0",
+              "kind": "reducer",
+              "maker": "Askar",
+              "name": "Askar 0.7× reducer"
+            },
+            {
+              "id": "m1",
+              "kind": "flattener",
+              "maker": "Askar",
+              "name": "Askar 1.0× flattener"
+            },
+            {
+              "id": "m2",
+              "kind": "reducer",
+              "maker": "Askar",
+              "name": "Askar 0.8× reducer"
+            },
+            {
+              "id": "s0",
+              "kind": "reducer",
+              "maker": "Svbony",
+              "name": "Svbony SV193 0.8× reducer"
+            },
+            {
+              "id": "s1",
+              "kind": "barlow",
+              "maker": "Svbony",
+              "name": "Svbony Barlow 2×"
+            },
+            {
+              "id": "s2",
+              "kind": "barlow",
+              "maker": "Svbony",
+              "name": "Svbony Barlow 3×"
+            },
+            {
+              "id": "s3",
+              "kind": "flattener",
+              "maker": "Svbony",
+              "name": "Svbony Flattener"
+            },
+            {
+              "id": "s4",
+              "kind": "barlow",
+              "maker": "Svbony",
+              "name": "Svbony Barlow 1.5×"
+            },
+            {
+              "id": "s5",
+              "kind": "reducer",
+              "maker": "Svbony",
+              "name": "Svbony Reducer 0.5×"
+            },
+            {
+              "id": "s6",
+              "kind": "barlow",
+              "maker": "Svbony",
+              "name": "Svbony Barlow 5×"
+            }
+          ],
+          "kind": null,
+          "maker": null,
+          "mine": [],
+          "query": ""
+        }
+      ],
+      "id": "modifiers-generic-rows-and-three-kinds",
+      "result": {
+        "count": 13,
+        "defaults": [
+          "tv-powermate-2",
+          "reducer",
+          "barlow",
+          "m0",
+          "m1",
+          "m2",
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6"
+        ],
+        "filtered": false,
+        "kinds": [
+          { "count": 5, "value": "reducer" },
+          { "count": 6, "value": "barlow" },
+          { "count": 2, "value": "flattener" }
+        ],
+        "makers": [
+          { "count": 7, "value": "Svbony" },
+          { "count": 3, "value": "Askar" },
+          { "count": 1, "value": "Tele Vue" }
+        ],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": true,
+        "showsMakerMenu": true,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    },
+    {
+      "args": [
+        {
+          "category": "camera",
+          "defaults": [
+            {
+              "id": "z0",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI0MC"
+            },
+            {
+              "id": "z1",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI1MC"
+            },
+            {
+              "id": "z2",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI2MC"
+            },
+            {
+              "id": "z3",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI3MC"
+            },
+            {
+              "id": "z4",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI4MC"
+            },
+            {
+              "id": "z5",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI5MC"
+            },
+            {
+              "id": "z6",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI6MC"
+            },
+            {
+              "id": "z7",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI7MC"
+            },
+            {
+              "id": "z8",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI8MC"
+            },
+            {
+              "id": "z9",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI9MC"
+            },
+            {
+              "id": "z10",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI10MC"
+            },
+            {
+              "id": "z11",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI11MC"
+            },
+            {
+              "id": "z12",
+              "kind": "colour",
+              "maker": "ZWO",
+              "name": "ZWO ASI12MC"
+            }
+          ],
+          "kind": "colour",
+          "maker": "ZWO",
+          "mine": [],
+          "query": ""
+        }
+      ],
+      "id": "one-maker-one-kind-no-menu",
+      "result": {
+        "count": 13,
+        "defaults": [
+          "z0",
+          "z1",
+          "z2",
+          "z3",
+          "z4",
+          "z5",
+          "z6",
+          "z7",
+          "z8",
+          "z9",
+          "z10",
+          "z11",
+          "z12"
+        ],
+        "filtered": false,
+        "kinds": [],
+        "makers": [],
+        "mine": [],
+        "noMatch": false,
+        "showsKindMenu": false,
+        "showsMakerMenu": false,
+        "showsMenus": true,
+        "showsSearch": true
+      }
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "equipment-picker-filter"
+}

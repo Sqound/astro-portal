@@ -1,0 +1,33 @@
+{
+  "cases": [
+    { "args": ["pending"], "id": "pending-maps-to-active", "result": "active" },
+    {
+      "args": ["executed"],
+      "id": "executed-stays-executed",
+      "result": "executed"
+    },
+    { "args": ["partial"], "id": "partial-stays-partial", "result": "partial" },
+    {
+      "args": ["abandoned"],
+      "id": "abandoned-stays-abandoned",
+      "result": "abandoned"
+    },
+    {
+      "args": ["archived"],
+      "id": "archived-stays-archived",
+      "result": "archived"
+    },
+    {
+      "args": ["bogus"],
+      "id": "unknown-status-falls-back-to-active",
+      "result": "active"
+    },
+    {
+      "args": [""],
+      "id": "empty-status-falls-back-to-active",
+      "result": "active"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "plan-lifecycle"
+}

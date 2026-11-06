@@ -1,0 +1,161 @@
+{
+  "cases": [
+    {
+      "args": [35.6762, 139.6503],
+      "id": "tokyo-is-japan",
+      "result": { "id": "japan", "luminancePerRadiance": 0.832 }
+    },
+    {
+      "args": [43.0618, 141.3545],
+      "id": "sapporo-is-japan",
+      "result": { "id": "japan", "luminancePerRadiance": 0.832 }
+    },
+    {
+      "args": [26.2124, 127.6809],
+      "id": "naha-is-japan",
+      "result": { "id": "japan", "luminancePerRadiance": 0.832 }
+    },
+    {
+      "args": [24.3448, 124.1572],
+      "id": "ishigaki-is-japan",
+      "result": { "id": "japan", "luminancePerRadiance": 0.832 }
+    },
+    {
+      "args": [34.2029, 129.2892],
+      "id": "tsushima-is-japan",
+      "result": { "id": "japan", "luminancePerRadiance": 0.832 }
+    },
+    {
+      "args": [27.094, 142.1928],
+      "id": "ogasawara-chichijima-is-japan",
+      "result": { "id": "japan", "luminancePerRadiance": 0.832 }
+    },
+    {
+      "args": [35.1796, 129.0756],
+      "id": "busan-is-global",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [37.5665, 126.978],
+      "id": "seoul-is-global",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [43.1198, 131.8869],
+      "id": "vladivostok-is-global",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [46.9591, 142.7381],
+      "id": "yuzhno-sakhalinsk-is-global",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [31.2304, 121.4737],
+      "id": "shanghai-is-global",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [25.033, 121.5654],
+      "id": "taipei-is-global",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [13.4443, 144.7937],
+      "id": "guam-is-global",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [30, 170],
+      "id": "open-pacific-is-global",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [45.7, 140.2],
+      "id": "the-japan-polygon-s-own-first-vertex-pins-the-boundary-convention",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [52.52, 13.405],
+      "id": "berlin-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [48.2082, 16.3738],
+      "id": "vienna-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [47.3769, 8.5417],
+      "id": "zurich-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [40.4168, -3.7038],
+      "id": "madrid-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [41.3851, 2.1734],
+      "id": "barcelona-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [19.4326, -99.1332],
+      "id": "mexico-city-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [41.9028, 12.4964],
+      "id": "rome-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [45.4642, 9.19],
+      "id": "milan-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [-23.5505, -46.6333],
+      "id": "sao-paulo-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [-22.9068, -43.1729],
+      "id": "rio-de-janeiro-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [55.7558, 37.6173],
+      "id": "moscow-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [59.9311, 30.3609],
+      "id": "saint-petersburg-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [39.9042, 116.4074],
+      "id": "beijing-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [30.5728, 104.0668],
+      "id": "chengdu-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [22.3193, 114.1694],
+      "id": "hong-kong-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    },
+    {
+      "args": [22.6273, 120.3014],
+      "id": "kaohsiung-is-global-no-regional-entry-yet",
+      "result": { "id": "global", "luminancePerRadiance": 0.299 }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "sky-quality-region"
+}

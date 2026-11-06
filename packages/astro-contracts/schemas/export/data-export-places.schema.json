@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/export/data-export-places.schema.json",
+  "title": "Data export — places.json",
+  "description": "« Lieux et horizons »: `places`, the personal places as the planner keeps them (planner-document.schema.json's `place`, its own horizon in `horizonMask`); `horizonProfiles`, the horizons recorded apart from a place (horizon-mask.schema.json's `unassignedProfile`, or the service's profile with its `location`). A place with a recorded horizon is one whose mask is on and lifts the horizon somewhere.",
+  "type": "object",
+  "required": [
+    "formatVersion",
+    "part",
+    "exportedAt",
+    "places",
+    "horizonProfiles"
+  ],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "part": {
+      "const": "places"
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "places": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["latitude", "longitude"],
+        "additionalProperties": true
+      }
+    },
+    "horizonProfiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "mask"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mask": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

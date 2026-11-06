@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/device-goto.schema.json",
+  "title": "Astro Portal session event payload: device_goto",
+  "description": "A pointing the person (or the execution's automatic pointing after the launch gesture) asked of a smart telescope in mode expérimental, with the application's immediate answer: `sent` — the device did not refuse; `refused` — the pointing safety or the device refused before anything moved. Recorded by the application from the driver's own code path with the night's clock; every field but the ones marked required is optional, and a reader tolerates a payload without them. Private in a shared night. See session-events.md.",
+  "type": "object",
+  "properties": {
+    "outcome": {
+      "type": "string",
+      "enum": ["sent", "refused"]
+    },
+    "targetId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The plan's key of the target the mount was sent to, the same one the target events use (a calibration star or a polar-alignment move carries its own key)."
+    },
+    "targetLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The target's display name (« M110 »), for a reader that cannot resolve `targetId`."
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Optional, with `outcome: refused`: a short machine code of the cause (`below_horizon`, `parked`, `not_aligned`, `zenith`…), never a sentence."
+    },
+    "family": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Optional: the smart telescope's family (`seestar`, `dwarf`, `vespera`, `origin`) when the device is one."
+    }
+  },
+  "required": ["outcome"],
+  "additionalProperties": false
+}

@@ -1,0 +1,163 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "properties": {
+            "timeseries": [
+              {
+                "data": {
+                  "instant": {
+                    "details": {
+                      "cloud_area_fraction": 40,
+                      "cloud_area_fraction_high": 10,
+                      "cloud_area_fraction_low": 10,
+                      "cloud_area_fraction_medium": 20,
+                      "relative_humidity": 55,
+                      "wind_from_direction": 200,
+                      "wind_speed": 3
+                    }
+                  },
+                  "next_1_hours": {
+                    "details": { "probability_of_precipitation": 5 },
+                    "summary": { "symbol_code": "partlycloudy_night" }
+                  }
+                },
+                "time": "2024-06-01T20:00:00Z"
+              },
+              {
+                "data": {
+                  "instant": {
+                    "details": {
+                      "cloud_area_fraction": 60,
+                      "cloud_area_fraction_high": 20,
+                      "cloud_area_fraction_low": 20,
+                      "cloud_area_fraction_medium": 20,
+                      "relative_humidity": 60,
+                      "wind_from_direction": 210,
+                      "wind_speed": 4
+                    }
+                  },
+                  "next_1_hours": {
+                    "details": { "probability_of_precipitation": 10 },
+                    "summary": { "symbol_code": "cloudy" }
+                  }
+                },
+                "time": "2024-06-01T21:00:00Z"
+              }
+            ]
+          }
+        }
+      ],
+      "id": "nominal-two-hour-series",
+      "result": {
+        "daily": { "time": ["2024-06-01"], "weather_code": [2] },
+        "hourly": {
+          "cloud_cover": [40, 60],
+          "cloud_cover_high": [10, 20],
+          "cloud_cover_low": [10, 20],
+          "cloud_cover_mid": [20, 20],
+          "cloud_cover_model_met_norway": [35, 50],
+          "precipitation_probability": [5, 10],
+          "relative_humidity_2m": [55, 60],
+          "time": ["2024-06-01T20:00:00.000Z", "2024-06-01T21:00:00.000Z"],
+          "visibility": [null, null],
+          "wind_direction_10m": [200, 210],
+          "wind_speed_10m": [10.8, 14.4]
+        },
+        "missingFields": ["visibility"]
+      }
+    },
+    {
+      "args": [
+        {
+          "properties": {
+            "timeseries": [
+              {
+                "data": { "instant": { "details": {} } },
+                "time": "2024-06-01T20:00:00Z"
+              }
+            ]
+          }
+        }
+      ],
+      "id": "missing-cloud-data-returns-null",
+      "result": null
+    },
+    {
+      "args": [{ "properties": { "timeseries": [] } }],
+      "id": "empty-timeseries-returns-null",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "properties": {
+            "timeseries": [
+              {
+                "data": {
+                  "instant": {
+                    "details": {
+                      "air_temperature": 8.2,
+                      "cloud_area_fraction": 20,
+                      "dew_point_temperature": 6.9,
+                      "wind_speed": 2,
+                      "wind_speed_of_gust": 5.3
+                    }
+                  },
+                  "next_1_hours": {
+                    "details": {
+                      "precipitation_amount": 0.2,
+                      "probability_of_precipitation": 10
+                    },
+                    "summary": { "symbol_code": "clearsky_night" }
+                  }
+                },
+                "time": "2026-10-14T20:00:00Z"
+              },
+              {
+                "data": {
+                  "instant": {
+                    "details": {
+                      "air_temperature": 7.6,
+                      "cloud_area_fraction": 35
+                    }
+                  },
+                  "next_1_hours": {
+                    "details": {},
+                    "summary": { "symbol_code": "fair_night" }
+                  }
+                },
+                "time": "2026-10-14T21:00:00Z"
+              }
+            ]
+          }
+        }
+      ],
+      "id": "night-fields-mapped-to-open-meteo-keys",
+      "result": {
+        "daily": { "time": ["2026-10-14"], "weather_code": [0] },
+        "hourly": {
+          "cloud_cover": [20, 35],
+          "cloud_cover_high": [null, null],
+          "cloud_cover_low": [null, null],
+          "cloud_cover_mid": [null, null],
+          "cloud_cover_model_met_norway": [20, 35],
+          "dew_point_2m": [6.9, null],
+          "precipitation": [0.2, null],
+          "precipitation_probability": [10, null],
+          "relative_humidity_2m": [null, null],
+          "temperature_2m": [8.2, 7.6],
+          "time": ["2026-10-14T20:00:00.000Z", "2026-10-14T21:00:00.000Z"],
+          "visibility": [null, null],
+          "wind_direction_10m": [null, null],
+          "wind_gusts_10m": [19.08, null],
+          "wind_speed_10m": [7.2, null]
+        },
+        "missingFields": ["visibility"]
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "weather-fallback"
+}

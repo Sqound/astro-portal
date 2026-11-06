@@ -1,0 +1,27 @@
+{
+  "description": "`POST /v1/sessions/{id}/erase`: a deleted session is erased at once, with its capture, its events, its device journals and its integrations; the answer counts what went.",
+  "exchange": "session-erase",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The session sent by Astro Sync (one capture, one analysis), deleted just before.",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/sessions/00000000-0000-4000-8000-00000000001a/erase"
+  },
+  "response": {
+    "body": {
+      "erased": {
+        "analyses": 1,
+        "captures": 1,
+        "deviceJournalLines": 0,
+        "events": 0,
+        "integrations": 0,
+        "packageImports": 0,
+        "steps": 3,
+        "supplements": 0
+      },
+      "sessionId": "00000000-0000-4000-8000-00000000001a"
+    },
+    "schema": "session.schema.json#/$defs/erasure",
+    "status": 200
+  }
+}

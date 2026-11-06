@@ -1,0 +1,60 @@
+{
+  "module": "forecast-date-availability",
+  "package": "portal",
+  "file": "astronomy-forecast",
+  "export": "forecastDateAvailability",
+  "cases": [
+    {
+      "id": "tonight-is-available",
+      "args": ["2026-09-15", "2026-09-15T18:00:00Z"]
+    },
+    {
+      "id": "a-past-night-is-past",
+      "args": ["2026-09-14", "2026-09-15T18:00:00Z"]
+    },
+    {
+      "id": "the-tenth-day-is-still-available",
+      "args": ["2026-09-25", "2026-09-15T18:00:00Z"]
+    },
+    {
+      "id": "the-eleventh-day-is-a-trend",
+      "args": ["2026-09-26", "2026-09-15T18:00:00Z"]
+    },
+    {
+      "id": "an-unparsable-date-is-invalid",
+      "args": ["", "2026-09-15T18:00:00Z"]
+    },
+    {
+      "id": "the-utc-date-counts-when-no-night-is-given",
+      "args": ["2026-10-09", "2026-10-10T01:00:00Z"]
+    },
+    {
+      "id": "the-night-still-lived-west-of-greenwich-is-available",
+      "args": ["2026-10-09", "2026-10-10T01:00:00Z", "2026-10-09"]
+    },
+    {
+      "id": "a-far-east-place-already-in-the-next-night-sees-ten-days-from-it",
+      "args": ["2026-10-20", "2026-10-09T23:59:00Z", "2026-10-10"]
+    },
+    {
+      "id": "the-night-before-the-one-lived-is-past",
+      "args": ["2026-10-09", "2026-10-10T11:00:00Z", "2026-10-10"]
+    },
+    {
+      "id": "the-fifteenth-day-is-still-a-trend",
+      "args": ["2026-09-30", "2026-09-15T18:00:00Z"]
+    },
+    {
+      "id": "the-sixteenth-day-is-beyond-range",
+      "args": ["2026-10-01", "2026-09-15T18:00:00Z"]
+    },
+    {
+      "id": "two-days-before-today-is-past",
+      "args": ["2026-09-13", "2026-09-15T18:00:00Z"]
+    },
+    {
+      "id": "a-far-east-place-in-the-next-night-sees-the-trend-from-it",
+      "args": ["2026-10-25", "2026-10-09T23:59:00Z", "2026-10-10"]
+    }
+  ]
+}

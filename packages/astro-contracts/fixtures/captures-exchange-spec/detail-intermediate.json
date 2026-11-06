@@ -1,0 +1,17 @@
+{
+  "exchange": "detail-intermediate",
+  "handler": "captures/[captureId]",
+  "as": "phone",
+  "status": 200,
+  "phase": "read",
+  "params": {
+    "captureId": "{capture:intermediate}"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/captures/{capture:intermediate}"
+  },
+  "schema": "manage-captures.schema.json#/$defs/one",
+  "description": "The page of an intermediate capture of a multi-night plan that is not finished: its nights with what the plan gathered each night (acquiredSeconds, measured else declared), the capture sent from the phone.",
+  "given": "The first night of the multi-night plan of M31 (measured: 2 h), the second declared (1 h 30)."
+}

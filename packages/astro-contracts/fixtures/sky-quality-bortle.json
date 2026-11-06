@@ -1,0 +1,16 @@
+{
+  "cases": [
+    { "args": [21.99], "id": "class-1-boundary", "result": 1 },
+    { "args": [21.89], "id": "class-2-boundary", "result": 2 },
+    { "args": [21.69], "id": "class-3-boundary", "result": 3 },
+    { "args": [20.49], "id": "class-4-boundary", "result": 4 },
+    { "args": [19.5], "id": "class-5-boundary", "result": 5 },
+    { "args": [18.94], "id": "class-6-boundary", "result": 6 },
+    { "args": [18.38], "id": "class-7-boundary", "result": 7 },
+    { "args": [17], "id": "class-8-boundary", "result": 8 },
+    { "args": [10], "id": "class-9-below-all-thresholds", "result": 9 },
+    { "args": [null], "id": "non-finite-returns-null", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "sky-quality-bortle"
+}

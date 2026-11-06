@@ -1,0 +1,76 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "date": "2026-09-15",
+          "id": "plan-1",
+          "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+          "name": "Autumn nebulae"
+        },
+        [
+          {
+            "filter": "L",
+            "target": {
+              "designation": "M31",
+              "id": "m31",
+              "title": "M31 — Andromeda Galaxy"
+            }
+          },
+          {
+            "filter": "Ha",
+            "target": {
+              "designation": "NGC 7000",
+              "id": "ngc7000",
+              "objects": ["NGC 7000"]
+            }
+          }
+        ]
+      ],
+      "id": "titles-and-filters-from-cards",
+      "result": [
+        { "filter": "L", "id": "m31", "title": "M31 — Andromeda Galaxy" },
+        { "filter": "Ha", "id": "ngc7000", "title": "NGC 7000" }
+      ]
+    },
+    {
+      "args": [
+        {
+          "date": "2026-09-15",
+          "id": "plan-2",
+          "items": [{ "id": "unknown" }]
+        },
+        []
+      ],
+      "id": "falls-back-to-the-item-id",
+      "result": [{ "filter": "", "id": "unknown", "title": "unknown" }]
+    },
+    {
+      "args": [
+        { "date": "2026-09-15", "id": "plan-3", "items": [] },
+        [
+          {
+            "filter": "L",
+            "target": {
+              "designation": "M31",
+              "id": "m31",
+              "title": "M31 — Andromeda Galaxy"
+            }
+          },
+          {
+            "filter": "Ha",
+            "target": {
+              "designation": "NGC 7000",
+              "id": "ngc7000",
+              "objects": ["NGC 7000"]
+            }
+          }
+        ]
+      ],
+      "id": "empty-plan",
+      "result": []
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "plan-target-summary"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/equipment-issue.schema.json",
+  "title": "Astro Portal session event payload: equipment_issue",
+  "description": "Reports a problem with equipment during the session: what broke or misbehaved, not the sky (see condition for that). `equipmentId`, when present, names one of the tenant's own inventory items (GET /v1/equipment); it is optional because a field problem is often reported before anyone identifies which piece is at fault. See session-events.md for what this type is for and what it deliberately is not.",
+  "type": "object",
+  "required": ["description"],
+  "properties": {
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "equipmentId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["minor", "blocking"],
+      "description": "\"blocking\" means the session was paused or stopped over it; \"minor\" means the observer noted it and kept going."
+    }
+  },
+  "additionalProperties": false
+}

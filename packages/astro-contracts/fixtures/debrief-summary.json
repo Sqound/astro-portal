@@ -1,0 +1,5426 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "adjustments": [
+            { "state": "done", "targetId": "ngc7000" },
+            { "state": "partial", "targetId": "ic1396" },
+            { "reason": "weather", "state": "skipped", "targetId": "m45" }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0001",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0002",
+              "payload": { "cause": "meridian_flip" },
+              "recordedAt": "2026-10-10T21:15:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0003",
+              "payload": {},
+              "recordedAt": "2026-10-10T21:25:00.000Z",
+              "type": "resume"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0004",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0005",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0006",
+              "payload": {},
+              "recordedAt": "2026-10-10T23:50:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0007",
+              "payload": {
+                "pauseCause": {
+                  "cause": "wind",
+                  "pauseEventId": "01J8Z3K9QZ6N3S6R3E6G8H0006"
+                }
+              },
+              "recordedAt": "2026-10-10T23:51:00.000Z",
+              "type": "note"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0008",
+              "payload": {},
+              "recordedAt": "2026-10-11T00:25:00.000Z",
+              "type": "resume"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0009",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0010",
+              "payload": { "sky": "overcast" },
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "type": "condition"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0011",
+              "payload": {
+                "planItemId": "m45",
+                "reason": "weather",
+                "targetId": "m45"
+              },
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "type": "target_skipped"
+            }
+          ],
+          "guidingLosses": [
+            {
+              "end": "2026-10-10T22:25:00.000Z",
+              "start": "2026-10-10T22:05:00.000Z"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "outcome": "partial",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            },
+            {
+              "endMinute": 270,
+              "id": "ic1396",
+              "startMinute": 150,
+              "targetId": "ic1396"
+            },
+            {
+              "endMinute": 340,
+              "id": "m45",
+              "startMinute": 270,
+              "targetId": "m45"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "reference-night-flip-guiding-wind-clouds",
+      "result": {
+        "acquiredMinutes": 205,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": true,
+        "lostByCause": [
+          {
+            "cause": "clouds",
+            "minutes": 70,
+            "spans": [
+              {
+                "end": "2026-10-11T02:20:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-11T01:10:00.000Z",
+                "targetId": "m45"
+              }
+            ]
+          },
+          {
+            "cause": "wind",
+            "minutes": 35,
+            "spans": [
+              {
+                "end": "2026-10-11T00:25:00.000Z",
+                "kind": "pause",
+                "start": "2026-10-10T23:50:00.000Z",
+                "targetId": "ic1396"
+              }
+            ]
+          },
+          {
+            "cause": "guiding",
+            "minutes": 20,
+            "spans": [
+              {
+                "end": "2026-10-10T22:25:00.000Z",
+                "kind": "rejected",
+                "start": "2026-10-10T22:05:00.000Z",
+                "targetId": "ngc7000"
+              }
+            ]
+          },
+          {
+            "cause": "meridian_flip",
+            "minutes": 10,
+            "spans": [
+              {
+                "end": "2026-10-10T21:25:00.000Z",
+                "kind": "pause",
+                "start": "2026-10-10T21:15:00.000Z",
+                "targetId": "ngc7000"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 135,
+        "perTarget": [
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:10:00.000Z",
+                "minutes": 140,
+                "pauses": [
+                  {
+                    "cause": "meridian_flip",
+                    "end": "2026-10-10T21:25:00.000Z",
+                    "start": "2026-10-10T21:15:00.000Z"
+                  }
+                ],
+                "start": "2026-10-10T20:40:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 150,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "ngc7000"
+          },
+          {
+            "acquiredMinutes": 85,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T01:10:00.000Z",
+                "minutes": 85,
+                "pauses": [
+                  {
+                    "cause": "wind",
+                    "end": "2026-10-11T00:25:00.000Z",
+                    "start": "2026-10-10T23:50:00.000Z"
+                  }
+                ],
+                "start": "2026-10-10T23:10:00.000Z"
+              }
+            ],
+            "planItemId": "ic1396",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-11T01:10:00.000Z",
+              "start": "2026-10-10T23:10:00.000Z"
+            },
+            "targetId": "ic1396"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "m45",
+            "plannedMinutes": 70,
+            "skipReason": "weather",
+            "slot": {
+              "end": "2026-10-11T02:20:00.000Z",
+              "start": "2026-10-11T01:10:00.000Z"
+            },
+            "targetId": "m45"
+          }
+        ],
+        "plannedMinutes": 340,
+        "segments": {
+          "end": 29861420,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861230,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861230, "start": 29861080 }
+              ],
+              "segments": [
+                { "end": 29861115, "kind": "acquired", "start": 29861080 },
+                {
+                  "cause": "meridian_flip",
+                  "end": 29861125,
+                  "kind": "pause",
+                  "start": 29861115
+                },
+                { "end": 29861165, "kind": "acquired", "start": 29861125 },
+                {
+                  "cause": "guiding",
+                  "end": 29861185,
+                  "kind": "rejected",
+                  "start": 29861165
+                },
+                { "end": 29861230, "kind": "acquired", "start": 29861185 }
+              ],
+              "start": 29861080,
+              "targetId": "ngc7000"
+            },
+            {
+              "end": 29861350,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29861350, "start": 29861230 }
+              ],
+              "segments": [
+                { "end": 29861270, "kind": "acquired", "start": 29861230 },
+                {
+                  "cause": "wind",
+                  "end": 29861305,
+                  "kind": "pause",
+                  "start": 29861270
+                },
+                { "end": 29861350, "kind": "acquired", "start": 29861305 }
+              ],
+              "start": 29861230,
+              "targetId": "ic1396"
+            },
+            {
+              "end": 29861420,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [
+                {
+                  "cause": "clouds",
+                  "end": 29861420,
+                  "kind": "abandoned",
+                  "start": 29861350
+                }
+              ],
+              "start": 29861350,
+              "targetId": "m45"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "adjustments": [
+            { "state": "done", "targetId": "ngc7000" },
+            { "state": "partial", "targetId": "ic1396" },
+            { "reason": "weather", "state": "skipped", "targetId": "m45" }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0001",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0002",
+              "payload": { "cause": "meridian_flip" },
+              "recordedAt": "2026-10-10T21:15:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0003",
+              "payload": {},
+              "recordedAt": "2026-10-10T21:25:00.000Z",
+              "type": "resume"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0004",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0005",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0006",
+              "payload": {},
+              "recordedAt": "2026-10-10T23:50:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0007",
+              "payload": {
+                "pauseCause": {
+                  "cause": "wind",
+                  "pauseEventId": "01J8Z3K9QZ6N3S6R3E6G8H0006"
+                }
+              },
+              "recordedAt": "2026-10-10T23:51:00.000Z",
+              "type": "note"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0008",
+              "payload": {},
+              "recordedAt": "2026-10-11T00:25:00.000Z",
+              "type": "resume"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0009",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0010",
+              "payload": { "sky": "overcast" },
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "type": "condition"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0011",
+              "payload": {
+                "planItemId": "m45",
+                "reason": "weather",
+                "targetId": "m45"
+              },
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "type": "target_skipped"
+            }
+          ],
+          "guidingLosses": null,
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "outcome": "partial",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            },
+            {
+              "endMinute": 270,
+              "id": "ic1396",
+              "startMinute": 150,
+              "targetId": "ic1396"
+            },
+            {
+              "endMinute": 340,
+              "id": "m45",
+              "startMinute": 270,
+              "targetId": "m45"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "no-analysis-no-guiding-line",
+      "result": {
+        "acquiredMinutes": 225,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "clouds",
+            "minutes": 70,
+            "spans": [
+              {
+                "end": "2026-10-11T02:20:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-11T01:10:00.000Z",
+                "targetId": "m45"
+              }
+            ]
+          },
+          {
+            "cause": "wind",
+            "minutes": 35,
+            "spans": [
+              {
+                "end": "2026-10-11T00:25:00.000Z",
+                "kind": "pause",
+                "start": "2026-10-10T23:50:00.000Z",
+                "targetId": "ic1396"
+              }
+            ]
+          },
+          {
+            "cause": "meridian_flip",
+            "minutes": 10,
+            "spans": [
+              {
+                "end": "2026-10-10T21:25:00.000Z",
+                "kind": "pause",
+                "start": "2026-10-10T21:15:00.000Z",
+                "targetId": "ngc7000"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 115,
+        "perTarget": [
+          {
+            "acquiredMinutes": 140,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:10:00.000Z",
+                "minutes": 140,
+                "pauses": [
+                  {
+                    "cause": "meridian_flip",
+                    "end": "2026-10-10T21:25:00.000Z",
+                    "start": "2026-10-10T21:15:00.000Z"
+                  }
+                ],
+                "start": "2026-10-10T20:40:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 150,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "ngc7000"
+          },
+          {
+            "acquiredMinutes": 85,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T01:10:00.000Z",
+                "minutes": 85,
+                "pauses": [
+                  {
+                    "cause": "wind",
+                    "end": "2026-10-11T00:25:00.000Z",
+                    "start": "2026-10-10T23:50:00.000Z"
+                  }
+                ],
+                "start": "2026-10-10T23:10:00.000Z"
+              }
+            ],
+            "planItemId": "ic1396",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-11T01:10:00.000Z",
+              "start": "2026-10-10T23:10:00.000Z"
+            },
+            "targetId": "ic1396"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "m45",
+            "plannedMinutes": 70,
+            "skipReason": "weather",
+            "slot": {
+              "end": "2026-10-11T02:20:00.000Z",
+              "start": "2026-10-11T01:10:00.000Z"
+            },
+            "targetId": "m45"
+          }
+        ],
+        "plannedMinutes": 340,
+        "segments": {
+          "end": 29861420,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861230,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861230, "start": 29861080 }
+              ],
+              "segments": [
+                { "end": 29861115, "kind": "acquired", "start": 29861080 },
+                {
+                  "cause": "meridian_flip",
+                  "end": 29861125,
+                  "kind": "pause",
+                  "start": 29861115
+                },
+                { "end": 29861230, "kind": "acquired", "start": 29861125 }
+              ],
+              "start": 29861080,
+              "targetId": "ngc7000"
+            },
+            {
+              "end": 29861350,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29861350, "start": 29861230 }
+              ],
+              "segments": [
+                { "end": 29861270, "kind": "acquired", "start": 29861230 },
+                {
+                  "cause": "wind",
+                  "end": 29861305,
+                  "kind": "pause",
+                  "start": 29861270
+                },
+                { "end": 29861350, "kind": "acquired", "start": 29861305 }
+              ],
+              "start": 29861230,
+              "targetId": "ic1396"
+            },
+            {
+              "end": 29861420,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [
+                {
+                  "cause": "clouds",
+                  "end": 29861420,
+                  "kind": "abandoned",
+                  "start": 29861350
+                }
+              ],
+              "start": 29861350,
+              "targetId": "m45"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0101",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0102",
+              "payload": {},
+              "recordedAt": "2026-10-10T21:00:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0103",
+              "payload": {},
+              "recordedAt": "2026-10-10T21:30:00.000Z",
+              "type": "resume"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0104",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "one-tap-pause-without-cause-is-unexplained",
+      "result": {
+        "acquiredMinutes": 120,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "unexplained",
+            "minutes": 30,
+            "spans": [
+              {
+                "end": "2026-10-10T21:30:00.000Z",
+                "kind": "pause",
+                "start": "2026-10-10T21:00:00.000Z",
+                "targetId": "ngc7000"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 30,
+        "perTarget": [
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:10:00.000Z",
+                "minutes": 120,
+                "pauses": [
+                  {
+                    "cause": null,
+                    "end": "2026-10-10T21:30:00.000Z",
+                    "start": "2026-10-10T21:00:00.000Z"
+                  }
+                ],
+                "start": "2026-10-10T20:40:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 150,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "ngc7000"
+          }
+        ],
+        "plannedMinutes": 150,
+        "segments": {
+          "end": 29861230,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861230,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29861230, "start": 29861080 }
+              ],
+              "segments": [
+                { "end": 29861100, "kind": "acquired", "start": 29861080 },
+                {
+                  "cause": "unexplained",
+                  "end": 29861130,
+                  "kind": "pause",
+                  "start": 29861100
+                },
+                { "end": 29861230, "kind": "acquired", "start": 29861130 }
+              ],
+              "start": 29861080,
+              "targetId": "ngc7000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0201",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0202",
+              "payload": { "cause": "clouds" },
+              "recordedAt": "2026-10-10T23:30:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0203",
+              "payload": {
+                "pauseCause": {
+                  "cause": "wind",
+                  "pauseEventId": "01J8Z3K9QZ6N3S6R3E6G8H0202"
+                }
+              },
+              "recordedAt": "2026-10-10T23:35:00.000Z",
+              "type": "note"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0204",
+              "payload": {
+                "pauseCause": {
+                  "cause": "dew",
+                  "pauseEventId": "01J8Z3K9QZ6N3S6R3E6G8H0202"
+                }
+              },
+              "recordedAt": "2026-10-10T23:40:00.000Z",
+              "type": "note"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0205",
+              "payload": {
+                "pauseCause": {
+                  "cause": "guiding",
+                  "pauseEventId": "01J8Z3K9QZ6N3S6R3E6G8H9999"
+                }
+              },
+              "recordedAt": "2026-10-10T23:41:00.000Z",
+              "type": "note"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0206",
+              "payload": {},
+              "recordedAt": "2026-10-11T00:00:00.000Z",
+              "type": "resume"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0207",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 270,
+              "id": "ic1396",
+              "startMinute": 150,
+              "targetId": "ic1396"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "latest-correction-wins-over-the-pause-own-cause",
+      "result": {
+        "acquiredMinutes": 90,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "dew",
+            "minutes": 30,
+            "spans": [
+              {
+                "end": "2026-10-11T00:00:00.000Z",
+                "kind": "pause",
+                "start": "2026-10-10T23:30:00.000Z",
+                "targetId": "ic1396"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 30,
+        "perTarget": [
+          {
+            "acquiredMinutes": 90,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T01:10:00.000Z",
+                "minutes": 90,
+                "pauses": [
+                  {
+                    "cause": "dew",
+                    "end": "2026-10-11T00:00:00.000Z",
+                    "start": "2026-10-10T23:30:00.000Z"
+                  }
+                ],
+                "start": "2026-10-10T23:10:00.000Z"
+              }
+            ],
+            "planItemId": "ic1396",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-11T01:10:00.000Z",
+              "start": "2026-10-10T23:10:00.000Z"
+            },
+            "targetId": "ic1396"
+          }
+        ],
+        "plannedMinutes": 120,
+        "segments": {
+          "end": 29861350,
+          "hasAuto": false,
+          "start": 29861230,
+          "targets": [
+            {
+              "end": 29861350,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29861350, "start": 29861230 }
+              ],
+              "segments": [
+                { "end": 29861250, "kind": "acquired", "start": 29861230 },
+                {
+                  "cause": "dew",
+                  "end": 29861280,
+                  "kind": "pause",
+                  "start": 29861250
+                },
+                { "end": 29861350, "kind": "acquired", "start": 29861280 }
+              ],
+              "start": 29861230,
+              "targetId": "ic1396"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "adjustments": [
+            {
+              "acquiredMinutes": 95,
+              "state": "partial",
+              "targetId": "ngc7000"
+            },
+            { "acquiredMinutes": 500, "state": "done", "targetId": "ic1396" }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0301",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "timing": "planned",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0302",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "timing": "planned",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0303",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "timing": "planned",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0304",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "timing": "planned",
+              "type": "target_finished"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "outcome": "partial",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            },
+            {
+              "endMinute": 270,
+              "id": "ic1396",
+              "startMinute": 150,
+              "targetId": "ic1396"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "declared-acquired-minutes-win-and-are-capped-at-planned",
+      "result": {
+        "acquiredMinutes": 215,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [{ "cause": "unexplained", "minutes": 55, "spans": [] }],
+        "lostMinutes": 55,
+        "perTarget": [
+          {
+            "acquiredMinutes": 95,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:10:00.000Z",
+                "minutes": 150,
+                "pauses": [],
+                "start": "2026-10-10T20:40:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 150,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "ngc7000"
+          },
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T01:10:00.000Z",
+                "minutes": 120,
+                "pauses": [],
+                "start": "2026-10-10T23:10:00.000Z"
+              }
+            ],
+            "planItemId": "ic1396",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-11T01:10:00.000Z",
+              "start": "2026-10-10T23:10:00.000Z"
+            },
+            "targetId": "ic1396"
+          }
+        ],
+        "plannedMinutes": 270,
+        "segments": {
+          "end": 29861350,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861230,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29861230, "start": 29861080 }
+              ],
+              "segments": [
+                { "end": 29861175, "kind": "acquired", "start": 29861080 }
+              ],
+              "start": 29861080,
+              "targetId": "ngc7000"
+            },
+            {
+              "end": 29861350,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861350, "start": 29861230 }
+              ],
+              "segments": [
+                { "end": 29861350, "kind": "acquired", "start": 29861230 }
+              ],
+              "start": 29861230,
+              "targetId": "ic1396"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0401",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0402",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0403",
+              "payload": { "cause": "dew" },
+              "recordedAt": "2026-10-10T22:00:00.000Z",
+              "type": "condition"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0404",
+              "payload": { "cause": "wind", "sky": "partly_cloudy" },
+              "recordedAt": "2026-10-10T23:00:00.000Z",
+              "type": "condition"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0405",
+              "payload": {
+                "planItemId": "ic1396",
+                "reason": "weather",
+                "targetId": "ic1396"
+              },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_skipped"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0406",
+              "payload": { "cause": "dew" },
+              "recordedAt": "2026-10-11T01:00:00.000Z",
+              "type": "condition"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0407",
+              "payload": {
+                "planItemId": "m45",
+                "reason": "weather",
+                "targetId": "m45"
+              },
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "type": "target_skipped"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            },
+            {
+              "endMinute": 270,
+              "id": "ic1396",
+              "startMinute": 150,
+              "targetId": "ic1396"
+            },
+            {
+              "endMinute": 340,
+              "id": "m45",
+              "startMinute": 270,
+              "targetId": "m45"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "weather-skip-counted-under-wind-from-the-latest-condition",
+      "result": {
+        "acquiredMinutes": 150,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "wind",
+            "minutes": 120,
+            "spans": [
+              {
+                "end": "2026-10-11T01:10:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-10T23:10:00.000Z",
+                "targetId": "ic1396"
+              }
+            ]
+          },
+          {
+            "cause": "dew",
+            "minutes": 70,
+            "spans": [
+              {
+                "end": "2026-10-11T02:20:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-11T01:10:00.000Z",
+                "targetId": "m45"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 190,
+        "perTarget": [
+          {
+            "acquiredMinutes": 150,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:10:00.000Z",
+                "minutes": 150,
+                "pauses": [],
+                "start": "2026-10-10T20:40:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 150,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "ngc7000"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "ic1396",
+            "plannedMinutes": 120,
+            "skipReason": "weather",
+            "slot": {
+              "end": "2026-10-11T01:10:00.000Z",
+              "start": "2026-10-10T23:10:00.000Z"
+            },
+            "targetId": "ic1396"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "m45",
+            "plannedMinutes": 70,
+            "skipReason": "weather",
+            "slot": {
+              "end": "2026-10-11T02:20:00.000Z",
+              "start": "2026-10-11T01:10:00.000Z"
+            },
+            "targetId": "m45"
+          }
+        ],
+        "plannedMinutes": 340,
+        "segments": {
+          "end": 29861420,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861230,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861230, "start": 29861080 }
+              ],
+              "segments": [
+                { "end": 29861230, "kind": "acquired", "start": 29861080 }
+              ],
+              "start": 29861080,
+              "targetId": "ngc7000"
+            },
+            {
+              "end": 29861350,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [
+                {
+                  "cause": "wind",
+                  "end": 29861350,
+                  "kind": "abandoned",
+                  "start": 29861230
+                }
+              ],
+              "start": 29861230,
+              "targetId": "ic1396"
+            },
+            {
+              "end": 29861420,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [
+                {
+                  "cause": "dew",
+                  "end": 29861420,
+                  "kind": "abandoned",
+                  "start": 29861350
+                }
+              ],
+              "start": 29861350,
+              "targetId": "m45"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "adjustments": [
+            { "reason": "time", "state": "skipped", "targetId": "a" },
+            { "reason": "visibility", "state": "skipped", "targetId": "b" },
+            { "reason": "equipment", "state": "skipped", "targetId": "c" },
+            { "state": "skipped", "targetId": "d" }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0501",
+              "payload": {
+                "planItemId": "a",
+                "reason": "time",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "type": "target_skipped"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0502",
+              "payload": {
+                "planItemId": "b",
+                "reason": "visibility",
+                "targetId": "m33"
+              },
+              "recordedAt": "2026-10-10T20:45:00.000Z",
+              "type": "target_skipped"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0503",
+              "payload": {
+                "planItemId": "c",
+                "reason": "equipment",
+                "targetId": "m42"
+              },
+              "recordedAt": "2026-10-10T21:30:00.000Z",
+              "type": "target_skipped"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0504",
+              "payload": { "planItemId": "d", "targetId": "m81" },
+              "recordedAt": "2026-10-10T22:15:00.000Z",
+              "type": "target_skipped"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:00:00.000Z",
+          "outcome": "partial",
+          "planItems": [
+            { "endMinute": 45, "id": "a", "startMinute": 0, "targetId": "m31" },
+            {
+              "endMinute": 90,
+              "id": "b",
+              "startMinute": 45,
+              "targetId": "m33"
+            },
+            {
+              "endMinute": 135,
+              "id": "c",
+              "startMinute": 90,
+              "targetId": "m42"
+            },
+            {
+              "endMinute": 180,
+              "id": "d",
+              "startMinute": 135,
+              "targetId": "m81"
+            }
+          ],
+          "window": {
+            "end": "2026-10-10T23:00:00.000Z",
+            "start": "2026-10-10T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "skip-reasons-time-visibility-equipment-and-none",
+      "result": {
+        "acquiredMinutes": 0,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "equipment",
+            "minutes": 45,
+            "spans": [
+              {
+                "end": "2026-10-10T22:15:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-10T21:30:00.000Z",
+                "targetId": "m42"
+              }
+            ]
+          },
+          {
+            "cause": "time",
+            "minutes": 45,
+            "spans": [
+              {
+                "end": "2026-10-10T20:45:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-10T20:00:00.000Z",
+                "targetId": "m31"
+              }
+            ]
+          },
+          {
+            "cause": "visibility",
+            "minutes": 45,
+            "spans": [
+              {
+                "end": "2026-10-10T21:30:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-10T20:45:00.000Z",
+                "targetId": "m33"
+              }
+            ]
+          },
+          {
+            "cause": "unexplained",
+            "minutes": 45,
+            "spans": [
+              {
+                "end": "2026-10-10T23:00:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-10T22:15:00.000Z",
+                "targetId": "m81"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 180,
+        "perTarget": [
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "a",
+            "plannedMinutes": 45,
+            "skipReason": "time",
+            "slot": {
+              "end": "2026-10-10T20:45:00.000Z",
+              "start": "2026-10-10T20:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "b",
+            "plannedMinutes": 45,
+            "skipReason": "visibility",
+            "slot": {
+              "end": "2026-10-10T21:30:00.000Z",
+              "start": "2026-10-10T20:45:00.000Z"
+            },
+            "targetId": "m33"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "c",
+            "plannedMinutes": 45,
+            "skipReason": "equipment",
+            "slot": {
+              "end": "2026-10-10T22:15:00.000Z",
+              "start": "2026-10-10T21:30:00.000Z"
+            },
+            "targetId": "m42"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "d",
+            "plannedMinutes": 45,
+            "slot": {
+              "end": "2026-10-10T23:00:00.000Z",
+              "start": "2026-10-10T22:15:00.000Z"
+            },
+            "targetId": "m81"
+          }
+        ],
+        "plannedMinutes": 180,
+        "segments": {
+          "end": 29861220,
+          "hasAuto": false,
+          "start": 29861040,
+          "targets": [
+            {
+              "end": 29861085,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [
+                {
+                  "cause": "time",
+                  "end": 29861085,
+                  "kind": "abandoned",
+                  "start": 29861040
+                }
+              ],
+              "start": 29861040,
+              "targetId": "m31"
+            },
+            {
+              "end": 29861130,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [
+                {
+                  "cause": "visibility",
+                  "end": 29861130,
+                  "kind": "abandoned",
+                  "start": 29861085
+                }
+              ],
+              "start": 29861085,
+              "targetId": "m33"
+            },
+            {
+              "end": 29861175,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [
+                {
+                  "cause": "equipment",
+                  "end": 29861175,
+                  "kind": "abandoned",
+                  "start": 29861130
+                }
+              ],
+              "start": 29861130,
+              "targetId": "m42"
+            },
+            {
+              "end": 29861220,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [
+                {
+                  "cause": "unexplained",
+                  "end": 29861220,
+                  "kind": "abandoned",
+                  "start": 29861175
+                }
+              ],
+              "start": 29861175,
+              "targetId": "m81"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0601",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0602",
+              "payload": { "cause": "guiding" },
+              "recordedAt": "2026-10-10T21:00:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0603",
+              "payload": {},
+              "recordedAt": "2026-10-10T21:20:00.000Z",
+              "type": "resume"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0604",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "guidingLosses": [
+            {
+              "end": "2026-10-10T21:40:00.000Z",
+              "start": "2026-10-10T21:10:00.000Z"
+            },
+            {
+              "end": "2026-10-10T22:40:00.000Z",
+              "start": "2026-10-10T22:30:00.000Z"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "guiding-loss-inside-a-pause-is-counted-once",
+      "result": {
+        "acquiredMinutes": 100,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": true,
+        "lostByCause": [
+          {
+            "cause": "guiding",
+            "minutes": 50,
+            "spans": [
+              {
+                "end": "2026-10-10T21:20:00.000Z",
+                "kind": "pause",
+                "start": "2026-10-10T21:00:00.000Z",
+                "targetId": "ngc7000"
+              },
+              {
+                "end": "2026-10-10T21:40:00.000Z",
+                "kind": "rejected",
+                "start": "2026-10-10T21:20:00.000Z",
+                "targetId": "ngc7000"
+              },
+              {
+                "end": "2026-10-10T22:40:00.000Z",
+                "kind": "rejected",
+                "start": "2026-10-10T22:30:00.000Z",
+                "targetId": "ngc7000"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 50,
+        "perTarget": [
+          {
+            "acquiredMinutes": 100,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:10:00.000Z",
+                "minutes": 130,
+                "pauses": [
+                  {
+                    "cause": "guiding",
+                    "end": "2026-10-10T21:20:00.000Z",
+                    "start": "2026-10-10T21:00:00.000Z"
+                  }
+                ],
+                "start": "2026-10-10T20:40:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 150,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "ngc7000"
+          }
+        ],
+        "plannedMinutes": 150,
+        "segments": {
+          "end": 29861230,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861230,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29861230, "start": 29861080 }
+              ],
+              "segments": [
+                { "end": 29861100, "kind": "acquired", "start": 29861080 },
+                {
+                  "cause": "guiding",
+                  "end": 29861120,
+                  "kind": "pause",
+                  "start": 29861100
+                },
+                {
+                  "cause": "guiding",
+                  "end": 29861140,
+                  "kind": "rejected",
+                  "start": 29861120
+                },
+                { "end": 29861190, "kind": "acquired", "start": 29861140 },
+                {
+                  "cause": "guiding",
+                  "end": 29861200,
+                  "kind": "rejected",
+                  "start": 29861190
+                },
+                { "end": 29861230, "kind": "acquired", "start": 29861200 }
+              ],
+              "start": 29861080,
+              "targetId": "ngc7000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0701",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0702",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0703",
+              "payload": { "targetLabel": "Comète du soir" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0704",
+              "payload": { "targetLabel": "Comète du soir" },
+              "recordedAt": "2026-10-10T23:55:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "a-target-added-in-the-field-has-no-planned-time",
+      "result": {
+        "acquiredMinutes": 195,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [],
+        "lostMinutes": 0,
+        "perTarget": [
+          {
+            "acquiredMinutes": 150,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:10:00.000Z",
+                "minutes": 150,
+                "pauses": [],
+                "start": "2026-10-10T20:40:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 150,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "ngc7000"
+          },
+          {
+            "acquiredMinutes": 45,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:55:00.000Z",
+                "minutes": 45,
+                "pauses": [],
+                "start": "2026-10-10T23:10:00.000Z"
+              }
+            ],
+            "planItemId": null,
+            "plannedMinutes": 0,
+            "targetId": "Comète du soir"
+          }
+        ],
+        "plannedMinutes": 150,
+        "segments": {
+          "end": 29861275,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861230,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861230, "start": 29861080 }
+              ],
+              "segments": [
+                { "end": 29861230, "kind": "acquired", "start": 29861080 }
+              ],
+              "start": 29861080,
+              "targetId": "ngc7000"
+            },
+            {
+              "end": null,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861275, "start": 29861230 }
+              ],
+              "segments": [
+                { "end": 29861275, "kind": "acquired", "start": 29861230 }
+              ],
+              "start": null,
+              "targetId": "Comète du soir"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0801",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T21:30:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0802",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T23:00:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            },
+            {
+              "endMinute": 270,
+              "id": "ic1396",
+              "startMinute": 150,
+              "targetId": "ic1396"
+            }
+          ],
+          "window": {
+            "end": "2026-10-10T23:00:00.000Z",
+            "start": "2026-10-10T21:00:00.000Z"
+          }
+        }
+      ],
+      "id": "slot-clipped-by-the-session-window-and-late-start",
+      "result": {
+        "acquiredMinutes": 90,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [{ "cause": "unexplained", "minutes": 30, "spans": [] }],
+        "lostMinutes": 30,
+        "perTarget": [
+          {
+            "acquiredMinutes": 90,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:00:00.000Z",
+                "minutes": 90,
+                "pauses": [],
+                "start": "2026-10-10T21:30:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-10T23:00:00.000Z",
+              "start": "2026-10-10T21:00:00.000Z"
+            },
+            "targetId": "ngc7000"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "ic1396",
+            "plannedMinutes": 0,
+            "targetId": "ic1396"
+          }
+        ],
+        "plannedMinutes": 120,
+        "segments": {
+          "end": 29861220,
+          "hasAuto": false,
+          "start": 29861100,
+          "targets": [
+            {
+              "end": 29861220,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29861220, "start": 29861130 }
+              ],
+              "segments": [
+                { "end": 29861220, "kind": "acquired", "start": 29861130 }
+              ],
+              "start": 29861100,
+              "targetId": "ngc7000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "adjustments": [],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0901",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "timing": "planned",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0902",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "timing": "planned",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0903",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "timing": "planned",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0904",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "timing": "planned",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0905",
+              "payload": { "planItemId": "m45", "targetId": "m45" },
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "timing": "planned",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0906",
+              "payload": { "planItemId": "m45", "targetId": "m45" },
+              "recordedAt": "2026-10-11T02:20:00.000Z",
+              "timing": "planned",
+              "type": "target_finished"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "outcome": "executed",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            },
+            {
+              "endMinute": 270,
+              "id": "ic1396",
+              "startMinute": 150,
+              "targetId": "ic1396"
+            },
+            {
+              "endMinute": 340,
+              "id": "m45",
+              "startMinute": 270,
+              "targetId": "m45"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "executed-night-from-planned-events-only",
+      "result": {
+        "acquiredMinutes": 340,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [],
+        "lostMinutes": 0,
+        "perTarget": [
+          {
+            "acquiredMinutes": 150,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:10:00.000Z",
+                "minutes": 150,
+                "pauses": [],
+                "start": "2026-10-10T20:40:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 150,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "ngc7000"
+          },
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T01:10:00.000Z",
+                "minutes": 120,
+                "pauses": [],
+                "start": "2026-10-10T23:10:00.000Z"
+              }
+            ],
+            "planItemId": "ic1396",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-11T01:10:00.000Z",
+              "start": "2026-10-10T23:10:00.000Z"
+            },
+            "targetId": "ic1396"
+          },
+          {
+            "acquiredMinutes": 70,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T02:20:00.000Z",
+                "minutes": 70,
+                "pauses": [],
+                "start": "2026-10-11T01:10:00.000Z"
+              }
+            ],
+            "planItemId": "m45",
+            "plannedMinutes": 70,
+            "slot": {
+              "end": "2026-10-11T02:20:00.000Z",
+              "start": "2026-10-11T01:10:00.000Z"
+            },
+            "targetId": "m45"
+          }
+        ],
+        "plannedMinutes": 340,
+        "segments": {
+          "end": 29861420,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861230,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861230, "start": 29861080 }
+              ],
+              "segments": [
+                { "end": 29861230, "kind": "acquired", "start": 29861080 }
+              ],
+              "start": 29861080,
+              "targetId": "ngc7000"
+            },
+            {
+              "end": 29861350,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861350, "start": 29861230 }
+              ],
+              "segments": [
+                { "end": 29861350, "kind": "acquired", "start": 29861230 }
+              ],
+              "start": 29861230,
+              "targetId": "ic1396"
+            },
+            {
+              "end": 29861420,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861420, "start": 29861350 }
+              ],
+              "segments": [
+                { "end": 29861420, "kind": "acquired", "start": 29861350 }
+              ],
+              "start": 29861350,
+              "targetId": "m45"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "adjustments": [{ "state": "done", "targetId": "ngc7000" }],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1001",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "timing": "planned",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1002",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "timing": "planned",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1003",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T21:05:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1004",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "outcome": "partial",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "field-events-win-over-the-debriefing-planned-ones",
+      "result": {
+        "acquiredMinutes": 125,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [{ "cause": "unexplained", "minutes": 25, "spans": [] }],
+        "lostMinutes": 25,
+        "perTarget": [
+          {
+            "acquiredMinutes": 125,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:10:00.000Z",
+                "minutes": 125,
+                "pauses": [],
+                "start": "2026-10-10T21:05:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 150,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "ngc7000"
+          }
+        ],
+        "plannedMinutes": 150,
+        "segments": {
+          "end": 29861230,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861230,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861230, "start": 29861105 }
+              ],
+              "segments": [
+                { "end": 29861230, "kind": "acquired", "start": 29861105 }
+              ],
+              "start": 29861080,
+              "targetId": "ngc7000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1101",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1102",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1103",
+              "payload": { "cause": "dew" },
+              "recordedAt": "2026-10-11T00:50:00.000Z",
+              "type": "pause"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            },
+            {
+              "endMinute": 270,
+              "id": "ic1396",
+              "startMinute": 150,
+              "targetId": "ic1396"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "open-pause-and-unfinished-target-close-at-the-next-start-or-window-end",
+      "result": {
+        "acquiredMinutes": 250,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "dew",
+            "minutes": 20,
+            "spans": [
+              {
+                "end": "2026-10-11T01:10:00.000Z",
+                "kind": "pause",
+                "start": "2026-10-11T00:50:00.000Z",
+                "targetId": "ic1396"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 20,
+        "perTarget": [
+          {
+            "acquiredMinutes": 150,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T23:10:00.000Z",
+                "minutes": 150,
+                "pauses": [],
+                "start": "2026-10-10T20:40:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 150,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "ngc7000"
+          },
+          {
+            "acquiredMinutes": 100,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T02:20:00.000Z",
+                "minutes": 100,
+                "pauses": [
+                  {
+                    "cause": "dew",
+                    "end": "2026-10-11T02:20:00.000Z",
+                    "start": "2026-10-11T00:50:00.000Z"
+                  }
+                ],
+                "start": "2026-10-10T23:10:00.000Z"
+              }
+            ],
+            "planItemId": "ic1396",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-11T01:10:00.000Z",
+              "start": "2026-10-10T23:10:00.000Z"
+            },
+            "targetId": "ic1396"
+          }
+        ],
+        "plannedMinutes": 270,
+        "segments": {
+          "end": 29861420,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861230,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861230, "start": 29861080 }
+              ],
+              "segments": [
+                { "end": 29861230, "kind": "acquired", "start": 29861080 }
+              ],
+              "start": 29861080,
+              "targetId": "ngc7000"
+            },
+            {
+              "end": 29861350,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29861420, "start": 29861230 }
+              ],
+              "segments": [
+                { "end": 29861330, "kind": "acquired", "start": 29861230 },
+                {
+                  "cause": "dew",
+                  "end": 29861420,
+                  "kind": "pause",
+                  "start": 29861330
+                }
+              ],
+              "start": 29861230,
+              "targetId": "ic1396"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "adjustments": [
+            { "acquiredMinutes": 40, "state": "done", "targetId": "a" }
+          ],
+          "events": [],
+          "outcome": "partial",
+          "planItems": [
+            {
+              "durationMinutes": 60,
+              "id": "a",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            { "id": "b", "targetId": "m33" }
+          ]
+        }
+      ],
+      "id": "without-night-start-slots-are-plain-durations",
+      "result": {
+        "acquiredMinutes": 40,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [{ "cause": "unexplained", "minutes": 20, "spans": [] }],
+        "lostMinutes": 20,
+        "perTarget": [
+          {
+            "acquiredMinutes": 40,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [],
+            "planItemId": "a",
+            "plannedMinutes": 60,
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "b",
+            "plannedMinutes": 0,
+            "targetId": "m33"
+          }
+        ],
+        "plannedMinutes": 60,
+        "segments": null
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 150,
+              "id": "ngc7000",
+              "startMinute": 0,
+              "targetId": "ngc7000"
+            },
+            {
+              "endMinute": 270,
+              "id": "ic1396",
+              "startMinute": 150,
+              "targetId": "ic1396"
+            },
+            {
+              "endMinute": 340,
+              "id": "m45",
+              "startMinute": 270,
+              "targetId": "m45"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "empty-journal-nothing-acquired-all-unexplained",
+      "result": {
+        "acquiredMinutes": 0,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "unexplained",
+            "minutes": 340,
+            "spans": [
+              {
+                "end": "2026-10-10T23:10:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-10T20:40:00.000Z",
+                "targetId": "ngc7000"
+              },
+              {
+                "end": "2026-10-11T01:10:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-10T23:10:00.000Z",
+                "targetId": "ic1396"
+              },
+              {
+                "end": "2026-10-11T02:20:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-11T01:10:00.000Z",
+                "targetId": "m45"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 340,
+        "perTarget": [
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 150,
+            "slot": {
+              "end": "2026-10-10T23:10:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "ngc7000"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "ic1396",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-11T01:10:00.000Z",
+              "start": "2026-10-10T23:10:00.000Z"
+            },
+            "targetId": "ic1396"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "m45",
+            "plannedMinutes": 70,
+            "slot": {
+              "end": "2026-10-11T02:20:00.000Z",
+              "start": "2026-10-11T01:10:00.000Z"
+            },
+            "targetId": "m45"
+          }
+        ],
+        "plannedMinutes": 340,
+        "segments": {
+          "end": 29861420,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861230,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [
+                {
+                  "cause": "unexplained",
+                  "end": 29861230,
+                  "kind": "abandoned",
+                  "start": 29861080
+                }
+              ],
+              "start": 29861080,
+              "targetId": "ngc7000"
+            },
+            {
+              "end": 29861350,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [
+                {
+                  "cause": "unexplained",
+                  "end": 29861350,
+                  "kind": "abandoned",
+                  "start": 29861230
+                }
+              ],
+              "start": 29861230,
+              "targetId": "ic1396"
+            },
+            {
+              "end": 29861420,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [
+                {
+                  "cause": "unexplained",
+                  "end": 29861420,
+                  "kind": "abandoned",
+                  "start": 29861350
+                }
+              ],
+              "start": 29861350,
+              "targetId": "m45"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1401",
+              "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1402",
+              "payload": {
+                "planItemId": "ic1396",
+                "reason": "weather",
+                "targetId": "ic1396"
+              },
+              "recordedAt": "2026-10-11T00:10:00.000Z",
+              "type": "target_skipped"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1403",
+              "payload": { "targetLabel": "Lune" },
+              "recordedAt": "2026-10-11T00:10:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1404",
+              "payload": { "targetLabel": "Lune" },
+              "recordedAt": "2026-10-11T00:20:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 270,
+              "id": "ic1396",
+              "startMinute": 150,
+              "targetId": "ic1396"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T02:20:00.000Z",
+            "start": "2026-10-10T20:40:00.000Z"
+          }
+        }
+      ],
+      "id": "target-given-up-mid-slot-is-partial-with-the-rest-abandoned",
+      "result": {
+        "acquiredMinutes": 70,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "clouds",
+            "minutes": 60,
+            "spans": [
+              {
+                "end": "2026-10-11T01:10:00.000Z",
+                "kind": "abandon",
+                "start": "2026-10-11T00:10:00.000Z",
+                "targetId": "ic1396"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 60,
+        "perTarget": [
+          {
+            "acquiredMinutes": 60,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T00:10:00.000Z",
+                "minutes": 60,
+                "pauses": [],
+                "start": "2026-10-10T23:10:00.000Z"
+              }
+            ],
+            "planItemId": "ic1396",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-11T01:10:00.000Z",
+              "start": "2026-10-10T23:10:00.000Z"
+            },
+            "targetId": "ic1396"
+          },
+          {
+            "acquiredMinutes": 10,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T00:20:00.000Z",
+                "minutes": 10,
+                "pauses": [],
+                "start": "2026-10-11T00:10:00.000Z"
+              }
+            ],
+            "planItemId": null,
+            "plannedMinutes": 0,
+            "targetId": "Lune"
+          }
+        ],
+        "plannedMinutes": 120,
+        "segments": {
+          "end": 29861350,
+          "hasAuto": false,
+          "start": 29861230,
+          "targets": [
+            {
+              "end": 29861350,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29861290, "start": 29861230 }
+              ],
+              "segments": [
+                { "end": 29861290, "kind": "acquired", "start": 29861230 },
+                {
+                  "cause": "clouds",
+                  "end": 29861350,
+                  "kind": "abandoned",
+                  "start": 29861290
+                }
+              ],
+              "start": 29861230,
+              "targetId": "ic1396"
+            },
+            {
+              "end": null,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29861300, "start": 29861290 }
+              ],
+              "segments": [
+                { "end": 29861300, "kind": "acquired", "start": 29861290 }
+              ],
+              "start": null,
+              "targetId": "Lune"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA001",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA002",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T19:40:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA003",
+              "payload": { "planItemId": "m33", "targetId": "m33" },
+              "recordedAt": "2026-10-11T19:40:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA004",
+              "payload": { "planItemId": "m33", "targetId": "m33" },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA005",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA006",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T20:50:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 90,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 180,
+              "id": "m33",
+              "startMinute": 90,
+              "targetId": "m33"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T23:30:00.000Z",
+            "start": "2026-10-11T19:00:00.000Z"
+          }
+        }
+      ],
+      "id": "a-resumed-target-lists-both-passages",
+      "result": {
+        "acquiredMinutes": 110,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [{ "cause": "unexplained", "minutes": 70, "spans": [] }],
+        "lostMinutes": 70,
+        "perTarget": [
+          {
+            "acquiredMinutes": 60,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T19:40:00.000Z",
+                "minutes": 40,
+                "pauses": [],
+                "start": "2026-10-11T19:00:00.000Z"
+              },
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T20:50:00.000Z",
+                "minutes": 20,
+                "pauses": [],
+                "start": "2026-10-11T20:30:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T20:30:00.000Z",
+              "start": "2026-10-11T19:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 50,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T20:30:00.000Z",
+                "minutes": 50,
+                "pauses": [],
+                "start": "2026-10-11T19:40:00.000Z"
+              }
+            ],
+            "planItemId": "m33",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T22:00:00.000Z",
+              "start": "2026-10-11T20:30:00.000Z"
+            },
+            "targetId": "m33"
+          }
+        ],
+        "plannedMinutes": 180,
+        "segments": {
+          "end": 29862600,
+          "hasAuto": false,
+          "start": 29862420,
+          "targets": [
+            {
+              "end": 29862510,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29862460, "start": 29862420 },
+                { "auto": false, "end": 29862530, "start": 29862510 }
+              ],
+              "segments": [
+                { "end": 29862460, "kind": "acquired", "start": 29862420 },
+                { "end": 29862530, "kind": "acquired", "start": 29862510 }
+              ],
+              "start": 29862420,
+              "targetId": "m31"
+            },
+            {
+              "end": 29862600,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29862510, "start": 29862460 }
+              ],
+              "segments": [
+                { "end": 29862510, "kind": "acquired", "start": 29862460 }
+              ],
+              "start": 29862510,
+              "targetId": "m33"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA007",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA008",
+              "payload": { "cause": "wind" },
+              "recordedAt": "2026-10-11T19:30:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA009",
+              "payload": {},
+              "recordedAt": "2026-10-11T19:45:00.000Z",
+              "type": "resume"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA010",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA011",
+              "payload": { "planItemId": "m33", "targetId": "m33" },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA012",
+              "payload": { "planItemId": "m33", "targetId": "m33" },
+              "recordedAt": "2026-10-11T22:00:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 90,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 180,
+              "id": "m33",
+              "startMinute": 90,
+              "targetId": "m33"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T23:30:00.000Z",
+            "start": "2026-10-11T19:00:00.000Z"
+          }
+        }
+      ],
+      "id": "a-pause-inside-a-passage-is-listed-and-deducted",
+      "result": {
+        "acquiredMinutes": 165,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "wind",
+            "minutes": 15,
+            "spans": [
+              {
+                "end": "2026-10-11T19:45:00.000Z",
+                "kind": "pause",
+                "start": "2026-10-11T19:30:00.000Z",
+                "targetId": "m31"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 15,
+        "perTarget": [
+          {
+            "acquiredMinutes": 75,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T20:30:00.000Z",
+                "minutes": 75,
+                "pauses": [
+                  {
+                    "cause": "wind",
+                    "end": "2026-10-11T19:45:00.000Z",
+                    "start": "2026-10-11T19:30:00.000Z"
+                  }
+                ],
+                "start": "2026-10-11T19:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T20:30:00.000Z",
+              "start": "2026-10-11T19:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 90,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T22:00:00.000Z",
+                "minutes": 90,
+                "pauses": [],
+                "start": "2026-10-11T20:30:00.000Z"
+              }
+            ],
+            "planItemId": "m33",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T22:00:00.000Z",
+              "start": "2026-10-11T20:30:00.000Z"
+            },
+            "targetId": "m33"
+          }
+        ],
+        "plannedMinutes": 180,
+        "segments": {
+          "end": 29862600,
+          "hasAuto": false,
+          "start": 29862420,
+          "targets": [
+            {
+              "end": 29862510,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29862510, "start": 29862420 }
+              ],
+              "segments": [
+                { "end": 29862450, "kind": "acquired", "start": 29862420 },
+                {
+                  "cause": "wind",
+                  "end": 29862465,
+                  "kind": "pause",
+                  "start": 29862450
+                },
+                { "end": 29862510, "kind": "acquired", "start": 29862465 }
+              ],
+              "start": 29862420,
+              "targetId": "m31"
+            },
+            {
+              "end": 29862600,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29862600, "start": 29862510 }
+              ],
+              "segments": [
+                { "end": 29862600, "kind": "acquired", "start": 29862510 }
+              ],
+              "start": 29862510,
+              "targetId": "m33"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA013",
+              "payload": {
+                "advance": "auto",
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA014",
+              "payload": {},
+              "recordedAt": "2026-10-11T19:50:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA015",
+              "payload": {},
+              "recordedAt": "2026-10-11T20:00:00.000Z",
+              "type": "resume"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA016",
+              "payload": {
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA017",
+              "payload": {
+                "advance": "auto",
+                "auto": true,
+                "planItemId": "m33",
+                "targetId": "m33"
+              },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA018",
+              "payload": { "planItemId": "m33", "targetId": "m33" },
+              "recordedAt": "2026-10-11T22:00:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "kind": "imaging",
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 90,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 180,
+              "id": "m33",
+              "startMinute": 90,
+              "targetId": "m33"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T23:30:00.000Z",
+            "start": "2026-10-11T19:00:00.000Z"
+          }
+        }
+      ],
+      "id": "automatic-time-is-unconfirmed-until-confirmed",
+      "result": {
+        "acquiredMinutes": 170,
+        "autoUnconfirmedMinutes": 170,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "unexplained",
+            "minutes": 10,
+            "spans": [
+              {
+                "end": "2026-10-11T20:00:00.000Z",
+                "kind": "pause",
+                "start": "2026-10-11T19:50:00.000Z",
+                "targetId": "m31"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 10,
+        "perTarget": [
+          {
+            "acquiredMinutes": 80,
+            "autoUnconfirmedMinutes": 80,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": true,
+                "confirmed": false,
+                "end": "2026-10-11T20:30:00.000Z",
+                "minutes": 80,
+                "pauses": [
+                  {
+                    "cause": null,
+                    "end": "2026-10-11T20:00:00.000Z",
+                    "start": "2026-10-11T19:50:00.000Z"
+                  }
+                ],
+                "start": "2026-10-11T19:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T20:30:00.000Z",
+              "start": "2026-10-11T19:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 90,
+            "autoUnconfirmedMinutes": 90,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": true,
+                "confirmed": false,
+                "end": "2026-10-11T22:00:00.000Z",
+                "minutes": 90,
+                "pauses": [],
+                "start": "2026-10-11T20:30:00.000Z"
+              }
+            ],
+            "planItemId": "m33",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T22:00:00.000Z",
+              "start": "2026-10-11T20:30:00.000Z"
+            },
+            "targetId": "m33"
+          }
+        ],
+        "plannedMinutes": 180,
+        "segments": {
+          "end": 29862600,
+          "hasAuto": true,
+          "start": 29862420,
+          "targets": [
+            {
+              "end": 29862510,
+              "outcome": "partial",
+              "passages": [
+                { "auto": true, "end": 29862510, "start": 29862420 }
+              ],
+              "segments": [
+                {
+                  "auto": true,
+                  "end": 29862470,
+                  "kind": "acquired",
+                  "start": 29862420
+                },
+                {
+                  "cause": "unexplained",
+                  "end": 29862480,
+                  "kind": "pause",
+                  "start": 29862470
+                },
+                {
+                  "auto": true,
+                  "end": 29862510,
+                  "kind": "acquired",
+                  "start": 29862480
+                }
+              ],
+              "start": 29862420,
+              "targetId": "m31"
+            },
+            {
+              "end": 29862600,
+              "outcome": "done",
+              "passages": [
+                { "auto": true, "end": 29862600, "start": 29862510 }
+              ],
+              "segments": [
+                {
+                  "auto": true,
+                  "end": 29862600,
+                  "kind": "acquired",
+                  "start": 29862510
+                }
+              ],
+              "start": 29862510,
+              "targetId": "m33"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA019",
+              "payload": {
+                "advance": "auto",
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA020",
+              "payload": {
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-11T19:40:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA021",
+              "payload": {
+                "auto": true,
+                "planItemId": "m33",
+                "targetId": "m33"
+              },
+              "recordedAt": "2026-10-11T19:40:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA022",
+              "payload": {
+                "auto": true,
+                "planItemId": "m33",
+                "targetId": "m33"
+              },
+              "recordedAt": "2026-10-11T20:20:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA023",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T20:25:00.000Z",
+              "type": "auto_time_confirmed"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA024",
+              "payload": {
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA025",
+              "payload": {
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-11T20:50:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "kind": "imaging",
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 90,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 180,
+              "id": "m33",
+              "startMinute": 90,
+              "targetId": "m33"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T23:30:00.000Z",
+            "start": "2026-10-11T19:00:00.000Z"
+          }
+        }
+      ],
+      "id": "a-confirmation-covers-the-earlier-automatic-passages-only",
+      "result": {
+        "acquiredMinutes": 100,
+        "autoUnconfirmedMinutes": 60,
+        "guidingIncluded": false,
+        "lostByCause": [{ "cause": "unexplained", "minutes": 80, "spans": [] }],
+        "lostMinutes": 80,
+        "perTarget": [
+          {
+            "acquiredMinutes": 60,
+            "autoUnconfirmedMinutes": 20,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": true,
+                "confirmed": true,
+                "end": "2026-10-11T19:40:00.000Z",
+                "minutes": 40,
+                "pauses": [],
+                "start": "2026-10-11T19:00:00.000Z"
+              },
+              {
+                "auto": true,
+                "confirmed": false,
+                "end": "2026-10-11T20:50:00.000Z",
+                "minutes": 20,
+                "pauses": [],
+                "start": "2026-10-11T20:30:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T20:30:00.000Z",
+              "start": "2026-10-11T19:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 40,
+            "autoUnconfirmedMinutes": 40,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": true,
+                "confirmed": false,
+                "end": "2026-10-11T20:20:00.000Z",
+                "minutes": 40,
+                "pauses": [],
+                "start": "2026-10-11T19:40:00.000Z"
+              }
+            ],
+            "planItemId": "m33",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T22:00:00.000Z",
+              "start": "2026-10-11T20:30:00.000Z"
+            },
+            "targetId": "m33"
+          }
+        ],
+        "plannedMinutes": 180,
+        "segments": {
+          "end": 29862600,
+          "hasAuto": true,
+          "start": 29862420,
+          "targets": [
+            {
+              "end": 29862510,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29862460, "start": 29862420 },
+                { "auto": true, "end": 29862530, "start": 29862510 }
+              ],
+              "segments": [
+                { "end": 29862460, "kind": "acquired", "start": 29862420 },
+                {
+                  "auto": true,
+                  "end": 29862530,
+                  "kind": "acquired",
+                  "start": 29862510
+                }
+              ],
+              "start": 29862420,
+              "targetId": "m31"
+            },
+            {
+              "end": 29862600,
+              "outcome": "partial",
+              "passages": [
+                { "auto": true, "end": 29862500, "start": 29862460 }
+              ],
+              "segments": [
+                {
+                  "auto": true,
+                  "end": 29862500,
+                  "kind": "acquired",
+                  "start": 29862460
+                }
+              ],
+              "start": 29862510,
+              "targetId": "m33"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "adjustments": [
+            { "acquiredMinutes": 120, "state": "done", "targetId": "m31" },
+            { "state": "done", "targetId": "m33" }
+          ],
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA026",
+              "payload": {
+                "advance": "manual",
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA027",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA028",
+              "payload": {
+                "advance": "manual",
+                "planItemId": "m33",
+                "targetId": "m33"
+              },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA029",
+              "payload": { "planItemId": "m33", "targetId": "m33" },
+              "recordedAt": "2026-10-11T21:00:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "kind": "visual",
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "outcome": "partial",
+          "planItems": [
+            {
+              "endMinute": 90,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 180,
+              "id": "m33",
+              "startMinute": 90,
+              "targetId": "m33"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T23:30:00.000Z",
+            "start": "2026-10-11T19:00:00.000Z"
+          }
+        }
+      ],
+      "id": "visual-night-declared-time-is-not-capped-by-the-plan",
+      "result": {
+        "acquiredMinutes": 150,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [],
+        "lostMinutes": 0,
+        "perTarget": [
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T20:30:00.000Z",
+                "minutes": 90,
+                "pauses": [],
+                "start": "2026-10-11T19:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T20:30:00.000Z",
+              "start": "2026-10-11T19:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 30,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T21:00:00.000Z",
+                "minutes": 30,
+                "pauses": [],
+                "start": "2026-10-11T20:30:00.000Z"
+              }
+            ],
+            "planItemId": "m33",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T22:00:00.000Z",
+              "start": "2026-10-11T20:30:00.000Z"
+            },
+            "targetId": "m33"
+          }
+        ],
+        "plannedMinutes": 180,
+        "segments": {
+          "end": 29862600,
+          "hasAuto": false,
+          "start": 29862420,
+          "targets": [
+            {
+              "end": 29862510,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29862510, "start": 29862420 }
+              ],
+              "segments": [
+                { "end": 29862510, "kind": "acquired", "start": 29862420 }
+              ],
+              "start": 29862420,
+              "targetId": "m31"
+            },
+            {
+              "end": 29862600,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29862540, "start": 29862510 }
+              ],
+              "segments": [
+                { "end": 29862540, "kind": "acquired", "start": 29862510 }
+              ],
+              "start": 29862510,
+              "targetId": "m33"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "adjustments": [
+            { "acquiredMinutes": 120, "state": "done", "targetId": "m31" },
+            { "state": "done", "targetId": "m33" }
+          ],
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA026",
+              "payload": {
+                "advance": "manual",
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA027",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA028",
+              "payload": {
+                "advance": "manual",
+                "planItemId": "m33",
+                "targetId": "m33"
+              },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA029",
+              "payload": { "planItemId": "m33", "targetId": "m33" },
+              "recordedAt": "2026-10-11T21:00:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "kind": "imaging",
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "outcome": "partial",
+          "planItems": [
+            {
+              "endMinute": 90,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 180,
+              "id": "m33",
+              "startMinute": 90,
+              "targetId": "m33"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T23:30:00.000Z",
+            "start": "2026-10-11T19:00:00.000Z"
+          }
+        }
+      ],
+      "id": "imaging-night-declared-time-is-capped-at-the-plan-or-the-journal",
+      "result": {
+        "acquiredMinutes": 120,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [{ "cause": "unexplained", "minutes": 60, "spans": [] }],
+        "lostMinutes": 60,
+        "perTarget": [
+          {
+            "acquiredMinutes": 90,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T20:30:00.000Z",
+                "minutes": 90,
+                "pauses": [],
+                "start": "2026-10-11T19:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T20:30:00.000Z",
+              "start": "2026-10-11T19:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 30,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T21:00:00.000Z",
+                "minutes": 30,
+                "pauses": [],
+                "start": "2026-10-11T20:30:00.000Z"
+              }
+            ],
+            "planItemId": "m33",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T22:00:00.000Z",
+              "start": "2026-10-11T20:30:00.000Z"
+            },
+            "targetId": "m33"
+          }
+        ],
+        "plannedMinutes": 180,
+        "segments": {
+          "end": 29862600,
+          "hasAuto": false,
+          "start": 29862420,
+          "targets": [
+            {
+              "end": 29862510,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29862510, "start": 29862420 }
+              ],
+              "segments": [
+                { "end": 29862510, "kind": "acquired", "start": 29862420 }
+              ],
+              "start": 29862420,
+              "targetId": "m31"
+            },
+            {
+              "end": 29862600,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29862540, "start": 29862510 }
+              ],
+              "segments": [
+                { "end": 29862540, "kind": "acquired", "start": 29862510 }
+              ],
+              "start": 29862510,
+              "targetId": "m33"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA030",
+              "payload": {
+                "advance": "manual",
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA031",
+              "payload": {
+                "advance": "manual",
+                "planItemId": "m57",
+                "targetId": "m57"
+              },
+              "recordedAt": "2026-10-11T19:50:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA032",
+              "payload": {
+                "advance": "manual",
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-11T20:10:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA033",
+              "payload": {
+                "advance": "manual",
+                "planItemId": "m57",
+                "targetId": "m57"
+              },
+              "recordedAt": "2026-10-11T20:40:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA034",
+              "payload": { "targetId": "m57" },
+              "recordedAt": "2026-10-11T21:00:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "kind": "visual",
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 90,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 180,
+              "id": "m33",
+              "startMinute": 90,
+              "targetId": "m33"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T23:30:00.000Z",
+            "start": "2026-10-11T19:00:00.000Z"
+          }
+        }
+      ],
+      "id": "visual-night-off-plan-target-has-no-planned-time",
+      "result": {
+        "acquiredMinutes": 120,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [],
+        "lostMinutes": 0,
+        "perTarget": [
+          {
+            "acquiredMinutes": 80,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T19:50:00.000Z",
+                "minutes": 50,
+                "pauses": [],
+                "start": "2026-10-11T19:00:00.000Z"
+              },
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T20:40:00.000Z",
+                "minutes": 30,
+                "pauses": [],
+                "start": "2026-10-11T20:10:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T20:30:00.000Z",
+              "start": "2026-10-11T19:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "m33",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T22:00:00.000Z",
+              "start": "2026-10-11T20:30:00.000Z"
+            },
+            "targetId": "m33"
+          },
+          {
+            "acquiredMinutes": 40,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T20:10:00.000Z",
+                "minutes": 20,
+                "pauses": [],
+                "start": "2026-10-11T19:50:00.000Z"
+              },
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T21:00:00.000Z",
+                "minutes": 20,
+                "pauses": [],
+                "start": "2026-10-11T20:40:00.000Z"
+              }
+            ],
+            "planItemId": null,
+            "plannedMinutes": 0,
+            "targetId": "m57"
+          }
+        ],
+        "plannedMinutes": 180,
+        "segments": {
+          "end": 29862600,
+          "hasAuto": false,
+          "start": 29862420,
+          "targets": [
+            {
+              "end": 29862510,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29862470, "start": 29862420 },
+                { "auto": false, "end": 29862520, "start": 29862490 }
+              ],
+              "segments": [
+                { "end": 29862470, "kind": "acquired", "start": 29862420 },
+                { "end": 29862520, "kind": "acquired", "start": 29862490 }
+              ],
+              "start": 29862420,
+              "targetId": "m31"
+            },
+            {
+              "end": 29862600,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [],
+              "start": 29862510,
+              "targetId": "m33"
+            },
+            {
+              "end": null,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29862490, "start": 29862470 },
+                { "auto": false, "end": 29862540, "start": 29862520 }
+              ],
+              "segments": [
+                { "end": 29862490, "kind": "acquired", "start": 29862470 },
+                { "end": 29862540, "kind": "acquired", "start": 29862520 }
+              ],
+              "start": null,
+              "targetId": "m57"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA040",
+              "payload": {
+                "advance": "manual",
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA041",
+              "payload": { "cause": "clouds" },
+              "recordedAt": "2026-10-11T19:20:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA042",
+              "payload": {},
+              "recordedAt": "2026-10-11T19:50:00.000Z",
+              "type": "resume"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA043",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T20:00:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA044",
+              "payload": {
+                "planItemId": "m33",
+                "reason": "weather",
+                "targetId": "m33"
+              },
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "type": "target_skipped"
+            }
+          ],
+          "kind": "visual",
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 90,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 180,
+              "id": "m33",
+              "startMinute": 90,
+              "targetId": "m33"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T23:30:00.000Z",
+            "start": "2026-10-11T19:00:00.000Z"
+          }
+        }
+      ],
+      "id": "visual-night-loses-nothing-skipped-or-paused",
+      "result": {
+        "acquiredMinutes": 30,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [],
+        "lostMinutes": 0,
+        "perTarget": [
+          {
+            "acquiredMinutes": 30,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T20:00:00.000Z",
+                "minutes": 30,
+                "pauses": [
+                  {
+                    "cause": "clouds",
+                    "end": "2026-10-11T19:50:00.000Z",
+                    "start": "2026-10-11T19:20:00.000Z"
+                  }
+                ],
+                "start": "2026-10-11T19:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 90,
+            "slot": {
+              "end": "2026-10-11T20:30:00.000Z",
+              "start": "2026-10-11T19:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 0,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "abandoned",
+            "passages": [],
+            "planItemId": "m33",
+            "plannedMinutes": 90,
+            "skipReason": "weather",
+            "slot": {
+              "end": "2026-10-11T22:00:00.000Z",
+              "start": "2026-10-11T20:30:00.000Z"
+            },
+            "targetId": "m33"
+          }
+        ],
+        "plannedMinutes": 180,
+        "segments": {
+          "end": 29862600,
+          "hasAuto": false,
+          "start": 29862420,
+          "targets": [
+            {
+              "end": 29862510,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29862480, "start": 29862420 }
+              ],
+              "segments": [
+                { "end": 29862440, "kind": "acquired", "start": 29862420 },
+                {
+                  "cause": "clouds",
+                  "end": 29862470,
+                  "kind": "pause",
+                  "start": 29862440
+                },
+                { "end": 29862480, "kind": "acquired", "start": 29862470 }
+              ],
+              "start": 29862420,
+              "targetId": "m31"
+            },
+            {
+              "end": 29862600,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [],
+              "start": 29862510,
+              "targetId": "m33"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA035",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA036",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-11T21:00:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA037",
+              "payload": { "planItemId": "m33", "targetId": "m33" },
+              "recordedAt": "2026-10-11T21:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA038",
+              "payload": { "planItemId": "m33", "targetId": "m33" },
+              "recordedAt": "2026-10-11T22:00:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "kind": "imaging",
+          "launchedSchedule": [
+            {
+              "endMinute": 90,
+              "planItemId": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 180,
+              "planItemId": "m33",
+              "startMinute": 90,
+              "targetId": "m33"
+            },
+            { "endMinute": 300, "planItemId": "m45", "startMinute": 240 }
+          ],
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 120,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 180,
+              "id": "m33",
+              "startMinute": 120,
+              "targetId": "m33"
+            }
+          ],
+          "window": {
+            "end": "2026-10-11T23:30:00.000Z",
+            "start": "2026-10-11T19:00:00.000Z"
+          }
+        }
+      ],
+      "id": "the-launched-schedule-is-restated-as-launched-slots",
+      "result": {
+        "acquiredMinutes": 180,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "launchedSlots": [
+          {
+            "end": "2026-10-11T20:30:00.000Z",
+            "planItemId": "m31",
+            "start": "2026-10-11T19:00:00.000Z",
+            "targetId": "m31"
+          },
+          {
+            "end": "2026-10-11T22:00:00.000Z",
+            "planItemId": "m33",
+            "start": "2026-10-11T20:30:00.000Z",
+            "targetId": "m33"
+          },
+          {
+            "end": "2026-10-11T23:30:00.000Z",
+            "planItemId": "m45",
+            "start": "2026-10-11T23:00:00.000Z",
+            "targetId": "m45"
+          }
+        ],
+        "lostByCause": [],
+        "lostMinutes": 0,
+        "perTarget": [
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T21:00:00.000Z",
+                "minutes": 120,
+                "pauses": [],
+                "start": "2026-10-11T19:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-11T21:00:00.000Z",
+              "start": "2026-10-11T19:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 60,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-11T22:00:00.000Z",
+                "minutes": 60,
+                "pauses": [],
+                "start": "2026-10-11T21:00:00.000Z"
+              }
+            ],
+            "planItemId": "m33",
+            "plannedMinutes": 60,
+            "slot": {
+              "end": "2026-10-11T22:00:00.000Z",
+              "start": "2026-10-11T21:00:00.000Z"
+            },
+            "targetId": "m33"
+          }
+        ],
+        "plannedMinutes": 180,
+        "segments": {
+          "end": 29862690,
+          "hasAuto": false,
+          "start": 29862420,
+          "targets": [
+            {
+              "end": 29862510,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29862540, "start": 29862420 }
+              ],
+              "segments": [
+                { "end": 29862540, "kind": "acquired", "start": 29862420 }
+              ],
+              "start": 29862420,
+              "targetId": "m31"
+            },
+            {
+              "end": 29862600,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29862600, "start": 29862540 }
+              ],
+              "segments": [
+                { "end": 29862600, "kind": "acquired", "start": 29862540 }
+              ],
+              "start": 29862510,
+              "targetId": "m33"
+            },
+            {
+              "end": 29862690,
+              "outcome": "abandoned",
+              "passages": [],
+              "segments": [],
+              "start": 29862660,
+              "targetId": "m45"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9HOLESUMMARY00000000001",
+              "payload": {
+                "advance": "auto",
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-02T20:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000002",
+              "payload": {
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-02T22:00:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000003",
+              "payload": {
+                "advance": "auto",
+                "planItemId": "ngc7000",
+                "targetId": "ngc7000"
+              },
+              "recordedAt": "2026-10-02T22:19:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000004",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T23:12:00.000Z",
+                  "to": "2026-10-02T23:40:00.000Z"
+                }
+              },
+              "recordedAt": "2026-10-02T23:40:00.000Z",
+              "type": "note"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000009",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-03T00:01:00.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "kind": "imaging",
+          "nightStartAt": "2026-10-02T20:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 120,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 319,
+              "id": "ngc7000",
+              "startMinute": 199,
+              "targetId": "ngc7000"
+            }
+          ],
+          "window": {
+            "end": "2026-10-03T04:00:00.000Z",
+            "start": "2026-10-02T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "a-hole-counts-its-minutes-as-automatic-time-to-confirm",
+      "result": {
+        "acquiredMinutes": 222,
+        "autoUnconfirmedMinutes": 148,
+        "guidingIncluded": false,
+        "lostByCause": [{ "cause": "unexplained", "minutes": 18, "spans": [] }],
+        "lostMinutes": 18,
+        "perTarget": [
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 120,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": true,
+                "confirmed": false,
+                "end": "2026-10-02T22:00:00.000Z",
+                "minutes": 120,
+                "pauses": [],
+                "start": "2026-10-02T20:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-02T22:00:00.000Z",
+              "start": "2026-10-02T20:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 102,
+            "autoUnconfirmedMinutes": 28,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-03T00:01:00.000Z",
+                "minutes": 102,
+                "pauses": [],
+                "start": "2026-10-02T22:19:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-03T01:19:00.000Z",
+              "start": "2026-10-02T23:19:00.000Z"
+            },
+            "targetId": "ngc7000"
+          }
+        ],
+        "plannedMinutes": 240,
+        "segments": {
+          "end": 29849839,
+          "hasAuto": true,
+          "start": 29849520,
+          "targets": [
+            {
+              "end": 29849640,
+              "outcome": "done",
+              "passages": [
+                { "auto": true, "end": 29849640, "start": 29849520 }
+              ],
+              "segments": [
+                {
+                  "auto": true,
+                  "end": 29849640,
+                  "kind": "acquired",
+                  "start": 29849520
+                }
+              ],
+              "start": 29849520,
+              "targetId": "m31"
+            },
+            {
+              "end": 29849839,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29849761, "start": 29849659 }
+              ],
+              "segments": [
+                { "end": 29849761, "kind": "acquired", "start": 29849659 }
+              ],
+              "start": 29849719,
+              "targetId": "ngc7000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9HOLESUMMARY00000000001",
+              "payload": {
+                "advance": "auto",
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-02T20:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000002",
+              "payload": {
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-02T22:00:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000003",
+              "payload": {
+                "advance": "auto",
+                "planItemId": "ngc7000",
+                "targetId": "ngc7000"
+              },
+              "recordedAt": "2026-10-02T22:19:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000004",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T23:12:00.000Z",
+                  "to": "2026-10-02T23:40:00.000Z"
+                }
+              },
+              "recordedAt": "2026-10-02T23:40:00.000Z",
+              "type": "note"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000009",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-03T00:01:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000005",
+              "payload": {},
+              "recordedAt": "2026-10-02T23:12:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000006",
+              "payload": {},
+              "recordedAt": "2026-10-02T23:40:00.000Z",
+              "type": "resume"
+            }
+          ],
+          "kind": "imaging",
+          "nightStartAt": "2026-10-02T20:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 120,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 319,
+              "id": "ngc7000",
+              "startMinute": 199,
+              "targetId": "ngc7000"
+            }
+          ],
+          "window": {
+            "end": "2026-10-03T04:00:00.000Z",
+            "start": "2026-10-02T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "i-was-paused-takes-the-hole-out-of-the-acquired-time",
+      "result": {
+        "acquiredMinutes": 194,
+        "autoUnconfirmedMinutes": 120,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "unexplained",
+            "minutes": 46,
+            "spans": [
+              {
+                "end": "2026-10-02T23:40:00.000Z",
+                "kind": "pause",
+                "start": "2026-10-02T23:12:00.000Z",
+                "targetId": "ngc7000"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 46,
+        "perTarget": [
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 120,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": true,
+                "confirmed": false,
+                "end": "2026-10-02T22:00:00.000Z",
+                "minutes": 120,
+                "pauses": [],
+                "start": "2026-10-02T20:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-02T22:00:00.000Z",
+              "start": "2026-10-02T20:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 74,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-03T00:01:00.000Z",
+                "minutes": 74,
+                "pauses": [
+                  {
+                    "cause": null,
+                    "end": "2026-10-02T23:40:00.000Z",
+                    "start": "2026-10-02T23:12:00.000Z"
+                  }
+                ],
+                "start": "2026-10-02T22:19:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-03T01:19:00.000Z",
+              "start": "2026-10-02T23:19:00.000Z"
+            },
+            "targetId": "ngc7000"
+          }
+        ],
+        "plannedMinutes": 240,
+        "segments": {
+          "end": 29849839,
+          "hasAuto": true,
+          "start": 29849520,
+          "targets": [
+            {
+              "end": 29849640,
+              "outcome": "done",
+              "passages": [
+                { "auto": true, "end": 29849640, "start": 29849520 }
+              ],
+              "segments": [
+                {
+                  "auto": true,
+                  "end": 29849640,
+                  "kind": "acquired",
+                  "start": 29849520
+                }
+              ],
+              "start": 29849520,
+              "targetId": "m31"
+            },
+            {
+              "end": 29849839,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29849761, "start": 29849659 }
+              ],
+              "segments": [
+                { "end": 29849712, "kind": "acquired", "start": 29849659 },
+                {
+                  "cause": "unexplained",
+                  "end": 29849740,
+                  "kind": "pause",
+                  "start": 29849712
+                },
+                { "end": 29849761, "kind": "acquired", "start": 29849740 }
+              ],
+              "start": 29849719,
+              "targetId": "ngc7000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9HOLESUMMARY00000000001",
+              "payload": {
+                "advance": "auto",
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-02T20:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000002",
+              "payload": {
+                "auto": true,
+                "planItemId": "m31",
+                "targetId": "m31"
+              },
+              "recordedAt": "2026-10-02T22:00:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000003",
+              "payload": {
+                "advance": "auto",
+                "planItemId": "ngc7000",
+                "targetId": "ngc7000"
+              },
+              "recordedAt": "2026-10-02T22:19:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000004",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T23:12:00.000Z",
+                  "to": "2026-10-02T23:40:00.000Z"
+                }
+              },
+              "recordedAt": "2026-10-02T23:40:00.000Z",
+              "type": "note"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000009",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-03T00:01:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000007",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-03T00:30:00.000Z",
+              "type": "auto_time_confirmed"
+            }
+          ],
+          "kind": "imaging",
+          "nightStartAt": "2026-10-02T20:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 120,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 319,
+              "id": "ngc7000",
+              "startMinute": 199,
+              "targetId": "ngc7000"
+            }
+          ],
+          "window": {
+            "end": "2026-10-03T04:00:00.000Z",
+            "start": "2026-10-02T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "a-confirmed-hole-is-no-longer-to-confirm",
+      "result": {
+        "acquiredMinutes": 222,
+        "autoUnconfirmedMinutes": 120,
+        "guidingIncluded": false,
+        "lostByCause": [{ "cause": "unexplained", "minutes": 18, "spans": [] }],
+        "lostMinutes": 18,
+        "perTarget": [
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 120,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": true,
+                "confirmed": false,
+                "end": "2026-10-02T22:00:00.000Z",
+                "minutes": 120,
+                "pauses": [],
+                "start": "2026-10-02T20:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-02T22:00:00.000Z",
+              "start": "2026-10-02T20:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 102,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-03T00:01:00.000Z",
+                "minutes": 102,
+                "pauses": [],
+                "start": "2026-10-02T22:19:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-03T01:19:00.000Z",
+              "start": "2026-10-02T23:19:00.000Z"
+            },
+            "targetId": "ngc7000"
+          }
+        ],
+        "plannedMinutes": 240,
+        "segments": {
+          "end": 29849839,
+          "hasAuto": true,
+          "start": 29849520,
+          "targets": [
+            {
+              "end": 29849640,
+              "outcome": "done",
+              "passages": [
+                { "auto": true, "end": 29849640, "start": 29849520 }
+              ],
+              "segments": [
+                {
+                  "auto": true,
+                  "end": 29849640,
+                  "kind": "acquired",
+                  "start": 29849520
+                }
+              ],
+              "start": 29849520,
+              "targetId": "m31"
+            },
+            {
+              "end": 29849839,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29849761, "start": 29849659 }
+              ],
+              "segments": [
+                { "end": 29849761, "kind": "acquired", "start": 29849659 }
+              ],
+              "start": 29849719,
+              "targetId": "ngc7000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01JA2REPR1SE00000000000001",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-12T20:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000002",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-12T22:00:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000003",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-12T22:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000004",
+              "payload": { "cause": "fatigue" },
+              "recordedAt": "2026-10-12T23:41:00.000Z",
+              "type": "pause"
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000005",
+              "payload": {
+                "pauseCause": {
+                  "cause": "fatigue",
+                  "pauseEventId": "01JA2REPR1SE00000000000004"
+                },
+                "text": "Une sieste dans la voiture"
+              },
+              "recordedAt": "2026-10-12T23:41:00.000Z",
+              "type": "note"
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000006",
+              "payload": {},
+              "recordedAt": "2026-10-13T00:06:00.000Z",
+              "type": "resume"
+            }
+          ],
+          "kind": "imaging",
+          "nightStartAt": "2026-10-12T20:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 120,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 300,
+              "id": "ngc7000",
+              "startMinute": 120,
+              "targetId": "ngc7000"
+            }
+          ],
+          "window": {
+            "end": "2026-10-13T01:00:00.000Z",
+            "start": "2026-10-12T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "resumed-night-a-fatigue-pause-with-its-precision",
+      "result": {
+        "acquiredMinutes": 275,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [
+          {
+            "cause": "fatigue",
+            "minutes": 25,
+            "spans": [
+              {
+                "end": "2026-10-13T00:06:00.000Z",
+                "kind": "pause",
+                "note": "Une sieste dans la voiture",
+                "start": "2026-10-12T23:41:00.000Z",
+                "targetId": "ngc7000"
+              }
+            ]
+          }
+        ],
+        "lostMinutes": 25,
+        "perTarget": [
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-12T22:00:00.000Z",
+                "minutes": 120,
+                "pauses": [],
+                "start": "2026-10-12T20:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-12T22:00:00.000Z",
+              "start": "2026-10-12T20:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 155,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-13T01:00:00.000Z",
+                "minutes": 155,
+                "pauses": [
+                  {
+                    "cause": "fatigue",
+                    "end": "2026-10-13T00:06:00.000Z",
+                    "start": "2026-10-12T23:41:00.000Z"
+                  }
+                ],
+                "start": "2026-10-12T22:00:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 180,
+            "slot": {
+              "end": "2026-10-13T01:00:00.000Z",
+              "start": "2026-10-12T22:00:00.000Z"
+            },
+            "targetId": "ngc7000"
+          }
+        ],
+        "plannedMinutes": 300,
+        "segments": {
+          "end": 29864220,
+          "hasAuto": false,
+          "start": 29863920,
+          "targets": [
+            {
+              "end": 29864040,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29864040, "start": 29863920 }
+              ],
+              "segments": [
+                { "end": 29864040, "kind": "acquired", "start": 29863920 }
+              ],
+              "start": 29863920,
+              "targetId": "m31"
+            },
+            {
+              "end": 29864220,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29864220, "start": 29864040 }
+              ],
+              "segments": [
+                { "end": 29864141, "kind": "acquired", "start": 29864040 },
+                {
+                  "cause": "fatigue",
+                  "end": 29864166,
+                  "kind": "pause",
+                  "start": 29864141
+                },
+                { "end": 29864220, "kind": "acquired", "start": 29864166 }
+              ],
+              "start": 29864040,
+              "targetId": "ngc7000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01JA2REPR1SE00000000000011",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-12T20:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000012",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-12T22:00:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000013",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-12T22:00:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000014",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-12T23:41:00.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000015",
+              "payload": { "planItemId": "ngc7000", "targetId": "ngc7000" },
+              "recordedAt": "2026-10-13T00:06:00.000Z",
+              "type": "target_started"
+            }
+          ],
+          "kind": "imaging",
+          "nightStartAt": "2026-10-12T20:00:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 120,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 300,
+              "id": "ngc7000",
+              "startMinute": 120,
+              "targetId": "ngc7000"
+            }
+          ],
+          "window": {
+            "end": "2026-10-13T01:00:00.000Z",
+            "start": "2026-10-12T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "resumed-night-not-a-pause-leaves-a-stretch-without-passage",
+      "result": {
+        "acquiredMinutes": 275,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [{ "cause": "unexplained", "minutes": 25, "spans": [] }],
+        "lostMinutes": 25,
+        "perTarget": [
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-12T22:00:00.000Z",
+                "minutes": 120,
+                "pauses": [],
+                "start": "2026-10-12T20:00:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-12T22:00:00.000Z",
+              "start": "2026-10-12T20:00:00.000Z"
+            },
+            "targetId": "m31"
+          },
+          {
+            "acquiredMinutes": 155,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-12T23:41:00.000Z",
+                "minutes": 101,
+                "pauses": [],
+                "start": "2026-10-12T22:00:00.000Z"
+              },
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-13T01:00:00.000Z",
+                "minutes": 54,
+                "pauses": [],
+                "start": "2026-10-13T00:06:00.000Z"
+              }
+            ],
+            "planItemId": "ngc7000",
+            "plannedMinutes": 180,
+            "slot": {
+              "end": "2026-10-13T01:00:00.000Z",
+              "start": "2026-10-12T22:00:00.000Z"
+            },
+            "targetId": "ngc7000"
+          }
+        ],
+        "plannedMinutes": 300,
+        "segments": {
+          "end": 29864220,
+          "hasAuto": false,
+          "start": 29863920,
+          "targets": [
+            {
+              "end": 29864040,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29864040, "start": 29863920 }
+              ],
+              "segments": [
+                { "end": 29864040, "kind": "acquired", "start": 29863920 }
+              ],
+              "start": 29863920,
+              "targetId": "m31"
+            },
+            {
+              "end": 29864220,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29864141, "start": 29864040 },
+                { "auto": false, "end": 29864220, "start": 29864166 }
+              ],
+              "segments": [
+                { "end": 29864141, "kind": "acquired", "start": 29864040 },
+                { "end": 29864220, "kind": "acquired", "start": 29864166 }
+              ],
+              "start": 29864040,
+              "targetId": "ngc7000"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7701",
+              "payload": { "protocol": "LX200" },
+              "recordedAt": "2026-10-10T20:30:00.000Z",
+              "type": "mount_connected"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7702",
+              "payload": { "planItemId": "m31", "targetId": "m31" },
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7703",
+              "payload": {
+                "outcome": "sent",
+                "targetId": "m31",
+                "targetLabel": "M31"
+              },
+              "recordedAt": "2026-10-10T20:41:00.000Z",
+              "type": "mount_goto"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7704",
+              "payload": { "text": "Wind picking up." },
+              "recordedAt": "2026-10-10T21:40:00.000Z",
+              "type": "note"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7705",
+              "payload": { "cause": "person" },
+              "recordedAt": "2026-10-10T23:30:00.000Z",
+              "type": "mount_stop"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7706",
+              "payload": {},
+              "recordedAt": "2026-10-10T23:45:00.000Z",
+              "type": "mount_link_lost"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7707",
+              "payload": {},
+              "recordedAt": "2026-10-10T23:50:00.000Z",
+              "type": "device_link_back"
+            }
+          ],
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "planItems": [
+            {
+              "endMinute": 180,
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            }
+          ],
+          "window": { "start": "2026-10-10T20:40:00.000Z" }
+        }
+      ],
+      "id": "a-device-event-after-the-last-journal-event-moves-no-window",
+      "result": {
+        "acquiredMinutes": 60,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [
+          { "cause": "unexplained", "minutes": 120, "spans": [] }
+        ],
+        "lostMinutes": 120,
+        "perTarget": [
+          {
+            "acquiredMinutes": 60,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-10T21:40:00.000Z",
+                "minutes": 60,
+                "pauses": [],
+                "start": "2026-10-10T20:40:00.000Z"
+              }
+            ],
+            "planItemId": "m31",
+            "plannedMinutes": 180,
+            "slot": {
+              "end": "2026-10-10T23:40:00.000Z",
+              "start": "2026-10-10T20:40:00.000Z"
+            },
+            "targetId": "m31"
+          }
+        ],
+        "plannedMinutes": 180,
+        "segments": {
+          "end": 29861260,
+          "hasAuto": false,
+          "start": 29861080,
+          "targets": [
+            {
+              "end": 29861260,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29861140, "start": 29861080 }
+              ],
+              "segments": [
+                { "end": 29861140, "kind": "acquired", "start": 29861080 }
+              ],
+              "start": 29861080,
+              "targetId": "m31"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0901",
+              "payload": { "planItemId": "ngc891", "targetId": "ngc891" },
+              "recordedAt": "2026-10-20T12:09:50.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0902",
+              "payload": { "planItemId": "ngc891", "targetId": "ngc891" },
+              "recordedAt": "2026-10-20T12:11:10.000Z",
+              "type": "target_finished"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0903",
+              "payload": { "planItemId": "m110", "targetId": "m110" },
+              "recordedAt": "2026-10-20T12:11:20.000Z",
+              "type": "target_started"
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0904",
+              "payload": { "planItemId": "m110", "targetId": "m110" },
+              "recordedAt": "2026-10-20T12:12:09.000Z",
+              "type": "target_finished"
+            }
+          ],
+          "nightStartAt": "2026-10-20T12:08:40.000Z",
+          "planItems": [
+            {
+              "endMinute": 21,
+              "id": "ngc891",
+              "startMinute": 0,
+              "targetId": "ngc891"
+            },
+            {
+              "endMinute": 41,
+              "id": "m110",
+              "startMinute": 21,
+              "targetId": "m110"
+            }
+          ],
+          "window": {
+            "end": "2026-10-20T12:27:50.000Z",
+            "start": "2026-10-20T12:08:40.000Z"
+          }
+        }
+      ],
+      "id": "fin-55-seconds-are-cut-to-their-minute",
+      "result": {
+        "acquiredMinutes": 3,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [{ "cause": "unexplained", "minutes": 17, "spans": [] }],
+        "lostMinutes": 17,
+        "perTarget": [
+          {
+            "acquiredMinutes": 2,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "partial",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-20T12:11:00.000Z",
+                "minutes": 2,
+                "pauses": [],
+                "start": "2026-10-20T12:09:00.000Z"
+              }
+            ],
+            "planItemId": "ngc891",
+            "plannedMinutes": 19,
+            "slot": {
+              "end": "2026-10-20T12:27:00.000Z",
+              "start": "2026-10-20T12:08:00.000Z"
+            },
+            "targetId": "ngc891"
+          },
+          {
+            "acquiredMinutes": 1,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-20T12:12:00.000Z",
+                "minutes": 1,
+                "pauses": [],
+                "start": "2026-10-20T12:11:00.000Z"
+              }
+            ],
+            "planItemId": "m110",
+            "plannedMinutes": 0,
+            "targetId": "m110"
+          }
+        ],
+        "plannedMinutes": 19,
+        "segments": {
+          "end": 29874987,
+          "hasAuto": false,
+          "start": 29874968,
+          "targets": [
+            {
+              "end": 29874987,
+              "outcome": "partial",
+              "passages": [
+                { "auto": false, "end": 29874971, "start": 29874969 }
+              ],
+              "segments": [
+                { "end": 29874971, "kind": "acquired", "start": 29874969 }
+              ],
+              "start": 29874968,
+              "targetId": "ngc891"
+            },
+            {
+              "end": null,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29874972, "start": 29874971 }
+              ],
+              "segments": [
+                { "end": 29874972, "kind": "acquired", "start": 29874971 }
+              ],
+              "start": null,
+              "targetId": "m110"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "debrief-summary"
+}

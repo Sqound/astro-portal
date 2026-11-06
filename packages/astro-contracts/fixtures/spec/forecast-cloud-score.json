@@ -1,0 +1,92 @@
+{
+  "module": "forecast-cloud-score",
+  "package": "portal",
+  "file": "astronomy-forecast",
+  "export": "cloudCoverScore",
+  "cases": [
+    {
+      "id": "cover-0",
+      "args": [0]
+    },
+    {
+      "id": "cover-2",
+      "args": [2]
+    },
+    {
+      "id": "cover-4",
+      "args": [4]
+    },
+    {
+      "id": "cover-5",
+      "args": [5]
+    },
+    {
+      "id": "cover-8",
+      "args": [8]
+    },
+    {
+      "id": "cover-10",
+      "args": [10]
+    },
+    {
+      "id": "cover-15",
+      "args": [15]
+    },
+    {
+      "id": "cover-16",
+      "args": [16]
+    },
+    {
+      "id": "cover-20",
+      "args": [20]
+    },
+    {
+      "id": "cover-24",
+      "args": [24]
+    },
+    {
+      "id": "cover-25",
+      "args": [25]
+    },
+    {
+      "id": "cover-30",
+      "args": [30]
+    },
+    {
+      "id": "cover-32",
+      "args": [32]
+    },
+    {
+      "id": "cover-34",
+      "args": [34]
+    },
+    {
+      "id": "cover-40",
+      "args": [40]
+    },
+    {
+      "id": "cover-50",
+      "args": [50]
+    },
+    {
+      "id": "cover-60",
+      "args": [60]
+    },
+    {
+      "id": "cover-80",
+      "args": [80]
+    },
+    {
+      "id": "cover-100",
+      "args": [100]
+    },
+    {
+      "id": "below-zero-is-clear",
+      "args": [-5]
+    },
+    {
+      "id": "no-cover-is-null",
+      "args": [null]
+    }
+  ]
+}

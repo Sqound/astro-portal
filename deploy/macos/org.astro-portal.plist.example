@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Astro Portal as a launchd agent of the person who runs it (docs/SELF_HOSTING.md, « macOS with launchd »).
+
+  Replace every REPLACE_ME value, copy the file to
+  ~/Library/LaunchAgents/org.astro-portal.plist, then:
+
+    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/org.astro-portal.plist
+
+  REPLACE_ME_DEPLOY_ROOT is the deployment root of `npm run deploy:release`
+  (ASTRO_PORTAL_PRIVATE_ROOT): the service runs the release `current` points
+  at. Its settings, the sign-in key among them, are in an environment file
+  readable by this person alone (chmod 600), outside the releases: launchd
+  never sees them: Node reads them at start (its env-file option).
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>org.astro-portal</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>REPLACE_ME_NODE_PATH</string>
+    <string>--env-file=REPLACE_ME_DEPLOY_ROOT/astro-portal.env</string>
+    <string>REPLACE_ME_DEPLOY_ROOT/current/apps/portal-oss/server.mjs</string>
+  </array>
+  <key>WorkingDirectory</key><string>REPLACE_ME_DEPLOY_ROOT/current</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>NODE_ENV</key><string>production</string>
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ProcessType</key><string>Background</string>
+  <key>StandardOutPath</key><string>REPLACE_ME_DEPLOY_ROOT/logs/astro-portal.log</string>
+  <key>StandardErrorPath</key><string>REPLACE_ME_DEPLOY_ROOT/logs/astro-portal-error.log</string>
+</dict>
+</plist>

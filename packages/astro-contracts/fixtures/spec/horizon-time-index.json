@@ -1,0 +1,13 @@
+{
+  "module": "horizon-time-index",
+  "package": "portal",
+  "file": "planner/horizon-time",
+  "export": "horizonTimeIndex",
+  "cases": [
+    { "id": "a-forward-drag-advances-the-sample", "args": [0, 120, 240, 25] },
+    { "id": "a-backward-drag-clamps-at-zero", "args": [2, -400, 240, 25] },
+    { "id": "the-last-sample-is-the-upper-bound", "args": [24, 400, 240, 25] },
+    { "id": "a-zero-width-never-divides-by-zero", "args": [3, 50, 0, 25] },
+    { "id": "a-single-sample-has-no-range", "args": [0, 100, 240, 1] }
+  ]
+}

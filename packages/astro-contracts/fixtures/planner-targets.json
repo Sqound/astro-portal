@@ -1,0 +1,71 @@
+{
+  "cases": [
+    {
+      "args": ["Galaxie d’Andromède", "en"],
+      "id": "andromeda-english-name",
+      "result": "Andromeda Galaxy"
+    },
+    {
+      "args": ["Galaxie d’Andromède", "en-XA"],
+      "id": "name-without-a-label-in-the-locale-reads-english",
+      "result": "Andromeda Galaxy"
+    },
+    {
+      "args": ["Galaxie d’Andromède", "de"],
+      "id": "andromeda-de-name",
+      "result": "Andromedagalaxie"
+    },
+    {
+      "args": ["Galaxie de la Vierge", "de"],
+      "id": "name-without-a-label-in-de-reads-english",
+      "result": "Virgo A"
+    },
+    {
+      "args": ["Galaxie d’Andromède", "es"],
+      "id": "andromeda-es-name",
+      "result": "Galaxia de Andrómeda"
+    },
+    {
+      "args": ["Galaxie de la Vierge", "es"],
+      "id": "name-without-a-label-in-es-reads-english",
+      "result": "Virgo A"
+    },
+    {
+      "args": ["Galaxie d’Andromède", "it"],
+      "id": "andromeda-it-name",
+      "result": "Galassia di Andromeda"
+    },
+    {
+      "args": ["Galaxie de la Vierge", "it"],
+      "id": "name-without-a-label-in-it-reads-english",
+      "result": "Virgo A"
+    },
+    {
+      "args": ["Galaxie d’Andromède", "pt-BR"],
+      "id": "andromeda-pt-br-name",
+      "result": "Galáxia de Andrômeda"
+    },
+    {
+      "args": ["Galaxie de la Vierge", "pt-BR"],
+      "id": "name-without-a-label-in-pt-br-reads-english",
+      "result": "Virgo A"
+    },
+    {
+      "args": ["Nébuleuse du Crabe", "zh-Hans"],
+      "id": "crab-nebula-simplified-chinese-name",
+      "result": "蟹状星云"
+    },
+    {
+      "args": ["Nébuleuse du Crabe", "zh-Hant"],
+      "id": "crab-nebula-traditional-chinese-name",
+      "result": "蟹狀星雲"
+    },
+    {
+      "args": ["Nébuleuse du Crabe", "ru"],
+      "id": "crab-nebula-russian-name",
+      "result": "Крабовидная туманность"
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "planner-targets"
+}

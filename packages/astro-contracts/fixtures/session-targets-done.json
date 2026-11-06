@@ -1,0 +1,58 @@
+{
+  "cases": [
+    { "args": [[]], "id": "none", "result": 0 },
+    {
+      "args": [
+        [
+          { "outcome": "done", "state": "planned" },
+          { "outcome": "partial", "state": "planned" },
+          { "outcome": "skipped", "state": "planned" }
+        ]
+      ],
+      "id": "a-target-given-up-is-not-done",
+      "result": 2
+    },
+    {
+      "args": [
+        [
+          { "outcome": "done", "state": "planned" },
+          { "outcome": "skipped", "state": "removed" },
+          { "outcome": null, "state": "removed" }
+        ]
+      ],
+      "id": "a-removed-target-is-not-done",
+      "result": 1
+    },
+    {
+      "args": [
+        [
+          { "outcome": "done", "state": "added" },
+          { "outcome": null, "state": "planned" }
+        ]
+      ],
+      "id": "a-target-added-in-the-field-counts",
+      "result": 2
+    },
+    {
+      "args": [
+        [
+          { "outcome": "done", "state": "planned" },
+          { "outcome": "done", "state": "planned" },
+          { "outcome": "done", "state": "planned" },
+          { "outcome": "done", "state": "planned" },
+          { "outcome": "done", "state": "planned" },
+          { "outcome": "done", "state": "planned" },
+          { "outcome": "done", "state": "planned" },
+          { "outcome": "done", "state": "planned" },
+          { "outcome": "skipped", "state": "planned" },
+          { "outcome": "skipped", "state": "planned" },
+          { "outcome": "skipped", "state": "planned" }
+        ]
+      ],
+      "id": "eleven-targets-three-given-up",
+      "result": 8
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "session-targets-done"
+}

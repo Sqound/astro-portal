@@ -1,0 +1,74 @@
+{
+  "description": "`GET /v1/journal/deleted`: the deleted sessions, each the line of the Journal it was with `deletedAt`, `purgeAt` and `daysRemaining`; `graceDays` is 30.",
+  "exchange": "journal-deleted",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The 4 October night deleted (`session-delete`).",
+  "request": { "method": "GET", "path": "/api/v1/journal/deleted" },
+  "response": {
+    "body": {
+      "entries": [
+        {
+          "daysRemaining": 30,
+          "deletedAt": "2026-10-14T12:30:00.000Z",
+          "purgeAt": "2026-11-13T12:30:00.000Z",
+          "session": {
+            "acquiredSeconds": 7200,
+            "captureCount": 0,
+            "eveningDate": "2026-10-04",
+            "finishedAt": "2026-10-05T03:40:00.000Z",
+            "frameCount": null,
+            "instrumentLabel": "Askar 50P · ZWO ASI533MC Pro",
+            "lostReason": null,
+            "measured": false,
+            "origin": "execution",
+            "placeName": "Col des Étoiles",
+            "placeTimeZone": "UTC",
+            "planId": "00000000-0000-4000-8000-000000000009",
+            "planName": "Nuit du 2026-10-04",
+            "plannedSeconds": 7200,
+            "projectId": "00000000-0000-4000-8000-000000000007",
+            "projectName": "M 31",
+            "quality": null,
+            "readOnly": false,
+            "sessionId": "00000000-0000-4000-8000-00000000000a",
+            "startedAt": "2026-10-04T19:10:00.000Z",
+            "state": "executed",
+            "targets": [
+              {
+                "acquiredSeconds": 7200,
+                "captureId": null,
+                "exposureFamilies": null,
+                "exposureSeconds": null,
+                "filter": "L",
+                "finishedAt": "2026-10-04T21:10:00.000Z",
+                "frameCount": null,
+                "label": "M 31",
+                "outcome": "done",
+                "passages": null,
+                "planItemId": "m31",
+                "plannedSeconds": 7200,
+                "plannedSlot": {
+                  "end": "2026-10-04T21:00:00.000Z",
+                  "start": "2026-10-04T19:00:00.000Z"
+                },
+                "reason": null,
+                "slot": {
+                  "end": "2026-10-04T21:00:00.000Z",
+                  "start": "2026-10-04T19:10:00.000Z"
+                },
+                "startedAt": "2026-10-04T19:10:00.000Z",
+                "state": "planned",
+                "targetId": "m31",
+                "thumbnailUrl": null
+              }
+            ],
+            "title": null
+          }
+        }
+      ],
+      "graceDays": 30
+    },
+    "schema": "journal.schema.json#/$defs/deletedList",
+    "status": 200
+  }
+}

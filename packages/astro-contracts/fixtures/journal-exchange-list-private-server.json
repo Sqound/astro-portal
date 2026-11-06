@@ -1,0 +1,131 @@
+{
+  "description": "The list on a private server whose operator's catalogue holds two nights no session of the space matches: they come as read-only sessions of origin `import`, under an opaque identifier.",
+  "exchange": "list-private-server",
+  "generatedFrom": "portal@1.0.0",
+  "given": "As `list`, plus two nights of the operator's catalogue.",
+  "request": {
+    "catalogueNights": [
+      {
+        "date": "2025-06-01",
+        "targets": [{ "id": "m13", "title": "M 13", "totalSeconds": 1200 }]
+      },
+      {
+        "date": "2025-07-12",
+        "targets": [
+          {
+            "captureEndedAt": 1752362400000,
+            "captureStartedAt": 1752354000000,
+            "id": "m57",
+            "imageUrl": "/gallery/m57-nuit.jpg",
+            "title": "M 57",
+            "totalSeconds": 2400
+          }
+        ]
+      }
+    ],
+    "query": { "year": "2025" }
+  },
+  "response": {
+    "body": {
+      "groups": [],
+      "instruments": ["Askar 50P · ZWO ASI533MC Pro"],
+      "nextCursor": null,
+      "sessions": [
+        {
+          "acquiredSeconds": 2400,
+          "captureCount": 0,
+          "eveningDate": "2025-07-12",
+          "finishedAt": "2025-07-12T23:20:00.000Z",
+          "frameCount": null,
+          "instrumentLabel": null,
+          "lostReason": null,
+          "measured": false,
+          "origin": "import",
+          "placeName": null,
+          "placeTimeZone": null,
+          "planId": null,
+          "planName": null,
+          "plannedSeconds": null,
+          "projectId": null,
+          "projectName": null,
+          "quality": null,
+          "readOnly": true,
+          "sessionId": "catalogue:2025-07-12:m57",
+          "startedAt": "2025-07-12T21:00:00.000Z",
+          "state": "no_plan",
+          "targets": [
+            {
+              "acquiredSeconds": 2400,
+              "captureId": null,
+              "exposureFamilies": null,
+              "exposureSeconds": null,
+              "filter": null,
+              "finishedAt": "2025-07-12T23:20:00.000Z",
+              "frameCount": null,
+              "imageUrl": "/gallery/m57-nuit.jpg",
+              "label": "M 57",
+              "outcome": null,
+              "planItemId": null,
+              "plannedSeconds": null,
+              "reason": null,
+              "startedAt": "2025-07-12T21:00:00.000Z",
+              "state": "added",
+              "targetId": "m57",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        },
+        {
+          "acquiredSeconds": 1200,
+          "captureCount": 0,
+          "eveningDate": "2025-06-01",
+          "finishedAt": null,
+          "frameCount": null,
+          "instrumentLabel": null,
+          "lostReason": null,
+          "measured": false,
+          "origin": "import",
+          "placeName": null,
+          "placeTimeZone": null,
+          "planId": null,
+          "planName": null,
+          "plannedSeconds": null,
+          "projectId": null,
+          "projectName": null,
+          "quality": null,
+          "readOnly": true,
+          "sessionId": "catalogue:2025-06-01:m13",
+          "startedAt": null,
+          "state": "no_plan",
+          "targets": [
+            {
+              "acquiredSeconds": 1200,
+              "captureId": null,
+              "exposureFamilies": null,
+              "exposureSeconds": null,
+              "filter": null,
+              "finishedAt": null,
+              "frameCount": null,
+              "label": "M 13",
+              "outcome": null,
+              "planItemId": null,
+              "plannedSeconds": null,
+              "reason": null,
+              "startedAt": null,
+              "state": "added",
+              "targetId": "m13",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        }
+      ],
+      "stats": { "acquiredSeconds": 3600, "frameCount": 0, "sessions": 2 },
+      "toDebriefCount": 2,
+      "years": [2026, 2025]
+    },
+    "schema": "journal.schema.json#/$defs/list",
+    "status": 200
+  }
+}

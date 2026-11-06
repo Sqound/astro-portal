@@ -1,0 +1,60 @@
+{
+  "module": "sky-entered-input",
+  "package": "portal",
+  "file": "sky-brightness-source",
+  "export": "parseSkyEnteredInput",
+  "cases": [
+    {
+      "id": "an-empty-field-is-no-value",
+      "args": [""]
+    },
+    {
+      "id": "blanks-are-no-value",
+      "args": ["   "]
+    },
+    {
+      "id": "a-french-decimal-comma",
+      "args": ["21,35"]
+    },
+    {
+      "id": "an-english-decimal-point",
+      "args": ["21.35"]
+    },
+    {
+      "id": "a-whole-number",
+      "args": ["21"]
+    },
+    {
+      "id": "the-lower-bound",
+      "args": ["14"]
+    },
+    {
+      "id": "the-upper-bound",
+      "args": ["22.5"]
+    },
+    {
+      "id": "below-the-range",
+      "args": ["13.9"]
+    },
+    {
+      "id": "above-the-range",
+      "args": ["22.6"]
+    },
+    {
+      "id": "three-decimals-are-refused",
+      "args": ["21.355"]
+    },
+    {
+      "id": "text-is-refused",
+      "args": ["abc"]
+    },
+    {
+      "id": "a-sign-is-refused",
+      "args": ["-21"]
+    },
+    {
+      "id": "surrounding-blanks-are-trimmed",
+      "args": [" 20,5 "]
+    }
+  ]
+}

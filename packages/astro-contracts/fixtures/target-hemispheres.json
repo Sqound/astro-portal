@@ -1,0 +1,22 @@
+{
+  "cases": [
+    {
+      "args": [35],
+      "id": "northern-target",
+      "result": {
+        "visibleFromNorthernHemisphere": true,
+        "visibleFromSouthernHemisphere": false
+      }
+    },
+    {
+      "args": [-35],
+      "id": "southern-target",
+      "result": {
+        "visibleFromNorthernHemisphere": false,
+        "visibleFromSouthernHemisphere": true
+      }
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "target-hemispheres"
+}

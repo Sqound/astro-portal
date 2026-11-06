@@ -1,0 +1,69 @@
+{
+  "cases": [
+    { "args": [0, "fr"], "id": "french-zero", "result": "0 min" },
+    { "args": [38, "fr"], "id": "french-minutes-only", "result": "38 min" },
+    { "args": [60, "fr"], "id": "french-whole-hour", "result": "1 h" },
+    { "args": [125, "fr"], "id": "french-padded-minutes", "result": "2 h 05" },
+    { "args": [150, "fr"], "id": "french-hours-minutes", "result": "2 h 30" },
+    { "args": [600, "fr"], "id": "french-ten-hours", "result": "10 h" },
+    {
+      "args": [37.5, "fr"],
+      "id": "french-seconds-round-half-up",
+      "result": "38 min"
+    },
+    { "args": [-12, "fr"], "id": "french-negative-is-zero", "result": "0 min" },
+    { "args": [40, "ja"], "id": "japanese-minutes-only", "result": "40分" },
+    {
+      "args": [160, "ja"],
+      "id": "japanese-hours-minutes",
+      "result": "2時間40分"
+    },
+    { "args": [180, "ja"], "id": "japanese-whole-hours", "result": "3時間" },
+    { "args": [0, "ja"], "id": "japanese-zero", "result": "0分" },
+    {
+      "args": [150, "en"],
+      "id": "english-hours-minutes",
+      "result": "2 h 30 min"
+    },
+    { "args": [120, "en"], "id": "english-whole-hours", "result": "2 h" },
+    {
+      "args": [150, "de"],
+      "id": "german-no-break-space",
+      "result": "2 h 30 min"
+    },
+    { "args": [38, "es"], "id": "spanish-minutes-only", "result": "38 min" },
+    { "args": [120, "it"], "id": "italian-whole-hours", "result": "2 h" },
+    {
+      "args": [150, "pt-BR"],
+      "id": "portuguese-hours-minutes",
+      "result": "2 h 30 min"
+    },
+    {
+      "args": [150, "ru"],
+      "id": "russian-hours-minutes",
+      "result": "2 ч 30 мин"
+    },
+    {
+      "args": [150, "zh-Hans"],
+      "id": "chinese-simplified",
+      "result": "2小时30分钟"
+    },
+    {
+      "args": [150, "zh-Hant"],
+      "id": "chinese-traditional",
+      "result": "2小時30分鐘"
+    },
+    {
+      "args": [40, "zh_Hant"],
+      "id": "underscore-locale-traditional",
+      "result": "40分鐘"
+    },
+    {
+      "args": [75, "xx"],
+      "id": "unknown-locale-reads-english",
+      "result": "1 h 15 min"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "duration-text"
+}

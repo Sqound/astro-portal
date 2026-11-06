@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/pause.schema.json",
+  "title": "Astro Portal session event payload: pause",
+  "description": "Marks the session as paused (meridian flip, break, waiting out a cloud). An empty payload is valid on purpose: the pause button is a single one-handed tap. `cause` is an optional entry from a short closed list, so the time a night lost can later be counted by cause; a cause chosen after the tap (during the pause, or later) is not an edit of this event but a `note` carrying `pauseCause` (note.schema.json). `reason` stays the free-text afterthought it always was. See session-events.md for what this type is for and what it deliberately is not.",
+  "type": "object",
+  "properties": {
+    "reason": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "cause": {
+      "type": "string",
+      "description": "Optional, and closed: clouds, wind, dew — the sky; guiding — the guide star or the guiding itself; meridian_flip — the planned flip; equipment — anything else in the setup (power, focus, a cable, the mount); fatigue — the observer needed a rest; other — everything else. Absent means the person did not say, which is valid and common.",
+      "enum": [
+        "clouds",
+        "wind",
+        "dew",
+        "guiding",
+        "meridian_flip",
+        "equipment",
+        "fatigue",
+        "other"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

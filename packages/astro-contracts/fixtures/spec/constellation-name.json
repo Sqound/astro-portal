@@ -1,0 +1,75 @@
+{
+  "module": "constellation-name",
+  "file": "constellations",
+  "export": "constellationName",
+  "cases": [
+    {
+      "id": "lyra-french",
+      "args": ["Lyr", "fr"]
+    },
+    {
+      "id": "lyra-japanese",
+      "args": ["Lyr", "ja"]
+    },
+    {
+      "id": "lyra-german",
+      "args": ["Lyr", "de"]
+    },
+    {
+      "id": "lyra-spanish",
+      "args": ["Lyr", "es"]
+    },
+    {
+      "id": "lyra-italian",
+      "args": ["Lyr", "it"]
+    },
+    {
+      "id": "lyra-portuguese",
+      "args": ["Lyr", "pt-BR"]
+    },
+    {
+      "id": "lyra-russian",
+      "args": ["Lyr", "ru"]
+    },
+    {
+      "id": "lyra-simplified-chinese",
+      "args": ["Lyr", "zh-Hans"]
+    },
+    {
+      "id": "lyra-traditional-chinese",
+      "args": ["Lyr", "zh-Hant"]
+    },
+    {
+      "id": "lyra-english",
+      "args": ["Lyr", "en"]
+    },
+    {
+      "id": "lyra-in-a-locale-without-a-name-reads-the-latin-name",
+      "args": ["Lyr", "en-XA"]
+    },
+    {
+      "id": "carina-french",
+      "args": ["Car", "fr"]
+    },
+    {
+      "id": "carina-german",
+      "args": ["Car", "de"]
+    },
+    {
+      "id": "air-pump-is-antlia-in-french",
+      "args": ["Air Pump", "fr"]
+    },
+    {
+      "id": "bird-of-paradise-is-apus-in-russian",
+      "args": ["Bird of Paradise", "ru"]
+    },
+    {
+      "id": "the-old-serpent-key-reads-the-serpent",
+      "args": ["Se2", "fr"]
+    },
+    {
+      "id": "a-name-that-is-no-constellation-is-no-name",
+      "args": ["Galaxie", "fr"]
+    }
+  ]
+}

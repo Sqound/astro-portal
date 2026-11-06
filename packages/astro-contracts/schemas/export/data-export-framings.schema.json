@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/export/data-export-framings.schema.json",
+  "title": "Data export — framings.json",
+  "description": "« Cadrages »: the saved framings, each framing.schema.json's `resource` (on the phone, the copy it holds: `id`, `name`, `revision`, `state`, `usage`, `payload`, `updatedAt`).",
+  "type": "object",
+  "required": ["formatVersion", "part", "exportedAt", "framings"],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "part": {
+      "const": "framings"
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "framings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

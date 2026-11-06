@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "args": [0, 0],
+      "id": "galactic-centre",
+      "result": { "dec": -28.936172014831058, "ra": 17.760333081859137 }
+    },
+    {
+      "args": [0, 90],
+      "id": "north-galactic-pole",
+      "result": { "dec": 27.12825125644542, "ra": 12.857298732315703 }
+    },
+    {
+      "args": [96.26, -14.97],
+      "id": "lbn-437",
+      "result": { "dec": 40.57992058419967, "ra": 22.53613471292691 }
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "fk4-fk5-galactic"
+}

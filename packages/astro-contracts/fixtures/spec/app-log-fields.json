@@ -1,0 +1,180 @@
+{
+  "module": "app-log-fields",
+  "package": "portal",
+  "file": "app-log-redaction",
+  "export": "sanitizeAppLogFields",
+  "cases": [
+    {
+      "id": "launch-send-plan-accepted",
+      "args": [
+        {
+          "outcome": "accepted",
+          "targets": 3,
+          "model": "Seestar S50",
+          "firmware": "2.6.1",
+          "state": "working"
+        }
+      ]
+    },
+    {
+      "id": "launch-refused-read-back",
+      "args": [
+        {
+          "outcome": "readBackMismatch",
+          "step": "readBack",
+          "sent": true,
+          "code": null
+        }
+      ]
+    },
+    {
+      "id": "place-keys-removed",
+      "args": [
+        {
+          "lat": 45.1234,
+          "lon": -30.5678,
+          "placeName": "Col des Synthèses",
+          "site_name": "Plateau test"
+        }
+      ]
+    },
+    {
+      "id": "person-and-plan-keys-removed",
+      "args": [
+        {
+          "email": "camille@exemple.test",
+          "planName": "M31 en mosaïque",
+          "deviceName": "iPhone de Camille",
+          "owner": "Camille"
+        }
+      ]
+    },
+    {
+      "id": "network-and-secret-keys-removed",
+      "args": [
+        {
+          "ssid": "S50_test",
+          "ip": "192.0.2.10",
+          "token": "abc",
+          "apiKey": "def"
+        }
+      ]
+    },
+    {
+      "id": "precise-number-replaced",
+      "args": [
+        {
+          "value": 12.3456,
+          "ratio": 0.5,
+          "count": 12
+        }
+      ]
+    },
+    {
+      "id": "text-values-redacted",
+      "args": [
+        {
+          "error": "Connection refused (address = 192.0.2.10)",
+          "note": "at 45.1234,-30.5678"
+        }
+      ]
+    },
+    {
+      "id": "nested-values-dropped",
+      "args": [
+        {
+          "list": [1, 2],
+          "object": {
+            "a": 1
+          },
+          "kept": "yes"
+        }
+      ]
+    },
+    {
+      "id": "twelve-fields-at-most",
+      "args": [
+        {
+          "f00": 0,
+          "f01": 1,
+          "f02": 2,
+          "f03": 3,
+          "f04": 4,
+          "f05": 5,
+          "f06": 6,
+          "f07": 7,
+          "f08": 8,
+          "f09": 9,
+          "f10": 10,
+          "f11": 11,
+          "f12": 12,
+          "f13": 13,
+          "f14": 14
+        }
+      ]
+    },
+    {
+      "id": "not-an-object",
+      "args": [null]
+    },
+    {
+      "id": "probe-settings-whole-thousandths",
+      "args": [
+        {
+          "lens": "wide",
+          "choice": "maximum",
+          "step": 2,
+          "askedMs": 7600,
+          "iso": 1600,
+          "exposureMs": 7600,
+          "frameMs": 950,
+          "frames": 8,
+          "binning": 2,
+          "saturation": 32736,
+          "size": "2016x1512",
+          "fovDeg": 71.12
+        }
+      ]
+    },
+    {
+      "id": "probe-focus-steps-text",
+      "args": [
+        {
+          "askedMilli": 1000,
+          "mode": "locked_lens_position",
+          "locked": true,
+          "lensPosMilli": 875,
+          "sweep": "measured",
+          "sweepWidthPx": 2.41,
+          "steps": "1000:10.2/12 900:3.4/21 800:3.0/22 700:-/0 875:2.4/20"
+        }
+      ]
+    },
+    {
+      "id": "probe-solve-two-decimals",
+      "args": [
+        {
+          "status": "failed",
+          "reason": "focus",
+          "detected": 250,
+          "medianWidthPx": 19.88,
+          "elongation": 1.35,
+          "backgroundAdu": 429.12,
+          "pixelScaleMas": 146200,
+          "cause": "shaken"
+        }
+      ]
+    },
+    {
+      "id": "probe-three-decimals-become-coord",
+      "args": [
+        {
+          "lensPosition": 0.875,
+          "lensPosMilli": 875,
+          "fov": 71.123,
+          "exposure": 0.95
+        }
+      ]
+    }
+  ]
+}

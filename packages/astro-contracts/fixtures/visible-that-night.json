@@ -1,0 +1,668 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "targets": [
+            { "dec": 41.2688, "id": "m31", "ra": 0.7123 },
+            { "dec": 30.6602, "id": "m33", "ra": 1.5641 },
+            { "dec": -5.3911, "id": "m42", "ra": 5.5881 },
+            { "dec": 44.3333, "id": "ngc7000", "ra": 20.9737 },
+            { "dec": 36.4613, "id": "m13", "ra": 16.6949 },
+            { "dec": 24.1051, "id": "m45", "ra": 3.7914 },
+            { "dec": -24.3833, "id": "m8", "ra": 18.0625 },
+            { "dec": -47.4796, "id": "ngc5139", "ra": 13.4463 },
+            { "dec": 89.2641, "id": "polaris", "ra": 2.5303 },
+            { "dec": 22.0145, "id": "m1", "ra": 5.5755 },
+            { "dec": 22.7211, "id": "m27", "ra": 19.9937 },
+            { "dec": 47.1953, "id": "m51", "ra": 13.4979 },
+            { "dec": 5, "id": "ngc2237", "ra": 6.5333 },
+            { "dec": 59.5, "id": "sh2-129", "ra": 21.2 }
+          ]
+        }
+      ],
+      "id": "the-highest-first",
+      "result": [
+        {
+          "at": "2026-10-14T21:24:20.922Z",
+          "maxAltitude": 89.3930650708671,
+          "targetId": "ngc7000"
+        },
+        {
+          "at": "2026-10-15T01:14:20.922Z",
+          "maxAltitude": 86.32441895474628,
+          "targetId": "m31"
+        },
+        {
+          "at": "2026-10-15T02:04:20.922Z",
+          "maxAltitude": 75.78623688951257,
+          "targetId": "m33"
+        },
+        {
+          "at": "2026-10-14T21:34:20.922Z",
+          "maxAltitude": 75.37816571560732,
+          "targetId": "sh2-129"
+        },
+        {
+          "at": "2026-10-15T04:14:20.922Z",
+          "maxAltitude": 69.19489759176618,
+          "targetId": "m45"
+        },
+        {
+          "at": "2026-10-14T20:54:20.922Z",
+          "maxAltitude": 67.11465195426668,
+          "targetId": "m27"
+        },
+        {
+          "at": "2026-10-15T06:04:20.922Z",
+          "maxAltitude": 67.0295734760298,
+          "targetId": "m1"
+        },
+        {
+          "at": "2026-10-15T06:38:00.368Z",
+          "maxAltitude": 49.75307758007756,
+          "targetId": "ngc2237"
+        },
+        {
+          "at": "2026-10-14T20:54:20.922Z",
+          "maxAltitude": 47.33382264404562,
+          "targetId": "m13"
+        },
+        {
+          "at": "2026-10-15T03:34:20.922Z",
+          "maxAltitude": 45.63967707792916,
+          "targetId": "polaris"
+        },
+        {
+          "at": "2026-10-15T06:04:20.922Z",
+          "maxAltitude": 39.642961497304775,
+          "targetId": "m42"
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 10, "azimuth": 0 },
+                { "altitude": 10, "azimuth": 10 },
+                { "altitude": 10, "azimuth": 20 },
+                { "altitude": 10, "azimuth": 30 },
+                { "altitude": 10, "azimuth": 40 },
+                { "altitude": 10, "azimuth": 50 },
+                { "altitude": 10, "azimuth": 60 },
+                { "altitude": 10, "azimuth": 70 },
+                { "altitude": 10, "azimuth": 80 },
+                { "altitude": 10, "azimuth": 90 },
+                { "altitude": 10, "azimuth": 100 },
+                { "altitude": 10, "azimuth": 110 },
+                { "altitude": 10, "azimuth": 120 },
+                { "altitude": 10, "azimuth": 130 },
+                { "altitude": 10, "azimuth": 140 },
+                { "altitude": 10, "azimuth": 150 },
+                { "altitude": 10, "azimuth": 160 },
+                { "altitude": 10, "azimuth": 170 },
+                { "altitude": 10, "azimuth": 180 },
+                { "altitude": 10, "azimuth": 190 },
+                { "altitude": 10, "azimuth": 200 },
+                { "altitude": 10, "azimuth": 210 },
+                { "altitude": 10, "azimuth": 220 },
+                { "altitude": 35, "azimuth": 230 },
+                { "altitude": 35, "azimuth": 240 },
+                { "altitude": 35, "azimuth": 250 },
+                { "altitude": 35, "azimuth": 260 },
+                { "altitude": 35, "azimuth": 270 },
+                { "altitude": 35, "azimuth": 280 },
+                { "altitude": 35, "azimuth": 290 },
+                { "altitude": 35, "azimuth": 300 },
+                { "altitude": 35, "azimuth": 310 },
+                { "altitude": 35, "azimuth": 320 },
+                { "altitude": 10, "azimuth": 330 },
+                { "altitude": 10, "azimuth": 340 },
+                { "altitude": 10, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "targets": [
+            { "dec": 41.2688, "id": "m31", "ra": 0.7123 },
+            { "dec": 30.6602, "id": "m33", "ra": 1.5641 },
+            { "dec": -5.3911, "id": "m42", "ra": 5.5881 },
+            { "dec": 44.3333, "id": "ngc7000", "ra": 20.9737 },
+            { "dec": 36.4613, "id": "m13", "ra": 16.6949 },
+            { "dec": 24.1051, "id": "m45", "ra": 3.7914 },
+            { "dec": -24.3833, "id": "m8", "ra": 18.0625 },
+            { "dec": -47.4796, "id": "ngc5139", "ra": 13.4463 },
+            { "dec": 89.2641, "id": "polaris", "ra": 2.5303 },
+            { "dec": 22.0145, "id": "m1", "ra": 5.5755 },
+            { "dec": 22.7211, "id": "m27", "ra": 19.9937 },
+            { "dec": 47.1953, "id": "m51", "ra": 13.4979 },
+            { "dec": 5, "id": "ngc2237", "ra": 6.5333 },
+            { "dec": 59.5, "id": "sh2-129", "ra": 21.2 }
+          ]
+        }
+      ],
+      "id": "western-mask-hides-the-setting-ones",
+      "result": [
+        {
+          "at": "2026-10-14T21:24:20.922Z",
+          "maxAltitude": 89.3930650708671,
+          "targetId": "ngc7000"
+        },
+        {
+          "at": "2026-10-15T01:14:20.922Z",
+          "maxAltitude": 86.32441895474628,
+          "targetId": "m31"
+        },
+        {
+          "at": "2026-10-15T02:04:20.922Z",
+          "maxAltitude": 75.78623688951257,
+          "targetId": "m33"
+        },
+        {
+          "at": "2026-10-14T21:34:20.922Z",
+          "maxAltitude": 75.37816571560732,
+          "targetId": "sh2-129"
+        },
+        {
+          "at": "2026-10-15T04:14:20.922Z",
+          "maxAltitude": 69.19489759176618,
+          "targetId": "m45"
+        },
+        {
+          "at": "2026-10-14T20:54:20.922Z",
+          "maxAltitude": 67.11465195426668,
+          "targetId": "m27"
+        },
+        {
+          "at": "2026-10-15T06:04:20.922Z",
+          "maxAltitude": 67.0295734760298,
+          "targetId": "m1"
+        },
+        {
+          "at": "2026-10-15T06:38:00.368Z",
+          "maxAltitude": 49.75307758007756,
+          "targetId": "ngc2237"
+        },
+        {
+          "at": "2026-10-14T20:54:20.922Z",
+          "maxAltitude": 47.33382264404562,
+          "targetId": "m13"
+        },
+        {
+          "at": "2026-10-15T03:34:20.922Z",
+          "maxAltitude": 45.63967707792916,
+          "targetId": "polaris"
+        },
+        {
+          "at": "2026-10-15T06:04:20.922Z",
+          "maxAltitude": 39.642961497304775,
+          "targetId": "m42"
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 70, "azimuth": 0 },
+                { "altitude": 70, "azimuth": 10 },
+                { "altitude": 70, "azimuth": 20 },
+                { "altitude": 70, "azimuth": 30 },
+                { "altitude": 70, "azimuth": 40 },
+                { "altitude": 70, "azimuth": 50 },
+                { "altitude": 70, "azimuth": 60 },
+                { "altitude": 70, "azimuth": 70 },
+                { "altitude": 70, "azimuth": 80 },
+                { "altitude": 70, "azimuth": 90 },
+                { "altitude": 70, "azimuth": 100 },
+                { "altitude": 70, "azimuth": 110 },
+                { "altitude": 70, "azimuth": 120 },
+                { "altitude": 70, "azimuth": 130 },
+                { "altitude": 70, "azimuth": 140 },
+                { "altitude": 70, "azimuth": 150 },
+                { "altitude": 70, "azimuth": 160 },
+                { "altitude": 70, "azimuth": 170 },
+                { "altitude": 70, "azimuth": 180 },
+                { "altitude": 70, "azimuth": 190 },
+                { "altitude": 70, "azimuth": 200 },
+                { "altitude": 70, "azimuth": 210 },
+                { "altitude": 70, "azimuth": 220 },
+                { "altitude": 70, "azimuth": 230 },
+                { "altitude": 70, "azimuth": 240 },
+                { "altitude": 70, "azimuth": 250 },
+                { "altitude": 70, "azimuth": 260 },
+                { "altitude": 70, "azimuth": 270 },
+                { "altitude": 70, "azimuth": 280 },
+                { "altitude": 70, "azimuth": 290 },
+                { "altitude": 70, "azimuth": 300 },
+                { "altitude": 70, "azimuth": 310 },
+                { "altitude": 70, "azimuth": 320 },
+                { "altitude": 70, "azimuth": 330 },
+                { "altitude": 70, "azimuth": 340 },
+                { "altitude": 70, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "targets": [
+            { "dec": 41.2688, "id": "m31", "ra": 0.7123 },
+            { "dec": 30.6602, "id": "m33", "ra": 1.5641 },
+            { "dec": -5.3911, "id": "m42", "ra": 5.5881 },
+            { "dec": 44.3333, "id": "ngc7000", "ra": 20.9737 },
+            { "dec": 36.4613, "id": "m13", "ra": 16.6949 },
+            { "dec": 24.1051, "id": "m45", "ra": 3.7914 },
+            { "dec": -24.3833, "id": "m8", "ra": 18.0625 },
+            { "dec": -47.4796, "id": "ngc5139", "ra": 13.4463 },
+            { "dec": 89.2641, "id": "polaris", "ra": 2.5303 },
+            { "dec": 22.0145, "id": "m1", "ra": 5.5755 },
+            { "dec": 22.7211, "id": "m27", "ra": 19.9937 },
+            { "dec": 47.1953, "id": "m51", "ra": 13.4979 },
+            { "dec": 5, "id": "ngc2237", "ra": 6.5333 },
+            { "dec": 59.5, "id": "sh2-129", "ra": 21.2 }
+          ]
+        }
+      ],
+      "id": "a-high-mask-keeps-the-highest",
+      "result": [
+        {
+          "at": "2026-10-14T21:24:20.922Z",
+          "maxAltitude": 89.3930650708671,
+          "targetId": "ngc7000"
+        },
+        {
+          "at": "2026-10-15T01:14:20.922Z",
+          "maxAltitude": 86.32441895474628,
+          "targetId": "m31"
+        },
+        {
+          "at": "2026-10-15T02:04:20.922Z",
+          "maxAltitude": 75.78623688951257,
+          "targetId": "m33"
+        },
+        {
+          "at": "2026-10-14T21:34:20.922Z",
+          "maxAltitude": 75.37816571560732,
+          "targetId": "sh2-129"
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "from": "2026-10-14T23:00:00.000Z",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "targets": [
+            { "dec": 41.2688, "id": "m31", "ra": 0.7123 },
+            { "dec": 30.6602, "id": "m33", "ra": 1.5641 },
+            { "dec": -5.3911, "id": "m42", "ra": 5.5881 },
+            { "dec": 44.3333, "id": "ngc7000", "ra": 20.9737 },
+            { "dec": 36.4613, "id": "m13", "ra": 16.6949 },
+            { "dec": 24.1051, "id": "m45", "ra": 3.7914 },
+            { "dec": -24.3833, "id": "m8", "ra": 18.0625 },
+            { "dec": -47.4796, "id": "ngc5139", "ra": 13.4463 },
+            { "dec": 89.2641, "id": "polaris", "ra": 2.5303 },
+            { "dec": 22.0145, "id": "m1", "ra": 5.5755 },
+            { "dec": 22.7211, "id": "m27", "ra": 19.9937 },
+            { "dec": 47.1953, "id": "m51", "ra": 13.4979 },
+            { "dec": 5, "id": "ngc2237", "ra": 6.5333 },
+            { "dec": 59.5, "id": "sh2-129", "ra": 21.2 }
+          ],
+          "to": "2026-10-15T02:00:00.000Z"
+        }
+      ],
+      "id": "only-the-session-hours",
+      "result": [
+        {
+          "at": "2026-10-15T01:14:20.922Z",
+          "maxAltitude": 86.32441895474628,
+          "targetId": "m31"
+        },
+        {
+          "at": "2026-10-15T01:54:20.922Z",
+          "maxAltitude": 75.74533050549523,
+          "targetId": "m33"
+        },
+        {
+          "at": "2026-10-14T23:04:20.922Z",
+          "maxAltitude": 72.47970031427616,
+          "targetId": "ngc7000"
+        },
+        {
+          "at": "2026-10-14T23:04:20.922Z",
+          "maxAltitude": 70.5598316360667,
+          "targetId": "sh2-129"
+        },
+        {
+          "at": "2026-10-15T01:54:20.922Z",
+          "maxAltitude": 54.866687745480064,
+          "targetId": "m45"
+        },
+        {
+          "at": "2026-10-14T23:04:20.922Z",
+          "maxAltitude": 51.06446391693662,
+          "targetId": "m27"
+        },
+        {
+          "at": "2026-10-15T01:54:20.922Z",
+          "maxAltitude": 45.583159764181424,
+          "targetId": "polaris"
+        },
+        {
+          "at": "2026-10-15T01:54:20.922Z",
+          "maxAltitude": 35.103480619988076,
+          "targetId": "m1"
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "limit": 3,
+          "minimumAltitude": 50,
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "targets": [
+            { "dec": 41.2688, "id": "m31", "ra": 0.7123 },
+            { "dec": 30.6602, "id": "m33", "ra": 1.5641 },
+            { "dec": -5.3911, "id": "m42", "ra": 5.5881 },
+            { "dec": 44.3333, "id": "ngc7000", "ra": 20.9737 },
+            { "dec": 36.4613, "id": "m13", "ra": 16.6949 },
+            { "dec": 24.1051, "id": "m45", "ra": 3.7914 },
+            { "dec": -24.3833, "id": "m8", "ra": 18.0625 },
+            { "dec": -47.4796, "id": "ngc5139", "ra": 13.4463 },
+            { "dec": 89.2641, "id": "polaris", "ra": 2.5303 },
+            { "dec": 22.0145, "id": "m1", "ra": 5.5755 },
+            { "dec": 22.7211, "id": "m27", "ra": 19.9937 },
+            { "dec": 47.1953, "id": "m51", "ra": 13.4979 },
+            { "dec": 5, "id": "ngc2237", "ra": 6.5333 },
+            { "dec": 59.5, "id": "sh2-129", "ra": 21.2 }
+          ]
+        }
+      ],
+      "id": "three-at-most-and-a-higher-minimum",
+      "result": [
+        {
+          "at": "2026-10-14T21:24:20.922Z",
+          "maxAltitude": 89.3930650708671,
+          "targetId": "ngc7000"
+        },
+        {
+          "at": "2026-10-15T01:14:20.922Z",
+          "maxAltitude": 86.32441895474628,
+          "targetId": "m31"
+        },
+        {
+          "at": "2026-10-15T02:04:20.922Z",
+          "maxAltitude": 75.78623688951257,
+          "targetId": "m33"
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 10, "azimuth": 0 },
+                { "altitude": 10, "azimuth": 10 },
+                { "altitude": 10, "azimuth": 20 },
+                { "altitude": 10, "azimuth": 30 },
+                { "altitude": 10, "azimuth": 40 },
+                { "altitude": 10, "azimuth": 50 },
+                { "altitude": 10, "azimuth": 60 },
+                { "altitude": 10, "azimuth": 70 },
+                { "altitude": 10, "azimuth": 80 },
+                { "altitude": 10, "azimuth": 90 },
+                { "altitude": 10, "azimuth": 100 },
+                { "altitude": 10, "azimuth": 110 },
+                { "altitude": 10, "azimuth": 120 },
+                { "altitude": 10, "azimuth": 130 },
+                { "altitude": 10, "azimuth": 140 },
+                { "altitude": 10, "azimuth": 150 },
+                { "altitude": 10, "azimuth": 160 },
+                { "altitude": 10, "azimuth": 170 },
+                { "altitude": 10, "azimuth": 180 },
+                { "altitude": 10, "azimuth": 190 },
+                { "altitude": 10, "azimuth": 200 },
+                { "altitude": 10, "azimuth": 210 },
+                { "altitude": 10, "azimuth": 220 },
+                { "altitude": 35, "azimuth": 230 },
+                { "altitude": 35, "azimuth": 240 },
+                { "altitude": 35, "azimuth": 250 },
+                { "altitude": 35, "azimuth": 260 },
+                { "altitude": 35, "azimuth": 270 },
+                { "altitude": 35, "azimuth": 280 },
+                { "altitude": 35, "azimuth": 290 },
+                { "altitude": 35, "azimuth": 300 },
+                { "altitude": 35, "azimuth": 310 },
+                { "altitude": 35, "azimuth": 320 },
+                { "altitude": 10, "azimuth": 330 },
+                { "altitude": 10, "azimuth": 340 },
+                { "altitude": 10, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes"
+          },
+          "targets": [
+            { "dec": 41.2688, "id": "m31", "ra": 0.7123 },
+            { "dec": 30.6602, "id": "m33", "ra": 1.5641 },
+            { "dec": -5.3911, "id": "m42", "ra": 5.5881 },
+            { "dec": 44.3333, "id": "ngc7000", "ra": 20.9737 },
+            { "dec": 36.4613, "id": "m13", "ra": 16.6949 },
+            { "dec": 24.1051, "id": "m45", "ra": 3.7914 },
+            { "dec": -24.3833, "id": "m8", "ra": 18.0625 },
+            { "dec": -47.4796, "id": "ngc5139", "ra": 13.4463 },
+            { "dec": 89.2641, "id": "polaris", "ra": 2.5303 },
+            { "dec": 22.0145, "id": "m1", "ra": 5.5755 },
+            { "dec": 22.7211, "id": "m27", "ra": 19.9937 },
+            { "dec": 47.1953, "id": "m51", "ra": 13.4979 },
+            { "dec": 5, "id": "ngc2237", "ra": 6.5333 },
+            { "dec": 59.5, "id": "sh2-129", "ra": 21.2 }
+          ]
+        }
+      ],
+      "id": "place-without-time-zone-anchors-on-longitude",
+      "result": [
+        {
+          "at": "2026-10-14T21:24:20.923Z",
+          "maxAltitude": 89.39306618431398,
+          "targetId": "ngc7000"
+        },
+        {
+          "at": "2026-10-15T01:14:20.923Z",
+          "maxAltitude": 86.32441827416159,
+          "targetId": "m31"
+        },
+        {
+          "at": "2026-10-15T02:04:20.923Z",
+          "maxAltitude": 75.78623673183716,
+          "targetId": "m33"
+        },
+        {
+          "at": "2026-10-14T21:34:20.923Z",
+          "maxAltitude": 75.37816583340724,
+          "targetId": "sh2-129"
+        },
+        {
+          "at": "2026-10-15T04:14:20.923Z",
+          "maxAltitude": 69.19489758742404,
+          "targetId": "m45"
+        },
+        {
+          "at": "2026-10-14T20:54:20.923Z",
+          "maxAltitude": 67.11465112456747,
+          "targetId": "m27"
+        },
+        {
+          "at": "2026-10-15T06:04:20.923Z",
+          "maxAltitude": 67.02957337293944,
+          "targetId": "m1"
+        },
+        {
+          "at": "2026-10-15T06:38:00.368Z",
+          "maxAltitude": 49.75307758007756,
+          "targetId": "ngc2237"
+        },
+        {
+          "at": "2026-10-14T20:54:20.923Z",
+          "maxAltitude": 47.333819726405736,
+          "targetId": "m13"
+        },
+        {
+          "at": "2026-10-15T03:34:20.923Z",
+          "maxAltitude": 45.639677077452866,
+          "targetId": "polaris"
+        },
+        {
+          "at": "2026-10-15T06:04:20.923Z",
+          "maxAltitude": 39.64296144885139,
+          "targetId": "m42"
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "minimumAltitude": 89,
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "targets": [
+            { "dec": 41.2688, "id": "m31", "ra": 0.7123 },
+            { "dec": 30.6602, "id": "m33", "ra": 1.5641 },
+            { "dec": -5.3911, "id": "m42", "ra": 5.5881 }
+          ]
+        }
+      ],
+      "id": "nothing-above-a-minimum-of-eighty-nine",
+      "result": []
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "targets": [
+            { "id": "x" },
+            { "dec": 1, "id": "y", "ra": "a" },
+            { "dec": 41.2688, "id": "m31", "ra": 0.7123 }
+          ]
+        }
+      ],
+      "id": "rows-without-coordinates-are-skipped",
+      "result": [
+        {
+          "at": "2026-10-15T01:14:20.922Z",
+          "maxAltitude": 86.32441895474628,
+          "targetId": "m31"
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "date": "2026-02-30",
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "targets": [
+            { "dec": 41.2688, "id": "m31", "ra": 0.7123 },
+            { "dec": 30.6602, "id": "m33", "ra": 1.5641 },
+            { "dec": -5.3911, "id": "m42", "ra": 5.5881 },
+            { "dec": 44.3333, "id": "ngc7000", "ra": 20.9737 },
+            { "dec": 36.4613, "id": "m13", "ra": 16.6949 },
+            { "dec": 24.1051, "id": "m45", "ra": 3.7914 },
+            { "dec": -24.3833, "id": "m8", "ra": 18.0625 },
+            { "dec": -47.4796, "id": "ngc5139", "ra": 13.4463 },
+            { "dec": 89.2641, "id": "polaris", "ra": 2.5303 },
+            { "dec": 22.0145, "id": "m1", "ra": 5.5755 },
+            { "dec": 22.7211, "id": "m27", "ra": 19.9937 },
+            { "dec": 47.1953, "id": "m51", "ra": 13.4979 },
+            { "dec": 5, "id": "ngc2237", "ra": 6.5333 },
+            { "dec": 59.5, "id": "sh2-129", "ra": 21.2 }
+          ]
+        }
+      ],
+      "id": "a-day-that-does-not-exist",
+      "result": []
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-14",
+          "place": { "name": "Nowhere" },
+          "targets": [
+            { "dec": 41.2688, "id": "m31", "ra": 0.7123 },
+            { "dec": 30.6602, "id": "m33", "ra": 1.5641 },
+            { "dec": -5.3911, "id": "m42", "ra": 5.5881 },
+            { "dec": 44.3333, "id": "ngc7000", "ra": 20.9737 },
+            { "dec": 36.4613, "id": "m13", "ra": 16.6949 },
+            { "dec": 24.1051, "id": "m45", "ra": 3.7914 },
+            { "dec": -24.3833, "id": "m8", "ra": 18.0625 },
+            { "dec": -47.4796, "id": "ngc5139", "ra": 13.4463 },
+            { "dec": 89.2641, "id": "polaris", "ra": 2.5303 },
+            { "dec": 22.0145, "id": "m1", "ra": 5.5755 },
+            { "dec": 22.7211, "id": "m27", "ra": 19.9937 },
+            { "dec": 47.1953, "id": "m51", "ra": 13.4979 },
+            { "dec": 5, "id": "ngc2237", "ra": 6.5333 },
+            { "dec": 59.5, "id": "sh2-129", "ra": 21.2 }
+          ]
+        }
+      ],
+      "id": "place-without-coordinates",
+      "result": []
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "visible-that-night"
+}

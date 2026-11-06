@@ -1,0 +1,322 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "date": "2030-01-01",
+          "plans": []
+        }
+      ],
+      "id": "no-plan",
+      "result": "allowed"
+    },
+    {
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "date": "2030-01-01",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "pending"
+            }
+          ]
+        }
+      ],
+      "id": "same-night-another-place",
+      "result": "night"
+    },
+    {
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "date": "2030-01-02",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "pending"
+            }
+          ]
+        }
+      ],
+      "id": "another-night",
+      "result": "allowed"
+    },
+    {
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "date": "2030-01-01",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "executed"
+            }
+          ]
+        }
+      ],
+      "id": "executed",
+      "result": "night"
+    },
+    {
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "date": "2030-01-01",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "partial"
+            }
+          ]
+        }
+      ],
+      "id": "partial",
+      "result": "night"
+    },
+    {
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "date": "2030-01-01",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "abandoned"
+            }
+          ]
+        }
+      ],
+      "id": "abandoned",
+      "result": "allowed"
+    },
+    {
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "date": "2030-01-01",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "archived"
+            }
+          ]
+        }
+      ],
+      "id": "archived",
+      "result": "allowed"
+    },
+    {
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "date": "2030-01-02",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "executed"
+            }
+          ]
+        }
+      ],
+      "id": "executed-another-night",
+      "result": "allowed"
+    },
+    {
+      "args": [
+        {
+          "capabilities": { "planner.multiple": false, "sync.plan_limit": 1 },
+          "date": "2030-01-02",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "executed"
+            }
+          ]
+        }
+      ],
+      "id": "executed-is-not-a-guard-slot",
+      "result": "allowed"
+    },
+    {
+      "args": [
+        {
+          "capabilities": { "planner.multiple": true, "sync.plan_limit": 1000 },
+          "date": "2030-01-01",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "executed"
+            }
+          ]
+        }
+      ],
+      "id": "executed-and-multiple",
+      "result": "allowed"
+    },
+    {
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "date": "2030-01-01",
+          "planId": "a",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "executed"
+            }
+          ]
+        }
+      ],
+      "id": "edit-own-executed-night",
+      "result": "allowed"
+    },
+    {
+      "args": [
+        {
+          "capabilities": { "planner.multiple": true, "sync.plan_limit": 1000 },
+          "date": "2030-01-01",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "pending"
+            }
+          ]
+        }
+      ],
+      "id": "multiple",
+      "result": "allowed"
+    },
+    {
+      "args": [
+        {
+          "capabilities": { "planner.multiple": false, "sync.plan_limit": 1 },
+          "date": "2030-01-02",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "pending"
+            }
+          ]
+        }
+      ],
+      "id": "guard",
+      "result": "guard"
+    },
+    {
+      "args": [
+        {
+          "capabilities": { "planner.multiple": false, "sync.plan_limit": 0 },
+          "date": "2030-01-02",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "pending"
+            }
+          ]
+        }
+      ],
+      "id": "zero-guard",
+      "result": "allowed"
+    },
+    {
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "date": null,
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "pending"
+            }
+          ]
+        }
+      ],
+      "id": "undated",
+      "result": "allowed"
+    },
+    {
+      "args": [
+        {
+          "capabilities": {
+            "planner.multiple": false,
+            "sync.plan_limit": 1000
+          },
+          "date": "2030-01-01",
+          "planId": "a",
+          "plans": [
+            {
+              "date": "2030-01-01",
+              "id": "a",
+              "place": "A",
+              "status": "pending"
+            }
+          ]
+        }
+      ],
+      "id": "edit-own-night",
+      "result": "allowed"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "capability-plan-night-limit"
+}

@@ -1,0 +1,426 @@
+{
+  "star-hip-91262.fr": {
+    "id": "star-hip-91262",
+    "designation": "Vega",
+    "aliases": [
+      "Vega",
+      "α Lyr",
+      "α Lyrae",
+      "Alpha Lyrae",
+      "HR 7001",
+      "HD 172167",
+      "HIP 91262"
+    ],
+    "commonNames": ["Vega", "Véga", "ベガ", "Wega", "Вега", "织女一", "織女一"],
+    "typeKey": "Étoile brillante",
+    "constellationKey": "Lyr",
+    "coordinate": {
+      "ra": 18.615533,
+      "dec": 38.78236
+    },
+    "apparentSizeArcmin": null,
+    "magnitude": 0.03,
+    "surfaceBrightness": null,
+    "catalogues": ["BrightStars"],
+    "catalogue": "BrightStars",
+    "isBest": false,
+    "isExtended": false,
+    "distance": {
+      "lightYears": 25,
+      "source": "parallax",
+      "reference": "Hipparcos parallax, about 130.23 mas"
+    },
+    "stellar": {
+      "hip": 91262,
+      "hr": 7001,
+      "hd": 172167,
+      "properName": "Vega",
+      "nameKind": "iau",
+      "bayer": "α Lyr",
+      "bayerGenitive": "α Lyrae",
+      "names": {
+        "en": "Vega",
+        "fr": "Véga",
+        "ja": "ベガ",
+        "de": "Wega",
+        "es": "Vega",
+        "it": "Vega",
+        "pt-BR": "Vega",
+        "ru": "Вега",
+        "zh-Hans": "织女一",
+        "zh-Hant": "織女一"
+      },
+      "colorIndexBV": -0.001,
+      "spectralType": "A0 V",
+      "distanceIsEstimate": false,
+      "epoch": "J2000.0"
+    },
+    "name": "Véga",
+    "title": "Véga",
+    "type": "Étoile brillante",
+    "constellation": "Lyre",
+    "story": "Son nom arabe, al-nasr al-wāqiʿ, signifie « l’aigle qui plonge ». Ce fut la première étoile autre que le Soleil à être photographiée, en 1850, et elle a longtemps servi de référence à l’échelle des magnitudes. À 25 années-lumière, cette étoile blanche tourne vite sur elle-même ; nous la voyons presque par son pôle, entourée d’un disque de poussières. Elle est le coin le plus brillant du grand triangle qu’elle forme avec Deneb et Altaïr.",
+    "storyParagraphs": [
+      "Son nom arabe, al-nasr al-wāqiʿ, signifie « l’aigle qui plonge ». Ce fut la première étoile autre que le Soleil à être photographiée, en 1850, et elle a longtemps servi de référence à l’échelle des magnitudes. À 25 années-lumière, cette étoile blanche tourne vite sur elle-même ; nous la voyons presque par son pôle, entourée d’un disque de poussières. Elle est le coin le plus brillant du grand triangle qu’elle forme avec Deneb et Altaïr."
+    ],
+    "researchSources": [],
+    "researchTier": null,
+    "observingGuide": null,
+    "apparentSizeLabel": null,
+    "caldwellReference": null,
+    "planVisualOnly": true,
+    "planExcluded": false,
+    "visibleFromNorthernHemisphere": true,
+    "visibleFromSouthernHemisphere": false,
+    "photoThumbnailUrl": null,
+    "dssThumbnailUrl": null,
+    "premiumThumbnailUrl": null,
+    "visualThumbnailUrl": null,
+    "visualPreviewThumbnailUrl": null,
+    "photoImageCredit": null,
+    "photoImageSourceUrl": null,
+    "dssImageCredit": null,
+    "premiumImageCredit": null,
+    "visualImageCredit": null,
+    "visualImageSourceUrl": null,
+    "visualPreviewImageCredit": null,
+    "visualPreviewImageSourceUrl": null,
+    "thumbnailUrl": null,
+    "description": "Son nom arabe, al-nasr al-wāqiʿ, signifie « l’aigle qui plonge ». Ce fut la première étoile autre que le Soleil à être photographiée, en 1850, et elle a longtemps servi de référence à l’échelle des magnitudes. À 25 années-lumière, cette étoile blanche tourne vite sur elle-même ; nous la voyons presque par son pôle, entourée d’un disque de poussières. Elle est le coin le plus brillant du grand triangle qu’elle forme avec Deneb et Altaïr.",
+    "storySections": [
+      {
+        "heading": null,
+        "paragraphs": [
+          "Son nom arabe, al-nasr al-wāqiʿ, signifie « l’aigle qui plonge ». Ce fut la première étoile autre que le Soleil à être photographiée, en 1850, et elle a longtemps servi de référence à l’échelle des magnitudes. À 25 années-lumière, cette étoile blanche tourne vite sur elle-même ; nous la voyons presque par son pôle, entourée d’un disque de poussières. Elle est le coin le plus brillant du grand triangle qu’elle forme avec Deneb et Altaïr."
+        ]
+      }
+    ]
+  },
+  "constellation-lyr.fr": {
+    "id": "constellation-lyr",
+    "designation": "Lyra",
+    "aliases": ["Lyra", "Lyr", "Lyre"],
+    "commonNames": [
+      "Lyra",
+      "Lyre",
+      "こと座",
+      "Leier",
+      "Lira",
+      "Лира",
+      "天琴座"
+    ],
+    "typeKey": "Constellation",
+    "constellationKey": "Lyr",
+    "coordinate": {
+      "ra": 18.8058,
+      "dec": 35.767
+    },
+    "apparentSizeArcmin": null,
+    "magnitude": null,
+    "surfaceBrightness": null,
+    "catalogues": ["Constellations"],
+    "catalogue": "Constellations",
+    "isBest": false,
+    "isExtended": false,
+    "constellationInfo": {
+      "abbreviation": "Lyr",
+      "latinName": "Lyra",
+      "genitive": "Lyrae",
+      "names": {
+        "en": "Lyra",
+        "fr": "Lyre",
+        "ja": "こと座",
+        "de": "Leier",
+        "es": "Lira",
+        "it": "Lira",
+        "pt-BR": "Lira",
+        "ru": "Лира",
+        "zh-Hans": "天琴座",
+        "zh-Hant": "天琴座"
+      },
+      "linesRadiusDegrees": 3.8,
+      "brightStarCount": 1,
+      "hasDrawing": true,
+      "brightStars": {
+        "total": 1,
+        "items": [
+          {
+            "id": "star-hip-91262",
+            "designation": "Vega",
+            "title": "Véga",
+            "name": "Véga",
+            "type": "Étoile brillante",
+            "typeKey": "Étoile brillante",
+            "catalogue": "BrightStars",
+            "constellationKey": "Lyr",
+            "magnitude": 0.03,
+            "coordinate": {
+              "ra": 18.615533,
+              "dec": 38.78236
+            },
+            "isBest": false,
+            "isExtended": false,
+            "bayer": "α Lyr"
+          }
+        ]
+      },
+      "targets": {
+        "total": 0,
+        "items": []
+      }
+    },
+    "name": "Lyre",
+    "title": "Lyre",
+    "type": "Constellation",
+    "constellation": "Lyre",
+    "story": "La Lyre appartient aux 48 constellations du catalogue grec du IIe siècle : la lyre d’Orphée, le musicien de la mythologie grecque. Véga et un petit parallélogramme d’étoiles la signalent ; Véga forme un grand triangle avec Deneb et Altaïr, et sa magnitude de 0,03 en fait la plus brillante de la constellation. On y trouve M57, la nébuleuse de l’Anneau, une nébuleuse planétaire, et l’amas globulaire M56.",
+    "storyParagraphs": [
+      "La Lyre appartient aux 48 constellations du catalogue grec du IIe siècle : la lyre d’Orphée, le musicien de la mythologie grecque. Véga et un petit parallélogramme d’étoiles la signalent ; Véga forme un grand triangle avec Deneb et Altaïr, et sa magnitude de 0,03 en fait la plus brillante de la constellation. On y trouve M57, la nébuleuse de l’Anneau, une nébuleuse planétaire, et l’amas globulaire M56."
+    ],
+    "researchSources": [],
+    "researchTier": null,
+    "observingGuide": null,
+    "apparentSizeLabel": null,
+    "distance": null,
+    "caldwellReference": null,
+    "planVisualOnly": false,
+    "planExcluded": true,
+    "visibleFromNorthernHemisphere": true,
+    "visibleFromSouthernHemisphere": false,
+    "photoThumbnailUrl": null,
+    "dssThumbnailUrl": null,
+    "premiumThumbnailUrl": null,
+    "visualThumbnailUrl": null,
+    "visualPreviewThumbnailUrl": null,
+    "photoImageCredit": null,
+    "photoImageSourceUrl": null,
+    "dssImageCredit": null,
+    "premiumImageCredit": null,
+    "visualImageCredit": null,
+    "visualImageSourceUrl": null,
+    "visualPreviewImageCredit": null,
+    "visualPreviewImageSourceUrl": null,
+    "thumbnailUrl": null,
+    "description": "La Lyre appartient aux 48 constellations du catalogue grec du IIe siècle : la lyre d’Orphée, le musicien de la mythologie grecque. Véga et un petit parallélogramme d’étoiles la signalent ; Véga forme un grand triangle avec Deneb et Altaïr, et sa magnitude de 0,03 en fait la plus brillante de la constellation. On y trouve M57, la nébuleuse de l’Anneau, une nébuleuse planétaire, et l’amas globulaire M56.",
+    "storySections": [
+      {
+        "heading": null,
+        "paragraphs": [
+          "La Lyre appartient aux 48 constellations du catalogue grec du IIe siècle : la lyre d’Orphée, le musicien de la mythologie grecque. Véga et un petit parallélogramme d’étoiles la signalent ; Véga forme un grand triangle avec Deneb et Altaïr, et sa magnitude de 0,03 en fait la plus brillante de la constellation. On y trouve M57, la nébuleuse de l’Anneau, une nébuleuse planétaire, et l’amas globulaire M56."
+        ]
+      }
+    ]
+  },
+  "star-hip-91262.en": {
+    "id": "star-hip-91262",
+    "designation": "Vega",
+    "aliases": [
+      "Vega",
+      "α Lyr",
+      "α Lyrae",
+      "Alpha Lyrae",
+      "HR 7001",
+      "HD 172167",
+      "HIP 91262"
+    ],
+    "commonNames": ["Vega", "Véga", "ベガ", "Wega", "Вега", "织女一", "織女一"],
+    "typeKey": "Étoile brillante",
+    "constellationKey": "Lyr",
+    "coordinate": {
+      "ra": 18.615533,
+      "dec": 38.78236
+    },
+    "apparentSizeArcmin": null,
+    "magnitude": 0.03,
+    "surfaceBrightness": null,
+    "catalogues": ["BrightStars"],
+    "catalogue": "BrightStars",
+    "isBest": false,
+    "isExtended": false,
+    "distance": {
+      "lightYears": 25,
+      "source": "parallax",
+      "reference": "Hipparcos parallax, about 130.23 mas"
+    },
+    "stellar": {
+      "hip": 91262,
+      "hr": 7001,
+      "hd": 172167,
+      "properName": "Vega",
+      "nameKind": "iau",
+      "bayer": "α Lyr",
+      "bayerGenitive": "α Lyrae",
+      "names": {
+        "en": "Vega",
+        "fr": "Véga",
+        "ja": "ベガ",
+        "de": "Wega",
+        "es": "Vega",
+        "it": "Vega",
+        "pt-BR": "Vega",
+        "ru": "Вега",
+        "zh-Hans": "织女一",
+        "zh-Hant": "織女一"
+      },
+      "colorIndexBV": -0.001,
+      "spectralType": "A0 V",
+      "distanceIsEstimate": false,
+      "epoch": "J2000.0"
+    },
+    "name": "Vega",
+    "title": "Vega",
+    "type": "Bright star",
+    "constellation": "Lyra",
+    "story": "Its Arabic name, al-nasr al-wāqiʿ, means the falling or swooping eagle. Vega was the first star other than the Sun to be photographed, in 1850, and it long served as a reference for the magnitude scale. This white star, 25 light-years away, spins fast; we see it nearly pole-on, surrounded by a disk of dust. It is the brightest corner of the large triangle it forms with Deneb and Altair.",
+    "storyParagraphs": [
+      "Its Arabic name, al-nasr al-wāqiʿ, means the falling or swooping eagle. Vega was the first star other than the Sun to be photographed, in 1850, and it long served as a reference for the magnitude scale. This white star, 25 light-years away, spins fast; we see it nearly pole-on, surrounded by a disk of dust. It is the brightest corner of the large triangle it forms with Deneb and Altair."
+    ],
+    "researchSources": [],
+    "researchTier": null,
+    "observingGuide": null,
+    "apparentSizeLabel": null,
+    "caldwellReference": null,
+    "planVisualOnly": true,
+    "planExcluded": false,
+    "visibleFromNorthernHemisphere": true,
+    "visibleFromSouthernHemisphere": false,
+    "photoThumbnailUrl": null,
+    "dssThumbnailUrl": null,
+    "premiumThumbnailUrl": null,
+    "visualThumbnailUrl": null,
+    "visualPreviewThumbnailUrl": null,
+    "photoImageCredit": null,
+    "photoImageSourceUrl": null,
+    "dssImageCredit": null,
+    "premiumImageCredit": null,
+    "visualImageCredit": null,
+    "visualImageSourceUrl": null,
+    "visualPreviewImageCredit": null,
+    "visualPreviewImageSourceUrl": null,
+    "thumbnailUrl": null,
+    "description": "Its Arabic name, al-nasr al-wāqiʿ, means the falling or swooping eagle. Vega was the first star other than the Sun to be photographed, in 1850, and it long served as a reference for the magnitude scale. This white star, 25 light-years away, spins fast; we see it nearly pole-on, surrounded by a disk of dust. It is the brightest corner of the large triangle it forms with Deneb and Altair.",
+    "storySections": [
+      {
+        "heading": null,
+        "paragraphs": [
+          "Its Arabic name, al-nasr al-wāqiʿ, means the falling or swooping eagle. Vega was the first star other than the Sun to be photographed, in 1850, and it long served as a reference for the magnitude scale. This white star, 25 light-years away, spins fast; we see it nearly pole-on, surrounded by a disk of dust. It is the brightest corner of the large triangle it forms with Deneb and Altair."
+        ]
+      }
+    ]
+  },
+  "constellation-lyr.en": {
+    "id": "constellation-lyr",
+    "designation": "Lyra",
+    "aliases": ["Lyra", "Lyr", "Lyre"],
+    "commonNames": [
+      "Lyra",
+      "Lyre",
+      "こと座",
+      "Leier",
+      "Lira",
+      "Лира",
+      "天琴座"
+    ],
+    "typeKey": "Constellation",
+    "constellationKey": "Lyr",
+    "coordinate": {
+      "ra": 18.8058,
+      "dec": 35.767
+    },
+    "apparentSizeArcmin": null,
+    "magnitude": null,
+    "surfaceBrightness": null,
+    "catalogues": ["Constellations"],
+    "catalogue": "Constellations",
+    "isBest": false,
+    "isExtended": false,
+    "constellationInfo": {
+      "abbreviation": "Lyr",
+      "latinName": "Lyra",
+      "genitive": "Lyrae",
+      "names": {
+        "en": "Lyra",
+        "fr": "Lyre",
+        "ja": "こと座",
+        "de": "Leier",
+        "es": "Lira",
+        "it": "Lira",
+        "pt-BR": "Lira",
+        "ru": "Лира",
+        "zh-Hans": "天琴座",
+        "zh-Hant": "天琴座"
+      },
+      "linesRadiusDegrees": 3.8,
+      "brightStarCount": 1,
+      "hasDrawing": true,
+      "brightStars": {
+        "total": 1,
+        "items": [
+          {
+            "id": "star-hip-91262",
+            "designation": "Vega",
+            "title": "Vega",
+            "name": "Vega",
+            "type": "Bright star",
+            "typeKey": "Étoile brillante",
+            "catalogue": "BrightStars",
+            "constellationKey": "Lyr",
+            "magnitude": 0.03,
+            "coordinate": {
+              "ra": 18.615533,
+              "dec": 38.78236
+            },
+            "isBest": false,
+            "isExtended": false,
+            "bayer": "α Lyr"
+          }
+        ]
+      },
+      "targets": {
+        "total": 0,
+        "items": []
+      }
+    },
+    "name": "Lyra",
+    "title": "Lyra",
+    "type": "Constellation",
+    "constellation": "Lyra",
+    "story": "Lyra is one of the 48 constellations of the Greek catalogue of the 2nd century: the lyre of Orpheus, the musician of Greek myth. Vega and a small parallelogram of stars mark it; Vega forms a large triangle with Deneb and Altair, and at magnitude 0.03 it is the brightest star of the constellation. It holds M57, the Ring Nebula, a planetary nebula, and the globular cluster M56.",
+    "storyParagraphs": [
+      "Lyra is one of the 48 constellations of the Greek catalogue of the 2nd century: the lyre of Orpheus, the musician of Greek myth. Vega and a small parallelogram of stars mark it; Vega forms a large triangle with Deneb and Altair, and at magnitude 0.03 it is the brightest star of the constellation. It holds M57, the Ring Nebula, a planetary nebula, and the globular cluster M56."
+    ],
+    "researchSources": [],
+    "researchTier": null,
+    "observingGuide": null,
+    "apparentSizeLabel": null,
+    "distance": null,
+    "caldwellReference": null,
+    "planVisualOnly": false,
+    "planExcluded": true,
+    "visibleFromNorthernHemisphere": true,
+    "visibleFromSouthernHemisphere": false,
+    "photoThumbnailUrl": null,
+    "dssThumbnailUrl": null,
+    "premiumThumbnailUrl": null,
+    "visualThumbnailUrl": null,
+    "visualPreviewThumbnailUrl": null,
+    "photoImageCredit": null,
+    "photoImageSourceUrl": null,
+    "dssImageCredit": null,
+    "premiumImageCredit": null,
+    "visualImageCredit": null,
+    "visualImageSourceUrl": null,
+    "visualPreviewImageCredit": null,
+    "visualPreviewImageSourceUrl": null,
+    "thumbnailUrl": null,
+    "description": "Lyra is one of the 48 constellations of the Greek catalogue of the 2nd century: the lyre of Orpheus, the musician of Greek myth. Vega and a small parallelogram of stars mark it; Vega forms a large triangle with Deneb and Altair, and at magnitude 0.03 it is the brightest star of the constellation. It holds M57, the Ring Nebula, a planetary nebula, and the globular cluster M56.",
+    "storySections": [
+      {
+        "heading": null,
+        "paragraphs": [
+          "Lyra is one of the 48 constellations of the Greek catalogue of the 2nd century: the lyre of Orpheus, the musician of Greek myth. Vega and a small parallelogram of stars mark it; Vega forms a large triangle with Deneb and Altair, and at magnitude 0.03 it is the brightest star of the constellation. It holds M57, the Ring Nebula, a planetary nebula, and the globular cluster M56."
+        ]
+      }
+    ]
+  }
+}

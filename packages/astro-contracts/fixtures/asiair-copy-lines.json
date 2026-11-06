@@ -1,0 +1,105 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "acquisitionText": {
+            "m31": "M 31 line",
+            "m45": "120 s · gain 100 · UV/IR-cut · ≈ 28 poses · suggéré"
+          },
+          "plan": {
+            "items": [
+              {
+                "id": "m45",
+                "startMinute": 200,
+                "target": {
+                  "coordinate": { "dec": 24.116667, "ra": 56.75 },
+                  "designation": "M 45",
+                  "id": "m45"
+                }
+              },
+              {
+                "id": "m31",
+                "startMinute": 0,
+                "target": {
+                  "coordinate": { "dec": 41.26875, "ra": 10.684708 },
+                  "designation": "M 31",
+                  "id": "m31"
+                }
+              },
+              {
+                "angleDegrees": 90,
+                "id": "ngc253",
+                "startMinute": 90,
+                "target": {
+                  "coordinate": { "dec": -25.288, "ra": 11.888 },
+                  "designation": "NGC 253",
+                  "id": "ngc253"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "id": "one-line-per-target-in-the-order-of-the-night",
+      "result": [
+        { "line": "M 31 line", "name": "M 31" },
+        {
+          "line": "120 s · gain 100 · UV/IR-cut · ≈ 28 poses · suggéré",
+          "name": "M 45"
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "plan": {
+            "items": [
+              {
+                "id": "m31",
+                "startMinute": 0,
+                "target": {
+                  "coordinate": { "dec": 41.26875, "ra": 10.684708 },
+                  "designation": "M 31",
+                  "id": "m31"
+                }
+              },
+              {
+                "angleDegrees": 90,
+                "id": "ngc253",
+                "startMinute": 90,
+                "target": {
+                  "coordinate": { "dec": -25.288, "ra": 11.888 },
+                  "designation": "NGC 253",
+                  "id": "ngc253"
+                }
+              },
+              {
+                "id": "veil",
+                "startMinute": 150,
+                "target": {
+                  "coordinate": { "dec": 30.7, "ra": 312.75 },
+                  "designation": "Cygnus <loop> & \"veil\"",
+                  "id": "veil"
+                }
+              },
+              {
+                "id": "m45",
+                "startMinute": 200,
+                "target": {
+                  "coordinate": { "dec": 24.116667, "ra": 56.75 },
+                  "designation": "M 45",
+                  "id": "m45"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "id": "no-text-no-line",
+      "result": []
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "asiair-copy-lines"
+}

@@ -1,0 +1,162 @@
+{
+  "cases": [
+    {
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "name": "Maison",
+          "timeZone": "Europe/Paris"
+        },
+        null,
+        []
+      ],
+      "id": "a-place-with-a-zone-reads-its-own-hours",
+      "result": "23:08 → 05:48"
+    },
+    {
+      "args": [
+        "2026-10-19T14:18:00.000Z",
+        "2026-10-19T14:19:00.000Z",
+        { "latitude": 35.6762, "longitude": 139.6503, "name": "Jardin" },
+        {
+          "latitude": 35.6762,
+          "longitude": 139.6503,
+          "name": "Jardin",
+          "timeZone": "Asia/Tokyo"
+        },
+        []
+      ],
+      "id": "a-place-in-japan-reads-japanese-hours",
+      "result": "23:18 → 23:19"
+    },
+    {
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        { "latitude": 44.5, "longitude": 6.5, "name": "Col des Étoiles" },
+        null,
+        []
+      ],
+      "id": "the-table-gives-the-zone-of-a-position-without-one",
+      "result": "23:08 → 05:48"
+    },
+    {
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        { "latitude": 40.7128, "longitude": -74.006, "name": "Maison" },
+        null,
+        [
+          {
+            "id": "home",
+            "latitude": 40.7128,
+            "longitude": -74.006,
+            "name": "Maison",
+            "timeZone": "America/New_York",
+            "timeZoneSource": "chosen"
+          }
+        ]
+      ],
+      "id": "a-place-the-person-keeps-lends-its-zone",
+      "result": "17:08 → 23:48"
+    },
+    {
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        { "name": "Col des Étoiles" },
+        null,
+        []
+      ],
+      "id": "a-place-with-no-zone-and-no-position-is-in-utc",
+      "result": "21:08 → 03:48 UTC"
+    },
+    {
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        null,
+        null,
+        []
+      ],
+      "id": "a-session-without-a-place-is-in-utc",
+      "result": "21:08 → 03:48 UTC"
+    },
+    {
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-08T03:48:00.000Z",
+        {
+          "latitude": 0,
+          "longitude": 0,
+          "name": "Nulle part",
+          "timeZone": "Etc/UTC",
+          "timeZoneSource": "chosen"
+        },
+        null,
+        []
+      ],
+      "id": "a-zone-of-utc-is-utc-written",
+      "result": "21:08 → 03:48 UTC"
+    },
+    {
+      "args": [
+        "2026-10-07T21:08:00.000Z",
+        "2026-10-07T21:08:00.000Z",
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "name": "Maison",
+          "timeZone": "Europe/Paris"
+        },
+        null,
+        []
+      ],
+      "id": "a-night-that-ends-with-its-start-tells-no-hours",
+      "result": null
+    },
+    {
+      "args": [
+        "2026-10-16T09:29:00.000Z",
+        "2026-10-16T19:23:00.000Z",
+        {
+          "latitude": 35.6762,
+          "longitude": 139.6503,
+          "name": "Love",
+          "timeZone": "Asia/Tokyo"
+        },
+        null,
+        []
+      ],
+      "id": "the-audit-night-in-tokyo-reads-18-29-to-04-23",
+      "result": "18:29 → 04:23"
+    },
+    {
+      "args": [
+        "2026-10-16T09:29:00.000Z",
+        "2026-10-16T19:23:00.000Z",
+        { "latitude": 35.6762, "longitude": 139.6503, "name": "Love" },
+        null,
+        []
+      ],
+      "id": "the-audit-night-by-position-only-reads-the-table-zone",
+      "result": "18:29 → 04:23"
+    },
+    {
+      "args": [
+        "2026-10-16T09:29:00.000Z",
+        "2026-10-16T19:23:00.000Z",
+        { "name": "Love" },
+        null,
+        []
+      ],
+      "id": "the-audit-night-without-a-zone-or-a-position-is-in-utc",
+      "result": "09:29 → 19:23 UTC"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "session-hours"
+}

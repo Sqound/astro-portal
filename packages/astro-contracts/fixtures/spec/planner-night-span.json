@@ -1,0 +1,234 @@
+{
+  "module": "planner-night-span",
+  "package": "portal",
+  "file": "planner/state",
+  "export": "normalizeNightSpan",
+  "cases": [
+    {
+      "id": "absent-stays-absent",
+      "args": [
+        null,
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "not-an-object",
+      "args": [
+        "astronomical",
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "unknown-mode-is-absent",
+      "args": [
+        { "mode": "twilight" },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "astronomical-kept-extra-keys-dropped",
+      "args": [
+        { "mode": "astronomical", "start": "2026-10-14T20:00:00Z" },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-rounded-to-ten-minutes",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-14T20:27:00Z",
+          "end": "2026-10-15T02:16:00Z"
+        },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-already-on-the-grid",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-14T20:30:00.000Z",
+          "end": "2026-10-15T02:20:00.000Z"
+        },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-clamped-to-sunset-and-sunrise",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-14T17:00:00Z",
+          "end": "2026-10-15T09:00:00Z"
+        },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-offset-instants-read-as-utc",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-14T22:04:00+02:00",
+          "end": "2026-10-15T03:55:59.999+02:00"
+        },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-exactly-thirty-minutes-kept",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-14T23:00:00Z",
+          "end": "2026-10-14T23:30:00Z"
+        },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-shorter-than-thirty-minutes",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-14T23:00:00Z",
+          "end": "2026-10-14T23:24:00Z"
+        },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-rounding-makes-it-too-short",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-14T23:06:00Z",
+          "end": "2026-10-14T23:34:00Z"
+        },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-inverted",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-15T02:00:00Z",
+          "end": "2026-10-14T22:00:00Z"
+        },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-outside-the-night",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-15T07:00:00Z",
+          "end": "2026-10-15T09:00:00Z"
+        },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-unreadable-instant",
+      "args": [
+        { "mode": "custom", "start": "tonight", "end": "2026-10-15T02:00:00Z" },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-date-only-is-unreadable",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-14",
+          "end": "2026-10-15T02:00:00Z"
+        },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    },
+    {
+      "id": "custom-without-bounds-only-rounds",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-14T17:01:00Z",
+          "end": "2026-10-15T09:59:00Z"
+        },
+        null
+      ]
+    },
+    {
+      "id": "custom-with-half-bounds",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-14T17:01:00Z",
+          "end": "2026-10-15T09:59:00Z"
+        },
+        { "sunset": "2026-10-14T18:12:31.000Z" }
+      ]
+    },
+    {
+      "id": "custom-half-step-rounds-up",
+      "args": [
+        {
+          "mode": "custom",
+          "start": "2026-10-14T20:25:00Z",
+          "end": "2026-10-15T01:35:00Z"
+        },
+        {
+          "sunset": "2026-10-14T18:12:31.000Z",
+          "sunrise": "2026-10-15T06:05:10.000Z"
+        }
+      ]
+    }
+  ]
+}

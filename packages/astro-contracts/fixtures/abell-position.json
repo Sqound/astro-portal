@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "args": [
+        "A 39          N13220123587   16 27 33.737 +27 54 33.44  47.053  42.483 1989.349    4.51  286.17 CS  "
+      ],
+      "id": "abell-39-j2000",
+      "result": {
+        "coordinate": { "dec": 27.909288888888888, "ra": 16.45937138888889 },
+        "name": "A 39"
+      }
+    },
+    {
+      "args": [
+        "IC 1295                      18 54 37.206 - 8 49 39.08  25.420  -4.714    0.000   14.34  225.16 GEO "
+      ],
+      "id": "negative-declination-spaced",
+      "result": {
+        "coordinate": { "dec": -8.827522222222221, "ra": 18.910335 },
+        "name": "IC 1295"
+      }
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "abell-position"
+}

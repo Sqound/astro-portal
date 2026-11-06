@@ -1,0 +1,157 @@
+{
+  "description": "A free observation: no plan, the field met one target; the session has its events and its target, no debriefing.",
+  "exchange": "session-no-plan",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The 10 August night of `list`.",
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/sessions/00000000-0000-4000-8000-000000000016"
+  },
+  "response": {
+    "body": {
+      "debrief": null,
+      "debriefSummary": {
+        "acquiredMinutes": 60,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "lostByCause": [],
+        "lostMinutes": 0,
+        "perTarget": [
+          {
+            "acquiredMinutes": 60,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-08-10T21:00:00.000Z",
+                "minutes": 60,
+                "pauses": [],
+                "start": "2026-08-10T20:00:00.000Z"
+              }
+            ],
+            "planItemId": null,
+            "plannedMinutes": 0,
+            "targetId": "m42"
+          }
+        ],
+        "plannedMinutes": 0,
+        "segments": {
+          "end": 29773260,
+          "hasAuto": false,
+          "start": 29773200,
+          "targets": [
+            {
+              "end": null,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29773260, "start": 29773200 }
+              ],
+              "segments": [
+                { "end": 29773260, "kind": "acquired", "start": 29773200 }
+              ],
+              "start": null,
+              "targetId": "m42"
+            }
+          ]
+        }
+      },
+      "events": {
+        "events": [
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0022",
+            "originDeviceId": null,
+            "payload": { "targetId": "m42" },
+            "receivedAt": "2026-10-14T01:00:00.000Z",
+            "recordedAt": "2026-08-10T20:00:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000016",
+            "timing": "observed",
+            "type": "target_started"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0023",
+            "originDeviceId": null,
+            "payload": { "targetId": "m42" },
+            "receivedAt": "2026-10-14T01:00:00.000Z",
+            "recordedAt": "2026-08-10T21:00:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000016",
+            "timing": "observed",
+            "type": "target_finished"
+          }
+        ],
+        "hasMore": false,
+        "nextSince": "2026-10-14T01:00:00.000Z",
+        "sessionId": "00000000-0000-4000-8000-000000000016"
+      },
+      "guidingLosses": null,
+      "guidingLossesReason": "no_analysis",
+      "guidingSeries": [],
+      "guidingSummary": null,
+      "guidingTrace": null,
+      "night": {
+        "equipment": { "source": "night", "value": null },
+        "finishedAt": {
+          "source": "night",
+          "value": "2026-08-10T22:00:00.000Z"
+        },
+        "notes": { "source": "night", "value": null },
+        "place": { "source": "night", "value": null },
+        "startedAt": { "source": "night", "value": "2026-08-10T20:00:00.000Z" },
+        "targetIds": { "source": "night", "value": null },
+        "title": { "source": "night", "value": null }
+      },
+      "plan": null,
+      "posesSummary": null,
+      "qualitySummary": null,
+      "readOnly": false,
+      "session": {
+        "clientSessionId": "01J8Z3K9QZ6N3S6R3E6G8H0021",
+        "createdAt": "2026-10-14T01:00:00.000Z",
+        "eveningDate": "2026-08-10",
+        "eventCount": 2,
+        "finishedAt": "2026-08-10T22:00:00.000Z",
+        "id": "00000000-0000-4000-8000-000000000016",
+        "origin": "execution",
+        "outcome": null,
+        "pendingSupplementCount": 0,
+        "planId": null,
+        "projectId": null,
+        "reworkRevision": 0,
+        "reworkedAt": null,
+        "startedAt": "2026-08-10T20:00:00.000Z",
+        "status": "finished",
+        "supplementCount": 0,
+        "updatedAt": "2026-10-14T01:00:00.000Z"
+      },
+      "steps": [],
+      "supplements": [],
+      "targets": [
+        {
+          "acquiredSeconds": 3600,
+          "captureId": null,
+          "exposureFamilies": null,
+          "exposureSeconds": null,
+          "filter": null,
+          "finishedAt": "2026-08-10T21:00:00.000Z",
+          "frameCount": null,
+          "label": "M 42",
+          "outcome": null,
+          "passages": null,
+          "planItemId": null,
+          "plannedSeconds": null,
+          "plannedSlot": null,
+          "reason": null,
+          "slot": null,
+          "startedAt": "2026-08-10T20:00:00.000Z",
+          "state": "added",
+          "targetId": "m42",
+          "thumbnailUrl": null
+        }
+      ],
+      "zone": { "timeZone": null, "utcOffsetMinutes": null }
+    },
+    "schema": "session.schema.json#/$defs/detail",
+    "status": 200
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "exchange": "list-multi-night-only",
+  "description": "The same list narrowed to the sessions of multi-night plans (`multiNightOnly=true`): the two sessions of the finished plan, grouped, and the one of the active plan, loose with its plan's name.",
+  "given": "As `list`.",
+  "handler": "route:journal",
+  "phase": "read",
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/journal?multiNightOnly=true"
+  },
+  "schema": "journal.schema.json#/$defs/list"
+}

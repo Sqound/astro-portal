@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/mount-parked.schema.json",
+  "title": "Astro Portal session event payload: mount_parked",
+  "description": "A park the person asked of the mount: `requested` — the command was sent; `parked` — the mount then reported it parked; `refused` — the mount refused it itself. Parking is never done by the application on its own, so this event always follows a gesture. Recorded by the application from the driver's own code path with the night's clock; every field but the ones marked required is optional, and a reader tolerates a payload without them. Private in a shared night. See session-events.md.",
+  "type": "object",
+  "properties": {
+    "outcome": {
+      "type": "string",
+      "enum": ["requested", "parked", "refused"]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Optional, with `outcome: refused`: a short machine code of the cause (`below_horizon`, `parked`, `not_aligned`, `zenith`…), never a sentence."
+    },
+    "protocol": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Optional: the mount's protocol as the application names it (`LX200`, `Alpaca`, `INDI`, `SynScan`, `iOptron`, `NexStar`)."
+    }
+  },
+  "required": ["outcome"],
+  "additionalProperties": false
+}

@@ -1,0 +1,202 @@
+{
+  "module": "constellation-at",
+  "export": "constellationAt",
+  "cases": [
+    {
+      "id": "north-pole",
+      "args": [0, 90]
+    },
+    {
+      "id": "near-north-pole",
+      "args": [123, 89.9]
+    },
+    {
+      "id": "south-pole",
+      "args": [0, -90]
+    },
+    {
+      "id": "near-south-pole",
+      "args": [200, -89.8]
+    },
+    {
+      "id": "polaris",
+      "args": [37.95, 89.26]
+    },
+    {
+      "id": "sirius",
+      "args": [101.287, -16.716]
+    },
+    {
+      "id": "vega",
+      "args": [279.234, 38.784]
+    },
+    {
+      "id": "betelgeuse",
+      "args": [88.793, 7.407]
+    },
+    {
+      "id": "alpheratz-is-andromedas-not-pegasus",
+      "args": [2.097, 29.09]
+    },
+    {
+      "id": "algenib-pegasus",
+      "args": [3.309, 15.184]
+    },
+    {
+      "id": "elnath-is-the-bulls-not-the-charioteers",
+      "args": [81.573, 28.608]
+    },
+    {
+      "id": "rigil-kentaurus-not-circinus",
+      "args": [219.9, -60.835]
+    },
+    {
+      "id": "rasalhague-ophiuchus",
+      "args": [263.736, 12.56]
+    },
+    {
+      "id": "rasalgethi-hercules",
+      "args": [258.662, 14.39]
+    },
+    {
+      "id": "unukalhai-serpens-caput",
+      "args": [236.067, 6.426]
+    },
+    {
+      "id": "alya-serpens-cauda",
+      "args": [284.054, 4.204]
+    },
+    {
+      "id": "between-the-serpents-ophiuchus",
+      "args": [260, 0]
+    },
+    {
+      "id": "serpens-caput-east-of-the-boundary",
+      "args": [237, 10]
+    },
+    {
+      "id": "serpens-cauda-west-of-aquila",
+      "args": [283, 5]
+    },
+    {
+      "id": "hercules-above-caput",
+      "args": [248, 10]
+    },
+    {
+      "id": "barnards-star-ophiuchus",
+      "args": [269.452, 4.693]
+    },
+    {
+      "id": "crab-nebula",
+      "args": [83.633, 22.015]
+    },
+    {
+      "id": "orion-nebula",
+      "args": [83.822, -5.391]
+    },
+    {
+      "id": "andromeda-galaxy",
+      "args": [10.685, 41.269]
+    },
+    {
+      "id": "horsehead",
+      "args": [85.25, -2.458]
+    },
+    {
+      "id": "omega-centauri",
+      "args": [201.697, -47.48]
+    },
+    {
+      "id": "sagittarius-a",
+      "args": [266.417, -29.008]
+    },
+    {
+      "id": "m13-hercules",
+      "args": [250.423, 36.46]
+    },
+    {
+      "id": "ring-nebula-lyra",
+      "args": [283.396, 33.029]
+    },
+    {
+      "id": "pleiades",
+      "args": [56.75, 24.117]
+    },
+    {
+      "id": "m81-ursa-major",
+      "args": [148.888, 69.065]
+    },
+    {
+      "id": "north-america-nebula-cygnus",
+      "args": [314.7, 44.3]
+    },
+    {
+      "id": "eta-carinae",
+      "args": [161.265, -59.684]
+    },
+    {
+      "id": "acrux-crux",
+      "args": [186.65, -63.099]
+    },
+    {
+      "id": "deneb-cygnus",
+      "args": [310.358, 45.28]
+    },
+    {
+      "id": "antares-scorpius",
+      "args": [247.352, -26.432]
+    },
+    {
+      "id": "mizar-ursa-major",
+      "args": [200.981, 54.925]
+    },
+    {
+      "id": "achernar-eridanus",
+      "args": [24.429, -57.237]
+    },
+    {
+      "id": "vernal-equinox-pisces",
+      "args": [0.5, 0.5]
+    },
+    {
+      "id": "right-ascension-wraps-east",
+      "args": [359.8, 20]
+    },
+    {
+      "id": "right-ascension-wraps-west",
+      "args": [0.2, 20]
+    },
+    {
+      "id": "declination-above-the-pole-is-no-position",
+      "args": [10, 91]
+    },
+    {
+      "id": "declination-below-the-pole-is-no-position",
+      "args": [10, -91]
+    },
+    {
+      "id": "autumn-equinox-virgo",
+      "args": [180.5, 0.5]
+    },
+    {
+      "id": "galactic-centre-region-ophiuchus",
+      "args": [260.5, -24.5]
+    },
+    {
+      "id": "fornax-cluster-region",
+      "args": [54, -35.5]
+    },
+    {
+      "id": "canopus-carina",
+      "args": [95.988, -52.696]
+    },
+    {
+      "id": "small-magellanic-cloud-tucana",
+      "args": [13.19, -72.83]
+    },
+    {
+      "id": "large-magellanic-cloud-dorado",
+      "args": [80.9, -69.75]
+    }
+  ]
+}

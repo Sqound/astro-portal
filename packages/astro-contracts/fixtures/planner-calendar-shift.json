@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "args": [{ "month": 12, "year": 2026 }, 1],
+      "id": "the-next-month-crosses-the-year",
+      "result": { "month": 1, "year": 2027 }
+    },
+    {
+      "args": [{ "month": 1, "year": 2026 }, -1],
+      "id": "the-previous-month-crosses-the-year",
+      "result": { "month": 12, "year": 2025 }
+    },
+    {
+      "args": [{ "month": 9, "year": 2026 }, 0],
+      "id": "no-offset-keeps-the-month",
+      "result": { "month": 9, "year": 2026 }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "planner-calendar-shift"
+}

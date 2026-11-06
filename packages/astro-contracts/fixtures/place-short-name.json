@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "args": ["221B Baker Street, London, England, United Kingdom"],
+      "id": "street-address-falls-through-to-locality",
+      "result": "London"
+    },
+    {
+      "args": ["Eiffel Tower, Paris, Île-de-France, France"],
+      "id": "named-landmark-keeps-its-own-name",
+      "result": "Eiffel Tower"
+    },
+    {
+      "args": ["Reykjavik, Iceland"],
+      "id": "commune-only-two-segments",
+      "result": "Reykjavik"
+    },
+    {
+      "args": ["Yellowstone National Park, Wyoming, United States"],
+      "id": "natural-zone-national-park",
+      "result": "Yellowstone National Park"
+    },
+    {
+      "args": ["Mont Blanc, Chamonix-Mont-Blanc, Haute-Savoie, France"],
+      "id": "natural-zone-summit",
+      "result": "Mont Blanc"
+    },
+    {
+      "args": ["Black Forest, Baden-Württemberg, Germany"],
+      "id": "natural-zone-forest",
+      "result": "Black Forest"
+    },
+    {
+      "args": ["Pacific Ocean"],
+      "id": "single-segment-no-structured-address",
+      "result": "Pacific Ocean"
+    },
+    {
+      "args": ["富士山, 富士吉田市, 山梨県, 日本"],
+      "id": "non-latin-script-named-feature",
+      "result": "富士山"
+    },
+    {
+      "args": ["3 Chome-1 Shinjuku, Shinjuku City, Tokyo, Japan"],
+      "id": "non-latin-street-address-falls-through",
+      "result": "Shinjuku City"
+    },
+    { "args": [""], "id": "empty-label-stays-empty", "result": "" },
+    {
+      "args": [" Val Thorens ,  , Savoie , France "],
+      "id": "whitespace-and-empty-segments-filtered",
+      "result": "Val Thorens"
+    },
+    {
+      "args": ["12B Elm Street, Springfield, Ohio, United States"],
+      "id": "housenumber-with-letter-suffix-falls-through",
+      "result": "Springfield"
+    },
+    {
+      "args": [
+        "Golden Gate Bridge, Lincoln Boulevard, San Francisco, California, United States"
+      ],
+      "id": "point-of-interest-with-full-address-chain",
+      "result": "Golden Gate Bridge"
+    },
+    {
+      "args": ["  Kruger National Park  "],
+      "id": "single-segment-surrounded-by-whitespace",
+      "result": "Kruger National Park"
+    },
+    {
+      "args": ["Großer Mönchsgrat, Schwarzwiesen, Bayern, Deutschland"],
+      "id": "latin-extended-script-named-feature",
+      "result": "Großer Mönchsgrat"
+    },
+    {
+      "args": ["12 Rua das Estrelas, Serra do Céu, Minas Gerais, Brasil"],
+      "id": "latin-extended-street-address-falls-through",
+      "result": "Serra do Céu"
+    },
+    {
+      "args": ["Перевал Звёздный, Заречье, Россия"],
+      "id": "cyrillic-script-named-feature",
+      "result": "Перевал Звёздный"
+    },
+    {
+      "args": ["17 улица Обсерваторная, Заречье, Россия"],
+      "id": "cyrillic-street-address-falls-through",
+      "result": "Заречье"
+    },
+    {
+      "args": ["观星台, 星光镇, 中国"],
+      "id": "han-simplified-script-named-feature",
+      "result": "观星台"
+    },
+    {
+      "args": ["88 星光路, 觀星鎮, 臺灣"],
+      "id": "han-traditional-street-address-falls-through",
+      "result": "觀星鎮"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "place-short-name"
+}

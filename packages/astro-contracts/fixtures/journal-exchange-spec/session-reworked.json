@@ -1,0 +1,15 @@
+{
+  "exchange": "session-reworked",
+  "description": "A session reworked after the fact: its targets reordered, the times, the frames, the filter and the exposure of one of them set, a pause added on another, an observed note placed on a target. `reworkRevision` is 1; the events carry their `rework` mark.",
+  "given": "The 20 September night of `list`, executed and then reworked.",
+  "handler": "route:sessions/[id]",
+  "phase": "read",
+  "params": {
+    "id": "{session:reworked}"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/sessions/{session:reworked}"
+  },
+  "schema": "session.schema.json#/$defs/detail"
+}

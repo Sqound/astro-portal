@@ -1,0 +1,15 @@
+{
+  "exchange": "session-no-plan",
+  "description": "A free observation: no plan, the field met one target; the session has its events and its target, no debriefing.",
+  "given": "The 10 August night of `list`.",
+  "handler": "route:sessions/[id]",
+  "phase": "read",
+  "params": {
+    "id": "{session:no-plan}"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/sessions/{session:no-plan}"
+  },
+  "schema": "session.schema.json#/$defs/detail"
+}

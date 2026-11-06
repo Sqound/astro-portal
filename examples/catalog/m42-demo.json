@@ -1,0 +1,149 @@
+{
+  "id": "m42-demo",
+  "title": "M42 — Grande Nébuleuse d’Orion",
+  "category": "Ciel profond",
+  "objects": ["M42", "NGC 1976"],
+  "tags": ["Démo", "Réfracteur"],
+  "assetBaseNames": [
+    "2026-01-15_M42_20x120s_natural",
+    "2026-01-15_M42_20x120s_presentation",
+    "M42_progression_05x120s_natural",
+    "M42_progression_10x120s_natural"
+  ],
+  "featuredBaseName": "2026-01-15_M42_20x120s_presentation",
+  "referenceBaseName": "2026-01-15_M42_20x120s_natural",
+  "currentIntegration": "20 × 120 s",
+  "currentTotalSeconds": 2400,
+  "moonObservationDates": ["2026-01-15T22:00:00Z"],
+  "skyTarget": {
+    "type": "Nébuleuse en émission et réflexion",
+    "constellation": "Orion"
+  },
+  "acquisition": {
+    "Lieu": "Site de démonstration",
+    "Caméra": "Caméra couleur refroidie · gain 100",
+    "Calibration": "Darks, flats et dark-flats"
+  },
+  "integrations": [
+    {
+      "filter": "Dual-band",
+      "frames": 20,
+      "seconds": 120,
+      "totalSeconds": 2400
+    }
+  ],
+  "equipment": {
+    "Télescope": "Réfracteur de démonstration — 80 mm",
+    "Caméra": "Caméra couleur de démonstration",
+    "Monture": "Monture équatoriale",
+    "Filtre": "Dual-band"
+  },
+  "processing": {
+    "profile": "Présentation",
+    "pipeline": "Calibration, alignement, empilement et étirement",
+    "tools": "Logiciel d’empilement · traitement d’image"
+  },
+  "description": [
+    "M42 est une vaste région de formation stellaire visible dans l’épée d’Orion. Le gaz ionisé entoure de jeunes étoiles massives tandis que les poussières dessinent des structures sombres.",
+    "Cette fiche est fournie uniquement comme exemple de configuration. L’image est une illustration synthétique et ne constitue pas une donnée astronomique."
+  ],
+  "technicalDescription": [
+    "Exemple de vingt poses de 120 secondes présenté pour documenter le modèle de métadonnées du portail."
+  ],
+  "assetMetadata": [
+    {
+      "baseName": "2026-01-15_M42_20x120s_natural",
+      "assetLabel": "Rendu naturel — courbe brute",
+      "variant": "Rendu naturel — courbe brute",
+      "renderFamily": "Rendu naturel",
+      "colorCurve": "brute",
+      "kind": "reference",
+      "date": "2026-01-15",
+      "integration": "20 × 120 s",
+      "totalSeconds": 2400,
+      "sky": {
+        "ra": 83.822,
+        "dec": -5.391,
+        "fieldWidth": 2.4,
+        "fieldHeight": 1.5,
+        "scale": 3.2,
+        "orientation": 0
+      }
+    },
+    {
+      "baseName": "2026-01-15_M42_20x120s_presentation",
+      "assetLabel": "Rendu naturel — courbe de présentation",
+      "variant": "Rendu naturel — courbe de présentation",
+      "renderFamily": "Rendu naturel",
+      "colorCurve": "de présentation",
+      "kind": "presentation",
+      "date": "2026-01-15",
+      "integration": "20 × 120 s",
+      "totalSeconds": 2400,
+      "sky": {
+        "ra": 83.822,
+        "dec": -5.391,
+        "fieldWidth": 2.4,
+        "fieldHeight": 1.5,
+        "scale": 3.2,
+        "orientation": 0
+      }
+    }
+  ],
+  "progressions": [
+    {
+      "baseName": "M42_progression_05x120s_natural",
+      "progressionLabel": "Palier 1",
+      "progressionPeriod": "15 janvier 2026, 21:00 → 21:10",
+      "progressionFilter": "Dual-band",
+      "renderFamily": "Rendu naturel",
+      "colorCurve": "brute",
+      "integration": "5 × 120 s",
+      "totalSeconds": 600,
+      "date": "2026-01-15",
+      "sky": {
+        "ra": 83.822,
+        "dec": -5.391,
+        "fieldWidth": 2.4,
+        "fieldHeight": 1.5,
+        "scale": 3.2,
+        "orientation": 0
+      }
+    },
+    {
+      "baseName": "M42_progression_10x120s_natural",
+      "progressionLabel": "Palier 2",
+      "progressionPeriod": "15 janvier 2026, 21:00 → 21:20",
+      "progressionFilter": "Dual-band",
+      "renderFamily": "Rendu naturel",
+      "colorCurve": "brute",
+      "integration": "10 × 120 s",
+      "totalSeconds": 1200,
+      "date": "2026-01-15",
+      "sky": {
+        "ra": 83.822,
+        "dec": -5.391,
+        "fieldWidth": 2.4,
+        "fieldHeight": 1.5,
+        "scale": 3.2,
+        "orientation": 0
+      }
+    }
+  ],
+  "skyMap": {
+    "fileName": "m42-demo-sky-map.svg",
+    "label": "Carte de contexte de démonstration"
+  },
+  "stellarium": {
+    "source": "M 42",
+    "fov": 5,
+    "frameNote": "Cible centrée avec un champ élargi de 5°."
+  },
+  "plateSolveHints": {
+    "ra": 83.822,
+    "dec": -5.391,
+    "radius": 4,
+    "scaleLow": 1,
+    "scaleHigh": 4
+  }
+}

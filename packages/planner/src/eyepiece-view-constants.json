@@ -1,0 +1,107 @@
+{
+  "$comment": "Constants of the eyepiece view (eyepiece-view.js). First values chosen to be plausible; they are tuned by looking at the result. Every mapping below is monotonic: a darker sky, a larger aperture or a wider exit pupil never lowers `visibility`, and a higher `visibility` never raises `cutoff` nor lowers `gain`.",
+  "limitingMagnitude": {
+    "$comment": "The eye's pupil of the telescope limit, which visual-limits.js computes (the planner's visual rule): Schaefer's naked-eye limit of the place's SQM (else its Bortle class's sqmByBortle) dimmed by 5 * log10(eyePupilMm / exitPupil), + 5 * log10(aperture / eyePupilMm).",
+    "eyePupilMm": 7
+  },
+  "visibility": {
+    "$comment": "visibility = contrast + limitingMagnitudeWeight * (limitingMagnitude - limitingMagnitudeReference) - pupilWeight * pupilLoss - marginWeight * max(0, integratedMagnitude - limitingMagnitude + marginGrace). pupilLoss = 5 * log10(pupilReferenceMm / clamp(exitPupilMm, pupilMinimumMm, pupilReferenceMm)), in magnitudes of image darkening.",
+    "limitingMagnitudeReference": 12,
+    "limitingMagnitudeWeight": 0.25,
+    "pupilReferenceMm": 4,
+    "pupilMinimumMm": 0.3,
+    "pupilWeight": 0.35,
+    "marginGrace": 0.5,
+    "marginWeight": 1
+  },
+  "render": {
+    "$comment": "cutoff = clamp(cutoffAtZero - cutoffSlope * visibility, cutoffMinimum, cutoffMaximum); gain = clamp(gainAtZero + gainSlope * visibility, gainMinimum, 1); softness = softnessShare * cutoff (the knee runs from cutoff - softness to cutoff). A missing contrast is the neutral render: cutoff 0, gain 1, softness 0.",
+    "cutoffAtZero": 0.35,
+    "cutoffSlope": 0.08,
+    "cutoffMinimum": 0.04,
+    "cutoffMaximum": 0.9,
+    "gainAtZero": 0.8,
+    "gainSlope": 0.06,
+    "gainMinimum": 0.35,
+    "softnessShare": 0.6
+  },
+  "verdictRender": {
+    "$comment": "The render read from the visual verdict (eyepieceRenderFromVerdict) instead of the second contrast model. visibility = marginWeight * magnitudeMargin + marginOffset; cutoff = clamp(cutoffAtZero - cutoffSlope * visibility, cutoffMinimum, cutoffMaximum), at most visibleCutoffMaximum while the verdict says the target is visible (difficult or suitable: a filament as bright as that share of the survey's range always passes, never a black disc); gain = clamp(gainAtZero + gainSlope * (magnitudeMargin + gainMarginOffset), gainMinimum, 1); softness = render.softnessShare * cutoff; skyFill = max(skyFillFloor, the place's level - round(skyFillPerFilterMagnitude * the filter's gain in magnitudes)): the filter cuts the sky. The stars are left as they are. A verdict of unlikely keeps the high cutoff: the stars alone. (1) at `difficult` the cutoff is at least difficultCutoffMinimum and the gain at most difficultGainMaximum: only the brightest share of the target stays, a vague patch, no fine filament; (2) under a sky of level skyKeepFrom or more (Bortle 7-8) the filter cannot bring the sky under skyKeepShare of the place's level: grey, never black; (3) a narrow-band filter that helps (narrowBandFamilies, gain above 0) with an exit pupil under pupilBandMinimumMm costs pupilPenaltyPerMm magnitudes of visibility per mm under, which lowers the gain and, at `difficult`, raises the cutoff floor by pupilCutoffPerMagnitude per magnitude. First values of the visual-simulation board (a synthetic source), to be tuned on real DSS2 discs.",
+    "marginWeight": 1.35,
+    "marginOffset": 0.2,
+    "cutoffAtZero": 0.35,
+    "cutoffSlope": 0.08,
+    "cutoffMinimum": 0.04,
+    "cutoffMaximum": 0.9,
+    "visibleCutoffMaximum": 0.3,
+    "gainAtZero": 0.3,
+    "gainSlope": 0.28,
+    "gainMarginOffset": 1.1,
+    "gainMinimum": 0.3,
+    "skyFillPerFilterMagnitude": 10,
+    "skyFillFloor": 12,
+    "difficultCutoffMinimum": 0.6,
+    "difficultGainMaximum": 0.5,
+    "skyKeepFrom": 42,
+    "skyKeepShare": 0.8,
+    "narrowBandFamilies": ["uhc", "oiii", "hb", "dual"],
+    "pupilBandMinimumMm": 3,
+    "pupilPenaltyPerMm": 1,
+    "pupilCutoffPerMagnitude": 0.2
+  },
+  "disc": {
+    "$comment": "discFieldRatio = trueFieldDegrees / the source image's field, never under minimumFieldRatio (never upscaled beyond 2x). A disc filled at the sky's level (render.skyFill) is shaded over the image: a vignette darkening it by up to vignette.strength from vignette.from to vignette.to of the radius, and the field stop's dark ring, up to ring.strength from ring.from to ring.to; both rise along a smoothstep, multiply (1 - (1 - vignette)(1 - ring)), and reach the painters as the stops of one radial gradient of black (eyepieceDiscShading): every vignette.steps of its span and every ring.steps of the ring's.",
+    "minimumFieldRatio": 0.5,
+    "vignette": {
+      "strength": 0.3,
+      "from": 0.55,
+      "to": 1,
+      "steps": 8
+    },
+    "ring": {
+      "strength": 0.6,
+      "from": 0.982,
+      "to": 0.996,
+      "steps": 6
+    }
+  },
+  "sourceField": {
+    "$comment": "The field of a stored thumbnail when its record carries none: the rule the importer requested the cutout with, max(minimumDegrees, min(maximumDegrees, largest apparent size / 60 * sizeMargin)), defaultDegrees without a size. The image records do not persist the field.",
+    "minimumDegrees": 0.15,
+    "maximumDegrees": 5,
+    "sizeMargin": 1.35,
+    "defaultDegrees": 0.35
+  },
+  "pixels": {
+    "$comment": "The painter: grey level = (299 R + 587 G + 114 B) / 1000; the background is the median grey of a border ring borderShare of the smaller side wide (at least one pixel). With a sky level (render.skyFill), what is above the background is carried onto that level and stretched to the same white, and what is below it is kept at belowSkyShare of its depth, scaled by skyFill / background when the sky is the darker: the image's own sky meets the disc's without a clipped, flat side.",
+    "borderShare": 0.04,
+    "belowSkyShare": 0.6
+  },
+  "sky": {
+    "$comment": "The grey the disc is filled with, the level of the place's sky, 0-255: skyFill = round(clamp(fillFloor + fillSlopePerMag * (referenceSqm - sqm), fillFloor, fillCeiling)). The sqm is the place's measured or estimated value; with only a Bortle class, sqmByBortle[class - 1]; with neither (the default disc, no setting), referenceSqm. First values of the rendering study eyepiece-render-02 (variant A), tuned by looking at the result.",
+    "referenceSqm": 21.9,
+    "fillFloor": 12,
+    "fillSlopePerMag": 10,
+    "fillCeiling": 90,
+    "sqmByBortle": [22, 21.9, 21.8, 21.1, 20, 19.2, 18.7, 17.7, 16.5]
+  },
+  "edge": {
+    "$comment": "The soft edge of a thumbnail smaller than the field (the fallback when the field image is not there): a superellipse of degree 4 over the square, u = (|x|^4 + |y|^4)^(1/4) with x, y from -0.5 to 0.5, and the image fades into the sky level as 1 - smoothstep(0.5 - fade, 0.5, u): no square, no corner left in the disc.",
+    "fade": 0.1
+  },
+  "fieldImage": {
+    "$comment": "The field image: the survey cut by the portal at the eyepiece's true field (B of eyepiece-render-02), so the disc is sky from edge to edge. The field asked for is the smallest of fieldsDegrees (the E24 series, steps of 7 to 15 %) at least the true field, so plans with nearby fields share one image and one cache, and the image always covers the disc (discFieldRatio = true field / field asked, 0.91 to 1); the last value is the widest asked for. path is the portal's route, {id} the target's id, the field its query (fov).",
+    "fieldsDegrees": [
+      0.1, 0.11, 0.12, 0.13, 0.15, 0.16, 0.18, 0.2, 0.22, 0.24, 0.27, 0.3, 0.33,
+      0.36, 0.39, 0.43, 0.47, 0.51, 0.56, 0.62, 0.68, 0.75, 0.82, 0.91, 1, 1.1,
+      1.2, 1.3, 1.5, 1.6, 1.8, 2, 2.2, 2.4, 2.7, 3, 3.3, 3.6, 3.9, 4.3, 4.7, 5.1
+    ],
+    "path": "/api/v1/targets/{id}/field-image"
+  },
+  "photoPreview": {
+    "$comment": "The survey of the target sheet's « Prévisualiser » in photo mode (TARGET-PREVIEW-02): a square cut-out wider than the sensor, with the sensor's frame drawn to scale on it. Its field is max(the frame's larger side / frameShare, the target's largest apparent size * sizeMargin), taken up to the next of fieldImage.fieldsDegrees (one cache for nearby rigs) and never over maximumDegrees (hips2fits at 640 px, as a framing's preview). In visual mode, the target's ratio to the eyepiece's field is written with one decimal when it is over 1.",
+    "frameShare": 0.6,
+    "sizeMargin": 1.25,
+    "maximumDegrees": 6
+  }
+}

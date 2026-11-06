@@ -1,0 +1,430 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "entered": null,
+          "measures": [],
+          "model": { "bortleClass": 3, "sqm": 21.4 }
+        }
+      ],
+      "id": "the-model-alone-is-shown-as-an-estimate",
+      "result": {
+        "entered": null,
+        "measured": null,
+        "model": { "bortleClass": 3, "sqm": 21.4 },
+        "shown": { "bortleClass": 3, "sqm": 21.4 },
+        "source": "model"
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": { "enteredAt": "2026-09-28T21:30:00.000Z", "sqm": 20.85 },
+          "measures": [],
+          "model": { "bortleClass": 3, "sqm": 21.4 }
+        }
+      ],
+      "id": "an-entered-value-wins-over-the-model",
+      "result": {
+        "entered": {
+          "bortleClass": 4,
+          "enteredAt": "2026-09-28T21:30:00.000Z",
+          "sqm": 20.85
+        },
+        "measured": null,
+        "model": { "bortleClass": 3, "sqm": 21.4 },
+        "shown": { "bortleClass": 4, "sqm": 20.85 },
+        "source": "entered"
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": { "enteredAt": "2026-09-28T21:30:00.000Z", "sqm": 20.85 },
+          "measures": [
+            {
+              "methodVersion": "astro-sync-sky/1",
+              "night": "2026-09-20",
+              "observedAt": "2026-09-20T23:40:00.000Z",
+              "poseCount": 14,
+              "sessionId": null,
+              "sqm": 21.12,
+              "updatedAt": "2026-09-20T23:40:00.000Z"
+            }
+          ],
+          "model": { "bortleClass": 3, "sqm": 21.4 }
+        }
+      ],
+      "id": "a-measured-value-wins-over-both-and-the-two-others-are-kept",
+      "result": {
+        "entered": {
+          "bortleClass": 4,
+          "enteredAt": "2026-09-28T21:30:00.000Z",
+          "sqm": 20.85
+        },
+        "measured": {
+          "bortleClass": 4,
+          "methodVersion": "astro-sync-sky/1",
+          "night": "2026-09-20",
+          "nightCount": 1,
+          "observedAt": "2026-09-20T23:40:00.000Z",
+          "poseCount": 14,
+          "sqm": 21.12
+        },
+        "model": { "bortleClass": 3, "sqm": 21.4 },
+        "shown": { "bortleClass": 4, "sqm": 21.12 },
+        "source": "measured"
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": null,
+          "measures": [
+            {
+              "methodVersion": "astro-sync-sky/1",
+              "night": "2026-09-20",
+              "observedAt": "2026-09-20T23:40:00.000Z",
+              "poseCount": 14,
+              "sessionId": null,
+              "sqm": 21.12,
+              "updatedAt": "2026-09-20T23:40:00.000Z"
+            },
+            {
+              "methodVersion": "astro-sync-sky/1",
+              "night": "2026-10-01",
+              "observedAt": "2026-10-01T22:10:00.000Z",
+              "poseCount": 9,
+              "sessionId": null,
+              "sqm": 21.04,
+              "updatedAt": "2026-10-01T22:10:00.000Z"
+            }
+          ],
+          "model": { "bortleClass": 3, "sqm": 21.4 }
+        }
+      ],
+      "id": "the-latest-measured-night-is-chosen",
+      "result": {
+        "entered": null,
+        "measured": {
+          "bortleClass": 4,
+          "methodVersion": "astro-sync-sky/1",
+          "night": "2026-10-01",
+          "nightCount": 2,
+          "observedAt": "2026-10-01T22:10:00.000Z",
+          "poseCount": 9,
+          "sqm": 21.04
+        },
+        "model": { "bortleClass": 3, "sqm": 21.4 },
+        "shown": { "bortleClass": 4, "sqm": 21.04 },
+        "source": "measured"
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": null,
+          "measures": [
+            {
+              "methodVersion": "astro-sync-sky/1",
+              "night": "2026-10-01",
+              "observedAt": "2026-10-01T21:00:00.000Z",
+              "poseCount": 5,
+              "sessionId": null,
+              "sqm": 20.9,
+              "updatedAt": "2026-10-01T21:00:00.000Z"
+            },
+            {
+              "methodVersion": "astro-sync-sky/1",
+              "night": "2026-10-01",
+              "observedAt": "2026-10-01T23:00:00.000Z",
+              "poseCount": 6,
+              "sessionId": null,
+              "sqm": 21.2,
+              "updatedAt": "2026-10-01T23:00:00.000Z"
+            }
+          ],
+          "model": { "bortleClass": 3, "sqm": 21.4 }
+        }
+      ],
+      "id": "two-values-of-one-night-the-later-instant-wins",
+      "result": {
+        "entered": null,
+        "measured": {
+          "bortleClass": 4,
+          "methodVersion": "astro-sync-sky/1",
+          "night": "2026-10-01",
+          "nightCount": 1,
+          "observedAt": "2026-10-01T23:00:00.000Z",
+          "poseCount": 6,
+          "sqm": 21.2
+        },
+        "model": { "bortleClass": 3, "sqm": 21.4 },
+        "shown": { "bortleClass": 4, "sqm": 21.2 },
+        "source": "measured"
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": { "enteredAt": "2026-09-28T21:30:00.000Z", "sqm": 20.85 },
+          "measures": [
+            {
+              "methodVersion": "astro-sync-sky/1",
+              "night": "2026-10-0",
+              "observedAt": "2026-10-01T21:00:00.000Z",
+              "poseCount": 5,
+              "sessionId": null,
+              "sqm": 21,
+              "updatedAt": "2026-10-01T21:00:00.000Z"
+            },
+            {
+              "methodVersion": "astro-sync-sky/1",
+              "night": "2026-10-02",
+              "observedAt": "2026-10-02T21:00:00.000Z",
+              "poseCount": 0,
+              "sessionId": null,
+              "sqm": 21,
+              "updatedAt": "2026-10-02T21:00:00.000Z"
+            },
+            {
+              "methodVersion": "astro-sync-sky/1",
+              "night": "2026-10-03",
+              "observedAt": "2026-10-03T21:00:00.000Z",
+              "poseCount": 4,
+              "sessionId": null,
+              "sqm": 9.5,
+              "updatedAt": "2026-10-03T21:00:00.000Z"
+            },
+            { "night": "2026-10-04", "poseCount": 4, "sqm": "21.0" }
+          ],
+          "model": { "bortleClass": 3, "sqm": 21.4 }
+        }
+      ],
+      "id": "unusable-measures-are-ignored",
+      "result": {
+        "entered": {
+          "bortleClass": 4,
+          "enteredAt": "2026-09-28T21:30:00.000Z",
+          "sqm": 20.85
+        },
+        "measured": null,
+        "model": { "bortleClass": 3, "sqm": 21.4 },
+        "shown": { "bortleClass": 4, "sqm": 20.85 },
+        "source": "entered"
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": { "enteredAt": "2026-09-28T21:30:00.000Z", "sqm": 23.1 },
+          "measures": [],
+          "model": { "bortleClass": 3, "sqm": 21.4 }
+        }
+      ],
+      "id": "an-entered-value-out-of-range-falls-back-to-the-model",
+      "result": {
+        "entered": null,
+        "measured": null,
+        "model": { "bortleClass": 3, "sqm": 21.4 },
+        "shown": { "bortleClass": 3, "sqm": 21.4 },
+        "source": "model"
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": { "sqm": 21 },
+          "measures": null,
+          "model": { "bortleClass": 3, "sqm": 21.4 }
+        }
+      ],
+      "id": "an-entered-value-without-a-date-is-not-one",
+      "result": {
+        "entered": null,
+        "measured": null,
+        "model": { "bortleClass": 3, "sqm": 21.4 },
+        "shown": { "bortleClass": 3, "sqm": 21.4 },
+        "source": "model"
+      }
+    },
+    {
+      "args": [{ "entered": null, "measures": null, "model": null }],
+      "id": "nothing-known-answers-no-source",
+      "result": {
+        "entered": null,
+        "measured": null,
+        "model": null,
+        "shown": null,
+        "source": null
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": null,
+          "measures": [],
+          "model": { "bortleClass": 5, "sqm": null }
+        }
+      ],
+      "id": "a-model-without-sqm-keeps-its-bortle-class",
+      "result": {
+        "entered": null,
+        "measured": null,
+        "model": { "bortleClass": 5, "sqm": null },
+        "shown": { "bortleClass": 5, "sqm": null },
+        "source": "model"
+      }
+    },
+    {
+      "args": [{ "entered": null, "measures": [], "model": { "sqm": 19.2 } }],
+      "id": "a-model-without-a-class-takes-the-class-of-its-sqm",
+      "result": {
+        "entered": null,
+        "measured": null,
+        "model": { "bortleClass": 6, "sqm": 19.2 },
+        "shown": { "bortleClass": 6, "sqm": 19.2 },
+        "source": "model"
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": null,
+          "measures": [
+            {
+              "methodVersion": "astro-sync-sky/1",
+              "night": "2026-10-01",
+              "observedAt": "2026-10-01T22:10:00.000Z",
+              "poseCount": 9,
+              "sessionId": null,
+              "sqm": 21.04,
+              "updatedAt": "2026-10-01T22:10:00.000Z"
+            }
+          ],
+          "model": null
+        }
+      ],
+      "id": "a-measured-value-without-a-model-offline",
+      "result": {
+        "entered": null,
+        "measured": {
+          "bortleClass": 4,
+          "methodVersion": "astro-sync-sky/1",
+          "night": "2026-10-01",
+          "nightCount": 1,
+          "observedAt": "2026-10-01T22:10:00.000Z",
+          "poseCount": 9,
+          "sqm": 21.04
+        },
+        "model": null,
+        "shown": { "bortleClass": 4, "sqm": 21.04 },
+        "source": "measured"
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": {
+            "enteredAt": "2026-09-28T21:30:00+09:00",
+            "sqm": 20.006
+          },
+          "measures": [
+            {
+              "methodVersion": "astro-sync-sky/1",
+              "night": "2026-10-01",
+              "observedAt": "2026-10-01T22:10:00.000Z",
+              "poseCount": 7,
+              "sessionId": null,
+              "sqm": 21.0449,
+              "updatedAt": "2026-10-01T22:10:00.000Z"
+            }
+          ],
+          "model": { "bortleClass": 3, "sqm": 21.4 }
+        }
+      ],
+      "id": "values-are-kept-to-the-hundredth",
+      "result": {
+        "entered": {
+          "bortleClass": 5,
+          "enteredAt": "2026-09-28T21:30:00+09:00",
+          "sqm": 20.01
+        },
+        "measured": {
+          "bortleClass": 4,
+          "methodVersion": "astro-sync-sky/1",
+          "night": "2026-10-01",
+          "nightCount": 1,
+          "observedAt": "2026-10-01T22:10:00.000Z",
+          "poseCount": 7,
+          "sqm": 21.04
+        },
+        "model": { "bortleClass": 3, "sqm": 21.4 },
+        "shown": { "bortleClass": 4, "sqm": 21.04 },
+        "source": "measured"
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": null,
+          "measures": [
+            {
+              "methodVersion": "astro-sync-sky/1",
+              "night": "2026-10-01",
+              "observedAt": "2026-10-01T22:10:00.000Z",
+              "poseCount": 30,
+              "sessionId": null,
+              "sqm": 22.05,
+              "updatedAt": "2026-10-01T22:10:00.000Z"
+            }
+          ],
+          "model": { "bortleClass": 2, "sqm": 21.92 }
+        }
+      ],
+      "id": "a-measured-value-of-the-darkest-class",
+      "result": {
+        "entered": null,
+        "measured": {
+          "bortleClass": 1,
+          "methodVersion": "astro-sync-sky/1",
+          "night": "2026-10-01",
+          "nightCount": 1,
+          "observedAt": "2026-10-01T22:10:00.000Z",
+          "poseCount": 30,
+          "sqm": 22.05
+        },
+        "model": { "bortleClass": 2, "sqm": 21.92 },
+        "shown": { "bortleClass": 1, "sqm": 22.05 },
+        "source": "measured"
+      }
+    },
+    {
+      "args": [
+        {
+          "entered": {
+            "enteredAt": "2026-10-18T11:34:12.405229Z",
+            "sqm": 21.2
+          },
+          "measures": [],
+          "model": { "bortleClass": 9, "sqm": 16.7 }
+        }
+      ],
+      "id": "an-entered-instant-with-microseconds-is-kept",
+      "result": {
+        "entered": {
+          "bortleClass": 4,
+          "enteredAt": "2026-10-18T11:34:12.405229Z",
+          "sqm": 21.2
+        },
+        "measured": null,
+        "model": { "bortleClass": 9, "sqm": 16.7 },
+        "shown": { "bortleClass": 4, "sqm": 21.2 },
+        "source": "entered"
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "sky-brightness-source"
+}

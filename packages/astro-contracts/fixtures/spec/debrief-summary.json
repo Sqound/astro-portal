@@ -1,0 +1,2505 @@
+{
+  "module": "debrief-summary",
+  "package": "portal",
+  "file": "debrief-summary",
+  "export": "debriefSummary",
+  "cases": [
+    {
+      "id": "reference-night-flip-guiding-wind-clouds",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            },
+            {
+              "id": "ic1396",
+              "targetId": "ic1396",
+              "startMinute": 150,
+              "endMinute": 270
+            },
+            {
+              "id": "m45",
+              "targetId": "m45",
+              "startMinute": 270,
+              "endMinute": 340
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0002",
+              "type": "pause",
+              "recordedAt": "2026-10-10T21:15:00.000Z",
+              "payload": {
+                "cause": "meridian_flip"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0003",
+              "type": "resume",
+              "recordedAt": "2026-10-10T21:25:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0004",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0005",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0006",
+              "type": "pause",
+              "recordedAt": "2026-10-10T23:50:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0007",
+              "type": "note",
+              "recordedAt": "2026-10-10T23:51:00.000Z",
+              "payload": {
+                "pauseCause": {
+                  "pauseEventId": "01J8Z3K9QZ6N3S6R3E6G8H0006",
+                  "cause": "wind"
+                }
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0008",
+              "type": "resume",
+              "recordedAt": "2026-10-11T00:25:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0009",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0010",
+              "type": "condition",
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "payload": {
+                "sky": "overcast"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0011",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "payload": {
+                "targetId": "m45",
+                "planItemId": "m45",
+                "reason": "weather"
+              }
+            }
+          ],
+          "adjustments": [
+            {
+              "targetId": "ngc7000",
+              "state": "done"
+            },
+            {
+              "targetId": "ic1396",
+              "state": "partial"
+            },
+            {
+              "targetId": "m45",
+              "state": "skipped",
+              "reason": "weather"
+            }
+          ],
+          "outcome": "partial",
+          "guidingLosses": [
+            {
+              "start": "2026-10-10T22:05:00.000Z",
+              "end": "2026-10-10T22:25:00.000Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "no-analysis-no-guiding-line",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            },
+            {
+              "id": "ic1396",
+              "targetId": "ic1396",
+              "startMinute": 150,
+              "endMinute": 270
+            },
+            {
+              "id": "m45",
+              "targetId": "m45",
+              "startMinute": 270,
+              "endMinute": 340
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0002",
+              "type": "pause",
+              "recordedAt": "2026-10-10T21:15:00.000Z",
+              "payload": {
+                "cause": "meridian_flip"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0003",
+              "type": "resume",
+              "recordedAt": "2026-10-10T21:25:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0004",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0005",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0006",
+              "type": "pause",
+              "recordedAt": "2026-10-10T23:50:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0007",
+              "type": "note",
+              "recordedAt": "2026-10-10T23:51:00.000Z",
+              "payload": {
+                "pauseCause": {
+                  "pauseEventId": "01J8Z3K9QZ6N3S6R3E6G8H0006",
+                  "cause": "wind"
+                }
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0008",
+              "type": "resume",
+              "recordedAt": "2026-10-11T00:25:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0009",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0010",
+              "type": "condition",
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "payload": {
+                "sky": "overcast"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0011",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "payload": {
+                "targetId": "m45",
+                "planItemId": "m45",
+                "reason": "weather"
+              }
+            }
+          ],
+          "adjustments": [
+            {
+              "targetId": "ngc7000",
+              "state": "done"
+            },
+            {
+              "targetId": "ic1396",
+              "state": "partial"
+            },
+            {
+              "targetId": "m45",
+              "state": "skipped",
+              "reason": "weather"
+            }
+          ],
+          "outcome": "partial",
+          "guidingLosses": null
+        }
+      ]
+    },
+    {
+      "id": "one-tap-pause-without-cause-is-unexplained",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0101",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0102",
+              "type": "pause",
+              "recordedAt": "2026-10-10T21:00:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0103",
+              "type": "resume",
+              "recordedAt": "2026-10-10T21:30:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0104",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "latest-correction-wins-over-the-pause-own-cause",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ic1396",
+              "targetId": "ic1396",
+              "startMinute": 150,
+              "endMinute": 270
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0201",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0202",
+              "type": "pause",
+              "recordedAt": "2026-10-10T23:30:00.000Z",
+              "payload": {
+                "cause": "clouds"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0203",
+              "type": "note",
+              "recordedAt": "2026-10-10T23:35:00.000Z",
+              "payload": {
+                "pauseCause": {
+                  "pauseEventId": "01J8Z3K9QZ6N3S6R3E6G8H0202",
+                  "cause": "wind"
+                }
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0204",
+              "type": "note",
+              "recordedAt": "2026-10-10T23:40:00.000Z",
+              "payload": {
+                "pauseCause": {
+                  "pauseEventId": "01J8Z3K9QZ6N3S6R3E6G8H0202",
+                  "cause": "dew"
+                }
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0205",
+              "type": "note",
+              "recordedAt": "2026-10-10T23:41:00.000Z",
+              "payload": {
+                "pauseCause": {
+                  "pauseEventId": "01J8Z3K9QZ6N3S6R3E6G8H9999",
+                  "cause": "guiding"
+                }
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0206",
+              "type": "resume",
+              "recordedAt": "2026-10-11T00:00:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0207",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "declared-acquired-minutes-win-and-are-capped-at-planned",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            },
+            {
+              "id": "ic1396",
+              "targetId": "ic1396",
+              "startMinute": 150,
+              "endMinute": 270
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0301",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0302",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0303",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0304",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            }
+          ],
+          "adjustments": [
+            {
+              "targetId": "ngc7000",
+              "state": "partial",
+              "acquiredMinutes": 95
+            },
+            {
+              "targetId": "ic1396",
+              "state": "done",
+              "acquiredMinutes": 500
+            }
+          ],
+          "outcome": "partial"
+        }
+      ]
+    },
+    {
+      "id": "weather-skip-counted-under-wind-from-the-latest-condition",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            },
+            {
+              "id": "ic1396",
+              "targetId": "ic1396",
+              "startMinute": 150,
+              "endMinute": 270
+            },
+            {
+              "id": "m45",
+              "targetId": "m45",
+              "startMinute": 270,
+              "endMinute": 340
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0401",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0402",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0403",
+              "type": "condition",
+              "recordedAt": "2026-10-10T22:00:00.000Z",
+              "payload": {
+                "cause": "dew"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0404",
+              "type": "condition",
+              "recordedAt": "2026-10-10T23:00:00.000Z",
+              "payload": {
+                "sky": "partly_cloudy",
+                "cause": "wind"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0405",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396",
+                "reason": "weather"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0406",
+              "type": "condition",
+              "recordedAt": "2026-10-11T01:00:00.000Z",
+              "payload": {
+                "cause": "dew"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0407",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "payload": {
+                "targetId": "m45",
+                "planItemId": "m45",
+                "reason": "weather"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skip-reasons-time-visibility-equipment-and-none",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:00:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:00:00.000Z",
+            "end": "2026-10-10T23:00:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "a",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 45
+            },
+            {
+              "id": "b",
+              "targetId": "m33",
+              "startMinute": 45,
+              "endMinute": 90
+            },
+            {
+              "id": "c",
+              "targetId": "m42",
+              "startMinute": 90,
+              "endMinute": 135
+            },
+            {
+              "id": "d",
+              "targetId": "m81",
+              "startMinute": 135,
+              "endMinute": 180
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0501",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "a",
+                "reason": "time"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0502",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-10T20:45:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "b",
+                "reason": "visibility"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0503",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-10T21:30:00.000Z",
+              "payload": {
+                "targetId": "m42",
+                "planItemId": "c",
+                "reason": "equipment"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0504",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-10T22:15:00.000Z",
+              "payload": {
+                "targetId": "m81",
+                "planItemId": "d"
+              }
+            }
+          ],
+          "adjustments": [
+            {
+              "targetId": "a",
+              "state": "skipped",
+              "reason": "time"
+            },
+            {
+              "targetId": "b",
+              "state": "skipped",
+              "reason": "visibility"
+            },
+            {
+              "targetId": "c",
+              "state": "skipped",
+              "reason": "equipment"
+            },
+            {
+              "targetId": "d",
+              "state": "skipped"
+            }
+          ],
+          "outcome": "partial"
+        }
+      ]
+    },
+    {
+      "id": "guiding-loss-inside-a-pause-is-counted-once",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0601",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0602",
+              "type": "pause",
+              "recordedAt": "2026-10-10T21:00:00.000Z",
+              "payload": {
+                "cause": "guiding"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0603",
+              "type": "resume",
+              "recordedAt": "2026-10-10T21:20:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0604",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ],
+          "guidingLosses": [
+            {
+              "start": "2026-10-10T21:10:00.000Z",
+              "end": "2026-10-10T21:40:00.000Z"
+            },
+            {
+              "start": "2026-10-10T22:30:00.000Z",
+              "end": "2026-10-10T22:40:00.000Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-target-added-in-the-field-has-no-planned-time",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0701",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0702",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0703",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetLabel": "Comète du soir"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0704",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:55:00.000Z",
+              "payload": {
+                "targetLabel": "Comète du soir"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slot-clipped-by-the-session-window-and-late-start",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T21:00:00.000Z",
+            "end": "2026-10-10T23:00:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            },
+            {
+              "id": "ic1396",
+              "targetId": "ic1396",
+              "startMinute": 150,
+              "endMinute": 270
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0801",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:30:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0802",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "executed-night-from-planned-events-only",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            },
+            {
+              "id": "ic1396",
+              "targetId": "ic1396",
+              "startMinute": 150,
+              "endMinute": 270
+            },
+            {
+              "id": "m45",
+              "targetId": "m45",
+              "startMinute": 270,
+              "endMinute": 340
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0901",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0902",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0903",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0904",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0905",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T01:10:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "m45",
+                "planItemId": "m45"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0906",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T02:20:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "m45",
+                "planItemId": "m45"
+              }
+            }
+          ],
+          "adjustments": [],
+          "outcome": "executed"
+        }
+      ]
+    },
+    {
+      "id": "field-events-win-over-the-debriefing-planned-ones",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1002",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "timing": "planned",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1003",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:05:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1004",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ],
+          "adjustments": [
+            {
+              "targetId": "ngc7000",
+              "state": "done"
+            }
+          ],
+          "outcome": "partial"
+        }
+      ]
+    },
+    {
+      "id": "open-pause-and-unfinished-target-close-at-the-next-start-or-window-end",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            },
+            {
+              "id": "ic1396",
+              "targetId": "ic1396",
+              "startMinute": 150,
+              "endMinute": 270
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1101",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1102",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1103",
+              "type": "pause",
+              "recordedAt": "2026-10-11T00:50:00.000Z",
+              "payload": {
+                "cause": "dew"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "without-night-start-slots-are-plain-durations",
+      "args": [
+        {
+          "planItems": [
+            {
+              "id": "a",
+              "targetId": "m31",
+              "startMinute": 0,
+              "durationMinutes": 60
+            },
+            {
+              "id": "b",
+              "targetId": "m33"
+            }
+          ],
+          "events": [],
+          "adjustments": [
+            {
+              "targetId": "a",
+              "state": "done",
+              "acquiredMinutes": 40
+            }
+          ],
+          "outcome": "partial"
+        }
+      ]
+    },
+    {
+      "id": "empty-journal-nothing-acquired-all-unexplained",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 0,
+              "endMinute": 150
+            },
+            {
+              "id": "ic1396",
+              "targetId": "ic1396",
+              "startMinute": 150,
+              "endMinute": 270
+            },
+            {
+              "id": "m45",
+              "targetId": "m45",
+              "startMinute": 270,
+              "endMinute": 340
+            }
+          ],
+          "events": []
+        }
+      ]
+    },
+    {
+      "id": "target-given-up-mid-slot-is-partial-with-the-rest-abandoned",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z",
+            "end": "2026-10-11T02:20:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ic1396",
+              "targetId": "ic1396",
+              "startMinute": 150,
+              "endMinute": 270
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1401",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1402",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-11T00:10:00.000Z",
+              "payload": {
+                "targetId": "ic1396",
+                "planItemId": "ic1396",
+                "reason": "weather"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1403",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T00:10:00.000Z",
+              "payload": {
+                "targetLabel": "Lune"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H1404",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T00:20:00.000Z",
+              "payload": {
+                "targetLabel": "Lune"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-resumed-target-lists-both-passages",
+      "args": [
+        {
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "window": {
+            "start": "2026-10-11T19:00:00.000Z",
+            "end": "2026-10-11T23:30:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 90
+            },
+            {
+              "id": "m33",
+              "targetId": "m33",
+              "startMinute": 90,
+              "endMinute": 180
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA001",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA002",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T19:40:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA003",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:40:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA004",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA005",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA006",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T20:50:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-pause-inside-a-passage-is-listed-and-deducted",
+      "args": [
+        {
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "window": {
+            "start": "2026-10-11T19:00:00.000Z",
+            "end": "2026-10-11T23:30:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 90
+            },
+            {
+              "id": "m33",
+              "targetId": "m33",
+              "startMinute": 90,
+              "endMinute": 180
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA007",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA008",
+              "type": "pause",
+              "recordedAt": "2026-10-11T19:30:00.000Z",
+              "payload": {
+                "cause": "wind"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA009",
+              "type": "resume",
+              "recordedAt": "2026-10-11T19:45:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA010",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA011",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA012",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T22:00:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "automatic-time-is-unconfirmed-until-confirmed",
+      "args": [
+        {
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "window": {
+            "start": "2026-10-11T19:00:00.000Z",
+            "end": "2026-10-11T23:30:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 90
+            },
+            {
+              "id": "m33",
+              "targetId": "m33",
+              "startMinute": 90,
+              "endMinute": 180
+            }
+          ],
+          "kind": "imaging",
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA013",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true,
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA014",
+              "type": "pause",
+              "recordedAt": "2026-10-11T19:50:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA015",
+              "type": "resume",
+              "recordedAt": "2026-10-11T20:00:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA016",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA017",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33",
+                "auto": true,
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA018",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T22:00:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-confirmation-covers-the-earlier-automatic-passages-only",
+      "args": [
+        {
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "window": {
+            "start": "2026-10-11T19:00:00.000Z",
+            "end": "2026-10-11T23:30:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 90
+            },
+            {
+              "id": "m33",
+              "targetId": "m33",
+              "startMinute": 90,
+              "endMinute": 180
+            }
+          ],
+          "kind": "imaging",
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA019",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true,
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA020",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T19:40:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA021",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:40:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33",
+                "auto": true
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA022",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T20:20:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33",
+                "auto": true
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA023",
+              "type": "auto_time_confirmed",
+              "recordedAt": "2026-10-11T20:25:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA024",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA025",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T20:50:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visual-night-declared-time-is-not-capped-by-the-plan",
+      "args": [
+        {
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "window": {
+            "start": "2026-10-11T19:00:00.000Z",
+            "end": "2026-10-11T23:30:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 90
+            },
+            {
+              "id": "m33",
+              "targetId": "m33",
+              "startMinute": 90,
+              "endMinute": 180
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA026",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "advance": "manual"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA027",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA028",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33",
+                "advance": "manual"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA029",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T21:00:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33"
+              }
+            }
+          ],
+          "adjustments": [
+            {
+              "targetId": "m31",
+              "state": "done",
+              "acquiredMinutes": 120
+            },
+            {
+              "targetId": "m33",
+              "state": "done"
+            }
+          ],
+          "outcome": "partial",
+          "kind": "visual"
+        }
+      ]
+    },
+    {
+      "id": "imaging-night-declared-time-is-capped-at-the-plan-or-the-journal",
+      "args": [
+        {
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "window": {
+            "start": "2026-10-11T19:00:00.000Z",
+            "end": "2026-10-11T23:30:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 90
+            },
+            {
+              "id": "m33",
+              "targetId": "m33",
+              "startMinute": 90,
+              "endMinute": 180
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA026",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "advance": "manual"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA027",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA028",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33",
+                "advance": "manual"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA029",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T21:00:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33"
+              }
+            }
+          ],
+          "adjustments": [
+            {
+              "targetId": "m31",
+              "state": "done",
+              "acquiredMinutes": 120
+            },
+            {
+              "targetId": "m33",
+              "state": "done"
+            }
+          ],
+          "outcome": "partial",
+          "kind": "imaging"
+        }
+      ]
+    },
+    {
+      "id": "visual-night-off-plan-target-has-no-planned-time",
+      "args": [
+        {
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "window": {
+            "start": "2026-10-11T19:00:00.000Z",
+            "end": "2026-10-11T23:30:00.000Z"
+          },
+          "kind": "visual",
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 90
+            },
+            {
+              "id": "m33",
+              "targetId": "m33",
+              "startMinute": 90,
+              "endMinute": 180
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA030",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "advance": "manual"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA031",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:50:00.000Z",
+              "payload": {
+                "targetId": "m57",
+                "planItemId": "m57",
+                "advance": "manual"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA032",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T20:10:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "advance": "manual"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA033",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T20:40:00.000Z",
+              "payload": {
+                "targetId": "m57",
+                "planItemId": "m57",
+                "advance": "manual"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA034",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T21:00:00.000Z",
+              "payload": {
+                "targetId": "m57"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visual-night-loses-nothing-skipped-or-paused",
+      "args": [
+        {
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "window": {
+            "start": "2026-10-11T19:00:00.000Z",
+            "end": "2026-10-11T23:30:00.000Z"
+          },
+          "kind": "visual",
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 90
+            },
+            {
+              "id": "m33",
+              "targetId": "m33",
+              "startMinute": 90,
+              "endMinute": 180
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA040",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "advance": "manual"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA041",
+              "type": "pause",
+              "recordedAt": "2026-10-11T19:20:00.000Z",
+              "payload": {
+                "cause": "clouds"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA042",
+              "type": "resume",
+              "recordedAt": "2026-10-11T19:50:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA043",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T20:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA044",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-11T20:30:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33",
+                "reason": "weather"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-launched-schedule-is-restated-as-launched-slots",
+      "args": [
+        {
+          "nightStartAt": "2026-10-11T19:00:00.000Z",
+          "window": {
+            "start": "2026-10-11T19:00:00.000Z",
+            "end": "2026-10-11T23:30:00.000Z"
+          },
+          "kind": "imaging",
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 120
+            },
+            {
+              "id": "m33",
+              "targetId": "m33",
+              "startMinute": 120,
+              "endMinute": 180
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "planItemId": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 90
+            },
+            {
+              "planItemId": "m33",
+              "targetId": "m33",
+              "startMinute": 90,
+              "endMinute": 180
+            },
+            {
+              "planItemId": "m45",
+              "startMinute": 240,
+              "endMinute": 300
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA035",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T19:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA036",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T21:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA037",
+              "type": "target_started",
+              "recordedAt": "2026-10-11T21:00:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33"
+              }
+            },
+            {
+              "eventId": "01J9Z3K9QZ6N3S6R3E6G8HA038",
+              "type": "target_finished",
+              "recordedAt": "2026-10-11T22:00:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-hole-counts-its-minutes-as-automatic-time-to-confirm",
+      "args": [
+        {
+          "nightStartAt": "2026-10-02T20:00:00.000Z",
+          "window": {
+            "start": "2026-10-02T20:00:00.000Z",
+            "end": "2026-10-03T04:00:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 120
+            },
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 199,
+              "endMinute": 319
+            }
+          ],
+          "kind": "imaging",
+          "events": [
+            {
+              "eventId": "01J9HOLESUMMARY00000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T20:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true,
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000002",
+              "type": "target_finished",
+              "recordedAt": "2026-10-02T22:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000003",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T22:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000004",
+              "type": "note",
+              "recordedAt": "2026-10-02T23:40:00.000Z",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T23:12:00.000Z",
+                  "to": "2026-10-02T23:40:00.000Z"
+                }
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000009",
+              "type": "target_finished",
+              "recordedAt": "2026-10-03T00:01:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-was-paused-takes-the-hole-out-of-the-acquired-time",
+      "args": [
+        {
+          "nightStartAt": "2026-10-02T20:00:00.000Z",
+          "window": {
+            "start": "2026-10-02T20:00:00.000Z",
+            "end": "2026-10-03T04:00:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 120
+            },
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 199,
+              "endMinute": 319
+            }
+          ],
+          "kind": "imaging",
+          "events": [
+            {
+              "eventId": "01J9HOLESUMMARY00000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T20:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true,
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000002",
+              "type": "target_finished",
+              "recordedAt": "2026-10-02T22:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000003",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T22:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000004",
+              "type": "note",
+              "recordedAt": "2026-10-02T23:40:00.000Z",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T23:12:00.000Z",
+                  "to": "2026-10-02T23:40:00.000Z"
+                }
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000009",
+              "type": "target_finished",
+              "recordedAt": "2026-10-03T00:01:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000005",
+              "type": "pause",
+              "recordedAt": "2026-10-02T23:12:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000006",
+              "type": "resume",
+              "recordedAt": "2026-10-02T23:40:00.000Z",
+              "payload": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-confirmed-hole-is-no-longer-to-confirm",
+      "args": [
+        {
+          "nightStartAt": "2026-10-02T20:00:00.000Z",
+          "window": {
+            "start": "2026-10-02T20:00:00.000Z",
+            "end": "2026-10-03T04:00:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 120
+            },
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 199,
+              "endMinute": 319
+            }
+          ],
+          "kind": "imaging",
+          "events": [
+            {
+              "eventId": "01J9HOLESUMMARY00000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T20:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true,
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000002",
+              "type": "target_finished",
+              "recordedAt": "2026-10-02T22:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000003",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T22:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000004",
+              "type": "note",
+              "recordedAt": "2026-10-02T23:40:00.000Z",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T23:12:00.000Z",
+                  "to": "2026-10-02T23:40:00.000Z"
+                }
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000009",
+              "type": "target_finished",
+              "recordedAt": "2026-10-03T00:01:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9HOLESUMMARY00000000007",
+              "type": "auto_time_confirmed",
+              "recordedAt": "2026-10-03T00:30:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resumed-night-a-fatigue-pause-with-its-precision",
+      "args": [
+        {
+          "nightStartAt": "2026-10-12T20:00:00.000Z",
+          "window": {
+            "start": "2026-10-12T20:00:00.000Z",
+            "end": "2026-10-13T01:00:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 120
+            },
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 120,
+              "endMinute": 300
+            }
+          ],
+          "kind": "imaging",
+          "events": [
+            {
+              "eventId": "01JA2REPR1SE00000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-12T20:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000002",
+              "type": "target_finished",
+              "recordedAt": "2026-10-12T22:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000003",
+              "type": "target_started",
+              "recordedAt": "2026-10-12T22:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000004",
+              "type": "pause",
+              "recordedAt": "2026-10-12T23:41:00.000Z",
+              "payload": {
+                "cause": "fatigue"
+              }
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000005",
+              "type": "note",
+              "recordedAt": "2026-10-12T23:41:00.000Z",
+              "payload": {
+                "text": "Une sieste dans la voiture",
+                "pauseCause": {
+                  "pauseEventId": "01JA2REPR1SE00000000000004",
+                  "cause": "fatigue"
+                }
+              }
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000006",
+              "type": "resume",
+              "recordedAt": "2026-10-13T00:06:00.000Z",
+              "payload": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resumed-night-not-a-pause-leaves-a-stretch-without-passage",
+      "args": [
+        {
+          "nightStartAt": "2026-10-12T20:00:00.000Z",
+          "window": {
+            "start": "2026-10-12T20:00:00.000Z",
+            "end": "2026-10-13T01:00:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 120
+            },
+            {
+              "id": "ngc7000",
+              "targetId": "ngc7000",
+              "startMinute": 120,
+              "endMinute": 300
+            }
+          ],
+          "kind": "imaging",
+          "events": [
+            {
+              "eventId": "01JA2REPR1SE00000000000011",
+              "type": "target_started",
+              "recordedAt": "2026-10-12T20:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000012",
+              "type": "target_finished",
+              "recordedAt": "2026-10-12T22:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000013",
+              "type": "target_started",
+              "recordedAt": "2026-10-12T22:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000014",
+              "type": "target_finished",
+              "recordedAt": "2026-10-12T23:41:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01JA2REPR1SE00000000000015",
+              "type": "target_started",
+              "recordedAt": "2026-10-13T00:06:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-device-event-after-the-last-journal-event-moves-no-window",
+      "args": [
+        {
+          "nightStartAt": "2026-10-10T20:40:00.000Z",
+          "window": {
+            "start": "2026-10-10T20:40:00.000Z"
+          },
+          "planItems": [
+            {
+              "id": "m31",
+              "targetId": "m31",
+              "startMinute": 0,
+              "endMinute": 180
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7701",
+              "type": "mount_connected",
+              "recordedAt": "2026-10-10T20:30:00.000Z",
+              "payload": {
+                "protocol": "LX200"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7702",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7703",
+              "type": "mount_goto",
+              "recordedAt": "2026-10-10T20:41:00.000Z",
+              "payload": {
+                "outcome": "sent",
+                "targetId": "m31",
+                "targetLabel": "M31"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7704",
+              "type": "note",
+              "recordedAt": "2026-10-10T21:40:00.000Z",
+              "payload": {
+                "text": "Wind picking up."
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7705",
+              "type": "mount_stop",
+              "recordedAt": "2026-10-10T23:30:00.000Z",
+              "payload": {
+                "cause": "person"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7706",
+              "type": "mount_link_lost",
+              "recordedAt": "2026-10-10T23:45:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H7707",
+              "type": "device_link_back",
+              "recordedAt": "2026-10-10T23:50:00.000Z",
+              "payload": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-55-seconds-are-cut-to-their-minute",
+      "args": [
+        {
+          "nightStartAt": "2026-10-20T12:08:40.000Z",
+          "window": {
+            "start": "2026-10-20T12:08:40.000Z",
+            "end": "2026-10-20T12:27:50.000Z"
+          },
+          "planItems": [
+            {
+              "id": "ngc891",
+              "targetId": "ngc891",
+              "startMinute": 0,
+              "endMinute": 21
+            },
+            {
+              "id": "m110",
+              "targetId": "m110",
+              "startMinute": 21,
+              "endMinute": 41
+            }
+          ],
+          "events": [
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0901",
+              "type": "target_started",
+              "recordedAt": "2026-10-20T12:09:50.000Z",
+              "payload": {
+                "targetId": "ngc891",
+                "planItemId": "ngc891"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0902",
+              "type": "target_finished",
+              "recordedAt": "2026-10-20T12:11:10.000Z",
+              "payload": {
+                "targetId": "ngc891",
+                "planItemId": "ngc891"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0903",
+              "type": "target_started",
+              "recordedAt": "2026-10-20T12:11:20.000Z",
+              "payload": {
+                "targetId": "m110",
+                "planItemId": "m110"
+              }
+            },
+            {
+              "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0904",
+              "type": "target_finished",
+              "recordedAt": "2026-10-20T12:12:09.000Z",
+              "payload": {
+                "targetId": "m110",
+                "planItemId": "m110"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

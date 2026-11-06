@@ -1,0 +1,72 @@
+{
+  "module": "service-identity",
+  "package": "astro-contracts",
+  "export": "parseServiceIdentity",
+  "cases": [
+    {
+      "id": "valid-identity",
+      "args": [
+        { "service": "astro-portal", "apiVersion": 1, "version": "1.0.1" }
+      ]
+    },
+    {
+      "id": "valid-identity-ignores-extra-fields",
+      "args": [
+        {
+          "service": "astro-portal",
+          "apiVersion": 1,
+          "version": "2.3.0-beta.1",
+          "build": "abc"
+        }
+      ]
+    },
+    {
+      "id": "another-service-marker",
+      "args": [
+        { "service": "another-portal", "apiVersion": 1, "version": "1.0.1" }
+      ]
+    },
+    {
+      "id": "missing-service-marker",
+      "args": [{ "apiVersion": 1, "version": "1.0.1" }]
+    },
+    { "id": "null-body", "args": [null] },
+    { "id": "array-body", "args": [[{ "service": "astro-portal" }]] },
+    {
+      "id": "html-text-body",
+      "args": ["<!doctype html><title>Router</title>"]
+    },
+    {
+      "id": "newer-api-version",
+      "args": [
+        { "service": "astro-portal", "apiVersion": 2, "version": "3.0.0" }
+      ]
+    },
+    {
+      "id": "string-api-version",
+      "args": [
+        { "service": "astro-portal", "apiVersion": "1", "version": "1.0.1" }
+      ]
+    },
+    {
+      "id": "fractional-api-version",
+      "args": [
+        { "service": "astro-portal", "apiVersion": 1.5, "version": "1.0.1" }
+      ]
+    },
+    {
+      "id": "zero-api-version",
+      "args": [
+        { "service": "astro-portal", "apiVersion": 0, "version": "1.0.1" }
+      ]
+    },
+    {
+      "id": "missing-version",
+      "args": [{ "service": "astro-portal", "apiVersion": 1 }]
+    },
+    {
+      "id": "empty-version",
+      "args": [{ "service": "astro-portal", "apiVersion": 1, "version": "" }]
+    }
+  ]
+}

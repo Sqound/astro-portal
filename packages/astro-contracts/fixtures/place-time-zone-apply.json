@@ -1,0 +1,119 @@
+{
+  "cases": [
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" },
+        "Europe/Paris",
+        false
+      ],
+      "id": "fill-a-place-without-zone",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "name": "Maison",
+        "timeZone": "Europe/Paris"
+      }
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "name": "Maison" },
+        "Europe/Paris",
+        true
+      ],
+      "id": "choose-fills-and-marks",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "name": "Maison",
+        "timeZone": "Europe/Paris",
+        "timeZoneSource": "chosen"
+      }
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522, "timeZone": "Asia/Tokyo" },
+        "Europe/Paris",
+        true
+      ],
+      "id": "choose-replaces-a-zone",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "timeZone": "Europe/Paris",
+        "timeZoneSource": "chosen"
+      }
+    },
+    {
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Asia/Tokyo",
+          "timeZoneSource": "chosen"
+        },
+        "Europe/Paris",
+        true
+      ],
+      "id": "choose-replaces-an-earlier-choice",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "timeZone": "Europe/Paris",
+        "timeZoneSource": "chosen"
+      }
+    },
+    {
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Asia/Tokyo",
+          "timeZoneSource": "chosen"
+        },
+        "Europe/Paris",
+        false
+      ],
+      "id": "resolution-never-replaces-a-choice",
+      "result": {
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "timeZone": "Asia/Tokyo",
+        "timeZoneSource": "chosen"
+      }
+    },
+    {
+      "args": [
+        { "latitude": 43.9, "longitude": 7.4, "timeZone": "Europe/Monaco" },
+        "Europe/Paris",
+        false
+      ],
+      "id": "resolution-refines-a-resolved-zone",
+      "result": {
+        "latitude": 43.9,
+        "longitude": 7.4,
+        "timeZone": "Europe/Paris"
+      }
+    },
+    {
+      "args": [
+        { "latitude": 43.9, "longitude": 7.4, "timeZone": "Europe/Paris" },
+        "Europe/Paris",
+        false
+      ],
+      "id": "same-zone-changes-nothing",
+      "result": {
+        "latitude": 43.9,
+        "longitude": 7.4,
+        "timeZone": "Europe/Paris"
+      }
+    },
+    {
+      "args": [{ "latitude": 43.9, "longitude": 7.4 }, "Not/AZone", true],
+      "id": "unknown-zone-changes-nothing",
+      "result": { "latitude": 43.9, "longitude": 7.4 }
+    },
+    { "args": [null, "Europe/Paris", true], "id": "no-place", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "place-time-zone-apply"
+}

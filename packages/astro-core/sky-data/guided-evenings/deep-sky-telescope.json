@@ -1,0 +1,482 @@
+{
+  "$schema": "./guided-evening.schema.json",
+  "id": "deep-sky-telescope",
+  "sheetOrder": 4,
+  "kind": "written",
+  "level": "telescope",
+  "observingModes": ["tripod", "mount", "smartTelescope"],
+  "estimatedMinutes": 90,
+  "hemispheres": ["north", "south"],
+  "seasons": ["winter", "spring", "summer", "autumn"],
+  "lists": [
+    {
+      "id": "north-winter",
+      "hemisphere": "north",
+      "season": "winter",
+      "estimatedMinutes": 90,
+      "steps": [
+        {
+          "id": "m42",
+          "type": "deepSky",
+          "target": "openngc-ngc1976",
+          "designation": "M42"
+        },
+        {
+          "id": "m45",
+          "type": "deepSky",
+          "target": "openngc-mel022",
+          "designation": "M45"
+        },
+        {
+          "id": "m37",
+          "type": "deepSky",
+          "target": "openngc-ngc2099",
+          "designation": "M37"
+        },
+        {
+          "id": "m35",
+          "type": "deepSky",
+          "target": "openngc-ngc2168",
+          "designation": "M35"
+        },
+        {
+          "id": "ngc-2392",
+          "type": "deepSky",
+          "target": "openngc-ngc2392",
+          "designation": "NGC 2392"
+        },
+        {
+          "id": "ngc-2244",
+          "type": "deepSky",
+          "target": "openngc-ngc2244",
+          "designation": "NGC 2244"
+        },
+        {
+          "id": "m41",
+          "type": "deepSky",
+          "target": "openngc-ngc2287",
+          "designation": "M41"
+        },
+        {
+          "id": "m46",
+          "type": "deepSky",
+          "target": "openngc-ngc2437",
+          "designation": "M46"
+        }
+      ]
+    },
+    {
+      "id": "north-spring",
+      "hemisphere": "north",
+      "season": "spring",
+      "estimatedMinutes": 90,
+      "steps": [
+        {
+          "id": "m44",
+          "type": "deepSky",
+          "target": "openngc-ngc2632",
+          "designation": "M44"
+        },
+        {
+          "id": "m81",
+          "type": "deepSky",
+          "target": "openngc-ngc3031",
+          "designation": "M81"
+        },
+        { "id": "mizar", "type": "brightStar", "target": "hip:65378" },
+        {
+          "id": "m51",
+          "type": "deepSky",
+          "target": "openngc-ngc5194",
+          "designation": "M51"
+        },
+        {
+          "id": "m3",
+          "type": "deepSky",
+          "target": "openngc-ngc5272",
+          "designation": "M3"
+        },
+        {
+          "id": "m65",
+          "type": "deepSky",
+          "target": "openngc-ngc3623",
+          "designation": "M65"
+        },
+        {
+          "id": "ngc-2903",
+          "type": "deepSky",
+          "target": "openngc-ngc2903",
+          "designation": "NGC 2903"
+        },
+        {
+          "id": "ngc-3242",
+          "type": "deepSky",
+          "target": "openngc-ngc3242",
+          "designation": "NGC 3242"
+        },
+        {
+          "id": "m104",
+          "type": "deepSky",
+          "target": "openngc-ngc4594",
+          "designation": "M104"
+        }
+      ]
+    },
+    {
+      "id": "north-summer",
+      "hemisphere": "north",
+      "season": "summer",
+      "estimatedMinutes": 90,
+      "steps": [
+        {
+          "id": "m13",
+          "type": "deepSky",
+          "target": "openngc-ngc6205",
+          "designation": "M13"
+        },
+        {
+          "id": "m57",
+          "type": "deepSky",
+          "target": "openngc-ngc6720",
+          "designation": "M57"
+        },
+        {
+          "id": "ngc-6543",
+          "type": "deepSky",
+          "target": "openngc-ngc6543",
+          "designation": "NGC 6543"
+        },
+        {
+          "id": "ngc-6826",
+          "type": "deepSky",
+          "target": "openngc-ngc6826",
+          "designation": "NGC 6826"
+        },
+        {
+          "id": "m27",
+          "type": "deepSky",
+          "target": "openngc-ngc6853",
+          "designation": "M27"
+        },
+        {
+          "id": "m11",
+          "type": "deepSky",
+          "target": "openngc-ngc6705",
+          "designation": "M11"
+        },
+        {
+          "id": "m17",
+          "type": "deepSky",
+          "target": "openngc-ngc6618",
+          "designation": "M17"
+        },
+        {
+          "id": "m8",
+          "type": "deepSky",
+          "target": "openngc-ngc6523",
+          "designation": "M8"
+        },
+        {
+          "id": "m22",
+          "type": "deepSky",
+          "target": "openngc-ngc6656",
+          "designation": "M22"
+        }
+      ]
+    },
+    {
+      "id": "north-autumn",
+      "hemisphere": "north",
+      "season": "autumn",
+      "estimatedMinutes": 90,
+      "steps": [
+        {
+          "id": "m15",
+          "type": "deepSky",
+          "target": "openngc-ngc7078",
+          "designation": "M15"
+        },
+        {
+          "id": "ngc-7662",
+          "type": "deepSky",
+          "target": "openngc-ngc7662",
+          "designation": "NGC 7662"
+        },
+        {
+          "id": "m31",
+          "type": "deepSky",
+          "target": "openngc-ngc0224",
+          "designation": "M31"
+        },
+        { "id": "almach", "type": "brightStar", "target": "hip:9640" },
+        {
+          "id": "m33",
+          "type": "deepSky",
+          "target": "openngc-ngc0598",
+          "designation": "M33"
+        },
+        {
+          "id": "ngc-457",
+          "type": "deepSky",
+          "target": "openngc-ngc0457",
+          "designation": "NGC 457"
+        },
+        {
+          "id": "ngc-869",
+          "type": "deepSky",
+          "target": "openngc-ngc0869",
+          "designation": "NGC 869"
+        },
+        {
+          "id": "ngc-253",
+          "type": "deepSky",
+          "target": "openngc-ngc0253",
+          "designation": "NGC 253"
+        }
+      ]
+    },
+    {
+      "id": "south-summer",
+      "hemisphere": "south",
+      "season": "summer",
+      "estimatedMinutes": 90,
+      "steps": [
+        {
+          "id": "m42",
+          "type": "deepSky",
+          "target": "openngc-ngc1976",
+          "designation": "M42"
+        },
+        {
+          "id": "m45",
+          "type": "deepSky",
+          "target": "openngc-mel022",
+          "designation": "M45"
+        },
+        {
+          "id": "ngc-1851",
+          "type": "deepSky",
+          "target": "openngc-ngc1851",
+          "designation": "NGC 1851"
+        },
+        {
+          "id": "m41",
+          "type": "deepSky",
+          "target": "openngc-ngc2287",
+          "designation": "M41"
+        },
+        {
+          "id": "m46",
+          "type": "deepSky",
+          "target": "openngc-ngc2437",
+          "designation": "M46"
+        },
+        {
+          "id": "ngc-2477",
+          "type": "deepSky",
+          "target": "openngc-ngc2477",
+          "designation": "NGC 2477"
+        },
+        {
+          "id": "ngc-2516",
+          "type": "deepSky",
+          "target": "openngc-ngc2516",
+          "designation": "NGC 2516"
+        },
+        {
+          "id": "ngc-2070",
+          "type": "deepSky",
+          "target": "openngc-ngc2070",
+          "designation": "NGC 2070"
+        }
+      ]
+    },
+    {
+      "id": "south-autumn",
+      "hemisphere": "south",
+      "season": "autumn",
+      "estimatedMinutes": 90,
+      "steps": [
+        {
+          "id": "ngc-3242",
+          "type": "deepSky",
+          "target": "openngc-ngc3242",
+          "designation": "NGC 3242"
+        },
+        {
+          "id": "ngc-3532",
+          "type": "deepSky",
+          "target": "openngc-ngc3532",
+          "designation": "NGC 3532"
+        },
+        {
+          "id": "ngc-3372",
+          "type": "deepSky",
+          "target": "openngc-ngc3372",
+          "designation": "NGC 3372"
+        },
+        { "id": "acrux", "type": "brightStar", "target": "hip:60718" },
+        {
+          "id": "ngc-4755",
+          "type": "deepSky",
+          "target": "openngc-ngc4755",
+          "designation": "NGC 4755"
+        },
+        {
+          "id": "ngc-5139",
+          "type": "deepSky",
+          "target": "openngc-ngc5139",
+          "designation": "NGC 5139"
+        },
+        {
+          "id": "ngc-5128",
+          "type": "deepSky",
+          "target": "openngc-ngc5128",
+          "designation": "NGC 5128"
+        },
+        {
+          "id": "m83",
+          "type": "deepSky",
+          "target": "openngc-ngc5236",
+          "designation": "M83"
+        },
+        {
+          "id": "m104",
+          "type": "deepSky",
+          "target": "openngc-ngc4594",
+          "designation": "M104"
+        }
+      ]
+    },
+    {
+      "id": "south-winter",
+      "hemisphere": "south",
+      "season": "winter",
+      "estimatedMinutes": 100,
+      "steps": [
+        {
+          "id": "ngc-6231",
+          "type": "deepSky",
+          "target": "openngc-ngc6231",
+          "designation": "NGC 6231"
+        },
+        {
+          "id": "m4",
+          "type": "deepSky",
+          "target": "openngc-ngc6121",
+          "designation": "M4"
+        },
+        {
+          "id": "m6",
+          "type": "deepSky",
+          "target": "openngc-ngc6405",
+          "designation": "M6"
+        },
+        {
+          "id": "m7",
+          "type": "deepSky",
+          "target": "openngc-ngc6475",
+          "designation": "M7"
+        },
+        {
+          "id": "ngc-6397",
+          "type": "deepSky",
+          "target": "openngc-ngc6397",
+          "designation": "NGC 6397"
+        },
+        {
+          "id": "m8",
+          "type": "deepSky",
+          "target": "openngc-ngc6523",
+          "designation": "M8"
+        },
+        {
+          "id": "m22",
+          "type": "deepSky",
+          "target": "openngc-ngc6656",
+          "designation": "M22"
+        },
+        {
+          "id": "m17",
+          "type": "deepSky",
+          "target": "openngc-ngc6618",
+          "designation": "M17"
+        },
+        {
+          "id": "m11",
+          "type": "deepSky",
+          "target": "openngc-ngc6705",
+          "designation": "M11"
+        },
+        {
+          "id": "ngc-6752",
+          "type": "deepSky",
+          "target": "openngc-ngc6752",
+          "designation": "NGC 6752"
+        }
+      ]
+    },
+    {
+      "id": "south-spring",
+      "hemisphere": "south",
+      "season": "spring",
+      "estimatedMinutes": 90,
+      "steps": [
+        {
+          "id": "ngc-7009",
+          "type": "deepSky",
+          "target": "openngc-ngc7009",
+          "designation": "NGC 7009"
+        },
+        {
+          "id": "m2",
+          "type": "deepSky",
+          "target": "openngc-ngc7089",
+          "designation": "M2"
+        },
+        {
+          "id": "ngc-7293",
+          "type": "deepSky",
+          "target": "openngc-ngc7293",
+          "designation": "NGC 7293"
+        },
+        {
+          "id": "ngc-253",
+          "type": "deepSky",
+          "target": "openngc-ngc0253",
+          "designation": "NGC 253"
+        },
+        {
+          "id": "ngc-288",
+          "type": "deepSky",
+          "target": "openngc-ngc0288",
+          "designation": "NGC 288"
+        },
+        {
+          "id": "ngc-55",
+          "type": "deepSky",
+          "target": "openngc-ngc0055",
+          "designation": "NGC 55"
+        },
+        {
+          "id": "ngc-104",
+          "type": "deepSky",
+          "target": "openngc-ngc0104",
+          "designation": "NGC 104"
+        },
+        {
+          "id": "ngc-362",
+          "type": "deepSky",
+          "target": "openngc-ngc0362",
+          "designation": "NGC 362"
+        },
+        {
+          "id": "ngc-292",
+          "type": "deepSky",
+          "target": "openngc-ngc0292",
+          "designation": "NGC 292"
+        }
+      ]
+    }
+  ]
+}

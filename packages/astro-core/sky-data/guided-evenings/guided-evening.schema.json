@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Guided evening",
+  "description": "One guided evening (a walk through the sky, step by step). A written evening lists its steps, one list per hemisphere and season; a computed evening holds only the rules and the wrapping texts, and the app computes its steps from the place, the date and the horizon. Every text is in texts/<locale>.json under a key derived from this file: <id>.title, <id>.subtitle, <id>.intro, <id>.outro, <id>.title.<season> (written), <id>.<list>.subtitle and <id>.<list>.<step> (written), <id>.<text> (computed). French is the source of meaning. tests/guided-evenings.test.mjs checks the references, the visibility of every written list and the length of every text.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "id",
+    "sheetOrder",
+    "kind",
+    "level",
+    "observingModes",
+    "estimatedMinutes",
+    "hemispheres",
+    "seasons"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": {
+      "description": "Stable identifier, also the file name and the prefix of the text keys.",
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "sheetOrder": {
+      "description": "Position of the evening's card in the choice sheet (1 = first).",
+      "type": "integer",
+      "minimum": 1
+    },
+    "kind": {
+      "description": "written: the steps are the lists below; computed: the app computes them (see computed).",
+      "enum": ["written", "computed"]
+    },
+    "level": {
+      "description": "beginner: nothing to know beforehand; curious: some patience to find faint shapes; telescope: a telescope and its handling.",
+      "enum": ["beginner", "curious", "telescope"]
+    },
+    "observingModes": {
+      "description": "The ways of observing the evening goes with, as the first step of the choice sheet offers them: naked (the eyes alone), binoculars (held in the hand), tripod (binoculars or a telescope on a tripod, the phone on it for the pointing aid), mount (a GoTo mount, refined by the phone), smartTelescope (a smart telescope points and stacks by itself). The person chooses the way; the pointing aid is their choice too, never the evening's.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": ["naked", "binoculars", "tripod", "mount", "smartTelescope"]
+      }
+    },
+    "estimatedMinutes": {
+      "description": "Typical length of the evening, for the card (a written list may say its own).",
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 240
+    },
+    "hemispheres": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "enum": ["north", "south"] }
+    },
+    "seasons": {
+      "description": "Astronomical seasons of the place's own hemisphere (southern spring runs from the September equinox to the December solstice).",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/season" }
+    },
+    "computed": { "$ref": "#/$defs/computed" },
+    "lists": {
+      "description": "Written evenings: one list per hemisphere and season.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/list" }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "kind": { "const": "written" } } },
+      "then": { "required": ["lists"], "not": { "required": ["computed"] } }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "computed" } } },
+      "then": { "required": ["computed"], "not": { "required": ["lists"] } }
+    }
+  ],
+  "$defs": {
+    "season": { "enum": ["winter", "spring", "summer", "autumn"] },
+    "list": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "hemisphere", "season", "estimatedMinutes", "steps"],
+      "properties": {
+        "id": {
+          "description": "<hemisphere>-<season>; the prefix of the list's text keys.",
+          "type": "string",
+          "pattern": "^(north|south)-(winter|spring|summer|autumn)$"
+        },
+        "hemisphere": { "enum": ["north", "south"] },
+        "season": { "$ref": "#/$defs/season" },
+        "estimatedMinutes": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 240
+        },
+        "steps": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 10,
+          "items": { "$ref": "#/$defs/step" }
+        }
+      }
+    },
+    "step": {
+      "description": "One step. Its text (<evening>.<list>.<step>) says where to look from the step before, what one sees and one thing to know, in two to four sentences; it completes the target's own sheet and never repeats it.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "type": {
+          "description": "brightStar: one of the 92 bright stars (target hip:<HIP>); constellation: one of the 88 (target = IAU abbreviation); deepSky: a catalogue object (target = catalogue id); solarSystem: the Moon or a planet (target = catalogue id); lookAround: no target, the sky itself (anchor = where the map opens).",
+          "enum": [
+            "brightStar",
+            "constellation",
+            "deepSky",
+            "solarSystem",
+            "lookAround"
+          ]
+        },
+        "target": {
+          "description": "hip:<HIP> (brightStar), the IAU abbreviation (constellation), the catalogue id of the target index (deepSky: openngc-…, solarSystem: solar-system-…).",
+          "type": "string"
+        },
+        "designation": {
+          "description": "deepSky only: the designation of the catalogue row (M42, NGC 2392), for the reader of this file; checked against the catalogue.",
+          "type": "string"
+        },
+        "anchor": {
+          "description": "lookAround only: the constellation (IAU abbreviation) the map opens on.",
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "lookAround" } } },
+          "then": { "required": ["anchor"], "not": { "required": ["target"] } },
+          "else": { "required": ["target"], "not": { "required": ["anchor"] } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "deepSky" } } },
+          "then": { "required": ["designation"] },
+          "else": { "not": { "required": ["designation"] } }
+        }
+      ]
+    },
+    "computed": {
+      "description": "The rules of a computed evening. The app takes the candidates of source above minAltitudeDegrees (and above the horizon mask) during the first hours of darkness, keeps the count brightest, and orders them; it hides the evening when nothing is left and hideWhenEmpty is true. A step's text is one lead text (optional) followed by one body text (required): for each slot, the first text of texts, in this order, whose conditions all hold.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "stepType",
+        "minAltitudeDegrees",
+        "order",
+        "texts"
+      ],
+      "properties": {
+        "source": {
+          "description": "brightStars: the 92 bright stars of sky-data/bright-stars.json; solarSystem: the bodies listed.",
+          "enum": ["brightStars", "solarSystem"]
+        },
+        "stepType": { "enum": ["brightStar", "solarSystem"] },
+        "bodies": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "moon",
+              "mercury",
+              "venus",
+              "mars",
+              "jupiter",
+              "saturn",
+              "uranus",
+              "neptune"
+            ]
+          }
+        },
+        "count": {
+          "description": "At most this many steps (none: every candidate).",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "minAltitudeDegrees": { "type": "number", "minimum": 0, "maximum": 60 },
+        "order": {
+          "description": "westToEast: by hour angle, the step furthest west (the first to set) first.",
+          "enum": ["westToEast"]
+        },
+        "hideWhenEmpty": { "type": "boolean" },
+        "texts": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/genericText" }
+        }
+      }
+    },
+    "genericText": {
+      "description": "A text of a computed step; its key is <evening>.<id>. A lead text is one sentence, a body text two or three.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "slot", "when"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^(lead|body)-[a-z0-9-]+$" },
+        "slot": { "enum": ["lead", "body"] },
+        "when": {
+          "description": "Every condition must hold; an empty object always holds.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "position": { "enum": ["first", "last"] },
+            "altitudeBelowDegrees": {
+              "description": "The target's altitude when the step opens.",
+              "type": "number"
+            },
+            "colourIndexFrom": {
+              "description": "B−V of the star, inclusive.",
+              "type": "number"
+            },
+            "colourIndexBelow": {
+              "description": "B−V of the star, exclusive.",
+              "type": "number"
+            },
+            "body": {
+              "enum": [
+                "moon",
+                "mercury",
+                "venus",
+                "mars",
+                "jupiter",
+                "saturn",
+                "uranus",
+                "neptune"
+              ]
+            },
+            "waxing": {
+              "description": "The Moon: true from new to full Moon.",
+              "type": "boolean"
+            },
+            "illuminatedFrom": {
+              "description": "The Moon's illuminated fraction, inclusive.",
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "illuminatedBelow": {
+              "description": "The Moon's illuminated fraction, exclusive.",
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1.01
+            }
+          }
+        }
+      }
+    }
+  }
+}

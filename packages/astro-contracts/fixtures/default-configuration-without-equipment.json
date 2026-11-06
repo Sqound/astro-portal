@@ -1,0 +1,98 @@
+{
+  "cases": [
+    {
+      "args": [null, "inv-refractor-72"],
+      "id": "no-configuration",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "inv-refractor-72"
+        },
+        "inv-refractor-72"
+      ],
+      "id": "the-archived-telescope-is-to-choose",
+      "result": {
+        "cameraId": "inv-camera-colour",
+        "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+        "mode": "imaging",
+        "modifierId": "none",
+        "mountId": "inv-mount-eq"
+      }
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "inv-refractor-72"
+        },
+        "inv-filter-duo"
+      ],
+      "id": "an-archived-filter-leaves-the-filters",
+      "result": {
+        "cameraId": "inv-camera-colour",
+        "filterIds": ["inv-filter-uvir"],
+        "mode": "imaging",
+        "modifierId": "none",
+        "mountId": "inv-mount-eq",
+        "telescopeId": "inv-refractor-72"
+      }
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "inv-refractor-72"
+        },
+        "inv-newton-150"
+      ],
+      "id": "an-item-it-does-not-name",
+      "result": {
+        "cameraId": "inv-camera-colour",
+        "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+        "mode": "imaging",
+        "modifierId": "none",
+        "mountId": "inv-mount-eq",
+        "telescopeId": "inv-refractor-72"
+      }
+    },
+    {
+      "args": [
+        {
+          "cameraId": "inv-camera-colour",
+          "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+          "mode": "imaging",
+          "modifierId": "none",
+          "mountId": "inv-mount-eq",
+          "telescopeId": "skywatcher-skymax-127"
+        },
+        "none"
+      ],
+      "id": "none-is-no-item",
+      "result": {
+        "cameraId": "inv-camera-colour",
+        "filterIds": ["inv-filter-duo", "inv-filter-uvir"],
+        "mode": "imaging",
+        "modifierId": "none",
+        "mountId": "inv-mount-eq",
+        "telescopeId": "skywatcher-skymax-127"
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "default-configuration-without-equipment"
+}

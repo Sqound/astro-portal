@@ -1,0 +1,223 @@
+{
+  "module": "planner-place-normalization",
+  "package": "portal",
+  "file": "planner/state",
+  "export": "normalizePlace",
+  "cases": [
+    {
+      "id": "derives-a-stable-id-and-locality",
+      "args": [
+        {
+          "latitude": 45.5,
+          "longitude": -73.6,
+          "name": "Home",
+          "timeZone": "America/Toronto"
+        }
+      ]
+    },
+    {
+      "id": "invalid-coordinates-return-null",
+      "args": [
+        {
+          "latitude": 95,
+          "longitude": 0
+        }
+      ]
+    },
+    {
+      "id": "an-explicit-id-and-version-are-preserved",
+      "args": [
+        {
+          "id": "place-x",
+          "latitude": 45.5,
+          "longitude": -73.6,
+          "name": "Home",
+          "version": 4
+        }
+      ]
+    },
+    {
+      "id": "a-mask-marks-the-place-verified",
+      "args": [
+        {
+          "horizonMask": {
+            "enabled": true,
+            "points": [
+              {
+                "altitude": 5,
+                "azimuth": 0
+              }
+            ]
+          },
+          "latitude": 45.5,
+          "longitude": -73.6,
+          "name": "Home"
+        }
+      ]
+    },
+    {
+      "id": "a-link-to-a-known-place-is-kept-without-its-prefix",
+      "args": [
+        {
+          "latitude": 45.02,
+          "longitude": -30.04,
+          "name": "Belvédère de la Crête",
+          "knownPlace": {
+            "source": "osm",
+            "id": "osm:node/101",
+            "type": "viewpoint",
+            "linkedAt": "2026-10-01T20:15:00.000Z",
+            "website": "https://belvedere.invalid/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a-link-to-another-source-is-dropped",
+      "args": [
+        {
+          "latitude": 45.02,
+          "longitude": -30.04,
+          "name": "Belvédère de la Crête",
+          "knownPlace": {
+            "source": "wikidata",
+            "id": "node/101",
+            "type": "viewpoint",
+            "linkedAt": "2026-10-01T20:15:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a-link-with-an-unknown-type-is-dropped",
+      "args": [
+        {
+          "latitude": 45.02,
+          "longitude": -30.04,
+          "name": "Belvédère de la Crête",
+          "knownPlace": {
+            "source": "osm",
+            "id": "way/7",
+            "type": "parking",
+            "linkedAt": "2026-10-01T20:15:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a-link-with-an-invalid-id-is-dropped",
+      "args": [
+        {
+          "latitude": 45.02,
+          "longitude": -30.04,
+          "name": "Belvédère de la Crête",
+          "knownPlace": {
+            "source": "osm",
+            "id": "area/7",
+            "type": "park",
+            "linkedAt": "2026-10-01T20:15:00.000Z"
+          },
+          "id": "place-a"
+        }
+      ]
+    },
+    {
+      "id": "a-link-dated-with-a-plain-date-is-dropped",
+      "args": [
+        {
+          "latitude": 45.02,
+          "longitude": -30.04,
+          "name": "Belvédère de la Crête",
+          "knownPlace": {
+            "source": "osm",
+            "id": "relation/31",
+            "type": "park",
+            "linkedAt": "2026-10-01"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a-null-link-is-dropped",
+      "args": [
+        {
+          "latitude": 45.02,
+          "longitude": -30.04,
+          "name": "Belvédère de la Crête",
+          "knownPlace": null
+        }
+      ]
+    },
+    {
+      "id": "an-entered-sky-value-is-kept-to-the-hundredth",
+      "args": [
+        {
+          "latitude": 45.02,
+          "longitude": -30.04,
+          "name": "Col des Mélèzes",
+          "skyEntered": {
+            "sqm": 21.356,
+            "enteredAt": "2026-10-01T20:15:00.000Z",
+            "note": "dropped"
+          }
+        }
+      ]
+    },
+    {
+      "id": "an-entered-sky-value-out-of-range-is-dropped",
+      "args": [
+        {
+          "latitude": 45.02,
+          "longitude": -30.04,
+          "name": "Col des Mélèzes",
+          "skyEntered": {
+            "sqm": 25,
+            "enteredAt": "2026-10-01T20:15:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "an-entered-sky-value-as-text-is-dropped",
+      "args": [
+        {
+          "latitude": 45.02,
+          "longitude": -30.04,
+          "name": "Col des Mélèzes",
+          "skyEntered": {
+            "sqm": "21.3",
+            "enteredAt": "2026-10-01T20:15:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "an-entered-sky-value-without-an-instant-is-dropped",
+      "args": [
+        {
+          "latitude": 45.02,
+          "longitude": -30.04,
+          "name": "Col des Mélèzes",
+          "skyEntered": {
+            "sqm": 21.3,
+            "enteredAt": "2026-10-01"
+          }
+        }
+      ]
+    },
+    {
+      "id": "an-entered-sky-value-dated-to-the-microsecond-is-kept",
+      "args": [
+        {
+          "latitude": 45.02,
+          "longitude": -30.04,
+          "name": "Col des Mélèzes",
+          "skyEntered": {
+            "sqm": 21.2,
+            "enteredAt": "2026-10-18T11:34:12.405229Z"
+          }
+        }
+      ]
+    }
+  ]
+}

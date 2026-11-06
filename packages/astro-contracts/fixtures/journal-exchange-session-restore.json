@@ -1,0 +1,35 @@
+{
+  "description": "`POST /v1/sessions/{id}/restore`: a deleted session comes back, without `deletedAt`, in the Journal with its events.",
+  "exchange": "session-restore",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The free observation of 10 August of `list`, deleted just before.",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/sessions/00000000-0000-4000-8000-000000000016/restore"
+  },
+  "response": {
+    "body": {
+      "session": {
+        "clientSessionId": "01J8Z3K9QZ6N3S6R3E6G8H0021",
+        "createdAt": "2026-10-14T01:00:00.000Z",
+        "eveningDate": "2026-08-10",
+        "eventCount": 2,
+        "finishedAt": "2026-08-10T22:00:00.000Z",
+        "id": "00000000-0000-4000-8000-000000000016",
+        "origin": "execution",
+        "outcome": null,
+        "pendingSupplementCount": 0,
+        "planId": null,
+        "projectId": null,
+        "reworkRevision": 0,
+        "reworkedAt": null,
+        "startedAt": "2026-08-10T20:00:00.000Z",
+        "status": "finished",
+        "supplementCount": 0,
+        "updatedAt": "2026-10-14T12:30:00.000Z"
+      }
+    },
+    "schema": "session.schema.json#/$defs/restoreResponse",
+    "status": 200
+  }
+}

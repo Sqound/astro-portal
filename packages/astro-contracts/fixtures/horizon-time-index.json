@@ -1,0 +1,31 @@
+{
+  "cases": [
+    {
+      "args": [0, 120, 240, 25],
+      "id": "a-forward-drag-advances-the-sample",
+      "result": 12
+    },
+    {
+      "args": [2, -400, 240, 25],
+      "id": "a-backward-drag-clamps-at-zero",
+      "result": 0
+    },
+    {
+      "args": [24, 400, 240, 25],
+      "id": "the-last-sample-is-the-upper-bound",
+      "result": 24
+    },
+    {
+      "args": [3, 50, 0, 25],
+      "id": "a-zero-width-never-divides-by-zero",
+      "result": 24
+    },
+    {
+      "args": [0, 100, 240, 1],
+      "id": "a-single-sample-has-no-range",
+      "result": 0
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "horizon-time-index"
+}

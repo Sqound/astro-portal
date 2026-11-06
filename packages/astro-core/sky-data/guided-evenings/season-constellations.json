@@ -1,0 +1,142 @@
+{
+  "$schema": "./guided-evening.schema.json",
+  "id": "season-constellations",
+  "sheetOrder": 2,
+  "kind": "written",
+  "level": "curious",
+  "observingModes": ["naked", "binoculars"],
+  "estimatedMinutes": 40,
+  "hemispheres": ["north", "south"],
+  "seasons": ["winter", "spring", "summer", "autumn"],
+  "lists": [
+    {
+      "id": "north-winter",
+      "hemisphere": "north",
+      "season": "winter",
+      "estimatedMinutes": 45,
+      "steps": [
+        { "id": "ori", "type": "constellation", "target": "Ori" },
+        { "id": "tau", "type": "constellation", "target": "Tau" },
+        { "id": "aur", "type": "constellation", "target": "Aur" },
+        { "id": "gem", "type": "constellation", "target": "Gem" },
+        { "id": "cmi", "type": "constellation", "target": "CMi" },
+        { "id": "cma", "type": "constellation", "target": "CMa" },
+        { "id": "lep", "type": "constellation", "target": "Lep" },
+        { "id": "winter-hexagon", "type": "lookAround", "anchor": "Ori" }
+      ]
+    },
+    {
+      "id": "north-spring",
+      "hemisphere": "north",
+      "season": "spring",
+      "estimatedMinutes": 40,
+      "steps": [
+        { "id": "uma", "type": "constellation", "target": "UMa" },
+        { "id": "umi", "type": "constellation", "target": "UMi" },
+        { "id": "leo", "type": "constellation", "target": "Leo" },
+        { "id": "cnc", "type": "constellation", "target": "Cnc" },
+        { "id": "com", "type": "constellation", "target": "Com" },
+        { "id": "boo", "type": "constellation", "target": "Boo" },
+        { "id": "vir", "type": "constellation", "target": "Vir" },
+        { "id": "crv", "type": "constellation", "target": "Crv" }
+      ]
+    },
+    {
+      "id": "north-summer",
+      "hemisphere": "north",
+      "season": "summer",
+      "estimatedMinutes": 50,
+      "steps": [
+        { "id": "lyr", "type": "constellation", "target": "Lyr" },
+        { "id": "cyg", "type": "constellation", "target": "Cyg" },
+        { "id": "aql", "type": "constellation", "target": "Aql" },
+        { "id": "milky-way", "type": "lookAround", "anchor": "Cyg" },
+        { "id": "del", "type": "constellation", "target": "Del" },
+        { "id": "her", "type": "constellation", "target": "Her" },
+        { "id": "crb", "type": "constellation", "target": "CrB" },
+        { "id": "sco", "type": "constellation", "target": "Sco" },
+        { "id": "sgr", "type": "constellation", "target": "Sgr" }
+      ]
+    },
+    {
+      "id": "north-autumn",
+      "hemisphere": "north",
+      "season": "autumn",
+      "estimatedMinutes": 40,
+      "steps": [
+        { "id": "cas", "type": "constellation", "target": "Cas" },
+        { "id": "cep", "type": "constellation", "target": "Cep" },
+        { "id": "peg", "type": "constellation", "target": "Peg" },
+        { "id": "and", "type": "constellation", "target": "And" },
+        { "id": "per", "type": "constellation", "target": "Per" },
+        { "id": "tri", "type": "constellation", "target": "Tri" },
+        { "id": "ari", "type": "constellation", "target": "Ari" },
+        { "id": "psa", "type": "constellation", "target": "PsA" }
+      ]
+    },
+    {
+      "id": "south-summer",
+      "hemisphere": "south",
+      "season": "summer",
+      "estimatedMinutes": 40,
+      "steps": [
+        { "id": "ori", "type": "constellation", "target": "Ori" },
+        { "id": "tau", "type": "constellation", "target": "Tau" },
+        { "id": "cma", "type": "constellation", "target": "CMa" },
+        { "id": "lep", "type": "constellation", "target": "Lep" },
+        { "id": "col", "type": "constellation", "target": "Col" },
+        { "id": "car", "type": "constellation", "target": "Car" },
+        { "id": "dor", "type": "constellation", "target": "Dor" },
+        { "id": "eri", "type": "constellation", "target": "Eri" }
+      ]
+    },
+    {
+      "id": "south-autumn",
+      "hemisphere": "south",
+      "season": "autumn",
+      "estimatedMinutes": 40,
+      "steps": [
+        { "id": "cru", "type": "constellation", "target": "Cru" },
+        { "id": "cen", "type": "constellation", "target": "Cen" },
+        { "id": "mus", "type": "constellation", "target": "Mus" },
+        { "id": "car", "type": "constellation", "target": "Car" },
+        { "id": "vel", "type": "constellation", "target": "Vel" },
+        { "id": "leo", "type": "constellation", "target": "Leo" },
+        { "id": "vir", "type": "constellation", "target": "Vir" },
+        { "id": "crv", "type": "constellation", "target": "Crv" }
+      ]
+    },
+    {
+      "id": "south-winter",
+      "hemisphere": "south",
+      "season": "winter",
+      "estimatedMinutes": 45,
+      "steps": [
+        { "id": "sco", "type": "constellation", "target": "Sco" },
+        { "id": "sgr", "type": "constellation", "target": "Sgr" },
+        { "id": "milky-way", "type": "lookAround", "anchor": "Sgr" },
+        { "id": "cra", "type": "constellation", "target": "CrA" },
+        { "id": "ara", "type": "constellation", "target": "Ara" },
+        { "id": "tra", "type": "constellation", "target": "TrA" },
+        { "id": "oph", "type": "constellation", "target": "Oph" },
+        { "id": "aql", "type": "constellation", "target": "Aql" }
+      ]
+    },
+    {
+      "id": "south-spring",
+      "hemisphere": "south",
+      "season": "spring",
+      "estimatedMinutes": 40,
+      "steps": [
+        { "id": "tuc", "type": "constellation", "target": "Tuc" },
+        { "id": "eri", "type": "constellation", "target": "Eri" },
+        { "id": "phe", "type": "constellation", "target": "Phe" },
+        { "id": "gru", "type": "constellation", "target": "Gru" },
+        { "id": "psa", "type": "constellation", "target": "PsA" },
+        { "id": "scl", "type": "constellation", "target": "Scl" },
+        { "id": "aqr", "type": "constellation", "target": "Aqr" },
+        { "id": "peg", "type": "constellation", "target": "Peg" }
+      ]
+    }
+  ]
+}

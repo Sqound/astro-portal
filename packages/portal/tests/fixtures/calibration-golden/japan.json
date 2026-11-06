@@ -1,0 +1,82 @@
+{
+  "attribution": [
+    "National Park Service Night Skies Program, night sky data set (nsdmap.geojson). A work of the United States Government: public domain.",
+    "Globe at Night, NSF NOIRLab (globeatnight.org), CC BY 4.0.",
+    "星空観察「デジタルカメラによる夜空の明るさ調査」, Ministry of the Environment of Japan (環境省) with 星空公団; the copy carrying coordinates is published by the National Institute for Environmental Studies (国立環境研究所) as the 環境展望台 / 環境GIS star-watching map layer."
+  ],
+  "compiledIn": 0.299,
+  "fit": {
+    "bias": 0.0019336973681644664,
+    "rmsMagnitudes": 0.025198047661727754,
+    "scale": 0.29931792507443733,
+    "sites": 20
+  },
+  "fromYear": 2019,
+  "globeAtNightCells": 15,
+  "globeAtNightReadings": 60,
+  "japan": {
+    "bySeason": {
+      "summer": null,
+      "winter": null
+    },
+    "calibratedWith": false,
+    "cells": 8,
+    "fit": {
+      "bias": 0.00024897528721501416,
+      "rmsMagnitudes": 0.014761654189920847,
+      "scale": 0.8011860954624581,
+      "sites": 8
+    },
+    "license": "env.go.jp tables: 公共データ利用規約（第1.0版）/ PDL1.0 (CC BY 4.0 compatible), attribution required (出典：環境省 星空観察), no coordinates. NIES map layer (with coordinates): 国立環境研究所 site policy, reproduction reserved for the site's own content — a request to use it for calibration is pending with the institute; only a fitted constant is shipped, never the underlying measurements or positions.",
+    "maximumVariation": 0.2,
+    "measurements": 32
+  },
+  "minimumReadings": 3,
+  "npsSites": 5,
+  "perSource": {
+    "globeAtNight": {
+      "bias": 0.0002724719761026506,
+      "rmsMagnitudes": 0.01261135741320689,
+      "scale": 0.2998491175994491,
+      "sites": 15
+    },
+    "nationalParkService": {
+      "bias": 0.006942125683482914,
+      "rmsMagnitudes": 0.04504399173186854,
+      "scale": 0.2976893638155743,
+      "sites": 5
+    }
+  },
+  "raster": {
+    "bytes": 64800,
+    "cellSizeDegrees": 1,
+    "height": 180,
+    "north": 90,
+    "populatedCells": 64800,
+    "west": -180,
+    "width": 360
+  },
+  "region": {
+    "id": "japan",
+    "campaign": {
+      "cells": 8,
+      "fit": {
+        "bias": 0.00024897528721501416,
+        "rmsMagnitudes": 0.014761654189920847,
+        "scale": 0.8011860954624581,
+        "sites": 8
+      },
+      "measurements": 32
+    },
+    "globeAtNight": {
+      "cells": 0,
+      "fit": null,
+      "npsSites": 0,
+      "readings": 0
+    }
+  },
+  "years": {
+    "from": 2022,
+    "to": 2023
+  }
+}

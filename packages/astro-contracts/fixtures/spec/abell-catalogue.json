@@ -1,0 +1,22 @@
+{
+  "module": "abell-catalogue",
+  "export": "abellDesignation",
+  "cases": [
+    {
+      "id": "zero-padded",
+      "args": ["Abell 039"]
+    },
+    {
+      "id": "simbad-writing",
+      "args": ["PN A66 39"]
+    },
+    {
+      "id": "joined",
+      "args": ["Abell39"]
+    },
+    {
+      "id": "foreign-designation",
+      "args": ["A 39"]
+    }
+  ]
+}

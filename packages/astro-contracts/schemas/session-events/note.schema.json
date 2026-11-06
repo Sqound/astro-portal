@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/note.schema.json",
+  "title": "Astro Portal session event payload: note",
+  "description": "A free-text field note, the catch-all entry for anything the other seven typed events do not cover — and the correction event of the registry: a note carrying `pauseCause` gives a cause to a `pause` already recorded (the journal is append-only, so a cause chosen after the tap is a new event naming the pause, never an edit of it). Such a correction needs no text. A note carrying `appStopped` records, at the application's next cold start, the stretch during which it did not run in the middle of an open session (from its last sign of life to that start); it needs no text either. See session-events.md for what this type is for and what it deliberately is not.",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "targetId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "Optional: attaches the note to a target already named by a target_started event in this session (catalogue id, or the same free label used there)."
+    },
+    "pauseCause": {
+      "type": "object",
+      "description": "Gives `cause` to the pause event `pauseEventId` of the same session. When several corrections name the same pause, the latest by recordedAt (then eventId) wins, and a correction always wins over the pause's own `cause`.",
+      "required": ["pauseEventId", "cause"],
+      "properties": {
+        "pauseEventId": {
+          "type": "string",
+          "pattern": "^[0-9A-HJKMNP-TV-Z]{26}$"
+        },
+        "cause": {
+          "type": "string",
+          "enum": [
+            "clouds",
+            "wind",
+            "dew",
+            "guiding",
+            "meridian_flip",
+            "equipment",
+            "fatigue",
+            "other"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "appStopped": {
+      "type": "object",
+      "description": "The application did not run from `from` (its last sign of life) to `to` (its next cold start) while this session was open. The capture is assumed to have gone on: the time stays counted, as automatic time not confirmed yet, until a later auto_time_confirmed of the target (session-passages). `to` is after `from`; a reader ignores a note whose `to` is not after its `from`.",
+      "required": ["from", "to"],
+      "properties": {
+        "from": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{1,9})?(Z|[+-][0-9]{2}:[0-9]{2})$"
+        },
+        "to": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{1,9})?(Z|[+-][0-9]{2}:[0-9]{2})$"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "anyOf": [
+        {
+          "required": ["text"]
+        },
+        {
+          "required": ["pauseCause"]
+        },
+        {
+          "required": ["appStopped"]
+        }
+      ]
+    }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,97 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "fieldHeightDegrees": 2,
+          "fieldWidthDegrees": 3,
+          "heightDegrees": 1.5,
+          "overlapPercent": 10,
+          "widthDegrees": 2
+        }
+      ],
+      "id": "field-already-covers-surface",
+      "result": { "columns": 1, "panelCount": 1, "rows": 1 }
+    },
+    {
+      "args": [
+        {
+          "fieldHeightDegrees": 2,
+          "fieldWidthDegrees": 3,
+          "heightDegrees": 1,
+          "overlapPercent": 0,
+          "widthDegrees": 10
+        }
+      ],
+      "id": "wider-surface-only",
+      "result": { "columns": 4, "panelCount": 4, "rows": 1 }
+    },
+    {
+      "args": [
+        {
+          "fieldHeightDegrees": 2,
+          "fieldWidthDegrees": 2,
+          "heightDegrees": 6,
+          "overlapPercent": 20,
+          "widthDegrees": 8
+        }
+      ],
+      "id": "grid-with-overlap",
+      "result": { "columns": 5, "panelCount": 20, "rows": 4 }
+    },
+    {
+      "args": [
+        {
+          "fieldHeightDegrees": 2,
+          "fieldWidthDegrees": 2,
+          "heightDegrees": 1,
+          "overlapPercent": 150,
+          "widthDegrees": 8
+        }
+      ],
+      "id": "overlap-clamped-at-90",
+      "result": { "columns": 32, "panelCount": 32, "rows": 1 }
+    },
+    {
+      "args": [
+        {
+          "fieldHeightDegrees": 0,
+          "fieldWidthDegrees": 0,
+          "heightDegrees": 5,
+          "overlapPercent": 10,
+          "widthDegrees": 5
+        }
+      ],
+      "id": "zero-field-falls-back-to-one-panel",
+      "result": { "columns": 1, "panelCount": 1, "rows": 1 }
+    },
+    {
+      "args": [
+        {
+          "fieldHeightDegrees": 2,
+          "fieldWidthDegrees": 2,
+          "heightDegrees": -3,
+          "overlapPercent": 0,
+          "widthDegrees": 0
+        }
+      ],
+      "id": "non-positive-surface-falls-back-to-one-panel",
+      "result": { "columns": 1, "panelCount": 1, "rows": 1 }
+    },
+    {
+      "args": [
+        {
+          "fieldHeightDegrees": 2,
+          "fieldWidthDegrees": 2,
+          "heightDegrees": 4,
+          "overlapPercent": 0,
+          "widthDegrees": 4
+        }
+      ],
+      "id": "square-surface-square-field-no-overlap",
+      "result": { "columns": 2, "panelCount": 4, "rows": 2 }
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "mosaic-grid"
+}

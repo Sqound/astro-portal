@@ -1,0 +1,2509 @@
+{
+  "notice": "Pre-rendered by the application's sky map engine. The constellation drawings are by Johan Meuris for Stellarium, under the Free Art License; the star and line data come from Stellarium (CC BY-SA).",
+  "images": {
+    "constellation-and": {
+      "thumbnail": {
+        "file": "constellation-and.jpg",
+        "bytes": 24189
+      },
+      "full": {
+        "file": "constellation-and-full.jpg",
+        "bytes": 37616
+      },
+      "naked": {
+        "file": "constellation-and-naked.jpg",
+        "bytes": 16611
+      },
+      "nakedLines": {
+        "file": "constellation-and-naked-lines.jpg",
+        "bytes": 27381
+      }
+    },
+    "constellation-ant": {
+      "thumbnail": {
+        "file": "constellation-ant.jpg",
+        "bytes": 15571
+      },
+      "full": {
+        "file": "constellation-ant-full.jpg",
+        "bytes": 30469
+      },
+      "naked": {
+        "file": "constellation-ant-naked.jpg",
+        "bytes": 9350
+      },
+      "nakedLines": {
+        "file": "constellation-ant-naked-lines.jpg",
+        "bytes": 13842
+      }
+    },
+    "constellation-aps": {
+      "thumbnail": {
+        "file": "constellation-aps.jpg",
+        "bytes": 16187
+      },
+      "full": {
+        "file": "constellation-aps-full.jpg",
+        "bytes": 27392
+      },
+      "naked": {
+        "file": "constellation-aps-naked.jpg",
+        "bytes": 10766
+      },
+      "nakedLines": {
+        "file": "constellation-aps-naked-lines.jpg",
+        "bytes": 15756
+      }
+    },
+    "constellation-aql": {
+      "thumbnail": {
+        "file": "constellation-aql.jpg",
+        "bytes": 22900
+      },
+      "full": {
+        "file": "constellation-aql-full.jpg",
+        "bytes": 39288
+      },
+      "naked": {
+        "file": "constellation-aql-naked.jpg",
+        "bytes": 14392
+      },
+      "nakedLines": {
+        "file": "constellation-aql-naked-lines.jpg",
+        "bytes": 25595
+      }
+    },
+    "constellation-aqr": {
+      "thumbnail": {
+        "file": "constellation-aqr.jpg",
+        "bytes": 31547
+      },
+      "full": {
+        "file": "constellation-aqr-full.jpg",
+        "bytes": 48276
+      },
+      "naked": {
+        "file": "constellation-aqr-naked.jpg",
+        "bytes": 24048
+      },
+      "nakedLines": {
+        "file": "constellation-aqr-naked-lines.jpg",
+        "bytes": 39486
+      }
+    },
+    "constellation-ara": {
+      "thumbnail": {
+        "file": "constellation-ara.jpg",
+        "bytes": 25554
+      },
+      "full": {
+        "file": "constellation-ara-full.jpg",
+        "bytes": 41635
+      },
+      "naked": {
+        "file": "constellation-ara-naked.jpg",
+        "bytes": 17045
+      },
+      "nakedLines": {
+        "file": "constellation-ara-naked-lines.jpg",
+        "bytes": 27946
+      }
+    },
+    "constellation-ari": {
+      "thumbnail": {
+        "file": "constellation-ari.jpg",
+        "bytes": 20055
+      },
+      "full": {
+        "file": "constellation-ari-full.jpg",
+        "bytes": 32804
+      },
+      "naked": {
+        "file": "constellation-ari-naked.jpg",
+        "bytes": 12861
+      },
+      "nakedLines": {
+        "file": "constellation-ari-naked-lines.jpg",
+        "bytes": 19093
+      }
+    },
+    "constellation-aur": {
+      "thumbnail": {
+        "file": "constellation-aur.jpg",
+        "bytes": 31662
+      },
+      "full": {
+        "file": "constellation-aur-full.jpg",
+        "bytes": 57902
+      },
+      "naked": {
+        "file": "constellation-aur-naked.jpg",
+        "bytes": 21011
+      },
+      "nakedLines": {
+        "file": "constellation-aur-naked-lines.jpg",
+        "bytes": 30856
+      }
+    },
+    "constellation-boo": {
+      "thumbnail": {
+        "file": "constellation-boo.jpg",
+        "bytes": 24465
+      },
+      "full": {
+        "file": "constellation-boo-full.jpg",
+        "bytes": 41209
+      },
+      "naked": {
+        "file": "constellation-boo-naked.jpg",
+        "bytes": 15709
+      },
+      "nakedLines": {
+        "file": "constellation-boo-naked-lines.jpg",
+        "bytes": 27684
+      }
+    },
+    "constellation-cae": {
+      "thumbnail": {
+        "file": "constellation-cae.jpg",
+        "bytes": 11968
+      },
+      "full": {
+        "file": "constellation-cae-full.jpg",
+        "bytes": 18648
+      },
+      "naked": {
+        "file": "constellation-cae-naked.jpg",
+        "bytes": 7959
+      },
+      "nakedLines": {
+        "file": "constellation-cae-naked-lines.jpg",
+        "bytes": 14329
+      }
+    },
+    "constellation-cam": {
+      "thumbnail": {
+        "file": "constellation-cam.jpg",
+        "bytes": 17813
+      },
+      "full": {
+        "file": "constellation-cam-full.jpg",
+        "bytes": 28581
+      },
+      "naked": {
+        "file": "constellation-cam-naked.jpg",
+        "bytes": 11659
+      },
+      "nakedLines": {
+        "file": "constellation-cam-naked-lines.jpg",
+        "bytes": 20567
+      }
+    },
+    "constellation-cap": {
+      "thumbnail": {
+        "file": "constellation-cap.jpg",
+        "bytes": 18231
+      },
+      "full": {
+        "file": "constellation-cap-full.jpg",
+        "bytes": 33202
+      },
+      "naked": {
+        "file": "constellation-cap-naked.jpg",
+        "bytes": 10964
+      },
+      "nakedLines": {
+        "file": "constellation-cap-naked-lines.jpg",
+        "bytes": 23414
+      }
+    },
+    "constellation-car": {
+      "thumbnail": {
+        "file": "constellation-car.jpg",
+        "bytes": 43838
+      },
+      "full": {
+        "file": "constellation-car-full.jpg",
+        "bytes": 71454
+      },
+      "naked": {
+        "file": "constellation-car-naked.jpg",
+        "bytes": 45954
+      },
+      "nakedLines": {
+        "file": "constellation-car-naked-lines.jpg",
+        "bytes": 63202
+      }
+    },
+    "constellation-cas": {
+      "thumbnail": {
+        "file": "constellation-cas.jpg",
+        "bytes": 25710
+      },
+      "full": {
+        "file": "constellation-cas-full.jpg",
+        "bytes": 43794
+      },
+      "naked": {
+        "file": "constellation-cas-naked.jpg",
+        "bytes": 16782
+      },
+      "nakedLines": {
+        "file": "constellation-cas-naked-lines.jpg",
+        "bytes": 21944
+      }
+    },
+    "constellation-cen": {
+      "thumbnail": {
+        "file": "constellation-cen.jpg",
+        "bytes": 38807
+      },
+      "full": {
+        "file": "constellation-cen-full.jpg",
+        "bytes": 57832
+      },
+      "naked": {
+        "file": "constellation-cen-naked.jpg",
+        "bytes": 36154
+      },
+      "nakedLines": {
+        "file": "constellation-cen-naked-lines.jpg",
+        "bytes": 51774
+      }
+    },
+    "constellation-cep": {
+      "thumbnail": {
+        "file": "constellation-cep.jpg",
+        "bytes": 23639
+      },
+      "full": {
+        "file": "constellation-cep-full.jpg",
+        "bytes": 43295
+      },
+      "naked": {
+        "file": "constellation-cep-naked.jpg",
+        "bytes": 13940
+      },
+      "nakedLines": {
+        "file": "constellation-cep-naked-lines.jpg",
+        "bytes": 25369
+      }
+    },
+    "constellation-cet": {
+      "thumbnail": {
+        "file": "constellation-cet.jpg",
+        "bytes": 32641
+      },
+      "full": {
+        "file": "constellation-cet-full.jpg",
+        "bytes": 47921
+      },
+      "naked": {
+        "file": "constellation-cet-naked.jpg",
+        "bytes": 25582
+      },
+      "nakedLines": {
+        "file": "constellation-cet-naked-lines.jpg",
+        "bytes": 41206
+      }
+    },
+    "constellation-cha": {
+      "thumbnail": {
+        "file": "constellation-cha.jpg",
+        "bytes": 18135
+      },
+      "full": {
+        "file": "constellation-cha-full.jpg",
+        "bytes": 25866
+      },
+      "naked": {
+        "file": "constellation-cha-naked.jpg",
+        "bytes": 12589
+      },
+      "nakedLines": {
+        "file": "constellation-cha-naked-lines.jpg",
+        "bytes": 17960
+      }
+    },
+    "constellation-cir": {
+      "thumbnail": {
+        "file": "constellation-cir.jpg",
+        "bytes": 19068
+      },
+      "full": {
+        "file": "constellation-cir-full.jpg",
+        "bytes": 24841
+      },
+      "naked": {
+        "file": "constellation-cir-naked.jpg",
+        "bytes": 14138
+      },
+      "nakedLines": {
+        "file": "constellation-cir-naked-lines.jpg",
+        "bytes": 23517
+      }
+    },
+    "constellation-cma": {
+      "thumbnail": {
+        "file": "constellation-cma.jpg",
+        "bytes": 25582
+      },
+      "full": {
+        "file": "constellation-cma-full.jpg",
+        "bytes": 38814
+      },
+      "naked": {
+        "file": "constellation-cma-naked.jpg",
+        "bytes": 18966
+      },
+      "nakedLines": {
+        "file": "constellation-cma-naked-lines.jpg",
+        "bytes": 31918
+      }
+    },
+    "constellation-cmi": {
+      "thumbnail": {
+        "file": "constellation-cmi.jpg",
+        "bytes": 16108
+      },
+      "full": {
+        "file": "constellation-cmi-full.jpg",
+        "bytes": 24431
+      },
+      "naked": {
+        "file": "constellation-cmi-naked.jpg",
+        "bytes": 11472
+      },
+      "nakedLines": {
+        "file": "constellation-cmi-naked-lines.jpg",
+        "bytes": 17099
+      }
+    },
+    "constellation-cnc": {
+      "thumbnail": {
+        "file": "constellation-cnc.jpg",
+        "bytes": 19475
+      },
+      "full": {
+        "file": "constellation-cnc-full.jpg",
+        "bytes": 32388
+      },
+      "naked": {
+        "file": "constellation-cnc-naked.jpg",
+        "bytes": 12108
+      },
+      "nakedLines": {
+        "file": "constellation-cnc-naked-lines.jpg",
+        "bytes": 22065
+      }
+    },
+    "constellation-col": {
+      "thumbnail": {
+        "file": "constellation-col.jpg",
+        "bytes": 18821
+      },
+      "full": {
+        "file": "constellation-col-full.jpg",
+        "bytes": 30653
+      },
+      "naked": {
+        "file": "constellation-col-naked.jpg",
+        "bytes": 13101
+      },
+      "nakedLines": {
+        "file": "constellation-col-naked-lines.jpg",
+        "bytes": 19956
+      }
+    },
+    "constellation-com": {
+      "thumbnail": {
+        "file": "constellation-com.jpg",
+        "bytes": 16912
+      },
+      "full": {
+        "file": "constellation-com-full.jpg",
+        "bytes": 33848
+      },
+      "naked": {
+        "file": "constellation-com-naked.jpg",
+        "bytes": 10931
+      },
+      "nakedLines": {
+        "file": "constellation-com-naked-lines.jpg",
+        "bytes": 15695
+      }
+    },
+    "constellation-cra": {
+      "thumbnail": {
+        "file": "constellation-cra.jpg",
+        "bytes": 17088
+      },
+      "full": {
+        "file": "constellation-cra-full.jpg",
+        "bytes": 26231
+      },
+      "naked": {
+        "file": "constellation-cra-naked.jpg",
+        "bytes": 12690
+      },
+      "nakedLines": {
+        "file": "constellation-cra-naked-lines.jpg",
+        "bytes": 20169
+      }
+    },
+    "constellation-crb": {
+      "thumbnail": {
+        "file": "constellation-crb.jpg",
+        "bytes": 13427
+      },
+      "full": {
+        "file": "constellation-crb-full.jpg",
+        "bytes": 22442
+      },
+      "naked": {
+        "file": "constellation-crb-naked.jpg",
+        "bytes": 8902
+      },
+      "nakedLines": {
+        "file": "constellation-crb-naked-lines.jpg",
+        "bytes": 15047
+      }
+    },
+    "constellation-crt": {
+      "thumbnail": {
+        "file": "constellation-crt.jpg",
+        "bytes": 19440
+      },
+      "full": {
+        "file": "constellation-crt-full.jpg",
+        "bytes": 39002
+      },
+      "naked": {
+        "file": "constellation-crt-naked.jpg",
+        "bytes": 9789
+      },
+      "nakedLines": {
+        "file": "constellation-crt-naked-lines.jpg",
+        "bytes": 23249
+      }
+    },
+    "constellation-cru": {
+      "thumbnail": {
+        "file": "constellation-cru.jpg",
+        "bytes": 22584
+      },
+      "full": {
+        "file": "constellation-cru-full.jpg",
+        "bytes": 27936
+      },
+      "naked": {
+        "file": "constellation-cru-naked.jpg",
+        "bytes": 18273
+      },
+      "nakedLines": {
+        "file": "constellation-cru-naked-lines.jpg",
+        "bytes": 24922
+      }
+    },
+    "constellation-crv": {
+      "thumbnail": {
+        "file": "constellation-crv.jpg",
+        "bytes": 14482
+      },
+      "full": {
+        "file": "constellation-crv-full.jpg",
+        "bytes": 27757
+      },
+      "naked": {
+        "file": "constellation-crv-naked.jpg",
+        "bytes": 7933
+      },
+      "nakedLines": {
+        "file": "constellation-crv-naked-lines.jpg",
+        "bytes": 16925
+      }
+    },
+    "constellation-cvn": {
+      "thumbnail": {
+        "file": "constellation-cvn.jpg",
+        "bytes": 7785
+      },
+      "full": {
+        "file": "constellation-cvn-full.jpg",
+        "bytes": 9974
+      },
+      "naked": {
+        "file": "constellation-cvn-naked.jpg",
+        "bytes": 7304
+      },
+      "nakedLines": {
+        "file": "constellation-cvn-naked-lines.jpg",
+        "bytes": 9024
+      }
+    },
+    "constellation-cyg": {
+      "thumbnail": {
+        "file": "constellation-cyg.jpg",
+        "bytes": 34853
+      },
+      "full": {
+        "file": "constellation-cyg-full.jpg",
+        "bytes": 45945
+      },
+      "naked": {
+        "file": "constellation-cyg-naked.jpg",
+        "bytes": 31091
+      },
+      "nakedLines": {
+        "file": "constellation-cyg-naked-lines.jpg",
+        "bytes": 43288
+      }
+    },
+    "constellation-del": {
+      "thumbnail": {
+        "file": "constellation-del.jpg",
+        "bytes": 13959
+      },
+      "full": {
+        "file": "constellation-del-full.jpg",
+        "bytes": 20210
+      },
+      "naked": {
+        "file": "constellation-del-naked.jpg",
+        "bytes": 10866
+      },
+      "nakedLines": {
+        "file": "constellation-del-naked-lines.jpg",
+        "bytes": 15897
+      }
+    },
+    "constellation-dor": {
+      "thumbnail": {
+        "file": "constellation-dor.jpg",
+        "bytes": 23630
+      },
+      "full": {
+        "file": "constellation-dor-full.jpg",
+        "bytes": 35262
+      },
+      "naked": {
+        "file": "constellation-dor-naked.jpg",
+        "bytes": 16480
+      },
+      "nakedLines": {
+        "file": "constellation-dor-naked-lines.jpg",
+        "bytes": 28029
+      }
+    },
+    "constellation-dra": {
+      "thumbnail": {
+        "file": "constellation-dra.jpg",
+        "bytes": 37365
+      },
+      "full": {
+        "file": "constellation-dra-full.jpg",
+        "bytes": 54214
+      },
+      "naked": {
+        "file": "constellation-dra-naked.jpg",
+        "bytes": 32349
+      },
+      "nakedLines": {
+        "file": "constellation-dra-naked-lines.jpg",
+        "bytes": 47833
+      }
+    },
+    "constellation-equ": {
+      "thumbnail": {
+        "file": "constellation-equ.jpg",
+        "bytes": 14025
+      },
+      "full": {
+        "file": "constellation-equ-full.jpg",
+        "bytes": 22410
+      },
+      "naked": {
+        "file": "constellation-equ-naked.jpg",
+        "bytes": 9747
+      },
+      "nakedLines": {
+        "file": "constellation-equ-naked-lines.jpg",
+        "bytes": 15509
+      }
+    },
+    "constellation-eri": {
+      "thumbnail": {
+        "file": "constellation-eri.jpg",
+        "bytes": 51730
+      },
+      "full": {
+        "file": "constellation-eri-full.jpg",
+        "bytes": 80397
+      },
+      "naked": {
+        "file": "constellation-eri-naked.jpg",
+        "bytes": 61146
+      },
+      "nakedLines": {
+        "file": "constellation-eri-naked-lines.jpg",
+        "bytes": 82043
+      }
+    },
+    "constellation-for": {
+      "thumbnail": {
+        "file": "constellation-for.jpg",
+        "bytes": 12726
+      },
+      "full": {
+        "file": "constellation-for-full.jpg",
+        "bytes": 22744
+      },
+      "naked": {
+        "file": "constellation-for-naked.jpg",
+        "bytes": 8468
+      },
+      "nakedLines": {
+        "file": "constellation-for-naked-lines.jpg",
+        "bytes": 12058
+      }
+    },
+    "constellation-gem": {
+      "thumbnail": {
+        "file": "constellation-gem.jpg",
+        "bytes": 25085
+      },
+      "full": {
+        "file": "constellation-gem-full.jpg",
+        "bytes": 43893
+      },
+      "naked": {
+        "file": "constellation-gem-naked.jpg",
+        "bytes": 16546
+      },
+      "nakedLines": {
+        "file": "constellation-gem-naked-lines.jpg",
+        "bytes": 31053
+      }
+    },
+    "constellation-gru": {
+      "thumbnail": {
+        "file": "constellation-gru.jpg",
+        "bytes": 25109
+      },
+      "full": {
+        "file": "constellation-gru-full.jpg",
+        "bytes": 37685
+      },
+      "naked": {
+        "file": "constellation-gru-naked.jpg",
+        "bytes": 17683
+      },
+      "nakedLines": {
+        "file": "constellation-gru-naked-lines.jpg",
+        "bytes": 28822
+      }
+    },
+    "constellation-her": {
+      "thumbnail": {
+        "file": "constellation-her.jpg",
+        "bytes": 28937
+      },
+      "full": {
+        "file": "constellation-her-full.jpg",
+        "bytes": 44791
+      },
+      "naked": {
+        "file": "constellation-her-naked.jpg",
+        "bytes": 20142
+      },
+      "nakedLines": {
+        "file": "constellation-her-naked-lines.jpg",
+        "bytes": 33220
+      }
+    },
+    "constellation-hor": {
+      "thumbnail": {
+        "file": "constellation-hor.jpg",
+        "bytes": 17795
+      },
+      "full": {
+        "file": "constellation-hor-full.jpg",
+        "bytes": 34128
+      },
+      "naked": {
+        "file": "constellation-hor-naked.jpg",
+        "bytes": 9304
+      },
+      "nakedLines": {
+        "file": "constellation-hor-naked-lines.jpg",
+        "bytes": 23144
+      }
+    },
+    "constellation-hya": {
+      "thumbnail": {
+        "file": "constellation-hya.jpg",
+        "bytes": 54780
+      },
+      "full": {
+        "file": "constellation-hya-full.jpg",
+        "bytes": 80464
+      },
+      "naked": {
+        "file": "constellation-hya-naked.jpg",
+        "bytes": 68257
+      },
+      "nakedLines": {
+        "file": "constellation-hya-naked-lines.jpg",
+        "bytes": 85447
+      }
+    },
+    "constellation-hyi": {
+      "thumbnail": {
+        "file": "constellation-hyi.jpg",
+        "bytes": 21412
+      },
+      "full": {
+        "file": "constellation-hyi-full.jpg",
+        "bytes": 30111
+      },
+      "naked": {
+        "file": "constellation-hyi-naked.jpg",
+        "bytes": 15842
+      },
+      "nakedLines": {
+        "file": "constellation-hyi-naked-lines.jpg",
+        "bytes": 25698
+      }
+    },
+    "constellation-ind": {
+      "thumbnail": {
+        "file": "constellation-ind.jpg",
+        "bytes": 18564
+      },
+      "full": {
+        "file": "constellation-ind-full.jpg",
+        "bytes": 40176
+      },
+      "naked": {
+        "file": "constellation-ind-naked.jpg",
+        "bytes": 9476
+      },
+      "nakedLines": {
+        "file": "constellation-ind-naked-lines.jpg",
+        "bytes": 20052
+      }
+    },
+    "constellation-lac": {
+      "thumbnail": {
+        "file": "constellation-lac.jpg",
+        "bytes": 22875
+      },
+      "full": {
+        "file": "constellation-lac-full.jpg",
+        "bytes": 29453
+      },
+      "naked": {
+        "file": "constellation-lac-naked.jpg",
+        "bytes": 17051
+      },
+      "nakedLines": {
+        "file": "constellation-lac-naked-lines.jpg",
+        "bytes": 23179
+      }
+    },
+    "constellation-leo": {
+      "thumbnail": {
+        "file": "constellation-leo.jpg",
+        "bytes": 23562
+      },
+      "full": {
+        "file": "constellation-leo-full.jpg",
+        "bytes": 36085
+      },
+      "naked": {
+        "file": "constellation-leo-naked.jpg",
+        "bytes": 16424
+      },
+      "nakedLines": {
+        "file": "constellation-leo-naked-lines.jpg",
+        "bytes": 27466
+      }
+    },
+    "constellation-lep": {
+      "thumbnail": {
+        "file": "constellation-lep.jpg",
+        "bytes": 26036
+      },
+      "full": {
+        "file": "constellation-lep-full.jpg",
+        "bytes": 37717
+      },
+      "naked": {
+        "file": "constellation-lep-naked.jpg",
+        "bytes": 19052
+      },
+      "nakedLines": {
+        "file": "constellation-lep-naked-lines.jpg",
+        "bytes": 31905
+      }
+    },
+    "constellation-lib": {
+      "thumbnail": {
+        "file": "constellation-lib.jpg",
+        "bytes": 23700
+      },
+      "full": {
+        "file": "constellation-lib-full.jpg",
+        "bytes": 39208
+      },
+      "naked": {
+        "file": "constellation-lib-naked.jpg",
+        "bytes": 15873
+      },
+      "nakedLines": {
+        "file": "constellation-lib-naked-lines.jpg",
+        "bytes": 26818
+      }
+    },
+    "constellation-lmi": {
+      "thumbnail": {
+        "file": "constellation-lmi.jpg",
+        "bytes": 19617
+      },
+      "full": {
+        "file": "constellation-lmi-full.jpg",
+        "bytes": 30586
+      },
+      "naked": {
+        "file": "constellation-lmi-naked.jpg",
+        "bytes": 12949
+      },
+      "nakedLines": {
+        "file": "constellation-lmi-naked-lines.jpg",
+        "bytes": 22160
+      }
+    },
+    "constellation-lup": {
+      "thumbnail": {
+        "file": "constellation-lup.jpg",
+        "bytes": 25012
+      },
+      "full": {
+        "file": "constellation-lup-full.jpg",
+        "bytes": 39058
+      },
+      "naked": {
+        "file": "constellation-lup-naked.jpg",
+        "bytes": 17557
+      },
+      "nakedLines": {
+        "file": "constellation-lup-naked-lines.jpg",
+        "bytes": 31763
+      }
+    },
+    "constellation-lyn": {
+      "thumbnail": {
+        "file": "constellation-lyn.jpg",
+        "bytes": 30269
+      },
+      "full": {
+        "file": "constellation-lyn-full.jpg",
+        "bytes": 42094
+      },
+      "naked": {
+        "file": "constellation-lyn-naked.jpg",
+        "bytes": 24699
+      },
+      "nakedLines": {
+        "file": "constellation-lyn-naked-lines.jpg",
+        "bytes": 38141
+      }
+    },
+    "constellation-lyr": {
+      "thumbnail": {
+        "file": "constellation-lyr.jpg",
+        "bytes": 18654
+      },
+      "full": {
+        "file": "constellation-lyr-full.jpg",
+        "bytes": 29425
+      },
+      "naked": {
+        "file": "constellation-lyr-naked.jpg",
+        "bytes": 13495
+      },
+      "nakedLines": {
+        "file": "constellation-lyr-naked-lines.jpg",
+        "bytes": 18553
+      }
+    },
+    "constellation-men": {
+      "thumbnail": {
+        "file": "constellation-men.jpg",
+        "bytes": 16082
+      },
+      "full": {
+        "file": "constellation-men-full.jpg",
+        "bytes": 35782
+      },
+      "naked": {
+        "file": "constellation-men-naked.jpg",
+        "bytes": 8075
+      },
+      "nakedLines": {
+        "file": "constellation-men-naked-lines.jpg",
+        "bytes": 14110
+      }
+    },
+    "constellation-mic": {
+      "thumbnail": {
+        "file": "constellation-mic.jpg",
+        "bytes": 12999
+      },
+      "full": {
+        "file": "constellation-mic-full.jpg",
+        "bytes": 19966
+      },
+      "naked": {
+        "file": "constellation-mic-naked.jpg",
+        "bytes": 9097
+      },
+      "nakedLines": {
+        "file": "constellation-mic-naked-lines.jpg",
+        "bytes": 12396
+      }
+    },
+    "constellation-mon": {
+      "thumbnail": {
+        "file": "constellation-mon.jpg",
+        "bytes": 30891
+      },
+      "full": {
+        "file": "constellation-mon-full.jpg",
+        "bytes": 44907
+      },
+      "naked": {
+        "file": "constellation-mon-naked.jpg",
+        "bytes": 24843
+      },
+      "nakedLines": {
+        "file": "constellation-mon-naked-lines.jpg",
+        "bytes": 39223
+      }
+    },
+    "constellation-mus": {
+      "thumbnail": {
+        "file": "constellation-mus.jpg",
+        "bytes": 23193
+      },
+      "full": {
+        "file": "constellation-mus-full.jpg",
+        "bytes": 30951
+      },
+      "naked": {
+        "file": "constellation-mus-naked.jpg",
+        "bytes": 17524
+      },
+      "nakedLines": {
+        "file": "constellation-mus-naked-lines.jpg",
+        "bytes": 24837
+      }
+    },
+    "constellation-nor": {
+      "thumbnail": {
+        "file": "constellation-nor.jpg",
+        "bytes": 17886
+      },
+      "full": {
+        "file": "constellation-nor-full.jpg",
+        "bytes": 25649
+      },
+      "naked": {
+        "file": "constellation-nor-naked.jpg",
+        "bytes": 12973
+      },
+      "nakedLines": {
+        "file": "constellation-nor-naked-lines.jpg",
+        "bytes": 21250
+      }
+    },
+    "constellation-oct": {
+      "thumbnail": {
+        "file": "constellation-oct.jpg",
+        "bytes": 21273
+      },
+      "full": {
+        "file": "constellation-oct-full.jpg",
+        "bytes": 32976
+      },
+      "naked": {
+        "file": "constellation-oct-naked.jpg",
+        "bytes": 14537
+      },
+      "nakedLines": {
+        "file": "constellation-oct-naked-lines.jpg",
+        "bytes": 24569
+      }
+    },
+    "constellation-oph": {
+      "thumbnail": {
+        "file": "constellation-oph.jpg",
+        "bytes": 34583
+      },
+      "full": {
+        "file": "constellation-oph-full.jpg",
+        "bytes": 54829
+      },
+      "naked": {
+        "file": "constellation-oph-naked.jpg",
+        "bytes": 26565
+      },
+      "nakedLines": {
+        "file": "constellation-oph-naked-lines.jpg",
+        "bytes": 42964
+      }
+    },
+    "constellation-ori": {
+      "thumbnail": {
+        "file": "constellation-ori.jpg",
+        "bytes": 35543
+      },
+      "full": {
+        "file": "constellation-ori-full.jpg",
+        "bytes": 53847
+      },
+      "naked": {
+        "file": "constellation-ori-naked.jpg",
+        "bytes": 29743
+      },
+      "nakedLines": {
+        "file": "constellation-ori-naked-lines.jpg",
+        "bytes": 46984
+      }
+    },
+    "constellation-pav": {
+      "thumbnail": {
+        "file": "constellation-pav.jpg",
+        "bytes": 22786
+      },
+      "full": {
+        "file": "constellation-pav-full.jpg",
+        "bytes": 48142
+      },
+      "naked": {
+        "file": "constellation-pav-naked.jpg",
+        "bytes": 12377
+      },
+      "nakedLines": {
+        "file": "constellation-pav-naked-lines.jpg",
+        "bytes": 27738
+      }
+    },
+    "constellation-peg": {
+      "thumbnail": {
+        "file": "constellation-peg.jpg",
+        "bytes": 32207
+      },
+      "full": {
+        "file": "constellation-peg-full.jpg",
+        "bytes": 48450
+      },
+      "naked": {
+        "file": "constellation-peg-naked.jpg",
+        "bytes": 25014
+      },
+      "nakedLines": {
+        "file": "constellation-peg-naked-lines.jpg",
+        "bytes": 40311
+      }
+    },
+    "constellation-per": {
+      "thumbnail": {
+        "file": "constellation-per.jpg",
+        "bytes": 26491
+      },
+      "full": {
+        "file": "constellation-per-full.jpg",
+        "bytes": 42973
+      },
+      "naked": {
+        "file": "constellation-per-naked.jpg",
+        "bytes": 19435
+      },
+      "nakedLines": {
+        "file": "constellation-per-naked-lines.jpg",
+        "bytes": 29883
+      }
+    },
+    "constellation-phe": {
+      "thumbnail": {
+        "file": "constellation-phe.jpg",
+        "bytes": 22433
+      },
+      "full": {
+        "file": "constellation-phe-full.jpg",
+        "bytes": 38582
+      },
+      "naked": {
+        "file": "constellation-phe-naked.jpg",
+        "bytes": 14388
+      },
+      "nakedLines": {
+        "file": "constellation-phe-naked-lines.jpg",
+        "bytes": 27958
+      }
+    },
+    "constellation-pic": {
+      "thumbnail": {
+        "file": "constellation-pic.jpg",
+        "bytes": 20687
+      },
+      "full": {
+        "file": "constellation-pic-full.jpg",
+        "bytes": 33441
+      },
+      "naked": {
+        "file": "constellation-pic-naked.jpg",
+        "bytes": 13865
+      },
+      "nakedLines": {
+        "file": "constellation-pic-naked-lines.jpg",
+        "bytes": 23744
+      }
+    },
+    "constellation-psa": {
+      "thumbnail": {
+        "file": "constellation-psa.jpg",
+        "bytes": 18602
+      },
+      "full": {
+        "file": "constellation-psa-full.jpg",
+        "bytes": 29804
+      },
+      "naked": {
+        "file": "constellation-psa-naked.jpg",
+        "bytes": 13039
+      },
+      "nakedLines": {
+        "file": "constellation-psa-naked-lines.jpg",
+        "bytes": 20734
+      }
+    },
+    "constellation-psc": {
+      "thumbnail": {
+        "file": "constellation-psc.jpg",
+        "bytes": 33720
+      },
+      "full": {
+        "file": "constellation-psc-full.jpg",
+        "bytes": 46817
+      },
+      "naked": {
+        "file": "constellation-psc-naked.jpg",
+        "bytes": 27835
+      },
+      "nakedLines": {
+        "file": "constellation-psc-naked-lines.jpg",
+        "bytes": 44527
+      }
+    },
+    "constellation-pup": {
+      "thumbnail": {
+        "file": "constellation-pup.jpg",
+        "bytes": 34943
+      },
+      "full": {
+        "file": "constellation-pup-full.jpg",
+        "bytes": 45178
+      },
+      "naked": {
+        "file": "constellation-pup-naked.jpg",
+        "bytes": 31568
+      },
+      "nakedLines": {
+        "file": "constellation-pup-naked-lines.jpg",
+        "bytes": 47116
+      }
+    },
+    "constellation-pyx": {
+      "thumbnail": {
+        "file": "constellation-pyx.jpg",
+        "bytes": 17960
+      },
+      "full": {
+        "file": "constellation-pyx-full.jpg",
+        "bytes": 25947
+      },
+      "naked": {
+        "file": "constellation-pyx-naked.jpg",
+        "bytes": 12507
+      },
+      "nakedLines": {
+        "file": "constellation-pyx-naked-lines.jpg",
+        "bytes": 17543
+      }
+    },
+    "constellation-ret": {
+      "thumbnail": {
+        "file": "constellation-ret.jpg",
+        "bytes": 13317
+      },
+      "full": {
+        "file": "constellation-ret-full.jpg",
+        "bytes": 21503
+      },
+      "naked": {
+        "file": "constellation-ret-naked.jpg",
+        "bytes": 8927
+      },
+      "nakedLines": {
+        "file": "constellation-ret-naked-lines.jpg",
+        "bytes": 17020
+      }
+    },
+    "constellation-scl": {
+      "thumbnail": {
+        "file": "constellation-scl.jpg",
+        "bytes": 18229
+      },
+      "full": {
+        "file": "constellation-scl-full.jpg",
+        "bytes": 32798
+      },
+      "naked": {
+        "file": "constellation-scl-naked.jpg",
+        "bytes": 10609
+      },
+      "nakedLines": {
+        "file": "constellation-scl-naked-lines.jpg",
+        "bytes": 22595
+      }
+    },
+    "constellation-sco": {
+      "thumbnail": {
+        "file": "constellation-sco.jpg",
+        "bytes": 32804
+      },
+      "full": {
+        "file": "constellation-sco-full.jpg",
+        "bytes": 48498
+      },
+      "naked": {
+        "file": "constellation-sco-naked.jpg",
+        "bytes": 25984
+      },
+      "nakedLines": {
+        "file": "constellation-sco-naked-lines.jpg",
+        "bytes": 41675
+      }
+    },
+    "constellation-sct": {
+      "thumbnail": {
+        "file": "constellation-sct.jpg",
+        "bytes": 20878
+      },
+      "full": {
+        "file": "constellation-sct-full.jpg",
+        "bytes": 46218
+      },
+      "naked": {
+        "file": "constellation-sct-naked.jpg",
+        "bytes": 10500
+      },
+      "nakedLines": {
+        "file": "constellation-sct-naked-lines.jpg",
+        "bytes": 20641
+      }
+    },
+    "constellation-ser": {
+      "thumbnail": {
+        "file": "constellation-ser.jpg",
+        "bytes": 42266
+      },
+      "full": {
+        "file": "constellation-ser-full.jpg",
+        "bytes": 52884
+      },
+      "naked": {
+        "file": "constellation-ser-naked.jpg",
+        "bytes": 41033
+      },
+      "nakedLines": {
+        "file": "constellation-ser-naked-lines.jpg",
+        "bytes": 57646
+      }
+    },
+    "constellation-sex": {
+      "thumbnail": {
+        "file": "constellation-sex.jpg",
+        "bytes": 14276
+      },
+      "full": {
+        "file": "constellation-sex-full.jpg",
+        "bytes": 33822
+      },
+      "naked": {
+        "file": "constellation-sex-naked.jpg",
+        "bytes": 7855
+      },
+      "nakedLines": {
+        "file": "constellation-sex-naked-lines.jpg",
+        "bytes": 10013
+      }
+    },
+    "constellation-sge": {
+      "thumbnail": {
+        "file": "constellation-sge.jpg",
+        "bytes": 16810
+      },
+      "full": {
+        "file": "constellation-sge-full.jpg",
+        "bytes": 18010
+      },
+      "naked": {
+        "file": "constellation-sge-naked.jpg",
+        "bytes": 13952
+      },
+      "nakedLines": {
+        "file": "constellation-sge-naked-lines.jpg",
+        "bytes": 18373
+      }
+    },
+    "constellation-sgr": {
+      "thumbnail": {
+        "file": "constellation-sgr.jpg",
+        "bytes": 29959
+      },
+      "full": {
+        "file": "constellation-sgr-full.jpg",
+        "bytes": 46480
+      },
+      "naked": {
+        "file": "constellation-sgr-naked.jpg",
+        "bytes": 22913
+      },
+      "nakedLines": {
+        "file": "constellation-sgr-naked-lines.jpg",
+        "bytes": 39649
+      }
+    },
+    "constellation-tau": {
+      "thumbnail": {
+        "file": "constellation-tau.jpg",
+        "bytes": 34311
+      },
+      "full": {
+        "file": "constellation-tau-full.jpg",
+        "bytes": 47750
+      },
+      "naked": {
+        "file": "constellation-tau-naked.jpg",
+        "bytes": 30848
+      },
+      "nakedLines": {
+        "file": "constellation-tau-naked-lines.jpg",
+        "bytes": 44201
+      }
+    },
+    "constellation-tel": {
+      "thumbnail": {
+        "file": "constellation-tel.jpg",
+        "bytes": 15608
+      },
+      "full": {
+        "file": "constellation-tel-full.jpg",
+        "bytes": 19961
+      },
+      "naked": {
+        "file": "constellation-tel-naked.jpg",
+        "bytes": 12170
+      },
+      "nakedLines": {
+        "file": "constellation-tel-naked-lines.jpg",
+        "bytes": 17112
+      }
+    },
+    "constellation-tra": {
+      "thumbnail": {
+        "file": "constellation-tra.jpg",
+        "bytes": 17198
+      },
+      "full": {
+        "file": "constellation-tra-full.jpg",
+        "bytes": 20389
+      },
+      "naked": {
+        "file": "constellation-tra-naked.jpg",
+        "bytes": 13452
+      },
+      "nakedLines": {
+        "file": "constellation-tra-naked-lines.jpg",
+        "bytes": 20318
+      }
+    },
+    "constellation-tri": {
+      "thumbnail": {
+        "file": "constellation-tri.jpg",
+        "bytes": 14637
+      },
+      "full": {
+        "file": "constellation-tri-full.jpg",
+        "bytes": 23243
+      },
+      "naked": {
+        "file": "constellation-tri-naked.jpg",
+        "bytes": 9598
+      },
+      "nakedLines": {
+        "file": "constellation-tri-naked-lines.jpg",
+        "bytes": 17778
+      }
+    },
+    "constellation-tuc": {
+      "thumbnail": {
+        "file": "constellation-tuc.jpg",
+        "bytes": 18728
+      },
+      "full": {
+        "file": "constellation-tuc-full.jpg",
+        "bytes": 29611
+      },
+      "naked": {
+        "file": "constellation-tuc-naked.jpg",
+        "bytes": 12376
+      },
+      "nakedLines": {
+        "file": "constellation-tuc-naked-lines.jpg",
+        "bytes": 20620
+      }
+    },
+    "constellation-uma": {
+      "thumbnail": {
+        "file": "constellation-uma.jpg",
+        "bytes": 33424
+      },
+      "full": {
+        "file": "constellation-uma-full.jpg",
+        "bytes": 47622
+      },
+      "naked": {
+        "file": "constellation-uma-naked.jpg",
+        "bytes": 28293
+      },
+      "nakedLines": {
+        "file": "constellation-uma-naked-lines.jpg",
+        "bytes": 44010
+      }
+    },
+    "constellation-umi": {
+      "thumbnail": {
+        "file": "constellation-umi.jpg",
+        "bytes": 24922
+      },
+      "full": {
+        "file": "constellation-umi-full.jpg",
+        "bytes": 32124
+      },
+      "naked": {
+        "file": "constellation-umi-naked.jpg",
+        "bytes": 18901
+      },
+      "nakedLines": {
+        "file": "constellation-umi-naked-lines.jpg",
+        "bytes": 28473
+      }
+    },
+    "constellation-vel": {
+      "thumbnail": {
+        "file": "constellation-vel.jpg",
+        "bytes": 31176
+      },
+      "full": {
+        "file": "constellation-vel-full.jpg",
+        "bytes": 39068
+      },
+      "naked": {
+        "file": "constellation-vel-naked.jpg",
+        "bytes": 26584
+      },
+      "nakedLines": {
+        "file": "constellation-vel-naked-lines.jpg",
+        "bytes": 41033
+      }
+    },
+    "constellation-vir": {
+      "thumbnail": {
+        "file": "constellation-vir.jpg",
+        "bytes": 33536
+      },
+      "full": {
+        "file": "constellation-vir-full.jpg",
+        "bytes": 50056
+      },
+      "naked": {
+        "file": "constellation-vir-naked.jpg",
+        "bytes": 25998
+      },
+      "nakedLines": {
+        "file": "constellation-vir-naked-lines.jpg",
+        "bytes": 41882
+      }
+    },
+    "constellation-vol": {
+      "thumbnail": {
+        "file": "constellation-vol.jpg",
+        "bytes": 17811
+      },
+      "full": {
+        "file": "constellation-vol-full.jpg",
+        "bytes": 30046
+      },
+      "naked": {
+        "file": "constellation-vol-naked.jpg",
+        "bytes": 11524
+      },
+      "nakedLines": {
+        "file": "constellation-vol-naked-lines.jpg",
+        "bytes": 21493
+      }
+    },
+    "constellation-vul": {
+      "thumbnail": {
+        "file": "constellation-vul.jpg",
+        "bytes": 20530
+      },
+      "full": {
+        "file": "constellation-vul-full.jpg",
+        "bytes": 30399
+      },
+      "naked": {
+        "file": "constellation-vul-naked.jpg",
+        "bytes": 14850
+      },
+      "nakedLines": {
+        "file": "constellation-vul-naked-lines.jpg",
+        "bytes": 21033
+      }
+    },
+    "star-hip-100453": {
+      "thumbnail": {
+        "file": "star-hip-100453.jpg",
+        "bytes": 31949
+      },
+      "full": {
+        "file": "star-hip-100453-full.jpg",
+        "bytes": 38822
+      }
+    },
+    "star-hip-100751": {
+      "thumbnail": {
+        "file": "star-hip-100751.jpg",
+        "bytes": 28479
+      },
+      "full": {
+        "file": "star-hip-100751-full.jpg",
+        "bytes": 39700
+      }
+    },
+    "star-hip-102098": {
+      "thumbnail": {
+        "file": "star-hip-102098.jpg",
+        "bytes": 35011
+      },
+      "full": {
+        "file": "star-hip-102098-full.jpg",
+        "bytes": 42776
+      }
+    },
+    "star-hip-102488": {
+      "thumbnail": {
+        "file": "star-hip-102488.jpg",
+        "bytes": 36290
+      },
+      "full": {
+        "file": "star-hip-102488-full.jpg",
+        "bytes": 45711
+      }
+    },
+    "star-hip-105199": {
+      "thumbnail": {
+        "file": "star-hip-105199.jpg",
+        "bytes": 29346
+      },
+      "full": {
+        "file": "star-hip-105199-full.jpg",
+        "bytes": 36026
+      }
+    },
+    "star-hip-107315": {
+      "thumbnail": {
+        "file": "star-hip-107315.jpg",
+        "bytes": 47775
+      },
+      "full": {
+        "file": "star-hip-107315-full.jpg",
+        "bytes": 65081
+      }
+    },
+    "star-hip-109268": {
+      "thumbnail": {
+        "file": "star-hip-109268.jpg",
+        "bytes": 21829
+      },
+      "full": {
+        "file": "star-hip-109268-full.jpg",
+        "bytes": 29577
+      }
+    },
+    "star-hip-112122": {
+      "thumbnail": {
+        "file": "star-hip-112122.jpg",
+        "bytes": 16456
+      },
+      "full": {
+        "file": "star-hip-112122-full.jpg",
+        "bytes": 26186
+      }
+    },
+    "star-hip-113368": {
+      "thumbnail": {
+        "file": "star-hip-113368.jpg",
+        "bytes": 18996
+      },
+      "full": {
+        "file": "star-hip-113368-full.jpg",
+        "bytes": 27164
+      }
+    },
+    "star-hip-113881": {
+      "thumbnail": {
+        "file": "star-hip-113881.jpg",
+        "bytes": 34646
+      },
+      "full": {
+        "file": "star-hip-113881-full.jpg",
+        "bytes": 44383
+      }
+    },
+    "star-hip-113963": {
+      "thumbnail": {
+        "file": "star-hip-113963.jpg",
+        "bytes": 28209
+      },
+      "full": {
+        "file": "star-hip-113963-full.jpg",
+        "bytes": 37976
+      }
+    },
+    "star-hip-11767": {
+      "thumbnail": {
+        "file": "star-hip-11767.jpg",
+        "bytes": 24514
+      },
+      "full": {
+        "file": "star-hip-11767-full.jpg",
+        "bytes": 31316
+      }
+    },
+    "star-hip-14576": {
+      "thumbnail": {
+        "file": "star-hip-14576.jpg",
+        "bytes": 22717
+      },
+      "full": {
+        "file": "star-hip-14576-full.jpg",
+        "bytes": 30110
+      }
+    },
+    "star-hip-15863": {
+      "thumbnail": {
+        "file": "star-hip-15863.jpg",
+        "bytes": 28099
+      },
+      "full": {
+        "file": "star-hip-15863-full.jpg",
+        "bytes": 34792
+      }
+    },
+    "star-hip-2081": {
+      "thumbnail": {
+        "file": "star-hip-2081.jpg",
+        "bytes": 20358
+      },
+      "full": {
+        "file": "star-hip-2081-full.jpg",
+        "bytes": 31785
+      }
+    },
+    "star-hip-21421": {
+      "thumbnail": {
+        "file": "star-hip-21421.jpg",
+        "bytes": 30040
+      },
+      "full": {
+        "file": "star-hip-21421-full.jpg",
+        "bytes": 39657
+      }
+    },
+    "star-hip-24436": {
+      "thumbnail": {
+        "file": "star-hip-24436.jpg",
+        "bytes": 43938
+      },
+      "full": {
+        "file": "star-hip-24436-full.jpg",
+        "bytes": 61675
+      }
+    },
+    "star-hip-24608": {
+      "thumbnail": {
+        "file": "star-hip-24608.jpg",
+        "bytes": 25945
+      },
+      "full": {
+        "file": "star-hip-24608-full.jpg",
+        "bytes": 32631
+      }
+    },
+    "star-hip-25336": {
+      "thumbnail": {
+        "file": "star-hip-25336.jpg",
+        "bytes": 32053
+      },
+      "full": {
+        "file": "star-hip-25336-full.jpg",
+        "bytes": 44358
+      }
+    },
+    "star-hip-25428": {
+      "thumbnail": {
+        "file": "star-hip-25428.jpg",
+        "bytes": 47234
+      },
+      "full": {
+        "file": "star-hip-25428-full.jpg",
+        "bytes": 64140
+      }
+    },
+    "star-hip-25930": {
+      "thumbnail": {
+        "file": "star-hip-25930.jpg",
+        "bytes": 36576
+      },
+      "full": {
+        "file": "star-hip-25930-full.jpg",
+        "bytes": 50511
+      }
+    },
+    "star-hip-26311": {
+      "thumbnail": {
+        "file": "star-hip-26311.jpg",
+        "bytes": 37291
+      },
+      "full": {
+        "file": "star-hip-26311-full.jpg",
+        "bytes": 51896
+      }
+    },
+    "star-hip-26727": {
+      "thumbnail": {
+        "file": "star-hip-26727.jpg",
+        "bytes": 37419
+      },
+      "full": {
+        "file": "star-hip-26727-full.jpg",
+        "bytes": 52726
+      }
+    },
+    "star-hip-27366": {
+      "thumbnail": {
+        "file": "star-hip-27366.jpg",
+        "bytes": 44982
+      },
+      "full": {
+        "file": "star-hip-27366-full.jpg",
+        "bytes": 63900
+      }
+    },
+    "star-hip-27989": {
+      "thumbnail": {
+        "file": "star-hip-27989.jpg",
+        "bytes": 34516
+      },
+      "full": {
+        "file": "star-hip-27989-full.jpg",
+        "bytes": 47922
+      }
+    },
+    "star-hip-28360": {
+      "thumbnail": {
+        "file": "star-hip-28360.jpg",
+        "bytes": 25390
+      },
+      "full": {
+        "file": "star-hip-28360-full.jpg",
+        "bytes": 32096
+      }
+    },
+    "star-hip-30324": {
+      "thumbnail": {
+        "file": "star-hip-30324.jpg",
+        "bytes": 32998
+      },
+      "full": {
+        "file": "star-hip-30324-full.jpg",
+        "bytes": 44549
+      }
+    },
+    "star-hip-30438": {
+      "thumbnail": {
+        "file": "star-hip-30438.jpg",
+        "bytes": 50677
+      },
+      "full": {
+        "file": "star-hip-30438-full.jpg",
+        "bytes": 77521
+      }
+    },
+    "star-hip-31681": {
+      "thumbnail": {
+        "file": "star-hip-31681.jpg",
+        "bytes": 33565
+      },
+      "full": {
+        "file": "star-hip-31681-full.jpg",
+        "bytes": 45013
+      }
+    },
+    "star-hip-3179": {
+      "thumbnail": {
+        "file": "star-hip-3179.jpg",
+        "bytes": 29763
+      },
+      "full": {
+        "file": "star-hip-3179-full.jpg",
+        "bytes": 31964
+      }
+    },
+    "star-hip-32349": {
+      "thumbnail": {
+        "file": "star-hip-32349.jpg",
+        "bytes": 28335
+      },
+      "full": {
+        "file": "star-hip-32349-full.jpg",
+        "bytes": 39400
+      }
+    },
+    "star-hip-33579": {
+      "thumbnail": {
+        "file": "star-hip-33579.jpg",
+        "bytes": 31325
+      },
+      "full": {
+        "file": "star-hip-33579-full.jpg",
+        "bytes": 41569
+      }
+    },
+    "star-hip-3419": {
+      "thumbnail": {
+        "file": "star-hip-3419.jpg",
+        "bytes": 47248
+      },
+      "full": {
+        "file": "star-hip-3419-full.jpg",
+        "bytes": 67198
+      }
+    },
+    "star-hip-34444": {
+      "thumbnail": {
+        "file": "star-hip-34444.jpg",
+        "bytes": 28167
+      },
+      "full": {
+        "file": "star-hip-34444-full.jpg",
+        "bytes": 37681
+      }
+    },
+    "star-hip-35904": {
+      "thumbnail": {
+        "file": "star-hip-35904.jpg",
+        "bytes": 33405
+      },
+      "full": {
+        "file": "star-hip-35904-full.jpg",
+        "bytes": 43788
+      }
+    },
+    "star-hip-36850": {
+      "thumbnail": {
+        "file": "star-hip-36850.jpg",
+        "bytes": 30888
+      },
+      "full": {
+        "file": "star-hip-36850-full.jpg",
+        "bytes": 41071
+      }
+    },
+    "star-hip-37279": {
+      "thumbnail": {
+        "file": "star-hip-37279.jpg",
+        "bytes": 14413
+      },
+      "full": {
+        "file": "star-hip-37279-full.jpg",
+        "bytes": 19283
+      }
+    },
+    "star-hip-37826": {
+      "thumbnail": {
+        "file": "star-hip-37826.jpg",
+        "bytes": 31139
+      },
+      "full": {
+        "file": "star-hip-37826-full.jpg",
+        "bytes": 41605
+      }
+    },
+    "star-hip-39429": {
+      "thumbnail": {
+        "file": "star-hip-39429.jpg",
+        "bytes": 32723
+      },
+      "full": {
+        "file": "star-hip-39429-full.jpg",
+        "bytes": 43929
+      }
+    },
+    "star-hip-39953": {
+      "thumbnail": {
+        "file": "star-hip-39953.jpg",
+        "bytes": 42688
+      },
+      "full": {
+        "file": "star-hip-39953-full.jpg",
+        "bytes": 59302
+      }
+    },
+    "star-hip-41037": {
+      "thumbnail": {
+        "file": "star-hip-41037.jpg",
+        "bytes": 40343
+      },
+      "full": {
+        "file": "star-hip-41037-full.jpg",
+        "bytes": 56916
+      }
+    },
+    "star-hip-42913": {
+      "thumbnail": {
+        "file": "star-hip-42913.jpg",
+        "bytes": 36978
+      },
+      "full": {
+        "file": "star-hip-42913-full.jpg",
+        "bytes": 49973
+      }
+    },
+    "star-hip-4427": {
+      "thumbnail": {
+        "file": "star-hip-4427.jpg",
+        "bytes": 19249
+      },
+      "full": {
+        "file": "star-hip-4427-full.jpg",
+        "bytes": 23182
+      }
+    },
+    "star-hip-44816": {
+      "thumbnail": {
+        "file": "star-hip-44816.jpg",
+        "bytes": 32464
+      },
+      "full": {
+        "file": "star-hip-44816-full.jpg",
+        "bytes": 41954
+      }
+    },
+    "star-hip-45238": {
+      "thumbnail": {
+        "file": "star-hip-45238.jpg",
+        "bytes": 47720
+      },
+      "full": {
+        "file": "star-hip-45238-full.jpg",
+        "bytes": 71080
+      }
+    },
+    "star-hip-45556": {
+      "thumbnail": {
+        "file": "star-hip-45556.jpg",
+        "bytes": 45594
+      },
+      "full": {
+        "file": "star-hip-45556-full.jpg",
+        "bytes": 65105
+      }
+    },
+    "star-hip-45941": {
+      "thumbnail": {
+        "file": "star-hip-45941.jpg",
+        "bytes": 32348
+      },
+      "full": {
+        "file": "star-hip-45941-full.jpg",
+        "bytes": 44020
+      }
+    },
+    "star-hip-46390": {
+      "thumbnail": {
+        "file": "star-hip-46390.jpg",
+        "bytes": 57301
+      },
+      "full": {
+        "file": "star-hip-46390-full.jpg",
+        "bytes": 89342
+      }
+    },
+    "star-hip-49669": {
+      "thumbnail": {
+        "file": "star-hip-49669.jpg",
+        "bytes": 28438
+      },
+      "full": {
+        "file": "star-hip-49669-full.jpg",
+        "bytes": 36391
+      }
+    },
+    "star-hip-50583": {
+      "thumbnail": {
+        "file": "star-hip-50583.jpg",
+        "bytes": 25903
+      },
+      "full": {
+        "file": "star-hip-50583-full.jpg",
+        "bytes": 33172
+      }
+    },
+    "star-hip-53910": {
+      "thumbnail": {
+        "file": "star-hip-53910.jpg",
+        "bytes": 31465
+      },
+      "full": {
+        "file": "star-hip-53910-full.jpg",
+        "bytes": 42989
+      }
+    },
+    "star-hip-54061": {
+      "thumbnail": {
+        "file": "star-hip-54061.jpg",
+        "bytes": 32016
+      },
+      "full": {
+        "file": "star-hip-54061-full.jpg",
+        "bytes": 44259
+      }
+    },
+    "star-hip-5447": {
+      "thumbnail": {
+        "file": "star-hip-5447.jpg",
+        "bytes": 20618
+      },
+      "full": {
+        "file": "star-hip-5447-full.jpg",
+        "bytes": 28104
+      }
+    },
+    "star-hip-57632": {
+      "thumbnail": {
+        "file": "star-hip-57632.jpg",
+        "bytes": 34042
+      },
+      "full": {
+        "file": "star-hip-57632-full.jpg",
+        "bytes": 43542
+      }
+    },
+    "star-hip-58001": {
+      "thumbnail": {
+        "file": "star-hip-58001.jpg",
+        "bytes": 32671
+      },
+      "full": {
+        "file": "star-hip-58001-full.jpg",
+        "bytes": 43702
+      }
+    },
+    "star-hip-60718": {
+      "thumbnail": {
+        "file": "star-hip-60718.jpg",
+        "bytes": 22890
+      },
+      "full": {
+        "file": "star-hip-60718-full.jpg",
+        "bytes": 27672
+      }
+    },
+    "star-hip-61084": {
+      "thumbnail": {
+        "file": "star-hip-61084.jpg",
+        "bytes": 21959
+      },
+      "full": {
+        "file": "star-hip-61084-full.jpg",
+        "bytes": 26465
+      }
+    },
+    "star-hip-61932": {
+      "thumbnail": {
+        "file": "star-hip-61932.jpg",
+        "bytes": 39899
+      },
+      "full": {
+        "file": "star-hip-61932-full.jpg",
+        "bytes": 55247
+      }
+    },
+    "star-hip-62434": {
+      "thumbnail": {
+        "file": "star-hip-62434.jpg",
+        "bytes": 21410
+      },
+      "full": {
+        "file": "star-hip-62434-full.jpg",
+        "bytes": 25170
+      }
+    },
+    "star-hip-62956": {
+      "thumbnail": {
+        "file": "star-hip-62956.jpg",
+        "bytes": 42843
+      },
+      "full": {
+        "file": "star-hip-62956-full.jpg",
+        "bytes": 57233
+      }
+    },
+    "star-hip-65378": {
+      "thumbnail": {
+        "file": "star-hip-65378.jpg",
+        "bytes": 46596
+      },
+      "full": {
+        "file": "star-hip-65378-full.jpg",
+        "bytes": 62791
+      }
+    },
+    "star-hip-65474": {
+      "thumbnail": {
+        "file": "star-hip-65474.jpg",
+        "bytes": 37241
+      },
+      "full": {
+        "file": "star-hip-65474-full.jpg",
+        "bytes": 49106
+      }
+    },
+    "star-hip-66657": {
+      "thumbnail": {
+        "file": "star-hip-66657.jpg",
+        "bytes": 34148
+      },
+      "full": {
+        "file": "star-hip-66657-full.jpg",
+        "bytes": 46420
+      }
+    },
+    "star-hip-67301": {
+      "thumbnail": {
+        "file": "star-hip-67301.jpg",
+        "bytes": 50702
+      },
+      "full": {
+        "file": "star-hip-67301-full.jpg",
+        "bytes": 70547
+      }
+    },
+    "star-hip-677": {
+      "thumbnail": {
+        "file": "star-hip-677.jpg",
+        "bytes": 34544
+      },
+      "full": {
+        "file": "star-hip-677-full.jpg",
+        "bytes": 43816
+      }
+    },
+    "star-hip-68702": {
+      "thumbnail": {
+        "file": "star-hip-68702.jpg",
+        "bytes": 41433
+      },
+      "full": {
+        "file": "star-hip-68702-full.jpg",
+        "bytes": 57032
+      }
+    },
+    "star-hip-68933": {
+      "thumbnail": {
+        "file": "star-hip-68933.jpg",
+        "bytes": 48157
+      },
+      "full": {
+        "file": "star-hip-68933-full.jpg",
+        "bytes": 68710
+      }
+    },
+    "star-hip-69673": {
+      "thumbnail": {
+        "file": "star-hip-69673.jpg",
+        "bytes": 27553
+      },
+      "full": {
+        "file": "star-hip-69673-full.jpg",
+        "bytes": 34916
+      }
+    },
+    "star-hip-71352": {
+      "thumbnail": {
+        "file": "star-hip-71352.jpg",
+        "bytes": 46489
+      },
+      "full": {
+        "file": "star-hip-71352-full.jpg",
+        "bytes": 66138
+      }
+    },
+    "star-hip-71683": {
+      "thumbnail": {
+        "file": "star-hip-71683.jpg",
+        "bytes": 43633
+      },
+      "full": {
+        "file": "star-hip-71683-full.jpg",
+        "bytes": 61559
+      }
+    },
+    "star-hip-71860": {
+      "thumbnail": {
+        "file": "star-hip-71860.jpg",
+        "bytes": 33830
+      },
+      "full": {
+        "file": "star-hip-71860-full.jpg",
+        "bytes": 45235
+      }
+    },
+    "star-hip-72105": {
+      "thumbnail": {
+        "file": "star-hip-72105.jpg",
+        "bytes": 20770
+      },
+      "full": {
+        "file": "star-hip-72105-full.jpg",
+        "bytes": 29590
+      }
+    },
+    "star-hip-72607": {
+      "thumbnail": {
+        "file": "star-hip-72607.jpg",
+        "bytes": 20755
+      },
+      "full": {
+        "file": "star-hip-72607-full.jpg",
+        "bytes": 28841
+      }
+    },
+    "star-hip-746": {
+      "thumbnail": {
+        "file": "star-hip-746.jpg",
+        "bytes": 21059
+      },
+      "full": {
+        "file": "star-hip-746-full.jpg",
+        "bytes": 25702
+      }
+    },
+    "star-hip-7588": {
+      "thumbnail": {
+        "file": "star-hip-7588.jpg",
+        "bytes": 57034
+      },
+      "full": {
+        "file": "star-hip-7588-full.jpg",
+        "bytes": 90855
+      }
+    },
+    "star-hip-76267": {
+      "thumbnail": {
+        "file": "star-hip-76267.jpg",
+        "bytes": 12370
+      },
+      "full": {
+        "file": "star-hip-76267-full.jpg",
+        "bytes": 18691
+      }
+    },
+    "star-hip-78401": {
+      "thumbnail": {
+        "file": "star-hip-78401.jpg",
+        "bytes": 39903
+      },
+      "full": {
+        "file": "star-hip-78401-full.jpg",
+        "bytes": 52660
+      }
+    },
+    "star-hip-80763": {
+      "thumbnail": {
+        "file": "star-hip-80763.jpg",
+        "bytes": 33932
+      },
+      "full": {
+        "file": "star-hip-80763-full.jpg",
+        "bytes": 44468
+      }
+    },
+    "star-hip-82273": {
+      "thumbnail": {
+        "file": "star-hip-82273.jpg",
+        "bytes": 20294
+      },
+      "full": {
+        "file": "star-hip-82273-full.jpg",
+        "bytes": 24412
+      }
+    },
+    "star-hip-82396": {
+      "thumbnail": {
+        "file": "star-hip-82396.jpg",
+        "bytes": 30600
+      },
+      "full": {
+        "file": "star-hip-82396-full.jpg",
+        "bytes": 40931
+      }
+    },
+    "star-hip-84012": {
+      "thumbnail": {
+        "file": "star-hip-84012.jpg",
+        "bytes": 41435
+      },
+      "full": {
+        "file": "star-hip-84012-full.jpg",
+        "bytes": 56535
+      }
+    },
+    "star-hip-85927": {
+      "thumbnail": {
+        "file": "star-hip-85927.jpg",
+        "bytes": 39615
+      },
+      "full": {
+        "file": "star-hip-85927-full.jpg",
+        "bytes": 54518
+      }
+    },
+    "star-hip-86032": {
+      "thumbnail": {
+        "file": "star-hip-86032.jpg",
+        "bytes": 48017
+      },
+      "full": {
+        "file": "star-hip-86032-full.jpg",
+        "bytes": 64290
+      }
+    },
+    "star-hip-86228": {
+      "thumbnail": {
+        "file": "star-hip-86228.jpg",
+        "bytes": 43739
+      },
+      "full": {
+        "file": "star-hip-86228-full.jpg",
+        "bytes": 61366
+      }
+    },
+    "star-hip-86670": {
+      "thumbnail": {
+        "file": "star-hip-86670.jpg",
+        "bytes": 42261
+      },
+      "full": {
+        "file": "star-hip-86670-full.jpg",
+        "bytes": 58957
+      }
+    },
+    "star-hip-87833": {
+      "thumbnail": {
+        "file": "star-hip-87833.jpg",
+        "bytes": 52620
+      },
+      "full": {
+        "file": "star-hip-87833-full.jpg",
+        "bytes": 74064
+      }
+    },
+    "star-hip-90185": {
+      "thumbnail": {
+        "file": "star-hip-90185.jpg",
+        "bytes": 33390
+      },
+      "full": {
+        "file": "star-hip-90185-full.jpg",
+        "bytes": 46474
+      }
+    },
+    "star-hip-91262": {
+      "thumbnail": {
+        "file": "star-hip-91262.jpg",
+        "bytes": 17153
+      },
+      "full": {
+        "file": "star-hip-91262-full.jpg",
+        "bytes": 21715
+      }
+    },
+    "star-hip-92855": {
+      "thumbnail": {
+        "file": "star-hip-92855.jpg",
+        "bytes": 29567
+      },
+      "full": {
+        "file": "star-hip-92855-full.jpg",
+        "bytes": 42468
+      }
+    },
+    "star-hip-9640": {
+      "thumbnail": {
+        "file": "star-hip-9640.jpg",
+        "bytes": 36984
+      },
+      "full": {
+        "file": "star-hip-9640-full.jpg",
+        "bytes": 45805
+      }
+    },
+    "star-hip-97649": {
+      "thumbnail": {
+        "file": "star-hip-97649.jpg",
+        "bytes": 23295
+      },
+      "full": {
+        "file": "star-hip-97649-full.jpg",
+        "bytes": 31540
+      }
+    },
+    "star-hip-9884": {
+      "thumbnail": {
+        "file": "star-hip-9884.jpg",
+        "bytes": 19691
+      },
+      "full": {
+        "file": "star-hip-9884-full.jpg",
+        "bytes": 26021
+      }
+    }
+  }
+}

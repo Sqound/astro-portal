@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "args": [{ "fetchedAt": 1000000, "kind": "weather", "now": 1600000 }],
+      "id": "a-recent-forecast-is-fresh",
+      "result": { "mayRequest": false, "servable": true, "state": "fresh" }
+    },
+    {
+      "args": [{ "fetchedAt": 1000000, "kind": "weather", "now": 4600000 }],
+      "id": "an-hour-old-forecast-is-stale-and-refreshable",
+      "result": { "mayRequest": true, "servable": true, "state": "stale" }
+    },
+    {
+      "args": [{ "fetchedAt": 1000000, "kind": "weather", "now": 15400000 }],
+      "id": "a-forecast-past-the-stale-window-expires",
+      "result": { "mayRequest": true, "servable": false, "state": "expired" }
+    },
+    {
+      "args": [
+        {
+          "cooldownUntil": 5200000,
+          "fetchedAt": 1000000,
+          "kind": "weather",
+          "now": 4600000
+        }
+      ],
+      "id": "a-provider-cooldown-blocks-the-refresh",
+      "result": { "mayRequest": false, "servable": true, "state": "stale" }
+    },
+    {
+      "args": [{ "fetchedAt": null, "kind": "weather", "now": 1000000 }],
+      "id": "nothing-cached-is-missing",
+      "result": { "mayRequest": true, "servable": false, "state": "missing" }
+    },
+    {
+      "args": [{ "fetchedAt": 0, "kind": "skyQuality", "now": 1728000000 }],
+      "id": "a-month-old-sky-quality-estimate-is-fresh",
+      "result": { "mayRequest": false, "servable": true, "state": "fresh" }
+    },
+    {
+      "args": [{ "fetchedAt": 0, "kind": "skyQuality", "now": 17280000000 }],
+      "id": "a-year-old-sky-quality-estimate-is-stale",
+      "result": { "mayRequest": true, "servable": true, "state": "stale" }
+    },
+    {
+      "args": [{ "fetchedAt": 0, "kind": "skyQuality", "now": 34560000000 }],
+      "id": "a-sky-quality-estimate-past-a-year-expires",
+      "result": { "mayRequest": true, "servable": false, "state": "expired" }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "reference-cache-state"
+}

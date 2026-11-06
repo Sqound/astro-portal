@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "args": [{ "ancestorOrder": 3, "order": 5, "pix": 4000 }],
+      "id": "ancestor-order-3-shift",
+      "result": 250
+    },
+    {
+      "args": [{ "ancestorOrder": 5, "order": 5, "pix": 4000 }],
+      "id": "ancestor-identity-at-own-order",
+      "result": 4000
+    },
+    {
+      "args": [{ "ancestorOrder": 0, "order": 9, "pix": 3000000 }],
+      "id": "ancestor-deep-shift-to-order-zero",
+      "result": 11
+    },
+    {
+      "args": [{ "order": 3, "pix": 17 }],
+      "id": "dir-bucket-below-ten-thousand",
+      "result": 0
+    },
+    {
+      "args": [{ "order": 6, "pix": 12345 }],
+      "id": "dir-bucket-above-ten-thousand",
+      "result": 10000
+    },
+    {
+      "args": [{ "chunkOrder": 1, "chunkPix": 2, "order": 5 }],
+      "id": "chunk-descendants-order-5-under-order-1",
+      "result": { "count": 256, "first": 512, "last": 767 }
+    },
+    {
+      "args": [{ "chunkOrder": 0, "chunkPix": 0, "order": 0 }],
+      "id": "chunk-descendants-single-pixel-at-its-own-order",
+      "result": { "count": 1, "first": 0, "last": 0 }
+    },
+    {
+      "args": [{ "chunkOrder": 3, "chunkPix": 0, "order": 9 }],
+      "id": "chunk-descendants-large-delta",
+      "result": { "count": 4096, "first": 0, "last": 4095 }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "healpix-ancestor"
+}

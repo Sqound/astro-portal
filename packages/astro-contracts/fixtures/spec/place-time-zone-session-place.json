@@ -1,0 +1,202 @@
+{
+  "module": "place-time-zone-session-place",
+  "package": "portal",
+  "file": "planner/place-time-zone",
+  "export": "sessionPlaceWithZone",
+  "cases": [
+    {
+      "id": "no-place-at-all",
+      "args": [null, null, []]
+    },
+    {
+      "id": "the-plan-place-when-the-session-names-none",
+      "args": [
+        null,
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Europe/Paris"
+        },
+        []
+      ]
+    },
+    {
+      "id": "the-session-place-keeps-its-own-zone",
+      "args": [
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Asia/Tokyo"
+        },
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Europe/Paris"
+        },
+        []
+      ]
+    },
+    {
+      "id": "the-plan-copy-lends-its-zone",
+      "args": [
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "id": "home",
+          "timeZone": "Europe/Paris"
+        },
+        []
+      ]
+    },
+    {
+      "id": "the-plan-copy-lends-its-chosen-mark",
+      "args": [
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Europe/Paris",
+          "timeZoneSource": "chosen"
+        },
+        []
+      ]
+    },
+    {
+      "id": "another-place-lends-nothing",
+      "args": [
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        {
+          "name": "Gîte",
+          "latitude": 35.68,
+          "longitude": 139.69,
+          "timeZone": "Asia/Tokyo"
+        },
+        []
+      ]
+    },
+    {
+      "id": "a-session-place-without-position-reads-the-plan",
+      "args": [
+        {
+          "name": "Maison"
+        },
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Europe/Paris"
+        },
+        []
+      ]
+    },
+    {
+      "id": "the-persons-own-place-lends-its-zone",
+      "args": [
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        [
+          {
+            "id": "home",
+            "name": "Maison",
+            "latitude": 48.8566,
+            "longitude": 2.3522,
+            "timeZone": "America/Toronto",
+            "timeZoneSource": "chosen"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "the-plan-copy-comes-before-the-persons-places",
+      "args": [
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Europe/Paris"
+        },
+        [
+          {
+            "id": "home",
+            "name": "Maison",
+            "latitude": 48.8566,
+            "longitude": 2.3522,
+            "timeZone": "America/Toronto"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "a-place-with-an-unknown-zone-is-lent-one",
+      "args": [
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Not/AZone"
+        },
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "timeZone": "Europe/Paris"
+        },
+        []
+      ]
+    },
+    {
+      "id": "nobody-has-a-zone",
+      "args": [
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        {
+          "name": "Maison",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        [
+          {
+            "id": "home",
+            "name": "Maison",
+            "latitude": 48.8566,
+            "longitude": 2.3522
+          }
+        ]
+      ]
+    }
+  ]
+}

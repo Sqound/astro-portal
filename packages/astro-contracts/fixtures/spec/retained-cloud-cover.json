@@ -1,0 +1,107 @@
+{
+  "module": "retained-cloud-cover",
+  "package": "portal",
+  "file": "astronomy-forecast",
+  "export": "retainedCloudCover",
+  "cases": [
+    {
+      "id": "night-2026-10-22-22h",
+      "args": [
+        {
+          "best_match": 3,
+          "ecmwf_ifs025": 3,
+          "icon_seamless": 74,
+          "gfs_seamless": 13,
+          "jma_seamless": 3
+        }
+      ]
+    },
+    {
+      "id": "one-model",
+      "args": [
+        {
+          "icon_seamless": 40
+        }
+      ]
+    },
+    {
+      "id": "ties-go-to-a-named-model",
+      "args": [
+        {
+          "best_match": 10,
+          "jma_seamless": 10,
+          "gfs_seamless": 50,
+          "icon_seamless": 50
+        }
+      ]
+    },
+    {
+      "id": "models-without-a-value-are-ignored",
+      "args": [
+        {
+          "best_match": null,
+          "ecmwf_ifs025": "",
+          "icon_seamless": 20,
+          "gfs_seamless": 35
+        }
+      ]
+    },
+    {
+      "id": "none-answers",
+      "args": [{}]
+    },
+    {
+      "id": "not-an-object",
+      "args": [null]
+    },
+    {
+      "id": "even-count-is-the-mean-of-the-middle-two",
+      "args": [
+        {
+          "ecmwf_ifs025": 3,
+          "icon_seamless": 74,
+          "gfs_seamless": 13,
+          "jma_seamless": 3
+        }
+      ]
+    },
+    {
+      "id": "uncertain-needs-a-model-at-50-and-a-median-under-20",
+      "args": [
+        {
+          "a": 50,
+          "b": 10,
+          "c": 10
+        }
+      ]
+    },
+    {
+      "id": "median-at-20-is-not-uncertain",
+      "args": [
+        {
+          "a": 60,
+          "b": 20,
+          "c": 20
+        }
+      ]
+    },
+    {
+      "id": "no-model-at-50-is-not-uncertain",
+      "args": [
+        {
+          "a": 49,
+          "b": 5,
+          "c": 5
+        }
+      ]
+    },
+    {
+      "id": "met-norway-alone",
+      "args": [
+        {
+          "met_norway": 12
+        }
+      ]
+    }
+  ]
+}

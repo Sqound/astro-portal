@@ -1,0 +1,125 @@
+{
+  "module": "place-time-zone-same-place",
+  "package": "portal",
+  "file": "planner/place-time-zone",
+  "export": "isSamePlace",
+  "cases": [
+    {
+      "id": "same-id",
+      "args": [
+        {
+          "id": "home",
+          "latitude": 1,
+          "longitude": 2
+        },
+        {
+          "id": "home",
+          "latitude": 40,
+          "longitude": 9
+        }
+      ]
+    },
+    {
+      "id": "same-position-no-id",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        {
+          "id": "home",
+          "latitude": 48.85661,
+          "longitude": 2.35221
+        }
+      ]
+    },
+    {
+      "id": "beyond-eleven-metres",
+      "args": [
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        {
+          "latitude": 48.8568,
+          "longitude": 2.3522
+        }
+      ]
+    },
+    {
+      "id": "different-ids-same-position",
+      "args": [
+        {
+          "id": "a",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        {
+          "id": "b",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        }
+      ]
+    },
+    {
+      "id": "far-apart",
+      "args": [
+        {
+          "id": "a",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        },
+        {
+          "id": "b",
+          "latitude": 35.68,
+          "longitude": 139.69
+        }
+      ]
+    },
+    {
+      "id": "no-position-same-name",
+      "args": [
+        {
+          "name": "Maison"
+        },
+        {
+          "name": " maison ",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        }
+      ]
+    },
+    {
+      "id": "no-position-other-name",
+      "args": [
+        {
+          "name": "Maison"
+        },
+        {
+          "name": "Gîte",
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        }
+      ]
+    },
+    {
+      "id": "no-position-no-name",
+      "args": [
+        {},
+        {
+          "latitude": 48.8566,
+          "longitude": 2.3522
+        }
+      ]
+    },
+    {
+      "id": "nothing",
+      "args": [
+        null,
+        {
+          "name": "Maison"
+        }
+      ]
+    }
+  ]
+}

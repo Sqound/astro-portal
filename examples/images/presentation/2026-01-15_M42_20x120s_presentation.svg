@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <radialGradient id="nebula"><stop stop-color="#fff"/><stop offset=".1" stop-color="#a5c9ff"/><stop offset=".28" stop-color="#bc6da4" stop-opacity=".95"/><stop offset=".6" stop-color="#603a75" stop-opacity=".72"/><stop offset="1" stop-color="#050a10" stop-opacity="0"/></radialGradient>
+    <pattern id="stars" width="113" height="91" patternUnits="userSpaceOnUse"><circle cx="12" cy="20" r="2.2" fill="#fff"/><circle cx="68" cy="42" r="1.6" fill="#cfe4ff"/><circle cx="101" cy="78" r="1.1" fill="#ffd0a4"/></pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="#020409"/><rect width="1600" height="1000" fill="url(#stars)"/>
+  <ellipse cx="800" cy="500" rx="575" ry="430" fill="url(#nebula)"/><path d="M420 785Q665 615 720 405T1090 205Q925 495 1180 760Q800 570 420 785Z" fill="#170f22" opacity=".78"/>
+  <g fill="#fff"><circle cx="790" cy="493" r="9"/><circle cx="815" cy="505" r="6"/><circle cx="775" cy="520" r="4.5"/><circle cx="835" cy="477" r="4"/></g>
+  <text x="40" y="950" fill="#aeb9c4" font-family="system-ui" font-size="24">Illustration synthétique de démonstration — courbe de présentation</text>
+</svg>

@@ -1,0 +1,81 @@
+{
+  "cases": [
+    {
+      "args": [{ "designation": "M31" }, "ja"],
+      "id": "m31-japanese-name",
+      "result": null
+    },
+    {
+      "args": [{ "designation": "M44" }, "de"],
+      "id": "m44-de-name",
+      "result": "Krippe"
+    },
+    {
+      "args": [{ "designation": "NGC 1275" }, "de"],
+      "id": "name-without-a-label-in-de-reads-english",
+      "result": "Perseus A"
+    },
+    {
+      "args": [{ "designation": "M44" }, "es"],
+      "id": "m44-es-name",
+      "result": "Cúmulo de la Colmena"
+    },
+    {
+      "args": [{ "designation": "NGC 1275" }, "es"],
+      "id": "name-without-a-label-in-es-reads-english",
+      "result": "Perseus A"
+    },
+    {
+      "args": [{ "designation": "M44" }, "it"],
+      "id": "m44-it-name",
+      "result": "Presepe"
+    },
+    {
+      "args": [{ "designation": "NGC 1275" }, "it"],
+      "id": "name-without-a-label-in-it-reads-english",
+      "result": "Perseus A"
+    },
+    {
+      "args": [{ "designation": "M44" }, "pt-BR"],
+      "id": "m44-pt-br-name",
+      "result": "Aglomerado da Colmeia"
+    },
+    {
+      "args": [{ "designation": "NGC 1275" }, "pt-BR"],
+      "id": "name-without-a-label-in-pt-br-reads-english",
+      "result": "Perseus A"
+    },
+    {
+      "args": [{ "designation": "IC 2602" }, "zh-Hans"],
+      "id": "ic-2602-simplified-chinese-name",
+      "result": "船底座θ星团"
+    },
+    {
+      "args": [{ "designation": "Jupiter" }, "zh-Hans"],
+      "id": "jupiter-simplified-chinese-name",
+      "result": "木星"
+    },
+    {
+      "args": [{ "designation": "IC 2602" }, "zh-Hant"],
+      "id": "ic-2602-traditional-chinese-name",
+      "result": "船底座θ星團"
+    },
+    {
+      "args": [{ "designation": "Jupiter" }, "zh-Hant"],
+      "id": "jupiter-traditional-chinese-name",
+      "result": "木星"
+    },
+    {
+      "args": [{ "designation": "IC 2602" }, "ru"],
+      "id": "ic-2602-russian-name",
+      "result": "Скопление Тета Киля"
+    },
+    {
+      "args": [{ "designation": "Jupiter" }, "ru"],
+      "id": "jupiter-russian-name",
+      "result": "Юпитер"
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "target-common-names"
+}

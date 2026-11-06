@@ -1,0 +1,239 @@
+{
+  "module": "forecast-loss-shares",
+  "package": "portal",
+  "file": "astronomy-forecast",
+  "export": "forecastLossShares",
+  "cases": [
+    {
+      "id": "board-m17b-invented-night",
+      "args": [
+        [
+          {
+            "cloud": 8,
+            "precipitation": 0,
+            "moonAltitude": -10,
+            "moonIllumination": 78,
+            "visibility": 20000,
+            "wind": 8,
+            "gust": 14,
+            "humidity": 78
+          },
+          {
+            "cloud": 10,
+            "precipitation": 0,
+            "moonAltitude": -10,
+            "moonIllumination": 78,
+            "visibility": 20000,
+            "wind": 8,
+            "gust": 15,
+            "humidity": 80
+          },
+          {
+            "cloud": 12,
+            "precipitation": 5,
+            "moonAltitude": -10,
+            "moonIllumination": 78,
+            "visibility": 18000,
+            "wind": 9,
+            "gust": 18,
+            "humidity": 83
+          },
+          {
+            "cloud": 15,
+            "precipitation": 5,
+            "moonAltitude": -10,
+            "moonIllumination": 78,
+            "visibility": 16000,
+            "wind": 10,
+            "gust": 20,
+            "humidity": 86
+          },
+          {
+            "cloud": 18,
+            "precipitation": 10,
+            "moonAltitude": -10,
+            "moonIllumination": 78,
+            "visibility": 14000,
+            "wind": 10,
+            "gust": 22,
+            "humidity": 89
+          },
+          {
+            "cloud": 22,
+            "precipitation": 10,
+            "moonAltitude": 8,
+            "moonIllumination": 78,
+            "visibility": 12000,
+            "wind": 12,
+            "gust": 26,
+            "humidity": 91
+          },
+          {
+            "cloud": 20,
+            "precipitation": 15,
+            "moonAltitude": 20,
+            "moonIllumination": 78,
+            "visibility": 10000,
+            "wind": 14,
+            "gust": 30,
+            "humidity": 93
+          },
+          {
+            "cloud": 28,
+            "precipitation": 25,
+            "moonAltitude": 32,
+            "moonIllumination": 78,
+            "visibility": 9000,
+            "wind": 16,
+            "gust": 34,
+            "humidity": 95
+          },
+          {
+            "cloud": 35,
+            "precipitation": 40,
+            "moonAltitude": 42,
+            "moonIllumination": 78,
+            "visibility": 7000,
+            "wind": 18,
+            "gust": 38,
+            "humidity": 96
+          },
+          {
+            "cloud": 30,
+            "precipitation": 35,
+            "moonAltitude": 50,
+            "moonIllumination": 78,
+            "visibility": 6000,
+            "wind": 18,
+            "gust": 40,
+            "humidity": 97
+          }
+        ]
+      ]
+    },
+    {
+      "id": "board-m17b-worst-third",
+      "args": [
+        [
+          {
+            "cloud": 28,
+            "precipitation": 25,
+            "moonAltitude": 32,
+            "moonIllumination": 78,
+            "visibility": 9000,
+            "wind": 16,
+            "gust": 34,
+            "humidity": 95
+          },
+          {
+            "cloud": 35,
+            "precipitation": 40,
+            "moonAltitude": 42,
+            "moonIllumination": 78,
+            "visibility": 7000,
+            "wind": 18,
+            "gust": 38,
+            "humidity": 96
+          },
+          {
+            "cloud": 30,
+            "precipitation": 35,
+            "moonAltitude": 50,
+            "moonIllumination": 78,
+            "visibility": 6000,
+            "wind": 18,
+            "gust": 40,
+            "humidity": 97
+          }
+        ]
+      ]
+    },
+    {
+      "id": "clear-night-loses-nothing",
+      "args": [
+        [
+          {
+            "cloud": 0,
+            "wind": 5,
+            "humidity": 50,
+            "visibility": 24000,
+            "precipitation": 0
+          },
+          {
+            "cloud": 0,
+            "wind": 5,
+            "humidity": 50,
+            "visibility": 24000,
+            "precipitation": 0
+          }
+        ]
+      ]
+    },
+    {
+      "id": "full-moon-takes-the-whole-loss",
+      "args": [
+        [
+          {
+            "cloud": 0,
+            "wind": 5,
+            "humidity": 50,
+            "visibility": 24000,
+            "precipitation": 0,
+            "moonAltitude": 40,
+            "moonIllumination": 100
+          }
+        ]
+      ]
+    },
+    {
+      "id": "nil-cloud-weight-takes-the-loss",
+      "args": [
+        [
+          {
+            "cloud": 60,
+            "wind": 5,
+            "humidity": 50,
+            "visibility": 24000,
+            "precipitation": 20
+          },
+          {
+            "cloud": 10,
+            "wind": 5,
+            "humidity": 50,
+            "visibility": 24000,
+            "precipitation": 0
+          }
+        ]
+      ]
+    },
+    {
+      "id": "hours-without-cover-are-skipped",
+      "args": [
+        [
+          {
+            "cloud": null,
+            "wind": 5,
+            "humidity": 50,
+            "visibility": 24000,
+            "precipitation": 0
+          },
+          {
+            "cloud": 0,
+            "wind": 5,
+            "humidity": 50,
+            "visibility": 24000,
+            "precipitation": 40
+          }
+        ]
+      ]
+    },
+    {
+      "id": "no-scored-hour-is-null",
+      "args": [[]]
+    },
+    {
+      "id": "not-a-list-is-null",
+      "args": [null]
+    }
+  ]
+}

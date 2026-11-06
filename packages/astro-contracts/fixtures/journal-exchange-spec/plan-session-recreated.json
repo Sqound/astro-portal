@@ -1,0 +1,16 @@
+{
+  "exchange": "plan-session-recreated",
+  "description": "`POST /v1/plans/{planId}/session`: « Recréer la session à partir du plan ». The plan is active and not frozen again, its closure `executed` rides in the payload (`closedAs`), and the new session is finished, of origin `debrief`, without event, `outcome: null`: « À débriefer ».",
+  "given": "The 4 October night deleted (`session-delete`).",
+  "handler": "route:plans/[planId]/session",
+  "phase": "write",
+  "order": 13,
+  "params": {
+    "planId": "{plan:executed-group-1}"
+  },
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plans/{plan:executed-group-1}/session"
+  },
+  "schema": "plan.schema.json#/$defs/recreateSessionResponse"
+}

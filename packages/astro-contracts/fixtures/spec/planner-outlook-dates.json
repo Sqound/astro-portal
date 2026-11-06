@@ -1,0 +1,11 @@
+{
+  "module": "planner-outlook-dates",
+  "package": "portal",
+  "file": "planner/calendar",
+  "export": "plannerOutlookDates",
+  "cases": [
+    { "id": "ten-days-from-the-current-civil-day", "args": ["2026-09-15", 10] },
+    { "id": "the-window-crosses-a-month-boundary", "args": ["2026-09-28", 10] },
+    { "id": "an-unparsable-day-has-no-outlook", "args": ["", 10] }
+  ]
+}

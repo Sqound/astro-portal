@@ -1,0 +1,741 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 5, "time": 1717272000000 },
+            { "cloud": 4, "time": 1717275600000 },
+            { "cloud": 3, "time": 1717279200000 },
+            { "cloud": 2, "time": 1717282800000 },
+            { "cloud": 2, "time": 1717286400000 },
+            { "cloud": 3, "time": 1717290000000 },
+            { "cloud": 4, "time": 1717293600000 },
+            { "cloud": 5, "time": 1717297200000 },
+            { "cloud": 6, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "excellent", "score": 88 },
+          "moon": {
+            "illumination": 17,
+            "up": [
+              {
+                "end": "2024-06-01T19:30:00.000Z",
+                "start": "2024-06-01T10:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "excellent-clear-moon-set",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "clear", "mean": 4 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "kind": "set" },
+          "window": null
+        },
+        "kind": "excellent",
+        "level": "excellent",
+        "score": 88
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 12, "time": 1717272000000 },
+            { "cloud": 12, "time": 1717275600000 },
+            { "cloud": 12, "time": 1717279200000 },
+            { "cloud": 12, "time": 1717282800000 },
+            { "cloud": 12, "time": 1717286400000 },
+            { "cloud": 12, "time": 1717290000000 },
+            { "cloud": 12, "time": 1717293600000 },
+            { "cloud": 12, "time": 1717297200000 },
+            { "cloud": 12, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "favourable", "score": 72 },
+          "moon": { "illumination": 17, "up": [] },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "favourable-mean-clouds-moon-set",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "mean", "mean": 12 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "kind": "set" },
+          "window": null
+        },
+        "kind": "favourable",
+        "level": "favourable",
+        "score": 72
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 10, "time": 1717272000000 },
+            { "cloud": 20, "time": 1717275600000 },
+            { "cloud": 25, "time": 1717279200000 },
+            { "cloud": 30, "time": 1717282800000 },
+            { "cloud": 60, "time": 1717286400000 },
+            { "cloud": 70, "time": 1717290000000 },
+            { "cloud": 80, "time": 1717293600000 },
+            { "cloud": 75, "time": 1717297200000 },
+            { "cloud": 70, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "variable", "score": 48 },
+          "moon": {
+            "illumination": 17,
+            "up": [
+              {
+                "end": "2024-06-01T19:30:00.000Z",
+                "start": "2024-06-01T10:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "variable-window-clouds-after",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "mean", "mean": 49 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "kind": "set" },
+          "window": {
+            "cloudsAfter": true,
+            "end": "2024-06-02T00:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        },
+        "kind": "variable-window",
+        "level": "variable",
+        "score": 48
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 70, "time": 1717272000000 },
+            { "cloud": 60, "time": 1717275600000 },
+            { "cloud": 50, "time": 1717279200000 },
+            { "cloud": 20, "time": 1717282800000 },
+            { "cloud": 10, "time": 1717286400000 },
+            { "cloud": 10, "time": 1717290000000 },
+            { "cloud": 5, "time": 1717293600000 },
+            { "cloud": 10, "time": 1717297200000 },
+            { "cloud": 20, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "variable", "score": 50 },
+          "moon": {
+            "illumination": 17,
+            "up": [
+              {
+                "end": "2024-06-01T19:30:00.000Z",
+                "start": "2024-06-01T10:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "variable-window-clouds-before",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "mean", "mean": 28 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "kind": "set" },
+          "window": {
+            "cloudsAfter": false,
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T23:00:00.000Z"
+          }
+        },
+        "kind": "variable-window",
+        "level": "variable",
+        "score": 50
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 40, "time": 1717272000000 },
+            { "cloud": 45, "time": 1717275600000 },
+            { "cloud": 50, "time": 1717279200000 },
+            { "cloud": 55, "time": 1717282800000 },
+            { "cloud": 60, "time": 1717286400000 },
+            { "cloud": 55, "time": 1717290000000 },
+            { "cloud": 50, "time": 1717293600000 },
+            { "cloud": 45, "time": 1717297200000 },
+            { "cloud": 40, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "variable", "score": 45 },
+          "moon": {
+            "illumination": 17,
+            "up": [
+              {
+                "end": "2024-06-01T19:30:00.000Z",
+                "start": "2024-06-01T10:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "variable-no-clear-run",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "mean", "mean": 49 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "kind": "set" },
+          "window": null
+        },
+        "kind": "variable",
+        "level": "variable",
+        "score": 45
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 10, "time": 1717272000000 },
+            { "cloud": 20, "time": 1717275600000 },
+            { "cloud": 50, "time": 1717279200000 },
+            { "cloud": 15, "time": 1717282800000 },
+            { "cloud": 15, "time": 1717290000000 },
+            { "cloud": null, "time": 1717293600000 },
+            { "cloud": 60, "time": 1717297200000 }
+          ],
+          "forecast": { "category": "variable", "score": 44 },
+          "moon": {
+            "illumination": 17,
+            "up": [
+              {
+                "end": "2024-06-01T19:30:00.000Z",
+                "start": "2024-06-01T10:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "variable-window-gap-breaks-the-run",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "mean", "mean": 28 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "kind": "set" },
+          "window": {
+            "cloudsAfter": true,
+            "end": "2024-06-01T22:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        },
+        "kind": "variable-window",
+        "level": "variable",
+        "score": 44
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 85, "time": 1717272000000 },
+            { "cloud": 90, "time": 1717275600000 },
+            { "cloud": 95, "time": 1717279200000 },
+            { "cloud": 100, "time": 1717282800000 },
+            { "cloud": 100, "time": 1717286400000 },
+            { "cloud": 98, "time": 1717290000000 },
+            { "cloud": 92, "time": 1717293600000 },
+            { "cloud": 88, "time": 1717297200000 },
+            { "cloud": 80, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "poor", "score": 21 },
+          "moon": {
+            "illumination": 96,
+            "up": [
+              {
+                "end": "2024-06-02T06:00:00.000Z",
+                "start": "2024-06-01T19:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "poor-covered-full-moon",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "covered", "mean": 92 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "kind": "full" },
+          "window": null
+        },
+        "kind": "poor",
+        "level": "poor",
+        "score": 21
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 60, "time": 1717272000000 },
+            { "cloud": 70, "time": 1717275600000 },
+            { "cloud": 80, "time": 1717279200000 },
+            { "cloud": 90, "time": 1717282800000 },
+            { "cloud": 79, "time": 1717286400000 },
+            { "cloud": 85, "time": 1717290000000 },
+            { "cloud": 90, "time": 1717293600000 },
+            { "cloud": 95, "time": 1717297200000 },
+            { "cloud": 90, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "poor", "score": 30 },
+          "moon": {
+            "illumination": 40,
+            "up": [
+              {
+                "end": "2024-06-01T22:16:00.000Z",
+                "start": "2024-06-01T18:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "poor-mixed-moon-up-until",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "mean", "mean": 82 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "at": "2024-06-01T22:16:00.000Z", "kind": "up-until" },
+          "window": null
+        },
+        "kind": "poor",
+        "level": "poor",
+        "score": 30
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 10, "time": 1717272000000 },
+            { "cloud": 12, "time": 1717275600000 },
+            { "cloud": 14, "time": 1717279200000 },
+            { "cloud": 16, "time": 1717282800000 },
+            { "cloud": 18, "time": 1717286400000 },
+            { "cloud": 16, "time": 1717290000000 },
+            { "cloud": 14, "time": 1717293600000 },
+            { "cloud": 12, "time": 1717297200000 },
+            { "cloud": 10, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "favourable", "score": 70 },
+          "moon": {
+            "illumination": 55,
+            "up": [
+              {
+                "end": "2024-06-02T08:00:00.000Z",
+                "start": "2024-06-01T22:16:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "favourable-moon-up-from",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "mean", "mean": 14 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "at": "2024-06-01T22:16:00.000Z", "kind": "up-from" },
+          "window": null
+        },
+        "kind": "favourable",
+        "level": "favourable",
+        "score": 70
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 20, "time": 1717272000000 },
+            { "cloud": 20, "time": 1717275600000 },
+            { "cloud": 20, "time": 1717279200000 },
+            { "cloud": 20, "time": 1717282800000 },
+            { "cloud": 20, "time": 1717286400000 },
+            { "cloud": 20, "time": 1717290000000 },
+            { "cloud": 20, "time": 1717293600000 },
+            { "cloud": 20, "time": 1717297200000 },
+            { "cloud": 20, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "favourable", "score": 66 },
+          "moon": {
+            "illumination": 30,
+            "up": [
+              {
+                "end": "2024-06-01T23:30:00.000Z",
+                "start": "2024-06-01T21:00:00.000Z"
+              },
+              {
+                "end": "2024-06-02T05:00:00.000Z",
+                "start": "2024-06-02T03:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "favourable-moon-up-between",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "mean", "mean": 20 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": {
+            "end": "2024-06-01T23:30:00.000Z",
+            "kind": "up-between",
+            "start": "2024-06-01T21:00:00.000Z"
+          },
+          "window": null
+        },
+        "kind": "favourable",
+        "level": "favourable",
+        "score": 66
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 8, "time": 1717272000000 },
+            { "cloud": 8, "time": 1717275600000 },
+            { "cloud": 8, "time": 1717279200000 },
+            { "cloud": 8, "time": 1717282800000 },
+            { "cloud": 8, "time": 1717286400000 },
+            { "cloud": 8, "time": 1717290000000 },
+            { "cloud": 8, "time": 1717293600000 },
+            { "cloud": 8, "time": 1717297200000 },
+            { "cloud": 8, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "excellent", "score": 84 },
+          "moon": {
+            "illumination": 60,
+            "up": [
+              {
+                "end": "2024-06-02T06:00:00.000Z",
+                "start": "2024-06-01T18:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "excellent-moon-up-all-night-not-full",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "clear", "mean": 8 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "kind": "up-all-night" },
+          "window": null
+        },
+        "kind": "excellent",
+        "level": "excellent",
+        "score": 84
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 9, "time": 1717272000000 },
+            { "cloud": 9, "time": 1717275600000 },
+            { "cloud": 9, "time": 1717279200000 },
+            { "cloud": 9, "time": 1717282800000 },
+            { "cloud": 9, "time": 1717286400000 },
+            { "cloud": 9, "time": 1717290000000 },
+            { "cloud": 9, "time": 1717293600000 },
+            { "cloud": 9, "time": 1717297200000 },
+            { "cloud": 9, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "excellent", "score": 83 },
+          "moon": {
+            "illumination": 98,
+            "up": [
+              {
+                "end": "2024-06-02T12:00:00.000Z",
+                "start": "2024-06-02T04:30:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "full-moon-below-the-horizon-is-set",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "clear", "mean": 9 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "kind": "set" },
+          "window": null
+        },
+        "kind": "excellent",
+        "level": "excellent",
+        "score": 83
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 15, "time": 1717272000000 },
+            { "cloud": 15, "time": 1717275600000 },
+            { "cloud": 15, "time": 1717279200000 },
+            { "cloud": 15, "time": 1717282800000 },
+            { "cloud": 15, "time": 1717286400000 },
+            { "cloud": 15, "time": 1717290000000 },
+            { "cloud": 15, "time": 1717293600000 },
+            { "cloud": 15, "time": 1717297200000 },
+            { "cloud": 15, "time": 1717300800000 }
+          ],
+          "forecast": { "category": "favourable", "score": 75 },
+          "moon": null,
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "missing-moon-fact",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "mean", "mean": 15 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": null,
+          "window": null
+        },
+        "kind": "favourable",
+        "level": "favourable",
+        "score": 75
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [],
+          "forecast": { "category": "favourable", "score": 64 },
+          "moon": {
+            "illumination": 17,
+            "up": [
+              {
+                "end": "2024-06-01T19:30:00.000Z",
+                "start": "2024-06-01T10:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "missing-clouds-fact",
+      "result": {
+        "facts": {
+          "clouds": null,
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "kind": "set" },
+          "window": null
+        },
+        "kind": "favourable",
+        "level": "favourable",
+        "score": 64
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 40, "time": 1717272000000 },
+            { "cloud": 40, "time": 1717275600000 },
+            { "cloud": 40, "time": 1717279200000 },
+            { "cloud": 40, "time": 1717282800000 },
+            { "cloud": 40, "time": 1717286400000 },
+            { "cloud": 40, "time": 1717290000000 },
+            { "cloud": 40, "time": 1717293600000 },
+            { "cloud": 40, "time": 1717297200000 },
+            { "cloud": 40, "time": 1717300800000 }
+          ],
+          "forecast": { "score": 41.6 },
+          "moon": {
+            "illumination": 17,
+            "up": [
+              {
+                "end": "2024-06-01T19:30:00.000Z",
+                "start": "2024-06-01T10:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "category-missing-uses-the-thresholds",
+      "result": {
+        "facts": {
+          "clouds": { "kind": "mean", "mean": 40 },
+          "darkness": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "minutes": 480,
+            "start": "2024-06-01T20:00:00.000Z"
+          },
+          "moon": { "kind": "set" },
+          "window": null
+        },
+        "kind": "variable",
+        "level": "variable",
+        "score": 42
+      }
+    },
+    {
+      "args": [
+        {
+          "clouds": [
+            { "cloud": 12, "time": 1717272000000 },
+            { "cloud": 12, "time": 1717275600000 },
+            { "cloud": 12, "time": 1717279200000 },
+            { "cloud": 12, "time": 1717282800000 },
+            { "cloud": 12, "time": 1717286400000 },
+            { "cloud": 12, "time": 1717290000000 },
+            { "cloud": 12, "time": 1717293600000 },
+            { "cloud": 12, "time": 1717297200000 },
+            { "cloud": 12, "time": 1717300800000 }
+          ],
+          "forecast": null,
+          "moon": {
+            "illumination": 17,
+            "up": [
+              {
+                "end": "2024-06-01T19:30:00.000Z",
+                "start": "2024-06-01T10:00:00.000Z"
+              }
+            ]
+          },
+          "night": {
+            "end": "2024-06-02T04:00:00.000Z",
+            "start": "2024-06-01T20:00:00.000Z"
+          }
+        }
+      ],
+      "id": "no-forecast",
+      "result": {
+        "facts": null,
+        "kind": "unavailable",
+        "level": null,
+        "score": null
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "night-verdict"
+}

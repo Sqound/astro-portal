@@ -1,0 +1,51 @@
+name: astro-portal
+services:
+  portal:
+    image: astro-portal:local
+    build:
+      context: .
+      dockerfile: apps/portal-oss/Dockerfile
+      # The commit shown in the footer; deploy/install.sh sets it from the
+      # checkout. Empty: the version alone.
+      args:
+        ASTRO_PORTAL_BUILD_ID: "${ASTRO_PORTAL_BUILD_ID:-}"
+    user: "${ASTRO_PORTAL_UID:-1001}:${ASTRO_PORTAL_GID:-1001}"
+    restart: unless-stopped
+    # The address the port is published on: every interface by default;
+    # 127.0.0.1 behind a tunnel or a reverse proxy on this machine, so that
+    # nothing but it reaches the portal (docs/SELF_HOSTING.md).
+    ports:
+      - "${ASTRO_PORTAL_BIND_ADDRESS:-0.0.0.0}:${PORT:-8787}:8787"
+    # Every setting of portal.env reaches the container (the public address,
+    # the client header, the sign-in…); the block below wins over it for
+    # what the container itself fixes.
+    env_file:
+      - "${ASTRO_PORTAL_DATA_DIR:?Set ASTRO_PORTAL_DATA_DIR}/portal.env"
+    environment:
+      HOST: 0.0.0.0
+      PORT: "8787"
+      ASTRO_PORTAL_DATABASE_URL: "postgres://astro:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}@postgres:5432/astro"
+      ASTRO_PORTAL_AUTH_MODE: "${ASTRO_PORTAL_AUTH_MODE:-password}"
+      ASTRO_PORTAL_SIGN_IN_KEY: "${ASTRO_PORTAL_SIGN_IN_KEY:?Set ASTRO_PORTAL_SIGN_IN_KEY}"
+      ASTRO_PORTAL_BOOTSTRAP_SECRET: "${ASTRO_PORTAL_BOOTSTRAP_SECRET:?Set ASTRO_PORTAL_BOOTSTRAP_SECRET}"
+      ASTRO_PORTAL_CAPTURES_DIR: /data/runtime/captures
+    volumes:
+      - "${ASTRO_PORTAL_DATA_DIR:?Set ASTRO_PORTAL_DATA_DIR}/portal:/data"
+      - "${ASTRO_PORTAL_DATA_DIR:?Set ASTRO_PORTAL_DATA_DIR}/portal/next-cache:/app/apps/portal-oss/.next/cache"
+    depends_on:
+      postgres:
+        condition: service_healthy
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: astro
+      POSTGRES_DB: astro
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}"
+    volumes:
+      - "${ASTRO_PORTAL_DATA_DIR:?Set ASTRO_PORTAL_DATA_DIR}/postgres:/var/lib/postgresql/data"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U astro -d astro"]
+      interval: 5s
+      timeout: 5s
+      retries: 20

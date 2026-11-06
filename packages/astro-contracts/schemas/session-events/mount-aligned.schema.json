@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/mount-aligned.schema.json",
+  "title": "Astro Portal session event payload: mount_aligned",
+  "description": "The person aligned the mount on a target (« Sync sur M110 »), after centring it: the mount was told it points there. `refused` — the application's safety or the mount declined before the mount's model changed. Never done by the application on its own. Recorded by the application from the driver's own code path with the night's clock; every field but the ones marked required is optional, and a reader tolerates a payload without them. Private in a shared night. See session-events.md.",
+  "type": "object",
+  "properties": {
+    "outcome": {
+      "type": "string",
+      "enum": ["synced", "refused"]
+    },
+    "targetId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The plan's key of the target the mount was sent to, the same one the target events use (a calibration star or a polar-alignment move carries its own key)."
+    },
+    "targetLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The target's display name (« M110 »), for a reader that cannot resolve `targetId`."
+    },
+    "refusedBy": {
+      "type": "string",
+      "enum": ["safety", "mount", "no_coordinates"],
+      "description": "Optional, with `outcome: refused`: who refused — `safety` the application's own pointing safety (horizon mask, zenith, cables, Sun) before any byte was sent; `mount` the mount itself; `no_coordinates` the target has no fixed position to point at."
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Optional, with `outcome: refused`: a short machine code of the cause (`below_horizon`, `parked`, `not_aligned`, `zenith`…), never a sentence."
+    },
+    "protocol": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Optional: the mount's protocol as the application names it (`LX200`, `Alpaca`, `INDI`, `SynScan`, `iOptron`, `NexStar`)."
+    }
+  },
+  "required": ["outcome"],
+  "additionalProperties": false
+}

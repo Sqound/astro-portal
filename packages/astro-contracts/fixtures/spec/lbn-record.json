@@ -1,0 +1,19 @@
+{
+  "module": "lbn-record",
+  "file": "lbn-catalogue",
+  "export": "parseLbnRecord",
+  "cases": [
+    {
+      "id": "negative-declination",
+      "args": [
+        "    1   0.03   0.13 17 42  -28 50     4   4   0.002 4 5   0 S 17"
+      ]
+    },
+    {
+      "id": "lbn-437",
+      "args": [
+        "  437  96.26 -14.97 22 30  +40 20    75  20   0.366 2 4  52 DG 187"
+      ]
+    }
+  ]
+}

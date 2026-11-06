@@ -1,0 +1,10 @@
+{
+  "module": "planner-coordinates",
+  "export": "cataloguePlannerCoordinate",
+  "cases": [
+    {
+      "id": "m31-ra-hours-to-degrees",
+      "args": [{ "ra": 0.7123194444, "dec": 41.26875 }]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "args": [""],
+      "id": "an-empty-field-is-no-value",
+      "result": { "sqm": null }
+    },
+    { "args": ["   "], "id": "blanks-are-no-value", "result": { "sqm": null } },
+    {
+      "args": ["21,35"],
+      "id": "a-french-decimal-comma",
+      "result": { "sqm": 21.35 }
+    },
+    {
+      "args": ["21.35"],
+      "id": "an-english-decimal-point",
+      "result": { "sqm": 21.35 }
+    },
+    { "args": ["21"], "id": "a-whole-number", "result": { "sqm": 21 } },
+    { "args": ["14"], "id": "the-lower-bound", "result": { "sqm": 14 } },
+    { "args": ["22.5"], "id": "the-upper-bound", "result": { "sqm": 22.5 } },
+    {
+      "args": ["13.9"],
+      "id": "below-the-range",
+      "result": { "error": "range" }
+    },
+    {
+      "args": ["22.6"],
+      "id": "above-the-range",
+      "result": { "error": "range" }
+    },
+    {
+      "args": ["21.355"],
+      "id": "three-decimals-are-refused",
+      "result": { "error": "range" }
+    },
+    {
+      "args": ["abc"],
+      "id": "text-is-refused",
+      "result": { "error": "range" }
+    },
+    {
+      "args": ["-21"],
+      "id": "a-sign-is-refused",
+      "result": { "error": "range" }
+    },
+    {
+      "args": [" 20,5 "],
+      "id": "surrounding-blanks-are-trimmed",
+      "result": { "sqm": 20.5 }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "sky-entered-input"
+}

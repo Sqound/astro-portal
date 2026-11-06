@@ -1,0 +1,5 @@
+{
+  "module": "barnard-catalogue",
+  "export": "barnardDesignation",
+  "cases": [{ "id": "canonical-barnard-number", "args": ["B 033"] }]
+}

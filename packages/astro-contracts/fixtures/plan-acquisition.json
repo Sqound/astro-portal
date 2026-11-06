@@ -1,0 +1,458 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "endMinute": 120,
+              "filter": "L",
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 300,
+              "filter": "",
+              "id": "ngc7000",
+              "startMinute": 120,
+              "targetId": "ngc7000"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "absent-fields-leave-the-plan-as-it-is",
+      "result": {
+        "date": "2026-10-21",
+        "id": "plan-1",
+        "items": [
+          {
+            "endMinute": 120,
+            "filter": "L",
+            "id": "m31",
+            "startMinute": 0,
+            "targetId": "m31"
+          },
+          {
+            "endMinute": 300,
+            "filter": "",
+            "id": "ngc7000",
+            "startMinute": 120,
+            "targetId": "ngc7000"
+          }
+        ],
+        "name": "Nuit au col"
+      }
+    },
+    {
+      "args": [
+        {
+          "acquisitionDefaults": { "exposureSeconds": 180, "gain": 120 },
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": {
+                "lines": [
+                  {
+                    "binning": 1,
+                    "exposureSeconds": 120,
+                    "filter": "L",
+                    "frameCount": 30,
+                    "gain": 100
+                  },
+                  { "exposureSeconds": 300, "filter": "Ha" }
+                ]
+              },
+              "endMinute": 120,
+              "filter": "L",
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 300,
+              "filter": "",
+              "id": "ngc7000",
+              "startMinute": 120,
+              "targetId": "ngc7000"
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "acquisition": {
+                "lines": [
+                  {
+                    "binning": 1,
+                    "exposureSeconds": 120,
+                    "filter": "L",
+                    "frameCount": 30,
+                    "gain": 100
+                  }
+                ]
+              },
+              "endMinute": 120,
+              "planItemId": "m31",
+              "ruleVersion": "expo-b-1",
+              "startMinute": 0,
+              "targetId": "m31"
+            },
+            {
+              "endMinute": 300,
+              "planItemId": "ngc7000",
+              "startMinute": 120,
+              "targetId": "ngc7000"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "valid-defaults-target-lines-and-launch-are-kept",
+      "result": {
+        "acquisitionDefaults": { "exposureSeconds": 180, "gain": 120 },
+        "date": "2026-10-21",
+        "id": "plan-1",
+        "items": [
+          {
+            "acquisition": {
+              "lines": [
+                {
+                  "binning": 1,
+                  "exposureSeconds": 120,
+                  "filter": "L",
+                  "frameCount": 30,
+                  "gain": 100
+                },
+                { "exposureSeconds": 300, "filter": "Ha" }
+              ]
+            },
+            "endMinute": 120,
+            "filter": "L",
+            "id": "m31",
+            "startMinute": 0,
+            "targetId": "m31"
+          },
+          {
+            "endMinute": 300,
+            "filter": "",
+            "id": "ngc7000",
+            "startMinute": 120,
+            "targetId": "ngc7000"
+          }
+        ],
+        "launchedSchedule": [
+          {
+            "acquisition": {
+              "lines": [
+                {
+                  "binning": 1,
+                  "exposureSeconds": 120,
+                  "filter": "L",
+                  "frameCount": 30,
+                  "gain": 100
+                }
+              ]
+            },
+            "endMinute": 120,
+            "planItemId": "m31",
+            "ruleVersion": "expo-b-1",
+            "startMinute": 0,
+            "targetId": "m31"
+          },
+          {
+            "endMinute": 300,
+            "planItemId": "ngc7000",
+            "startMinute": 120,
+            "targetId": "ngc7000"
+          }
+        ],
+        "name": "Nuit au col"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": {
+                "lines": [{ "filter": "L-eXtreme" }, { "filter": "L" }]
+              },
+              "filter": "L",
+              "id": "m31"
+            },
+            {
+              "acquisition": {
+                "lines": [{ "exposureSeconds": 30, "filter": null }]
+              },
+              "filter": "Ha",
+              "id": "m42"
+            },
+            {
+              "acquisition": { "lines": [{ "filter": "  UV/IR  " }] },
+              "id": "m45"
+            },
+            {
+              "acquisition": {
+                "lines": [{ "exposureSeconds": 60 }, { "filter": "G" }]
+              },
+              "filter": "R",
+              "id": "m33"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "the-first-line-filter-wins-over-the-item-filter",
+      "result": {
+        "date": "2026-10-21",
+        "id": "plan-1",
+        "items": [
+          {
+            "acquisition": {
+              "lines": [{ "filter": "L-eXtreme" }, { "filter": "L" }]
+            },
+            "filter": "L-eXtreme",
+            "id": "m31"
+          },
+          {
+            "acquisition": {
+              "lines": [{ "exposureSeconds": 30, "filter": null }]
+            },
+            "filter": "",
+            "id": "m42"
+          },
+          {
+            "acquisition": { "lines": [{ "filter": "UV/IR" }] },
+            "filter": "UV/IR",
+            "id": "m45"
+          },
+          {
+            "acquisition": {
+              "lines": [{ "exposureSeconds": 60 }, { "filter": "G" }]
+            },
+            "filter": "R",
+            "id": "m33"
+          }
+        ],
+        "name": "Nuit au col"
+      }
+    },
+    {
+      "args": [
+        {
+          "acquisitionDefaults": {
+            "exposureSeconds": -1,
+            "filter": 42,
+            "gain": null
+          },
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": {
+                "lines": [
+                  {
+                    "binning": 9,
+                    "exposureSeconds": 0,
+                    "filter": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "frameCount": 0,
+                    "gain": 12.5
+                  },
+                  {
+                    "binning": 0,
+                    "exposureSeconds": 86401,
+                    "frameCount": 100001,
+                    "gain": "100"
+                  },
+                  {
+                    "binning": 8,
+                    "exposureSeconds": 0.005,
+                    "frameCount": 100000,
+                    "gain": -5
+                  }
+                ]
+              },
+              "filter": "L",
+              "id": "m31"
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "acquisition": { "lines": "none" },
+              "endMinute": 60,
+              "planItemId": "m31",
+              "ruleVersion": "",
+              "startMinute": 0,
+              "targetId": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "values-out-of-bounds-are-discarded-on-reading",
+      "result": {
+        "acquisitionDefaults": { "gain": null },
+        "date": "2026-10-21",
+        "id": "plan-1",
+        "items": [
+          {
+            "acquisition": {
+              "lines": [
+                {},
+                {},
+                {
+                  "binning": 8,
+                  "exposureSeconds": 0.005,
+                  "frameCount": 100000,
+                  "gain": -5
+                }
+              ]
+            },
+            "filter": "L",
+            "id": "m31"
+          }
+        ],
+        "launchedSchedule": [
+          {
+            "endMinute": 60,
+            "planItemId": "m31",
+            "startMinute": 0,
+            "targetId": "m31"
+          }
+        ],
+        "name": "Nuit au col"
+      }
+    },
+    {
+      "args": [
+        {
+          "acquisitionDefaults": { "gain": 100, "temperatureC": -10 },
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": {
+                "lines": [
+                  {
+                    "dither": true,
+                    "exposureSeconds": 120,
+                    "filter": "L",
+                    "offset": 30
+                  }
+                ],
+                "mode": "mono"
+              },
+              "filter": "L",
+              "id": "m31",
+              "note": "kept: the item stays open"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "unknown-fields-are-discarded",
+      "result": {
+        "acquisitionDefaults": { "gain": 100 },
+        "date": "2026-10-21",
+        "id": "plan-1",
+        "items": [
+          {
+            "acquisition": {
+              "lines": [{ "exposureSeconds": 120, "filter": "L" }]
+            },
+            "filter": "L",
+            "id": "m31",
+            "note": "kept: the item stays open"
+          }
+        ],
+        "name": "Nuit au col"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            {
+              "acquisition": {
+                "lines": [
+                  "L",
+                  null,
+                  { "exposureSeconds": 10 },
+                  { "exposureSeconds": 20 },
+                  { "exposureSeconds": 30 },
+                  { "exposureSeconds": 40 },
+                  { "exposureSeconds": 50 },
+                  { "exposureSeconds": 60 },
+                  { "exposureSeconds": 70 },
+                  { "exposureSeconds": 80 },
+                  { "exposureSeconds": 90 }
+                ]
+              },
+              "id": "m31"
+            }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "lines-beyond-the-eighth-and-non-objects-are-dropped",
+      "result": {
+        "date": "2026-10-21",
+        "id": "plan-1",
+        "items": [
+          {
+            "acquisition": {
+              "lines": [
+                { "exposureSeconds": 10 },
+                { "exposureSeconds": 20 },
+                { "exposureSeconds": 30 },
+                { "exposureSeconds": 40 },
+                { "exposureSeconds": 50 },
+                { "exposureSeconds": 60 },
+                { "exposureSeconds": 70 },
+                { "exposureSeconds": 80 }
+              ]
+            },
+            "id": "m31"
+          }
+        ],
+        "name": "Nuit au col"
+      }
+    },
+    {
+      "args": [
+        {
+          "acquisitionDefaults": {},
+          "date": "2026-10-21",
+          "id": "plan-1",
+          "items": [
+            { "acquisition": { "lines": [] }, "filter": "L", "id": "m31" },
+            { "acquisition": null, "filter": "Ha", "id": "m42" },
+            { "acquisition": { "lines": [{}] }, "filter": "", "id": "m45" }
+          ],
+          "name": "Nuit au col"
+        }
+      ],
+      "id": "empty-choices-are-removed",
+      "result": {
+        "date": "2026-10-21",
+        "id": "plan-1",
+        "items": [
+          { "filter": "L", "id": "m31" },
+          { "filter": "Ha", "id": "m42" },
+          { "acquisition": { "lines": [{}] }, "filter": "", "id": "m45" }
+        ],
+        "name": "Nuit au col"
+      }
+    },
+    { "args": [null], "id": "not-a-plan", "result": null }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "plan-acquisition"
+}

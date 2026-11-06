@@ -1,0 +1,41 @@
+{
+  "exchange": "rework-passages",
+  "description": "`PUT /v1/sessions/{id}/rework` sets the passages of a target one at a time — M 31 observed in two passages, left for twenty minutes between them. The answer gives them back in `target.passages`, the target's hours are the first start and the last end, and its acquired time is the sum of the two passages.",
+  "given": "The 10 October night of `list`, once reworked by `rework-response` (revision 1).",
+  "handler": "route:sessions/[id]/rework",
+  "phase": "write",
+  "order": 2,
+  "params": {
+    "id": "{session:to-rework}"
+  },
+  "request": {
+    "method": "PUT",
+    "path": "/api/v1/sessions/{session:to-rework}/rework",
+    "headers": {
+      "if-match": "\"1\""
+    },
+    "body": {
+      "targets": [
+        {
+          "targetId": "ic1396",
+          "state": "planned"
+        },
+        {
+          "targetId": "m31",
+          "state": "planned",
+          "passages": [
+            {
+              "start": "2026-10-10T19:00:00.000Z",
+              "end": "2026-10-10T19:50:00.000Z"
+            },
+            {
+              "start": "2026-10-10T20:10:00.000Z",
+              "end": "2026-10-10T21:00:00.000Z"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "schema": "session.schema.json#/$defs/detail"
+}

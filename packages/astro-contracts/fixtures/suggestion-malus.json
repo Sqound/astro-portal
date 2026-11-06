@@ -1,0 +1,1054 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 85,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-09-12",
+            "noteThen": 45,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "photo-done-30-days-tonight-much-better-comes-back",
+      "result": {
+        "age": 0.9258747122872905,
+        "done": 1,
+        "lift": 1,
+        "malus": 0,
+        "previous": {
+          "date": "2026-09-12",
+          "malus": 0,
+          "noteNow": 85,
+          "noteThen": 45,
+          "outcome": "done"
+        },
+        "sky": "worse"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 85,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-09-12",
+            "noteThen": 82,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "photo-done-30-days-good-sky-goes-down-clearly",
+      "result": {
+        "age": 0.9258747122872905,
+        "done": 1,
+        "lift": 0.1,
+        "malus": 33.3,
+        "previous": {
+          "date": "2026-09-12",
+          "malus": 33.3,
+          "noteNow": 85,
+          "noteThen": 82,
+          "outcome": "done"
+        },
+        "sky": "same"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "visual",
+          "noteNow": 70,
+          "row": {
+            "acquiredMinutes": 25,
+            "date": "2026-04-15",
+            "mode": "visual",
+            "noteThen": 70,
+            "outcome": "observed"
+          }
+        }
+      ],
+      "id": "visual-observed-180-days-almost-nothing",
+      "result": {
+        "age": 0.0625,
+        "done": 1,
+        "lift": 0,
+        "malus": 2.5,
+        "previous": {
+          "date": "2026-04-15",
+          "malus": 2.5,
+          "noteNow": 70,
+          "noteThen": 70,
+          "outcome": "observed"
+        },
+        "sky": "same"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 70,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 180,
+            "date": "2026-10-12",
+            "noteThen": 70,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "maximum-forty-done-in-full-the-same-day-as-good",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 0,
+        "malus": 40,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 40,
+          "noteNow": 70,
+          "noteThen": 70,
+          "outcome": "done"
+        },
+        "sky": "same"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 50,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 0,
+            "date": "2026-10-02",
+            "noteThen": 50,
+            "outcome": "partial"
+          }
+        }
+      ],
+      "id": "minimum-zero-nothing-acquired",
+      "result": {
+        "age": 0.9746546091224311,
+        "done": 0,
+        "lift": 0,
+        "malus": 0,
+        "previous": {
+          "date": "2026-10-02",
+          "malus": 0,
+          "noteNow": 50,
+          "noteThen": 50,
+          "outcome": "partial"
+        },
+        "sky": "same"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-09-12",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "age-30-days-no-notes",
+      "result": {
+        "age": 0.9258747122872905,
+        "done": 1,
+        "lift": 0,
+        "malus": 37,
+        "previous": {
+          "date": "2026-09-12",
+          "malus": 37,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-07-14",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "age-90-days-no-notes",
+      "result": {
+        "age": 0.7937005259840998,
+        "done": 1,
+        "lift": 0,
+        "malus": 31.7,
+        "previous": {
+          "date": "2026-07-14",
+          "malus": 31.7,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-01-15",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "age-270-days-the-half-life",
+      "result": {
+        "age": 0.5,
+        "done": 1,
+        "lift": 0,
+        "malus": 20,
+        "previous": {
+          "date": "2026-01-15",
+          "malus": 20,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 30,
+            "date": "2026-10-12",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "done-a-quarter-of-the-reference",
+      "result": {
+        "age": 1,
+        "done": 0.25,
+        "lift": 0,
+        "malus": 10,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 10,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 60,
+            "date": "2026-10-12",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "done-half-of-the-reference",
+      "result": {
+        "age": 1,
+        "done": 0.5,
+        "lift": 0,
+        "malus": 20,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 20,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 40,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-12",
+            "noteThen": 40,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "lift-none-same-note",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 0,
+        "malus": 40,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 40,
+          "noteNow": 40,
+          "noteThen": 40,
+          "outcome": "done"
+        },
+        "sky": "same"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 55,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-12",
+            "noteThen": 40,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "lift-half-fifteen-points-better",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 0.5,
+        "malus": 20,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 20,
+          "noteNow": 55,
+          "noteThen": 40,
+          "outcome": "done"
+        },
+        "sky": "worse"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 70,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-12",
+            "noteThen": 40,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "lift-whole-thirty-points-better",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 1,
+        "malus": 0,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 0,
+          "noteNow": 70,
+          "noteThen": 40,
+          "outcome": "done"
+        },
+        "sky": "worse"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 95,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-12",
+            "noteThen": 10,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "lift-more-than-thirty-points-stays-whole",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 1,
+        "malus": 0,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 0,
+          "noteNow": 95,
+          "noteThen": 10,
+          "outcome": "done"
+        },
+        "sky": "worse"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "row": {
+            "acquiredMinutes": 45,
+            "date": "2026-10-12",
+            "outcome": "partial",
+            "plannedMinutes": 180
+          }
+        }
+      ],
+      "id": "partial-counts-at-what-was-done-of-the-plan",
+      "result": {
+        "age": 1,
+        "done": 0.25,
+        "lift": 0,
+        "malus": 10,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 10,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "partial"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "row": {
+            "acquiredMinutes": 90,
+            "date": "2026-10-12",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "unknown-reference-counted-complete",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 0,
+        "malus": 40,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 40,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "row": {
+            "acquiredMinutes": 60,
+            "date": "2026-10-12",
+            "outcome": "done",
+            "plannedMinutes": 120
+          }
+        }
+      ],
+      "id": "reference-the-plan-when-no-recommendation",
+      "result": {
+        "age": 1,
+        "done": 0.5,
+        "lift": 0,
+        "malus": 20,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 20,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 60,
+            "date": "2026-10-12",
+            "outcome": "done",
+            "plannedMinutes": 240
+          }
+        }
+      ],
+      "id": "reference-the-recommendation-before-the-plan",
+      "result": {
+        "age": 1,
+        "done": 0.5,
+        "lift": 0,
+        "malus": 20,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 20,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 0,
+          "row": {
+            "acquiredMinutes": 60,
+            "date": "2026-10-12",
+            "outcome": "done",
+            "plannedMinutes": 120
+          }
+        }
+      ],
+      "id": "reference-zero-recommendation-falls-back-to-the-plan",
+      "result": {
+        "age": 1,
+        "done": 0.5,
+        "lift": 0,
+        "malus": 20,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 20,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 85,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-12",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "unknown-note-then-lifts-nothing",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 0,
+        "malus": 40,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 40,
+          "noteNow": 85,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-12",
+            "noteThen": 45,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "unknown-note-now-lifts-nothing",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 0,
+        "malus": 40,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 40,
+          "noteNow": null,
+          "noteThen": 45,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 60,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-12",
+            "noteThen": 80,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "tonight-worse-lifts-nothing",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 0,
+        "malus": 40,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 40,
+          "noteNow": 60,
+          "noteThen": 80,
+          "outcome": "done"
+        },
+        "sky": "better"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 100,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-12",
+            "noteThen": 64,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "good-sky-then-caps-the-lift-at-half",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 0.5,
+        "malus": 20,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 20,
+          "noteNow": 100,
+          "noteThen": 64,
+          "outcome": "done"
+        },
+        "sky": "worse"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 100,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-12",
+            "noteThen": 63,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "just-under-the-good-bound-lifts-all",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 1,
+        "malus": 0,
+        "previous": {
+          "date": "2026-10-12",
+          "malus": 0,
+          "noteNow": 100,
+          "noteThen": 63,
+          "outcome": "done"
+        },
+        "sky": "worse"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2023-06-30",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "photo-forgotten-after-three-years",
+      "result": {
+        "age": 0.045929202883612456,
+        "done": 1,
+        "lift": 0,
+        "malus": 0,
+        "previous": {
+          "date": "2023-06-30",
+          "malus": 0,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2023-10-08",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "photo-just-before-forgotten",
+      "result": {
+        "age": 0.05937197544272492,
+        "done": 1,
+        "lift": 0,
+        "malus": 2.4,
+        "previous": {
+          "date": "2023-10-08",
+          "malus": 2.4,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "visual",
+          "row": {
+            "acquiredMinutes": 40,
+            "date": "2026-03-26",
+            "mode": "visual",
+            "outcome": "observed"
+          }
+        }
+      ],
+      "id": "visual-forgotten-after-six-months",
+      "result": {
+        "age": 0.045929202883612456,
+        "done": 1,
+        "lift": 0,
+        "malus": 0,
+        "previous": {
+          "date": "2026-03-26",
+          "malus": 0,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "observed"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "visual",
+          "row": {
+            "acquiredMinutes": 40,
+            "date": "2026-04-05",
+            "mode": "visual",
+            "outcome": "observed"
+          }
+        }
+      ],
+      "id": "visual-just-before-forgotten",
+      "result": {
+        "age": 0.05357774892831705,
+        "done": 1,
+        "lift": 0,
+        "malus": 2.1,
+        "previous": {
+          "date": "2026-04-05",
+          "malus": 2.1,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "observed"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-07-14",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "same-age-photo-request",
+      "result": {
+        "age": 0.7937005259840998,
+        "done": 1,
+        "lift": 0,
+        "malus": 31.7,
+        "previous": {
+          "date": "2026-07-14",
+          "malus": 31.7,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "visual",
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-07-14",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "same-age-visual-request",
+      "result": {
+        "age": 0.25,
+        "done": 1,
+        "lift": 0,
+        "malus": 10,
+        "previous": {
+          "date": "2026-07-14",
+          "malus": 10,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 30,
+            "date": "2026-10-02",
+            "mode": "visual",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "visual-row-in-a-photo-request-counts-from-twenty-minutes",
+      "result": {
+        "age": 0.9746546091224311,
+        "done": 1,
+        "lift": 0,
+        "malus": 39,
+        "previous": {
+          "date": "2026-10-02",
+          "malus": 39,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-20",
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "row-dated-after-the-night-has-no-age",
+      "result": {
+        "age": 1,
+        "done": 1,
+        "lift": 0,
+        "malus": 40,
+        "previous": {
+          "date": "2026-10-20",
+          "malus": 40,
+          "noteNow": null,
+          "noteThen": null,
+          "outcome": "done"
+        },
+        "sky": null
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 68,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-07",
+            "noteThen": 60,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "sky-then-worse-by-eight-points",
+      "result": {
+        "age": 0.9872459719454069,
+        "done": 1,
+        "lift": 0.26666666666666666,
+        "malus": 29,
+        "previous": {
+          "date": "2026-10-07",
+          "malus": 29,
+          "noteNow": 68,
+          "noteThen": 60,
+          "outcome": "done"
+        },
+        "sky": "worse"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 67,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-07",
+            "noteThen": 60,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "sky-then-comparable-by-seven-points",
+      "result": {
+        "age": 0.9872459719454069,
+        "done": 1,
+        "lift": 0.23333333333333334,
+        "malus": 30.3,
+        "previous": {
+          "date": "2026-10-07",
+          "malus": 30.3,
+          "noteNow": 67,
+          "noteThen": 60,
+          "outcome": "done"
+        },
+        "sky": "same"
+      }
+    },
+    {
+      "args": [
+        {
+          "date": "2026-10-12",
+          "mode": "photo",
+          "noteNow": 67,
+          "recommendedMinutes": 120,
+          "row": {
+            "acquiredMinutes": 120,
+            "date": "2026-10-07",
+            "noteThen": 75,
+            "outcome": "done"
+          }
+        }
+      ],
+      "id": "sky-then-better-by-eight-points",
+      "result": {
+        "age": 0.9872459719454069,
+        "done": 1,
+        "lift": 0,
+        "malus": 39.5,
+        "previous": {
+          "date": "2026-10-07",
+          "malus": 39.5,
+          "noteNow": 67,
+          "noteThen": 75,
+          "outcome": "done"
+        },
+        "sky": "better"
+      }
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "suggestion-malus"
+}

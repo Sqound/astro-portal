@@ -1,0 +1,35 @@
+{
+  "cases": [
+    {
+      "args": ["solar-system-earth"],
+      "id": "earth-image-metadata",
+      "result": {
+        "assetUrl": "https://images-assets.nasa.gov/image/PIA18033/PIA18033~small.jpg",
+        "credit": "NASA",
+        "file": "solar-system-earth-blue-marble.jpg",
+        "license": "NASA media usage guidelines",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "source": "NASA Image and Video Library",
+        "sourceUrl": "https://images.nasa.gov/details/PIA18033",
+        "title": "Blue Marble Earth"
+      }
+    },
+    {
+      "args": ["solar-system-venus"],
+      "id": "venus-image-declares-its-crop",
+      "result": {
+        "assetUrl": "https://images-assets.nasa.gov/image/PIA23791/PIA23791~small.jpg",
+        "credit": "NASA",
+        "crop": "left-half",
+        "file": "solar-system-venus.jpg",
+        "license": "NASA media usage guidelines",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "source": "NASA Image and Video Library",
+        "sourceUrl": "https://images.nasa.gov/details/PIA23791",
+        "title": "Venus"
+      }
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "solar-system-image-sources"
+}

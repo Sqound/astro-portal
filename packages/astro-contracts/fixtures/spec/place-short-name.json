@@ -1,0 +1,90 @@
+{
+  "module": "place-short-name",
+  "package": "portal",
+  "file": "planner/location.server",
+  "export": "suggestedPlaceName",
+  "cases": [
+    {
+      "id": "street-address-falls-through-to-locality",
+      "args": ["221B Baker Street, London, England, United Kingdom"]
+    },
+    {
+      "id": "named-landmark-keeps-its-own-name",
+      "args": ["Eiffel Tower, Paris, Île-de-France, France"]
+    },
+    {
+      "id": "commune-only-two-segments",
+      "args": ["Reykjavik, Iceland"]
+    },
+    {
+      "id": "natural-zone-national-park",
+      "args": ["Yellowstone National Park, Wyoming, United States"]
+    },
+    {
+      "id": "natural-zone-summit",
+      "args": ["Mont Blanc, Chamonix-Mont-Blanc, Haute-Savoie, France"]
+    },
+    {
+      "id": "natural-zone-forest",
+      "args": ["Black Forest, Baden-Württemberg, Germany"]
+    },
+    {
+      "id": "single-segment-no-structured-address",
+      "args": ["Pacific Ocean"]
+    },
+    {
+      "id": "non-latin-script-named-feature",
+      "args": ["富士山, 富士吉田市, 山梨県, 日本"]
+    },
+    {
+      "id": "non-latin-street-address-falls-through",
+      "args": ["3 Chome-1 Shinjuku, Shinjuku City, Tokyo, Japan"]
+    },
+    {
+      "id": "empty-label-stays-empty",
+      "args": [""]
+    },
+    {
+      "id": "whitespace-and-empty-segments-filtered",
+      "args": [" Val Thorens ,  , Savoie , France "]
+    },
+    {
+      "id": "housenumber-with-letter-suffix-falls-through",
+      "args": ["12B Elm Street, Springfield, Ohio, United States"]
+    },
+    {
+      "id": "point-of-interest-with-full-address-chain",
+      "args": [
+        "Golden Gate Bridge, Lincoln Boulevard, San Francisco, California, United States"
+      ]
+    },
+    {
+      "id": "single-segment-surrounded-by-whitespace",
+      "args": ["  Kruger National Park  "]
+    },
+    {
+      "id": "latin-extended-script-named-feature",
+      "args": ["Großer Mönchsgrat, Schwarzwiesen, Bayern, Deutschland"]
+    },
+    {
+      "id": "latin-extended-street-address-falls-through",
+      "args": ["12 Rua das Estrelas, Serra do Céu, Minas Gerais, Brasil"]
+    },
+    {
+      "id": "cyrillic-script-named-feature",
+      "args": ["Перевал Звёздный, Заречье, Россия"]
+    },
+    {
+      "id": "cyrillic-street-address-falls-through",
+      "args": ["17 улица Обсерваторная, Заречье, Россия"]
+    },
+    {
+      "id": "han-simplified-script-named-feature",
+      "args": ["观星台, 星光镇, 中国"]
+    },
+    {
+      "id": "han-traditional-street-address-falls-through",
+      "args": ["88 星光路, 觀星鎮, 臺灣"]
+    }
+  ]
+}

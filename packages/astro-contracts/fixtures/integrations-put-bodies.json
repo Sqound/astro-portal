@@ -1,0 +1,103 @@
+{
+  "description": "Bodies of PUT /v1/projects/{projectId}/integrations (api/v1.md, « Integrations of a multi-night plan »). `earlier` is the form of the clients that predate `replace`: lines added or replaced, none removed. `complete` is a night re-stacked under another filter: the night's single line for the target is sent with its set in `replace`, and the service removes the line it held for the filter the night no longer integrates. `emptySet` empties a set. Each body is valid against api/integration.schema.json; the `invalid` bodies are not.",
+  "earlier": {
+    "integrations": [
+      {
+        "nightId": "0b8a3c2e-1d4f-4a6b-9c8d-7e6f5a4b3c21",
+        "targetId": "sh2-103",
+        "filter": "Dual-band",
+        "exposureSeconds": 180,
+        "gain": 100,
+        "binning": 1,
+        "temperatureC": -10,
+        "frameCount": 98,
+        "eveningDate": "2026-08-09",
+        "sensor": "IMX571",
+        "computerLabel": "iMac du bureau",
+        "installationId": "astro-sync-install-1"
+      }
+    ]
+  },
+  "complete": {
+    "integrations": [
+      {
+        "nightId": "0b8a3c2e-1d4f-4a6b-9c8d-7e6f5a4b3c21",
+        "targetId": "sh2-103",
+        "filter": "RGB",
+        "exposureSeconds": 90,
+        "gain": 100,
+        "binning": 1,
+        "temperatureC": -10,
+        "frameCount": 89,
+        "eveningDate": "2026-08-09",
+        "sensor": "IMX571",
+        "computerLabel": "iMac du bureau",
+        "installationId": "astro-sync-install-1"
+      }
+    ],
+    "replace": [
+      {
+        "nightId": "0b8a3c2e-1d4f-4a6b-9c8d-7e6f5a4b3c21",
+        "targetId": "sh2-103"
+      }
+    ]
+  },
+  "emptySet": {
+    "integrations": [],
+    "replace": [
+      {
+        "nightId": "0b8a3c2e-1d4f-4a6b-9c8d-7e6f5a4b3c21",
+        "targetId": "sh2-103"
+      }
+    ]
+  },
+  "invalid": {
+    "emptyWithoutReplace": {
+      "integrations": []
+    },
+    "emptyReplace": {
+      "integrations": [
+        {
+          "nightId": "0b8a3c2e-1d4f-4a6b-9c8d-7e6f5a4b3c21",
+          "targetId": "sh2-103",
+          "filter": "Dual-band",
+          "exposureSeconds": 180,
+          "gain": 100,
+          "binning": 1,
+          "temperatureC": -10,
+          "frameCount": 98,
+          "eveningDate": "2026-08-09",
+          "sensor": "IMX571",
+          "computerLabel": "iMac du bureau",
+          "installationId": "astro-sync-install-1"
+        }
+      ],
+      "replace": []
+    },
+    "setWithExtraKey": {
+      "integrations": [
+        {
+          "nightId": "0b8a3c2e-1d4f-4a6b-9c8d-7e6f5a4b3c21",
+          "targetId": "sh2-103",
+          "filter": "Dual-band",
+          "exposureSeconds": 180,
+          "gain": 100,
+          "binning": 1,
+          "temperatureC": -10,
+          "frameCount": 98,
+          "eveningDate": "2026-08-09",
+          "sensor": "IMX571",
+          "computerLabel": "iMac du bureau",
+          "installationId": "astro-sync-install-1"
+        }
+      ],
+      "replace": [
+        {
+          "nightId": "0b8a3c2e-1d4f-4a6b-9c8d-7e6f5a4b3c21",
+          "targetId": "sh2-103",
+          "filter": "RGB"
+        }
+      ]
+    }
+  }
+}

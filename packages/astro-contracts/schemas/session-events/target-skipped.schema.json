@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/target-skipped.schema.json",
+  "title": "Astro Portal session event payload: target_skipped",
+  "description": "Records that a planned target was NOT observed, so the journal says so instead of staying silent about it. Emitted by the debriefing for a target marked skipped (or left unticked under `partial`), and by the device in the field when the person gives a target up. It mirrors target_started's identification fields. It is not a verdict on quality and it removes nothing from the plan: the frozen plan still says the target was planned, and this event says the night did not deliver it. `reason` is a deliberately SHORT, closed list so a one-handed tap in the dark stays possible and so later multi-night project statistics can count comparable causes; `notes` carries everything the list cannot. See session-events.md for what this type is for and what it deliberately is not.",
+  "type": "object",
+  "properties": {
+    "targetId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The shared catalogue id (as in GET /v1/targets, e.g. \"m31\") or a plan item's own target reference, when the target resolves to one."
+    },
+    "targetLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "A free display name, for a target with no catalogue id — the same label a target_started would have used for the same target."
+    },
+    "planItemId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "Optional: the plan item this target came from, when the session was started from a plan (planner-document.schema.json's plan.items[].id)."
+    },
+    "reason": {
+      "type": "string",
+      "description": "Optional, and closed: weather — the sky was unusable (cloud, haze, wind, dew, frost); equipment — something in the setup stopped this target (the mount could not reach it, a filter was missing, guiding or power failed); time — nothing went wrong, the night ran out or an earlier target overran; visibility — this target in particular was unavailable (too low, behind a tree, a building or the horizon, or drowned by the Moon); other — anything else, with `notes` carrying the detail. Absent means the person did not say, which is a legitimate and common answer: a target left unticked in a partial debriefing is recorded with no reason at all.",
+      "enum": ["weather", "equipment", "time", "visibility", "other"]
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 300
+    }
+  },
+  "allOf": [
+    {
+      "anyOf": [{ "required": ["targetId"] }, { "required": ["targetLabel"] }]
+    }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,68 @@
+{
+  "cases": [
+    {
+      "args": [
+        { "id": "home", "latitude": 1, "longitude": 2 },
+        { "id": "home", "latitude": 40, "longitude": 9 }
+      ],
+      "id": "same-id",
+      "result": true
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522 },
+        { "id": "home", "latitude": 48.85661, "longitude": 2.35221 }
+      ],
+      "id": "same-position-no-id",
+      "result": true
+    },
+    {
+      "args": [
+        { "latitude": 48.8566, "longitude": 2.3522 },
+        { "latitude": 48.8568, "longitude": 2.3522 }
+      ],
+      "id": "beyond-eleven-metres",
+      "result": false
+    },
+    {
+      "args": [
+        { "id": "a", "latitude": 48.8566, "longitude": 2.3522 },
+        { "id": "b", "latitude": 48.8566, "longitude": 2.3522 }
+      ],
+      "id": "different-ids-same-position",
+      "result": true
+    },
+    {
+      "args": [
+        { "id": "a", "latitude": 48.8566, "longitude": 2.3522 },
+        { "id": "b", "latitude": 35.68, "longitude": 139.69 }
+      ],
+      "id": "far-apart",
+      "result": false
+    },
+    {
+      "args": [
+        { "name": "Maison" },
+        { "latitude": 48.8566, "longitude": 2.3522, "name": " maison " }
+      ],
+      "id": "no-position-same-name",
+      "result": true
+    },
+    {
+      "args": [
+        { "name": "Maison" },
+        { "latitude": 48.8566, "longitude": 2.3522, "name": "Gîte" }
+      ],
+      "id": "no-position-other-name",
+      "result": false
+    },
+    {
+      "args": [{}, { "latitude": 48.8566, "longitude": 2.3522 }],
+      "id": "no-position-no-name",
+      "result": false
+    },
+    { "args": [null, { "name": "Maison" }], "id": "nothing", "result": false }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "place-time-zone-same-place"
+}

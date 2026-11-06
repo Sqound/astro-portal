@@ -1,0 +1,1599 @@
+{
+  "cases": [
+    {
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "en"
+      ],
+      "id": "localized-catalogue-counts",
+      "result": [
+        {
+          "count": 1,
+          "description": "The Index Catalogue extends the NGC with objects published by J. L. E. Dreyer in 1895 and 1908, notably from deeper photographic surveys.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 2,
+          "description": "The 110 objects compiled by Charles Messier and his collaborators in the eighteenth century. It is a classic entry point to bright deep-sky objects.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "J. L. E. Dreyer’s New General Catalogue, published in 1888. It brings together galaxies, clusters and nebulae from the major visual observations of its era.",
+          "id": "NGC",
+          "name": "NGC"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "de"
+      ],
+      "id": "localized-catalogue-counts-de",
+      "result": [
+        {
+          "count": 1,
+          "description": "Der Index Catalogue ergänzt den NGC um Objekte, die J. L. E. Dreyer 1895 und 1908 veröffentlicht hat, vor allem dank tieferer fotografischer Himmelsdurchmusterungen.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 2,
+          "description": "Die 110 Objekte, die Charles Messier und seine Mitarbeiter im 18. Jahrhundert zusammengestellt haben. Ein klassischer Einstieg in helle Deep-Sky-Objekte.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Der New General Catalogue von J. L. E. Dreyer, erschienen 1888. Er vereint Galaxien, Haufen und Nebel aus den großen visuellen Beobachtungen seiner Zeit.",
+          "id": "NGC",
+          "name": "NGC"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "es"
+      ],
+      "id": "localized-catalogue-counts-es",
+      "result": [
+        {
+          "count": 1,
+          "description": "El Index Catalogue completa el NGC con objetos publicados por J. L. E. Dreyer en 1895 y 1908, sobre todo gracias a estudios fotográficos más profundos.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 2,
+          "description": "Los 110 objetos reunidos por Charles Messier y sus colaboradores en el siglo XVIII. Es una puerta de entrada clásica a los objetos brillantes del cielo profundo.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "El New General Catalogue de J. L. E. Dreyer, publicado en 1888. Reúne galaxias, cúmulos y nebulosas procedentes de las grandes observaciones visuales de su época.",
+          "id": "NGC",
+          "name": "NGC"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "it"
+      ],
+      "id": "localized-catalogue-counts-it",
+      "result": [
+        {
+          "count": 1,
+          "description": "L’Index Catalogue integra l’NGC con oggetti pubblicati da J. L. E. Dreyer nel 1895 e nel 1908, soprattutto grazie a rilievi fotografici più profondi.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 2,
+          "description": "I 110 oggetti raccolti da Charles Messier e dai suoi collaboratori nel Settecento. È una classica porta d’ingresso agli oggetti brillanti del profondo cielo.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Il New General Catalogue di J. L. E. Dreyer, pubblicato nel 1888. Riunisce galassie, ammassi e nebulose tratti dalle grandi osservazioni visuali della sua epoca.",
+          "id": "NGC",
+          "name": "NGC"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "pt-BR"
+      ],
+      "id": "localized-catalogue-counts-pt-BR",
+      "result": [
+        {
+          "count": 1,
+          "description": "O Index Catalogue complementa o NGC com objetos publicados por J. L. E. Dreyer em 1895 e 1908, principalmente a partir de levantamentos fotográficos mais profundos.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 2,
+          "description": "Os 110 objetos reunidos por Charles Messier e seus colaboradores no século XVIII. É uma porta de entrada clássica para os objetos brilhantes do céu profundo.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "O New General Catalogue de J. L. E. Dreyer, publicado em 1888. Reúne galáxias, aglomerados e nebulosas das grandes observações visuais de sua época.",
+          "id": "NGC",
+          "name": "NGC"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard"
+            ]
+          }
+        ],
+        "de"
+      ],
+      "id": "every-catalogue-description-de",
+      "result": [
+        {
+          "count": 1,
+          "description": "Der Barnard-Katalog enthält 349 Dunkelnebel, die E. E. Barnard fotografiert hat und die 1927 veröffentlicht wurden. Sie treten im Kontrast zu Sternfeldern und hellen Nebeln hervor.",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "Die Caldwell-Liste umfasst 109 Objekte, die Patrick Moore 1995 als Ergänzung zu Messier ausgewählt hat, geordnet nach Deklination statt nach Jahreszeit.",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "Der Index Catalogue ergänzt den NGC um Objekte, die J. L. E. Dreyer 1895 und 1908 veröffentlicht hat, vor allem dank tieferer fotografischer Himmelsdurchmusterungen.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "Die 110 Objekte, die Charles Messier und seine Mitarbeiter im 18. Jahrhundert zusammengestellt haben. Ein klassischer Einstieg in helle Deep-Sky-Objekte.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Der New General Catalogue von J. L. E. Dreyer, erschienen 1888. Er vereint Galaxien, Haufen und Nebel aus den großen visuellen Beobachtungen seiner Zeit.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "Die Sonne, der Mond, die Planeten und Pluto: Himmelskörper, die sich von Nacht zu Nacht vor dem Sternhintergrund bewegen. Der Planer berechnet ihre Position und Sichtbarkeit live, für deinen Ort und deine Nacht.",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard"
+            ]
+          }
+        ],
+        "es"
+      ],
+      "id": "every-catalogue-description-es",
+      "result": [
+        {
+          "count": 1,
+          "description": "El catálogo Barnard contiene 349 nebulosas oscuras fotografiadas por E. E. Barnard y publicadas en 1927. Se revelan por contraste con los campos de estrellas y las nebulosas brillantes.",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "La lista Caldwell contiene 109 objetos elegidos por Patrick Moore en 1995 para complementar a Messier, ordenados por declinación y no por estación.",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "El Index Catalogue completa el NGC con objetos publicados por J. L. E. Dreyer en 1895 y 1908, sobre todo gracias a estudios fotográficos más profundos.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "Los 110 objetos reunidos por Charles Messier y sus colaboradores en el siglo XVIII. Es una puerta de entrada clásica a los objetos brillantes del cielo profundo.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "El New General Catalogue de J. L. E. Dreyer, publicado en 1888. Reúne galaxias, cúmulos y nebulosas procedentes de las grandes observaciones visuales de su época.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "El Sol, la Luna, los planetas y Plutón: astros que se desplazan de una noche a otra sobre el fondo de estrellas. El planificador calcula en directo su posición y su visibilidad, para su lugar y su noche.",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard"
+            ]
+          }
+        ],
+        "it"
+      ],
+      "id": "every-catalogue-description-it",
+      "result": [
+        {
+          "count": 1,
+          "description": "Il catalogo Barnard contiene 349 nebulose oscure fotografate da E. E. Barnard e pubblicate nel 1927. Si rivelano per contrasto con i campi stellari e le nebulose luminose.",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "L’elenco Caldwell comprende 109 oggetti scelti da Patrick Moore nel 1995 a complemento di Messier, ordinati per declinazione anziché per stagione.",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "L’Index Catalogue integra l’NGC con oggetti pubblicati da J. L. E. Dreyer nel 1895 e nel 1908, soprattutto grazie a rilievi fotografici più profondi.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "I 110 oggetti raccolti da Charles Messier e dai suoi collaboratori nel Settecento. È una classica porta d’ingresso agli oggetti brillanti del profondo cielo.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Il New General Catalogue di J. L. E. Dreyer, pubblicato nel 1888. Riunisce galassie, ammassi e nebulose tratti dalle grandi osservazioni visuali della sua epoca.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "Il Sole, la Luna, i pianeti e Plutone: astri che di notte in notte si spostano sullo sfondo delle stelle. Il pianificatore calcola in tempo reale la loro posizione e visibilità, per il suo luogo e la sua notte.",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard"
+            ]
+          }
+        ],
+        "pt-BR"
+      ],
+      "id": "every-catalogue-description-pt-BR",
+      "result": [
+        {
+          "count": 1,
+          "description": "O catálogo Barnard contém 349 nebulosas escuras fotografadas por E. E. Barnard e publicadas em 1927. Elas se revelam por contraste com os campos de estrelas e as nebulosas brilhantes.",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "A lista Caldwell contém 109 objetos escolhidos por Patrick Moore em 1995 para complementar o Messier, ordenados por declinação, e não por estação.",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "O Index Catalogue complementa o NGC com objetos publicados por J. L. E. Dreyer em 1895 e 1908, principalmente a partir de levantamentos fotográficos mais profundos.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "Os 110 objetos reunidos por Charles Messier e seus colaboradores no século XVIII. É uma porta de entrada clássica para os objetos brilhantes do céu profundo.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "O New General Catalogue de J. L. E. Dreyer, publicado em 1888. Reúne galáxias, aglomerados e nebulosas das grandes observações visuais de sua época.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "O Sol, a Lua, os planetas e Plutão: astros que se deslocam de uma noite para outra sobre o fundo de estrelas. O planejador calcula ao vivo sua posição e sua visibilidade, para o seu local e a sua noite.",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "zh-Hans"
+      ],
+      "id": "catalogue-descriptions-simplified-chinese",
+      "result": [
+        {
+          "count": 1,
+          "description": "IC星表（Index Catalogue）是NGC星表的补编，收录J. L. E. 德雷耶于1895年和1908年发表的天体，其中不少来自更深的照相巡天。",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 2,
+          "description": "由夏尔·梅西耶及其合作者在18世纪编制的110个天体，是认识明亮深空天体的经典入门星表。",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "J. L. E. 德雷耶于1888年出版的《星云星团新总表》（New General Catalogue），汇集了当时主要目视观测所得的星系、星团和星云。",
+          "id": "NGC",
+          "name": "NGC"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "zh-Hant"
+      ],
+      "id": "catalogue-descriptions-traditional-chinese",
+      "result": [
+        {
+          "count": 1,
+          "description": "《索引星表》（Index Catalogue）是 NGC 的增補，收錄 J. L. E. 德雷爾於 1895 年與 1908 年發表的天體，其中許多來自更深入的攝影巡天。",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 2,
+          "description": "由查爾斯·梅西耶與其合作者於 18 世紀編製的 110 個天體，是認識明亮深空天體的經典入門。",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "J. L. E. 德雷爾於 1888 年出版的《新總表》（New General Catalogue），彙集了當時主要目視觀測所得的星系、星團與星雲。",
+          "id": "NGC",
+          "name": "NGC"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "ru"
+      ],
+      "id": "catalogue-descriptions-russian",
+      "result": [
+        {
+          "count": 1,
+          "description": "Индекс-каталог (Index Catalogue) дополняет NGC объектами, опубликованными Дж. Л. Э. Дрейером в 1895 и 1908 годах, в частности по результатам более глубоких фотографических обзоров.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 2,
+          "description": "110 объектов, составленных Шарлем Мессье и его помощниками в XVIII веке. Это классическая отправная точка для знакомства с яркими объектами глубокого космоса.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Новый общий каталог (New General Catalogue) Дж. Л. Э. Дрейера, опубликованный в 1888 году. В него вошли галактики, скопления и туманности, найденные в ходе крупных визуальных наблюдений того времени.",
+          "id": "NGC",
+          "name": "NGC"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          { "catalogues": ["Sharpless", "LBN"] },
+          { "catalogues": ["LDN"] },
+          { "catalogues": ["Abell", "NGC"] }
+        ],
+        "ja"
+      ],
+      "id": "nebula-catalogues-ja",
+      "result": [
+        {
+          "count": 1,
+          "description": "ジョージ・エイベルは1966年、パロマー天体写真星図の乾板から見つけた、古く広がった惑星状星雲86個のリストを発表しました。表面輝度が低いため眼視では難しく、OIIIやHαフィルターを使った写真でよく姿を現します。",
+          "id": "Abell",
+          "name": "Abell"
+        },
+        {
+          "count": 1,
+          "description": "リンズ散光星雲カタログは、ビバリー・リンズがパロマー天体写真星図の乾板から記録し、1965年に発表した1125個の星雲を収録しています。輝線星雲と反射星雲が混在し、その多くは淡く、主に写真で姿を現します。",
+          "id": "LBN",
+          "name": "LBN"
+        },
+        {
+          "count": 1,
+          "description": "リンズ暗黒星雲カタログは、ビバリー・リンズがパロマー天体写真星図の乾板から記録し、1962年に発表した約1800個の暗黒星雲を収録しています。塵の雲は星の欠けた領域として、天の川や明るい星雲との対比で姿を現します。",
+          "id": "LDN",
+          "name": "LDN"
+        },
+        {
+          "count": 1,
+          "description": "1888年にJ. L. E. ドレイヤーが刊行した New General Catalogue です。当時の主要な眼視観測から、銀河・星団・星雲を集めています。",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "シャープレス・カタログは、スチュワート・シャープレスがパロマー天体写真星図の乾板から見つけ、1959年に発表した313個のHII領域を収録しています。大きく淡い輝線星雲が多く、Hαフィルターを使った写真でよく姿を現します。",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        }
+      ]
+    },
+    {
+      "args": [
+        [{ "catalogues": ["Messier", "NGC"] }],
+        "fr",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "stored-document-wins-in-its-language",
+      "result": [
+        {
+          "count": 1,
+          "description": "Texte du document pour Messier.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Texte du document pour NGC.",
+          "id": "NGC",
+          "name": "NGC"
+        }
+      ]
+    },
+    {
+      "args": [
+        [{ "catalogues": ["Messier", "NGC", "Sharpless"] }],
+        "de",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "stored-document-in-three-languages-german-gets-the-code-german",
+      "result": [
+        {
+          "count": 1,
+          "description": "Die 110 Objekte, die Charles Messier und seine Mitarbeiter im 18. Jahrhundert zusammengestellt haben. Ein klassischer Einstieg in helle Deep-Sky-Objekte.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Der New General Catalogue von J. L. E. Dreyer, erschienen 1888. Er vereint Galaxien, Haufen und Nebel aus den großen visuellen Beobachtungen seiner Zeit.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "Der Sharpless-Katalog verzeichnet 313 H-II-Regionen, die Stewart Sharpless auf den Platten des Palomar Sky Survey gefunden und 1959 veröffentlicht hat. Es sind Emissionsnebel, oft groß und lichtschwach, die sich vor allem auf Fotos mit einem H-Alpha-Filter zeigen.",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        }
+      ]
+    },
+    {
+      "args": [
+        [{ "catalogues": ["Messier", "NGC", "Zeta"] }],
+        "ko",
+        {
+          "Messier": { "en": "Stored English for Messier." },
+          "Zeta": {
+            "en": "Stored English for a catalogue the code does not know."
+          }
+        }
+      ],
+      "id": "stored-english-before-the-code-english",
+      "result": [
+        {
+          "count": 1,
+          "description": "Stored English for Messier.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "J. L. E. Dreyer’s New General Catalogue, published in 1888. It brings together galaxies, clusters and nebulae from the major visual observations of its era.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "Stored English for a catalogue the code does not know.",
+          "id": "Zeta",
+          "name": "Zeta"
+        }
+      ]
+    },
+    {
+      "args": [[{ "catalogues": ["Zeta", "Messier"] }], "fr", {}],
+      "id": "a-catalogue-without-any-text-has-no-description",
+      "result": [
+        {
+          "count": 1,
+          "description": "Les 110 objets de Charles Messier et de ses collaborateurs, recensés au XVIIIe siècle. C’est une porte d’entrée classique vers les objets brillants du ciel profond.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        { "count": 1, "description": "", "id": "Zeta", "name": "Zeta" }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "fr",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "every-catalogue-has-a-text-fr",
+      "result": [
+        {
+          "count": 1,
+          "description": "En 1966, George Abell a publié une liste de 86 nébuleuses planétaires anciennes et étendues, repérées sur les plaques du Palomar Sky Survey. Leur faible éclat de surface les rend difficiles à l’œil ; elles se révèlent surtout en photographie, souvent avec des filtres OIII et hydrogène alpha.",
+          "id": "Abell",
+          "name": "Abell"
+        },
+        {
+          "count": 1,
+          "description": "Le catalogue Barnard rassemble 349 nébuleuses sombres photographiées par E. E. Barnard et publiées en 1927. Elles se révèlent par contraste avec les champs stellaires et les nébuleuses lumineuses.",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "La liste Caldwell compte 109 objets choisis par Patrick Moore en 1995 pour compléter Messier, avec un classement par déclinaison plutôt que par saison.",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "L’Index Catalogue complète le NGC avec des objets publiés par J. L. E. Dreyer en 1895 et 1908, notamment grâce aux relevés photographiques plus profonds.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "Le catalogue des nébuleuses brillantes de Lynds réunit 1 125 nébuleuses relevées par Beverly Lynds sur les plaques du Palomar Sky Survey et publiées en 1965. Il mêle nébuleuses en émission et en réflexion, dont beaucoup sont faibles et se révèlent surtout en photographie.",
+          "id": "LBN",
+          "name": "LBN"
+        },
+        {
+          "count": 1,
+          "description": "Le catalogue de Lynds recense près de 1 800 nébuleuses sombres relevées par Beverly Lynds sur les plaques du Palomar Sky Survey et publiées en 1962. Ces nuages de poussière se voient par l’absence d’étoiles, en contraste avec la Voie lactée ou les nébuleuses lumineuses.",
+          "id": "LDN",
+          "name": "LDN"
+        },
+        {
+          "count": 1,
+          "description": "Texte du document pour Messier.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Texte du document pour NGC.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "Le catalogue Sharpless rassemble 313 régions H II repérées par Stewart Sharpless sur les plaques du Palomar Sky Survey et publiées en 1959. Ce sont des nébuleuses en émission, souvent vastes et faibles, qui se révèlent surtout en photographie avec un filtre hydrogène alpha.",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        },
+        {
+          "count": 1,
+          "description": "Le Soleil, la Lune, les planètes et Pluton : des astres qui se déplacent d’une nuit à l’autre sur le fond d’étoiles. Le planificateur calcule leur position et leur visibilité en direct, pour votre lieu et votre nuit.",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "en",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "every-catalogue-has-a-text-en",
+      "result": [
+        {
+          "count": 1,
+          "description": "In 1966 George Abell published a list of 86 old, extended planetary nebulae found on the Palomar Sky Survey plates. Their low surface brightness makes them hard to see by eye; they show best in photographs, often through OIII and hydrogen-alpha filters.",
+          "id": "Abell",
+          "name": "Abell"
+        },
+        {
+          "count": 1,
+          "description": "The Barnard catalogue contains 349 dark nebulae photographed by E. E. Barnard and published in 1927. They are revealed by contrast against star fields and bright nebulae.",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "The Caldwell list contains 109 objects selected by Patrick Moore in 1995 to complement Messier, ordered by declination rather than season.",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "The Index Catalogue extends the NGC with objects published by J. L. E. Dreyer in 1895 and 1908, notably from deeper photographic surveys.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "Lynds’ catalogue of bright nebulae gathers 1,125 nebulae charted by Beverly Lynds on the Palomar Sky Survey plates and published in 1965. It mixes emission and reflection nebulae, many of them faint and best revealed in photographs.",
+          "id": "LBN",
+          "name": "LBN"
+        },
+        {
+          "count": 1,
+          "description": "The Lynds catalogue lists nearly 1,800 dark nebulae charted by Beverly Lynds on the Palomar Sky Survey plates and published in 1962. These dust clouds show as a lack of stars, in contrast with the Milky Way or with bright nebulae.",
+          "id": "LDN",
+          "name": "LDN"
+        },
+        {
+          "count": 1,
+          "description": "Document text for Messier.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Document text for NGC.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "The Sharpless catalogue lists 313 H II regions found by Stewart Sharpless on the Palomar Sky Survey plates and published in 1959. They are emission nebulae, often large and faint, that show best in photographs taken through a hydrogen-alpha filter.",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        },
+        {
+          "count": 1,
+          "description": "The Sun, Moon, planets and Pluto: bodies that move against the background stars from one night to the next. The planner calculates their position and visibility live, for your place and your night.",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "ja",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "every-catalogue-has-a-text-ja",
+      "result": [
+        {
+          "count": 1,
+          "description": "ジョージ・エイベルは1966年、パロマー天体写真星図の乾板から見つけた、古く広がった惑星状星雲86個のリストを発表しました。表面輝度が低いため眼視では難しく、OIIIやHαフィルターを使った写真でよく姿を現します。",
+          "id": "Abell",
+          "name": "Abell"
+        },
+        {
+          "count": 1,
+          "description": "バーナード・カタログは、E. E. バーナードが撮影し1927年に発表した349個の暗黒星雲を収録しています。恒星の多い背景や明るい星雲との対比で姿を現します。",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "コールドウェル・カタログは、メシエを補うためにパトリック・ムーアが1995年に選んだ109天体のリストです。季節ではなく赤緯順に並びます。",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "Index Catalogue は、J. L. E. ドレイヤーが1895年と1908年に発表したNGCの補遺です。より深い写真観測で見つかった天体を多く含みます。",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "リンズ散光星雲カタログは、ビバリー・リンズがパロマー天体写真星図の乾板から記録し、1965年に発表した1125個の星雲を収録しています。輝線星雲と反射星雲が混在し、その多くは淡く、主に写真で姿を現します。",
+          "id": "LBN",
+          "name": "LBN"
+        },
+        {
+          "count": 1,
+          "description": "リンズ暗黒星雲カタログは、ビバリー・リンズがパロマー天体写真星図の乾板から記録し、1962年に発表した約1800個の暗黒星雲を収録しています。塵の雲は星の欠けた領域として、天の川や明るい星雲との対比で姿を現します。",
+          "id": "LDN",
+          "name": "LDN"
+        },
+        {
+          "count": 1,
+          "description": "文書のメシエの説明です。",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "文書のNGCの説明です。",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "シャープレス・カタログは、スチュワート・シャープレスがパロマー天体写真星図の乾板から見つけ、1959年に発表した313個のHII領域を収録しています。大きく淡い輝線星雲が多く、Hαフィルターを使った写真でよく姿を現します。",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        },
+        {
+          "count": 1,
+          "description": "太陽・月・惑星・冥王星です。背景の星々の中を、夜ごとに位置を変えて動いていきます。プランナーが、お使いの場所とその夜に合わせて、位置と見え方をリアルタイムに計算します。",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "de",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "every-catalogue-has-a-text-de",
+      "result": [
+        {
+          "count": 1,
+          "description": "1966 veröffentlichte George Abell eine Liste von 86 alten, ausgedehnten Planetarischen Nebeln, die er auf den Platten des Palomar Sky Survey gefunden hatte. Ihre geringe Flächenhelligkeit macht sie visuell schwierig; am besten zeigen sie sich auf Fotos, oft mit OIII- und H-Alpha-Filtern.",
+          "id": "Abell",
+          "name": "Abell"
+        },
+        {
+          "count": 1,
+          "description": "Der Barnard-Katalog enthält 349 Dunkelnebel, die E. E. Barnard fotografiert hat und die 1927 veröffentlicht wurden. Sie treten im Kontrast zu Sternfeldern und hellen Nebeln hervor.",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "Die Caldwell-Liste umfasst 109 Objekte, die Patrick Moore 1995 als Ergänzung zu Messier ausgewählt hat, geordnet nach Deklination statt nach Jahreszeit.",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "Der Index Catalogue ergänzt den NGC um Objekte, die J. L. E. Dreyer 1895 und 1908 veröffentlicht hat, vor allem dank tieferer fotografischer Himmelsdurchmusterungen.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "Der Lynds-Katalog heller Nebel umfasst 1125 Nebel, die Beverly Lynds auf den Platten des Palomar Sky Survey kartiert und 1965 veröffentlicht hat. Er mischt Emissions- und Reflexionsnebel, viele davon lichtschwach und vor allem auf Fotos zu sehen.",
+          "id": "LBN",
+          "name": "LBN"
+        },
+        {
+          "count": 1,
+          "description": "Der Lynds-Katalog verzeichnet fast 1800 Dunkelnebel, die Beverly Lynds auf den Platten des Palomar Sky Survey kartiert und 1962 veröffentlicht hat. Diese Staubwolken zeigen sich als sternarme Flecken im Kontrast zur Milchstraße oder zu hellen Nebeln.",
+          "id": "LDN",
+          "name": "LDN"
+        },
+        {
+          "count": 1,
+          "description": "Die 110 Objekte, die Charles Messier und seine Mitarbeiter im 18. Jahrhundert zusammengestellt haben. Ein klassischer Einstieg in helle Deep-Sky-Objekte.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Der New General Catalogue von J. L. E. Dreyer, erschienen 1888. Er vereint Galaxien, Haufen und Nebel aus den großen visuellen Beobachtungen seiner Zeit.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "Der Sharpless-Katalog verzeichnet 313 H-II-Regionen, die Stewart Sharpless auf den Platten des Palomar Sky Survey gefunden und 1959 veröffentlicht hat. Es sind Emissionsnebel, oft groß und lichtschwach, die sich vor allem auf Fotos mit einem H-Alpha-Filter zeigen.",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        },
+        {
+          "count": 1,
+          "description": "Die Sonne, der Mond, die Planeten und Pluto: Himmelskörper, die sich von Nacht zu Nacht vor dem Sternhintergrund bewegen. Der Planer berechnet ihre Position und Sichtbarkeit live, für deinen Ort und deine Nacht.",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "es",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "every-catalogue-has-a-text-es",
+      "result": [
+        {
+          "count": 1,
+          "description": "En 1966, George Abell publicó una lista de 86 nebulosas planetarias antiguas y extensas halladas en las placas del Palomar Sky Survey. Su bajo brillo superficial las hace difíciles en visual; se revelan sobre todo en fotografía, a menudo con filtros OIII e hidrógeno alfa.",
+          "id": "Abell",
+          "name": "Abell"
+        },
+        {
+          "count": 1,
+          "description": "El catálogo Barnard contiene 349 nebulosas oscuras fotografiadas por E. E. Barnard y publicadas en 1927. Se revelan por contraste con los campos de estrellas y las nebulosas brillantes.",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "La lista Caldwell contiene 109 objetos elegidos por Patrick Moore en 1995 para complementar a Messier, ordenados por declinación y no por estación.",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "El Index Catalogue completa el NGC con objetos publicados por J. L. E. Dreyer en 1895 y 1908, sobre todo gracias a estudios fotográficos más profundos.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "El catálogo de nebulosas brillantes de Lynds reúne 1125 nebulosas cartografiadas por Beverly Lynds en las placas del Palomar Sky Survey y publicadas en 1965. Mezcla nebulosas de emisión y de reflexión, muchas de ellas débiles y visibles sobre todo en fotografía.",
+          "id": "LBN",
+          "name": "LBN"
+        },
+        {
+          "count": 1,
+          "description": "El catálogo de Lynds recoge cerca de 1800 nebulosas oscuras cartografiadas por Beverly Lynds en las placas del Palomar Sky Survey y publicadas en 1962. Estas nubes de polvo se ven como una ausencia de estrellas, en contraste con la Vía Láctea o con las nebulosas brillantes.",
+          "id": "LDN",
+          "name": "LDN"
+        },
+        {
+          "count": 1,
+          "description": "Los 110 objetos reunidos por Charles Messier y sus colaboradores en el siglo XVIII. Es una puerta de entrada clásica a los objetos brillantes del cielo profundo.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "El New General Catalogue de J. L. E. Dreyer, publicado en 1888. Reúne galaxias, cúmulos y nebulosas procedentes de las grandes observaciones visuales de su época.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "El catálogo Sharpless recoge 313 regiones H II halladas por Stewart Sharpless en las placas del Palomar Sky Survey y publicadas en 1959. Son nebulosas de emisión, a menudo extensas y débiles, que se revelan sobre todo en fotografías con un filtro de hidrógeno alfa.",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        },
+        {
+          "count": 1,
+          "description": "El Sol, la Luna, los planetas y Plutón: astros que se desplazan de una noche a otra sobre el fondo de estrellas. El planificador calcula en directo su posición y su visibilidad, para su lugar y su noche.",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "it",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "every-catalogue-has-a-text-it",
+      "result": [
+        {
+          "count": 1,
+          "description": "Nel 1966 George Abell pubblicò un elenco di 86 nebulose planetarie antiche ed estese, individuate sulle lastre del Palomar Sky Survey. La bassa luminosità superficiale le rende difficili all’oculare; si rivelano soprattutto in fotografia, spesso con filtri OIII e idrogeno alfa.",
+          "id": "Abell",
+          "name": "Abell"
+        },
+        {
+          "count": 1,
+          "description": "Il catalogo Barnard contiene 349 nebulose oscure fotografate da E. E. Barnard e pubblicate nel 1927. Si rivelano per contrasto con i campi stellari e le nebulose luminose.",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "L’elenco Caldwell comprende 109 oggetti scelti da Patrick Moore nel 1995 a complemento di Messier, ordinati per declinazione anziché per stagione.",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "L’Index Catalogue integra l’NGC con oggetti pubblicati da J. L. E. Dreyer nel 1895 e nel 1908, soprattutto grazie a rilievi fotografici più profondi.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "Il catalogo delle nebulose brillanti di Lynds riunisce 1125 nebulose rilevate da Beverly Lynds sulle lastre del Palomar Sky Survey e pubblicate nel 1965. Mescola nebulose a emissione e a riflessione, molte delle quali deboli e visibili soprattutto in fotografia.",
+          "id": "LBN",
+          "name": "LBN"
+        },
+        {
+          "count": 1,
+          "description": "Il catalogo di Lynds elenca quasi 1800 nebulose oscure rilevate da Beverly Lynds sulle lastre del Palomar Sky Survey e pubblicate nel 1962. Queste nubi di polvere appaiono come un’assenza di stelle, in contrasto con la Via Lattea o con le nebulose luminose.",
+          "id": "LDN",
+          "name": "LDN"
+        },
+        {
+          "count": 1,
+          "description": "I 110 oggetti raccolti da Charles Messier e dai suoi collaboratori nel Settecento. È una classica porta d’ingresso agli oggetti brillanti del profondo cielo.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Il New General Catalogue di J. L. E. Dreyer, pubblicato nel 1888. Riunisce galassie, ammassi e nebulose tratti dalle grandi osservazioni visuali della sua epoca.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "Il catalogo Sharpless raccoglie 313 regioni H II individuate da Stewart Sharpless sulle lastre del Palomar Sky Survey e pubblicate nel 1959. Sono nebulose a emissione, spesso estese e deboli, che si rivelano soprattutto nelle fotografie con un filtro idrogeno alfa.",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        },
+        {
+          "count": 1,
+          "description": "Il Sole, la Luna, i pianeti e Plutone: astri che di notte in notte si spostano sullo sfondo delle stelle. Il pianificatore calcola in tempo reale la loro posizione e visibilità, per il suo luogo e la sua notte.",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "pt-BR",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "every-catalogue-has-a-text-pt-BR",
+      "result": [
+        {
+          "count": 1,
+          "description": "Em 1966, George Abell publicou uma lista de 86 nebulosas planetárias antigas e extensas encontradas nas placas do Palomar Sky Survey. O baixo brilho superficial as torna difíceis no visual; elas se revelam sobretudo em fotografias, muitas vezes com filtros OIII e hidrogênio alfa.",
+          "id": "Abell",
+          "name": "Abell"
+        },
+        {
+          "count": 1,
+          "description": "O catálogo Barnard contém 349 nebulosas escuras fotografadas por E. E. Barnard e publicadas em 1927. Elas se revelam por contraste com os campos de estrelas e as nebulosas brilhantes.",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "A lista Caldwell contém 109 objetos escolhidos por Patrick Moore em 1995 para complementar o Messier, ordenados por declinação, e não por estação.",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "O Index Catalogue complementa o NGC com objetos publicados por J. L. E. Dreyer em 1895 e 1908, principalmente a partir de levantamentos fotográficos mais profundos.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "O catálogo de nebulosas brilhantes de Lynds reúne 1.125 nebulosas mapeadas por Beverly Lynds nas placas do Palomar Sky Survey e publicadas em 1965. Ele mistura nebulosas de emissão e de reflexão, muitas delas fracas e reveladas sobretudo em fotografias.",
+          "id": "LBN",
+          "name": "LBN"
+        },
+        {
+          "count": 1,
+          "description": "O catálogo de Lynds reúne quase 1.800 nebulosas escuras mapeadas por Beverly Lynds nas placas do Palomar Sky Survey e publicadas em 1962. Essas nuvens de poeira aparecem como uma ausência de estrelas, em contraste com a Via Láctea ou com as nebulosas brilhantes.",
+          "id": "LDN",
+          "name": "LDN"
+        },
+        {
+          "count": 1,
+          "description": "Os 110 objetos reunidos por Charles Messier e seus colaboradores no século XVIII. É uma porta de entrada clássica para os objetos brilhantes do céu profundo.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "O New General Catalogue de J. L. E. Dreyer, publicado em 1888. Reúne galáxias, aglomerados e nebulosas das grandes observações visuais de sua época.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "O catálogo Sharpless reúne 313 regiões H II encontradas por Stewart Sharpless nas placas do Palomar Sky Survey e publicadas em 1959. São nebulosas de emissão, muitas vezes extensas e fracas, que se revelam sobretudo em fotografias com filtro de hidrogênio alfa.",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        },
+        {
+          "count": 1,
+          "description": "O Sol, a Lua, os planetas e Plutão: astros que se deslocam de uma noite para outra sobre o fundo de estrelas. O planejador calcula ao vivo sua posição e sua visibilidade, para o seu local e a sua noite.",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "zh-Hans",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "every-catalogue-has-a-text-zh-Hans",
+      "result": [
+        {
+          "count": 1,
+          "description": "1966年，乔治·阿贝尔发表了一份清单，列出他在帕洛玛巡天底片上发现的86个古老而延展的行星状星云。它们的面亮度很低，目视难以观察；用OIII和氢阿尔法滤镜拍摄时最为明显。",
+          "id": "Abell",
+          "name": "Abell"
+        },
+        {
+          "count": 1,
+          "description": "巴纳德星表收录349个暗星云，由E. E. 巴纳德拍摄并于1927年发表。它们借助与星场和明亮星云的对比才显现出来。",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "科德威尔星表收录109个天体，由帕特里克·穆尔于1995年挑选，用来补充梅西耶星表，按赤纬而非季节排序。",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "IC星表（Index Catalogue）是NGC星表的补编，收录J. L. E. 德雷耶于1895年和1908年发表的天体，其中不少来自更深的照相巡天。",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "林德亮星云星表收录1125个星云，由贝弗利·林德在帕洛玛巡天底片上标注，并于1965年发表。其中既有发射星云也有反射星云，许多都很暗弱，主要在照片中显现。",
+          "id": "LBN",
+          "name": "LBN"
+        },
+        {
+          "count": 1,
+          "description": "林德暗星云星表收录近1800个暗星云，由贝弗利·林德在帕洛玛巡天底片上标注，并于1962年发表。这些尘埃云表现为缺少恒星的区域，在银河或明亮星云的衬托下显现。",
+          "id": "LDN",
+          "name": "LDN"
+        },
+        {
+          "count": 1,
+          "description": "由夏尔·梅西耶及其合作者在18世纪编制的110个天体，是认识明亮深空天体的经典入门星表。",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "J. L. E. 德雷耶于1888年出版的《星云星团新总表》（New General Catalogue），汇集了当时主要目视观测所得的星系、星团和星云。",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "沙普利斯星表收录313个电离氢区，由斯图尔特·沙普利斯在帕洛玛巡天底片上发现，并于1959年发表。它们是发射星云，往往大而暗弱，用氢阿尔法滤镜拍摄时最为明显。",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        },
+        {
+          "count": 1,
+          "description": "太阳、月球、行星和冥王星：它们一夜接一夜地在背景星空中移动。规划器会针对你的观测地点和那一夜，实时计算它们的位置与可见性。",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "zh-Hant",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "every-catalogue-has-a-text-zh-Hant",
+      "result": [
+        {
+          "count": 1,
+          "description": "1966 年，喬治·阿貝爾發表一份清單，列出他在帕洛瑪巡天底片上發現的 86 個古老而延展的行星狀星雲。它們的面亮度很低，目視難以觀察；以 OIII 與氫阿爾法濾鏡拍攝時最為明顯。",
+          "id": "Abell",
+          "name": "Abell"
+        },
+        {
+          "count": 1,
+          "description": "巴納德星表收錄 349 個暗星雲，由 E. E. 巴納德拍攝並於 1927 年發表；它們在星場與明亮星雲的襯托下顯現。",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "卡德威爾星表收錄 109 個天體，由派屈克·摩爾於 1995 年挑選，用以補充梅西耶星表，並依赤緯而非季節排序。",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "《索引星表》（Index Catalogue）是 NGC 的增補，收錄 J. L. E. 德雷爾於 1895 年與 1908 年發表的天體，其中許多來自更深入的攝影巡天。",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "林德亮星雲星表收錄 1125 個星雲，由貝芙莉·林德在帕洛瑪巡天底片上標註，並於 1965 年發表。其中既有發射星雲也有反射星雲，許多都很暗弱，主要在照片中顯現。",
+          "id": "LBN",
+          "name": "LBN"
+        },
+        {
+          "count": 1,
+          "description": "林德暗星雲星表收錄近 1800 個暗星雲，由貝芙莉·林德在帕洛瑪巡天底片上標註，並於 1962 年發表。這些塵埃雲表現為缺少恆星的區域，在銀河或明亮星雲的襯托下顯現。",
+          "id": "LDN",
+          "name": "LDN"
+        },
+        {
+          "count": 1,
+          "description": "由查爾斯·梅西耶與其合作者於 18 世紀編製的 110 個天體，是認識明亮深空天體的經典入門。",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "J. L. E. 德雷爾於 1888 年出版的《新總表》（New General Catalogue），彙集了當時主要目視觀測所得的星系、星團與星雲。",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "沙普利斯星表收錄 313 個電離氫區，由史都華·沙普利斯在帕洛瑪巡天底片上發現，並於 1959 年發表。它們是發射星雲，往往大而暗弱，以氫阿爾法濾鏡拍攝時最為明顯。",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        },
+        {
+          "count": 1,
+          "description": "太陽、月亮、行星與冥王星：它們一夜接一夜地在背景星空中移動。觀測規劃工具會針對你的地點與那一夜，即時計算其位置與可見性。",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    },
+    {
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "ru",
+        {
+          "Messier": {
+            "en": "Document text for Messier.",
+            "fr": "Texte du document pour Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "en": "Document text for NGC.",
+            "fr": "Texte du document pour NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ],
+      "id": "every-catalogue-has-a-text-ru",
+      "result": [
+        {
+          "count": 1,
+          "description": "В 1966 году Джордж Абелл опубликовал список из 86 старых протяжённых планетарных туманностей, найденных на пластинках Паломарского обзора неба. Из-за низкой поверхностной яркости их трудно увидеть глазом; лучше всего они проявляются на снимках, часто с фильтрами OIII и H-альфа.",
+          "id": "Abell",
+          "name": "Abell"
+        },
+        {
+          "count": 1,
+          "description": "Каталог Барнарда содержит 349 тёмных туманностей, сфотографированных Э. Э. Барнардом и опубликованных в 1927 году. Они проявляются на контрасте со звёздными полями и яркими туманностями.",
+          "id": "Barnard",
+          "name": "Barnard"
+        },
+        {
+          "count": 1,
+          "description": "Список Колдуэлла включает 109 объектов, выбранных Патриком Муром в 1995 году в дополнение к каталогу Мессье; объекты упорядочены по склонению, а не по сезону.",
+          "id": "Caldwell",
+          "name": "Caldwell"
+        },
+        {
+          "count": 1,
+          "description": "Индекс-каталог (Index Catalogue) дополняет NGC объектами, опубликованными Дж. Л. Э. Дрейером в 1895 и 1908 годах, в частности по результатам более глубоких фотографических обзоров.",
+          "id": "IC",
+          "name": "IC"
+        },
+        {
+          "count": 1,
+          "description": "Каталог светлых туманностей Линдс содержит 1125 туманностей, отмеченных Беверли Линдс на пластинках Паломарского обзора неба и опубликованных в 1965 году. В нём смешаны эмиссионные и отражательные туманности, многие из которых слабы и лучше видны на снимках.",
+          "id": "LBN",
+          "name": "LBN"
+        },
+        {
+          "count": 1,
+          "description": "Каталог Линдс содержит почти 1800 тёмных туманностей, отмеченных Беверли Линдс на пластинках Паломарского обзора неба и опубликованных в 1962 году. Эти пылевые облака видны как участки без звёзд на фоне Млечного Пути или ярких туманностей.",
+          "id": "LDN",
+          "name": "LDN"
+        },
+        {
+          "count": 1,
+          "description": "110 объектов, составленных Шарлем Мессье и его помощниками в XVIII веке. Это классическая отправная точка для знакомства с яркими объектами глубокого космоса.",
+          "id": "Messier",
+          "name": "Messier"
+        },
+        {
+          "count": 1,
+          "description": "Новый общий каталог (New General Catalogue) Дж. Л. Э. Дрейера, опубликованный в 1888 году. В него вошли галактики, скопления и туманности, найденные в ходе крупных визуальных наблюдений того времени.",
+          "id": "NGC",
+          "name": "NGC"
+        },
+        {
+          "count": 1,
+          "description": "Каталог Шарплесса содержит 313 областей H II, найденных Стюартом Шарплессом на пластинках Паломарского обзора неба и опубликованных в 1959 году. Это эмиссионные туманности, часто большие и слабые, которые лучше всего проявляются на снимках с фильтром H-альфа.",
+          "id": "Sharpless",
+          "name": "Sharpless"
+        },
+        {
+          "count": 1,
+          "description": "Солнце, Луна, планеты и Плутон: тела, которые от ночи к ночи смещаются на фоне звёзд. Планировщик рассчитывает их положение и видимость в реальном времени — для вашего места и вашей ночи.",
+          "id": "Système solaire",
+          "name": "Système solaire"
+        }
+      ]
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "target-catalogues"
+}

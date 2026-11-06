@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/planner/framing.schema.json",
+  "title": "Astro Portal saved framing",
+  "description": "The persisted shape of a saved framing, stored at plan item target.framing. `center` is fixed at the moment the framing is added and is never rewritten by a later catalogue refresh; `savedAt` records that moment.\n\nA simple (non-mosaic) framing is centre + orientation only — its field is always the field of whatever equipment draws it (the plan's, inside a plan), never a stored value here, and it is never split into panels. A mosaic framing additionally stores the sky AREA it must cover (`mosaic.widthDegrees`/`heightDegrees`) and the requested panel overlap (`mosaic.overlapPercent`) — NEVER a column/row count: the panel grid is always recomputed by `mosaicGrid` (`packages/astro-core/src/mosaic-grid.ts`) from that area, the overlap and the field of whichever equipment is currently drawing the framing (the reference equipment in the creation modal, the plan's own equipment inside a plan), so the same framing keeps covering the same sky regardless of the telescope used.\n\n`equipment` is the framing's `referenceEquipment`: INDICATIVE only, used to draw the frame in the creation modal and to render the library preview. Inside a plan the frame is always drawn with the plan's own equipment; a mismatch is a display-time warning, never a schema concern.",
+  "$defs": {
+    "coordinate": {
+      "type": "object",
+      "required": ["ra", "dec"],
+      "properties": {
+        "ra": { "type": "number", "minimum": 0, "maximum": 360 },
+        "dec": { "type": "number", "minimum": -90, "maximum": 90 }
+      },
+      "additionalProperties": false
+    },
+    "mosaic": {
+      "type": "object",
+      "description": "Amendment A2: the sky area a mosaic framing covers and its requested overlap. No column/row count is ever stored here — see this schema's top-level description.",
+      "required": ["widthDegrees", "heightDegrees", "overlapPercent"],
+      "properties": {
+        "widthDegrees": { "type": "number", "exclusiveMinimum": 0 },
+        "heightDegrees": { "type": "number", "exclusiveMinimum": 0 },
+        "overlapPercent": { "type": "number", "minimum": 0, "maximum": 90 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "type": "object",
+  "required": ["center", "field", "objects", "matchedTargets", "savedAt"],
+  "properties": {
+    "center": { "$ref": "#/$defs/coordinate" },
+    "field": { "type": "object" },
+    "mosaic": { "$ref": "#/$defs/mosaic" },
+    "equipment": { "type": "object" },
+    "objects": { "type": "array", "items": { "type": "string" } },
+    "matchedTargets": { "type": "array", "items": { "type": "object" } },
+    "previewImageUrl": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+    "savedAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": true
+}

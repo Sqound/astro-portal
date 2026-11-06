@@ -1,0 +1,21 @@
+{
+  "cases": [
+    { "args": [{ "text": "" }], "id": "empty", "result": 0 },
+    {
+      "args": [{ "text": "123456789" }],
+      "id": "check-value",
+      "result": 3421780262
+    },
+    {
+      "args": [
+        {
+          "text": "Les images de la galerie privée restent dans l’espace : elles ne sont pas dans le fichier."
+        }
+      ],
+      "id": "utf8-gallery-line",
+      "result": 2716945651
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "data-export-crc32"
+}

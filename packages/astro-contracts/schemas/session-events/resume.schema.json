@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/resume.schema.json",
+  "title": "Astro Portal session event payload: resume",
+  "description": "Marks the session as resumed after a pause event. An empty payload is valid on purpose, for the same one-tap reason as pause. Pairing a resume with the pause it ends is done by session order (recordedAt/receivedAt), not by an id in this payload. The resume sheet of the execution screen (« Rogner » or « Décaler » the rest of the night) also records its choice, `policy`, and the real pause duration it computed, `pauseDurationMinutes`, so that neither lives only in the interface's transient state (the schema had refused both). See session-events.md for what this type is for and what it deliberately is not.",
+  "type": "object",
+  "properties": {
+    "note": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "policy": {
+      "description": "The resume sheet's two-card choice: `crop` (rogner: the targets keep their times, the rest of the night is shortened by the pause) or `shift` (décaler: the rest of the night slides by the pause).",
+      "enum": ["crop", "shift"]
+    },
+    "pauseDurationMinutes": {
+      "description": "The real elapsed duration of the pause this resume ends, in minutes, as the sheet computed it.",
+      "type": "number",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false
+}

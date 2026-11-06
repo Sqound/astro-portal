@@ -1,0 +1,14 @@
+{
+  "module": "sky-quality-decode",
+  "package": "portal",
+  "file": "sky-quality",
+  "export": "decodeSkyQualityRadiance",
+  "cases": [
+    { "id": "level-zero-is-exactly-zero", "args": [0] },
+    { "id": "mid-level", "args": [128] },
+    { "id": "top-level-is-the-maximum", "args": [255] },
+    { "id": "above-the-top-level", "args": [256] },
+    { "id": "negative-level", "args": [-1] },
+    { "id": "fractional-level", "args": [12.5] }
+  ]
+}

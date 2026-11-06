@@ -1,0 +1,15 @@
+{
+  "cases": [
+    { "args": ["pending"], "id": "pending-counts", "result": true },
+    { "args": ["executed"], "id": "executed-does-not-count", "result": false },
+    {
+      "args": ["abandoned"],
+      "id": "abandoned-does-not-count",
+      "result": false
+    },
+    { "args": ["archived"], "id": "archived-does-not-count", "result": false },
+    { "args": ["bogus"], "id": "unknown-does-not-count", "result": false }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "capability-plan-limit-status"
+}

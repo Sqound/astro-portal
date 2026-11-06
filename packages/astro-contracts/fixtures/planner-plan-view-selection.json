@@ -1,0 +1,147 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "constraintsCollapsed": false,
+          "equipmentCollapsed": false,
+          "source": "favorites",
+          "view": "map"
+        }
+      ],
+      "id": "collapses-setup-and-forces-the-list-view",
+      "result": {
+        "catalogue": "",
+        "constraintsCollapsed": true,
+        "equipmentCollapsed": true,
+        "horizon": {
+          "layers": { "lightPollution": false, "mask": true },
+          "mode": "positions",
+          "pathTargetId": null,
+          "projection": "circular",
+          "rotation": 0,
+          "sampleIndex": null,
+          "showLabels": false
+        },
+        "plan": "",
+        "query": "",
+        "selectedTargetId": null,
+        "skyMap": "realistic",
+        "sort": "altitude",
+        "source": "favorites",
+        "type": "",
+        "view": "list"
+      }
+    },
+    {
+      "args": [null],
+      "id": "a-non-object-view-falls-back-to-the-defaults",
+      "result": {
+        "catalogue": "",
+        "constraintsCollapsed": true,
+        "equipmentCollapsed": true,
+        "horizon": {
+          "layers": { "lightPollution": false, "mask": true },
+          "mode": "positions",
+          "pathTargetId": null,
+          "projection": "circular",
+          "rotation": 0,
+          "sampleIndex": null,
+          "showLabels": false
+        },
+        "plan": "",
+        "query": "",
+        "selectedTargetId": null,
+        "skyMap": "realistic",
+        "sort": "altitude",
+        "source": "catalogue",
+        "type": "",
+        "view": "list"
+      }
+    },
+    {
+      "args": [{ "horizon": { "rotation": 45, "showLabels": true } }],
+      "id": "an-existing-horizon-sub-state-is-merged",
+      "result": {
+        "catalogue": "",
+        "constraintsCollapsed": true,
+        "equipmentCollapsed": true,
+        "horizon": {
+          "layers": { "lightPollution": false, "mask": true },
+          "mode": "positions",
+          "pathTargetId": null,
+          "projection": "circular",
+          "rotation": 45,
+          "sampleIndex": null,
+          "showLabels": true
+        },
+        "plan": "",
+        "query": "",
+        "selectedTargetId": null,
+        "skyMap": "realistic",
+        "sort": "altitude",
+        "source": "catalogue",
+        "type": "",
+        "view": "list"
+      }
+    },
+    {
+      "args": [
+        {
+          "horizon": { "mode": "spiral", "pathTargetId": "m31", "rotation": 30 }
+        }
+      ],
+      "id": "an-unknown-horizon-mode-reads-as-positions",
+      "result": {
+        "catalogue": "",
+        "constraintsCollapsed": true,
+        "equipmentCollapsed": true,
+        "horizon": {
+          "layers": { "lightPollution": false, "mask": true },
+          "mode": "positions",
+          "pathTargetId": "m31",
+          "projection": "circular",
+          "rotation": 30,
+          "sampleIndex": null,
+          "showLabels": false
+        },
+        "plan": "",
+        "query": "",
+        "selectedTargetId": null,
+        "skyMap": "realistic",
+        "sort": "altitude",
+        "source": "catalogue",
+        "type": "",
+        "view": "list"
+      }
+    },
+    {
+      "args": [{ "horizon": { "mode": "path", "pathTargetId": "m31" } }],
+      "id": "the-path-mode-and-its-target-are-kept",
+      "result": {
+        "catalogue": "",
+        "constraintsCollapsed": true,
+        "equipmentCollapsed": true,
+        "horizon": {
+          "layers": { "lightPollution": false, "mask": true },
+          "mode": "path",
+          "pathTargetId": "m31",
+          "projection": "circular",
+          "rotation": 0,
+          "sampleIndex": null,
+          "showLabels": false
+        },
+        "plan": "",
+        "query": "",
+        "selectedTargetId": null,
+        "skyMap": "realistic",
+        "sort": "altitude",
+        "source": "catalogue",
+        "type": "",
+        "view": "list"
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "planner-plan-view-selection"
+}

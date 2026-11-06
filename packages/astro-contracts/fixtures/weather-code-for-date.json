@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "args": [
+        { "time": ["2026-09-15", "2026-09-16"], "weather_code": [3, 61] },
+        "2026-09-16"
+      ],
+      "id": "matches-an-iso-day-string",
+      "result": 61
+    },
+    {
+      "args": [
+        { "time": [1789430400, 1789516800], "weather_code": [0, 45] },
+        "2026-09-16"
+      ],
+      "id": "matches-a-unix-day-stamp",
+      "result": 45
+    },
+    {
+      "args": [{ "time": ["2026-09-15"], "weather_code": [3] }, "2026-09-20"],
+      "id": "an-absent-day-has-no-code",
+      "result": null
+    },
+    {
+      "args": [null, "2026-09-15"],
+      "id": "an-absent-series-has-no-code",
+      "result": null
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "weather-code-for-date"
+}

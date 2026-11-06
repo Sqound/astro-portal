@@ -1,0 +1,48 @@
+{
+  "module": "generic-tag-stored",
+  "package": "portal",
+  "file": "components/gallery/gallery-tags",
+  "export": "storedTag",
+  "cases": [
+    {
+      "id": "stored-word-is-itself",
+      "args": ["Nébuleuse", "en"]
+    },
+    {
+      "id": "english-label-is-the-stored-word",
+      "args": ["Nebula", "en"]
+    },
+    {
+      "id": "japanese-label-is-the-stored-word",
+      "args": ["星雲", "ja"]
+    },
+    {
+      "id": "german-label-is-the-stored-word",
+      "args": ["Sternhaufen", "de"]
+    },
+    {
+      "id": "a-label-of-another-language-stays-as-typed",
+      "args": ["Nebula", "fr"]
+    },
+    {
+      "id": "own-tag-stays-as-typed",
+      "args": ["Askar", "en"]
+    },
+    {
+      "id": "own-tag-keeps-its-case",
+      "args": ["nebula", "en"]
+    },
+    {
+      "id": "messier-label-in-japanese",
+      "args": ["メシエ", "ja"]
+    },
+    {
+      "id": "wide-field-label-in-russian",
+      "args": ["Широкое поле", "ru"]
+    },
+    {
+      "id": "star-label-in-english",
+      "args": ["Star", "en"]
+    }
+  ]
+}

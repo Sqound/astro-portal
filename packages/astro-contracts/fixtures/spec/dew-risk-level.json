@@ -1,0 +1,65 @@
+{
+  "module": "dew-risk-level",
+  "package": "portal",
+  "file": "dew-risk",
+  "export": "dewRiskLevel",
+  "cases": [
+    {
+      "id": "high-spread-at-most-one-degree",
+      "args": [{ "temperature": 8, "dewPoint": 7 }]
+    },
+    {
+      "id": "high-dew-point-above-temperature",
+      "args": [{ "temperature": 8, "dewPoint": 8.4 }]
+    },
+    {
+      "id": "moderate-spread-at-most-three-degrees",
+      "args": [{ "temperature": 8, "dewPoint": 5 }]
+    },
+    {
+      "id": "low-spread-above-three-degrees",
+      "args": [{ "temperature": 8, "dewPoint": 4.9 }]
+    },
+    {
+      "id": "spread-read-to-a-tenth",
+      "args": [{ "temperature": 12.3, "dewPoint": 11.3 }]
+    },
+    {
+      "id": "wind-lowers-high-to-moderate",
+      "args": [{ "temperature": 8, "dewPoint": 7.5, "wind": 15 }]
+    },
+    {
+      "id": "wind-lowers-moderate-to-low",
+      "args": [{ "temperature": 8, "dewPoint": 6, "wind": 20 }]
+    },
+    {
+      "id": "wind-never-below-low",
+      "args": [{ "temperature": 8, "dewPoint": 2, "wind": 30 }]
+    },
+    {
+      "id": "humidity-gives-the-dew-point",
+      "args": [{ "temperature": 10, "humidity": 95 }]
+    },
+    {
+      "id": "humidity-dry-air-low",
+      "args": [{ "temperature": 10, "humidity": 60, "wind": "4" }]
+    },
+    {
+      "id": "dew-point-preferred-over-humidity",
+      "args": [{ "temperature": 10, "dewPoint": 2, "humidity": 99 }]
+    },
+    {
+      "id": "numeric-strings-accepted",
+      "args": [{ "temperature": "6.5", "dewPoint": "6" }]
+    },
+    {
+      "id": "no-temperature-no-level",
+      "args": [{ "dewPoint": 5, "humidity": 90 }]
+    },
+    { "id": "nothing-to-say", "args": [{ "temperature": 10 }] },
+    {
+      "id": "negative-temperatures",
+      "args": [{ "temperature": -2.4, "dewPoint": -3.1 }]
+    }
+  ]
+}

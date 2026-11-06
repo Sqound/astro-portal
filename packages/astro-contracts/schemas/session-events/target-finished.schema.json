@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/target-finished.schema.json",
+  "title": "Astro Portal session event payload: target_finished",
+  "description": "Marks the moment observation of one target ended. Mirrors target_started's identification fields so the pair can be matched by targetId/targetLabel and session order. It deliberately carries no outcome (done/modified): that classification belongs to the debrief's sessionAdjustments, not to the field journal. A skipped target is not a finished one and emits no event of this type at all — it emits target_skipped. See session-events.md for what this type is for and what it deliberately is not.",
+  "type": "object",
+  "properties": {
+    "targetId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The shared catalogue id (as in GET /v1/targets, e.g. \"m31\") or a plan item's own target reference, when the target resolves to one."
+    },
+    "targetLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "A free display name, for a target with no catalogue id — matches the targetLabel a target_started event used for the same target."
+    },
+    "planItemId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "Optional: the plan item this target came from, when the session was started from a plan (planner-document.schema.json's plan.items[].id)."
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "auto": {
+      "enum": [true],
+      "description": "Present, and only ever true, on an event the device's clock wrote in automatic advance mode (the plan moved on by itself when the now line reached a slot, or finished a slot at its planned end). Absent means a person's gesture wrote it. The time it implies is unconfirmed until an auto_time_confirmed event names this target later in session order. Spelled as a one-value enum rather than const: the server's validator implements enum, not const."
+    }
+  },
+  "allOf": [
+    {
+      "anyOf": [
+        {
+          "required": ["targetId"]
+        },
+        {
+          "required": ["targetLabel"]
+        }
+      ]
+    }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,1076 @@
+{
+  "module": "session-passages",
+  "package": "portal",
+  "file": "session-passages",
+  "export": "sessionPassages",
+  "cases": [
+    {
+      "id": "one-passage-start-to-finish",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-11T02:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "a-resumed-target-has-two-passages",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000003",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T21:30:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000004",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:30:30.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000005",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T22:15:10.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-10T23:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "a-start-closes-the-target-running",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:45:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000003",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:30:00.000Z",
+              "payload": {
+                "targetId": "m45",
+                "planItemId": "m45"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-10T22:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "a-skip-closes-its-own-passage-only",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-10T20:20:00.000Z",
+              "payload": {
+                "targetId": "m45",
+                "planItemId": "m45",
+                "reason": "visibility"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000003",
+              "type": "target_skipped",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "reason": "weather"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-10T22:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "pauses-inside-are-deducted",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "pause",
+              "recordedAt": "2026-10-10T20:10:00.000Z",
+              "payload": {
+                "cause": "wind"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000003",
+              "type": "resume",
+              "recordedAt": "2026-10-10T20:25:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000004",
+              "type": "pause",
+              "recordedAt": "2026-10-10T20:50:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000005",
+              "type": "pause",
+              "recordedAt": "2026-10-10T20:55:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000006",
+              "type": "resume",
+              "recordedAt": "2026-10-10T21:00:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000007",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T21:30:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-10T22:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "an-open-passage-stays-open-without-a-window-end",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T20:30:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000003",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:30:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000004",
+              "type": "pause",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {}
+            }
+          ],
+          "windowEnd": null
+        }
+      ]
+    },
+    {
+      "id": "an-open-passage-and-an-open-pause-close-at-the-window-end",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "pause",
+              "recordedAt": "2026-10-10T21:10:00.000Z",
+              "payload": {
+                "cause": "dew"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-10T21:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "auto-then-confirmed-then-auto-again",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "auto": true,
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T21:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "auto": true
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000003",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31",
+                "auto": true,
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000004",
+              "type": "auto_time_confirmed",
+              "recordedAt": "2026-10-10T21:05:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000005",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T21:30:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000006",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:30:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "advance": "manual"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000007",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T22:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "auto": true
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000008",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T22:00:00.000Z",
+              "payload": {
+                "targetId": "m45",
+                "planItemId": "m45",
+                "auto": true,
+                "advance": "auto"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-10T23:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "debriefing-events-ignored-when-field-events-exist",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              },
+              "timing": "planned"
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              },
+              "timing": "planned"
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000003",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:05:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000004",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T22:50:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000005",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T23:10:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              },
+              "timing": "reconstructed"
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000006",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T23:55:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              },
+              "timing": "reconstructed"
+            }
+          ],
+          "windowEnd": "2026-10-11T02:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "a-second-start-of-the-running-target-continues-it",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:30:00.000Z",
+              "payload": {
+                "targetId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000003",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T20:45:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000004",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T21:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000005",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T21:10:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-10T22:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "plan-items-tell-the-same-object-apart-and-a-label-is-a-target",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31-a"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:50:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31-b"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000003",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T21:20:00.000Z",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31-b"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000004",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:20:00.000Z",
+              "payload": {
+                "targetLabel": "Comète du soir"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000005",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T21:45:00.000Z",
+              "payload": {
+                "targetLabel": "Comète du soir",
+                "notes": "Basse."
+              }
+            }
+          ],
+          "windowEnd": "2026-10-10T22:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "unordered-journal-and-unreadable-instants",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_finished",
+              "recordedAt": "2026-10-10T21:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000002",
+              "type": "target_started",
+              "recordedAt": "not-a-date",
+              "payload": {
+                "targetId": "m31",
+                "planItemId": "m31"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000003",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "advance": "manual"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000004",
+              "type": "pause",
+              "recordedAt": "2026-10-10T20:30:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J9PASSAGE000000000000005",
+              "type": "resume",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {}
+            }
+          ],
+          "windowEnd": "2026-10-10T22:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "a-window-end-before-the-open-start",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGE000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-10T20:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "empty-journal-no-passage",
+      "args": [
+        {
+          "events": [],
+          "windowEnd": "2026-10-10T22:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "captures-listed-on-the-passage-they-fall-in",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGECAPT000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "saturne",
+                "planItemId": "saturne"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGECAPT000000000002",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:10:00.000Z",
+              "payload": {
+                "targetId": "m57",
+                "planItemId": "m57"
+              }
+            },
+            {
+              "eventId": "01J9PASSAGECAPT000000000003",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T21:40:00.000Z",
+              "payload": {
+                "targetId": "saturne",
+                "planItemId": "saturne"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-10T23:00:00.000Z",
+          "captures": [
+            {
+              "captureId": "souvenir-b",
+              "targetId": "saturne",
+              "planItemId": "saturne",
+              "at": "2026-10-10T22:05:00.000Z"
+            },
+            {
+              "captureId": "souvenir-a",
+              "targetId": "saturne",
+              "planItemId": "saturne",
+              "at": "2026-10-10T20:50:00.000Z"
+            },
+            {
+              "captureId": "souvenir-a-plain",
+              "targetId": "saturne",
+              "planItemId": "saturne",
+              "at": "2026-10-10T20:50:00.000Z"
+            },
+            {
+              "captureId": "souvenir-m57",
+              "targetId": "m57",
+              "at": "2026-10-10T21:20:00.000Z"
+            },
+            {
+              "captureId": "souvenir-wrong-target",
+              "targetId": "m31",
+              "at": "2026-10-10T21:25:00.000Z"
+            },
+            {
+              "captureId": "souvenir-after",
+              "targetId": "saturne",
+              "at": "2026-10-10T23:30:00.000Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "captures-on-an-open-passage-and-a-labelled-target",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGECAPT000000000004",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetLabel": "Comète du soir"
+              }
+            }
+          ],
+          "windowEnd": null,
+          "captures": [
+            {
+              "captureId": "souvenir-comet",
+              "targetLabel": "Comète du soir",
+              "at": "2026-10-10T23:59:00.000Z"
+            },
+            {
+              "captureId": "souvenir-before",
+              "targetLabel": "Comète du soir",
+              "at": "2026-10-10T20:39:59.000Z"
+            },
+            {
+              "captureId": "no-time",
+              "targetLabel": "Comète du soir"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "no-capture-no-capture-ids",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9PASSAGECAPT000000000005",
+              "type": "target_started",
+              "recordedAt": "2026-10-10T20:40:00.000Z",
+              "payload": {
+                "targetId": "m31"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-10T21:00:00.000Z",
+          "captures": [
+            {
+              "captureId": "elsewhere",
+              "targetId": "m33",
+              "at": "2026-10-10T20:50:00.000Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-hole-inside-a-passage-is-automatic-time-not-confirmed",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9HOLE000000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T20:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000002",
+              "type": "note",
+              "recordedAt": "2026-10-02T21:40:00.000Z",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T21:12:00.000Z",
+                  "to": "2026-10-02T21:40:00.000Z"
+                }
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000009",
+              "type": "target_finished",
+              "recordedAt": "2026-10-02T22:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-03T02:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "a-hole-under-a-pause-counts-nothing",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9HOLE000000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T20:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000002",
+              "type": "note",
+              "recordedAt": "2026-10-02T21:40:00.000Z",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T21:12:00.000Z",
+                  "to": "2026-10-02T21:40:00.000Z"
+                }
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000009",
+              "type": "target_finished",
+              "recordedAt": "2026-10-02T22:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000003",
+              "type": "pause",
+              "recordedAt": "2026-10-02T21:12:00.000Z",
+              "payload": {}
+            },
+            {
+              "eventId": "01J9HOLE000000000000000004",
+              "type": "resume",
+              "recordedAt": "2026-10-02T21:40:00.000Z",
+              "payload": {}
+            }
+          ],
+          "windowEnd": "2026-10-03T02:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "a-hole-confirmed-by-a-later-confirmation-of-the-target",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9HOLE000000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T20:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000002",
+              "type": "note",
+              "recordedAt": "2026-10-02T21:40:00.000Z",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T21:12:00.000Z",
+                  "to": "2026-10-02T21:40:00.000Z"
+                }
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000009",
+              "type": "target_finished",
+              "recordedAt": "2026-10-02T22:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000005",
+              "type": "auto_time_confirmed",
+              "recordedAt": "2026-10-02T22:30:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-03T02:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "a-confirmation-before-the-hole-does-not-confirm-it",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9HOLE000000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T20:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000002",
+              "type": "note",
+              "recordedAt": "2026-10-02T21:40:00.000Z",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T21:12:00.000Z",
+                  "to": "2026-10-02T21:40:00.000Z"
+                }
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000009",
+              "type": "target_finished",
+              "recordedAt": "2026-10-02T22:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000005",
+              "type": "auto_time_confirmed",
+              "recordedAt": "2026-10-02T21:00:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            }
+          ],
+          "windowEnd": "2026-10-03T02:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "a-hole-across-the-clock-catch-up-and-a-running-passage",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9HOLE000000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T20:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000002",
+              "type": "note",
+              "recordedAt": "2026-10-02T21:40:00.000Z",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T21:12:00.000Z",
+                  "to": "2026-10-02T21:40:00.000Z"
+                }
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000006",
+              "type": "target_finished",
+              "recordedAt": "2026-10-02T21:30:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "auto": true
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000007",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T21:30:00.000Z",
+              "payload": {
+                "targetId": "m33",
+                "planItemId": "m33",
+                "auto": true,
+                "advance": "auto"
+              }
+            }
+          ],
+          "windowEnd": null
+        }
+      ]
+    },
+    {
+      "id": "overlapping-holes-count-once-and-a-reversed-one-is-ignored",
+      "args": [
+        {
+          "events": [
+            {
+              "eventId": "01J9HOLE000000000000000001",
+              "type": "target_started",
+              "recordedAt": "2026-10-02T20:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000",
+                "advance": "auto"
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000002",
+              "type": "note",
+              "recordedAt": "2026-10-02T21:40:00.000Z",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T21:12:00.000Z",
+                  "to": "2026-10-02T21:40:00.000Z"
+                }
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000009",
+              "type": "target_finished",
+              "recordedAt": "2026-10-02T22:19:00.000Z",
+              "payload": {
+                "targetId": "ngc7000",
+                "planItemId": "ngc7000"
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000003",
+              "type": "note",
+              "recordedAt": "2026-10-02T21:45:00.000Z",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T21:30:00.000Z",
+                  "to": "2026-10-02T21:45:00.000Z"
+                }
+              }
+            },
+            {
+              "eventId": "01J9HOLE000000000000000004",
+              "type": "note",
+              "recordedAt": "2026-10-02T21:50:00.000Z",
+              "payload": {
+                "appStopped": {
+                  "from": "2026-10-02T21:55:00.000Z",
+                  "to": "2026-10-02T21:50:00.000Z"
+                }
+              }
+            }
+          ],
+          "windowEnd": "2026-10-03T02:00:00.000Z"
+        }
+      ]
+    }
+  ]
+}

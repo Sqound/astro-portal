@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.next-test/
+packages/*/dist/
+build/
+/backups/
+.astro-portal/
+*.lease/
+.env
+.env.local
+*.log
+.DS_Store

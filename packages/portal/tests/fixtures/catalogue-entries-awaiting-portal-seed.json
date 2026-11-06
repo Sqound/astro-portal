@@ -1,0 +1,4 @@
+{
+  "$comment": "Entries of packages/planner/src/common-equipment-profiles.json that no portal migration seeds yet: the migration tests (71, 107, 108) compare the seeds with the file without them. Empty since migration 131 (equipment-catalogue-4) seeds the entries of EQUIPMENT-CATALOGUE-01.",
+  "ids": []
+}

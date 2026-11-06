@@ -1,0 +1,21 @@
+
+National Park Service Night Skies Program, night sky data set (nsdmap.geojson). A work of the United States Government: public domain.
+Globe at Night, NSF NOIRLab (globeatnight.org), CC BY 4.0.
+
+Measurements 2022–2023, raster average_masked 2025
+  5 NPS sites
+  60 Globe at Night readings -> 15 cells with >= 3 readings
+
+skyQualityLuminancePerRadiance = 0.2993 mcd/m² per nW/cm²/sr
+  20 sites, RMS 0.025 mag, bias +0.002 mag (positive = model reads darker than measured)
+  currently compiled in: 0.299
+
+  per source
+    National Park Service  a = 0.2977  n = 5  RMS = 0.045 mag
+    Globe at Night         a = 0.2998  n = 15  RMS = 0.013 mag
+
+  residual of the compiled-in constant, by measured Bortle class
+    Bortle 4  n=   4  mean Δ = +0.02 mag
+    Bortle 5  n=   4  mean Δ = -0.01 mag
+    Bortle 6  n=   4  mean Δ = -0.01 mag
+    Bortle 7  n=   8  mean Δ = +0.00 mag

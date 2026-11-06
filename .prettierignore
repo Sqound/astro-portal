@@ -1,0 +1,8 @@
+.next
+public/vendor/stellarium
+node_modules
+package-lock.json
+docs/assets
+# The public sample records: kept exactly as produced.
+sample/
+packages/*/dist/

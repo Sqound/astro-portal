@@ -1,0 +1,125 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "exportedAt": "2026-09-15T18:00:00.000Z",
+          "plan": {
+            "date": "2026-09-15",
+            "id": "plan-1",
+            "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+            "name": "Autumn nebulae"
+          }
+        }
+      ],
+      "id": "format-version-envelope",
+      "result": {
+        "exportedAt": "2026-09-15T18:00:00.000Z",
+        "format": "astro-portal-observation-plan",
+        "plan": {
+          "date": "2026-09-15",
+          "id": "plan-1",
+          "items": [{ "filter": "L", "id": "m31" }, { "id": "ngc7000" }],
+          "name": "Autumn nebulae"
+        },
+        "version": 1
+      }
+    },
+    {
+      "args": [
+        {
+          "exportedAt": "2026-10-21T18:00:00.000Z",
+          "plan": {
+            "acquisitionDefaults": { "exposureSeconds": 180, "gain": 120 },
+            "date": "2026-10-21",
+            "id": "plan-2",
+            "items": [
+              {
+                "acquisition": {
+                  "lines": [
+                    { "binning": 1, "exposureSeconds": 120, "filter": "L" },
+                    { "exposureSeconds": 300, "filter": "Ha", "frameCount": 12 }
+                  ]
+                },
+                "filter": "L",
+                "id": "m31"
+              }
+            ],
+            "launchedSchedule": [
+              {
+                "acquisition": {
+                  "lines": [
+                    {
+                      "binning": 1,
+                      "exposureSeconds": 120,
+                      "filter": "L",
+                      "frameCount": 58,
+                      "gain": 120
+                    }
+                  ]
+                },
+                "endMinute": 120,
+                "planItemId": "m31",
+                "ruleVersion": "expo-b-1",
+                "startMinute": 0,
+                "targetId": "m31"
+              }
+            ],
+            "name": "Prise de vue par cible"
+          }
+        }
+      ],
+      "id": "acquisition-lines-are-carried-as-they-are",
+      "result": {
+        "exportedAt": "2026-10-21T18:00:00.000Z",
+        "format": "astro-portal-observation-plan",
+        "plan": {
+          "acquisitionDefaults": { "exposureSeconds": 180, "gain": 120 },
+          "date": "2026-10-21",
+          "id": "plan-2",
+          "items": [
+            {
+              "acquisition": {
+                "lines": [
+                  { "binning": 1, "exposureSeconds": 120, "filter": "L" },
+                  { "exposureSeconds": 300, "filter": "Ha", "frameCount": 12 }
+                ]
+              },
+              "filter": "L",
+              "id": "m31"
+            }
+          ],
+          "launchedSchedule": [
+            {
+              "acquisition": {
+                "lines": [
+                  {
+                    "binning": 1,
+                    "exposureSeconds": 120,
+                    "filter": "L",
+                    "frameCount": 58,
+                    "gain": 120
+                  }
+                ]
+              },
+              "endMinute": 120,
+              "planItemId": "m31",
+              "ruleVersion": "expo-b-1",
+              "startMinute": 0,
+              "targetId": "m31"
+            }
+          ],
+          "name": "Prise de vue par cible"
+        },
+        "version": 1
+      }
+    },
+    {
+      "args": [{ "exportedAt": "2026-09-15T18:00:00.000Z", "plan": null }],
+      "id": "no-plan",
+      "result": null
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "plan-archive"
+}

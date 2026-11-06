@@ -1,0 +1,292 @@
+{
+  "module": "share-summary",
+  "package": "portal",
+  "file": "planner/export",
+  "export": "planShareText",
+  "cases": [
+    {
+      "id": "unnamed-plan-falls-back-to-default-name",
+      "args": [
+        {
+          "plan": {
+            "date": "2024-08-12"
+          },
+          "targets": [],
+          "locale": "fr"
+        }
+      ]
+    },
+    {
+      "id": "no-targets-selected",
+      "args": [
+        {
+          "plan": {
+            "name": "Perseids night",
+            "date": "2024-08-12"
+          },
+          "targets": [],
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "id": "multiple-targets-comma-joined",
+      "args": [
+        {
+          "plan": {
+            "name": "Deep sky",
+            "date": "2024-12-25",
+            "items": [
+              {
+                "id": "a"
+              },
+              {
+                "id": "b"
+              }
+            ]
+          },
+          "targets": [
+            {
+              "target": {
+                "id": "a",
+                "title": "Andromeda Galaxy"
+              }
+            },
+            {
+              "target": {
+                "id": "b",
+                "designation": "M42"
+              }
+            }
+          ],
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "id": "japanese-full-locale-date",
+      "args": [
+        {
+          "plan": {
+            "name": "Solstice",
+            "date": "2024-06-21"
+          },
+          "targets": [],
+          "locale": "ja"
+        }
+      ]
+    },
+    {
+      "id": "full-date-in-de",
+      "args": [
+        {
+          "plan": {
+            "name": "Nuit",
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "de"
+        }
+      ]
+    },
+    {
+      "id": "full-date-in-es",
+      "args": [
+        {
+          "plan": {
+            "name": "Nuit",
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "es"
+        }
+      ]
+    },
+    {
+      "id": "full-date-in-it",
+      "args": [
+        {
+          "plan": {
+            "name": "Nuit",
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "it"
+        }
+      ]
+    },
+    {
+      "id": "full-date-in-pt-br",
+      "args": [
+        {
+          "plan": {
+            "name": "Nuit",
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "pt-BR"
+        }
+      ]
+    },
+    {
+      "id": "full-date-in-zh-hans",
+      "args": [
+        {
+          "plan": {
+            "name": "Nuit",
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "zh-Hans"
+        }
+      ]
+    },
+    {
+      "id": "full-date-in-zh-hant",
+      "args": [
+        {
+          "plan": {
+            "name": "Nuit",
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "id": "full-date-in-ru",
+      "args": [
+        {
+          "plan": {
+            "name": "Nuit",
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "ru"
+        }
+      ]
+    },
+    {
+      "id": "full-date-in-en-xa",
+      "args": [
+        {
+          "plan": {
+            "name": "Nuit",
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "en-XA"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-without-target-in-ja",
+      "args": [
+        {
+          "plan": {
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "ja"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-without-target-in-de",
+      "args": [
+        {
+          "plan": {
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "de"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-without-target-in-es",
+      "args": [
+        {
+          "plan": {
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "es"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-without-target-in-it",
+      "args": [
+        {
+          "plan": {
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "it"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-without-target-in-pt-br",
+      "args": [
+        {
+          "plan": {
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "pt-BR"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-without-target-in-ru",
+      "args": [
+        {
+          "plan": {
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "ru"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-without-target-in-zh-hans",
+      "args": [
+        {
+          "plan": {
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "zh-Hans"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-without-target-in-zh-hant",
+      "args": [
+        {
+          "plan": {
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "zh-Hant"
+        }
+      ]
+    },
+    {
+      "id": "unnamed-plan-without-target-in-en-xa",
+      "args": [
+        {
+          "plan": {
+            "date": "2026-10-02"
+          },
+          "targets": [],
+          "locale": "en-XA"
+        }
+      ]
+    }
+  ]
+}

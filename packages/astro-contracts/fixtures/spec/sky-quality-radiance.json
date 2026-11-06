@@ -1,0 +1,27 @@
+{
+  "module": "sky-quality-radiance",
+  "package": "portal",
+  "file": "sky-quality",
+  "export": "sqmFromViirsRadiance",
+  "cases": [
+    { "id": "no-propagated-light-is-the-natural-sky", "args": [0] },
+    { "id": "far-below-the-natural-floor", "args": [0.001] },
+    { "id": "remote-rural-propagated-radiance", "args": [0.05] },
+    { "id": "rural-propagated-radiance", "args": [0.3] },
+    { "id": "outer-suburb-propagated-radiance", "args": [2] },
+    { "id": "suburban-propagated-radiance", "args": [8] },
+    { "id": "urban-propagated-radiance", "args": [30] },
+    { "id": "city-core-propagated-radiance", "args": [250] },
+    { "id": "negative-radiance-clamps-to-zero", "args": [-3] },
+    { "id": "non-numeric-returns-null", "args": ["abc"] },
+    {
+      "id": "suburban-propagated-radiance-in-japan-applies-the-region",
+      "args": [8, 35.6762, 139.6503]
+    },
+    {
+      "id": "suburban-propagated-radiance-just-across-the-strait-stays-global",
+      "args": [8, 35.1796, 129.0756]
+    },
+    { "id": "invalid-position-falls-back-to-global", "args": [8, null, null] }
+  ]
+}

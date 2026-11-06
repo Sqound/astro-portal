@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "provider": {
+    "id": "lightpollutionmap",
+    "layer": "PostGIS:SB_2025_raw",
+    "method": "viirs-modeled-zenith-sky-brightness",
+    "estimated": true
+  },
+  "targetQuality": {
+    "m42-demo": {
+      "bortleClass": 4,
+      "sqm": 20.72,
+      "source": "lightpollutionmap",
+      "method": "viirs-modeled-zenith-sky-brightness",
+      "estimated": true,
+      "calculatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  },
+  "assetQuality": {}
+}

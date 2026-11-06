@@ -1,0 +1,73 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "knowledge": {
+            "photoImageCredit": "NASA",
+            "photoThumbnailUrl": "p.jpg"
+          }
+        }
+      ],
+      "id": "photo-mode-uses-thumbnail",
+      "result": { "credit": "NASA", "source": "photo", "url": "p.jpg" }
+    },
+    {
+      "args": [
+        {
+          "featured": { "imageUrl": "f.jpg" },
+          "knowledge": { "photoThumbnailUrl": "p.jpg" }
+        }
+      ],
+      "id": "featured-image-wins-in-photo-mode",
+      "result": { "credit": null, "source": "photo", "url": "f.jpg" }
+    },
+    {
+      "args": [
+        {
+          "knowledge": {
+            "photoThumbnailUrl": "p.jpg",
+            "visualImageCredit": "Vc",
+            "visualThumbnailUrl": "v.jpg"
+          }
+        },
+        { "visualMode": true }
+      ],
+      "id": "visual-mode-prefers-reference-image",
+      "result": { "credit": "Vc", "source": "visual", "url": "v.jpg" }
+    },
+    {
+      "args": [
+        {
+          "knowledge": {
+            "visualPreviewImageCredit": "Vpc",
+            "visualPreviewThumbnailUrl": "vp.jpg"
+          }
+        },
+        { "visualMode": true }
+      ],
+      "id": "visual-mode-falls-back-to-preview",
+      "result": { "credit": "Vpc", "source": "visual", "url": "vp.jpg" }
+    },
+    {
+      "args": [
+        { "knowledge": { "photoThumbnailUrl": "p.jpg" } },
+        { "visualMode": true }
+      ],
+      "id": "visual-mode-without-visual-images-falls-back-to-photo",
+      "result": { "credit": null, "source": "photo", "url": "p.jpg" }
+    },
+    {
+      "args": [{}, { "fallback": "default.jpg" }],
+      "id": "no-images-uses-explicit-fallback",
+      "result": { "credit": null, "source": "photo", "url": "default.jpg" }
+    },
+    {
+      "args": [{}],
+      "id": "no-images-no-fallback-is-null",
+      "result": { "credit": null, "source": "photo", "url": null }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "target-image-variants"
+}

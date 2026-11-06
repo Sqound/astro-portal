@@ -1,0 +1,15 @@
+{
+  "exchange": "session-measured",
+  "description": "A night Astro Sync created and analysed: no plan, its steps and its analysis give the figures, the main exposure of the target and the number of exposure families, and a capture gives the thumbnail.",
+  "given": "The 9 October night of `list`.",
+  "handler": "route:sessions/[id]",
+  "phase": "read",
+  "params": {
+    "id": "{session:astro-sync}"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/sessions/{session:astro-sync}"
+  },
+  "schema": "session.schema.json#/$defs/detail"
+}

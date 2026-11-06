@@ -1,0 +1,93 @@
+{
+  "comment": "The focal line of the photo tab and its detail (French), the instrument always named with its focal length and its aperture, the ideal frame naming the sensor it is computed for (integratedCamera: the telescope's camera is built in; cameraName/cameraOwned: a camera of « Mon matériel » or of the example). Read by packages/planner/tests/target-preview-advice.test.mjs and by the same test of the mobile application.",
+  "resolved": {
+    "s50": {
+      "mode": "imaging",
+      "sensorWidthMm": 11.3,
+      "sensorHeightMm": 6.4,
+      "focalLengthMm": 250,
+      "apertureMm": 50
+    },
+    "s50NoAperture": {
+      "mode": "imaging",
+      "sensorWidthMm": 11.3,
+      "sensorHeightMm": 6.4,
+      "focalLengthMm": 250,
+      "apertureMm": null
+    },
+    "s50Fits": {
+      "mode": "imaging",
+      "sensorWidthMm": 11.3,
+      "sensorHeightMm": 6.4,
+      "focalLengthMm": 70,
+      "apertureMm": 50
+    }
+  },
+  "cases": [
+    {
+      "target": "veil",
+      "resolved": "s50",
+      "telescopeName": "Seestar S50",
+      "integratedCamera": true,
+      "title": "Cadre idéal pour le capteur Seestar S50 (11,3 × 6,4 mm) : focale 60–90 mm",
+      "detail": "Avec Seestar S50 (focale 250 mm, ouverture 50 mm), vous voyez le centre. Aucun télescope de votre matériel n’a une focale de 60–90 mm."
+    },
+    {
+      "target": "m51",
+      "resolved": "s50",
+      "telescopeName": "Seestar S50",
+      "integratedCamera": true,
+      "title": "Cadre idéal pour le capteur Seestar S50 (11,3 × 6,4 mm) : focale 770–1 280 mm",
+      "detail": "Avec Seestar S50 (focale 250 mm, ouverture 50 mm), la cible occupe 13 % du cadre. Aucun télescope de votre matériel n’a une focale de 770–1 280 mm."
+    },
+    {
+      "target": "veil",
+      "resolved": "s50NoAperture",
+      "telescopeName": "",
+      "title": "Cadre idéal pour un capteur de 11,3 × 6,4 mm : focale 60–90 mm",
+      "detail": "Avec votre instrument (focale 250 mm), vous voyez le centre. Aucun télescope de votre matériel n’a une focale de 60–90 mm."
+    },
+    {
+      "target": "veil",
+      "resolved": "s50Fits",
+      "telescopeName": "Seestar S50",
+      "integratedCamera": true,
+      "title": "Cadre idéal pour le capteur Seestar S50 (11,3 × 6,4 mm) : focale 60–90 mm · votre focale de 70 mm convient",
+      "detail": "Avec Seestar S50 (focale 70 mm, ouverture 50 mm), la cible tient dans le cadre (51 %)."
+    },
+    {
+      "target": "veil",
+      "resolved": "s50",
+      "telescopeName": "Newton 250/1200",
+      "cameraName": "ZWO ASI533MC Pro",
+      "cameraOwned": true,
+      "title": "Cadre idéal pour votre ZWO ASI533MC Pro (11,3 × 6,4 mm) : focale 60–90 mm",
+      "detail": "Avec Newton 250/1200 (focale 250 mm, ouverture 50 mm), vous voyez le centre. Aucun télescope de votre matériel n’a une focale de 60–90 mm."
+    },
+    {
+      "target": "veil",
+      "resolved": "s50Fits",
+      "telescopeName": "Newton 250/1200",
+      "cameraName": "ZWO ASI533MC Pro",
+      "cameraOwned": true,
+      "title": "Cadre idéal pour votre ZWO ASI533MC Pro (11,3 × 6,4 mm) : focale 60–90 mm · votre focale de 70 mm convient",
+      "detail": "Avec Newton 250/1200 (focale 70 mm, ouverture 50 mm), la cible tient dans le cadre (51 %)."
+    },
+    {
+      "target": "veil",
+      "resolved": "s50",
+      "telescopeName": "Newton 250/1200",
+      "cameraName": "ZWO ASI533MC Pro",
+      "cameraOwned": false,
+      "title": "Cadre idéal pour le capteur ZWO ASI533MC Pro (11,3 × 6,4 mm) : focale 60–90 mm",
+      "detail": "Avec Newton 250/1200 (focale 250 mm, ouverture 50 mm), vous voyez le centre. Aucun télescope de votre matériel n’a une focale de 60–90 mm."
+    },
+    {
+      "target": "veil",
+      "resolved": "s50",
+      "telescopeName": "Newton 250/1200",
+      "title": "Cadre idéal pour un capteur de 11,3 × 6,4 mm : focale 60–90 mm",
+      "detail": "Avec Newton 250/1200 (focale 250 mm, ouverture 50 mm), vous voyez le centre. Aucun télescope de votre matériel n’a une focale de 60–90 mm."
+    }
+  ]
+}

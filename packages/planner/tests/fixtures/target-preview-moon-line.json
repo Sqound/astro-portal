@@ -1,0 +1,33 @@
+{
+  "comment": "The Moon half-line under the photo tab's filter (French). Read by packages/planner/tests/target-preview-advice.test.mjs and by the same test of the mobile application. The threshold is filterMoonIlluminationPercent (30, excluded); no word on the Bortle class.",
+  "resolved": {
+    "mode": "imaging",
+    "sensorWidthMm": 23.5,
+    "sensorHeightMm": 15.7,
+    "focalLengthMm": 1200,
+    "apertureMm": 250
+  },
+  "cases": [
+    {
+      "target": "NGC 6960 (a filter is advised)",
+      "dual": true,
+      "percent": 62,
+      "line": "Lune à 62 % : le filtre double bande compte"
+    },
+    {
+      "target": "NGC 6960",
+      "dual": true,
+      "percent": 31,
+      "line": "Lune à 31 % : le filtre double bande compte"
+    },
+    { "target": "NGC 6960", "dual": true, "percent": 30, "line": null },
+    { "target": "NGC 6960", "dual": true, "percent": 0, "line": null },
+    { "target": "NGC 6960", "dual": true, "percent": null, "line": null },
+    {
+      "target": "M51 (no filter advised)",
+      "dual": false,
+      "percent": 90,
+      "line": null
+    }
+  ]
+}

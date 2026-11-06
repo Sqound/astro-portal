@@ -1,0 +1,285 @@
+{
+  "description": "A night launched with the lines frozen (`planned`: « 28 × 120 s · gain 100 · L ») and measured by Astro Sync (`measured`, source `astro-sync`: the two steps of the analysis add up to 27 frames).",
+  "exchange": "session-planned-measured",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The 12 October night of `list`.",
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/sessions/00000000-0000-4000-8000-000000000023"
+  },
+  "response": {
+    "body": {
+      "debrief": {
+        "decidedAt": "2026-10-14T03:30:00.000Z",
+        "outcome": "executed",
+        "targets": []
+      },
+      "debriefSummary": {
+        "acquiredMinutes": 120,
+        "autoUnconfirmedMinutes": 0,
+        "guidingIncluded": false,
+        "launchedSlots": [
+          {
+            "end": "2026-10-12T21:00:00.000Z",
+            "planItemId": "ic1396",
+            "start": "2026-10-12T19:00:00.000Z",
+            "targetId": "ic1396"
+          }
+        ],
+        "lostByCause": [],
+        "lostMinutes": 0,
+        "perTarget": [
+          {
+            "acquiredMinutes": 120,
+            "autoUnconfirmedMinutes": 0,
+            "outcome": "done",
+            "passages": [
+              {
+                "auto": false,
+                "confirmed": true,
+                "end": "2026-10-12T21:00:00.000Z",
+                "minutes": 120,
+                "pauses": [],
+                "start": "2026-10-12T19:00:00.000Z"
+              }
+            ],
+            "planItemId": "ic1396",
+            "plannedMinutes": 120,
+            "slot": {
+              "end": "2026-10-12T21:00:00.000Z",
+              "start": "2026-10-12T19:00:00.000Z"
+            },
+            "targetId": "ic1396"
+          }
+        ],
+        "plannedMinutes": 120,
+        "segments": {
+          "end": 29863980,
+          "hasAuto": false,
+          "start": 29863860,
+          "targets": [
+            {
+              "end": 29863980,
+              "outcome": "done",
+              "passages": [
+                { "auto": false, "end": 29863980, "start": 29863860 }
+              ],
+              "segments": [
+                { "end": 29863980, "kind": "acquired", "start": 29863860 }
+              ],
+              "start": 29863860,
+              "targetId": "ic1396"
+            }
+          ]
+        }
+      },
+      "events": {
+        "events": [
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0028",
+            "originDeviceId": null,
+            "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+            "receivedAt": "2026-10-14T03:30:00.000Z",
+            "recordedAt": "2026-10-12T19:00:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000023",
+            "timing": "observed",
+            "type": "target_started"
+          },
+          {
+            "eventId": "01J8Z3K9QZ6N3S6R3E6G8H0029",
+            "originDeviceId": null,
+            "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+            "receivedAt": "2026-10-14T03:30:00.000Z",
+            "recordedAt": "2026-10-12T21:00:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000023",
+            "timing": "observed",
+            "type": "target_finished"
+          },
+          {
+            "eventId": "01M4RQRTW0KDYQ86PDGFABHSBE",
+            "originDeviceId": null,
+            "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+            "receivedAt": "2026-10-14T03:30:00.000Z",
+            "recordedAt": "2026-10-12T19:00:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000023",
+            "timing": "planned",
+            "type": "target_started"
+          },
+          {
+            "eventId": "01M4RQRTW16R9YCJYA7NDFFWWW",
+            "originDeviceId": null,
+            "payload": { "planItemId": "ic1396", "targetId": "ic1396" },
+            "receivedAt": "2026-10-14T03:30:00.000Z",
+            "recordedAt": "2026-10-12T21:00:00.000Z",
+            "sessionId": "00000000-0000-4000-8000-000000000023",
+            "timing": "planned",
+            "type": "target_finished"
+          }
+        ],
+        "hasMore": false,
+        "nextSince": "2026-10-14T03:30:00.000Z",
+        "sessionId": "00000000-0000-4000-8000-000000000023"
+      },
+      "guidingLosses": null,
+      "guidingLossesReason": "no_analysis",
+      "guidingSeries": [],
+      "guidingSummary": null,
+      "guidingTrace": null,
+      "night": {
+        "equipment": {
+          "source": "plan",
+          "value": {
+            "cameraId": "00000000-0000-4000-8000-000000000006",
+            "filterIds": [],
+            "mountId": null,
+            "telescopeId": "00000000-0000-4000-8000-000000000005"
+          }
+        },
+        "finishedAt": {
+          "source": "night",
+          "value": "2026-10-12T22:00:00.000Z"
+        },
+        "notes": { "source": "night", "value": null },
+        "place": {
+          "source": "plan",
+          "value": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Étoiles"
+          }
+        },
+        "startedAt": { "source": "night", "value": "2026-10-12T19:00:00.000Z" },
+        "targetIds": { "source": "plan", "value": ["ic1396"] },
+        "title": { "source": "plan", "value": "Nuit du 2026-10-12" }
+      },
+      "plan": {
+        "equipment": {
+          "cameraId": "00000000-0000-4000-8000-000000000006",
+          "mode": "imaging",
+          "telescopeId": "00000000-0000-4000-8000-000000000005"
+        },
+        "frozenAt": "2026-10-14T03:30:00.000Z",
+        "nightEndAt": "2026-10-13T04:00:00.000Z",
+        "nightStartAt": "2026-10-12T19:00:00.000Z",
+        "planId": "00000000-0000-4000-8000-000000000022",
+        "revision": 1,
+        "status": "executed"
+      },
+      "posesSummary": null,
+      "qualitySummary": null,
+      "readOnly": false,
+      "session": {
+        "clientSessionId": null,
+        "createdAt": "2026-10-14T03:30:00.000Z",
+        "eveningDate": "2026-10-12",
+        "eventCount": 4,
+        "finishedAt": "2026-10-12T22:00:00.000Z",
+        "id": "00000000-0000-4000-8000-000000000023",
+        "origin": "execution",
+        "outcome": "executed",
+        "pendingSupplementCount": 0,
+        "planId": "00000000-0000-4000-8000-000000000022",
+        "projectId": null,
+        "reworkRevision": 0,
+        "reworkedAt": null,
+        "startedAt": "2026-10-12T19:00:00.000Z",
+        "status": "finished",
+        "supplementCount": 0,
+        "updatedAt": "2026-10-14T03:30:00.000Z"
+      },
+      "steps": [
+        {
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "edited": false,
+          "editedAt": null,
+          "exposureSeconds": 120,
+          "filter": "L",
+          "frameCount": 20,
+          "gain": 100,
+          "id": "00000000-0000-4000-8000-000000000024",
+          "integrationSeconds": 2400,
+          "origin": "analysis",
+          "position": 1,
+          "sessionId": "00000000-0000-4000-8000-000000000023",
+          "stepKey": "j1",
+          "targetHint": null,
+          "targetId": "ic1396",
+          "updatedAt": "2026-10-14T00:00:00.000Z"
+        },
+        {
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "edited": false,
+          "editedAt": null,
+          "exposureSeconds": 120,
+          "filter": "L",
+          "frameCount": 7,
+          "gain": 100,
+          "id": "00000000-0000-4000-8000-000000000025",
+          "integrationSeconds": 840,
+          "origin": "analysis",
+          "position": 2,
+          "sessionId": "00000000-0000-4000-8000-000000000023",
+          "stepKey": "j2",
+          "targetHint": null,
+          "targetId": "ic1396",
+          "updatedAt": "2026-10-14T00:00:00.000Z"
+        }
+      ],
+      "supplements": [],
+      "targets": [
+        {
+          "acquiredSeconds": 7200,
+          "captureId": null,
+          "exposureFamilies": 1,
+          "exposureSeconds": 120,
+          "filter": "L",
+          "finishedAt": "2026-10-12T21:00:00.000Z",
+          "frameCount": 27,
+          "label": "IC 1396",
+          "measured": {
+            "lines": [
+              {
+                "exposureSeconds": 120,
+                "filter": "L",
+                "frameCount": 27,
+                "gain": 100
+              }
+            ],
+            "source": "astro-sync"
+          },
+          "outcome": "done",
+          "passages": null,
+          "planItemId": "ic1396",
+          "planned": {
+            "lines": [
+              {
+                "exposureSeconds": 120,
+                "filter": "L",
+                "frameCount": 28,
+                "gain": 100
+              }
+            ],
+            "ruleVersion": "expo-b-1"
+          },
+          "plannedSeconds": 7200,
+          "plannedSlot": {
+            "end": "2026-10-12T21:00:00.000Z",
+            "start": "2026-10-12T19:00:00.000Z"
+          },
+          "reason": null,
+          "slot": {
+            "end": "2026-10-12T21:00:00.000Z",
+            "start": "2026-10-12T19:00:00.000Z"
+          },
+          "startedAt": "2026-10-12T19:00:00.000Z",
+          "state": "planned",
+          "targetId": "ic1396",
+          "thumbnailUrl": null
+        }
+      ],
+      "zone": { "timeZone": "UTC", "utcOffsetMinutes": 0 }
+    },
+    "schema": "session.schema.json#/$defs/detail",
+    "status": 200
+  }
+}

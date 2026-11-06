@@ -1,0 +1,129 @@
+{
+  "module": "visual-suggestion-malus",
+  "package": "planner",
+  "file": "suggestion-ranking",
+  "export": "visualSuggestionMalus",
+  "cases": [
+    {
+      "id": "suitable-right-size-pays-nothing",
+      "args": [
+        {
+          "status": "suitable",
+          "magnitudeMargin": 2.4,
+          "sizeShare": 0
+        }
+      ]
+    },
+    {
+      "id": "difficult-exit-pupil-only",
+      "args": [
+        {
+          "status": "difficult",
+          "magnitudeMargin": 1.2,
+          "sizeShare": 0
+        }
+      ]
+    },
+    {
+      "id": "difficult-under-the-limit",
+      "args": [
+        {
+          "status": "difficult",
+          "magnitudeMargin": -0.92,
+          "sizeShare": 0
+        }
+      ]
+    },
+    {
+      "id": "difficult-deficit-capped-at-two",
+      "args": [
+        {
+          "status": "difficult",
+          "magnitudeMargin": -1.99,
+          "sizeShare": 0
+        }
+      ]
+    },
+    {
+      "id": "small-target",
+      "args": [
+        {
+          "status": "suitable",
+          "magnitudeMargin": 3.4,
+          "sizeShare": 0.4437
+        }
+      ]
+    },
+    {
+      "id": "large-target",
+      "args": [
+        {
+          "status": "suitable",
+          "magnitudeMargin": 1.7,
+          "sizeShare": 0.3218
+        }
+      ]
+    },
+    {
+      "id": "difficult-and-small",
+      "args": [
+        {
+          "status": "difficult",
+          "magnitudeMargin": -0.5,
+          "sizeShare": 1
+        }
+      ]
+    },
+    {
+      "id": "unknown-small",
+      "args": [
+        {
+          "status": "unknown",
+          "magnitudeMargin": null,
+          "sizeShare": 0.5
+        }
+      ]
+    },
+    {
+      "id": "not-applicable",
+      "args": [
+        {
+          "status": "not-applicable",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "no-visual",
+      "args": [null]
+    },
+    {
+      "id": "generic-pair-pays-eight",
+      "args": [
+        {
+          "status": "suitable",
+          "magnitudeMargin": 2.1,
+          "sizeShare": 0,
+          "pair": {
+            "generic": true,
+            "status": "suitable"
+          }
+        }
+      ]
+    },
+    {
+      "id": "difficult-generic-pair-pays-both",
+      "args": [
+        {
+          "status": "difficult",
+          "magnitudeMargin": -0.5,
+          "sizeShare": 0.2,
+          "pair": {
+            "generic": true,
+            "status": "difficult"
+          }
+        }
+      ]
+    }
+  ]
+}

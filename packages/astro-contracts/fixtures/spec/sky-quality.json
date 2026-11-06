@@ -1,0 +1,14 @@
+{
+  "module": "sky-quality",
+  "package": "portal",
+  "file": "sky-quality",
+  "export": "sqmFromArtificialBrightness",
+  "cases": [
+    { "id": "zero-brightness", "args": [0] },
+    { "id": "moderate-brightness", "args": [1] },
+    { "id": "high-brightness", "args": [1000] },
+    { "id": "out-of-range-returns-null", "args": [100000000] },
+    { "id": "negative-returns-null", "args": [-5] },
+    { "id": "non-numeric-returns-null", "args": ["abc"] }
+  ]
+}

@@ -1,0 +1,1955 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "filters": [],
+          "from": "2026-09-28",
+          "minimumMinutes": 180,
+          "nights": 60,
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 10, "azimuth": 0 },
+                { "altitude": 10, "azimuth": 10 },
+                { "altitude": 10, "azimuth": 20 },
+                { "altitude": 10, "azimuth": 30 },
+                { "altitude": 10, "azimuth": 40 },
+                { "altitude": 10, "azimuth": 50 },
+                { "altitude": 10, "azimuth": 60 },
+                { "altitude": 10, "azimuth": 70 },
+                { "altitude": 10, "azimuth": 80 },
+                { "altitude": 10, "azimuth": 90 },
+                { "altitude": 10, "azimuth": 100 },
+                { "altitude": 10, "azimuth": 110 },
+                { "altitude": 10, "azimuth": 120 },
+                { "altitude": 10, "azimuth": 130 },
+                { "altitude": 10, "azimuth": 140 },
+                { "altitude": 10, "azimuth": 150 },
+                { "altitude": 10, "azimuth": 160 },
+                { "altitude": 10, "azimuth": 170 },
+                { "altitude": 10, "azimuth": 180 },
+                { "altitude": 10, "azimuth": 190 },
+                { "altitude": 10, "azimuth": 200 },
+                { "altitude": 10, "azimuth": 210 },
+                { "altitude": 10, "azimuth": 220 },
+                { "altitude": 35, "azimuth": 230 },
+                { "altitude": 35, "azimuth": 240 },
+                { "altitude": 35, "azimuth": 250 },
+                { "altitude": 35, "azimuth": 260 },
+                { "altitude": 35, "azimuth": 270 },
+                { "altitude": 35, "azimuth": 280 },
+                { "altitude": 35, "azimuth": 290 },
+                { "altitude": 35, "azimuth": 300 },
+                { "altitude": 35, "azimuth": 310 },
+                { "altitude": 35, "azimuth": 320 },
+                { "altitude": 10, "azimuth": 330 },
+                { "altitude": 10, "azimuth": 340 },
+                { "altitude": 10, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 20, "ra": 310 } }
+        }
+      ],
+      "id": "season-ends-behind-the-western-mask",
+      "result": {
+        "nights": [
+          {
+            "date": "2026-09-28",
+            "moonIllumination": 94,
+            "seasonMinutes": 286,
+            "usableMinutes": 286
+          },
+          {
+            "date": "2026-09-29",
+            "moonIllumination": 87,
+            "seasonMinutes": 285,
+            "usableMinutes": 285
+          },
+          {
+            "date": "2026-09-30",
+            "moonIllumination": 79,
+            "seasonMinutes": 283,
+            "usableMinutes": 283
+          },
+          {
+            "date": "2026-10-01",
+            "moonIllumination": 69,
+            "seasonMinutes": 281,
+            "usableMinutes": 281
+          },
+          {
+            "date": "2026-10-02",
+            "moonIllumination": 58,
+            "seasonMinutes": 279,
+            "usableMinutes": 279
+          },
+          {
+            "date": "2026-10-03",
+            "moonIllumination": 46,
+            "seasonMinutes": 277,
+            "usableMinutes": 277
+          },
+          {
+            "date": "2026-10-04",
+            "moonIllumination": 35,
+            "seasonMinutes": 275,
+            "usableMinutes": 275
+          },
+          {
+            "date": "2026-10-05",
+            "moonIllumination": 25,
+            "seasonMinutes": 272,
+            "usableMinutes": 272
+          },
+          {
+            "date": "2026-10-06",
+            "moonIllumination": 16,
+            "seasonMinutes": 270,
+            "usableMinutes": 270
+          },
+          {
+            "date": "2026-10-07",
+            "moonIllumination": 9,
+            "seasonMinutes": 268,
+            "usableMinutes": 268
+          },
+          {
+            "date": "2026-10-08",
+            "moonIllumination": 4,
+            "seasonMinutes": 266,
+            "usableMinutes": 266
+          },
+          {
+            "date": "2026-10-09",
+            "moonIllumination": 1,
+            "seasonMinutes": 264,
+            "usableMinutes": 264
+          },
+          {
+            "date": "2026-10-10",
+            "moonIllumination": 0,
+            "seasonMinutes": 262,
+            "usableMinutes": 262
+          },
+          {
+            "date": "2026-10-11",
+            "moonIllumination": 2,
+            "seasonMinutes": 259,
+            "usableMinutes": 259
+          },
+          {
+            "date": "2026-10-12",
+            "moonIllumination": 5,
+            "seasonMinutes": 257,
+            "usableMinutes": 257
+          },
+          {
+            "date": "2026-10-13",
+            "moonIllumination": 10,
+            "seasonMinutes": 255,
+            "usableMinutes": 255
+          },
+          {
+            "date": "2026-10-14",
+            "moonIllumination": 17,
+            "seasonMinutes": 254,
+            "usableMinutes": 254
+          },
+          {
+            "date": "2026-10-15",
+            "moonIllumination": 25,
+            "seasonMinutes": 251,
+            "usableMinutes": 251
+          },
+          {
+            "date": "2026-10-16",
+            "moonIllumination": 33,
+            "seasonMinutes": 249,
+            "usableMinutes": 249
+          },
+          {
+            "date": "2026-10-17",
+            "moonIllumination": 43,
+            "seasonMinutes": 247,
+            "usableMinutes": 247
+          },
+          {
+            "date": "2026-10-18",
+            "moonIllumination": 52,
+            "seasonMinutes": 244,
+            "usableMinutes": 244
+          },
+          {
+            "date": "2026-10-19",
+            "moonIllumination": 61,
+            "seasonMinutes": 242,
+            "usableMinutes": 139
+          },
+          {
+            "date": "2026-10-20",
+            "moonIllumination": 71,
+            "seasonMinutes": 240,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-21",
+            "moonIllumination": 79,
+            "seasonMinutes": 237,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-22",
+            "moonIllumination": 87,
+            "seasonMinutes": 235,
+            "usableMinutes": 235
+          },
+          {
+            "date": "2026-10-23",
+            "moonIllumination": 93,
+            "seasonMinutes": 232,
+            "usableMinutes": 232
+          },
+          {
+            "date": "2026-10-24",
+            "moonIllumination": 98,
+            "seasonMinutes": 230,
+            "usableMinutes": 230
+          },
+          {
+            "date": "2026-10-25",
+            "moonIllumination": 100,
+            "seasonMinutes": 227,
+            "usableMinutes": 227
+          },
+          {
+            "date": "2026-10-26",
+            "moonIllumination": 99,
+            "seasonMinutes": 224,
+            "usableMinutes": 224
+          },
+          {
+            "date": "2026-10-27",
+            "moonIllumination": 96,
+            "seasonMinutes": 222,
+            "usableMinutes": 222
+          },
+          {
+            "date": "2026-10-28",
+            "moonIllumination": 90,
+            "seasonMinutes": 220,
+            "usableMinutes": 220
+          },
+          {
+            "date": "2026-10-29",
+            "moonIllumination": 82,
+            "seasonMinutes": 218,
+            "usableMinutes": 218
+          },
+          {
+            "date": "2026-10-30",
+            "moonIllumination": 72,
+            "seasonMinutes": 215,
+            "usableMinutes": 215
+          },
+          {
+            "date": "2026-10-31",
+            "moonIllumination": 61,
+            "seasonMinutes": 212,
+            "usableMinutes": 212
+          },
+          {
+            "date": "2026-11-01",
+            "moonIllumination": 50,
+            "seasonMinutes": 210,
+            "usableMinutes": 210
+          },
+          {
+            "date": "2026-11-02",
+            "moonIllumination": 39,
+            "seasonMinutes": 207,
+            "usableMinutes": 207
+          },
+          {
+            "date": "2026-11-03",
+            "moonIllumination": 29,
+            "seasonMinutes": 204,
+            "usableMinutes": 204
+          },
+          {
+            "date": "2026-11-04",
+            "moonIllumination": 20,
+            "seasonMinutes": 201,
+            "usableMinutes": 201
+          },
+          {
+            "date": "2026-11-05",
+            "moonIllumination": 12,
+            "seasonMinutes": 198,
+            "usableMinutes": 198
+          },
+          {
+            "date": "2026-11-06",
+            "moonIllumination": 6,
+            "seasonMinutes": 195,
+            "usableMinutes": 195
+          },
+          {
+            "date": "2026-11-07",
+            "moonIllumination": 2,
+            "seasonMinutes": 192,
+            "usableMinutes": 192
+          },
+          {
+            "date": "2026-11-08",
+            "moonIllumination": 0,
+            "seasonMinutes": 189,
+            "usableMinutes": 189
+          },
+          {
+            "date": "2026-11-09",
+            "moonIllumination": 0,
+            "seasonMinutes": 187,
+            "usableMinutes": 187
+          },
+          {
+            "date": "2026-11-10",
+            "moonIllumination": 2,
+            "seasonMinutes": 183,
+            "usableMinutes": 183
+          },
+          {
+            "date": "2026-11-11",
+            "moonIllumination": 6,
+            "seasonMinutes": 180,
+            "usableMinutes": 180
+          },
+          {
+            "date": "2026-11-12",
+            "moonIllumination": 12,
+            "seasonMinutes": 178,
+            "usableMinutes": 178
+          },
+          {
+            "date": "2026-11-13",
+            "moonIllumination": 18,
+            "seasonMinutes": 175,
+            "usableMinutes": 175
+          },
+          {
+            "date": "2026-11-14",
+            "moonIllumination": 26,
+            "seasonMinutes": 172,
+            "usableMinutes": 172
+          },
+          {
+            "date": "2026-11-15",
+            "moonIllumination": 35,
+            "seasonMinutes": 169,
+            "usableMinutes": 169
+          },
+          {
+            "date": "2026-11-16",
+            "moonIllumination": 44,
+            "seasonMinutes": 166,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-11-17",
+            "moonIllumination": 54,
+            "seasonMinutes": 162,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-11-18",
+            "moonIllumination": 63,
+            "seasonMinutes": 159,
+            "usableMinutes": 159
+          },
+          {
+            "date": "2026-11-19",
+            "moonIllumination": 73,
+            "seasonMinutes": 156,
+            "usableMinutes": 156
+          },
+          {
+            "date": "2026-11-20",
+            "moonIllumination": 82,
+            "seasonMinutes": 152,
+            "usableMinutes": 152
+          },
+          {
+            "date": "2026-11-21",
+            "moonIllumination": 89,
+            "seasonMinutes": 149,
+            "usableMinutes": 149
+          },
+          {
+            "date": "2026-11-22",
+            "moonIllumination": 95,
+            "seasonMinutes": 146,
+            "usableMinutes": 146
+          },
+          {
+            "date": "2026-11-23",
+            "moonIllumination": 99,
+            "seasonMinutes": 142,
+            "usableMinutes": 142
+          },
+          {
+            "date": "2026-11-24",
+            "moonIllumination": 100,
+            "seasonMinutes": 139,
+            "usableMinutes": 139
+          },
+          {
+            "date": "2026-11-25",
+            "moonIllumination": 98,
+            "seasonMinutes": 135,
+            "usableMinutes": 135
+          },
+          {
+            "date": "2026-11-26",
+            "moonIllumination": 93,
+            "seasonMinutes": 132,
+            "usableMinutes": 132
+          }
+        ],
+        "state": "ends",
+        "weeksLeft": 6,
+        "workableUntil": "2026-11-11"
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": { "Dual band": 30, "L": 90 }
+          },
+          "filters": ["Dual band"],
+          "from": "2026-09-28",
+          "nights": 30,
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 10, "azimuth": 0 },
+                { "altitude": 10, "azimuth": 10 },
+                { "altitude": 10, "azimuth": 20 },
+                { "altitude": 10, "azimuth": 30 },
+                { "altitude": 10, "azimuth": 40 },
+                { "altitude": 10, "azimuth": 50 },
+                { "altitude": 10, "azimuth": 60 },
+                { "altitude": 10, "azimuth": 70 },
+                { "altitude": 10, "azimuth": 80 },
+                { "altitude": 10, "azimuth": 90 },
+                { "altitude": 10, "azimuth": 100 },
+                { "altitude": 10, "azimuth": 110 },
+                { "altitude": 10, "azimuth": 120 },
+                { "altitude": 10, "azimuth": 130 },
+                { "altitude": 10, "azimuth": 140 },
+                { "altitude": 10, "azimuth": 150 },
+                { "altitude": 10, "azimuth": 160 },
+                { "altitude": 10, "azimuth": 170 },
+                { "altitude": 10, "azimuth": 180 },
+                { "altitude": 10, "azimuth": 190 },
+                { "altitude": 10, "azimuth": 200 },
+                { "altitude": 10, "azimuth": 210 },
+                { "altitude": 10, "azimuth": 220 },
+                { "altitude": 35, "azimuth": 230 },
+                { "altitude": 35, "azimuth": 240 },
+                { "altitude": 35, "azimuth": 250 },
+                { "altitude": 35, "azimuth": 260 },
+                { "altitude": 35, "azimuth": 270 },
+                { "altitude": 35, "azimuth": 280 },
+                { "altitude": 35, "azimuth": 290 },
+                { "altitude": 35, "azimuth": 300 },
+                { "altitude": 35, "azimuth": 310 },
+                { "altitude": 35, "azimuth": 320 },
+                { "altitude": 10, "azimuth": 330 },
+                { "altitude": 10, "azimuth": 340 },
+                { "altitude": 10, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 44.33, "ra": 314.75 } }
+        }
+      ],
+      "id": "circumpolar-target-continues",
+      "result": {
+        "nights": [
+          {
+            "date": "2026-09-28",
+            "moonIllumination": 94,
+            "seasonMinutes": 389,
+            "usableMinutes": 389
+          },
+          {
+            "date": "2026-09-29",
+            "moonIllumination": 87,
+            "seasonMinutes": 387,
+            "usableMinutes": 387
+          },
+          {
+            "date": "2026-09-30",
+            "moonIllumination": 79,
+            "seasonMinutes": 385,
+            "usableMinutes": 385
+          },
+          {
+            "date": "2026-10-01",
+            "moonIllumination": 69,
+            "seasonMinutes": 383,
+            "usableMinutes": 383
+          },
+          {
+            "date": "2026-10-02",
+            "moonIllumination": 58,
+            "seasonMinutes": 381,
+            "usableMinutes": 381
+          },
+          {
+            "date": "2026-10-03",
+            "moonIllumination": 46,
+            "seasonMinutes": 379,
+            "usableMinutes": 379
+          },
+          {
+            "date": "2026-10-04",
+            "moonIllumination": 35,
+            "seasonMinutes": 377,
+            "usableMinutes": 377
+          },
+          {
+            "date": "2026-10-05",
+            "moonIllumination": 25,
+            "seasonMinutes": 374,
+            "usableMinutes": 374
+          },
+          {
+            "date": "2026-10-06",
+            "moonIllumination": 16,
+            "seasonMinutes": 372,
+            "usableMinutes": 372
+          },
+          {
+            "date": "2026-10-07",
+            "moonIllumination": 9,
+            "seasonMinutes": 370,
+            "usableMinutes": 370
+          },
+          {
+            "date": "2026-10-08",
+            "moonIllumination": 4,
+            "seasonMinutes": 368,
+            "usableMinutes": 368
+          },
+          {
+            "date": "2026-10-09",
+            "moonIllumination": 1,
+            "seasonMinutes": 366,
+            "usableMinutes": 366
+          },
+          {
+            "date": "2026-10-10",
+            "moonIllumination": 0,
+            "seasonMinutes": 364,
+            "usableMinutes": 364
+          },
+          {
+            "date": "2026-10-11",
+            "moonIllumination": 2,
+            "seasonMinutes": 361,
+            "usableMinutes": 361
+          },
+          {
+            "date": "2026-10-12",
+            "moonIllumination": 5,
+            "seasonMinutes": 360,
+            "usableMinutes": 360
+          },
+          {
+            "date": "2026-10-13",
+            "moonIllumination": 10,
+            "seasonMinutes": 358,
+            "usableMinutes": 358
+          },
+          {
+            "date": "2026-10-14",
+            "moonIllumination": 17,
+            "seasonMinutes": 356,
+            "usableMinutes": 356
+          },
+          {
+            "date": "2026-10-15",
+            "moonIllumination": 25,
+            "seasonMinutes": 353,
+            "usableMinutes": 353
+          },
+          {
+            "date": "2026-10-16",
+            "moonIllumination": 33,
+            "seasonMinutes": 351,
+            "usableMinutes": 351
+          },
+          {
+            "date": "2026-10-17",
+            "moonIllumination": 43,
+            "seasonMinutes": 349,
+            "usableMinutes": 349
+          },
+          {
+            "date": "2026-10-18",
+            "moonIllumination": 52,
+            "seasonMinutes": 346,
+            "usableMinutes": 346
+          },
+          {
+            "date": "2026-10-19",
+            "moonIllumination": 61,
+            "seasonMinutes": 344,
+            "usableMinutes": 344
+          },
+          {
+            "date": "2026-10-20",
+            "moonIllumination": 71,
+            "seasonMinutes": 342,
+            "usableMinutes": 342
+          },
+          {
+            "date": "2026-10-21",
+            "moonIllumination": 79,
+            "seasonMinutes": 339,
+            "usableMinutes": 339
+          },
+          {
+            "date": "2026-10-22",
+            "moonIllumination": 87,
+            "seasonMinutes": 337,
+            "usableMinutes": 337
+          },
+          {
+            "date": "2026-10-23",
+            "moonIllumination": 93,
+            "seasonMinutes": 334,
+            "usableMinutes": 334
+          },
+          {
+            "date": "2026-10-24",
+            "moonIllumination": 98,
+            "seasonMinutes": 332,
+            "usableMinutes": 332
+          },
+          {
+            "date": "2026-10-25",
+            "moonIllumination": 100,
+            "seasonMinutes": 329,
+            "usableMinutes": 329
+          },
+          {
+            "date": "2026-10-26",
+            "moonIllumination": 99,
+            "seasonMinutes": 327,
+            "usableMinutes": 327
+          },
+          {
+            "date": "2026-10-27",
+            "moonIllumination": 96,
+            "seasonMinutes": 325,
+            "usableMinutes": 325
+          }
+        ],
+        "state": "continues",
+        "weeksLeft": null,
+        "workableUntil": null
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "2026-09-28",
+          "nights": 14,
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Camping du Lac Noir",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": -65, "ra": 100 } }
+        }
+      ],
+      "id": "southern-target-never-workable",
+      "result": {
+        "nights": [
+          {
+            "date": "2026-09-28",
+            "moonIllumination": 94,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-09-29",
+            "moonIllumination": 87,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-09-30",
+            "moonIllumination": 79,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-01",
+            "moonIllumination": 69,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-02",
+            "moonIllumination": 58,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-03",
+            "moonIllumination": 46,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-04",
+            "moonIllumination": 35,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-05",
+            "moonIllumination": 25,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-06",
+            "moonIllumination": 16,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-07",
+            "moonIllumination": 9,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-08",
+            "moonIllumination": 4,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-09",
+            "moonIllumination": 1,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-10",
+            "moonIllumination": 0,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-11",
+            "moonIllumination": 2,
+            "seasonMinutes": 0,
+            "usableMinutes": 0
+          }
+        ],
+        "state": "none",
+        "weeksLeft": 0,
+        "workableUntil": null
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": { "Dual band": 30, "L": 90 }
+          },
+          "filters": ["L"],
+          "from": "2026-10-15",
+          "nights": 21,
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Camping du Lac Noir",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 44.33, "ra": 314.75 } }
+        }
+      ],
+      "id": "broadband-filter-loses-the-moonlit-nights",
+      "result": {
+        "nights": [
+          {
+            "date": "2026-10-15",
+            "moonIllumination": 25,
+            "seasonMinutes": 386,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-16",
+            "moonIllumination": 33,
+            "seasonMinutes": 384,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-17",
+            "moonIllumination": 43,
+            "seasonMinutes": 382,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-18",
+            "moonIllumination": 52,
+            "seasonMinutes": 379,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-19",
+            "moonIllumination": 61,
+            "seasonMinutes": 378,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-20",
+            "moonIllumination": 71,
+            "seasonMinutes": 376,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-21",
+            "moonIllumination": 79,
+            "seasonMinutes": 373,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-22",
+            "moonIllumination": 87,
+            "seasonMinutes": 371,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-23",
+            "moonIllumination": 93,
+            "seasonMinutes": 368,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-24",
+            "moonIllumination": 98,
+            "seasonMinutes": 366,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-25",
+            "moonIllumination": 100,
+            "seasonMinutes": 363,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-26",
+            "moonIllumination": 99,
+            "seasonMinutes": 360,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-27",
+            "moonIllumination": 96,
+            "seasonMinutes": 358,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-28",
+            "moonIllumination": 90,
+            "seasonMinutes": 355,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-29",
+            "moonIllumination": 82,
+            "seasonMinutes": 353,
+            "usableMinutes": 353
+          },
+          {
+            "date": "2026-10-30",
+            "moonIllumination": 72,
+            "seasonMinutes": 350,
+            "usableMinutes": 350
+          },
+          {
+            "date": "2026-10-31",
+            "moonIllumination": 61,
+            "seasonMinutes": 347,
+            "usableMinutes": 347
+          },
+          {
+            "date": "2026-11-01",
+            "moonIllumination": 50,
+            "seasonMinutes": 345,
+            "usableMinutes": 345
+          },
+          {
+            "date": "2026-11-02",
+            "moonIllumination": 39,
+            "seasonMinutes": 342,
+            "usableMinutes": 342
+          },
+          {
+            "date": "2026-11-03",
+            "moonIllumination": 29,
+            "seasonMinutes": 340,
+            "usableMinutes": 340
+          },
+          {
+            "date": "2026-11-04",
+            "moonIllumination": 20,
+            "seasonMinutes": 337,
+            "usableMinutes": 337
+          }
+        ],
+        "state": "continues",
+        "weeksLeft": null,
+        "workableUntil": null
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": { "Dual band": 30, "L": 90 }
+          },
+          "filters": ["L", "Dual band"],
+          "from": "2026-10-15",
+          "nights": 21,
+          "place": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Camping du Lac Noir",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 44.33, "ra": 314.75 } }
+        }
+      ],
+      "id": "most-tolerant-filter-wins",
+      "result": {
+        "nights": [
+          {
+            "date": "2026-10-15",
+            "moonIllumination": 25,
+            "seasonMinutes": 386,
+            "usableMinutes": 386
+          },
+          {
+            "date": "2026-10-16",
+            "moonIllumination": 33,
+            "seasonMinutes": 384,
+            "usableMinutes": 384
+          },
+          {
+            "date": "2026-10-17",
+            "moonIllumination": 43,
+            "seasonMinutes": 382,
+            "usableMinutes": 382
+          },
+          {
+            "date": "2026-10-18",
+            "moonIllumination": 52,
+            "seasonMinutes": 379,
+            "usableMinutes": 379
+          },
+          {
+            "date": "2026-10-19",
+            "moonIllumination": 61,
+            "seasonMinutes": 378,
+            "usableMinutes": 378
+          },
+          {
+            "date": "2026-10-20",
+            "moonIllumination": 71,
+            "seasonMinutes": 376,
+            "usableMinutes": 376
+          },
+          {
+            "date": "2026-10-21",
+            "moonIllumination": 79,
+            "seasonMinutes": 373,
+            "usableMinutes": 373
+          },
+          {
+            "date": "2026-10-22",
+            "moonIllumination": 87,
+            "seasonMinutes": 371,
+            "usableMinutes": 371
+          },
+          {
+            "date": "2026-10-23",
+            "moonIllumination": 93,
+            "seasonMinutes": 368,
+            "usableMinutes": 368
+          },
+          {
+            "date": "2026-10-24",
+            "moonIllumination": 98,
+            "seasonMinutes": 366,
+            "usableMinutes": 366
+          },
+          {
+            "date": "2026-10-25",
+            "moonIllumination": 100,
+            "seasonMinutes": 363,
+            "usableMinutes": 363
+          },
+          {
+            "date": "2026-10-26",
+            "moonIllumination": 99,
+            "seasonMinutes": 360,
+            "usableMinutes": 360
+          },
+          {
+            "date": "2026-10-27",
+            "moonIllumination": 96,
+            "seasonMinutes": 358,
+            "usableMinutes": 358
+          },
+          {
+            "date": "2026-10-28",
+            "moonIllumination": 90,
+            "seasonMinutes": 355,
+            "usableMinutes": 355
+          },
+          {
+            "date": "2026-10-29",
+            "moonIllumination": 82,
+            "seasonMinutes": 353,
+            "usableMinutes": 353
+          },
+          {
+            "date": "2026-10-30",
+            "moonIllumination": 72,
+            "seasonMinutes": 350,
+            "usableMinutes": 350
+          },
+          {
+            "date": "2026-10-31",
+            "moonIllumination": 61,
+            "seasonMinutes": 347,
+            "usableMinutes": 347
+          },
+          {
+            "date": "2026-11-01",
+            "moonIllumination": 50,
+            "seasonMinutes": 345,
+            "usableMinutes": 345
+          },
+          {
+            "date": "2026-11-02",
+            "moonIllumination": 39,
+            "seasonMinutes": 342,
+            "usableMinutes": 342
+          },
+          {
+            "date": "2026-11-03",
+            "moonIllumination": 29,
+            "seasonMinutes": 340,
+            "usableMinutes": 340
+          },
+          {
+            "date": "2026-11-04",
+            "moonIllumination": 20,
+            "seasonMinutes": 337,
+            "usableMinutes": 337
+          }
+        ],
+        "state": "continues",
+        "weeksLeft": null,
+        "workableUntil": null
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "2026-09-28",
+          "minimumMinutes": 240,
+          "nights": 60,
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 10, "azimuth": 0 },
+                { "altitude": 10, "azimuth": 10 },
+                { "altitude": 10, "azimuth": 20 },
+                { "altitude": 10, "azimuth": 30 },
+                { "altitude": 10, "azimuth": 40 },
+                { "altitude": 10, "azimuth": 50 },
+                { "altitude": 10, "azimuth": 60 },
+                { "altitude": 10, "azimuth": 70 },
+                { "altitude": 10, "azimuth": 80 },
+                { "altitude": 10, "azimuth": 90 },
+                { "altitude": 10, "azimuth": 100 },
+                { "altitude": 10, "azimuth": 110 },
+                { "altitude": 10, "azimuth": 120 },
+                { "altitude": 10, "azimuth": 130 },
+                { "altitude": 10, "azimuth": 140 },
+                { "altitude": 10, "azimuth": 150 },
+                { "altitude": 10, "azimuth": 160 },
+                { "altitude": 10, "azimuth": 170 },
+                { "altitude": 10, "azimuth": 180 },
+                { "altitude": 10, "azimuth": 190 },
+                { "altitude": 10, "azimuth": 200 },
+                { "altitude": 10, "azimuth": 210 },
+                { "altitude": 10, "azimuth": 220 },
+                { "altitude": 35, "azimuth": 230 },
+                { "altitude": 35, "azimuth": 240 },
+                { "altitude": 35, "azimuth": 250 },
+                { "altitude": 35, "azimuth": 260 },
+                { "altitude": 35, "azimuth": 270 },
+                { "altitude": 35, "azimuth": 280 },
+                { "altitude": 35, "azimuth": 290 },
+                { "altitude": 35, "azimuth": 300 },
+                { "altitude": 35, "azimuth": 310 },
+                { "altitude": 35, "azimuth": 320 },
+                { "altitude": 10, "azimuth": 330 },
+                { "altitude": 10, "azimuth": 340 },
+                { "altitude": 10, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 20, "ra": 310 } }
+        }
+      ],
+      "id": "higher-threshold-ends-the-season-earlier",
+      "result": {
+        "nights": [
+          {
+            "date": "2026-09-28",
+            "moonIllumination": 94,
+            "seasonMinutes": 286,
+            "usableMinutes": 286
+          },
+          {
+            "date": "2026-09-29",
+            "moonIllumination": 87,
+            "seasonMinutes": 285,
+            "usableMinutes": 285
+          },
+          {
+            "date": "2026-09-30",
+            "moonIllumination": 79,
+            "seasonMinutes": 283,
+            "usableMinutes": 283
+          },
+          {
+            "date": "2026-10-01",
+            "moonIllumination": 69,
+            "seasonMinutes": 281,
+            "usableMinutes": 281
+          },
+          {
+            "date": "2026-10-02",
+            "moonIllumination": 58,
+            "seasonMinutes": 279,
+            "usableMinutes": 279
+          },
+          {
+            "date": "2026-10-03",
+            "moonIllumination": 46,
+            "seasonMinutes": 277,
+            "usableMinutes": 277
+          },
+          {
+            "date": "2026-10-04",
+            "moonIllumination": 35,
+            "seasonMinutes": 275,
+            "usableMinutes": 275
+          },
+          {
+            "date": "2026-10-05",
+            "moonIllumination": 25,
+            "seasonMinutes": 272,
+            "usableMinutes": 272
+          },
+          {
+            "date": "2026-10-06",
+            "moonIllumination": 16,
+            "seasonMinutes": 270,
+            "usableMinutes": 270
+          },
+          {
+            "date": "2026-10-07",
+            "moonIllumination": 9,
+            "seasonMinutes": 268,
+            "usableMinutes": 268
+          },
+          {
+            "date": "2026-10-08",
+            "moonIllumination": 4,
+            "seasonMinutes": 266,
+            "usableMinutes": 266
+          },
+          {
+            "date": "2026-10-09",
+            "moonIllumination": 1,
+            "seasonMinutes": 264,
+            "usableMinutes": 264
+          },
+          {
+            "date": "2026-10-10",
+            "moonIllumination": 0,
+            "seasonMinutes": 262,
+            "usableMinutes": 262
+          },
+          {
+            "date": "2026-10-11",
+            "moonIllumination": 2,
+            "seasonMinutes": 259,
+            "usableMinutes": 259
+          },
+          {
+            "date": "2026-10-12",
+            "moonIllumination": 5,
+            "seasonMinutes": 257,
+            "usableMinutes": 257
+          },
+          {
+            "date": "2026-10-13",
+            "moonIllumination": 10,
+            "seasonMinutes": 255,
+            "usableMinutes": 255
+          },
+          {
+            "date": "2026-10-14",
+            "moonIllumination": 17,
+            "seasonMinutes": 254,
+            "usableMinutes": 254
+          },
+          {
+            "date": "2026-10-15",
+            "moonIllumination": 25,
+            "seasonMinutes": 251,
+            "usableMinutes": 251
+          },
+          {
+            "date": "2026-10-16",
+            "moonIllumination": 33,
+            "seasonMinutes": 249,
+            "usableMinutes": 249
+          },
+          {
+            "date": "2026-10-17",
+            "moonIllumination": 43,
+            "seasonMinutes": 247,
+            "usableMinutes": 247
+          },
+          {
+            "date": "2026-10-18",
+            "moonIllumination": 52,
+            "seasonMinutes": 244,
+            "usableMinutes": 244
+          },
+          {
+            "date": "2026-10-19",
+            "moonIllumination": 61,
+            "seasonMinutes": 242,
+            "usableMinutes": 139
+          },
+          {
+            "date": "2026-10-20",
+            "moonIllumination": 71,
+            "seasonMinutes": 240,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-21",
+            "moonIllumination": 79,
+            "seasonMinutes": 237,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-10-22",
+            "moonIllumination": 87,
+            "seasonMinutes": 235,
+            "usableMinutes": 235
+          },
+          {
+            "date": "2026-10-23",
+            "moonIllumination": 93,
+            "seasonMinutes": 232,
+            "usableMinutes": 232
+          },
+          {
+            "date": "2026-10-24",
+            "moonIllumination": 98,
+            "seasonMinutes": 230,
+            "usableMinutes": 230
+          },
+          {
+            "date": "2026-10-25",
+            "moonIllumination": 100,
+            "seasonMinutes": 227,
+            "usableMinutes": 227
+          },
+          {
+            "date": "2026-10-26",
+            "moonIllumination": 99,
+            "seasonMinutes": 224,
+            "usableMinutes": 224
+          },
+          {
+            "date": "2026-10-27",
+            "moonIllumination": 96,
+            "seasonMinutes": 222,
+            "usableMinutes": 222
+          },
+          {
+            "date": "2026-10-28",
+            "moonIllumination": 90,
+            "seasonMinutes": 220,
+            "usableMinutes": 220
+          },
+          {
+            "date": "2026-10-29",
+            "moonIllumination": 82,
+            "seasonMinutes": 218,
+            "usableMinutes": 218
+          },
+          {
+            "date": "2026-10-30",
+            "moonIllumination": 72,
+            "seasonMinutes": 215,
+            "usableMinutes": 215
+          },
+          {
+            "date": "2026-10-31",
+            "moonIllumination": 61,
+            "seasonMinutes": 212,
+            "usableMinutes": 212
+          },
+          {
+            "date": "2026-11-01",
+            "moonIllumination": 50,
+            "seasonMinutes": 210,
+            "usableMinutes": 210
+          },
+          {
+            "date": "2026-11-02",
+            "moonIllumination": 39,
+            "seasonMinutes": 207,
+            "usableMinutes": 207
+          },
+          {
+            "date": "2026-11-03",
+            "moonIllumination": 29,
+            "seasonMinutes": 204,
+            "usableMinutes": 204
+          },
+          {
+            "date": "2026-11-04",
+            "moonIllumination": 20,
+            "seasonMinutes": 201,
+            "usableMinutes": 201
+          },
+          {
+            "date": "2026-11-05",
+            "moonIllumination": 12,
+            "seasonMinutes": 198,
+            "usableMinutes": 198
+          },
+          {
+            "date": "2026-11-06",
+            "moonIllumination": 6,
+            "seasonMinutes": 195,
+            "usableMinutes": 195
+          },
+          {
+            "date": "2026-11-07",
+            "moonIllumination": 2,
+            "seasonMinutes": 192,
+            "usableMinutes": 192
+          },
+          {
+            "date": "2026-11-08",
+            "moonIllumination": 0,
+            "seasonMinutes": 189,
+            "usableMinutes": 189
+          },
+          {
+            "date": "2026-11-09",
+            "moonIllumination": 0,
+            "seasonMinutes": 187,
+            "usableMinutes": 187
+          },
+          {
+            "date": "2026-11-10",
+            "moonIllumination": 2,
+            "seasonMinutes": 183,
+            "usableMinutes": 183
+          },
+          {
+            "date": "2026-11-11",
+            "moonIllumination": 6,
+            "seasonMinutes": 180,
+            "usableMinutes": 180
+          },
+          {
+            "date": "2026-11-12",
+            "moonIllumination": 12,
+            "seasonMinutes": 178,
+            "usableMinutes": 178
+          },
+          {
+            "date": "2026-11-13",
+            "moonIllumination": 18,
+            "seasonMinutes": 175,
+            "usableMinutes": 175
+          },
+          {
+            "date": "2026-11-14",
+            "moonIllumination": 26,
+            "seasonMinutes": 172,
+            "usableMinutes": 172
+          },
+          {
+            "date": "2026-11-15",
+            "moonIllumination": 35,
+            "seasonMinutes": 169,
+            "usableMinutes": 169
+          },
+          {
+            "date": "2026-11-16",
+            "moonIllumination": 44,
+            "seasonMinutes": 166,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-11-17",
+            "moonIllumination": 54,
+            "seasonMinutes": 162,
+            "usableMinutes": 0
+          },
+          {
+            "date": "2026-11-18",
+            "moonIllumination": 63,
+            "seasonMinutes": 159,
+            "usableMinutes": 159
+          },
+          {
+            "date": "2026-11-19",
+            "moonIllumination": 73,
+            "seasonMinutes": 156,
+            "usableMinutes": 156
+          },
+          {
+            "date": "2026-11-20",
+            "moonIllumination": 82,
+            "seasonMinutes": 152,
+            "usableMinutes": 152
+          },
+          {
+            "date": "2026-11-21",
+            "moonIllumination": 89,
+            "seasonMinutes": 149,
+            "usableMinutes": 149
+          },
+          {
+            "date": "2026-11-22",
+            "moonIllumination": 95,
+            "seasonMinutes": 146,
+            "usableMinutes": 146
+          },
+          {
+            "date": "2026-11-23",
+            "moonIllumination": 99,
+            "seasonMinutes": 142,
+            "usableMinutes": 142
+          },
+          {
+            "date": "2026-11-24",
+            "moonIllumination": 100,
+            "seasonMinutes": 139,
+            "usableMinutes": 139
+          },
+          {
+            "date": "2026-11-25",
+            "moonIllumination": 98,
+            "seasonMinutes": 135,
+            "usableMinutes": 135
+          },
+          {
+            "date": "2026-11-26",
+            "moonIllumination": 93,
+            "seasonMinutes": 132,
+            "usableMinutes": 132
+          }
+        ],
+        "state": "ends",
+        "weeksLeft": 3,
+        "workableUntil": "2026-10-20"
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "2026-09-28",
+          "nights": 10,
+          "place": { "latitude": 45, "longitude": -30, "name": "Plateau" },
+          "target": { "coordinate": { "dec": -5, "ra": 288 } }
+        }
+      ],
+      "id": "place-without-time-zone-anchors-on-longitude",
+      "result": {
+        "nights": [
+          {
+            "date": "2026-09-28",
+            "moonIllumination": 94,
+            "seasonMinutes": 107,
+            "usableMinutes": 107
+          },
+          {
+            "date": "2026-09-29",
+            "moonIllumination": 87,
+            "seasonMinutes": 106,
+            "usableMinutes": 106
+          },
+          {
+            "date": "2026-09-30",
+            "moonIllumination": 79,
+            "seasonMinutes": 104,
+            "usableMinutes": 104
+          },
+          {
+            "date": "2026-10-01",
+            "moonIllumination": 69,
+            "seasonMinutes": 102,
+            "usableMinutes": 102
+          },
+          {
+            "date": "2026-10-02",
+            "moonIllumination": 58,
+            "seasonMinutes": 100,
+            "usableMinutes": 100
+          },
+          {
+            "date": "2026-10-03",
+            "moonIllumination": 46,
+            "seasonMinutes": 98,
+            "usableMinutes": 98
+          },
+          {
+            "date": "2026-10-04",
+            "moonIllumination": 35,
+            "seasonMinutes": 96,
+            "usableMinutes": 96
+          },
+          {
+            "date": "2026-10-05",
+            "moonIllumination": 25,
+            "seasonMinutes": 93,
+            "usableMinutes": 93
+          },
+          {
+            "date": "2026-10-06",
+            "moonIllumination": 16,
+            "seasonMinutes": 91,
+            "usableMinutes": 91
+          },
+          {
+            "date": "2026-10-07",
+            "moonIllumination": 9,
+            "seasonMinutes": 89,
+            "usableMinutes": 89
+          }
+        ],
+        "state": "none",
+        "weeksLeft": 0,
+        "workableUntil": null
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "darkness": "nautical",
+          "from": "2026-09-28",
+          "nights": 10,
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 10, "azimuth": 0 },
+                { "altitude": 10, "azimuth": 10 },
+                { "altitude": 10, "azimuth": 20 },
+                { "altitude": 10, "azimuth": 30 },
+                { "altitude": 10, "azimuth": 40 },
+                { "altitude": 10, "azimuth": 50 },
+                { "altitude": 10, "azimuth": 60 },
+                { "altitude": 10, "azimuth": 70 },
+                { "altitude": 10, "azimuth": 80 },
+                { "altitude": 10, "azimuth": 90 },
+                { "altitude": 10, "azimuth": 100 },
+                { "altitude": 10, "azimuth": 110 },
+                { "altitude": 10, "azimuth": 120 },
+                { "altitude": 10, "azimuth": 130 },
+                { "altitude": 10, "azimuth": 140 },
+                { "altitude": 10, "azimuth": 150 },
+                { "altitude": 10, "azimuth": 160 },
+                { "altitude": 10, "azimuth": 170 },
+                { "altitude": 10, "azimuth": 180 },
+                { "altitude": 10, "azimuth": 190 },
+                { "altitude": 10, "azimuth": 200 },
+                { "altitude": 10, "azimuth": 210 },
+                { "altitude": 10, "azimuth": 220 },
+                { "altitude": 35, "azimuth": 230 },
+                { "altitude": 35, "azimuth": 240 },
+                { "altitude": 35, "azimuth": 250 },
+                { "altitude": 35, "azimuth": 260 },
+                { "altitude": 35, "azimuth": 270 },
+                { "altitude": 35, "azimuth": 280 },
+                { "altitude": 35, "azimuth": 290 },
+                { "altitude": 35, "azimuth": 300 },
+                { "altitude": 35, "azimuth": 310 },
+                { "altitude": 35, "azimuth": 320 },
+                { "altitude": 10, "azimuth": 330 },
+                { "altitude": 10, "azimuth": 340 },
+                { "altitude": 10, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": -5, "ra": 288 } }
+        }
+      ],
+      "id": "nautical-darkness-lengthens-the-night",
+      "result": {
+        "nights": [
+          {
+            "date": "2026-09-28",
+            "moonIllumination": 94,
+            "seasonMinutes": 142,
+            "usableMinutes": 142
+          },
+          {
+            "date": "2026-09-29",
+            "moonIllumination": 88,
+            "seasonMinutes": 140,
+            "usableMinutes": 140
+          },
+          {
+            "date": "2026-09-30",
+            "moonIllumination": 79,
+            "seasonMinutes": 138,
+            "usableMinutes": 138
+          },
+          {
+            "date": "2026-10-01",
+            "moonIllumination": 69,
+            "seasonMinutes": 136,
+            "usableMinutes": 136
+          },
+          {
+            "date": "2026-10-02",
+            "moonIllumination": 58,
+            "seasonMinutes": 134,
+            "usableMinutes": 134
+          },
+          {
+            "date": "2026-10-03",
+            "moonIllumination": 47,
+            "seasonMinutes": 132,
+            "usableMinutes": 132
+          },
+          {
+            "date": "2026-10-04",
+            "moonIllumination": 35,
+            "seasonMinutes": 130,
+            "usableMinutes": 130
+          },
+          {
+            "date": "2026-10-05",
+            "moonIllumination": 25,
+            "seasonMinutes": 128,
+            "usableMinutes": 128
+          },
+          {
+            "date": "2026-10-06",
+            "moonIllumination": 16,
+            "seasonMinutes": 126,
+            "usableMinutes": 126
+          },
+          {
+            "date": "2026-10-07",
+            "moonIllumination": 9,
+            "seasonMinutes": 123,
+            "usableMinutes": 123
+          }
+        ],
+        "state": "none",
+        "weeksLeft": 0,
+        "workableUntil": null
+      }
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "2026-09-28",
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 10, "azimuth": 0 },
+                { "altitude": 10, "azimuth": 10 },
+                { "altitude": 10, "azimuth": 20 },
+                { "altitude": 10, "azimuth": 30 },
+                { "altitude": 10, "azimuth": 40 },
+                { "altitude": 10, "azimuth": 50 },
+                { "altitude": 10, "azimuth": 60 },
+                { "altitude": 10, "azimuth": 70 },
+                { "altitude": 10, "azimuth": 80 },
+                { "altitude": 10, "azimuth": 90 },
+                { "altitude": 10, "azimuth": 100 },
+                { "altitude": 10, "azimuth": 110 },
+                { "altitude": 10, "azimuth": 120 },
+                { "altitude": 10, "azimuth": 130 },
+                { "altitude": 10, "azimuth": 140 },
+                { "altitude": 10, "azimuth": 150 },
+                { "altitude": 10, "azimuth": 160 },
+                { "altitude": 10, "azimuth": 170 },
+                { "altitude": 10, "azimuth": 180 },
+                { "altitude": 10, "azimuth": 190 },
+                { "altitude": 10, "azimuth": 200 },
+                { "altitude": 10, "azimuth": 210 },
+                { "altitude": 10, "azimuth": 220 },
+                { "altitude": 35, "azimuth": 230 },
+                { "altitude": 35, "azimuth": 240 },
+                { "altitude": 35, "azimuth": 250 },
+                { "altitude": 35, "azimuth": 260 },
+                { "altitude": 35, "azimuth": 270 },
+                { "altitude": 35, "azimuth": 280 },
+                { "altitude": 35, "azimuth": 290 },
+                { "altitude": 35, "azimuth": 300 },
+                { "altitude": 35, "azimuth": 310 },
+                { "altitude": 35, "azimuth": 320 },
+                { "altitude": 10, "azimuth": 330 },
+                { "altitude": 10, "azimuth": 340 },
+                { "altitude": 10, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "target": { "name": "NGC 7000" }
+        }
+      ],
+      "id": "target-without-coordinate",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "28/09/2026",
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 10, "azimuth": 0 },
+                { "altitude": 10, "azimuth": 10 },
+                { "altitude": 10, "azimuth": 20 },
+                { "altitude": 10, "azimuth": 30 },
+                { "altitude": 10, "azimuth": 40 },
+                { "altitude": 10, "azimuth": 50 },
+                { "altitude": 10, "azimuth": 60 },
+                { "altitude": 10, "azimuth": 70 },
+                { "altitude": 10, "azimuth": 80 },
+                { "altitude": 10, "azimuth": 90 },
+                { "altitude": 10, "azimuth": 100 },
+                { "altitude": 10, "azimuth": 110 },
+                { "altitude": 10, "azimuth": 120 },
+                { "altitude": 10, "azimuth": 130 },
+                { "altitude": 10, "azimuth": 140 },
+                { "altitude": 10, "azimuth": 150 },
+                { "altitude": 10, "azimuth": 160 },
+                { "altitude": 10, "azimuth": 170 },
+                { "altitude": 10, "azimuth": 180 },
+                { "altitude": 10, "azimuth": 190 },
+                { "altitude": 10, "azimuth": 200 },
+                { "altitude": 10, "azimuth": 210 },
+                { "altitude": 10, "azimuth": 220 },
+                { "altitude": 35, "azimuth": 230 },
+                { "altitude": 35, "azimuth": 240 },
+                { "altitude": 35, "azimuth": 250 },
+                { "altitude": 35, "azimuth": 260 },
+                { "altitude": 35, "azimuth": 270 },
+                { "altitude": 35, "azimuth": 280 },
+                { "altitude": 35, "azimuth": 290 },
+                { "altitude": 35, "azimuth": 300 },
+                { "altitude": 35, "azimuth": 310 },
+                { "altitude": 35, "azimuth": 320 },
+                { "altitude": 10, "azimuth": 330 },
+                { "altitude": 10, "azimuth": 340 },
+                { "altitude": 10, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 44.33, "ra": 314.75 } }
+        }
+      ],
+      "id": "invalid-first-night",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "2026-02-30",
+          "place": {
+            "horizonMask": {
+              "enabled": true,
+              "points": [
+                { "altitude": 10, "azimuth": 0 },
+                { "altitude": 10, "azimuth": 10 },
+                { "altitude": 10, "azimuth": 20 },
+                { "altitude": 10, "azimuth": 30 },
+                { "altitude": 10, "azimuth": 40 },
+                { "altitude": 10, "azimuth": 50 },
+                { "altitude": 10, "azimuth": 60 },
+                { "altitude": 10, "azimuth": 70 },
+                { "altitude": 10, "azimuth": 80 },
+                { "altitude": 10, "azimuth": 90 },
+                { "altitude": 10, "azimuth": 100 },
+                { "altitude": 10, "azimuth": 110 },
+                { "altitude": 10, "azimuth": 120 },
+                { "altitude": 10, "azimuth": 130 },
+                { "altitude": 10, "azimuth": 140 },
+                { "altitude": 10, "azimuth": 150 },
+                { "altitude": 10, "azimuth": 160 },
+                { "altitude": 10, "azimuth": 170 },
+                { "altitude": 10, "azimuth": 180 },
+                { "altitude": 10, "azimuth": 190 },
+                { "altitude": 10, "azimuth": 200 },
+                { "altitude": 10, "azimuth": 210 },
+                { "altitude": 10, "azimuth": 220 },
+                { "altitude": 35, "azimuth": 230 },
+                { "altitude": 35, "azimuth": 240 },
+                { "altitude": 35, "azimuth": 250 },
+                { "altitude": 35, "azimuth": 260 },
+                { "altitude": 35, "azimuth": 270 },
+                { "altitude": 35, "azimuth": 280 },
+                { "altitude": 35, "azimuth": 290 },
+                { "altitude": 35, "azimuth": 300 },
+                { "altitude": 35, "azimuth": 310 },
+                { "altitude": 35, "azimuth": 320 },
+                { "altitude": 10, "azimuth": 330 },
+                { "altitude": 10, "azimuth": 340 },
+                { "altitude": 10, "azimuth": 350 }
+              ]
+            },
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Mélèzes",
+            "timeZone": "UTC"
+          },
+          "target": { "coordinate": { "dec": 44.33, "ra": 314.75 } }
+        }
+      ],
+      "id": "a-day-that-does-not-exist",
+      "result": null
+    },
+    {
+      "args": [
+        {
+          "constraints": {
+            "minAltitude": 30,
+            "moonSeparationMinimum": 40,
+            "moonSeparationMinimumByFilter": {}
+          },
+          "from": "2026-09-28",
+          "nights": 5,
+          "place": { "name": "Nowhere" },
+          "target": { "coordinate": { "dec": 44.33, "ra": 314.75 } }
+        }
+      ],
+      "id": "place-without-coordinates",
+      "result": null
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "project-season-window"
+}

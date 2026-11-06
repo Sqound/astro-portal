@@ -1,0 +1,43 @@
+{
+  "module": "locale-coverage",
+  "package": "portal",
+  "file": "i18n",
+  "export": "localeKeyGaps",
+  "cases": [
+    { "id": "base-locale-en-has-full-parity", "args": ["en"] },
+    { "id": "base-locale-fr-has-full-parity", "args": ["fr"] },
+    {
+      "id": "four-locales-one-incomplete",
+      "args": [
+        "en",
+        {
+          "en": { "plan": "Plan", "night": "Night", "place": "Place" },
+          "fr": { "plan": "Planifier", "night": "Nuit", "place": "Lieu" },
+          "ja": { "plan": "プランを立てる", "night": "夜", "place": "場所" },
+          "en-XA": { "plan": "[Þļåñ one]", "moon": "[Ṁööñ one]" }
+        },
+        ["en", "fr", "ja", "en-XA"]
+      ]
+    },
+    {
+      "id": "registered-locale-without-catalogue",
+      "args": [
+        "en",
+        { "en": { "plan": "Plan" }, "fr": { "plan": "Planifier" } },
+        ["en", "fr", "ja"]
+      ]
+    },
+    {
+      "id": "catalogue-locale-not-registered",
+      "args": [
+        "en",
+        {
+          "en": { "plan": "Plan" },
+          "fr": { "plan": "Planifier" },
+          "de": { "plan": "Planen" }
+        },
+        ["en", "fr"]
+      ]
+    }
+  ]
+}

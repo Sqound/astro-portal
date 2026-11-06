@@ -1,0 +1,115 @@
+{
+  "description": "`POST /v1/plans/{planId}/debrief` for a night carried out without the application: a target added at the debriefing with its times, its frames and its exposure, a pause and a note added after the fact. The session is created (`createdSession`), of origin `debrief`, and already reworked once (`reworkRevision` 1).",
+  "exchange": "debrief-added-targets-and-events",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The 1 October plan of `list` (no session).",
+  "request": {
+    "body": {
+      "addedEvents": [
+        {
+          "at": "2026-10-01T20:30:00.000Z",
+          "payload": { "cause": "clouds" },
+          "targetId": "m31",
+          "type": "pause",
+          "until": "2026-10-01T20:45:00.000Z"
+        },
+        {
+          "at": "2026-10-01T22:00:00.000Z",
+          "payload": { "text": "Ciel dégagé après minuit" },
+          "type": "note"
+        }
+      ],
+      "addedTargets": [
+        {
+          "acquiredMinutes": 30,
+          "exposureSeconds": 120,
+          "filter": "Ha",
+          "frameCount": 15,
+          "targetId": "m42"
+        }
+      ],
+      "outcome": "partial",
+      "sessionAdjustments": {
+        "targets": [
+          {
+            "acquiredMinutes": 90,
+            "exposureSeconds": 180,
+            "finishedAt": "2026-10-01T21:30:00.000Z",
+            "frameCount": 30,
+            "startedAt": "2026-10-01T20:00:00.000Z",
+            "state": "partial",
+            "targetId": "m31"
+          }
+        ]
+      }
+    },
+    "method": "POST",
+    "path": "/api/v1/plans/00000000-0000-4000-8000-000000000019/debrief"
+  },
+  "response": {
+    "body": {
+      "createdSession": true,
+      "decidedAt": "2026-10-14T12:30:00.000Z",
+      "eventsCreated": 2,
+      "outcome": "partial",
+      "plan": {
+        "archivedFrom": null,
+        "frozenAt": "2026-10-14T12:30:00.000Z",
+        "id": "00000000-0000-4000-8000-000000000019",
+        "nightEndAt": "2026-10-02T04:00:00.000Z",
+        "nightStartAt": "2026-10-01T19:00:00.000Z",
+        "payload": {
+          "date": "2026-10-01",
+          "equipment": {
+            "cameraId": "00000000-0000-4000-8000-000000000006",
+            "mode": "imaging",
+            "telescopeId": "00000000-0000-4000-8000-000000000005"
+          },
+          "id": "browser-00000000-0000-4000-8000-000000000019",
+          "items": [
+            {
+              "durationMinutes": 120,
+              "endMinute": 120,
+              "filter": "L",
+              "id": "m31",
+              "startMinute": 0,
+              "targetId": "m31"
+            }
+          ],
+          "location": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Étoiles",
+            "timeZone": "UTC"
+          },
+          "name": "Nuit du 2026-10-01"
+        },
+        "revision": 1,
+        "status": "partial",
+        "updatedAt": "2026-10-14T12:30:00.000Z"
+      },
+      "replayed": false,
+      "session": {
+        "clientSessionId": null,
+        "createdAt": "2026-10-14T12:30:00.000Z",
+        "eveningDate": "2026-10-01",
+        "eventCount": 2,
+        "finishedAt": "2026-10-02T04:00:00.000Z",
+        "id": "00000000-0000-4000-8000-000000000028",
+        "origin": "debrief",
+        "outcome": "partial",
+        "pendingSupplementCount": 0,
+        "planId": "00000000-0000-4000-8000-000000000019",
+        "projectId": null,
+        "reworkRevision": 1,
+        "reworkedAt": "2026-10-14T12:30:00.000Z",
+        "startedAt": "2026-10-01T19:00:00.000Z",
+        "status": "finished",
+        "supplementCount": 0,
+        "updatedAt": "2026-10-14T12:30:00.000Z"
+      }
+    },
+    "schema": "debrief.schema.json#/$defs/response",
+    "status": 200
+  }
+}

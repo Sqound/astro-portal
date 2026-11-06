@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/widget-snapshot.schema.json",
+  "title": "Astro Portal widget snapshot",
+  "description": "The compact, non-sensitive snapshot the mobile app hands to its native extensions (iOS widget, Live Activity, Apple Watch, Android widget) after every relevant synchronization -- plan pull, session start/pause/finish, debrief. `additionalProperties: false` is the leak guard: it makes coordinates, tenant/device ids, tokens, and precise place names structurally impossible to carry here, at every level of the object, not just a reviewer's promise. A widget renders this snapshot; it never calls the API, never holds a credential, and never contains the planner. `version` pins the shape a native extension was compiled against: a native reader that finds a different value discards the snapshot and shows its placeholder state rather than guessing at an incompatible layout.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "generatedAt"],
+  "properties": {
+    "version": {
+      "const": 1,
+      "description": "The snapshot contract's own version. A native reader compiled against a different value treats the snapshot as absent."
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the mobile app wrote this snapshot. Lets a native extension detect and label a stale local snapshot (no sync in a long time) without ever reaching the network itself."
+    },
+    "nextPlanName": {
+      "type": "string",
+      "description": "The name of the next plan to execute (tonight's or the next observing night's), when one exists."
+    },
+    "nextTargetName": {
+      "type": "string",
+      "description": "The next plan's first or current target's display name -- never a catalogue id alone when a friendlier name exists."
+    },
+    "nightStartAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The next plan's night start, for a countdown. The system's own date formatting renders it; this snapshot never carries a pre-formatted countdown string."
+    },
+    "nightEndAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The next plan's night end."
+    },
+    "constraintSummary": {
+      "type": "string",
+      "maxLength": 80,
+      "description": "A short, human-readable summary of the night's binding constraint (weather, Moon, etc.), already localized -- never a structured forecast payload."
+    },
+    "activeSession": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Present only while a session is running on this device (open or paused); absent once it finishes.",
+      "properties": {
+        "currentTargetName": {
+          "type": "string",
+          "description": "The display name of the target currently being executed."
+        },
+        "status": {
+          "enum": ["open", "paused"],
+          "description": "The session's execution status -- the same vocabulary the Live Activity already shows."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "id": "guide-1",
+          "name": "Lunette guide 50/200",
+          "planner": {
+            "guideScope": {
+              "binning": 2,
+              "camera": {
+                "heightPx": 960,
+                "name": "ZWO ASI120MM Mini",
+                "pixelSizeUm": 3.75,
+                "sensor": "mono",
+                "widthPx": 1280
+              },
+              "exposureSeconds": 3,
+              "gain": 120,
+              "lastAdjustment": {
+                "at": "2026-11-04T21:30:00.000Z",
+                "errorArcmin": 3,
+                "offset": { "xDegrees": 0.31, "yDegrees": -0.12 },
+                "star": "Véga"
+              },
+              "method": "softwareOffset",
+              "placement": "guide",
+              "protocol": "alpaca",
+              "telescopeId": "newton"
+            }
+          },
+          "specifications": { "apertureMm": 50, "focalLengthMm": 200 },
+          "type": "guide-scope"
+        }
+      ],
+      "id": "phone-item-saved-by-the-web-untouched",
+      "result": {
+        "id": "guide-1",
+        "name": "Lunette guide 50/200",
+        "planner": {
+          "guideScope": {
+            "binning": 2,
+            "camera": {
+              "heightPx": 960,
+              "name": "ZWO ASI120MM Mini",
+              "pixelSizeUm": 3.75,
+              "sensor": "mono",
+              "widthPx": 1280
+            },
+            "exposureSeconds": 3,
+            "gain": 120,
+            "lastAdjustment": {
+              "at": "2026-11-04T21:30:00.000Z",
+              "errorArcmin": 3,
+              "offset": { "xDegrees": 0.31, "yDegrees": -0.12 },
+              "star": "Véga"
+            },
+            "method": "softwareOffset",
+            "placement": "guide",
+            "protocol": "alpaca",
+            "telescopeId": "newton"
+          }
+        },
+        "specifications": { "apertureMm": 50, "focalLengthMm": 200 },
+        "type": "guide-scope"
+      }
+    },
+    {
+      "args": [
+        {
+          "id": "guide-1",
+          "name": "Lunette guide 50/200",
+          "planner": {
+            "guideScope": {
+              "binning": 1,
+              "camera": {
+                "heightPx": "960",
+                "name": " ZWO ASI120MM Mini ",
+                "pixelSizeUm": "3,75",
+                "sensor": "colour",
+                "widthPx": "1280"
+              },
+              "connection": {
+                "device": "0",
+                "host": " 192.168.1.20 ",
+                "port": "11111"
+              },
+              "exposureSeconds": 5,
+              "gain": "0",
+              "lastAdjustment": {
+                "at": "2026-11-04T21:30:00.000Z",
+                "errorArcmin": 3,
+                "star": "Véga"
+              },
+              "method": "rings",
+              "placement": "main",
+              "protocol": "alpaca",
+              "telescopeId": "newton"
+            }
+          },
+          "specifications": { "apertureMm": "50", "focalLengthMm": "200" },
+          "type": "guide-scope"
+        }
+      ],
+      "id": "web-form-text-becomes-numbers-and-keeps-the-last-alignment",
+      "result": {
+        "id": "guide-1",
+        "name": "Lunette guide 50/200",
+        "planner": {
+          "guideScope": {
+            "binning": 1,
+            "camera": {
+              "heightPx": 960,
+              "name": "ZWO ASI120MM Mini",
+              "pixelSizeUm": 3.75,
+              "sensor": "colour",
+              "widthPx": 1280
+            },
+            "exposureSeconds": 5,
+            "gain": 0,
+            "lastAdjustment": {
+              "at": "2026-11-04T21:30:00.000Z",
+              "errorArcmin": 3,
+              "star": "Véga"
+            },
+            "method": "rings",
+            "placement": "main",
+            "protocol": "alpaca",
+            "telescopeId": "newton"
+          }
+        },
+        "specifications": { "apertureMm": "50", "focalLengthMm": "200" },
+        "type": "guide-scope"
+      }
+    },
+    {
+      "args": [
+        {
+          "name": "Guide",
+          "planner": {
+            "guideScope": {
+              "connection": {
+                "device": "ZWO CCD ASI120MM Mini",
+                "host": "indi.local",
+                "port": ""
+              },
+              "protocol": "indi"
+            }
+          },
+          "specifications": {},
+          "type": "guide-scope"
+        }
+      ],
+      "id": "indi-keeps-no-connection",
+      "result": {
+        "name": "Guide",
+        "planner": {
+          "guideScope": {
+            "binning": 1,
+            "camera": {},
+            "exposureSeconds": 2,
+            "method": "rings",
+            "placement": "guide",
+            "protocol": "indi"
+          }
+        },
+        "specifications": {},
+        "type": "guide-scope"
+      }
+    },
+    {
+      "args": [
+        {
+          "name": "Guide",
+          "planner": {
+            "guideScope": {
+              "binning": 4,
+              "camera": {
+                "heightPx": "",
+                "name": "",
+                "pixelSizeUm": "",
+                "sensor": "",
+                "widthPx": ""
+              },
+              "connection": { "device": "", "host": "", "port": "" },
+              "exposureSeconds": 9,
+              "gain": "",
+              "telescopeId": ""
+            }
+          },
+          "specifications": {},
+          "type": "guide-scope"
+        }
+      ],
+      "id": "empty-fields-are-left-out-and-defaults-are-written",
+      "result": {
+        "name": "Guide",
+        "planner": {
+          "guideScope": {
+            "binning": 1,
+            "camera": {},
+            "exposureSeconds": 2,
+            "method": "rings",
+            "placement": "guide",
+            "protocol": "alpaca"
+          }
+        },
+        "specifications": {},
+        "type": "guide-scope"
+      }
+    },
+    {
+      "args": [
+        {
+          "name": "Guide",
+          "planner": {},
+          "specifications": {},
+          "type": "guide-scope"
+        }
+      ],
+      "id": "no-guide-scope-yet",
+      "result": {
+        "name": "Guide",
+        "planner": {
+          "guideScope": {
+            "binning": 1,
+            "camera": {},
+            "exposureSeconds": 2,
+            "method": "rings",
+            "placement": "guide",
+            "protocol": "alpaca"
+          }
+        },
+        "specifications": {},
+        "type": "guide-scope"
+      }
+    },
+    {
+      "args": [
+        {
+          "name": "Newton",
+          "planner": {
+            "finder": "aligned",
+            "guideScope": { "protocol": "indi" }
+          },
+          "specifications": {},
+          "type": "telescope"
+        }
+      ],
+      "id": "another-kind-leaves-guide-scope-out",
+      "result": {
+        "name": "Newton",
+        "planner": { "finder": "aligned" },
+        "specifications": {},
+        "type": "telescope"
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "guide-scope-save"
+}

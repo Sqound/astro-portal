@@ -1,0 +1,82 @@
+{
+  "cases": [
+    {
+      "args": ["en"],
+      "id": "base-locale-en-has-full-parity",
+      "result": {
+        "de": { "extra": [], "missing": [] },
+        "es": { "extra": [], "missing": [] },
+        "fr": { "extra": [], "missing": [] },
+        "it": { "extra": [], "missing": [] },
+        "ja": { "extra": [], "missing": [] },
+        "pt-BR": { "extra": [], "missing": [] },
+        "ru": { "extra": [], "missing": [] },
+        "zh-Hans": { "extra": [], "missing": [] },
+        "zh-Hant": { "extra": [], "missing": [] }
+      }
+    },
+    {
+      "args": ["fr"],
+      "id": "base-locale-fr-has-full-parity",
+      "result": {
+        "de": { "extra": [], "missing": [] },
+        "en": { "extra": [], "missing": [] },
+        "es": { "extra": [], "missing": [] },
+        "it": { "extra": [], "missing": [] },
+        "ja": { "extra": [], "missing": [] },
+        "pt-BR": { "extra": [], "missing": [] },
+        "ru": { "extra": [], "missing": [] },
+        "zh-Hans": { "extra": [], "missing": [] },
+        "zh-Hant": { "extra": [], "missing": [] }
+      }
+    },
+    {
+      "args": [
+        "en",
+        {
+          "en": { "night": "Night", "place": "Place", "plan": "Plan" },
+          "en-XA": { "moon": "[Ṁööñ one]", "plan": "[Þļåñ one]" },
+          "fr": { "night": "Nuit", "place": "Lieu", "plan": "Planifier" },
+          "ja": { "night": "夜", "place": "場所", "plan": "プランを立てる" }
+        },
+        ["en", "fr", "ja", "en-XA"]
+      ],
+      "id": "four-locales-one-incomplete",
+      "result": {
+        "en-XA": { "extra": ["moon"], "missing": ["night", "place"] },
+        "fr": { "extra": [], "missing": [] },
+        "ja": { "extra": [], "missing": [] }
+      }
+    },
+    {
+      "args": [
+        "en",
+        { "en": { "plan": "Plan" }, "fr": { "plan": "Planifier" } },
+        ["en", "fr", "ja"]
+      ],
+      "id": "registered-locale-without-catalogue",
+      "result": {
+        "fr": { "extra": [], "missing": [] },
+        "ja": { "absent": true, "extra": [], "missing": ["plan"] }
+      }
+    },
+    {
+      "args": [
+        "en",
+        {
+          "de": { "plan": "Planen" },
+          "en": { "plan": "Plan" },
+          "fr": { "plan": "Planifier" }
+        },
+        ["en", "fr"]
+      ],
+      "id": "catalogue-locale-not-registered",
+      "result": {
+        "de": { "extra": [], "missing": [], "unregistered": true },
+        "fr": { "extra": [], "missing": [] }
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "locale-coverage"
+}

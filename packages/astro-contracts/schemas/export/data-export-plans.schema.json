@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/export/data-export-plans.schema.json",
+  "title": "Data export — plans.json",
+  "description": "« Plans » of « Exporter mes données » (planastro-export-<AAAA-MM-JJ>.zip, formatVersion 1). `plans`: every plan, each the planner's plan — the shape of plan-archive.schema.json's `plan` (`id`, `date`, `name`, `items`, and the planner's other fields) — with `resourceId`, the v1 resource's own id, when the plan has one, and `status` in the v1 vocabulary. `nights` (additive, absent from the files written before it): the planner's nights, each as the planner document keeps it (`id`, `date`, `location`, …) — the night a plan names by its `nightId`; the phone writes an empty list (its nights are its plans' dates and places). `projects`: the multi-night plans, as project.schema.json's `resource`. Identifiers are kept as they are: the import of a private portal finds a record by its identifier.",
+  "type": "object",
+  "required": ["formatVersion", "part", "exportedAt", "plans", "projects"],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "part": {
+      "const": "plans"
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "plans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "date", "items"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "resourceId": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "nights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "date"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "date": {
+            "type": "string"
+          },
+          "location": {
+            "type": ["object", "null"]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

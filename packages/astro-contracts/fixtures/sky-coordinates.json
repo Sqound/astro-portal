@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "args": [{ "objects": ["M31"] }],
+      "id": "m31-northern-sky",
+      "result": { "dec": 41.2688, "ra": 10.6847 }
+    },
+    {
+      "args": [{ "objects": ["M8"] }],
+      "id": "m8-southern-sky",
+      "result": { "dec": -24.3867, "ra": 270.9042 }
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "sky-coordinates"
+}

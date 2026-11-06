@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/session-events/mount-goto.schema.json",
+  "title": "Astro Portal session event payload: mount_goto",
+  "description": "A GoTo the person asked of the mount, with how it went. One event per outcome, so a GoTo that never arrived stays visible: `sent` — the mount accepted the slew; `arrived` — the mount stopped slewing within one degree of the target (`gapDegrees` is the gap read from the mount); `refused` — nothing moved (`refusedBy` says who). A reader that shows one line per GoTo keeps `arrived` and `refused` and shows `sent` only when neither follows for the same target. Recorded by the application from the driver's own code path with the night's clock; every field but the ones marked required is optional, and a reader tolerates a payload without them. Private in a shared night. See session-events.md.",
+  "type": "object",
+  "properties": {
+    "outcome": {
+      "type": "string",
+      "enum": ["sent", "arrived", "refused"]
+    },
+    "targetId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The plan's key of the target the mount was sent to, the same one the target events use (a calibration star or a polar-alignment move carries its own key)."
+    },
+    "targetLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "The target's display name (« M110 »), for a reader that cannot resolve `targetId`."
+    },
+    "gapDegrees": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 180,
+      "description": "Optional: the angular gap, in degrees, between where the device said it pointed and the target, read from the device when it reports a position. Absent means the device said nothing of where it pointed."
+    },
+    "refusedBy": {
+      "type": "string",
+      "enum": ["safety", "mount", "no_coordinates"],
+      "description": "Optional, with `outcome: refused`: who refused — `safety` the application's own pointing safety (horizon mask, zenith, cables, Sun) before any byte was sent; `mount` the mount itself; `no_coordinates` the target has no fixed position to point at."
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "description": "Optional, with `outcome: refused`: a short machine code of the cause (`below_horizon`, `parked`, `not_aligned`, `zenith`…), never a sentence."
+    },
+    "protocol": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "Optional: the mount's protocol as the application names it (`LX200`, `Alpaca`, `INDI`, `SynScan`, `iOptron`, `NexStar`)."
+    }
+  },
+  "required": ["outcome"],
+  "additionalProperties": false
+}

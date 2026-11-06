@@ -1,0 +1,204 @@
+{
+  "cases": [
+    {
+      "args": [
+        { "locale": "fr", "plan": { "date": "2024-08-12" }, "targets": [] }
+      ],
+      "id": "unnamed-plan-falls-back-to-default-name",
+      "result": "Plan d’observation\nlundi 12 août 2024\nAucune cible sélectionnée"
+    },
+    {
+      "args": [
+        {
+          "locale": "en",
+          "plan": { "date": "2024-08-12", "name": "Perseids night" },
+          "targets": []
+        }
+      ],
+      "id": "no-targets-selected",
+      "result": "Perseids night\nMonday, August 12, 2024\nNo target selected"
+    },
+    {
+      "args": [
+        {
+          "locale": "en",
+          "plan": {
+            "date": "2024-12-25",
+            "items": [{ "id": "a" }, { "id": "b" }],
+            "name": "Deep sky"
+          },
+          "targets": [
+            { "target": { "id": "a", "title": "Andromeda Galaxy" } },
+            { "target": { "designation": "M42", "id": "b" } }
+          ]
+        }
+      ],
+      "id": "multiple-targets-comma-joined",
+      "result": "Deep sky\nWednesday, December 25, 2024\nAndromeda Galaxy, M42"
+    },
+    {
+      "args": [
+        {
+          "locale": "ja",
+          "plan": { "date": "2024-06-21", "name": "Solstice" },
+          "targets": []
+        }
+      ],
+      "id": "japanese-full-locale-date",
+      "result": "Solstice\n2024年6月21日金曜日\n対象が選択されていません"
+    },
+    {
+      "args": [
+        {
+          "locale": "de",
+          "plan": { "date": "2026-10-02", "name": "Nuit" },
+          "targets": []
+        }
+      ],
+      "id": "full-date-in-de",
+      "result": "Nuit\nFreitag, 2. Oktober 2026\nKein Ziel ausgewählt"
+    },
+    {
+      "args": [
+        {
+          "locale": "es",
+          "plan": { "date": "2026-10-02", "name": "Nuit" },
+          "targets": []
+        }
+      ],
+      "id": "full-date-in-es",
+      "result": "Nuit\nviernes, 2 de octubre de 2026\nNingún objetivo seleccionado"
+    },
+    {
+      "args": [
+        {
+          "locale": "it",
+          "plan": { "date": "2026-10-02", "name": "Nuit" },
+          "targets": []
+        }
+      ],
+      "id": "full-date-in-it",
+      "result": "Nuit\nvenerdì 2 ottobre 2026\nNessun target selezionato"
+    },
+    {
+      "args": [
+        {
+          "locale": "pt-BR",
+          "plan": { "date": "2026-10-02", "name": "Nuit" },
+          "targets": []
+        }
+      ],
+      "id": "full-date-in-pt-br",
+      "result": "Nuit\nsexta-feira, 2 de outubro de 2026\nNenhum alvo selecionado"
+    },
+    {
+      "args": [
+        {
+          "locale": "zh-Hans",
+          "plan": { "date": "2026-10-02", "name": "Nuit" },
+          "targets": []
+        }
+      ],
+      "id": "full-date-in-zh-hans",
+      "result": "Nuit\n2026年10月2日星期五\n未选择目标"
+    },
+    {
+      "args": [
+        {
+          "locale": "zh-Hant",
+          "plan": { "date": "2026-10-02", "name": "Nuit" },
+          "targets": []
+        }
+      ],
+      "id": "full-date-in-zh-hant",
+      "result": "Nuit\n2026年10月2日 星期五\n未選擇目標"
+    },
+    {
+      "args": [
+        {
+          "locale": "ru",
+          "plan": { "date": "2026-10-02", "name": "Nuit" },
+          "targets": []
+        }
+      ],
+      "id": "full-date-in-ru",
+      "result": "Nuit\nпятница, 2 октября 2026 г.\nЦель не выбрана"
+    },
+    {
+      "args": [
+        {
+          "locale": "en-XA",
+          "plan": { "date": "2026-10-02", "name": "Nuit" },
+          "targets": []
+        }
+      ],
+      "id": "full-date-in-en-xa",
+      "result": "Nuit\nFriday, October 2, 2026\nNo target selected"
+    },
+    {
+      "args": [
+        { "locale": "ja", "plan": { "date": "2026-10-02" }, "targets": [] }
+      ],
+      "id": "unnamed-plan-without-target-in-ja",
+      "result": "観測プラン\n2026年10月2日金曜日\n対象が選択されていません"
+    },
+    {
+      "args": [
+        { "locale": "de", "plan": { "date": "2026-10-02" }, "targets": [] }
+      ],
+      "id": "unnamed-plan-without-target-in-de",
+      "result": "Beobachtungsplan\nFreitag, 2. Oktober 2026\nKein Ziel ausgewählt"
+    },
+    {
+      "args": [
+        { "locale": "es", "plan": { "date": "2026-10-02" }, "targets": [] }
+      ],
+      "id": "unnamed-plan-without-target-in-es",
+      "result": "Plan de observación\nviernes, 2 de octubre de 2026\nNingún objetivo seleccionado"
+    },
+    {
+      "args": [
+        { "locale": "it", "plan": { "date": "2026-10-02" }, "targets": [] }
+      ],
+      "id": "unnamed-plan-without-target-in-it",
+      "result": "Piano di osservazione\nvenerdì 2 ottobre 2026\nNessun target selezionato"
+    },
+    {
+      "args": [
+        { "locale": "pt-BR", "plan": { "date": "2026-10-02" }, "targets": [] }
+      ],
+      "id": "unnamed-plan-without-target-in-pt-br",
+      "result": "Plano de observação\nsexta-feira, 2 de outubro de 2026\nNenhum alvo selecionado"
+    },
+    {
+      "args": [
+        { "locale": "ru", "plan": { "date": "2026-10-02" }, "targets": [] }
+      ],
+      "id": "unnamed-plan-without-target-in-ru",
+      "result": "План наблюдений\nпятница, 2 октября 2026 г.\nЦель не выбрана"
+    },
+    {
+      "args": [
+        { "locale": "zh-Hans", "plan": { "date": "2026-10-02" }, "targets": [] }
+      ],
+      "id": "unnamed-plan-without-target-in-zh-hans",
+      "result": "观测计划\n2026年10月2日星期五\n未选择目标"
+    },
+    {
+      "args": [
+        { "locale": "zh-Hant", "plan": { "date": "2026-10-02" }, "targets": [] }
+      ],
+      "id": "unnamed-plan-without-target-in-zh-hant",
+      "result": "觀測計畫\n2026年10月2日 星期五\n未選擇目標"
+    },
+    {
+      "args": [
+        { "locale": "en-XA", "plan": { "date": "2026-10-02" }, "targets": [] }
+      ],
+      "id": "unnamed-plan-without-target-in-en-xa",
+      "result": "Observation plan\nFriday, October 2, 2026\nNo target selected"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "share-summary"
+}

@@ -1,0 +1,177 @@
+{
+  "cases": [
+    {
+      "args": ["change", { "cursor": "boot-1:0", "domains": ["plans"] }],
+      "id": "change-single-domain",
+      "result": {
+        "cursor": "boot-1:0",
+        "domains": ["plans"],
+        "kind": "change",
+        "valid": true
+      }
+    },
+    {
+      "args": [
+        "change",
+        { "cursor": "boot-1:42", "domains": ["captures", "plans", "devices"] }
+      ],
+      "id": "change-multiple-domains-preserves-order",
+      "result": {
+        "cursor": "boot-1:42",
+        "domains": ["captures", "plans", "devices"],
+        "kind": "change",
+        "valid": true
+      }
+    },
+    {
+      "args": ["resync", { "cursor": "boot-1:7" }],
+      "id": "resync-event",
+      "result": { "cursor": "boot-1:7", "kind": "resync", "valid": true }
+    },
+    {
+      "args": ["change", { "cursor": "abc:0", "domains": ["devices"] }],
+      "id": "cursor-zero-sequence-is-valid",
+      "result": {
+        "cursor": "abc:0",
+        "domains": ["devices"],
+        "kind": "change",
+        "valid": true
+      }
+    },
+    {
+      "args": ["ping", { "cursor": "boot-1:0" }],
+      "id": "unknown-event-name-rejected",
+      "result": { "error": "Unknown signal event \"ping\".", "valid": false }
+    },
+    {
+      "args": ["change", null],
+      "id": "non-object-payload-rejected",
+      "result": {
+        "error": "Signal payload must be a JSON object.",
+        "valid": false
+      }
+    },
+    {
+      "args": ["change", []],
+      "id": "array-payload-rejected",
+      "result": {
+        "error": "Signal payload must be a JSON object.",
+        "valid": false
+      }
+    },
+    {
+      "args": ["change", { "domains": ["plans"] }],
+      "id": "missing-cursor-rejected",
+      "result": {
+        "error": "Signal payload has an invalid cursor.",
+        "valid": false
+      }
+    },
+    {
+      "args": ["change", { "cursor": "boot-1", "domains": ["plans"] }],
+      "id": "malformed-cursor-no-colon-rejected",
+      "result": {
+        "error": "Signal payload has an invalid cursor.",
+        "valid": false
+      }
+    },
+    {
+      "args": ["resync", { "cursor": "boot-1:01" }],
+      "id": "malformed-cursor-leading-zero-rejected",
+      "result": {
+        "error": "Signal payload has an invalid cursor.",
+        "valid": false
+      }
+    },
+    {
+      "args": ["change", { "cursor": "boot-1:0" }],
+      "id": "change-missing-domains-rejected",
+      "result": {
+        "error": "A change payload accepts only cursor and domains.",
+        "valid": false
+      }
+    },
+    {
+      "args": [
+        "change",
+        { "cursor": "boot-1:0", "domains": ["plans"], "originDeviceId": "d1" }
+      ],
+      "id": "change-extra-field-rejected",
+      "result": {
+        "error": "A change payload accepts only cursor and domains.",
+        "valid": false
+      }
+    },
+    {
+      "args": ["resync", { "cursor": "boot-1:0", "domains": ["plans"] }],
+      "id": "resync-with-domains-rejected",
+      "result": {
+        "error": "A resync payload accepts only cursor.",
+        "valid": false
+      }
+    },
+    {
+      "args": ["change", { "cursor": "boot-1:0", "domains": [] }],
+      "id": "empty-domains-rejected",
+      "result": {
+        "error": "A change payload's domains must be a non-empty array.",
+        "valid": false
+      }
+    },
+    {
+      "args": ["change", { "cursor": "boot-1:0", "domains": ["catalogue"] }],
+      "id": "unknown-domain-rejected",
+      "result": {
+        "error": "A change payload names an unknown domain: \"catalogue\".",
+        "valid": false
+      }
+    },
+    {
+      "args": ["change", { "cursor": "boot-1:3", "domains": ["projects"] }],
+      "id": "change-projects-domain",
+      "result": {
+        "cursor": "boot-1:3",
+        "domains": ["projects"],
+        "kind": "change",
+        "valid": true
+      }
+    },
+    {
+      "args": [
+        "change",
+        { "cursor": "boot-1:4", "domains": ["plans", "projects"] }
+      ],
+      "id": "change-projects-with-plans",
+      "result": {
+        "cursor": "boot-1:4",
+        "domains": ["plans", "projects"],
+        "kind": "change",
+        "valid": true
+      }
+    },
+    {
+      "args": [
+        "change",
+        { "cursor": "boot-1:5", "domains": ["projects", "projects"] }
+      ],
+      "id": "duplicate-projects-domain-rejected",
+      "result": {
+        "error": "A change payload repeats domain \"projects\".",
+        "valid": false
+      }
+    },
+    {
+      "args": [
+        "change",
+        { "cursor": "boot-1:0", "domains": ["plans", "plans"] }
+      ],
+      "id": "duplicate-domain-rejected",
+      "result": {
+        "error": "A change payload repeats domain \"plans\".",
+        "valid": false
+      }
+    }
+  ],
+  "generatedFrom": "astro-contracts@1.0.0",
+  "module": "change-signal"
+}

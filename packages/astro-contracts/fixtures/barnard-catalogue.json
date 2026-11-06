@@ -1,0 +1,7 @@
+{
+  "cases": [
+    { "args": ["B 033"], "id": "canonical-barnard-number", "result": null }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "barnard-catalogue"
+}

@@ -1,0 +1,73 @@
+{
+  "description": "`POST /v1/plans/{planId}/session`: « Recréer la session à partir du plan ». The plan is active and not frozen again, its closure `executed` rides in the payload (`closedAs`), and the new session is finished, of origin `debrief`, without event, `outcome: null`: « À débriefer ».",
+  "exchange": "plan-session-recreated",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The 4 October night deleted (`session-delete`).",
+  "request": {
+    "method": "POST",
+    "path": "/api/v1/plans/00000000-0000-4000-8000-000000000009/session"
+  },
+  "response": {
+    "body": {
+      "plan": {
+        "archivedFrom": null,
+        "frozenAt": null,
+        "id": "00000000-0000-4000-8000-000000000009",
+        "nightEndAt": "2026-10-05T04:00:00.000Z",
+        "nightStartAt": "2026-10-04T19:00:00.000Z",
+        "payload": {
+          "closedAs": "executed",
+          "date": "2026-10-04",
+          "equipment": {
+            "cameraId": "00000000-0000-4000-8000-000000000006",
+            "mode": "imaging",
+            "telescopeId": "00000000-0000-4000-8000-000000000005"
+          },
+          "id": "browser-00000000-0000-4000-8000-000000000009",
+          "items": [
+            {
+              "durationMinutes": 120,
+              "endMinute": 120,
+              "filter": "L",
+              "id": "m31",
+              "projectId": "00000000-0000-4000-8000-000000000007",
+              "startMinute": 0,
+              "targetId": "m31"
+            }
+          ],
+          "location": {
+            "latitude": 45,
+            "longitude": -30,
+            "name": "Col des Étoiles",
+            "timeZone": "UTC"
+          },
+          "name": "Nuit du 2026-10-04"
+        },
+        "revision": 2,
+        "status": "active",
+        "updatedAt": "2026-10-14T12:30:00.000Z"
+      },
+      "session": {
+        "clientSessionId": null,
+        "createdAt": "2026-10-14T12:30:00.000Z",
+        "eveningDate": "2026-10-04",
+        "eventCount": 0,
+        "finishedAt": "2026-10-05T04:00:00.000Z",
+        "id": "00000000-0000-4000-8000-000000000037",
+        "origin": "debrief",
+        "outcome": null,
+        "pendingSupplementCount": 0,
+        "planId": "00000000-0000-4000-8000-000000000009",
+        "projectId": "00000000-0000-4000-8000-000000000007",
+        "reworkRevision": 0,
+        "reworkedAt": null,
+        "startedAt": "2026-10-04T19:00:00.000Z",
+        "status": "finished",
+        "supplementCount": 0,
+        "updatedAt": "2026-10-14T12:30:00.000Z"
+      }
+    },
+    "schema": "plan.schema.json#/$defs/recreateSessionResponse",
+    "status": 201
+  }
+}

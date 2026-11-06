@@ -1,0 +1,572 @@
+{
+  "module": "target-catalogues",
+  "export": "targetCatalogueOptions",
+  "cases": [
+    {
+      "id": "localized-catalogue-counts",
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "en"
+      ]
+    },
+    {
+      "id": "localized-catalogue-counts-de",
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "de"
+      ]
+    },
+    {
+      "id": "localized-catalogue-counts-es",
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "es"
+      ]
+    },
+    {
+      "id": "localized-catalogue-counts-it",
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "it"
+      ]
+    },
+    {
+      "id": "localized-catalogue-counts-pt-BR",
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "pt-BR"
+      ]
+    },
+    {
+      "id": "every-catalogue-description-de",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard"
+            ]
+          }
+        ],
+        "de"
+      ]
+    },
+    {
+      "id": "every-catalogue-description-es",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard"
+            ]
+          }
+        ],
+        "es"
+      ]
+    },
+    {
+      "id": "every-catalogue-description-it",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard"
+            ]
+          }
+        ],
+        "it"
+      ]
+    },
+    {
+      "id": "every-catalogue-description-pt-BR",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard"
+            ]
+          }
+        ],
+        "pt-BR"
+      ]
+    },
+    {
+      "id": "catalogue-descriptions-simplified-chinese",
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "zh-Hans"
+      ]
+    },
+    {
+      "id": "catalogue-descriptions-traditional-chinese",
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "catalogue-descriptions-russian",
+      "args": [
+        [
+          { "catalogues": ["Messier", "NGC"] },
+          { "catalogues": ["Messier"] },
+          { "catalogues": ["IC"] }
+        ],
+        "ru"
+      ]
+    },
+    {
+      "id": "nebula-catalogues-ja",
+      "args": [
+        [
+          { "catalogues": ["Sharpless", "LBN"] },
+          { "catalogues": ["LDN"] },
+          { "catalogues": ["Abell", "NGC"] }
+        ],
+        "ja"
+      ]
+    },
+    {
+      "id": "stored-document-wins-in-its-language",
+      "args": [
+        [{ "catalogues": ["Messier", "NGC"] }],
+        "fr",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stored-document-in-three-languages-german-gets-the-code-german",
+      "args": [
+        [{ "catalogues": ["Messier", "NGC", "Sharpless"] }],
+        "de",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stored-english-before-the-code-english",
+      "args": [
+        [{ "catalogues": ["Messier", "NGC", "Zeta"] }],
+        "ko",
+        {
+          "Messier": { "en": "Stored English for Messier." },
+          "Zeta": {
+            "en": "Stored English for a catalogue the code does not know."
+          }
+        }
+      ]
+    },
+    {
+      "id": "a-catalogue-without-any-text-has-no-description",
+      "args": [[{ "catalogues": ["Zeta", "Messier"] }], "fr", {}]
+    },
+    {
+      "id": "every-catalogue-has-a-text-fr",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "fr",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "every-catalogue-has-a-text-en",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "en",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "every-catalogue-has-a-text-ja",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "ja",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "every-catalogue-has-a-text-de",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "de",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "every-catalogue-has-a-text-es",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "es",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "every-catalogue-has-a-text-it",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "it",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "every-catalogue-has-a-text-pt-BR",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "pt-BR",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "every-catalogue-has-a-text-zh-Hans",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "zh-Hans",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "every-catalogue-has-a-text-zh-Hant",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "zh-Hant",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "every-catalogue-has-a-text-ru",
+      "args": [
+        [
+          {
+            "catalogues": [
+              "Système solaire",
+              "Messier",
+              "NGC",
+              "IC",
+              "Caldwell",
+              "Barnard",
+              "Sharpless",
+              "LDN",
+              "LBN",
+              "Abell"
+            ]
+          }
+        ],
+        "ru",
+        {
+          "Messier": {
+            "fr": "Texte du document pour Messier.",
+            "en": "Document text for Messier.",
+            "ja": "文書のメシエの説明です。"
+          },
+          "NGC": {
+            "fr": "Texte du document pour NGC.",
+            "en": "Document text for NGC.",
+            "ja": "文書のNGCの説明です。"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "module": "abell-record",
+  "file": "abell-catalogue",
+  "export": "parseStrasbourgPnRecord",
+  "cases": [
+    {
+      "id": "abell-main-name",
+      "args": [
+        "047.0+42.4 |16 25 32.2 +28 01 12.   83...481|A 39         | 47+42 1 |16255+2801 |ABELL 1955                      |A55 27,ARO 180,VV' 140"
+      ]
+    },
+    {
+      "id": "abell-other-name",
+      "args": [
+        "117.5+18.9 |22 42 12.0 +80 11 00.   89..1570|IC 1454      |117+18 1 |22419+8010 |ABELL 1955                      |A55 67,A 81,ARO 376,VV' 568"
+      ]
+    },
+    {
+      "id": "not-abell",
+      "args": [
+        "000.0-06.8 |18 10 02.0 -32 20 34.   67.30013|H 1-62       |359-06 1 |18100-3220 |HARO 1952                       |AS 290,ESO 456-76,He 2-367,MHa 77- 52,SaSt 2-19,VV' 368,Wray 16-389"
+      ]
+    }
+  ]
+}

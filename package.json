@@ -1,0 +1,43 @@
+{
+  "name": "astro-portal",
+  "version": "1.0.0",
+  "description": "Your astrophotography portal and night planner, on your own server.",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build:packages": "npm run build -w astro-contracts -w astro-core -w planner -w planner-projects -w portal -w portal-app",
+    "build": "npm run build:packages && npm run build -w apps/portal-oss",
+    "build:oss": "npm run build",
+    "start": "node apps/portal-oss/server.mjs",
+    "dev": "npm run build:packages && node apps/portal-oss/server.mjs --dev",
+    "test": "npm run build:packages && npm run test --workspaces --if-present",
+    "format:check": "prettier --check .",
+    "check": "npm run build && npm test && npm run format:check",
+    "backup:runtime": "node scripts/backup-runtime.mjs",
+    "restore:runtime": "node scripts/restore-runtime.mjs",
+    "prepare:sky-quality-raster": "npm run prepare:sky-quality-raster -w portal --",
+    "prepare:sky-tile-pack": "npm run prepare:sky-tile-pack -w portal --",
+    "sample:install": "node scripts/sample-data/install.mjs",
+    "sample:verify": "node scripts/sample-data/verify.mjs",
+    "import:solar-system-images": "node scripts/import-solar-system-images.mjs",
+    "export:static-data": "node scripts/export-static-data.mjs",
+    "install:hyg-catalog": "node scripts/install-hyg-catalog.mjs",
+    "deploy:release": "node scripts/deploy-release.mjs --app portal-oss"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "prettier": "^3.9.6",
+    "typescript": "^7.0.2"
+  }
+}

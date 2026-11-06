@@ -1,0 +1,211 @@
+{
+  "cases": [
+    {
+      "args": ["Galaxie", "ja"],
+      "id": "galaxy-japanese-label",
+      "result": "銀河"
+    },
+    {
+      "args": ["Galaxie", "en-XA"],
+      "id": "type-without-a-label-in-the-locale-reads-english",
+      "result": "Galaxy"
+    },
+    {
+      "args": ["Andromède", "ja"],
+      "id": "constellation-japanese-name",
+      "result": "アンドロメダ座"
+    },
+    {
+      "args": ["Andromède", "en"],
+      "id": "constellation-english-name",
+      "result": "Andromeda"
+    },
+    {
+      "args": ["Andromède", "fr"],
+      "id": "constellation-french-key-in-french",
+      "result": "Andromède"
+    },
+    {
+      "args": ["Andromède", "en-XA"],
+      "id": "constellation-without-a-label-in-the-locale-reads-the-english-name",
+      "result": "Andromeda"
+    },
+    {
+      "args": ["Nébuleuse en émission", "de"],
+      "id": "type-de-label",
+      "result": "Emissionsnebel"
+    },
+    {
+      "args": ["Chiens de chasse", "de"],
+      "id": "constellation-de-name",
+      "result": "Jagdhunde"
+    },
+    {
+      "args": ["Nébuleuse en émission", "es"],
+      "id": "type-es-label",
+      "result": "Nebulosa de emisión"
+    },
+    {
+      "args": ["Chiens de chasse", "es"],
+      "id": "constellation-es-name",
+      "result": "Perros de Caza"
+    },
+    {
+      "args": ["Nébuleuse en émission", "it"],
+      "id": "type-it-label",
+      "result": "Nebulosa a emissione"
+    },
+    {
+      "args": ["Chiens de chasse", "it"],
+      "id": "constellation-it-name",
+      "result": "Cani da Caccia"
+    },
+    {
+      "args": ["Nébuleuse en émission", "pt-BR"],
+      "id": "type-pt-br-label",
+      "result": "Nebulosa de emissão"
+    },
+    {
+      "args": ["Chiens de chasse", "pt-BR"],
+      "id": "constellation-pt-br-name",
+      "result": "Cães de Caça"
+    },
+    {
+      "args": ["Galaxie", "zh-Hans"],
+      "id": "galaxy-simplified-chinese-label",
+      "result": "星系"
+    },
+    {
+      "args": ["Galaxie", "zh-Hant"],
+      "id": "galaxy-traditional-chinese-label",
+      "result": "星系"
+    },
+    {
+      "args": ["Galaxie", "ru"],
+      "id": "galaxy-russian-label",
+      "result": "Галактика"
+    },
+    {
+      "args": ["Andromède", "zh-Hans"],
+      "id": "constellation-simplified-chinese-name",
+      "result": "仙女座"
+    },
+    {
+      "args": ["Andromède", "zh-Hant"],
+      "id": "constellation-traditional-chinese-name",
+      "result": "仙女座"
+    },
+    {
+      "args": ["Andromède", "ru"],
+      "id": "constellation-russian-name",
+      "result": "Андромеда"
+    },
+    {
+      "args": ["Nébuleuse en émission", "zh-Hans"],
+      "id": "emission-nebula-simplified-chinese-label",
+      "result": "发射星云"
+    },
+    {
+      "args": ["Nébuleuse en émission", "zh-Hant"],
+      "id": "emission-nebula-traditional-chinese-label",
+      "result": "發射星雲"
+    },
+    {
+      "args": ["Nébuleuse en émission", "ru"],
+      "id": "emission-nebula-russian-label",
+      "result": "Эмиссионная туманность"
+    },
+    {
+      "args": ["Lyr", "fr"],
+      "id": "constellation-by-iau-key-in-french",
+      "result": "Lyre"
+    },
+    {
+      "args": ["Lyr", "ja"],
+      "id": "constellation-by-iau-key-in-japanese",
+      "result": "こと座"
+    },
+    {
+      "args": ["Lyr", "es"],
+      "id": "constellation-by-iau-key-in-spanish",
+      "result": "Lira"
+    },
+    {
+      "args": ["Lyr", "ru"],
+      "id": "constellation-by-iau-key-in-russian",
+      "result": "Лира"
+    },
+    {
+      "args": ["Lyr", "zh-Hans"],
+      "id": "constellation-by-iau-key-in-simplified-chinese",
+      "result": "天琴座"
+    },
+    {
+      "args": ["Se1", "de"],
+      "id": "constellation-old-serpent-key-reads-the-serpent",
+      "result": "Schlange"
+    },
+    {
+      "args": ["Car", "de"],
+      "id": "carina-in-german",
+      "result": "Kiel des Schiffs"
+    },
+    {
+      "args": ["Ant", "fr"],
+      "id": "antlia-in-french",
+      "result": "Machine pneumatique"
+    },
+    {
+      "args": ["Étoile brillante", "en"],
+      "id": "bright-star-type-in-english",
+      "result": "Bright star"
+    },
+    {
+      "args": ["Étoile brillante", "ja"],
+      "id": "bright-star-type-in-japanese",
+      "result": "明るい恒星"
+    },
+    {
+      "args": ["Étoile brillante", "pt-BR"],
+      "id": "bright-star-type-in-portuguese",
+      "result": "Estrela brilhante"
+    },
+    {
+      "args": ["Étoile brillante", "ru"],
+      "id": "bright-star-type-in-russian",
+      "result": "Яркая звезда"
+    },
+    {
+      "args": ["Étoile brillante", "zh-Hant"],
+      "id": "bright-star-type-in-traditional-chinese",
+      "result": "亮星"
+    },
+    {
+      "args": ["Étoile brillante", "fr"],
+      "id": "bright-star-type-in-french",
+      "result": "Étoile brillante"
+    },
+    {
+      "args": ["Constellation", "de"],
+      "id": "constellation-type-in-german",
+      "result": "Sternbild"
+    },
+    {
+      "args": ["Constellation", "ja"],
+      "id": "constellation-type-in-japanese",
+      "result": "星座"
+    },
+    {
+      "args": ["Constellation", "it"],
+      "id": "constellation-type-in-italian",
+      "result": "Costellazione"
+    },
+    {
+      "args": ["Constellation", "ru"],
+      "id": "constellation-type-in-russian",
+      "result": "Созвездие"
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "catalog-taxonomy"
+}

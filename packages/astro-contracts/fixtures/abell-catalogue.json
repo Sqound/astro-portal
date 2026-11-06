@@ -1,0 +1,10 @@
+{
+  "cases": [
+    { "args": ["Abell 039"], "id": "zero-padded", "result": "Abell 39" },
+    { "args": ["PN A66 39"], "id": "simbad-writing", "result": "Abell 39" },
+    { "args": ["Abell39"], "id": "joined", "result": "Abell 39" },
+    { "args": ["A 39"], "id": "foreign-designation", "result": null }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "abell-catalogue"
+}

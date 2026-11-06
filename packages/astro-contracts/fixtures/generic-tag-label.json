@@ -1,0 +1,218 @@
+{
+  "cases": [
+    { "args": ["Galaxie", "fr"], "id": "galaxy-fr", "result": "Galaxie" },
+    { "args": ["Galaxie", "en"], "id": "galaxy-en", "result": "Galaxy" },
+    { "args": ["Galaxie", "ja"], "id": "galaxy-ja", "result": "銀河" },
+    { "args": ["Galaxie", "de"], "id": "galaxy-de", "result": "Galaxie" },
+    { "args": ["Galaxie", "es"], "id": "galaxy-es", "result": "Galaxia" },
+    { "args": ["Galaxie", "it"], "id": "galaxy-it", "result": "Galassia" },
+    { "args": ["Galaxie", "pt-BR"], "id": "galaxy-pt-BR", "result": "Galáxia" },
+    {
+      "args": ["Galaxie", "zh-Hans"],
+      "id": "galaxy-zh-Hans",
+      "result": "星系"
+    },
+    {
+      "args": ["Galaxie", "zh-Hant"],
+      "id": "galaxy-zh-Hant",
+      "result": "星系"
+    },
+    { "args": ["Galaxie", "ru"], "id": "galaxy-ru", "result": "Галактика" },
+    { "args": ["Nébuleuse", "fr"], "id": "nebula-fr", "result": "Nébuleuse" },
+    { "args": ["Nébuleuse", "en"], "id": "nebula-en", "result": "Nebula" },
+    { "args": ["Nébuleuse", "ja"], "id": "nebula-ja", "result": "星雲" },
+    { "args": ["Nébuleuse", "de"], "id": "nebula-de", "result": "Nebel" },
+    { "args": ["Nébuleuse", "es"], "id": "nebula-es", "result": "Nebulosa" },
+    { "args": ["Nébuleuse", "it"], "id": "nebula-it", "result": "Nebulosa" },
+    {
+      "args": ["Nébuleuse", "pt-BR"],
+      "id": "nebula-pt-BR",
+      "result": "Nebulosa"
+    },
+    {
+      "args": ["Nébuleuse", "zh-Hans"],
+      "id": "nebula-zh-Hans",
+      "result": "星云"
+    },
+    {
+      "args": ["Nébuleuse", "zh-Hant"],
+      "id": "nebula-zh-Hant",
+      "result": "星雲"
+    },
+    { "args": ["Nébuleuse", "ru"], "id": "nebula-ru", "result": "Туманность" },
+    { "args": ["Amas", "fr"], "id": "cluster-fr", "result": "Amas" },
+    { "args": ["Amas", "en"], "id": "cluster-en", "result": "Star cluster" },
+    { "args": ["Amas", "ja"], "id": "cluster-ja", "result": "星団" },
+    { "args": ["Amas", "de"], "id": "cluster-de", "result": "Sternhaufen" },
+    { "args": ["Amas", "es"], "id": "cluster-es", "result": "Cúmulo estelar" },
+    {
+      "args": ["Amas", "it"],
+      "id": "cluster-it",
+      "result": "Ammasso stellare"
+    },
+    {
+      "args": ["Amas", "pt-BR"],
+      "id": "cluster-pt-BR",
+      "result": "Aglomerado estelar"
+    },
+    { "args": ["Amas", "zh-Hans"], "id": "cluster-zh-Hans", "result": "星团" },
+    { "args": ["Amas", "zh-Hant"], "id": "cluster-zh-Hant", "result": "星團" },
+    {
+      "args": ["Amas", "ru"],
+      "id": "cluster-ru",
+      "result": "Звёздное скопление"
+    },
+    { "args": ["Lune", "fr"], "id": "moon-fr", "result": "Lune" },
+    { "args": ["Lune", "en"], "id": "moon-en", "result": "Moon" },
+    { "args": ["Lune", "ja"], "id": "moon-ja", "result": "月" },
+    { "args": ["Lune", "de"], "id": "moon-de", "result": "Mond" },
+    { "args": ["Lune", "es"], "id": "moon-es", "result": "Luna" },
+    { "args": ["Lune", "it"], "id": "moon-it", "result": "Luna" },
+    { "args": ["Lune", "pt-BR"], "id": "moon-pt-BR", "result": "Lua" },
+    { "args": ["Lune", "zh-Hans"], "id": "moon-zh-Hans", "result": "月球" },
+    { "args": ["Lune", "zh-Hant"], "id": "moon-zh-Hant", "result": "月球" },
+    { "args": ["Lune", "ru"], "id": "moon-ru", "result": "Луна" },
+    { "args": ["Planète", "fr"], "id": "planet-fr", "result": "Planète" },
+    { "args": ["Planète", "en"], "id": "planet-en", "result": "Planet" },
+    { "args": ["Planète", "ja"], "id": "planet-ja", "result": "惑星" },
+    { "args": ["Planète", "de"], "id": "planet-de", "result": "Planet" },
+    { "args": ["Planète", "es"], "id": "planet-es", "result": "Planeta" },
+    { "args": ["Planète", "it"], "id": "planet-it", "result": "Pianeta" },
+    { "args": ["Planète", "pt-BR"], "id": "planet-pt-BR", "result": "Planeta" },
+    {
+      "args": ["Planète", "zh-Hans"],
+      "id": "planet-zh-Hans",
+      "result": "行星"
+    },
+    {
+      "args": ["Planète", "zh-Hant"],
+      "id": "planet-zh-Hant",
+      "result": "行星"
+    },
+    { "args": ["Planète", "ru"], "id": "planet-ru", "result": "Планета" },
+    { "args": ["Soleil", "fr"], "id": "sun-fr", "result": "Soleil" },
+    { "args": ["Soleil", "en"], "id": "sun-en", "result": "Sun" },
+    { "args": ["Soleil", "ja"], "id": "sun-ja", "result": "太陽" },
+    { "args": ["Soleil", "de"], "id": "sun-de", "result": "Sonne" },
+    { "args": ["Soleil", "es"], "id": "sun-es", "result": "Sol" },
+    { "args": ["Soleil", "it"], "id": "sun-it", "result": "Sole" },
+    { "args": ["Soleil", "pt-BR"], "id": "sun-pt-BR", "result": "Sol" },
+    { "args": ["Soleil", "zh-Hans"], "id": "sun-zh-Hans", "result": "太阳" },
+    { "args": ["Soleil", "zh-Hant"], "id": "sun-zh-Hant", "result": "太陽" },
+    { "args": ["Soleil", "ru"], "id": "sun-ru", "result": "Солнце" },
+    { "args": ["Étoile", "fr"], "id": "star-fr", "result": "Étoile" },
+    { "args": ["Étoile", "en"], "id": "star-en", "result": "Star" },
+    { "args": ["Étoile", "ja"], "id": "star-ja", "result": "恒星" },
+    { "args": ["Étoile", "de"], "id": "star-de", "result": "Stern" },
+    { "args": ["Étoile", "es"], "id": "star-es", "result": "Estrella" },
+    { "args": ["Étoile", "it"], "id": "star-it", "result": "Stella" },
+    { "args": ["Étoile", "pt-BR"], "id": "star-pt-BR", "result": "Estrela" },
+    { "args": ["Étoile", "zh-Hans"], "id": "star-zh-Hans", "result": "恒星" },
+    { "args": ["Étoile", "zh-Hant"], "id": "star-zh-Hant", "result": "恆星" },
+    { "args": ["Étoile", "ru"], "id": "star-ru", "result": "Звезда" },
+    { "args": ["Comète", "fr"], "id": "comet-fr", "result": "Comète" },
+    { "args": ["Comète", "en"], "id": "comet-en", "result": "Comet" },
+    { "args": ["Comète", "ja"], "id": "comet-ja", "result": "彗星" },
+    { "args": ["Comète", "de"], "id": "comet-de", "result": "Komet" },
+    { "args": ["Comète", "es"], "id": "comet-es", "result": "Cometa" },
+    { "args": ["Comète", "it"], "id": "comet-it", "result": "Cometa" },
+    { "args": ["Comète", "pt-BR"], "id": "comet-pt-BR", "result": "Cometa" },
+    { "args": ["Comète", "zh-Hans"], "id": "comet-zh-Hans", "result": "彗星" },
+    { "args": ["Comète", "zh-Hant"], "id": "comet-zh-Hant", "result": "彗星" },
+    { "args": ["Comète", "ru"], "id": "comet-ru", "result": "Комета" },
+    {
+      "args": ["Grand champ", "fr"],
+      "id": "wide_field-fr",
+      "result": "Grand champ"
+    },
+    {
+      "args": ["Grand champ", "en"],
+      "id": "wide_field-en",
+      "result": "Wide field"
+    },
+    {
+      "args": ["Grand champ", "ja"],
+      "id": "wide_field-ja",
+      "result": "広視野"
+    },
+    {
+      "args": ["Grand champ", "de"],
+      "id": "wide_field-de",
+      "result": "Weitfeld"
+    },
+    {
+      "args": ["Grand champ", "es"],
+      "id": "wide_field-es",
+      "result": "Gran campo"
+    },
+    {
+      "args": ["Grand champ", "it"],
+      "id": "wide_field-it",
+      "result": "Grande campo"
+    },
+    {
+      "args": ["Grand champ", "pt-BR"],
+      "id": "wide_field-pt-BR",
+      "result": "Grande campo"
+    },
+    {
+      "args": ["Grand champ", "zh-Hans"],
+      "id": "wide_field-zh-Hans",
+      "result": "广角星野"
+    },
+    {
+      "args": ["Grand champ", "zh-Hant"],
+      "id": "wide_field-zh-Hant",
+      "result": "廣角星野"
+    },
+    {
+      "args": ["Grand champ", "ru"],
+      "id": "wide_field-ru",
+      "result": "Широкое поле"
+    },
+    { "args": ["Messier", "fr"], "id": "messier-fr", "result": "Messier" },
+    { "args": ["Messier", "en"], "id": "messier-en", "result": "Messier" },
+    { "args": ["Messier", "ja"], "id": "messier-ja", "result": "メシエ" },
+    { "args": ["Messier", "de"], "id": "messier-de", "result": "Messier" },
+    { "args": ["Messier", "es"], "id": "messier-es", "result": "Messier" },
+    { "args": ["Messier", "it"], "id": "messier-it", "result": "Messier" },
+    {
+      "args": ["Messier", "pt-BR"],
+      "id": "messier-pt-BR",
+      "result": "Messier"
+    },
+    {
+      "args": ["Messier", "zh-Hans"],
+      "id": "messier-zh-Hans",
+      "result": "梅西耶"
+    },
+    {
+      "args": ["Messier", "zh-Hant"],
+      "id": "messier-zh-Hant",
+      "result": "梅西耶"
+    },
+    { "args": ["Messier", "ru"], "id": "messier-ru", "result": "Мессье" },
+    {
+      "args": ["Askar", "ja"],
+      "id": "own-tag-is-never-translated",
+      "result": "Askar"
+    },
+    {
+      "args": ["nebula", "de"],
+      "id": "own-tag-lowercase-key-is-not-a-generic-word",
+      "result": "nebula"
+    },
+    {
+      "args": ["nébuleuse", "en"],
+      "id": "own-tag-keeps-its-case",
+      "result": "nébuleuse"
+    },
+    {
+      "args": ["Nébuleuse", "en-XA"],
+      "id": "locale-without-a-label-reads-english",
+      "result": "Nebula"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "generic-tag-label"
+}

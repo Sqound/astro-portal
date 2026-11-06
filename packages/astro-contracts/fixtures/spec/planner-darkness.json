@@ -1,0 +1,15 @@
+{
+  "module": "planner-darkness",
+  "package": "portal",
+  "file": "planner/state",
+  "export": "normalizePlanDarkness",
+  "cases": [
+    { "id": "astronomical", "args": ["astronomical"] },
+    { "id": "nautical", "args": ["nautical"] },
+    { "id": "civil", "args": ["civil"] },
+    { "id": "unknown-name", "args": ["twilight"] },
+    { "id": "wrong-case", "args": ["Nautical"] },
+    { "id": "absent", "args": [null] },
+    { "id": "number", "args": [-12] }
+  ]
+}

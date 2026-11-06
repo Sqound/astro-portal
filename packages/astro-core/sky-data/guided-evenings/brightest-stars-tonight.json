@@ -1,0 +1,55 @@
+{
+  "$schema": "./guided-evening.schema.json",
+  "id": "brightest-stars-tonight",
+  "sheetOrder": 1,
+  "kind": "computed",
+  "level": "beginner",
+  "observingModes": [
+    "naked",
+    "binoculars",
+    "tripod",
+    "mount",
+    "smartTelescope"
+  ],
+  "estimatedMinutes": 45,
+  "hemispheres": ["north", "south"],
+  "seasons": ["winter", "spring", "summer", "autumn"],
+  "computed": {
+    "source": "brightStars",
+    "stepType": "brightStar",
+    "count": 10,
+    "minAltitudeDegrees": 15,
+    "order": "westToEast",
+    "hideWhenEmpty": true,
+    "texts": [
+      { "id": "lead-first", "slot": "lead", "when": { "position": "first" } },
+      { "id": "lead-last", "slot": "lead", "when": { "position": "last" } },
+      {
+        "id": "lead-low",
+        "slot": "lead",
+        "when": { "altitudeBelowDegrees": 25 }
+      },
+      {
+        "id": "body-blue",
+        "slot": "body",
+        "when": { "colourIndexBelow": -0.05 }
+      },
+      {
+        "id": "body-white",
+        "slot": "body",
+        "when": { "colourIndexFrom": -0.05, "colourIndexBelow": 0.4 }
+      },
+      {
+        "id": "body-yellow",
+        "slot": "body",
+        "when": { "colourIndexFrom": 0.4, "colourIndexBelow": 1 }
+      },
+      {
+        "id": "body-orange",
+        "slot": "body",
+        "when": { "colourIndexFrom": 1, "colourIndexBelow": 1.6 }
+      },
+      { "id": "body-red", "slot": "body", "when": { "colourIndexFrom": 1.6 } }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "cases": [
+    {
+      "args": [],
+      "id": "the-table",
+      "result": {
+        "binning": { "monoBelowArcsecPerPixel": 0.6 },
+        "focalRatio": {
+          "fast": 4,
+          "maximum": 2,
+          "minimum": 0.5,
+          "reference": 5,
+          "slow": 7
+        },
+        "gain": { "dslrIso": 800 },
+        "kinds": {
+          "cluster": {
+            "colourBroadband": 60,
+            "colourDual": null,
+            "gain": "unity",
+            "monoBroadband": 60,
+            "monoNarrow": null,
+            "video": false
+          },
+          "comet": {
+            "colourBroadband": 60,
+            "colourDual": null,
+            "gain": "unity",
+            "monoBroadband": 60,
+            "monoNarrow": null,
+            "video": false
+          },
+          "emission": {
+            "colourBroadband": 120,
+            "colourDual": 300,
+            "gain": "unity",
+            "monoBroadband": 120,
+            "monoNarrow": 300,
+            "video": false
+          },
+          "galaxy": {
+            "colourBroadband": 120,
+            "colourDual": null,
+            "gain": "unity",
+            "monoBroadband": 120,
+            "monoNarrow": 300,
+            "video": false
+          },
+          "moon": {
+            "colourBroadband": 0.003,
+            "colourDual": null,
+            "gain": "low",
+            "monoBroadband": 0.002,
+            "monoNarrow": null,
+            "video": true
+          },
+          "planet": {
+            "colourBroadband": 0.01,
+            "colourDual": null,
+            "gain": "high",
+            "monoBroadband": 0.01,
+            "monoNarrow": null,
+            "video": true
+          },
+          "planetary": {
+            "colourBroadband": 120,
+            "colourDual": 300,
+            "gain": "unity",
+            "monoBroadband": 60,
+            "monoNarrow": 300,
+            "video": false
+          },
+          "reflection": {
+            "colourBroadband": 180,
+            "colourDual": null,
+            "gain": "unity",
+            "monoBroadband": 180,
+            "monoNarrow": null,
+            "video": false
+          }
+        },
+        "moonBrightPercent": 30,
+        "mountCaps": { "altaz": 30, "equatorial": 60, "guided": 600 },
+        "readOutSeconds": 2,
+        "sky": {
+          "bright": 20.3,
+          "broadband": { "bright": 0.5, "dark": 1.5, "medium": 1 },
+          "dark": 21.3,
+          "narrowband": { "bright": 0.75, "dark": 1, "medium": 1 }
+        },
+        "steps": [10, 15, 20, 30, 60, 90, 120, 180, 240, 300, 600],
+        "version": "expo-b-1",
+        "videoSeconds": 90
+      }
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "acquisition-rule-table"
+}

@@ -1,0 +1,107 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "childrenSpokenParagraphs": ["Messier 31 est une galaxie."],
+          "spokenParagraphs": [
+            "Messier 31 est une galaxie dans la constellation d’Andromède."
+          ],
+          "story": "M31 est une galaxie dans Andromède.",
+          "storyParagraphs": ["M31 est une galaxie dans Andromède."]
+        },
+        { "children": false }
+      ],
+      "id": "the-spoken-text-is-preferred-to-the-written-one",
+      "result": {
+        "paragraphs": [
+          "Messier 31 est une galaxie dans la constellation d’Andromède."
+        ],
+        "source": "spoken"
+      }
+    },
+    {
+      "args": [
+        {
+          "childrenSpokenParagraphs": [
+            "Messier 31 est une galaxie.",
+            "On la trouve parmi les étoiles d’Andromède."
+          ],
+          "spokenParagraphs": [
+            "Messier 31 est une galaxie dans la constellation d’Andromède."
+          ],
+          "storyParagraphs": ["M31 est une galaxie dans Andromède."]
+        },
+        { "children": true }
+      ],
+      "id": "the-childrens-switch-reads-the-childrens-text",
+      "result": {
+        "paragraphs": [
+          "Messier 31 est une galaxie.",
+          "On la trouve parmi les étoiles d’Andromède."
+        ],
+        "source": "children"
+      }
+    },
+    {
+      "args": [
+        {
+          "spokenParagraphs": ["NGC 7000 is an emission nebula in Cygnus."],
+          "storyParagraphs": ["NGC 7000 is an emission nebula."]
+        },
+        { "children": true }
+      ],
+      "id": "the-childrens-switch-without-a-childrens-text-reads-the-spoken-one",
+      "result": {
+        "paragraphs": ["NGC 7000 is an emission nebula in Cygnus."],
+        "source": "spoken"
+      }
+    },
+    {
+      "args": [
+        {
+          "story": "M31は、アンドロメダ座にある銀河です。",
+          "storyParagraphs": ["M31は、アンドロメダ座にある銀河です。", ""]
+        },
+        { "children": true }
+      ],
+      "id": "without-spoken-fields-the-written-paragraphs",
+      "result": {
+        "paragraphs": ["M31は、アンドロメダ座にある銀河です。"],
+        "source": "written"
+      }
+    },
+    {
+      "args": [
+        {
+          "childrenSpokenParagraphs": ["", 7],
+          "spokenParagraphs": [],
+          "storyParagraphs": ["Die Galaxie liegt in Andromeda."]
+        },
+        { "children": true }
+      ],
+      "id": "empty-spoken-lists-are-absent",
+      "result": {
+        "paragraphs": ["Die Galaxie liegt in Andromeda."],
+        "source": "written"
+      }
+    },
+    {
+      "args": [{ "story": "A deep-sky object." }, {}],
+      "id": "the-story-when-there-is-no-paragraph-list",
+      "result": { "paragraphs": ["A deep-sky object."], "source": "written" }
+    },
+    {
+      "args": [{ "story": "Unused.", "storyParagraphs": [] }, {}],
+      "id": "an-empty-paragraph-list-is-nothing-to-read",
+      "result": { "paragraphs": [], "source": "none" }
+    },
+    {
+      "args": [{}, { "children": true }],
+      "id": "nothing-to-read",
+      "result": { "paragraphs": [], "source": "none" }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "spoken-text-choice"
+}

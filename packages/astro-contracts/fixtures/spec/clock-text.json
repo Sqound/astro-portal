@@ -1,0 +1,15 @@
+{
+  "module": "clock-text",
+  "package": "portal",
+  "file": "written-forms",
+  "export": "clockText",
+  "cases": [
+    { "id": "evening-utc", "args": [1791321180000, 0] },
+    { "id": "evening-tokyo", "args": [1791288780000, 540] },
+    { "id": "after-midnight-padded", "args": [1791335400000, 0] },
+    { "id": "crosses-midnight-west", "args": [1791335400000, -300] },
+    { "id": "crosses-midnight-east", "args": [1791321180000, 270] },
+    { "id": "no-zone-reads-utc", "args": [1791321180000, null] },
+    { "id": "unreadable-instant", "args": [null, 0] }
+  ]
+}

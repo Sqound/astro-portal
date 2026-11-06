@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "args": [
+        { "planner.multiple": false, "sync.plan_limit": 1 },
+        "planner.multiple"
+      ],
+      "id": "boolean-false",
+      "result": false
+    },
+    {
+      "args": [{ "gallery.private": true }, "gallery.private"],
+      "id": "boolean-true",
+      "result": true
+    },
+    {
+      "args": [{ "sync.plan_limit": 3 }, "sync.plan_limit"],
+      "id": "numeric-positive-is-enabled",
+      "result": true
+    },
+    {
+      "args": [{ "sync.plan_limit": 0 }, "sync.plan_limit"],
+      "id": "numeric-zero-is-disabled",
+      "result": false
+    },
+    {
+      "args": [{ "capture.count_limit": 3 }, "capture.count_limit"],
+      "id": "capture-count-limit-three-allows",
+      "result": true
+    },
+    {
+      "args": [{ "capture.count_limit": 0 }, "capture.count_limit"],
+      "id": "capture-count-limit-zero-is-no-allowance",
+      "result": false
+    },
+    {
+      "args": [{ "capture.public": true }, "capture.public"],
+      "id": "capture-public-true",
+      "result": true
+    },
+    {
+      "args": [{ "capture.public": false }, "capture.public"],
+      "id": "capture-public-false",
+      "result": false
+    },
+    {
+      "args": [{ "portal.invitations": true }, "portal.invitations"],
+      "id": "portal-invitations-true",
+      "result": true
+    },
+    {
+      "args": [{ "portal.invitations": false }, "portal.invitations"],
+      "id": "portal-invitations-false",
+      "result": false
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "capability-gate"
+}

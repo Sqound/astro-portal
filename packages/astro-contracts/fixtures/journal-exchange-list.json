@@ -1,0 +1,818 @@
+{
+  "description": "The Journal's first page for the whole space: a session of every state (executed, executed in part, to debrief, abandoned, free), a plan carried out without the application, a night Astro Sync created, a reworked session, and the finished multi-night plan grouped. The request the Journal screens make with no filter.",
+  "exchange": "list",
+  "generatedFrom": "portal@1.0.0",
+  "given": "A space with ten nights; the multi-night plan of M 31 is finished, the one of NGC 7000 is active.",
+  "request": { "method": "GET", "path": "/api/v1/journal?limit=50" },
+  "response": {
+    "body": {
+      "groups": [
+        {
+          "acquiredSeconds": 0,
+          "firstEveningDate": "2026-10-06",
+          "frameCount": 0,
+          "goalSeconds": 36000,
+          "lastEveningDate": "2026-10-06",
+          "lineCount": 1,
+          "lineKeys": ["00000000-0000-4000-8000-000000000010"],
+          "name": "NGC 7000",
+          "planCaptureId": null,
+          "projectId": "00000000-0000-4000-8000-000000000008",
+          "sessionIds": ["00000000-0000-4000-8000-000000000010"],
+          "status": "active",
+          "targetId": "ngc7000",
+          "targetLabel": "NGC 7000",
+          "toDebriefCount": 1
+        },
+        {
+          "acquiredSeconds": 12600,
+          "firstEveningDate": "2026-10-04",
+          "frameCount": 30,
+          "goalSeconds": 36000,
+          "lastEveningDate": "2026-10-05",
+          "lineCount": 2,
+          "lineKeys": [
+            "00000000-0000-4000-8000-00000000000d",
+            "00000000-0000-4000-8000-00000000000a"
+          ],
+          "name": "M 31",
+          "planCaptureId": null,
+          "projectId": "00000000-0000-4000-8000-000000000007",
+          "sessionIds": [
+            "00000000-0000-4000-8000-00000000000d",
+            "00000000-0000-4000-8000-00000000000a"
+          ],
+          "status": "finished",
+          "targetId": "m31",
+          "targetLabel": "Galaxie d’Andromède",
+          "toDebriefCount": 0
+        }
+      ],
+      "instruments": ["Askar 50P · ZWO ASI533MC Pro"],
+      "nextCursor": null,
+      "sessions": [
+        {
+          "acquiredSeconds": 7200,
+          "captureCount": 0,
+          "eveningDate": "2026-10-12",
+          "finishedAt": "2026-10-12T22:00:00.000Z",
+          "frameCount": 27,
+          "instrumentLabel": "Askar 50P · ZWO ASI533MC Pro",
+          "lostReason": null,
+          "measured": false,
+          "origin": "execution",
+          "placeName": "Col des Étoiles",
+          "placeTimeZone": "UTC",
+          "planId": "00000000-0000-4000-8000-000000000022",
+          "planName": "Nuit du 2026-10-12",
+          "plannedSeconds": 7200,
+          "projectId": null,
+          "projectName": null,
+          "quality": null,
+          "readOnly": false,
+          "sessionId": "00000000-0000-4000-8000-000000000023",
+          "startedAt": "2026-10-12T19:00:00.000Z",
+          "state": "executed",
+          "targets": [
+            {
+              "acquiredSeconds": 7200,
+              "captureId": null,
+              "exposureFamilies": 1,
+              "exposureSeconds": 120,
+              "filter": "L",
+              "finishedAt": "2026-10-12T21:00:00.000Z",
+              "frameCount": 27,
+              "label": "IC 1396",
+              "measured": {
+                "lines": [
+                  {
+                    "exposureSeconds": 120,
+                    "filter": "L",
+                    "frameCount": 27,
+                    "gain": 100
+                  }
+                ],
+                "source": "astro-sync"
+              },
+              "outcome": "done",
+              "passages": null,
+              "planItemId": "ic1396",
+              "planned": {
+                "lines": [
+                  {
+                    "exposureSeconds": 120,
+                    "filter": "L",
+                    "frameCount": 28,
+                    "gain": 100
+                  }
+                ],
+                "ruleVersion": "expo-b-1"
+              },
+              "plannedSeconds": 7200,
+              "plannedSlot": {
+                "end": "2026-10-12T21:00:00.000Z",
+                "start": "2026-10-12T19:00:00.000Z"
+              },
+              "reason": null,
+              "slot": {
+                "end": "2026-10-12T21:00:00.000Z",
+                "start": "2026-10-12T19:00:00.000Z"
+              },
+              "startedAt": "2026-10-12T19:00:00.000Z",
+              "state": "planned",
+              "targetId": "ic1396",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        },
+        {
+          "acquiredSeconds": 14400,
+          "captureCount": 0,
+          "eveningDate": "2026-10-10",
+          "finishedAt": "2026-10-11T01:00:00.000Z",
+          "frameCount": null,
+          "instrumentLabel": "Askar 50P · ZWO ASI533MC Pro",
+          "lostReason": null,
+          "measured": false,
+          "origin": "execution",
+          "placeName": "Col des Étoiles",
+          "placeTimeZone": "UTC",
+          "planId": "00000000-0000-4000-8000-000000000020",
+          "planName": "Nuit du 2026-10-10",
+          "plannedSeconds": 14400,
+          "projectId": null,
+          "projectName": null,
+          "quality": null,
+          "readOnly": false,
+          "sessionId": "00000000-0000-4000-8000-000000000021",
+          "startedAt": "2026-10-10T19:00:00.000Z",
+          "state": "executed",
+          "targets": [
+            {
+              "acquiredSeconds": 7200,
+              "captureId": null,
+              "exposureFamilies": null,
+              "exposureSeconds": null,
+              "filter": null,
+              "finishedAt": "2026-10-10T21:00:00.000Z",
+              "frameCount": null,
+              "label": "M 31",
+              "outcome": "done",
+              "passages": null,
+              "planItemId": "m31",
+              "plannedSeconds": 7200,
+              "plannedSlot": {
+                "end": "2026-10-10T21:00:00.000Z",
+                "start": "2026-10-10T19:00:00.000Z"
+              },
+              "reason": null,
+              "slot": {
+                "end": "2026-10-10T21:00:00.000Z",
+                "start": "2026-10-10T19:00:00.000Z"
+              },
+              "startedAt": "2026-10-10T19:00:00.000Z",
+              "state": "planned",
+              "targetId": "m31",
+              "thumbnailUrl": null
+            },
+            {
+              "acquiredSeconds": 7200,
+              "captureId": null,
+              "exposureFamilies": null,
+              "exposureSeconds": null,
+              "filter": null,
+              "finishedAt": "2026-10-10T23:10:00.000Z",
+              "frameCount": null,
+              "label": "IC 1396",
+              "outcome": "done",
+              "passages": null,
+              "planItemId": "ic1396",
+              "plannedSeconds": 7200,
+              "plannedSlot": {
+                "end": "2026-10-10T23:10:00.000Z",
+                "start": "2026-10-10T21:10:00.000Z"
+              },
+              "reason": null,
+              "slot": {
+                "end": "2026-10-10T23:10:00.000Z",
+                "start": "2026-10-10T21:10:00.000Z"
+              },
+              "startedAt": "2026-10-10T21:10:00.000Z",
+              "state": "planned",
+              "targetId": "ic1396",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        },
+        {
+          "acquiredSeconds": 9000,
+          "captureCount": 1,
+          "eveningDate": "2026-10-09",
+          "finishedAt": "2026-10-09T23:00:00.000Z",
+          "frameCount": 70,
+          "instrumentLabel": null,
+          "lostReason": null,
+          "measured": true,
+          "origin": "astro-sync",
+          "placeName": null,
+          "placeTimeZone": null,
+          "planId": null,
+          "planName": null,
+          "plannedSeconds": null,
+          "projectId": null,
+          "projectName": null,
+          "quality": {
+            "eccentricity": 0.41,
+            "fwhm": 4.2,
+            "skyBackground": 305
+          },
+          "readOnly": false,
+          "sessionId": "00000000-0000-4000-8000-00000000001a",
+          "startedAt": "2026-10-09T19:00:00.000Z",
+          "state": "no_plan",
+          "targets": [
+            {
+              "acquiredSeconds": 9000,
+              "captureId": "00000000-0000-4000-8000-00000000001f",
+              "exposureFamilies": 2,
+              "exposureSeconds": 180,
+              "filter": "G",
+              "finishedAt": null,
+              "frameCount": 70,
+              "label": "M 42",
+              "measured": {
+                "lines": [
+                  {
+                    "exposureSeconds": 60,
+                    "filter": "L",
+                    "frameCount": 30,
+                    "gain": null
+                  },
+                  {
+                    "exposureSeconds": 180,
+                    "filter": "R",
+                    "frameCount": 20,
+                    "gain": null
+                  },
+                  {
+                    "exposureSeconds": 180,
+                    "filter": "G",
+                    "frameCount": 20,
+                    "gain": null
+                  }
+                ],
+                "source": "astro-sync"
+              },
+              "outcome": null,
+              "passages": null,
+              "planItemId": null,
+              "plannedSeconds": null,
+              "plannedSlot": null,
+              "reason": null,
+              "slot": null,
+              "startedAt": null,
+              "state": "added",
+              "targetId": "m42",
+              "thumbnailUrl": "/v1/captures/00000000-0000-4000-8000-00000000001f/media?variant=thumbnail"
+            }
+          ],
+          "title": null
+        },
+        {
+          "acquiredSeconds": 6000,
+          "captureCount": 0,
+          "eveningDate": "2026-10-06",
+          "finishedAt": "2026-10-07T02:00:00.000Z",
+          "frameCount": null,
+          "instrumentLabel": "Askar 50P · ZWO ASI533MC Pro",
+          "lostReason": null,
+          "measured": false,
+          "origin": "execution",
+          "placeName": "Col des Étoiles",
+          "placeTimeZone": "UTC",
+          "planId": "00000000-0000-4000-8000-00000000000f",
+          "planName": "Nuit du 2026-10-06",
+          "plannedSeconds": 7200,
+          "projectId": "00000000-0000-4000-8000-000000000008",
+          "projectName": "NGC 7000",
+          "quality": null,
+          "readOnly": false,
+          "sessionId": "00000000-0000-4000-8000-000000000010",
+          "startedAt": "2026-10-06T19:00:00.000Z",
+          "state": "to_debrief",
+          "targets": [
+            {
+              "acquiredSeconds": 6000,
+              "captureId": null,
+              "exposureFamilies": null,
+              "exposureSeconds": null,
+              "filter": null,
+              "finishedAt": "2026-10-06T20:40:00.000Z",
+              "frameCount": null,
+              "label": "NGC 7000",
+              "outcome": null,
+              "passages": null,
+              "planItemId": "ngc7000",
+              "plannedSeconds": 7200,
+              "plannedSlot": {
+                "end": "2026-10-06T21:00:00.000Z",
+                "start": "2026-10-06T19:00:00.000Z"
+              },
+              "reason": null,
+              "slot": {
+                "end": "2026-10-06T21:00:00.000Z",
+                "start": "2026-10-06T19:00:00.000Z"
+              },
+              "startedAt": "2026-10-06T19:00:00.000Z",
+              "state": "planned",
+              "targetId": "ngc7000",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        },
+        {
+          "acquiredSeconds": 5400,
+          "captureCount": 0,
+          "eveningDate": "2026-10-05",
+          "finishedAt": "2026-10-06T02:30:00.000Z",
+          "frameCount": 30,
+          "instrumentLabel": "Askar 50P · ZWO ASI533MC Pro",
+          "lostReason": null,
+          "measured": false,
+          "origin": "execution",
+          "placeName": "Col des Étoiles",
+          "placeTimeZone": "UTC",
+          "planId": "00000000-0000-4000-8000-00000000000c",
+          "planName": "Nuit du 2026-10-05",
+          "plannedSeconds": 7200,
+          "projectId": "00000000-0000-4000-8000-000000000007",
+          "projectName": "M 31",
+          "quality": null,
+          "readOnly": false,
+          "sessionId": "00000000-0000-4000-8000-00000000000d",
+          "startedAt": "2026-10-05T19:00:00.000Z",
+          "state": "partial",
+          "targets": [
+            {
+              "acquiredSeconds": 5400,
+              "captureId": null,
+              "exposureFamilies": 1,
+              "exposureSeconds": 180,
+              "filter": null,
+              "finishedAt": "2026-10-05T20:30:00.000Z",
+              "frameCount": 30,
+              "label": "M 31",
+              "measured": {
+                "lines": [
+                  {
+                    "exposureSeconds": 180,
+                    "filter": null,
+                    "frameCount": 30,
+                    "gain": null
+                  }
+                ],
+                "source": "declared"
+              },
+              "outcome": "partial",
+              "passages": null,
+              "planItemId": "m31",
+              "planned": {
+                "lines": [
+                  {
+                    "exposureSeconds": 180,
+                    "filter": "L",
+                    "frameCount": 30,
+                    "gain": 100
+                  }
+                ],
+                "ruleVersion": "expo-b-1"
+              },
+              "plannedSeconds": 7200,
+              "plannedSlot": {
+                "end": "2026-10-05T21:00:00.000Z",
+                "start": "2026-10-05T19:00:00.000Z"
+              },
+              "reason": null,
+              "slot": {
+                "end": "2026-10-05T21:00:00.000Z",
+                "start": "2026-10-05T19:00:00.000Z"
+              },
+              "startedAt": "2026-10-05T19:00:00.000Z",
+              "state": "planned",
+              "targetId": "m31",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        },
+        {
+          "acquiredSeconds": 7200,
+          "captureCount": 0,
+          "eveningDate": "2026-10-04",
+          "finishedAt": "2026-10-05T03:40:00.000Z",
+          "frameCount": null,
+          "instrumentLabel": "Askar 50P · ZWO ASI533MC Pro",
+          "lostReason": null,
+          "measured": false,
+          "origin": "execution",
+          "placeName": "Col des Étoiles",
+          "placeTimeZone": "UTC",
+          "planId": "00000000-0000-4000-8000-000000000009",
+          "planName": "Nuit du 2026-10-04",
+          "plannedSeconds": 7200,
+          "projectId": "00000000-0000-4000-8000-000000000007",
+          "projectName": "M 31",
+          "quality": null,
+          "readOnly": false,
+          "sessionId": "00000000-0000-4000-8000-00000000000a",
+          "startedAt": "2026-10-04T19:10:00.000Z",
+          "state": "executed",
+          "targets": [
+            {
+              "acquiredSeconds": 7200,
+              "captureId": null,
+              "exposureFamilies": null,
+              "exposureSeconds": null,
+              "filter": "L",
+              "finishedAt": "2026-10-04T21:10:00.000Z",
+              "frameCount": null,
+              "label": "M 31",
+              "outcome": "done",
+              "passages": null,
+              "planItemId": "m31",
+              "plannedSeconds": 7200,
+              "plannedSlot": {
+                "end": "2026-10-04T21:00:00.000Z",
+                "start": "2026-10-04T19:00:00.000Z"
+              },
+              "reason": null,
+              "slot": {
+                "end": "2026-10-04T21:00:00.000Z",
+                "start": "2026-10-04T19:10:00.000Z"
+              },
+              "startedAt": "2026-10-04T19:10:00.000Z",
+              "state": "planned",
+              "targetId": "m31",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        },
+        {
+          "acquiredSeconds": null,
+          "captureCount": 0,
+          "eveningDate": "2026-10-01",
+          "finishedAt": "2026-10-02T04:00:00.000Z",
+          "frameCount": null,
+          "instrumentLabel": "Askar 50P · ZWO ASI533MC Pro",
+          "lostReason": null,
+          "measured": false,
+          "origin": null,
+          "placeName": "Col des Étoiles",
+          "placeTimeZone": "UTC",
+          "planId": "00000000-0000-4000-8000-000000000019",
+          "planName": "Nuit du 2026-10-01",
+          "plannedSeconds": 7200,
+          "projectId": null,
+          "projectName": null,
+          "quality": null,
+          "readOnly": false,
+          "sessionId": null,
+          "startedAt": "2026-10-01T19:00:00.000Z",
+          "state": "to_debrief",
+          "targets": [
+            {
+              "acquiredSeconds": null,
+              "captureId": null,
+              "exposureFamilies": null,
+              "exposureSeconds": null,
+              "filter": "L",
+              "finishedAt": null,
+              "frameCount": null,
+              "label": "M 31",
+              "outcome": null,
+              "planItemId": "m31",
+              "plannedSeconds": 7200,
+              "reason": null,
+              "startedAt": null,
+              "state": "planned",
+              "targetId": "m31",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        },
+        {
+          "acquiredSeconds": 14400,
+          "captureCount": 0,
+          "eveningDate": "2026-09-20",
+          "finishedAt": "2026-09-21T01:00:00.000Z",
+          "frameCount": 60,
+          "instrumentLabel": "Askar 50P · ZWO ASI533MC Pro",
+          "lostReason": null,
+          "measured": false,
+          "origin": "execution",
+          "placeName": "Col des Étoiles",
+          "placeTimeZone": "UTC",
+          "planId": "00000000-0000-4000-8000-000000000013",
+          "planName": "Nuit du 2026-09-20",
+          "plannedSeconds": 14400,
+          "projectId": null,
+          "projectName": null,
+          "quality": null,
+          "readOnly": false,
+          "sessionId": "00000000-0000-4000-8000-000000000014",
+          "startedAt": "2026-09-20T19:00:00.000Z",
+          "state": "executed",
+          "targets": [
+            {
+              "acquiredSeconds": 7200,
+              "captureId": null,
+              "exposureFamilies": 1,
+              "exposureSeconds": 120,
+              "filter": "Ha",
+              "finishedAt": "2026-09-20T21:05:00.000Z",
+              "frameCount": 60,
+              "label": "M 42",
+              "measured": {
+                "lines": [
+                  {
+                    "exposureSeconds": 120,
+                    "filter": "Ha",
+                    "frameCount": 60,
+                    "gain": null
+                  }
+                ],
+                "source": "declared"
+              },
+              "outcome": "done",
+              "passages": null,
+              "planItemId": "m42",
+              "plannedSeconds": 7200,
+              "plannedSlot": {
+                "end": "2026-09-20T23:10:00.000Z",
+                "start": "2026-09-20T21:10:00.000Z"
+              },
+              "reason": null,
+              "slot": {
+                "end": "2026-09-20T23:10:00.000Z",
+                "start": "2026-09-20T21:10:00.000Z"
+              },
+              "startedAt": "2026-09-20T19:05:00.000Z",
+              "state": "planned",
+              "targetId": "m42",
+              "thumbnailUrl": null
+            },
+            {
+              "acquiredSeconds": 7200,
+              "captureId": null,
+              "exposureFamilies": null,
+              "exposureSeconds": null,
+              "filter": null,
+              "finishedAt": "2026-09-20T21:00:00.000Z",
+              "frameCount": null,
+              "label": "M 31",
+              "outcome": "done",
+              "passages": null,
+              "planItemId": "m31",
+              "plannedSeconds": 7200,
+              "plannedSlot": {
+                "end": "2026-09-20T21:00:00.000Z",
+                "start": "2026-09-20T19:00:00.000Z"
+              },
+              "reason": null,
+              "slot": {
+                "end": "2026-09-20T21:00:00.000Z",
+                "start": "2026-09-20T19:00:00.000Z"
+              },
+              "startedAt": "2026-09-20T19:00:00.000Z",
+              "state": "planned",
+              "targetId": "m31",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        },
+        {
+          "acquiredSeconds": 6600,
+          "captureCount": 0,
+          "eveningDate": "2026-09-12",
+          "finishedAt": "2026-09-13T02:00:00.000Z",
+          "frameCount": 55,
+          "instrumentLabel": "Askar 50P · ZWO ASI533MC Pro",
+          "lostReason": "time",
+          "measured": false,
+          "origin": "execution",
+          "placeName": "Col des Étoiles",
+          "placeTimeZone": "UTC",
+          "planId": "00000000-0000-4000-8000-000000000011",
+          "planName": "Nuit du 2026-09-12",
+          "plannedSeconds": 14400,
+          "projectId": null,
+          "projectName": null,
+          "quality": null,
+          "readOnly": false,
+          "sessionId": "00000000-0000-4000-8000-000000000012",
+          "startedAt": "2026-09-12T19:00:00.000Z",
+          "state": "partial",
+          "targets": [
+            {
+              "acquiredSeconds": 4800,
+              "captureId": null,
+              "exposureFamilies": 1,
+              "exposureSeconds": 120,
+              "filter": null,
+              "finishedAt": "2026-09-12T21:00:00.000Z",
+              "frameCount": 40,
+              "label": "NGC 7000",
+              "measured": {
+                "lines": [
+                  {
+                    "exposureSeconds": 120,
+                    "filter": null,
+                    "frameCount": 40,
+                    "gain": null
+                  }
+                ],
+                "source": "declared"
+              },
+              "outcome": "partial",
+              "passages": null,
+              "planItemId": "ngc7000",
+              "plannedSeconds": 7200,
+              "plannedSlot": {
+                "end": "2026-09-12T21:00:00.000Z",
+                "start": "2026-09-12T19:00:00.000Z"
+              },
+              "reason": null,
+              "slot": {
+                "end": "2026-09-12T21:00:00.000Z",
+                "start": "2026-09-12T19:00:00.000Z"
+              },
+              "startedAt": "2026-09-12T19:00:00.000Z",
+              "state": "planned",
+              "targetId": "ngc7000",
+              "thumbnailUrl": null
+            },
+            {
+              "acquiredSeconds": null,
+              "captureId": null,
+              "exposureFamilies": null,
+              "exposureSeconds": null,
+              "filter": null,
+              "finishedAt": null,
+              "frameCount": null,
+              "label": "M 31",
+              "outcome": "skipped",
+              "passages": null,
+              "planItemId": "m31",
+              "plannedSeconds": 7200,
+              "plannedSlot": null,
+              "reason": "time",
+              "slot": null,
+              "startedAt": null,
+              "state": "removed",
+              "targetId": "m31",
+              "thumbnailUrl": null
+            },
+            {
+              "acquiredSeconds": 1800,
+              "captureId": null,
+              "exposureFamilies": 1,
+              "exposureSeconds": 120,
+              "filter": "Ha",
+              "finishedAt": "2026-09-12T21:55:00.000Z",
+              "frameCount": 15,
+              "label": "M 27",
+              "measured": {
+                "lines": [
+                  {
+                    "exposureSeconds": 120,
+                    "filter": "Ha",
+                    "frameCount": 15,
+                    "gain": null
+                  }
+                ],
+                "source": "declared"
+              },
+              "outcome": null,
+              "passages": null,
+              "planItemId": null,
+              "plannedSeconds": null,
+              "plannedSlot": null,
+              "reason": null,
+              "slot": null,
+              "startedAt": "2026-09-12T21:05:00.000Z",
+              "state": "added",
+              "targetId": "m27",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        },
+        {
+          "acquiredSeconds": 3600,
+          "captureCount": 0,
+          "eveningDate": "2026-08-10",
+          "finishedAt": "2026-08-10T22:00:00.000Z",
+          "frameCount": null,
+          "instrumentLabel": null,
+          "lostReason": null,
+          "measured": false,
+          "origin": "execution",
+          "placeName": null,
+          "placeTimeZone": null,
+          "planId": null,
+          "planName": null,
+          "plannedSeconds": null,
+          "projectId": null,
+          "projectName": null,
+          "quality": null,
+          "readOnly": false,
+          "sessionId": "00000000-0000-4000-8000-000000000016",
+          "startedAt": "2026-08-10T20:00:00.000Z",
+          "state": "no_plan",
+          "targets": [
+            {
+              "acquiredSeconds": 3600,
+              "captureId": null,
+              "exposureFamilies": null,
+              "exposureSeconds": null,
+              "filter": null,
+              "finishedAt": "2026-08-10T21:00:00.000Z",
+              "frameCount": null,
+              "label": "M 42",
+              "outcome": null,
+              "passages": null,
+              "planItemId": null,
+              "plannedSeconds": null,
+              "plannedSlot": null,
+              "reason": null,
+              "slot": null,
+              "startedAt": "2026-08-10T20:00:00.000Z",
+              "state": "added",
+              "targetId": "m42",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        },
+        {
+          "acquiredSeconds": null,
+          "captureCount": 0,
+          "eveningDate": "2026-03-03",
+          "finishedAt": "2026-03-04T04:00:00.000Z",
+          "frameCount": null,
+          "instrumentLabel": "Askar 50P · ZWO ASI533MC Pro",
+          "lostReason": "weather",
+          "measured": false,
+          "origin": "debrief",
+          "placeName": "Col des Étoiles",
+          "placeTimeZone": "UTC",
+          "planId": "00000000-0000-4000-8000-000000000017",
+          "planName": "Nuit du 2026-03-03",
+          "plannedSeconds": 7200,
+          "projectId": null,
+          "projectName": null,
+          "quality": null,
+          "readOnly": false,
+          "sessionId": "00000000-0000-4000-8000-000000000018",
+          "startedAt": "2026-03-03T19:00:00.000Z",
+          "state": "abandoned",
+          "targets": [
+            {
+              "acquiredSeconds": null,
+              "captureId": null,
+              "exposureFamilies": null,
+              "exposureSeconds": null,
+              "filter": null,
+              "finishedAt": null,
+              "frameCount": null,
+              "label": "M 42",
+              "outcome": "skipped",
+              "passages": null,
+              "planItemId": "m42",
+              "plannedSeconds": 7200,
+              "plannedSlot": null,
+              "reason": "weather",
+              "slot": null,
+              "startedAt": null,
+              "state": "removed",
+              "targetId": "m42",
+              "thumbnailUrl": null
+            }
+          ],
+          "title": null
+        }
+      ],
+      "stats": { "acquiredSeconds": 67800, "frameCount": 242, "sessions": 10 },
+      "toDebriefCount": 2,
+      "years": [2026]
+    },
+    "schema": "journal.schema.json#/$defs/list",
+    "status": 200
+  }
+}

@@ -1,0 +1,2795 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "hi": 480,
+          "items": [
+            { "end": 100, "id": "m", "start": 60 },
+            { "end": 160, "id": "n", "start": 100 }
+          ],
+          "movingId": "m",
+          "path": [60, 72, 84, 96, 108, 120, 132, 144, 156, 168, 180]
+        }
+      ],
+      "id": "resists-then-escapes-right",
+      "result": [
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 160, "start": 100 } },
+            "moving": { "end": 100, "start": 60 }
+          },
+          "covered": [],
+          "direction": 0,
+          "end": 100,
+          "finger": 60,
+          "hopped": [],
+          "hops": [],
+          "items": { "n": { "end": 160, "start": 100, "state": "solid" } },
+          "resisting": false,
+          "start": 60
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 160, "start": 111 } },
+            "moving": { "end": 111, "start": 71 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 111.3682,
+          "finger": 72,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 160, "start": 111.3682, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 71.3682
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 160, "start": 121 } },
+            "moving": { "end": 121, "start": 81 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 121.4728,
+          "finger": 84,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 160, "start": 121.4728, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 81.4728
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 160, "start": 130 } },
+            "moving": { "end": 130, "start": 90 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 130.31380000000001,
+          "finger": 96,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": {
+              "end": 160,
+              "start": 130.31380000000001,
+              "state": "compressed"
+            }
+          },
+          "resisting": true,
+          "start": 90.31380000000001
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 160, "start": 138 } },
+            "moving": { "end": 138, "start": 98 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 137.8912,
+          "finger": 108,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 160, "start": 137.8912, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 97.8912
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 160, "start": 144 } },
+            "moving": { "end": 144, "start": 104 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 144.20499999999998,
+          "finger": 120,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": {
+              "end": 160,
+              "start": 144.20499999999998,
+              "state": "compressed"
+            }
+          },
+          "resisting": true,
+          "start": 104.20499999999998
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 160, "start": 149 } },
+            "moving": { "end": 149, "start": 109 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 149.2552,
+          "finger": 132,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 160, "start": 149.2552, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 109.2552
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 244, "start": 184 } },
+            "moving": { "end": 184, "start": 144 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 184,
+          "finger": 144,
+          "hopped": [
+            {
+              "from": { "end": 160, "start": 100 },
+              "id": "n",
+              "room": { "left": 100, "right": 296 },
+              "to": { "end": 244, "start": 184 },
+              "toward": "right"
+            }
+          ],
+          "hops": [
+            {
+              "from": { "end": 160, "start": 100 },
+              "id": "n",
+              "room": { "left": 100, "right": 296 },
+              "to": { "end": 244, "start": 184 },
+              "toward": "right"
+            }
+          ],
+          "items": { "n": { "end": 244, "start": 184, "state": "solid" } },
+          "resisting": false,
+          "start": 144
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 244, "start": 195 } },
+            "moving": { "end": 195, "start": 155 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 195.3682,
+          "finger": 156,
+          "hopped": [
+            {
+              "from": { "end": 160, "start": 100 },
+              "id": "n",
+              "room": { "left": 100, "right": 296 },
+              "to": { "end": 244, "start": 184 },
+              "toward": "right"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 244, "start": 195.3682, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 155.3682
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 244, "start": 205 } },
+            "moving": { "end": 205, "start": 165 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 205.4728,
+          "finger": 168,
+          "hopped": [
+            {
+              "from": { "end": 160, "start": 100 },
+              "id": "n",
+              "room": { "left": 100, "right": 296 },
+              "to": { "end": 244, "start": 184 },
+              "toward": "right"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 244, "start": 205.4728, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 165.4728
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 244, "start": 214 } },
+            "moving": { "end": 214, "start": 174 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 214.31380000000001,
+          "finger": 180,
+          "hopped": [
+            {
+              "from": { "end": 160, "start": 100 },
+              "id": "n",
+              "room": { "left": 100, "right": 296 },
+              "to": { "end": 244, "start": 184 },
+              "toward": "right"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": {
+              "end": 244,
+              "start": 214.31380000000001,
+              "state": "compressed"
+            }
+          },
+          "resisting": true,
+          "start": 174.31380000000001
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hi": 480,
+          "items": [
+            { "end": 380, "id": "n", "start": 320 },
+            { "end": 420, "id": "m", "start": 380 }
+          ],
+          "movingId": "m",
+          "path": [380, 368, 356, 344, 332, 320, 308, 296, 284, 272, 260]
+        }
+      ],
+      "id": "escapes-left-when-the-left-is-bigger",
+      "result": [
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 380, "start": 320 } },
+            "moving": { "end": 420, "start": 380 }
+          },
+          "covered": [],
+          "direction": 0,
+          "end": 420,
+          "finger": 380,
+          "hopped": [],
+          "hops": [],
+          "items": { "n": { "end": 380, "start": 320, "state": "solid" } },
+          "resisting": false,
+          "start": 380
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 369, "start": 320 } },
+            "moving": { "end": 409, "start": 369 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 408.6318,
+          "finger": 368,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 368.6318, "start": 320, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 368.6318
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 359, "start": 320 } },
+            "moving": { "end": 399, "start": 359 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 398.5272,
+          "finger": 356,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 358.5272, "start": 320, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 358.5272
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 350, "start": 320 } },
+            "moving": { "end": 390, "start": 350 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 389.6862,
+          "finger": 344,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 349.6862, "start": 320, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 349.6862
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 342, "start": 320 } },
+            "moving": { "end": 382, "start": 342 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 382.1088,
+          "finger": 332,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 342.1088, "start": 320, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 342.1088
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 336, "start": 320 } },
+            "moving": { "end": 376, "start": 336 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 375.795,
+          "finger": 320,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 335.795, "start": 320, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 335.795
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 331, "start": 320 } },
+            "moving": { "end": 371, "start": 331 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 370.7448,
+          "finger": 308,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 330.7448, "start": 320, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 330.7448
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 296, "start": 236 } },
+            "moving": { "end": 336, "start": 296 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 336,
+          "finger": 296,
+          "hopped": [
+            {
+              "from": { "end": 380, "start": 320 },
+              "id": "n",
+              "room": { "left": 296, "right": 100 },
+              "to": { "end": 296, "start": 236 },
+              "toward": "left"
+            }
+          ],
+          "hops": [
+            {
+              "from": { "end": 380, "start": 320 },
+              "id": "n",
+              "room": { "left": 296, "right": 100 },
+              "to": { "end": 296, "start": 236 },
+              "toward": "left"
+            }
+          ],
+          "items": { "n": { "end": 296, "start": 236, "state": "solid" } },
+          "resisting": false,
+          "start": 296
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 285, "start": 236 } },
+            "moving": { "end": 325, "start": 285 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 324.6318,
+          "finger": 284,
+          "hopped": [
+            {
+              "from": { "end": 380, "start": 320 },
+              "id": "n",
+              "room": { "left": 296, "right": 100 },
+              "to": { "end": 296, "start": 236 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 284.6318, "start": 236, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 284.6318
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 275, "start": 236 } },
+            "moving": { "end": 315, "start": 275 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 314.5272,
+          "finger": 272,
+          "hopped": [
+            {
+              "from": { "end": 380, "start": 320 },
+              "id": "n",
+              "room": { "left": 296, "right": 100 },
+              "to": { "end": 296, "start": 236 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 274.5272, "start": 236, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 274.5272
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": { "n": { "end": 266, "start": 236 } },
+            "moving": { "end": 306, "start": 266 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 305.6862,
+          "finger": 260,
+          "hopped": [
+            {
+              "from": { "end": 380, "start": 320 },
+              "id": "n",
+              "room": { "left": 296, "right": 100 },
+              "to": { "end": 296, "start": 236 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 265.6862, "start": 236, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 265.6862
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hi": 240,
+          "items": [
+            { "end": 50, "id": "a", "start": 0 },
+            { "end": 100, "id": "b", "start": 50 },
+            { "end": 150, "id": "c", "start": 110 },
+            { "end": 200, "id": "d", "start": 160 }
+          ],
+          "movingId": "b",
+          "path": [
+            50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180,
+            190, 200, 200, 180, 160, 140, 120, 100, 80, 60, 50
+          ]
+        }
+      ],
+      "id": "chain-of-four-nights-targets-and-back",
+      "result": [
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 150, "start": 110 },
+              "d": { "end": 200, "start": 160 }
+            },
+            "moving": { "end": 100, "start": 50 }
+          },
+          "covered": [],
+          "direction": 0,
+          "end": 100,
+          "finger": 50,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 150, "start": 110, "state": "solid" },
+            "d": { "end": 200, "start": 160, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 50
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 150, "start": 110 },
+              "d": { "end": 200, "start": 160 }
+            },
+            "moving": { "end": 110, "start": 60 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 110,
+          "finger": 60,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 150, "start": 110, "state": "solid" },
+            "d": { "end": 200, "start": 160, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 60
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 150, "start": 119 },
+              "d": { "end": 200, "start": 160 }
+            },
+            "moving": { "end": 119, "start": 69 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 119.26875,
+          "finger": 70,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 150, "start": 119.26875, "state": "compressed" },
+            "d": { "end": 200, "start": 160, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 69.26875
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 150, "start": 127 },
+              "d": { "end": 200, "start": 160 }
+            },
+            "moving": { "end": 127, "start": 77 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 127.075,
+          "finger": 80,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 150, "start": 127.075, "state": "compressed" },
+            "d": { "end": 200, "start": 160, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 77.075
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 150, "start": 133 },
+              "d": { "end": 200, "start": 160 }
+            },
+            "moving": { "end": 133, "start": 83 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 133.41875,
+          "finger": 90,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 150, "start": 133.41875, "state": "compressed" },
+            "d": { "end": 200, "start": 160, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 83.41874999999999
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 150, "start": 138 },
+              "d": { "end": 200, "start": 160 }
+            },
+            "moving": { "end": 138, "start": 88 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 138.3,
+          "finger": 100,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 150, "start": 138.3, "state": "compressed" },
+            "d": { "end": 200, "start": 160, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 88.30000000000001
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 200, "start": 160 }
+            },
+            "moving": { "end": 160, "start": 110 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 160,
+          "finger": 110,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            }
+          ],
+          "hops": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            }
+          ],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 200, "start": 160, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 110
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 200, "start": 169 }
+            },
+            "moving": { "end": 169, "start": 119 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 169.26875,
+          "finger": 120,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 200, "start": 169.26875, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 119.26875000000001
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 200, "start": 177 }
+            },
+            "moving": { "end": 177, "start": 127 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 177.075,
+          "finger": 130,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 200, "start": 177.075, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 127.07499999999999
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 200, "start": 183 }
+            },
+            "moving": { "end": 183, "start": 133 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 183.41875,
+          "finger": 140,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 200, "start": 183.41875, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 133.41875
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 200, "start": 188 }
+            },
+            "moving": { "end": 188, "start": 138 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 188.3,
+          "finger": 150,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 200, "start": 188.3, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 138.3
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 158, "start": 118 }
+            },
+            "moving": { "end": 210, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 210,
+          "finger": 160,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            },
+            {
+              "from": { "end": 200, "start": 160 },
+              "id": "d",
+              "room": { "left": 50, "right": 30 },
+              "to": { "end": 158, "start": 118 },
+              "toward": "left"
+            }
+          ],
+          "hops": [
+            {
+              "from": { "end": 200, "start": 160 },
+              "id": "d",
+              "room": { "left": 50, "right": 30 },
+              "to": { "end": 158, "start": 118 },
+              "toward": "left"
+            }
+          ],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 158, "start": 118, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 158, "start": 118 }
+            },
+            "moving": { "end": 220, "start": 170 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 220,
+          "finger": 170,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            },
+            {
+              "from": { "end": 200, "start": 160 },
+              "id": "d",
+              "room": { "left": 50, "right": 30 },
+              "to": { "end": 158, "start": 118 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 158, "start": 118, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 170
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 158, "start": 118 }
+            },
+            "moving": { "end": 230, "start": 180 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 230,
+          "finger": 180,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            },
+            {
+              "from": { "end": 200, "start": 160 },
+              "id": "d",
+              "room": { "left": 50, "right": 30 },
+              "to": { "end": 158, "start": 118 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 158, "start": 118, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 180
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 158, "start": 118 }
+            },
+            "moving": { "end": 240, "start": 190 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 240,
+          "finger": 190,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            },
+            {
+              "from": { "end": 200, "start": 160 },
+              "id": "d",
+              "room": { "left": 50, "right": 30 },
+              "to": { "end": 158, "start": 118 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 158, "start": 118, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 190
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 158, "start": 118 }
+            },
+            "moving": { "end": 240, "start": 190 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 240,
+          "finger": 200,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            },
+            {
+              "from": { "end": 200, "start": 160 },
+              "id": "d",
+              "room": { "left": 50, "right": 30 },
+              "to": { "end": 158, "start": 118 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 158, "start": 118, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 190
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 158, "start": 118 }
+            },
+            "moving": { "end": 240, "start": 190 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 240,
+          "finger": 200,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            },
+            {
+              "from": { "end": 200, "start": 160 },
+              "id": "d",
+              "room": { "left": 50, "right": 30 },
+              "to": { "end": 158, "start": 118 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 158, "start": 118, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 190
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 158, "start": 118 }
+            },
+            "moving": { "end": 230, "start": 180 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 230,
+          "finger": 180,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            },
+            {
+              "from": { "end": 200, "start": 160 },
+              "id": "d",
+              "room": { "left": 50, "right": 30 },
+              "to": { "end": 158, "start": 118 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 158, "start": 118, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 180
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 158, "start": 118 }
+            },
+            "moving": { "end": 210, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 210,
+          "finger": 160,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            },
+            {
+              "from": { "end": 200, "start": 160 },
+              "id": "d",
+              "room": { "left": 50, "right": 30 },
+              "to": { "end": 158, "start": 118 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 158, "start": 118, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 200, "start": 183 }
+            },
+            "moving": { "end": 183, "start": 133 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 183.41875,
+          "finger": 140,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 200, "start": 183.41875, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 133.41875
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 108, "start": 68 },
+              "d": { "end": 200, "start": 169 }
+            },
+            "moving": { "end": 169, "start": 119 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 169.26875,
+          "finger": 120,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 110 },
+              "id": "c",
+              "room": { "left": 58, "right": 40 },
+              "to": { "end": 108, "start": 68 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 108, "start": 68, "state": "solid" },
+            "d": { "end": 200, "start": 169.26875, "state": "compressed" }
+          },
+          "resisting": true,
+          "start": 119.26875000000001
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 150, "start": 138 },
+              "d": { "end": 200, "start": 160 }
+            },
+            "moving": { "end": 138, "start": 88 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 138.3,
+          "finger": 100,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 150, "start": 138.3, "state": "compressed" },
+            "d": { "end": 200, "start": 160, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 88.30000000000001
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 150, "start": 127 },
+              "d": { "end": 200, "start": 160 }
+            },
+            "moving": { "end": 127, "start": 77 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 127.075,
+          "finger": 80,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 150, "start": 127.075, "state": "compressed" },
+            "d": { "end": 200, "start": 160, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 77.075
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 150, "start": 110 },
+              "d": { "end": 200, "start": 160 }
+            },
+            "moving": { "end": 110, "start": 60 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 110,
+          "finger": 60,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 150, "start": 110, "state": "solid" },
+            "d": { "end": 200, "start": 160, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 60
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 50, "start": 0 },
+              "c": { "end": 150, "start": 110 },
+              "d": { "end": 200, "start": 160 }
+            },
+            "moving": { "end": 100, "start": 50 }
+          },
+          "covered": [],
+          "direction": 0,
+          "end": 100,
+          "finger": 50,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 50, "start": 0, "state": "solid" },
+            "c": { "end": 150, "start": 110, "state": "solid" },
+            "d": { "end": 200, "start": 160, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 50
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "added": true,
+          "hi": 120,
+          "items": [
+            { "end": 30, "id": "x", "start": 0 },
+            { "end": 40, "id": "a", "start": 0 },
+            { "end": 80, "id": "b", "start": 40 },
+            { "end": 120, "id": "c", "start": 80 }
+          ],
+          "movingId": "x",
+          "path": [
+            0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78, 84, 90, 0
+          ]
+        }
+      ],
+      "id": "no-free-stretch-squeezes-then-covers-and-comes-back",
+      "result": [
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 40, "start": 30 },
+              "b": { "end": 80, "start": 40 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 30, "start": 0 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 30,
+          "finger": 0,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 40, "start": 30, "state": "compressed" },
+            "b": { "end": 80, "start": 40, "state": "solid" },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 0
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 40, "start": 30 },
+              "b": { "end": 80, "start": 40 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 30, "start": 0 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 30,
+          "finger": 6,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 40, "start": 30, "state": "compressed" },
+            "b": { "end": 80, "start": 40, "state": "solid" },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 0
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 40, "start": 30 },
+              "b": { "end": 80, "start": 40 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 30, "start": 0 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 30,
+          "finger": 12,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 40, "start": 30, "state": "compressed" },
+            "b": { "end": 80, "start": 40, "state": "solid" },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 0
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 40, "start": 33 },
+              "b": { "end": 80, "start": 40 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 33, "start": 3 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 33.00088888888889,
+          "finger": 18,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 40, "start": 33.00088888888889, "state": "squeezed" },
+            "b": { "end": 80, "start": 40, "state": "solid" },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 3.0008888888888876
+        },
+        {
+          "commit": {
+            "covered": ["a"],
+            "items": {
+              "b": { "end": 80, "start": 42 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 42, "start": 12 }
+          },
+          "covered": ["a"],
+          "direction": 1,
+          "end": 42.11440432098766,
+          "finger": 24,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": {
+              "end": 80,
+              "start": 42.11440432098766,
+              "state": "compressed"
+            },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 12.11440432098766
+        },
+        {
+          "commit": {
+            "covered": ["a"],
+            "items": {
+              "b": { "end": 80, "start": 48 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 48, "start": 18 }
+          },
+          "covered": ["a"],
+          "direction": 1,
+          "end": 47.662654320987656,
+          "finger": 30,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": {
+              "end": 80,
+              "start": 47.662654320987656,
+              "state": "compressed"
+            },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 17.662654320987656
+        },
+        {
+          "commit": {
+            "covered": ["a"],
+            "items": {
+              "b": { "end": 80, "start": 53 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 53, "start": 23 }
+          },
+          "covered": ["a"],
+          "direction": 1,
+          "end": 52.68440432098766,
+          "finger": 36,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": {
+              "end": 80,
+              "start": 52.68440432098766,
+              "state": "compressed"
+            },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 22.68440432098766
+        },
+        {
+          "commit": {
+            "covered": ["a"],
+            "items": {
+              "b": { "end": 80, "start": 57 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 57, "start": 27 }
+          },
+          "covered": ["a"],
+          "direction": 1,
+          "end": 57.17965432098766,
+          "finger": 42,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": {
+              "end": 80,
+              "start": 57.17965432098766,
+              "state": "compressed"
+            },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 27.17965432098766
+        },
+        {
+          "commit": {
+            "covered": ["a"],
+            "items": {
+              "b": { "end": 80, "start": 61 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 61, "start": 31 }
+          },
+          "covered": ["a"],
+          "direction": 1,
+          "end": 61.14840432098766,
+          "finger": 48,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": {
+              "end": 80,
+              "start": 61.14840432098766,
+              "state": "compressed"
+            },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 31.14840432098766
+        },
+        {
+          "commit": {
+            "covered": ["a"],
+            "items": {
+              "b": { "end": 80, "start": 65 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 65, "start": 35 }
+          },
+          "covered": ["a"],
+          "direction": 1,
+          "end": 64.59065432098765,
+          "finger": 54,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": {
+              "end": 80,
+              "start": 64.59065432098765,
+              "state": "compressed"
+            },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 34.59065432098765
+        },
+        {
+          "commit": {
+            "covered": ["a"],
+            "items": {
+              "b": { "end": 80, "start": 68 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 68, "start": 38 }
+          },
+          "covered": ["a"],
+          "direction": 1,
+          "end": 67.50640432098766,
+          "finger": 60,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": {
+              "end": 80,
+              "start": 67.50640432098766,
+              "state": "compressed"
+            },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 37.506404320987656
+        },
+        {
+          "commit": {
+            "covered": ["a"],
+            "items": {
+              "b": { "end": 80, "start": 70 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 70, "start": 40 }
+          },
+          "covered": ["a"],
+          "direction": 1,
+          "end": 69.89565432098766,
+          "finger": 66,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": {
+              "end": 80,
+              "start": 69.89565432098766,
+              "state": "compressed"
+            },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 39.89565432098766
+        },
+        {
+          "commit": {
+            "covered": ["a"],
+            "items": {
+              "b": { "end": 80, "start": 74 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 74, "start": 44 }
+          },
+          "covered": ["a"],
+          "direction": 1,
+          "end": 74.27635185185186,
+          "finger": 72,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": { "end": 80, "start": 74.27635185185186, "state": "squeezed" },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 44.27635185185186
+        },
+        {
+          "commit": {
+            "covered": ["a", "b"],
+            "items": { "c": { "end": 120, "start": 84 } },
+            "moving": { "end": 84, "start": 54 }
+          },
+          "covered": ["a", "b"],
+          "direction": 1,
+          "end": 84.16132098765434,
+          "finger": 78,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": { "end": 40, "start": 40, "state": "covered" },
+            "c": {
+              "end": 120,
+              "start": 84.16132098765434,
+              "state": "compressed"
+            }
+          },
+          "resisting": true,
+          "start": 54.161320987654335
+        },
+        {
+          "commit": {
+            "covered": ["a", "b"],
+            "items": { "c": { "end": 120, "start": 90 } },
+            "moving": { "end": 90, "start": 60 }
+          },
+          "covered": ["a", "b"],
+          "direction": 1,
+          "end": 89.52107098765433,
+          "finger": 84,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": { "end": 40, "start": 40, "state": "covered" },
+            "c": {
+              "end": 120,
+              "start": 89.52107098765433,
+              "state": "compressed"
+            }
+          },
+          "resisting": true,
+          "start": 59.521070987654326
+        },
+        {
+          "commit": {
+            "covered": ["a", "b", "c"],
+            "items": {},
+            "moving": { "end": 96, "start": 66 }
+          },
+          "covered": ["a", "b", "c"],
+          "direction": 1,
+          "end": 96.2962962962963,
+          "finger": 90,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 0, "start": 0, "state": "covered" },
+            "b": { "end": 40, "start": 40, "state": "covered" },
+            "c": { "end": 80, "start": 80, "state": "covered" }
+          },
+          "resisting": false,
+          "start": 66.2962962962963
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 40, "start": 30 },
+              "b": { "end": 80, "start": 40 },
+              "c": { "end": 120, "start": 80 }
+            },
+            "moving": { "end": 30, "start": 0 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 30,
+          "finger": 0,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 40, "start": 30, "state": "compressed" },
+            "b": { "end": 80, "start": 40, "state": "solid" },
+            "c": { "end": 120, "start": 80, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 0
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hi": 300,
+          "items": [
+            { "end": 60, "fixed": true, "id": "past", "start": 0 },
+            { "end": 120, "id": "m", "start": 80 },
+            { "end": 170, "id": "n", "start": 130 },
+            { "end": 260, "fixed": true, "id": "stuck", "start": 200 }
+          ],
+          "lo": 70,
+          "movingId": "m",
+          "path": [
+            80, 75, 70, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180,
+            190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300
+          ]
+        }
+      ],
+      "id": "fixed-slots-and-now-floor",
+      "result": [
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 170, "start": 130 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 120, "start": 80 }
+          },
+          "covered": [],
+          "direction": 0,
+          "end": 120,
+          "finger": 80,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 170, "start": 130, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 80
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 170, "start": 130 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 115, "start": 75 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 115,
+          "finger": 75,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 170, "start": 130, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 75
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 170, "start": 130 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 110, "start": 70 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 110,
+          "finger": 70,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 170, "start": 130, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 70
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 170, "start": 130 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 110, "start": 70 }
+          },
+          "covered": [],
+          "direction": -1,
+          "end": 110,
+          "finger": 70,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 170, "start": 130, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 70
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 170, "start": 130 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 120, "start": 80 }
+          },
+          "covered": [],
+          "direction": 0,
+          "end": 120,
+          "finger": 80,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 170, "start": 130, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 80
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 170, "start": 130 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 130, "start": 90 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 130,
+          "finger": 90,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 170, "start": 130, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 90
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 170, "start": 139 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 139, "start": 99 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 139.26875,
+          "finger": 100,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 170, "start": 139.26875, "state": "compressed" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 99.26875000000001
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 170, "start": 147 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 147, "start": 107 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 147.075,
+          "finger": 110,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 170, "start": 147.075, "state": "compressed" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 107.07499999999999
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 170, "start": 153 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 153, "start": 113 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 153.41875,
+          "finger": 120,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 170, "start": 153.41875, "state": "compressed" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 113.41874999999999
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 170, "start": 158 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 158, "start": 118 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 158.3,
+          "finger": 130,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "n": { "end": 170, "start": 158.3, "state": "compressed" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 118.30000000000001
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 180, "start": 140 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 180,
+          "finger": 140,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 140
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 190, "start": 150 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 190,
+          "finger": 150,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 150
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 160,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 170,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 180,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 190,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 200,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 210,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 220,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 230,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 240,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 250,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 260,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 270,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 280,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 290,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "n": { "end": 130, "start": 90 },
+              "past": { "end": 60, "start": 0 },
+              "stuck": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 200, "start": 160 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 200,
+          "finger": 300,
+          "hopped": [
+            {
+              "from": { "end": 170, "start": 130 },
+              "id": "n",
+              "room": { "left": 60, "right": 40 },
+              "to": { "end": 130, "start": 90 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "n": { "end": 130, "start": 90, "state": "solid" },
+            "past": { "end": 60, "start": 0, "state": "solid" },
+            "stuck": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 160
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "hi": 480,
+          "items": [{ "end": 200, "id": "m", "start": 100 }],
+          "lo": 420,
+          "movingId": "m",
+          "path": [100, 300, 380, 420, 470]
+        }
+      ],
+      "id": "now-late-in-the-night-keeps-the-end-in-the-night",
+      "result": [
+        {
+          "commit": {
+            "covered": [],
+            "items": {},
+            "moving": { "end": 480, "start": 420 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 480,
+          "finger": 100,
+          "hopped": [],
+          "hops": [],
+          "items": {},
+          "resisting": false,
+          "start": 420
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {},
+            "moving": { "end": 480, "start": 420 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 480,
+          "finger": 300,
+          "hopped": [],
+          "hops": [],
+          "items": {},
+          "resisting": false,
+          "start": 420
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {},
+            "moving": { "end": 480, "start": 420 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 480,
+          "finger": 380,
+          "hopped": [],
+          "hops": [],
+          "items": {},
+          "resisting": false,
+          "start": 420
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {},
+            "moving": { "end": 480, "start": 420 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 480,
+          "finger": 420,
+          "hopped": [],
+          "hops": [],
+          "items": {},
+          "resisting": false,
+          "start": 420
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {},
+            "moving": { "end": 480, "start": 420 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 480,
+          "finger": 470,
+          "hopped": [],
+          "hops": [],
+          "items": {},
+          "resisting": false,
+          "start": 420
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "added": true,
+          "hi": 300,
+          "items": [
+            { "end": 160, "id": "x", "start": 100 },
+            { "end": 150, "id": "a", "start": 90 },
+            { "end": 260, "id": "b", "start": 200 }
+          ],
+          "movingId": "x",
+          "path": [100, 110, 130]
+        }
+      ],
+      "id": "added-on-what-it-covers-pushes-it",
+      "result": [
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 150, "start": 139 },
+              "b": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 139, "start": 79 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 138.50125,
+          "finger": 100,
+          "hopped": [],
+          "hops": [],
+          "items": {
+            "a": { "end": 150, "start": 138.50125, "state": "compressed" },
+            "b": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": true,
+          "start": 78.50125
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 90, "start": 30 },
+              "b": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 170, "start": 110 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 170,
+          "finger": 110,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 90 },
+              "id": "a",
+              "room": { "left": 90, "right": 40 },
+              "to": { "end": 90, "start": 30 },
+              "toward": "left"
+            }
+          ],
+          "hops": [
+            {
+              "from": { "end": 150, "start": 90 },
+              "id": "a",
+              "room": { "left": 90, "right": 40 },
+              "to": { "end": 90, "start": 30 },
+              "toward": "left"
+            }
+          ],
+          "items": {
+            "a": { "end": 90, "start": 30, "state": "solid" },
+            "b": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 110
+        },
+        {
+          "commit": {
+            "covered": [],
+            "items": {
+              "a": { "end": 90, "start": 30 },
+              "b": { "end": 260, "start": 200 }
+            },
+            "moving": { "end": 190, "start": 130 }
+          },
+          "covered": [],
+          "direction": 1,
+          "end": 190,
+          "finger": 130,
+          "hopped": [
+            {
+              "from": { "end": 150, "start": 90 },
+              "id": "a",
+              "room": { "left": 90, "right": 40 },
+              "to": { "end": 90, "start": 30 },
+              "toward": "left"
+            }
+          ],
+          "hops": [],
+          "items": {
+            "a": { "end": 90, "start": 30, "state": "solid" },
+            "b": { "end": 260, "start": 200, "state": "solid" }
+          },
+          "resisting": false,
+          "start": 130
+        }
+      ]
+    }
+  ],
+  "generatedFrom": "planner@1.0.0",
+  "module": "schedule-placement"
+}

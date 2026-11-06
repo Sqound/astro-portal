@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://astroportal.invalid/schemas/planner/planner-document.schema.json",
+  "title": "Astro Portal planner document",
+  "description": "The whole portable planner document persisted by the web client and by PUT /api/plans (packages/portal/src/planner/state.js:113-328). Structural invariants only: plan/night id uniqueness and the plan.nightId -> night.date cross-reference are enforced by validatePlannerDocument, not by this schema. The serialized document is rejected above 1 MB (1000000 bytes) by the API route; that bound is not expressible as a JSON Schema keyword.",
+  "$defs": {
+    "darkness": {
+      "description": "The darkness threshold that bounds this plan's night: the Sun below -18° (`astronomical`), -12° (`nautical`) or -6° (`civil`). ABSENT means astronomical, the planner's own definition; a reader treats any other value as absent (packages/portal/src/planner/state.js `normalizePlanDarkness`).",
+      "enum": ["astronomical", "nautical", "civil"]
+    },
+    "nightSpan": {
+      "description": "The span of the night this plan keeps: the whole usable night of its `darkness` (`astronomical` mode), or a `custom` span between two UTC instants. ABSENT means `astronomical`. A reader normalises it once (packages/portal/src/planner/state.js `normalizeNightSpan`): an unknown value is dropped; a custom span is rounded to ten minutes, kept between the night's sunset and sunrise, and falls back to `astronomical` when it lasts less than thirty minutes. Shortening the night never deletes a target.",
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["mode"],
+          "properties": { "mode": { "const": "astronomical" } },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": ["mode", "start", "end"],
+          "properties": {
+            "mode": { "const": "custom" },
+            "start": { "type": "string", "format": "date-time" },
+            "end": { "type": "string", "format": "date-time" }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "horizonMask": {
+      "type": "object",
+      "required": ["enabled", "points"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "points": {
+          "type": "array",
+          "minItems": 36,
+          "maxItems": 36,
+          "items": {
+            "type": "object",
+            "required": ["azimuth", "altitude"],
+            "properties": {
+              "azimuth": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 350,
+                "multipleOf": 10
+              },
+              "altitude": { "type": "number", "minimum": 0, "maximum": 90 },
+              "surveyedAt": {
+                "description": "The instant this 10° sector was last surveyed (augmented reality, or moved by hand); absent: « à relever ». Kept only on the 10° grid.",
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "knownPlace": {
+      "description": "Additive: the link of a personal place to the known place it was added from. Normalised by state.js normalizeKnownPlaceLink; anything else is dropped. The details of the known place are read through GET /v1/places/known when shown, never stored here.",
+      "type": "object",
+      "required": ["source", "id", "type", "linkedAt"],
+      "properties": {
+        "source": { "const": "osm" },
+        "id": {
+          "type": "string",
+          "pattern": "^(node|way|relation)/[1-9][0-9]*$"
+        },
+        "type": { "enum": ["viewpoint", "campsite", "park", "picnic"] },
+        "linkedAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+    "skyEntered": {
+      "description": "Additive: the sky background the observer typed for the place, in mag/arcsec² (a hand-held meter's reading), and when. Normalised by sky-brightness-source.js normalizeSkyEntered (`sqm` kept to the hundredth, 14 to 22.5); anything else is dropped. Shown when no value was measured at the place (measured > entered > model).",
+      "type": "object",
+      "required": ["sqm", "enteredAt"],
+      "properties": {
+        "sqm": { "type": "number", "minimum": 14, "maximum": 22.5 },
+        "enteredAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+    "place": {
+      "type": "object",
+      "required": ["latitude", "longitude"],
+      "properties": {
+        "id": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+        "longitude": { "type": "number", "minimum": -180, "maximum": 180 },
+        "name": { "type": "string" },
+        "locality": { "type": "string" },
+        "timeZone": { "type": "string" },
+        "timeZoneSource": { "enum": ["chosen"] },
+        "horizonMask": {
+          "anyOf": [{ "$ref": "#/$defs/horizonMask" }, { "type": "null" }]
+        },
+        "horizonStatus": { "enum": ["verified", "unverified"] },
+        "knownPlace": { "$ref": "#/$defs/knownPlace" },
+        "skyEntered": { "$ref": "#/$defs/skyEntered" }
+      },
+      "additionalProperties": true
+    },
+    "night": {
+      "type": "object",
+      "required": ["id", "date"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "date": { "$ref": "#/$defs/date" },
+        "location": {
+          "anyOf": [{ "$ref": "#/$defs/place" }, { "type": "null" }]
+        }
+      },
+      "additionalProperties": true
+    },
+    "acquisitionLine": {
+      "description": "Additive (« Prise de vue par cible »): one acquisition line a person chose for a plan — the line of the captures' contract (capture.schema.json `proposedAcquisitionLine`) with the same names, units and bounds, plus `binning`, so that what was planned and what was measured compare field by field. Every field is OPTIONAL and an absent one is INHERITED (the target's line, then `item.filter` for the filter of the first line, then the plan's `acquisitionDefaults`, then the suggestion computed on reading — never stored). `filter`: the filter as the person names it (1 to 40 characters, trimmed, never normalised; its family is derived on reading), `null` for « no filter ». `exposureSeconds`: one exposure, in seconds (0.005 for 5 ms). `gain`: the camera's gain, or a camera body's ISO, as an integer; `null` for « the device's own setting ». `binning`: 1 to 8. `frameCount`: the number of exposures; absent lets the time slot decide. Written by the web planner and the mobile planner when the person chooses a value, never by a rule. A write that carries a value out of these bounds is refused `400` (`PUT /api/plans`: `code: \"invalid_payload\"`, `field` its path in the document, `plans[0].items[0].acquisition.lines[0].exposureSeconds`, and `limit`); a field the line does not define is dropped. Every reader (the service, packages/portal/src/planner/plan-acquisition.js `normalizePlanAcquisition`, and the clients) keeps what it understands and discards the rest.",
+      "type": "object",
+      "properties": {
+        "filter": {
+          "anyOf": [
+            { "type": "string", "minLength": 1, "maxLength": 40 },
+            { "type": "null" }
+          ]
+        },
+        "exposureSeconds": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 86400
+        },
+        "gain": {
+          "anyOf": [
+            { "type": "integer", "minimum": -1000, "maximum": 100000 },
+            { "type": "null" }
+          ]
+        },
+        "binning": { "type": "integer", "minimum": 1, "maximum": 8 },
+        "frameCount": { "type": "integer", "minimum": 1, "maximum": 100000 }
+      },
+      "additionalProperties": false
+    },
+    "acquisition": {
+      "description": "Additive: the acquisition lines of one target, 1 to 8 (one for a colour camera or a single filter; several for a mono camera, L, R, G, B or Hα, O III, or an alternation of filters). The first line's `filter`, when it is present, is copied into the item's `filter` by every writer and by the service (`null` as `\"\"`), so that a reader that does not know `acquisition` — the iCalendar export, the printable sheet, an installed application of an earlier version — still shows the right filter: the first line wins.",
+      "type": "object",
+      "required": ["lines"],
+      "properties": {
+        "lines": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": { "$ref": "#/$defs/acquisitionLine" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "launchedSchedule": {
+      "description": "The plan as it stood when its night was launched (additive): one entry per slotted item, in the order of the slots, with the minutes the item's `startMinute`/`endMinute` held at that instant, counted from the plan's night start. Written ONCE, by the mobile application's launch (`NightSessionController.launchPlan`, before any start of the launch is trimmed), and never rewritten: every surface that saves the plan keeps it as it is. `targetId` is the item's `targetId`, else the item's own `id` (the key the execution screen folds a target by). The execution screen draws every drift of the night against it (the frozen plan), the visual night draws it as its « Prévu » rail; a plan launched without it simply has no frozen reference. ABSENT before the launch.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["planItemId", "targetId", "startMinute", "endMinute"],
+        "properties": {
+          "planItemId": { "type": "string", "minLength": 1 },
+          "targetId": { "type": "string", "minLength": 1 },
+          "startMinute": { "type": "number", "minimum": 0 },
+          "endMinute": { "type": "number", "minimum": 0 },
+          "acquisition": {
+            "$ref": "#/$defs/acquisition",
+            "description": "Additive: the EFFECTIVE acquisition lines of this item at the instant of the launch — the person's choices and the suggestion resolved, every field the launch knew written — frozen with the slot by the same launch (`NightSessionController.launchPlan`) and never rewritten: the debriefing compares what was measured to them, and a later change of the suggestion rule does not rewrite what was planned. ABSENT for a plan launched before it existed (its debriefing shows the measured lines alone)."
+          },
+          "ruleVersion": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "description": "Additive: the version of the suggestion rule that resolved the frozen `acquisition`, written with it by the launch."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "planItem": {
+      "type": "object",
+      "description": "One planned target; open beyond `id`. `projectId` (additive) names the project — the multi-night plan — this interval works for: the link is carried by the interval, never by the plan. Every surface keeps it untouched through every write and read; a reader that does not know it shows a normal plan.",
+      "required": ["id"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "projectId": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+        },
+        "filter": {
+          "description": "The item's filter (`\"\"` for none). When `acquisition.lines[0].filter` is present it is the same value (`\"\"` for its `null`), copied by every writer and aligned by the service."
+        },
+        "acquisition": {
+          "$ref": "#/$defs/acquisition",
+          "description": "Additive: the acquisition lines the person chose for this target, written by the web planner and the mobile planner; absent while nothing was chosen (every value then comes from the plan's `acquisitionDefaults`, else the suggestion). « Revenir aux suggestions » removes it. Shown and proposed in photography mode only; kept as it is in visual mode. Needs no capability."
+        }
+      },
+      "additionalProperties": true
+    },
+    "planView": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "catalogue": { "type": "string" },
+        "plan": { "type": "string" },
+        "query": { "type": "string" },
+        "source": { "type": "string" },
+        "sort": { "type": "string" },
+        "view": { "type": "string" },
+        "equipmentCollapsed": { "type": "boolean" },
+        "constraintsCollapsed": { "type": "boolean" },
+        "skyMap": { "type": "string" },
+        "selectedTargetId": {
+          "anyOf": [{ "type": "string" }, { "type": "null" }]
+        },
+        "horizon": {
+          "type": "object",
+          "properties": {
+            "projection": { "enum": ["circular", "linear"] },
+            "rotation": { "type": "number", "minimum": -180, "maximum": 180 },
+            "showLabels": { "type": "boolean" },
+            "sampleIndex": {
+              "anyOf": [{ "type": "integer" }, { "type": "null" }]
+            },
+            "mode": {
+              "description": "The horizon map's mode: every target at one instant (positions) or the whole night of one chosen target (path). Absent means positions.",
+              "enum": ["positions", "path"]
+            },
+            "pathTargetId": {
+              "description": "The target whose night the path mode draws; null lets the map choose (the selected target, else the plan's first).",
+              "anyOf": [{ "type": "string" }, { "type": "null" }]
+            },
+            "layers": {
+              "description": "The horizon map's layers: the place's horizon mask and the estimated light pollution by direction. Absent means mask on, light pollution off. Only the switches are stored: the light-pollution grid is derived data, never written into the plan.",
+              "type": "object",
+              "properties": {
+                "mask": { "type": "boolean" },
+                "lightPollution": { "type": "boolean" }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "plan": {
+      "type": "object",
+      "required": ["id", "date", "items"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "date": { "$ref": "#/$defs/date" },
+        "name": { "type": "string" },
+        "nightId": { "type": "string" },
+        "status": {
+          "enum": ["pending", "executed", "abandoned", "archived"]
+        },
+        "archivedAt": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+        "archivedFrom": {
+          "description": "Additive, read-only: the state an archived plan had before its archive (`executed`, `partial` or `abandoned`), served on an archived plan of a closed night and absent otherwise; the service decides it, a copy that carries another value does not change it.",
+          "enum": ["executed", "partial", "abandoned"]
+        },
+        "location": {
+          "anyOf": [{ "$ref": "#/$defs/place" }, { "type": "null" }]
+        },
+        "equipment": {
+          "type": "object",
+          "description": "The plan's equipment selection. Open object. `windTolerance` (optional): `{ preset: \"light\" | \"standard\" | \"heavy\" | \"custom\", sustainedKmh, gustKmh }`, the wind and gust limits of the plan's mount in km/h (presets 15/25, 20/30, 30/45; custom 5 to 80), copied from the device or browser setting of that mount into the plans that can still take it; absent reads as standard."
+        },
+        "minAltitude": { "anyOf": [{ "type": "number" }, { "type": "null" }] },
+        "moonSeparationMinimum": {
+          "anyOf": [{ "type": "number" }, { "type": "null" }]
+        },
+        "moonSeparationMinimumByFilter": { "type": "object" },
+        "mountSafety": { "type": "object" },
+        "catalogueSelection": { "type": "object" },
+        "view": { "$ref": "#/$defs/planView" },
+        "darkness": { "$ref": "#/$defs/darkness" },
+        "nightSpan": { "$ref": "#/$defs/nightSpan" },
+        "acquisitionDefaults": {
+          "$ref": "#/$defs/acquisitionLine",
+          "description": "Additive: the plan's defaults — the line the person chose for the whole night (exposure, gain, filter; binning and frame count under « Plus de réglages »), written by the web planner and the mobile planner; a field chosen here holds for every target that does not choose its own, a field left absent stays suggested target by target. ABSENT while nothing was chosen; a reader removes an empty one."
+        },
+        "launchedSchedule": { "$ref": "#/$defs/launchedSchedule" },
+        "items": { "type": "array", "items": { "$ref": "#/$defs/planItem" } }
+      },
+      "additionalProperties": true
+    }
+  },
+  "type": "object",
+  "required": ["plans"],
+  "properties": {
+    "schemaVersion": { "enum": [1, 2] },
+    "plans": { "type": "array", "items": { "$ref": "#/$defs/plan" } },
+    "nights": { "type": "array", "items": { "$ref": "#/$defs/night" } },
+    "knownLocations": { "type": "array", "items": { "$ref": "#/$defs/place" } },
+    "activeNightId": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+    "activePlanId": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+    "date": { "$ref": "#/$defs/date" },
+    "unassignedHorizonProfiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "mask"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string" },
+          "mask": { "$ref": "#/$defs/horizonMask" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

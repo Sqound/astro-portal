@@ -1,0 +1,4567 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "label": "Soirée visuelle au col",
+          "links": [
+            "https://www.planastro.space/n/km7q2x",
+            "HTTPS://WWW.PLANASTRO.SPACE/N/KM7Q2X",
+            "https://planastro.space/N/KM7Q2X",
+            "https://portal.planastro.space/n/KM7Q2X",
+            "https://www.planastro.space/n/KM7Q2O",
+            "https://www.planastro.space/auth/link"
+          ],
+          "steps": [
+            {
+              "plan": {
+                "payload": {
+                  "date": "2026-10-03",
+                  "id": "plan-1",
+                  "items": [
+                    {
+                      "endMinute": 34,
+                      "id": "item-1",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "targetId": "m57"
+                    },
+                    {
+                      "comment": "à revoir",
+                      "endMinute": 85,
+                      "id": "item-2",
+                      "startMinute": 60,
+                      "targetId": "saturne"
+                    }
+                  ],
+                  "location": {
+                    "address": "3 chemin du col",
+                    "elevation": 1847,
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10],
+                    "latitude": "45.0437",
+                    "locality": "Hameau des Mélèzes",
+                    "longitude": -30.0812,
+                    "name": "Col des Mélèzes",
+                    "timeZone": "Atlantic/Azores"
+                  },
+                  "name": "Soirée visuelle au col",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr"
+                },
+                "ref": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "revision": 3,
+                  "targets": 2
+                }
+              }
+            },
+            {
+              "night": {
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "targetId": "m57" },
+                    "syncStatus": "sent",
+                    "type": "target_started"
+                  }
+                ],
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "serverId": "srv-1",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "status": "open",
+                  "updatedAt": "2026-10-03T21:36:00.000Z"
+                }
+              }
+            },
+            { "target": { "key": "saturne", "name": "Saturne" } },
+            { "connect": "a" },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "b": {
+                    "of": 2,
+                    "plan": {
+                      "id": "plan-1",
+                      "name": "Soirée visuelle au col",
+                      "revision": 3,
+                      "targets": 2
+                    }
+                  },
+                  "s": 2,
+                  "t": "ack",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "b" },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "target": {
+                "key": "m31",
+                "name": "M31",
+                "target": { "coordinate": { "dec": 41.27, "ra": 10.68 } }
+              }
+            },
+            {
+              "night": {
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "targetId": "m57" },
+                    "syncStatus": "sent",
+                    "type": "target_started"
+                  },
+                  {
+                    "eventId": "e2",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "targetId": "m57" },
+                    "syncStatus": "sent",
+                    "type": "target_finished"
+                  },
+                  {
+                    "eventId": "e3",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "cause": "cloud" },
+                    "syncStatus": "sent",
+                    "type": "pause"
+                  }
+                ],
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "serverId": "srv-1",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "status": "paused",
+                  "updatedAt": "2026-10-03T21:36:00.000Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "id": "two-viewers-join-then-every-change-goes-to-both-in-join-order",
+      "result": {
+        "codes": ["KM7Q2X", "KM7Q2X", "KM7Q2X", null, null, null],
+        "link": "HTTPS://WWW.PLANASTRO.SPACE/N/KM7Q2X",
+        "proof": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+        "steps": [
+          [],
+          [],
+          [],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 1,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 2,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 3,
+                "t": "night",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 4,
+                "t": "target",
+                "v": 1
+              },
+              "send": "a"
+            }
+          ],
+          [],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 5,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 6,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 7,
+                "t": "night",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 8,
+                "t": "target",
+                "v": 1
+              },
+              "send": "b"
+            }
+          ],
+          [
+            {
+              "message": {
+                "b": {
+                  "key": "m31",
+                  "name": "M31",
+                  "target": { "coordinate": { "dec": 41.27, "ra": 10.68 } }
+                },
+                "s": 9,
+                "t": "target",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "key": "m31",
+                  "name": "M31",
+                  "target": { "coordinate": { "dec": 41.27, "ra": 10.68 } }
+                },
+                "s": 9,
+                "t": "target",
+                "v": 1
+              },
+              "send": "b"
+            }
+          ],
+          [
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e2",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_finished"
+                    },
+                    {
+                      "eventId": "e3",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "cause": "cloud" },
+                      "type": "pause"
+                    }
+                  ],
+                  "full": false,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "paused",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 10,
+                "t": "night",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e2",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_finished"
+                    },
+                    {
+                      "eventId": "e3",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "cause": "cloud" },
+                      "type": "pause"
+                    }
+                  ],
+                  "full": false,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "paused",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 10,
+                "t": "night",
+                "v": 1
+              },
+              "send": "b"
+            }
+          ]
+        ],
+        "tag": "PS13f63bcf3",
+        "watching": ["a", "b"]
+      }
+    },
+    {
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "label": "Soirée visuelle au col",
+          "steps": [
+            {
+              "plan": {
+                "payload": {
+                  "date": "2026-10-03",
+                  "id": "plan-1",
+                  "items": [
+                    {
+                      "endMinute": 34,
+                      "id": "item-1",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "targetId": "m57"
+                    },
+                    {
+                      "comment": "à revoir",
+                      "endMinute": 85,
+                      "id": "item-2",
+                      "startMinute": 60,
+                      "targetId": "saturne"
+                    }
+                  ],
+                  "location": {
+                    "address": "3 chemin du col",
+                    "elevation": 1847,
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10],
+                    "latitude": "45.0437",
+                    "locality": "Hameau des Mélèzes",
+                    "longitude": -30.0812,
+                    "name": "Col des Mélèzes",
+                    "timeZone": "Atlantic/Azores"
+                  },
+                  "name": "Soirée visuelle au col",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr"
+                },
+                "ref": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "revision": 3,
+                  "targets": 2
+                }
+              }
+            },
+            {
+              "night": {
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "targetId": "m57" },
+                    "syncStatus": "sent",
+                    "type": "target_started"
+                  }
+                ],
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "serverId": "srv-1",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "status": "open",
+                  "updatedAt": "2026-10-03T21:36:00.000Z"
+                }
+              }
+            },
+            { "target": { "key": "saturne", "name": "Saturne" } },
+            { "connect": "a" },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "b" },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "c" },
+            {
+              "receive": {
+                "from": "c",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "d" },
+            {
+              "receive": {
+                "from": "d",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "night": {
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "targetId": "m57" },
+                    "syncStatus": "sent",
+                    "type": "target_started"
+                  },
+                  {
+                    "eventId": "e2",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "targetId": "m57" },
+                    "syncStatus": "sent",
+                    "type": "target_finished"
+                  }
+                ],
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "serverId": "srv-1",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "status": "open",
+                  "updatedAt": "2026-10-03T21:36:00.000Z"
+                }
+              }
+            },
+            { "connect": "e" },
+            {
+              "receive": {
+                "from": "e",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "id": "five-viewers-and-a-newcomer-during-the-night-gets-the-whole-night",
+      "result": {
+        "codes": [],
+        "link": "HTTPS://WWW.PLANASTRO.SPACE/N/KM7Q2X",
+        "proof": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+        "steps": [
+          [],
+          [],
+          [],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 1,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 2,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 3,
+                "t": "night",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 4,
+                "t": "target",
+                "v": 1
+              },
+              "send": "a"
+            }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 5,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 6,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 7,
+                "t": "night",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 8,
+                "t": "target",
+                "v": 1
+              },
+              "send": "b"
+            }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 9,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "c"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 10,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "c"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 11,
+                "t": "night",
+                "v": 1
+              },
+              "send": "c"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 12,
+                "t": "target",
+                "v": 1
+              },
+              "send": "c"
+            }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 13,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "d"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 14,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "d"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 15,
+                "t": "night",
+                "v": 1
+              },
+              "send": "d"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 16,
+                "t": "target",
+                "v": 1
+              },
+              "send": "d"
+            }
+          ],
+          [
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e2",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_finished"
+                    }
+                  ],
+                  "full": false,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 17,
+                "t": "night",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e2",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_finished"
+                    }
+                  ],
+                  "full": false,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 17,
+                "t": "night",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e2",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_finished"
+                    }
+                  ],
+                  "full": false,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 17,
+                "t": "night",
+                "v": 1
+              },
+              "send": "c"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e2",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_finished"
+                    }
+                  ],
+                  "full": false,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 17,
+                "t": "night",
+                "v": 1
+              },
+              "send": "d"
+            }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 18,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "e"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 19,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "e"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    },
+                    {
+                      "eventId": "e2",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_finished"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 20,
+                "t": "night",
+                "v": 1
+              },
+              "send": "e"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 21,
+                "t": "target",
+                "v": 1
+              },
+              "send": "e"
+            }
+          ]
+        ],
+        "tag": "PS13f63bcf3",
+        "watching": ["a", "b", "c", "d", "e"]
+      }
+    },
+    {
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "label": "Soirée visuelle au col",
+          "steps": [
+            {
+              "plan": {
+                "payload": {
+                  "date": "2026-10-03",
+                  "id": "plan-1",
+                  "items": [
+                    {
+                      "endMinute": 34,
+                      "id": "item-1",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "targetId": "m57"
+                    },
+                    {
+                      "comment": "à revoir",
+                      "endMinute": 85,
+                      "id": "item-2",
+                      "startMinute": 60,
+                      "targetId": "saturne"
+                    }
+                  ],
+                  "location": {
+                    "address": "3 chemin du col",
+                    "elevation": 1847,
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10],
+                    "latitude": "45.0437",
+                    "locality": "Hameau des Mélèzes",
+                    "longitude": -30.0812,
+                    "name": "Col des Mélèzes",
+                    "timeZone": "Atlantic/Azores"
+                  },
+                  "name": "Soirée visuelle au col",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr"
+                },
+                "ref": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "revision": 3,
+                  "targets": 2
+                }
+              }
+            },
+            {
+              "night": {
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "targetId": "m57" },
+                    "syncStatus": "sent",
+                    "type": "target_started"
+                  }
+                ],
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "serverId": "srv-1",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "status": "open",
+                  "updatedAt": "2026-10-03T21:36:00.000Z"
+                }
+              }
+            },
+            { "connect": "a" },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "b" },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "c" },
+            {
+              "receive": {
+                "from": "c",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            { "leave": "a" },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "b": { "reason": "done" },
+                  "s": 2,
+                  "t": "bye",
+                  "v": 1
+                }
+              }
+            },
+            { "target": { "key": "saturne", "name": "Saturne" } },
+            { "stop": true },
+            { "connect": "d" },
+            {
+              "target": {
+                "key": "m31",
+                "name": "M31",
+                "target": { "coordinate": { "dec": 41.27, "ra": 10.68 } }
+              }
+            }
+          ]
+        }
+      ],
+      "id": "a-viewer-leaves-a-viewer-says-bye-then-the-host-stops",
+      "result": {
+        "codes": [],
+        "link": "HTTPS://WWW.PLANASTRO.SPACE/N/KM7Q2X",
+        "proof": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+        "steps": [
+          [],
+          [],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 1,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 2,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 3,
+                "t": "night",
+                "v": 1
+              },
+              "send": "a"
+            }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 4,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 5,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 6,
+                "t": "night",
+                "v": 1
+              },
+              "send": "b"
+            }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 7,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "c"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 8,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "c"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 9,
+                "t": "night",
+                "v": 1
+              },
+              "send": "c"
+            }
+          ],
+          [],
+          [{ "cut": "b" }],
+          [
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 10,
+                "t": "target",
+                "v": 1
+              },
+              "send": "c"
+            }
+          ],
+          [
+            {
+              "message": {
+                "b": { "reason": "done" },
+                "s": 11,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "c"
+            },
+            { "cut": "c" }
+          ],
+          [{ "cut": "d" }],
+          []
+        ],
+        "tag": "PS13f63bcf3",
+        "watching": []
+      }
+    },
+    {
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "label": "Soirée visuelle au col",
+          "steps": [
+            {
+              "plan": {
+                "payload": {
+                  "date": "2026-10-03",
+                  "id": "plan-1",
+                  "items": [
+                    {
+                      "endMinute": 34,
+                      "id": "item-1",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "targetId": "m57"
+                    },
+                    {
+                      "comment": "à revoir",
+                      "endMinute": 85,
+                      "id": "item-2",
+                      "startMinute": 60,
+                      "targetId": "saturne"
+                    }
+                  ],
+                  "location": {
+                    "address": "3 chemin du col",
+                    "elevation": 1847,
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10],
+                    "latitude": "45.0437",
+                    "locality": "Hameau des Mélèzes",
+                    "longitude": -30.0812,
+                    "name": "Col des Mélèzes",
+                    "timeZone": "Atlantic/Azores"
+                  },
+                  "name": "Soirée visuelle au col",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr"
+                },
+                "ref": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "revision": 3,
+                  "targets": 2
+                }
+              }
+            },
+            {
+              "night": {
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "targetId": "m57" },
+                    "syncStatus": "sent",
+                    "type": "target_started"
+                  }
+                ],
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "serverId": "srv-1",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "status": "open",
+                  "updatedAt": "2026-10-03T21:36:00.000Z"
+                }
+              }
+            },
+            { "target": { "key": "saturne", "name": "Saturne" } },
+            { "connect": "honest" },
+            {
+              "receive": {
+                "from": "honest",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "rogue-0" },
+            {
+              "receive": {
+                "from": "rogue-0",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-0",
+                "message": {
+                  "b": { "key": "m42", "name": "M42" },
+                  "s": 2,
+                  "t": "target",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "rogue-1" },
+            {
+              "receive": {
+                "from": "rogue-1",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-1",
+                "message": {
+                  "b": {
+                    "payload": {},
+                    "plan": {
+                      "id": "plan-1",
+                      "name": "Soirée visuelle au col",
+                      "revision": 99,
+                      "targets": 2
+                    }
+                  },
+                  "s": 2,
+                  "t": "plan",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "rogue-2" },
+            {
+              "receive": {
+                "from": "rogue-2",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-2",
+                "message": {
+                  "b": { "banner": "solved" },
+                  "s": 2,
+                  "t": "status",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "rogue-3" },
+            {
+              "receive": {
+                "from": "rogue-3",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-3",
+                "message": {
+                  "b": { "arcsec": 120, "direction": "north" },
+                  "s": 2,
+                  "t": "nudge",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "rogue-4" },
+            {
+              "receive": {
+                "from": "rogue-4",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-4",
+                "message": { "b": {}, "s": 2, "t": "souvenir", "v": 1 }
+              }
+            },
+            { "connect": "rogue-5" },
+            {
+              "receive": {
+                "from": "rogue-5",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "rogue-5",
+                "message": {
+                  "b": { "events": [], "full": true, "session": { "id": "x" } },
+                  "s": 2,
+                  "t": "night",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "early" },
+            {
+              "receive": {
+                "from": "early",
+                "message": {
+                  "b": {
+                    "of": 1,
+                    "plan": {
+                      "id": "plan-1",
+                      "name": "Soirée visuelle au col",
+                      "revision": 3,
+                      "targets": 2
+                    }
+                  },
+                  "s": 1,
+                  "t": "ack",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "pilot" },
+            {
+              "receive": {
+                "from": "pilot",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "pilot",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "target": {
+                "key": "m31",
+                "name": "M31",
+                "target": { "coordinate": { "dec": 41.27, "ra": 10.68 } }
+              }
+            }
+          ]
+        }
+      ],
+      "id": "every-write-from-a-viewer-is-refused-and-cut",
+      "result": {
+        "codes": [],
+        "link": "HTTPS://WWW.PLANASTRO.SPACE/N/KM7Q2X",
+        "proof": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+        "steps": [
+          [],
+          [],
+          [],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 1,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "honest"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 2,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "honest"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 3,
+                "t": "night",
+                "v": 1
+              },
+              "send": "honest"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 4,
+                "t": "target",
+                "v": 1
+              },
+              "send": "honest"
+            }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 5,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "rogue-0"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 6,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "rogue-0"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 7,
+                "t": "night",
+                "v": 1
+              },
+              "send": "rogue-0"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 8,
+                "t": "target",
+                "v": 1
+              },
+              "send": "rogue-0"
+            }
+          ],
+          [
+            { "refused": "rogue-0", "type": "target" },
+            {
+              "message": {
+                "b": { "reason": "readOnly" },
+                "s": 9,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "rogue-0"
+            },
+            { "cut": "rogue-0" }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 10,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "rogue-1"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 11,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "rogue-1"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 12,
+                "t": "night",
+                "v": 1
+              },
+              "send": "rogue-1"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 13,
+                "t": "target",
+                "v": 1
+              },
+              "send": "rogue-1"
+            }
+          ],
+          [
+            { "refused": "rogue-1", "type": "plan" },
+            {
+              "message": {
+                "b": { "reason": "readOnly" },
+                "s": 14,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "rogue-1"
+            },
+            { "cut": "rogue-1" }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 15,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "rogue-2"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 16,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "rogue-2"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 17,
+                "t": "night",
+                "v": 1
+              },
+              "send": "rogue-2"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 18,
+                "t": "target",
+                "v": 1
+              },
+              "send": "rogue-2"
+            }
+          ],
+          [
+            { "refused": "rogue-2", "type": "status" },
+            {
+              "message": {
+                "b": { "reason": "readOnly" },
+                "s": 19,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "rogue-2"
+            },
+            { "cut": "rogue-2" }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 20,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "rogue-3"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 21,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "rogue-3"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 22,
+                "t": "night",
+                "v": 1
+              },
+              "send": "rogue-3"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 23,
+                "t": "target",
+                "v": 1
+              },
+              "send": "rogue-3"
+            }
+          ],
+          [
+            { "refused": "rogue-3", "type": "nudge" },
+            {
+              "message": {
+                "b": { "reason": "readOnly" },
+                "s": 24,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "rogue-3"
+            },
+            { "cut": "rogue-3" }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 25,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "rogue-4"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 26,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "rogue-4"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 27,
+                "t": "night",
+                "v": 1
+              },
+              "send": "rogue-4"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 28,
+                "t": "target",
+                "v": 1
+              },
+              "send": "rogue-4"
+            }
+          ],
+          [
+            { "refused": "rogue-4", "type": "souvenir" },
+            {
+              "message": {
+                "b": { "reason": "readOnly" },
+                "s": 29,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "rogue-4"
+            },
+            { "cut": "rogue-4" }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 30,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "rogue-5"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 31,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "rogue-5"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 32,
+                "t": "night",
+                "v": 1
+              },
+              "send": "rogue-5"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 33,
+                "t": "target",
+                "v": 1
+              },
+              "send": "rogue-5"
+            }
+          ],
+          [
+            { "refused": "rogue-5", "type": "night" },
+            {
+              "message": {
+                "b": { "reason": "readOnly" },
+                "s": 34,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "rogue-5"
+            },
+            { "cut": "rogue-5" }
+          ],
+          [],
+          [
+            { "refused": "early", "type": "ack" },
+            {
+              "message": {
+                "b": { "reason": "readOnly" },
+                "s": 35,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "early"
+            },
+            { "cut": "early" }
+          ],
+          [],
+          [
+            { "refused": "pilot", "type": "hello:pilot" },
+            {
+              "message": {
+                "b": { "reason": "readOnly" },
+                "s": 36,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "pilot"
+            },
+            { "cut": "pilot" }
+          ],
+          [
+            {
+              "message": {
+                "b": {
+                  "key": "m31",
+                  "name": "M31",
+                  "target": { "coordinate": { "dec": 41.27, "ra": 10.68 } }
+                },
+                "s": 37,
+                "t": "target",
+                "v": 1
+              },
+              "send": "honest"
+            }
+          ]
+        ],
+        "tag": "PS13f63bcf3",
+        "watching": ["honest"]
+      }
+    },
+    {
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "label": "Soirée visuelle au col",
+          "steps": [
+            {
+              "plan": {
+                "payload": {
+                  "date": "2026-10-03",
+                  "id": "plan-1",
+                  "items": [
+                    {
+                      "endMinute": 34,
+                      "id": "item-1",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "targetId": "m57"
+                    },
+                    {
+                      "comment": "à revoir",
+                      "endMinute": 85,
+                      "id": "item-2",
+                      "startMinute": 60,
+                      "targetId": "saturne"
+                    }
+                  ],
+                  "location": {
+                    "address": "3 chemin du col",
+                    "elevation": 1847,
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10],
+                    "latitude": "45.0437",
+                    "locality": "Hameau des Mélèzes",
+                    "longitude": -30.0812,
+                    "name": "Col des Mélèzes",
+                    "timeZone": "Atlantic/Azores"
+                  },
+                  "name": "Soirée visuelle au col",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr"
+                },
+                "ref": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "revision": 3,
+                  "targets": 2
+                }
+              }
+            },
+            {
+              "night": {
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "targetId": "m57" },
+                    "syncStatus": "sent",
+                    "type": "target_started"
+                  }
+                ],
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "serverId": "srv-1",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "status": "open",
+                  "updatedAt": "2026-10-03T21:36:00.000Z"
+                }
+              }
+            },
+            { "connect": "stranger" },
+            {
+              "receive": {
+                "from": "stranger",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "81d9cd5ace50e18b0e8a529de019599dacfeac5d59e0add9fbdae95cba098e8e",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "future" },
+            {
+              "receive": {
+                "from": "future",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 2
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "id": "a-wrong-code-or-a-newer-protocol-is-told-bye-and-cut",
+      "result": {
+        "codes": [],
+        "link": "HTTPS://WWW.PLANASTRO.SPACE/N/KM7Q2X",
+        "proof": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+        "steps": [
+          [],
+          [],
+          [],
+          [
+            {
+              "message": {
+                "b": { "reason": "noMatch" },
+                "s": 1,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "stranger"
+            },
+            { "cut": "stranger" }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": { "reason": "version" },
+                "s": 2,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "future"
+            },
+            { "cut": "future" }
+          ]
+        ],
+        "tag": "PS13f63bcf3",
+        "watching": []
+      }
+    },
+    {
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "label": "Soirée visuelle au col",
+          "steps": [
+            { "connect": "a" },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "plan": {
+                "payload": {
+                  "date": "2026-10-03",
+                  "id": "plan-1",
+                  "items": [
+                    {
+                      "endMinute": 34,
+                      "id": "item-1",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "targetId": "m57"
+                    },
+                    {
+                      "comment": "à revoir",
+                      "endMinute": 85,
+                      "id": "item-2",
+                      "startMinute": 60,
+                      "targetId": "saturne"
+                    }
+                  ],
+                  "location": {
+                    "address": "3 chemin du col",
+                    "elevation": 1847,
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10],
+                    "latitude": "45.0437",
+                    "locality": "Hameau des Mélèzes",
+                    "longitude": -30.0812,
+                    "name": "Col des Mélèzes",
+                    "timeZone": "Atlantic/Azores"
+                  },
+                  "name": "Soirée visuelle au col",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr"
+                },
+                "ref": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "revision": 3,
+                  "targets": 2
+                }
+              }
+            },
+            {
+              "night": {
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "targetId": "m57" },
+                    "syncStatus": "sent",
+                    "type": "target_started"
+                  },
+                  {
+                    "eventId": "e2",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "text": "mal au dos" },
+                    "syncStatus": "sent",
+                    "type": "note"
+                  },
+                  {
+                    "eventId": "e3",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "text": "buée sur le chercheur" },
+                    "syncStatus": "sent",
+                    "type": "equipment_issue"
+                  },
+                  {
+                    "eventId": "e4",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "sky": "clear", "text": "privé" },
+                    "syncStatus": "sent",
+                    "type": "condition"
+                  },
+                  {
+                    "eventId": "e5",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {
+                      "comment": "trop bas",
+                      "reason": "cloud",
+                      "targetId": "m13"
+                    },
+                    "syncStatus": "sent",
+                    "type": "target_skipped"
+                  },
+                  {
+                    "eventId": "e6",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "fromSeconds": 120, "toSeconds": 180 },
+                    "syncStatus": "sent",
+                    "type": "exposure_change"
+                  },
+                  {
+                    "eventId": "e7",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {
+                      "count": 11,
+                      "firstAt": "2026-10-03T21:44:00Z",
+                      "lastAt": "2026-10-04T03:44:00Z"
+                    },
+                    "syncStatus": "sent",
+                    "type": "guiding_timeouts"
+                  },
+                  {
+                    "eventId": "e8",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "fromCelsius": -10, "toCelsius": -6 },
+                    "syncStatus": "sent",
+                    "type": "sensor_temperature_drift"
+                  },
+                  {
+                    "eventId": "e9",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {
+                      "count": 3,
+                      "firstAt": "2026-10-04T00:10:00Z",
+                      "lastAt": "2026-10-04T01:08:00Z",
+                      "maxArcSeconds": 9
+                    },
+                    "syncStatus": "sent",
+                    "type": "guiding_spikes"
+                  },
+                  {
+                    "eventId": "e10",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {},
+                    "syncStatus": "sent",
+                    "type": "mount_connected"
+                  },
+                  {
+                    "eventId": "e11",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {
+                      "gapDegrees": 0.2,
+                      "outcome": "arrived",
+                      "targetId": "m110"
+                    },
+                    "syncStatus": "sent",
+                    "type": "mount_goto"
+                  },
+                  {
+                    "eventId": "e12",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {},
+                    "syncStatus": "sent",
+                    "type": "mount_stop"
+                  },
+                  {
+                    "eventId": "e13",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {},
+                    "syncStatus": "sent",
+                    "type": "mount_link_lost"
+                  },
+                  {
+                    "eventId": "e14",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {},
+                    "syncStatus": "sent",
+                    "type": "mount_link_back"
+                  },
+                  {
+                    "eventId": "e15",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "outcome": "parked" },
+                    "syncStatus": "sent",
+                    "type": "mount_parked"
+                  },
+                  {
+                    "eventId": "e16",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "outcome": "synced", "targetId": "m110" },
+                    "syncStatus": "sent",
+                    "type": "mount_aligned"
+                  },
+                  {
+                    "eventId": "e17",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "method": "mount", "outcome": "centred" },
+                    "syncStatus": "sent",
+                    "type": "pointing_help"
+                  },
+                  {
+                    "eventId": "e18",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {},
+                    "syncStatus": "sent",
+                    "type": "device_connected"
+                  },
+                  {
+                    "eventId": "e19",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "outcome": "sent", "targetId": "m31" },
+                    "syncStatus": "sent",
+                    "type": "device_goto"
+                  },
+                  {
+                    "eventId": "e20",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {},
+                    "syncStatus": "sent",
+                    "type": "device_stop"
+                  },
+                  {
+                    "eventId": "e21",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "outcome": "requested" },
+                    "syncStatus": "sent",
+                    "type": "device_parked"
+                  },
+                  {
+                    "eventId": "e22",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {},
+                    "syncStatus": "sent",
+                    "type": "device_link_lost"
+                  },
+                  {
+                    "eventId": "e23",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": {},
+                    "syncStatus": "sent",
+                    "type": "device_link_back"
+                  }
+                ],
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "serverId": "srv-1",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "status": "open",
+                  "updatedAt": "2026-10-03T21:36:00.000Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "id": "the-plan-and-the-night-leave-the-host-without-its-notes-or-its-spot",
+      "result": {
+        "codes": [],
+        "link": "HTTPS://WWW.PLANASTRO.SPACE/N/KM7Q2X",
+        "proof": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+        "steps": [
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 1,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "a"
+            }
+          ],
+          [
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 2,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "a"
+            }
+          ],
+          [
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    },
+                    {
+                      "eventId": "e4",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "sky": "clear" },
+                      "type": "condition"
+                    },
+                    {
+                      "eventId": "e5",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "reason": "cloud", "targetId": "m13" },
+                      "type": "target_skipped"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 3,
+                "t": "night",
+                "v": 1
+              },
+              "send": "a"
+            }
+          ]
+        ],
+        "tag": "PS13f63bcf3",
+        "watching": ["a"]
+      }
+    },
+    {
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "label": "Soirée visuelle au col",
+          "steps": [
+            {
+              "plan": {
+                "payload": {
+                  "date": "2026-10-03",
+                  "id": "plan-1",
+                  "items": [
+                    {
+                      "endMinute": 34,
+                      "id": "item-1",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "targetId": "m57"
+                    },
+                    {
+                      "comment": "à revoir",
+                      "endMinute": 85,
+                      "id": "item-2",
+                      "startMinute": 60,
+                      "targetId": "saturne"
+                    }
+                  ],
+                  "location": {
+                    "address": "3 chemin du col",
+                    "elevation": 1847,
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10],
+                    "latitude": "45.0437",
+                    "locality": "Hameau des Mélèzes",
+                    "longitude": -30.0812,
+                    "name": "Col des Mélèzes",
+                    "timeZone": "Atlantic/Azores"
+                  },
+                  "name": "Soirée visuelle au col",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr"
+                },
+                "ref": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "revision": 3,
+                  "targets": 2
+                }
+              }
+            },
+            {
+              "night": {
+                "events": [
+                  {
+                    "eventId": "e1",
+                    "occurredAt": "2026-10-03T20:02:00.000Z",
+                    "payload": { "targetId": "m57" },
+                    "syncStatus": "sent",
+                    "type": "target_started"
+                  }
+                ],
+                "session": {
+                  "id": "session-1",
+                  "planId": "plan-1",
+                  "serverId": "srv-1",
+                  "startedAt": "2026-10-03T19:40:00.000Z",
+                  "status": "open",
+                  "updatedAt": "2026-10-03T21:36:00.000Z"
+                }
+              }
+            },
+            { "target": { "key": "saturne", "name": "Saturne" } },
+            { "connect": "a" },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            { "leave": "a" },
+            { "connect": "a" },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "holds": {
+                      "id": "plan-1",
+                      "name": "Soirée visuelle au col",
+                      "revision": 3,
+                      "targets": 2
+                    },
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "b" },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "b": {
+                    "device": "dev-v",
+                    "epoch": "run-v",
+                    "holds": {
+                      "id": "plan-1",
+                      "name": "Soirée visuelle au col",
+                      "revision": 2,
+                      "targets": 2
+                    },
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "plan": {
+                "payload": {
+                  "date": "2026-10-03",
+                  "id": "plan-1",
+                  "items": [
+                    {
+                      "endMinute": 34,
+                      "id": "item-1",
+                      "note": "mon mot",
+                      "startMinute": 22,
+                      "targetId": "m57"
+                    },
+                    {
+                      "comment": "à revoir",
+                      "endMinute": 85,
+                      "id": "item-2",
+                      "startMinute": 60,
+                      "targetId": "saturne"
+                    }
+                  ],
+                  "location": {
+                    "address": "3 chemin du col",
+                    "elevation": 1847,
+                    "horizonMask": [10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10],
+                    "latitude": "45.0437",
+                    "locality": "Hameau des Mélèzes",
+                    "longitude": -30.0812,
+                    "name": "Col des Mélèzes",
+                    "timeZone": "Atlantic/Azores"
+                  },
+                  "name": "Soirée visuelle au col (2)",
+                  "notes": "Clé du portail sous la pierre",
+                  "ownerEmail": "vous@exemple.fr"
+                },
+                "ref": {
+                  "id": "plan-1",
+                  "name": "Soirée visuelle au col",
+                  "revision": 4,
+                  "targets": 2
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "id": "a-viewer-back-with-the-same-revision-is-not-sent-the-plan-again",
+      "result": {
+        "codes": [],
+        "link": "HTTPS://WWW.PLANASTRO.SPACE/N/KM7Q2X",
+        "proof": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+        "steps": [
+          [],
+          [],
+          [],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 1,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 2,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 3,
+                "t": "night",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 4,
+                "t": "target",
+                "v": 1
+              },
+              "send": "a"
+            }
+          ],
+          [],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 5,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 6,
+                "t": "night",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 7,
+                "t": "target",
+                "v": 1
+              },
+              "send": "a"
+            }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée visuelle au col",
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  },
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 8,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 3,
+                    "targets": 2
+                  }
+                },
+                "s": 9,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": {
+                  "events": [
+                    {
+                      "eventId": "e1",
+                      "occurredAt": "2026-10-03T20:02:00.000Z",
+                      "payload": { "targetId": "m57" },
+                      "type": "target_started"
+                    }
+                  ],
+                  "full": true,
+                  "session": {
+                    "id": "session-1",
+                    "planId": "plan-1",
+                    "startedAt": "2026-10-03T19:40:00.000Z",
+                    "status": "open",
+                    "updatedAt": "2026-10-03T21:36:00.000Z"
+                  }
+                },
+                "s": 10,
+                "t": "night",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": { "key": "saturne", "name": "Saturne" },
+                "s": 11,
+                "t": "target",
+                "v": 1
+              },
+              "send": "b"
+            }
+          ],
+          [
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col (2)"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 4,
+                    "targets": 2
+                  }
+                },
+                "s": 12,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "payload": {
+                    "date": "2026-10-03",
+                    "id": "plan-1",
+                    "items": [
+                      {
+                        "endMinute": 34,
+                        "id": "item-1",
+                        "startMinute": 22,
+                        "targetId": "m57"
+                      },
+                      {
+                        "endMinute": 85,
+                        "id": "item-2",
+                        "startMinute": 60,
+                        "targetId": "saturne"
+                      }
+                    ],
+                    "location": {
+                      "elevation": 1800,
+                      "horizonMask": [
+                        10, 12, 8, 5, 5, 6, 9, 15, 20, 12, 10, 10
+                      ],
+                      "latitude": 45,
+                      "longitude": -30.1,
+                      "name": "Col des Mélèzes",
+                      "timeZone": "Atlantic/Azores"
+                    },
+                    "name": "Soirée visuelle au col (2)"
+                  },
+                  "plan": {
+                    "id": "plan-1",
+                    "name": "Soirée visuelle au col",
+                    "revision": 4,
+                    "targets": 2
+                  }
+                },
+                "s": 12,
+                "t": "plan",
+                "v": 1
+              },
+              "send": "b"
+            }
+          ]
+        ],
+        "tag": "PS13f63bcf3",
+        "watching": ["a", "b"]
+      }
+    },
+    {
+      "args": [
+        {
+          "code": "KM7Q2X",
+          "deviceId": "dev-host",
+          "epoch": "run-host",
+          "label": "Soirée guidée",
+          "links": [],
+          "steps": [
+            {
+              "guided": {
+                "evening": {
+                  "evening": "brightest-stars-tonight",
+                  "format": 1,
+                  "help": "none",
+                  "index": 0,
+                  "minutes": 45,
+                  "mode": "naked",
+                  "seen": [],
+                  "startedAt": "2026-10-14T19:40:00.000Z",
+                  "steps": [
+                    {
+                      "alt": 61.2,
+                      "az": 288.4,
+                      "dec": 38.7837,
+                      "id": "star-hip-91262",
+                      "name": "Véga",
+                      "ra": 18.6156,
+                      "targetId": "star-hip-91262",
+                      "texts": ["brightest-stars-tonight.lead-first"],
+                      "type": "brightStar"
+                    }
+                  ],
+                  "subtitleKey": "brightest-stars-tonight.subtitle",
+                  "titleKey": "brightest-stars-tonight.title"
+                },
+                "v": 1
+              }
+            },
+            { "connect": "a" },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "b": { "step": "1792007999000:star-hip-91262", "v": 1 },
+                  "s": 1,
+                  "t": "seen",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "b": {
+                    "device": "dev-a",
+                    "epoch": "run-a",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            { "connect": "b" },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "b": {
+                    "device": "dev-b",
+                    "epoch": "run-b",
+                    "name": "",
+                    "role": "viewer",
+                    "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                    "version": 1
+                  },
+                  "s": 1,
+                  "t": "hello",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "b": { "step": "1792007999000:star-hip-91262", "v": 1 },
+                  "s": 2,
+                  "t": "seen",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "a",
+                "message": {
+                  "b": { "step": "1792007999000:star-hip-91262", "v": 1 },
+                  "s": 3,
+                  "t": "seen",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "b": { "step": "1792007999000:star-hip-91262", "v": 1 },
+                  "s": 2,
+                  "t": "seen",
+                  "v": 1
+                }
+              }
+            },
+            {
+              "guided": {
+                "evening": {
+                  "evening": "brightest-stars-tonight",
+                  "format": 1,
+                  "help": "none",
+                  "index": 0,
+                  "minutes": 45,
+                  "mode": "naked",
+                  "seen": [],
+                  "startedAt": "2026-10-14T19:40:00.000Z",
+                  "steps": [
+                    {
+                      "alt": 61.2,
+                      "az": 288.4,
+                      "dec": 38.7837,
+                      "id": "star-hip-91262",
+                      "name": "Véga",
+                      "ra": 18.6156,
+                      "targetId": "star-hip-91262",
+                      "texts": ["brightest-stars-tonight.lead-first"],
+                      "type": "brightStar"
+                    }
+                  ],
+                  "subtitleKey": "brightest-stars-tonight.subtitle",
+                  "titleKey": "brightest-stars-tonight.title"
+                },
+                "v": 1
+              }
+            },
+            {
+              "guided": {
+                "evening": {
+                  "evening": "brightest-stars-tonight",
+                  "format": 1,
+                  "help": "none",
+                  "index": 1,
+                  "minutes": 45,
+                  "mode": "naked",
+                  "seen": [0],
+                  "startedAt": "2026-10-14T19:40:00.000Z",
+                  "steps": [
+                    {
+                      "alt": 61.2,
+                      "az": 288.4,
+                      "dec": 38.7837,
+                      "id": "star-hip-91262",
+                      "name": "Véga",
+                      "ra": 18.6156,
+                      "targetId": "star-hip-91262",
+                      "texts": ["brightest-stars-tonight.lead-first"],
+                      "type": "brightStar"
+                    }
+                  ],
+                  "subtitleKey": "brightest-stars-tonight.subtitle",
+                  "titleKey": "brightest-stars-tonight.title"
+                },
+                "v": 1
+              }
+            },
+            {
+              "receive": {
+                "from": "b",
+                "message": {
+                  "b": { "evening": null, "v": 1 },
+                  "s": 3,
+                  "t": "guided",
+                  "v": 1
+                }
+              }
+            },
+            { "guided": { "evening": null, "v": 1 } }
+          ]
+        }
+      ],
+      "id": "a-guided-evening-goes-to-its-viewers-and-each-says-seen-once",
+      "result": {
+        "codes": [],
+        "link": "HTTPS://WWW.PLANASTRO.SPACE/N/KM7Q2X",
+        "proof": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+        "steps": [
+          [],
+          [],
+          [
+            { "refused": "a", "type": "seen" },
+            {
+              "message": {
+                "b": { "reason": "readOnly" },
+                "s": 1,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "a"
+            },
+            { "cut": "a" }
+          ],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée guidée",
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 2,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "evening": {
+                    "evening": "brightest-stars-tonight",
+                    "format": 1,
+                    "help": "none",
+                    "index": 0,
+                    "minutes": 45,
+                    "mode": "naked",
+                    "seen": [],
+                    "startedAt": "2026-10-14T19:40:00.000Z",
+                    "steps": [
+                      {
+                        "alt": 61.2,
+                        "az": 288.4,
+                        "dec": 38.7837,
+                        "id": "star-hip-91262",
+                        "name": "Véga",
+                        "ra": 18.6156,
+                        "targetId": "star-hip-91262",
+                        "texts": ["brightest-stars-tonight.lead-first"],
+                        "type": "brightStar"
+                      }
+                    ],
+                    "subtitleKey": "brightest-stars-tonight.subtitle",
+                    "titleKey": "brightest-stars-tonight.title"
+                  },
+                  "v": 1
+                },
+                "s": 3,
+                "t": "guided",
+                "v": 1
+              },
+              "send": "a"
+            }
+          ],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "device": "dev-host",
+                  "epoch": "run-host",
+                  "name": "Soirée guidée",
+                  "role": "pilot",
+                  "space": "3f63bcf3469bed2bdf3da2520e089301947604f28c57ec9e71d4e3fb4fc5fbc1",
+                  "version": 1
+                },
+                "s": 4,
+                "t": "hello",
+                "v": 1
+              },
+              "send": "b"
+            },
+            {
+              "message": {
+                "b": {
+                  "evening": {
+                    "evening": "brightest-stars-tonight",
+                    "format": 1,
+                    "help": "none",
+                    "index": 0,
+                    "minutes": 45,
+                    "mode": "naked",
+                    "seen": [],
+                    "startedAt": "2026-10-14T19:40:00.000Z",
+                    "steps": [
+                      {
+                        "alt": 61.2,
+                        "az": 288.4,
+                        "dec": 38.7837,
+                        "id": "star-hip-91262",
+                        "name": "Véga",
+                        "ra": 18.6156,
+                        "targetId": "star-hip-91262",
+                        "texts": ["brightest-stars-tonight.lead-first"],
+                        "type": "brightStar"
+                      }
+                    ],
+                    "subtitleKey": "brightest-stars-tonight.subtitle",
+                    "titleKey": "brightest-stars-tonight.title"
+                  },
+                  "v": 1
+                },
+                "s": 5,
+                "t": "guided",
+                "v": 1
+              },
+              "send": "b"
+            }
+          ],
+          [{ "seen": "a", "step": "1792007999000:star-hip-91262" }],
+          [],
+          [{ "seen": "b", "step": "1792007999000:star-hip-91262" }],
+          [],
+          [
+            {
+              "message": {
+                "b": {
+                  "evening": {
+                    "evening": "brightest-stars-tonight",
+                    "format": 1,
+                    "help": "none",
+                    "index": 1,
+                    "minutes": 45,
+                    "mode": "naked",
+                    "seen": [0],
+                    "startedAt": "2026-10-14T19:40:00.000Z",
+                    "steps": [
+                      {
+                        "alt": 61.2,
+                        "az": 288.4,
+                        "dec": 38.7837,
+                        "id": "star-hip-91262",
+                        "name": "Véga",
+                        "ra": 18.6156,
+                        "targetId": "star-hip-91262",
+                        "texts": ["brightest-stars-tonight.lead-first"],
+                        "type": "brightStar"
+                      }
+                    ],
+                    "subtitleKey": "brightest-stars-tonight.subtitle",
+                    "titleKey": "brightest-stars-tonight.title"
+                  },
+                  "v": 1
+                },
+                "s": 6,
+                "t": "guided",
+                "v": 1
+              },
+              "send": "a"
+            },
+            {
+              "message": {
+                "b": {
+                  "evening": {
+                    "evening": "brightest-stars-tonight",
+                    "format": 1,
+                    "help": "none",
+                    "index": 1,
+                    "minutes": 45,
+                    "mode": "naked",
+                    "seen": [0],
+                    "startedAt": "2026-10-14T19:40:00.000Z",
+                    "steps": [
+                      {
+                        "alt": 61.2,
+                        "az": 288.4,
+                        "dec": 38.7837,
+                        "id": "star-hip-91262",
+                        "name": "Véga",
+                        "ra": 18.6156,
+                        "targetId": "star-hip-91262",
+                        "texts": ["brightest-stars-tonight.lead-first"],
+                        "type": "brightStar"
+                      }
+                    ],
+                    "subtitleKey": "brightest-stars-tonight.subtitle",
+                    "titleKey": "brightest-stars-tonight.title"
+                  },
+                  "v": 1
+                },
+                "s": 6,
+                "t": "guided",
+                "v": 1
+              },
+              "send": "b"
+            }
+          ],
+          [
+            { "refused": "b", "type": "guided" },
+            {
+              "message": {
+                "b": { "reason": "readOnly" },
+                "s": 7,
+                "t": "bye",
+                "v": 1
+              },
+              "send": "b"
+            },
+            { "cut": "b" }
+          ],
+          [
+            {
+              "message": {
+                "b": { "evening": null, "v": 1 },
+                "s": 8,
+                "t": "guided",
+                "v": 1
+              },
+              "send": "a"
+            }
+          ]
+        ],
+        "tag": "PS13f63bcf3",
+        "watching": ["a"]
+      }
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "night-share-link"
+}

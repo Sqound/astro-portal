@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "args": ["2024-04-08"],
+      "id": "2024-total-solar-eclipse-new-moon",
+      "result": {
+        "illumination": 0,
+        "name": "new",
+        "phaseDegrees": 356.2839238026256
+      }
+    },
+    {
+      "args": ["2024-09-17"],
+      "id": "2024-september-full-moon",
+      "result": {
+        "illumination": 99,
+        "name": "full",
+        "phaseDegrees": 171.382116815754
+      }
+    }
+  ],
+  "generatedFrom": "astro-core@1.0.0",
+  "module": "lunar-phase"
+}

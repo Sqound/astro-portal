@@ -1,0 +1,123 @@
+{
+  "description": "A finished multi-night plan: its first night's line is declared by the session (no frames known), its second night's line is measured by Astro Sync (with the computer's name); every night is behind it, so `allSessionsDone` is true.",
+  "exchange": "project-declared-and-measured",
+  "generatedFrom": "portal@1.0.0",
+  "given": "The finished plan of `list`.",
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000007"
+  },
+  "response": {
+    "body": {
+      "allSessionsDone": true,
+      "constraints": {
+        "minAltitude": 30,
+        "moonSeparationMinimum": 30,
+        "moonSeparationMinimumByFilter": {}
+      },
+      "createdAt": "2026-10-14T00:00:00.000Z",
+      "equipment": {},
+      "goalMinutes": 600,
+      "id": "00000000-0000-4000-8000-000000000007",
+      "integrations": [
+        {
+          "binning": null,
+          "computerLabel": null,
+          "createdAt": "2026-10-14T00:10:00.000Z",
+          "eveningDate": "2026-10-04",
+          "exposureSeconds": 0,
+          "filter": null,
+          "frameCount": 0,
+          "gain": null,
+          "id": "00000000-0000-4000-8000-00000000000b",
+          "installationId": null,
+          "nightId": "00000000-0000-4000-8000-00000000000a",
+          "projectId": "00000000-0000-4000-8000-000000000007",
+          "sensor": null,
+          "sessionId": "00000000-0000-4000-8000-00000000000a",
+          "source": "declared",
+          "targetId": "m31",
+          "temperatureC": null,
+          "totalSeconds": 7200,
+          "updatedAt": "2026-10-14T00:10:00.000Z"
+        },
+        {
+          "binning": 1,
+          "computerLabel": "Ordinateur du bureau",
+          "createdAt": "2026-10-14T03:30:00.000Z",
+          "eveningDate": "2026-10-05",
+          "exposureSeconds": 180,
+          "filter": "L",
+          "frameCount": 30,
+          "gain": 100,
+          "id": "00000000-0000-4000-8000-000000000026",
+          "installationId": "install-bureau",
+          "nightId": "00000000-0000-4000-8000-00000000000d",
+          "projectId": "00000000-0000-4000-8000-000000000007",
+          "sensor": "IMX533",
+          "sessionId": "00000000-0000-4000-8000-00000000000d",
+          "source": "measured",
+          "targetId": "m31",
+          "temperatureC": -10,
+          "totalSeconds": 5400,
+          "updatedAt": "2026-10-14T03:30:00.000Z"
+        }
+      ],
+      "nights": [
+        {
+          "eveningDate": "2026-10-04",
+          "integrationCount": 1,
+          "integrationSeconds": 7200,
+          "link": "plan",
+          "planId": "00000000-0000-4000-8000-000000000009",
+          "planName": "Nuit du 2026-10-04",
+          "sessionId": "00000000-0000-4000-8000-00000000000a",
+          "sessionStatus": "finished",
+          "state": "done"
+        },
+        {
+          "eveningDate": "2026-10-05",
+          "integrationCount": 1,
+          "integrationSeconds": 5400,
+          "link": "plan",
+          "planId": "00000000-0000-4000-8000-00000000000c",
+          "planName": "Nuit du 2026-10-05",
+          "sessionId": "00000000-0000-4000-8000-00000000000d",
+          "sessionStatus": "finished",
+          "state": "done"
+        }
+      ],
+      "place": { "latitude": 45, "longitude": -30, "name": "Col des Étoiles" },
+      "planCapture": null,
+      "planCaptureCount": 0,
+      "revision": 1,
+      "status": "finished",
+      "target": {
+        "commonName": "Galaxie d’Andromède",
+        "name": "M 31",
+        "targetId": "m31"
+      },
+      "totalsByFilter": [
+        {
+          "declaredSeconds": 7200,
+          "filter": null,
+          "frameCount": 0,
+          "measuredSeconds": 0,
+          "nightCount": 1,
+          "totalSeconds": 7200
+        },
+        {
+          "declaredSeconds": 0,
+          "filter": "L",
+          "frameCount": 30,
+          "measuredSeconds": 5400,
+          "nightCount": 1,
+          "totalSeconds": 5400
+        }
+      ],
+      "updatedAt": "2026-10-14T00:00:00.000Z"
+    },
+    "schema": "project.schema.json#/$defs/resource",
+    "status": 200
+  }
+}

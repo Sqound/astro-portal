@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "args": [
+        {
+          "plans": [{ "id": "p1" }],
+          "sync": {
+            "deviceId": "d1",
+            "updatedAt": "2024-01-01T00:00:00Z",
+            "version": 1
+          }
+        }
+      ],
+      "id": "excludes-sync-metadata",
+      "result": "{\"plans\":[{\"id\":\"p1\"}]}"
+    },
+    {
+      "args": [
+        {
+          "plans": [{ "id": "p1" }],
+          "sync": {
+            "deviceId": "d2",
+            "updatedAt": "2025-05-05T00:00:00Z",
+            "version": 2
+          }
+        }
+      ],
+      "id": "same-content-different-sync-matches-previous",
+      "result": "{\"plans\":[{\"id\":\"p1\"}]}"
+    },
+    {
+      "args": [{ "plans": [{ "id": "p2" }] }],
+      "id": "different-content-differs",
+      "result": "{\"plans\":[{\"id\":\"p2\"}]}"
+    }
+  ],
+  "generatedFrom": "portal@1.0.0",
+  "module": "sync-resolution-fingerprint"
+}

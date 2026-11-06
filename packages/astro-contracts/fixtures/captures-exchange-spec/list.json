@@ -1,0 +1,15 @@
+{
+  "exchange": "list",
+  "handler": "captures",
+  "as": "phone",
+  "status": 200,
+  "phase": "read",
+  "params": {},
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/captures?order=recent"
+  },
+  "schema": "capture.schema.json#/$defs/list",
+  "description": "The phone's list, the most recent first (`order=recent`): each capture with its title, the summary of its lines, its revision, its thumbnail flag, its targets; the image of a plan with its plan.",
+  "given": "The four captures of Camille."
+}

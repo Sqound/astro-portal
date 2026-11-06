@@ -1,0 +1,17 @@
+{
+  "exchange": "detail-plan-image",
+  "handler": "captures/[captureId]",
+  "as": "phone",
+  "status": 200,
+  "phase": "read",
+  "params": {
+    "captureId": "{capture:plan}"
+  },
+  "request": {
+    "method": "GET",
+    "path": "/api/v1/captures/{capture:plan}"
+  },
+  "schema": "manage-captures.schema.json#/$defs/one",
+  "description": "The page of the image of a multi-night plan: projectId and plan, and its lines of « Intégrations » one per session, target and family (sessionId and eveningDate on each, measured before declared).",
+  "given": "The image of the plan of M31, combining its two nights."
+}

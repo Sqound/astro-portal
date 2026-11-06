@@ -1,0 +1,47 @@
+{
+  "attribution": [
+    "National Park Service Night Skies Program, night sky data set (nsdmap.geojson). A work of the United States Government: public domain.",
+    "Globe at Night, NSF NOIRLab (globeatnight.org), CC BY 4.0."
+  ],
+  "compiledIn": 0.299,
+  "fit": {
+    "bias": 0.0019336973681644664,
+    "rmsMagnitudes": 0.025198047661727754,
+    "scale": 0.29931792507443733,
+    "sites": 20
+  },
+  "fromYear": 2019,
+  "globeAtNightCells": 15,
+  "globeAtNightReadings": 60,
+  "japan": null,
+  "minimumReadings": 3,
+  "npsSites": 5,
+  "perSource": {
+    "globeAtNight": {
+      "bias": 0.0002724719761026506,
+      "rmsMagnitudes": 0.01261135741320689,
+      "scale": 0.2998491175994491,
+      "sites": 15
+    },
+    "nationalParkService": {
+      "bias": 0.006942125683482914,
+      "rmsMagnitudes": 0.04504399173186854,
+      "scale": 0.2976893638155743,
+      "sites": 5
+    }
+  },
+  "raster": {
+    "bytes": 64800,
+    "cellSizeDegrees": 1,
+    "height": 180,
+    "north": 90,
+    "populatedCells": 64800,
+    "west": -180,
+    "width": 360
+  },
+  "region": null,
+  "years": {
+    "from": 2022,
+    "to": 2023
+  }
+}
